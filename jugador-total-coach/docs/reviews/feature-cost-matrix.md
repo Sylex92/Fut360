@@ -1,0 +1,59 @@
+# Matriz de costos por funcionalidad — fase 00
+
+Fecha: 2026-09-24. Cubre VISION, EXTENSIBILITY, ROADMAP, PRD y FEATURE_COST_REVIEW. Evaluación documental; ninguna función futura ni contratación queda autorizada.
+
+## Cómo leerla
+
+**V (verificado):** evidencia primaria consultada de licencia o condiciones. **S (supuesto):** ruta propuesta que aún no existe ni se midió. **P (pendiente):** proveedor, contrato, archivo o costo no determinado. Un 0 de licencia no significa costo total de operación cero.
+
+**A:** admisible como candidato local por los derechos revisados. **C:** condicionado. **P:** incorporación pendiente. Todas las versiones exactas, dependencias transitivas y archivos concretos no seleccionados conservan P.
+
+Para componentes base, las fuentes primarias y obligaciones están enlazadas en [license-audit.md](license-audit.md). No tienen tarifas por usuario/ingresos/renders en las licencias MIT/Apache consultadas. Esta evidencia no se extrapola a servicios externos, assets, actualizaciones o hardware.
+
+## Núcleo y crecimiento local
+
+| Función prevista | Dependencia y costo actual | Límites / disparadores de pago o revisión | Ruta local, alternativa y esfuerzo estimado | Decisión |
+|---|---|---|---|---|
+| MVP1: sesión guiada 60 min, 2×2, tres cámaras | React, Three, Fiber: V licencia 0. Assets concretos P | Memoria/GPU y cobertura de clips; pack o fuente premium no incluido | S GLB empaquetado y un reloj; simplificar materiales/props antes de comprar hardware. Adaptación media | A para motores / P entrega |
+| Más ejercicios, regresiones/progresiones y lados | Blender y recursos Standard/CC0: V ruta de licencia 0; gestos exactos P | Si el clip necesario solo existe en Pro/Source, no comprar automáticamente; técnica y derechos por variante | Adaptar rig/clip gratuito o autoría específica con Blender; esfuerzo alto en revisión, sin rig/editor propio | C |
+| Sesiones de 30 min u otras duraciones | Dominio propio + catálogo revisado; sin proveedor adicional propuesto | Cambiar tiempo exige revisar dosis, descanso y seguridad; no es un simple corte de video | S plan fijo adicional con sumas verificables; esfuerzo bajo/medio | A documental |
+| Catálogo amplio y planificador determinista | Reglas propias sobre stack base, sin API adicional | Complejidad del catálogo; nuevas bibliotecas o contenido vuelven a revisión | S selección por reglas, explicable y validada; mantener sesión fija como alternativa; esfuerzo medio | A documental |
+| Estadísticas longitudinales | Eventos locales, IndexedDB; sin servicio contratado | Cuota/evicción del navegador, volumen y retención; gráficos de terceros P | S agregaciones locales de minutos, RPE, constancia, carga declarada y notas. Exportar/resumir archivos; esfuerzo medio | A documental |
+| Métricas manuales e historial de partidos | Modelo canónico/JSON/CSV, parser por elegir | Formatos o parsers con licencia desconocida; derechos del archivo importado; no inferir diagnóstico | S entrada manual y archivos exportados legalmente; no equivale a monitorización automática. Esfuerzo medio | A ruta manual / P formatos |
+| Audio, avisos y voz opcional | Beeps Web Audio; voces/grabaciones concretas P | Voz cloud por minuto, licencia de voz del sistema o redistribución de audio; idiomas nuevos | S texto y beeps mantienen la función; grabaciones propias con derechos registrados. Esfuerzo bajo/medio | A beeps / P voz |
+| Variantes de avatar, ropa y entorno | Fuentes CC0 verificadas a nivel de ficha; archivos P | Versiones Source, packs premium, marcas, personaje real o material de otro autor | Reusar rig genérico y ropa neutra gratuita; alternativa de avatar auditado; esfuerzo medio | C |
+| Escenas tácticas fut 5/7/11 | Three/Fiber V licencia 0; escenarios propios | Más jugadores aumentan carga; nuevos estadios/texturas/animaciones se auditan | S recorridos y decisiones predefinidos en módulo independiente; representaciones simplificadas antes que partido completo. Esfuerzo alto | A motor / P contenido |
+| Balón libre o simulación de partido | Rapier/wrapper V licencia 0 | Calibración, rendimiento y realismo no acreditados; contenido y recursos extra | S prueba de contactos limitada; mantener tutorial authored. La simulación completa es otra función, no un requisito técnico del MVP. Esfuerzo alto | P viabilidad |
+| Herramienta de revisión/autoría | Blender V licencia 0; futuro visor del proyecto | Addons, auto-rigging y herramientas premium no se incluyen | Reutilizar Blender y añadir, solo si hace falta, revisión de fichas/previews; no construir editor de animación. Esfuerzo medio | A herramienta / P ampliación |
+| Exportar/importar/borrar registros | JSON local; API nativa, sin proveedor adicional | Versiones, duplicados, corrupción y datos privados; almacenamiento no ilimitado | S archivo canónico portable, restauración validada y eliminación explícita; esfuerzo medio | A documental |
+
+## Integraciones y funciones con condiciones externas
+
+| Función prevista | Dependencia/proveedor; costo actual verificado o pendiente | Límites / disparadores | Ruta local y alternativa; esfuerzo estimado | Decisión |
+|---|---|---|---|---|
+| Personalización asistida por IA | [llama.cpp](https://raw.githubusercontent.com/ggml-org/llama.cpp/master/LICENSE): V motor MIT; pesos y rendimiento P. APIs cloud sin seleccionar: costo P | Licencia de cada modelo, uso comercial/distribución, memoria; servicios por tokens. La exclusión de tokens Codex no autoriza una API dentro del producto | S reglas deterministas como base; IA local solo con pesos elegibles y equipo suficiente. Sustituir por planificación manual no reproduce todas las capacidades de IA. Esfuerzo alto | P |
+| Análisis de movimiento por cámara | [MediaPipe](https://raw.githubusercontent.com/google-ai-edge/mediapipe/master/LICENSE): V Apache-2.0. [Pose Landmarker web](https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker/web_js) requiere modelo aparte | Modelo/WASM concretos P; cámara, privacidad, FPS y exactitud. Una pose detectada no certifica técnica o seguridad | S procesamiento local, menor resolución/cadencia; alternativa revisión manual, sin equivalencia a corrección automática. Esfuerzo alto | P |
+| Garmin: actividades, HR, sueño, HRV, pasos, GPS/carga donde estén disponibles | [FAQ oficial](https://developer.garmin.com/gc-developer-program/program-faq/): V sin tarifa de licencia/mantenimiento del programa, solo uso empresarial y aprobación; algunas métricas comerciales pueden exigir pago/licencia o compra mínima | Elegibilidad personal no demostrada, métrica concreta, contrato y dispositivos. [Integración cloud-to-cloud](https://developer.garmin.com/gc-developer-program/overview/) no es modo offline | Importación manual legalmente disponible; no contratar ni adquirir reloj. Conector reemplazable con MetricSample; esfuerzo alto | P, no aprobado gratis |
+| Polar AccessLink | [Documentación oficial](https://www.polar.com/accesslink-api/): V OAuth/TLS y límites; tarifa del caso concreto P | Límites publicados: 500 + 20×usuarios por 15 min; 5000 + 100×usuarios por 24 h. Credenciales, términos y dispositivo; no suponer cuota ilimitada | Archivos/manual sin credenciales en PWA ni Git; conector futuro aislado; esfuerzo alto | P |
+| Apple/Google y otros wearables | Proveedor/SDK/forma de distribución no elegidos; costo P | Cuenta de desarrollador, plataforma nativa, aprobaciones, permisos de salud, dispositivo y posible publicación en tienda | S esquema neutral y archivos/manual. Revisar cada plataforma antes de elegir; esfuerzo alto | P |
+| Compartir resumen o publicar en redes | Generar un archivo local sobre stack base: V licencia de base 0; API de red no elegida: P | Cuenta, scopes, revisión de app, límites, cambios de API, privacidad y almacenamiento público | S exportar resumen que el usuario comparta; no iguala autopublicación ni garantiza servicio social gratuito. Esfuerzo bajo manual / alto API | A archivo / P API |
+| Feed social, entrenador remoto, equipos y organizaciones | Backend, autenticación y proveedores sin seleccionar: P | Usuarios, egress, almacenamiento, moderación, email/SMS, retención y soporte; free tiers no garantizan continuidad | S intercambio manual privado de archivos y perfiles locales; no equivale a colaboración en tiempo real. Autoalojar requiere operación, energía y seguridad. Esfuerzo alto | P |
+| Sincronización cloud, cuentas y backup remoto | Ningún servicio elegido: P, nunca «0» inferido | Cuotas, renovación, dominios, almacenamiento, transferencia y recuperación | S exportación/importación local; mantener entrenamiento sin conexión aunque falle el proveedor. Esfuerzo alto al añadir sync | P |
+| MP4 local mediante Remotion | V Free para elegibles; versión y entidad del proyecto P. Véase [auditoría](license-audit.md) | Umbral de equipo/colaboración, versión, automatización, telemetría, codec y operación como servicio. Cambiar duración o añadir ejercicios no es por sí solo un disparador | S exportador opcional que consume sesión/assets; sustituir por captura local + FFmpeg revisado. Sustitución media/alta; no copia automática | C, fuera MVP1 |
+| Captura local + FFmpeg | [FFmpeg](https://ffmpeg.org/legal.html): V LGPL/GPL según compilación; binario/codecs P | Flags, bibliotecas GPL/nonfree, redistribución y patentes según uso/jurisdicción | S elegir compilación/contenedor/codec compatible tras revisar; exportar secuencia de imágenes como alternativa parcial. No prometer MP4 universal gratis | C |
+| Render Worker, SaaS de video o render cloud | Remotion/FFmpeg no aportan infraestructura gratuita; cloud P | CPU/GPU, almacenamiento y tráfico; contratos del exportador, proyectos aportados por terceros, tamaño de equipo | S render por lotes en equipo existente si viable; cola local. Menor capacidad y tiempo mayor; esfuerzo alto | P |
+| Skills, MCP y plugins futuros | Plugin/servidor/proveedor concreto sin seleccionar: P | Licencia propia y del servicio invocado; permisos, cuentas, modelos/API, datos transmitidos | S herramientas de archivos locales auditadas; no requisito para usar la PWA. No instalar por anticipación | P |
+| CI, alojamiento público, dominio y distribución en tiendas | Ningún proveedor elegido; costo P | Minutos, artefactos, privacidad del repositorio, dominio, certificados/tiendas y exceso de cuota | Scripts/build locales; distribución local autorizada. Un free tier no es obligación ni promesa de infraestructura gratuita permanente; esfuerzo medio | P remoto |
+
+## Offline y crecimiento de capacidad
+
+La ruta desktop propuesta es un origen local y assets empaquetados. Para teléfono, localhost identifica al teléfono, no al PC: HTTP sobre IP LAN no hereda automáticamente la confianza del loopback. Revisar la instalación/origen seguro en fase 08 sin desactivar seguridad ni cambiar certificados globales sin autorización. [W3C Secure Contexts](https://www.w3.org/TR/secure-contexts/).
+
+No se midieron capacidad o rendimiento. Hardware, energía, conexión y trabajo humano son recursos existentes con límites reales. Si el equipo no basta, reducir carga o presentar alternativas antes de proponer compras. No se promete escala ilimitada.
+
+## Regla para cada ampliación
+
+Completar FEATURE_COST_REVIEW con versión/hash, fuente/fecha, licencia, elegibilidad, costo inicial/recurrente, cuentas/red, cuotas, privacidad, codec/contenido y prueba del equipo. Registrar también formato portable, módulo afectado y esfuerzo de salida. Revalidar al cambiar versión, proveedor, entidad, colaboradores, ingresos cuando la licencia los considere, publicación o volumen.
+
+Una integración que exige gasto o cuyo derecho permanece desconocido se queda pendiente/bloqueada para incorporación; el núcleo local sigue siendo utilizable. La alternativa manual debe explicitar qué automatización pierde. No aceptar pagos automáticamente ni construir ahora adaptadores vacíos.
+

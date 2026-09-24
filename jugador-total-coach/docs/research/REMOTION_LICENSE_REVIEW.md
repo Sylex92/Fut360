@@ -1,5 +1,13 @@
 # Remotion — revisión para este proyecto
 
+## Aclaración de la auditoría de fase 00 — 2026-09-24
+
+Reconsultados LICENSE, FAQ y términos. La URL [docs/terms](https://www.remotion.dev/docs/terms) identifica su contenido como documento futuro para Remotion 5.0 y enlaza los [términos 4.0](https://www.remotion.pro/terms-4-0). Las referencias anteriores a agregación de personal y condiciones no deben leerse como verificación de una versión instalada: ninguna fue elegida. La URL de precios no se recuperó en esta consulta; las tarifas publicadas se contrastaron en la FAQ.
+
+La decisión sigue siendo candidato condicionado para exportación local futura. El [informe de fase 00](../reviews/license-audit.md) distingue evidencia, vigencia, elegibilidad, telemetría, codecs y pendientes. El [plan MVP1](../plans/mvp1-execution-plan.md) no incorpora exportación ni autoriza instalación.
+
+## Antecedente del paquete importado
+
 Consulta pública: 2026-09-24. No se seleccionó ni instaló una versión.
 
 La FAQ oficial declara igualdad funcional entre Free y Company y permite automatización, SaaS y uso comercial a quien mantiene la elegibilidad. La página de precios anuncia uso individual/equipos pequeños. Los términos explican el umbral de cuatro personas y la agregación de personal en colaboraciones: no contar únicamente a quienes programan. Fuentes: [R1], [R2], [R3].
