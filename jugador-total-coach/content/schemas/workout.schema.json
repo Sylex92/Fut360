@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jugador-total.local/schemas/workout.schema.json",
+  "title": "WorkoutDefinition",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "displayName",
+    "expectedDurationSeconds",
+    "space",
+    "blocks",
+    "reviewStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "expectedDurationSeconds": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "space": {
+      "type": "object",
+      "required": [
+        "widthM",
+        "lengthM"
+      ],
+      "properties": {
+        "widthM": {
+          "type": "number"
+        },
+        "lengthM": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "displayName",
+          "rounds",
+          "items"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "rounds": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "exerciseId",
+                "workSeconds",
+                "restSeconds"
+              ],
+              "properties": {
+                "exerciseId": {
+                  "type": "string"
+                },
+                "side": {
+                  "enum": [
+                    "none",
+                    "right",
+                    "left",
+                    "alternate"
+                  ]
+                },
+                "workSeconds": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "restSeconds": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "coaching-reviewed"
+      ],
+      "description": "Estado del contenido; duración validada no implica aptitud deportiva."
+    }
+  },
+  "additionalProperties": false
+}

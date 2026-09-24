@@ -1,0 +1,21 @@
+{
+  "package": "jugador-total-coach-inicio-v4",
+  "date": "2026-09-24",
+  "checks": {
+    "workout_schema": "passed",
+    "exercise_schema": "well_formed",
+    "workout_duration_seconds": 3600,
+    "obsolete_active_policy_scan": "passed"
+  },
+  "not_tested": [
+    "application",
+    "3d_assets",
+    "exercise_execution",
+    "installed_dependency_licenses",
+    "device_performance",
+    "offline_application"
+  ],
+  "source_review": "Remotion public docs and Codex AGENTS documentation; all installed versions remain unaudited",
+  "training_content_status": "draft unchanged",
+  "cost_policy": "zero mandatory new spend for approved local scope; free non-open software eligible; no unlimited guarantee"
+}

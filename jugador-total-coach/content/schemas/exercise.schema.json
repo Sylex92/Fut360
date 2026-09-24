@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jugador-total.local/schemas/exercise.schema.json",
+  "title": "ExerciseDefinition",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "displayName",
+    "space",
+    "equipment",
+    "animation",
+    "cues",
+    "reviewStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "space": {
+      "type": "object",
+      "required": [
+        "widthM",
+        "lengthM"
+      ],
+      "properties": {
+        "widthM": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "lengthM": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "impact": {
+      "enum": [
+        "low",
+        "moderate",
+        "high"
+      ]
+    },
+    "sidePolicy": {
+      "enum": [
+        "none",
+        "alternate",
+        "explicit",
+        "mirrorable"
+      ]
+    },
+    "animation": {
+      "type": "object",
+      "required": [
+        "assetId",
+        "clipName",
+        "loopable",
+        "cameraPresets"
+      ],
+      "properties": {
+        "assetId": {
+          "type": "string"
+        },
+        "clipName": {
+          "type": "string"
+        },
+        "loopable": {
+          "type": "boolean"
+        },
+        "cameraPresets": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "front",
+              "side",
+              "threeQuarter"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "cues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "commonErrors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regressionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "progressionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "footballTransfer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "format",
+          "description"
+        ],
+        "properties": {
+          "format": {
+            "enum": [
+              "fut5",
+              "fut7",
+              "fut11"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "safetyCues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewStatus": {
+      "enum": [
+        "draft",
+        "technical-reviewed",
+        "coaching-reviewed"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

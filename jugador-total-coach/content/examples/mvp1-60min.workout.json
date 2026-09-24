@@ -1,0 +1,277 @@
+{
+  "id": "home-2x2-player-total-60",
+  "version": 1,
+  "displayName": "Jugador Total 8/9 — Casa 2×2 — 60 min",
+  "expectedDurationSeconds": 3600,
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": [
+    "ball",
+    "chair",
+    "short-loop-band",
+    "mat"
+  ],
+  "blocks": [
+    {
+      "id": "activation",
+      "displayName": "Activación",
+      "rounds": 1,
+      "items": [
+        {
+          "exerciseId": "active-march",
+          "side": "none",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "ankle-mobility",
+          "side": "alternate",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "hip-hinge",
+          "side": "none",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "mini-squat",
+          "side": "none",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "soft-step-turn",
+          "side": "alternate",
+          "workSeconds": 45,
+          "restSeconds": 15
+        }
+      ]
+    },
+    {
+      "id": "ball-mastery",
+      "displayName": "Ball mastery",
+      "rounds": 2,
+      "items": [
+        {
+          "exerciseId": "inside-inside",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "alternating-sole-taps",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "lateral-sole-roll",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "v-pull",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "inside-outside",
+          "side": "right",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "inside-outside",
+          "side": "left",
+          "workSeconds": 40,
+          "restSeconds": 20
+        }
+      ]
+    },
+    {
+      "id": "firmino-bellingham",
+      "displayName": "Firmino + Bellingham",
+      "rounds": 2,
+      "items": [
+        {
+          "exerciseId": "scan-plant-turn",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "shield-and-exit",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "pause-feint-accelerate",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "false-nine-check-turn",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "late-arrival-no-shot",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "press-recover-protect",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        }
+      ]
+    },
+    {
+      "id": "full-body-strength",
+      "displayName": "Fuerza de cuerpo completo",
+      "rounds": 2,
+      "items": [
+        {
+          "exerciseId": "supported-split-squat",
+          "side": "right",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "supported-split-squat",
+          "side": "left",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "single-leg-rdl-supported",
+          "side": "right",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "single-leg-rdl-supported",
+          "side": "left",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "incline-push-up-chair",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "prone-ytw",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "glute-bridge",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "dead-bug",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        }
+      ]
+    },
+    {
+      "id": "technical-conditioning",
+      "displayName": "Acondicionamiento técnico",
+      "rounds": 2,
+      "items": [
+        {
+          "exerciseId": "inside-inside-fast",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "alternating-sole-taps-fast",
+          "side": "none",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "v-pull-fast",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        },
+        {
+          "exerciseId": "quick-feet-line",
+          "side": "alternate",
+          "workSeconds": 40,
+          "restSeconds": 20
+        }
+      ]
+    },
+    {
+      "id": "cooldown",
+      "displayName": "Vuelta a la calma",
+      "rounds": 1,
+      "items": [
+        {
+          "exerciseId": "slow-breathing",
+          "side": "none",
+          "workSeconds": 60,
+          "restSeconds": 0
+        },
+        {
+          "exerciseId": "calf-stretch",
+          "side": "right",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "calf-stretch",
+          "side": "left",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "hip-flexor-stretch",
+          "side": "right",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "hip-flexor-stretch",
+          "side": "left",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "recovery-pose",
+          "side": "none",
+          "workSeconds": 45,
+          "restSeconds": 15
+        },
+        {
+          "exerciseId": "chest-shoulder-opener",
+          "side": "none",
+          "workSeconds": 45,
+          "restSeconds": 15
+        }
+      ]
+    }
+  ],
+  "reviewStatus": "draft"
+}
