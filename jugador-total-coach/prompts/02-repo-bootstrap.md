@@ -6,11 +6,11 @@ Requisitos:
 - monorepo pnpm;
 - TypeScript estricto;
 - app React + Vite;
-- paquetes de dominio, schemas, session-engine y avatar-runtime;
+- paquetes domain y exercise-catalog según ARCHITECTURE.md; esquemas existentes en content/schemas, sin paquete duplicado ni módulos vacíos;
 - Vitest;
-- Playwright preparado;
+- prueba de humo de la pantalla con Playwright solo cuando su necesidad/licencia/descarga estén revisadas y autorizadas;
 - lint y format;
-- CI con lint, typecheck y tests;
+- scripts locales de lint, typecheck, tests y build; sin activar CI remoto;
 - no backend;
 - no autenticación;
 - no dependencias no justificadas.
@@ -20,10 +20,12 @@ Después implementa.
 Al final ejecuta todas las verificaciones y documenta los comandos.
 
 Criterios:
-- la PWA muestra una pantalla vacía de diagnóstico;
+- la base web muestra una pantalla de diagnóstico; PWA/cache/offline completo se implementan y prueban en 08;
 - importa un tipo desde `domain`;
 - valida el JSON de ejemplo;
 - una prueba confirma que la duración es exactamente 3,600 segundos.
+
+Leer la consolidación documental de 01. No crear session-engine hasta 03 ni viewer-3d hasta 04. El fixture v1 sigue como regresión técnica de 31 IDs; el catálogo objetivo nuevo no se inventa durante bootstrap. Preparar la validación de formato v1 y reglas temporales sin declarar implementados todos los contratos futuros.
 
 ## Revisión de alcance
 

@@ -2,28 +2,130 @@
 
 ## Fase actual y autorización
 
-- Fecha: 2026-09-24.
-- Fase 00: auditoría documental realizada; entregables listos para revisión del usuario. **No aceptada por el usuario todavía.**
-- Implementación de la aplicación: no iniciada. No se ejecutó ninguna fase 01–09.
-- Autorización vigente: inspección, investigación, comprobaciones de solo lectura y documentos de fase 00. Sin código de aplicación, instalaciones, descargas de modelos, pagos, publicación ni cambios globales o fuera del proyecto.
-- Dependencias instaladas en el proyecto: ninguna. Assets descargados/incorporados/revisados visualmente: ninguno.
+- Última actualización: 2026-09-28. Auditoría inicial: 2026-09-24.
+- Fase 00: **aceptada por el usuario el 2026-09-27**, mediante «Acepto y autorizo» en respuesta al cierre y al alcance concreto de 01. Se conservan los pendientes declarados; aceptar la auditoría no aprueba la rutina ni los recursos futuros.
+- Fase 01: **aceptada por el usuario el 2026-09-28**, mediante «De acuerdo y autorizo» en respuesta al cierre documental y alcance de 02.
+- Fase 02: **implementación, verificaciones técnicas y recorrido manual básico completados**, según prompts/02-repo-bootstrap.md y docs/plans/phase02-ready.md. El usuario confirma resultado y aumento del contador, apertura/cierre del desplegable, foco visible y activación con Enter de ambos controles; no observa problemas al reducir el ancho ni errores en consola durante el recorrido. Captura aportada por el usuario, conservada e inspeccionada por el agente sin incidencias en la zona visible. Integración Git pendiente; accesibilidad integral y todos los dispositivos/tamaños no certificados. Sin aceptación explícita del cierre global de 02. Fases 03–09 no autorizadas.
+- Implementación: base React/Vite y paquetes domain/exercise-catalog funcionales; diagnóstico de contenido, sin motor de sesión ni recursos 3D.
+- Autorización vigente: código base, dependencias gratuitas revisadas y sus descargas/instalación local, pruebas y documentos únicamente dentro del proyecto. Sin pagos, publicación, modelos, Blender ni cambios globales o fuera del proyecto.
+- Dependencias instaladas en el proyecto: versiones fijadas de 02, 137 pares nombre/versión en 141 contextos y pnpm local aparte; licencias/avisos registrados. Assets 3D descargados/incorporados/revisados visualmente: ninguno.
 - Política vigente: costo cero para construcción/uso local, excluyendo cuenta/tokens Codex; software gratuito no abierto permitido. No promesa de gratuidad ilimitada.
 - ADR 0008 vigente; 0005/0007 históricos. Demostración guiada separada del laboratorio Rapier.
-- Remotion: candidato condicionado, no instalado y fuera del MVP1. Se documentó la diferencia entre términos 4.0 y el texto futuro 5.0.
+- Remotion: uso personal documentalmente elegible para Free; condicionado por cambios de contexto, no por un pago actual. No instalado. Exportación fuera del MVP1; Player reconocido como alternativa técnica no adoptada. Revisión específica del 2026-09-25, incluido LICENSE de referencia v4.0.524 y distinción de términos 4.0/texto futuro 5.0.
+- IA para producir recursos: comparación documental añadida el 2026-09-26. La propuesta previa no la desarrollaba suficientemente. Se mantiene la base local y se propone asistencia opcional por carencia concreta, midiendo corrección e integración; sin evidencia de ahorro todavía. Ningún generador, cuenta, modelo o salida se incorpora por esta decisión.
 - Workout: draft, versión 1, 3600 s; validación temporal/estructural no equivale a revisión deportiva.
+- Revisión humana: el usuario declara «Yo la voy a revisar» el 2026-09-26 y queda asignado a revisar fichas y demostraciones con el agente. El agente mantiene investigación, fundamento y comprobaciones; no se traslada al usuario la elección experta de dosis o técnica. Asignado no significa realizado ni acredita revisión profesional. No se contrató ni se propone por defecto un revisor externo.
+- Decisiones técnicas y deportivas delegadas expresamente al agente: investigar, seleccionar y fundamentar sin pedir al usuario que elija métodos o dosis. La consulta anterior de actividad reciente no bloquea la fase documental; no se infiere edad, condición física ni adecuación individual. Desde el 2026-09-27 avanzar todo lo posible, documentar y detenerse únicamente por decisiones indispensables o nuevos permisos.
+- Comportamiento temporal confirmado por el usuario: Pausar todo congela cronómetro/avatar y continuar retoma el punto detenido. Pausas y extras alargan tiempo real sin recortar el programa. En revisión 01, el usuario precisa demostración previa automática y ampliaciones de preparación de 30 s o 1 min con autoinicio al agotarse, para evitar un segundo toque. Se retira la propuesta del agente de esperar confirmación de estar listo. Misma conservación de programa para futuras sesiones de 30/90 min; MVP1 sigue limitado a 60.
+- Avance confirmado por el usuario: durante descanso/preparación se muestran automáticamente el próximo ejercicio, cómo hacerlo, lado, posición y material. Al terminar empieza solo. Si necesita más tiempo, +30 s/+1 min suman al restante y el ejemplo sigue; no debe volver a pulsar para empezar. Pausar todo permanece para una interrupción indefinida. Suficiencia de los tiempos y comprensión de controles por comprobar.
+- Equipos del MVP1 confirmados por el usuario: Samsung Galaxy S24 FE con Android 16 y Google Chrome, y esta misma computadora Windows inspeccionada (Intel Core i5-1235U, 15,69 GiB de memoria física visible e Intel UHD Graphics como adaptador primario informado). La computadora se usará para desarrollo y entrenamiento. Samsung Internet está instalado en el teléfono pero el usuario no lo utiliza; queda como alternativa, no navegador principal de aceptación. Versión exacta de Chrome móvil y rendimiento real pendientes para las pruebas. La TV queda para una fase futura. Sin aprobación de app nativa de TV, sincronización entre dispositivos o compras.
+- Espacio confirmado por el usuario: habitación más grande, con muebles fuera de una zona de al menos 2×2 metros completamente libre de muebles y obstáculos. El MVP1 conserva el límite de diseño de 2×2; no se presupone espacio adicional disponible para los movimientos. La cabida de cada ejercicio con su material sigue pendiente de revisión.
+- Material confirmado por el usuario: balón de fútbol, silla firme, banda elástica corta de varias resistencias y tapete/colchoneta de ejercicio. Quedan cubiertas las cuatro categorías de material previstas en el fixture. Es una declaración de disponibilidad, no una inspección de dimensiones, estabilidad durante cada apoyo ni resistencia adecuada para cada ejercicio.
 
-## Documentos de esta fase
+## Entrega técnica de fase 02 — 2026-09-28
+
+[Informe de implementación](docs/reviews/phase02-bootstrap-review.md), [licencias e inventario](docs/reviews/phase02-dependencies.md) y [comandos reproducibles](docs/setup/LOCAL_DEVELOPMENT.md).
+
+- App, domain y exercise-catalog creados sin módulos vacíos. Validación real con Ajv 2020-12 y reglas semánticas, cálculo puro de tiempos y pantalla de diagnóstico en español. No hay botón para empezar a entrenar ni contenido deportivo declarado aprobado.
+- Node 22.14.0 reutilizado, pnpm 11.19.0 dentro de .tooling, rutas store/cache/state/temp locales. Versiones directas del plan conservadas; scripts de dependencias desactivados. Sin instalación global ni cambio de políticas, drivers, firewall o certificados.
+- format:check, lint, typecheck, 24 pruebas en dos archivos y build correctos. Fixture original con SHA-256 intacto, draft, 2475+1125=3600 s, 60 ocurrencias y 31 IDs. El esquema histórico sigue intacto.
+- npm ci offline del gestor correcto; pnpm install --frozen-lockfile --ignore-scripts --offline correcto sobre instalación existente y copia nueva en .cache/phase02-repro sin node_modules previo. En esa copia volvieron a pasar las 24 pruebas y build, reutilizando 141 contextos desde caché, sin descarga. No es prueba en otro equipo ni de PWA offline.
+- 166 versiones del lockfile consultadas; 137 instaladas con declaraciones de licencia coincidentes y avisos/evidencia registrados; 29 opciones de otras plataformas sin instalar. pnpm audit reportó cero avisos conocidos en esta consulta. Ocho avisos de dependencias de runtime incorporados al build. Alcance y excepciones de evidencia en el inventario; no una auditoría forense ni aprobación de futura distribución.
+- Durante la entrega inicial, build servido en http://127.0.0.1:4173/; HTTP 200 y título correcto. La petición de abrirlo en Codex quedó en cola. El conector de navegador integrado falló y Chrome no estaba disponible como superficie automatizable. Entonces no había captura ni revisión manual de controles/consola; las comprobaciones posteriores del usuario y la imagen recibida se registran abajo. Las pruebas automatizadas de pantalla son render HTML de React.
+- Incidencia posterior: el usuario encontró ERR_CONNECTION_REFUSED. Se verificó que el puerto 4173 no tenía servidor y se reinició preview en segundo plano como proceso independiente; una llamada posterior confirmó listener en 127.0.0.1, HTTP 200 y título correcto. Registros locales en .cache/preview y recuperación documentada en LOCAL_DEVELOPMENT. Causa de detención anterior sin determinar; sin arranque automático con Windows. El conector visual sigue sin conectar. No hubo cambios de código, dependencias ni alcance de fase.
+- Confirmación posterior del usuario: «listo ya se visualiza la pantalla y se le puede dar en el boton de volver a comprobar». Se registra acceso recuperado, visualización y posibilidad de pulsar el control en su equipo. No atribuir a este reporte una comprobación del mensaje/contador posterior al clic, del teclado, de la consola o del teléfono. No es una observación directa del agente ni una autorización de 03.
+- Revisión posterior del botón: el usuario comunica literalmente «Comprobación 1: estructura y duración correctas.» y después confirma «Comprobación 2: estructura y duración correctas.» al pulsar otra vez. Resultado y aumento del contador comprobados por reporte manual del usuario; sin captura ni observación directa del agente.
+- Despliegue de datos: el usuario confirma «si se despliegue y se contrae» al revisar «Ver datos del archivo de referencia». Apertura y cierre comprobados por reporte manual; no acredita validación técnica del contenido ni manejo por teclado.
+- Teclado del botón: ante la comprobación de llegar a «Volver a comprobar» con Tab/Mayús+Tab, distinguir su resaltado y activarlo con Enter aumentando el contador, el usuario confirma «si se puede». Comprobado por reporte manual del usuario.
+- Teclado del desplegable: el usuario responde «si» a la comprobación de llegar con Tab a «Ver datos del archivo de referencia», distinguir su resaltado y abrirlo/cerrarlo con Enter. Ambos controles principales comprobados por teclado mediante reporte manual; no equivale a auditoría completa de accesibilidad.
+- Revisión con ancho reducido: el usuario confirma «si, no noto ningún problema» al revisar legibilidad, controles visibles y ausencia de superposición o recortes en la computadora. Comprobación manual favorable en el ancho que probó, sin dimensiones medidas ni captura; no demuestra todos los tamaños ni constituye prueba en el Samsung.
+- Consola: ante la revisión guiada en Chrome de recargar con la consola abierta y utilizar ambos controles, el usuario responde «no aparece nada». Se registra ausencia de errores observados por el usuario en ese recorrido; sin inspección directa del agente, captura de consola ni generalización a otros recorridos.
+- Evidencia visual: [captura del usuario](docs/reviews/evidence/phase02-diagnostic-user.png), copiada sin modificaciones y con SHA-256 idéntico al original. Imagen de 1349×603 píxeles; no representa las dimensiones medidas del viewport. Inspección directa del agente: estado válido, Comprobación 3, Borrador, 60:00 total, 41:15 trabajo y 18:45 descanso; sin superposición ni cortes de los controles mostrados. Solo cubre la sección capturada, no toda la página ni el comportamiento. La evidencia visual solicitada queda completada.
+- Forma de acompañamiento vigente: después del repaso uno a uno y ante la propuesta concreta de commit local, el usuario indica «ya podemos avanzar con normalidad, solo interrumpir con preguntas muy necesarias por favor». Se retoma el avance autónomo y el punto de control local propuesto, sin pedir otra confirmación de cada operación. Esta respuesta no se extiende a publicación, cambios globales ni ejecución de 03. El repaso manual anterior queda como evidencia histórica.
+- Preparación del punto de control: 72 archivos modificados/nuevos dentro del proyecto, sin dependencias instaladas, cachés, build ni rutas privadas en el alcance. Búsqueda de patrones comunes de credenciales sin coincidencias; no equivale a auditoría exhaustiva de secretos. Identidad de autor de Git ya configurada, índice inicialmente vacío y sin hooks activos detectados. Comparados 22 archivos fuente/configuración/datos con la copia de reproducción probada: hashes idénticos. Sin cambios de aplicación, no se repiten sus pruebas por este cierre documental.
+- Conservados los cambios documentales anteriores. Sin commit, publicación, pago, backend, auth, Blender, modelos, 3D, historial ni fases posteriores. Recorrido manual y evidencia visual básica completados; integración Git pendiente.
+- Verificación documental final: 66 documentos UTF-8 y 183 enlaces locales válidos, hashes del fixture/esquemas y evidencias de licencia comprobados, git diff --check sin errores. 71 archivos acumulados de 00–02 modificados/nuevos, todos dentro del proyecto; dependencias, cachés y build ignorados por Git.
+
+Siguiente alcance propuesto, aún no autorizado: fase 03 según prompts/03-session-engine.md, motor temporal independiente con vista mínima de texto, avance automático, pausa/reanudación, +30 s/+1 min de preparación, omisión y repetición conforme al contrato, y pruebas con reloj simulado. Usar las herramientas locales existentes. No incluye avatar, Blender, recursos 3D, exportación ni cambios globales. Presentar para aceptación el cierre de 02 con sus límites y solicitar autorización del conjunto de 03; no ejecutar mientras no se reciba.
+
+## Entrega documental de fase 01 (historial)
+
+La fase 00 fue aceptada y únicamente 01 autorizada el 2026-09-27. Su aceptación llegó el 2026-09-28 mediante la respuesta explícita del usuario, no por haber escrito los documentos. [Informe completo](docs/reviews/architecture-review.md). [Fase 02](docs/plans/phase02-ready.md) autorizada después.
+
+- [Arquitectura](docs/architecture/ARCHITECTURE.md): árbol final, dependencias permitidas y módulos creados solo al necesitarlos.
+- [Motor](docs/architecture/SESSION_ENGINE_CONTRACT.md): reloj único, pausa, extras, omisión, inspección y recuperación.
+- [Dominio](docs/architecture/DOMAIN_MODEL.md): cuatro contratos, validación por capas y archivo de historial.
+- [Catálogo objetivo](docs/training/EXERCISE_CATALOG_SCOPE.md) y [sesión](docs/training/MVP1_60_MIN_SESSION.md): doce patrones para autoría; 31 IDs históricos con destino explícito; fixture intacto.
+- [Primera entrega visible](docs/plans/first-visible-exercise-ready.md): hip-hinge, requisitos y estados pendientes.
+- [Reutilización](docs/architecture/REUSE_MATRIX.md): mínima lógica propia justificada por módulo.
+- ADR 0006/0008 consolidados y [0009](docs/architecture/adr/0009-session-time-and-recovery.md) nuevo. 0005/0007 históricos.
+- PRD, contratos 3D, extensibilidad, plan, roadmap, Definition of Done y guías armonizados; prompts 02/03/04/06/07 corregidos documentalmente, sin ejecutarlos. Relación y motivo en el informe.
+
+Decisiones nuevas de diseño, todavía sin prueba de aplicación: repetir añade una ocurrencia completa después del descanso; omitir conserva descanso; cámara lenta es inspección con la sesión pausada y retorno al punto guardado; ocultar la página pausa; recuperar no acredita tiempo cerrado. La app registra reproducción, no repeticiones físicas observadas. Remotion Player sigue admisible, pero Three/Fiber + AnimationMixer se mantienen por alcance de integración sin benchmark de superioridad.
+
+## Revisión guiada de fase 01
+
+Actualización del 2026-09-27, ante «De acuerdo, continuamos»: se continúa el repaso documental, sin interpretar la respuesta como autorización de 02 ni aceptación global de los contratos.
+
+| Bloque | Estado del acompañamiento |
+|---|---|
+| Tiempo y controles | Repaso realizado. El usuario responde «Perfecto, entonces avanzamos» a la corrección de preparación automática con +30 s/+1 min y autoinicio; acuerdo de comportamiento, no prueba de usabilidad ni aceptación global de fase 01. |
+| Organización y contratos | Repaso con hip-hinge: programa, ficha, animación y escena; papel del catálogo, reloj, visor e historial. Ejemplo explicativo añadido a DOMAIN_MODEL, sin crear contenido ejecutable o dosis. |
+| Reutilización y primera entrega visible | Resumen ya presentado; falta recorrido detallado de recursos, herramientas y condiciones de preparación. |
+| Cierre y siguiente fase | Pendiente tras el recorrido; no ejecutar bootstrap ni solicitar aprobación global antes de explicar los puntos pendientes. |
+
+En este avance solo se precisaron textos propuestos en SESSION_ENGINE_CONTRACT y este registro. No cambia la regla temporal ni se añade aplicación. Verificación: ambos documentos UTF-8, referencias locales y git diff --check; detalles del resultado en la conversación. Las pruebas de comportamiento siguen pendientes.
+
+Antecedente sustituido: el agente había propuesto una espera de preparación con confirmación manual y documentado su cálculo. El usuario la rechaza porque exige volver a la aplicación e interrumpe el ritmo. No tratar ese diseño ni sus comandos de estar listo como vigentes.
+
+Corrección vigente: ejemplo automático y acciones directas +30 s/+1 min sin menú ni confirmación posterior. Se suma el incremento al tiempo que quedaba: 20+30=50 s; una hora base con +30 s dura 3630 s, y con +30/+60 dura 3690 s sin otros cambios. El motor consume preparación adicional separada de trabajo y pausa manual, cierra preview e inicia práctica automáticamente. Se armonizan contratos, ADR 0009, PRD, física, sesión, requisitos del primer gesto, prompts 03/04 e informes; AGENTS registra la instrucción para no reintroducir la espera manual. No se implementa ni se modifica el fixture.
+
+Historial de la propuesta sustituida: se comprobaron 13 documentos UTF-8, 61 enlaces locales, git diff --check, integridad del fixture y aritmética del diseño anterior. Esos controles de documentos no validaban la usabilidad ni convierten la propuesta rechazada en vigente.
+
+Verificación de la corrección automática: 14 documentos UTF-8 sin caracteres de sustitución, 61 enlaces locales válidos y git diff --check sin incidencias. Eliminados los contratos anteriores de preparación con confirmación manual. Ejemplos aritméticos comprobados: 20+30=50, 5+30+60=95, 3600+30=3630 y 3600+30+60=3690 s. Fixture conserva hash original, draft y 3600 s; siete archivos no Markdown del manifiesto intactos. Solo documentos modificados/nuevos dentro del proyecto. No se ejecutaron pruebas de aplicación, animaciones o usabilidad; no hay implementación ni nuevas instalaciones/descargas.
+
+Historial del repaso de organización: se explicó la conexión de los cuatro contratos mediante el mismo gesto y se distinguió comprobación automática de metadatos de revisión visual/humana. La aplicación sigue siendo una sola, sin backend ni servicios nuevos. El bloque entonces pendiente de recursos/herramientas queda resuelto documentalmente en el cierre autónomo siguiente. Fase 02 sigue sin autorizar; no se pidió otra aprobación de la regla automática ya acordada.
+
+Verificaciones de este repaso: dos documentos UTF-8 y 24 enlaces locales válidos; git diff --check sin incidencias. Fixture con SHA-256 original, draft y duración recalculada de 3600 s. Solo explicación documental y continuidad; no hay pruebas nuevas de aplicación, recursos descargados, instalaciones o contenido deportivo aprobado.
+
+## Cierre documental autónomo de 01 — 2026-09-27
+
+- Instrucción actual incorporada en AGENTS, estado y planes: completar el alcance sin detenerse por decisiones rutinarias. La autorización de implementar/instalar todavía no se ha dado.
+- ASSET_SELECTION y ANIMATION_PIPELINE concretan Standard de Quaternius como primer candidato, importación editable sin fuentes de pago, prueba del rig, autoría del gesto faltante, tres vistas y relación con preparación automática. Reconsulta de páginas del autor; ninguna descarga ni revisión de archivo real.
+- phase02-ready detalla resultado, versiones, licencias declaradas, límites de instalación local y controles. Node 22.14.0 y npm 10.9.2 recomprobados. Consultas npm detectaron incompatibilidad entre TypeScript latest 7.0.2 y typescript-eslint 8.70.1; candidato corregido a TypeScript 6.0.3. La selección satisface rangos declarados, no constituye una instalación probada ni auditoría de transitivas.
+- Trece documentos creados/actualizados en este cierre, incluidos diagnóstico, licencia, informe, requisitos del primer gesto y guías de continuidad. Los cambios anteriores se conservaron.
+- Verificación integral: 63 documentos Markdown legibles como UTF-8 y 171 enlaces locales existentes; git diff --check sin incidencias. El comprobador temporal inicial omitía el dígito de viewer-3d en su expresión regular; se corrigió el comprobador y se repitió con éxito, sin cambio del grafo documental.
+- Fixture intacto por SHA-256 original, draft y Test-Json=True: 2475 s de trabajo + 1125 s de descanso = 3600 s; 36 filas, 60 ocurrencias, 31 IDs y 119 segmentos positivos. Dos esquemas parseados. Tabla de 31 IDs completa/única, doce patrones objetivo y grafo documental de seis paquetes acíclico comprobados. Ejemplos de preparación 20+30=50, base+30=3630 y base+30+60=3690 comprobados aritméticamente.
+- Manifiesto histórico: 29/55 hashes intactos; 26 diferencias únicamente Markdown, siete archivos no Markdown intactos. No se regeneró. Git registra 41 documentos modificados/nuevos acumulados de 00/01, todos dentro del proyecto. No hay package.json, lockfiles ni GLB/glTF/BLEND.
+- Sin código, dependencias instaladas, modelos, cambios globales, commit ni publicación. Build, lint, typecheck, pruebas de aplicación, rendimiento, offline, dispositivos y revisión práctica deportiva continúan sin ejecutar. Este cierre es documental; la integración Git y la aceptación del usuario siguen pendientes.
+
+## Fase 00 aceptada: informes conservados
 
 1. [Diagnóstico del entorno](docs/reviews/environment-report.md).
 2. [Auditoría de especificación](docs/reviews/spec-audit.md).
 3. [Auditoría de licencias](docs/reviews/license-audit.md).
 4. [Auditoría de reutilización](docs/reviews/reuse-audit.md).
 5. [Matriz de costos futuros](docs/reviews/feature-cost-matrix.md).
-6. [Plan de ejecución MVP1](docs/plans/mvp1-execution-plan.md).
+6. [Plan MVP1](docs/plans/mvp1-execution-plan.md), ahora consolidado con 01.
 
-También se actualizó este estado y se añadió una aclaración de vigencia a [REMOTION_LICENSE_REVIEW.md](docs/research/REMOTION_LICENSE_REVIEW.md). No se modificaron esquemas, fixture, código, políticas ni ADR; las propuestas de contratos quedan para fase 01.
+Los repasos guiados incluyeron [usabilidad](docs/reviews/usability-review.md), [contenido](docs/reviews/training-content-review.md), [dirección deportiva](docs/reviews/training-design-recommendation.md), [Remotion](docs/research/REMOTION_LICENSE_REVIEW.md) y [IA de producción](docs/reviews/ai-production-tools-review.md). Se aclararon límites de física, corrección del recurso conservando ejercicios adecuados, costos futuros y alcance de la revisión humana del usuario. La aceptación documental no aprueba fichas/dosis ni recursos futuros, tampoco autoriza instalaciones o gastos.
 
-## Verificaciones ejecutadas
+## Verificaciones de fase 01
+
+Comprobaciones del 2026-09-27 sobre la entrega documental:
+
+- 29 documentos de fase 01 legibles como UTF-8, sin caracteres de sustitución; 114 enlaces locales comprobados sin roturas.
+- git diff --check sin errores de espacios. Solo hay cambios Markdown entre los archivos modificados/nuevos del proyecto; se conservó el trabajo anterior de 00.
+- Fixture: SHA-256 original intacto, draft, 2475 s de trabajo + 1125 s de descanso = 3600 s; 36 filas, 60 ocurrencias expandidas, 31 IDs y 119 segmentos positivos. Test-Json contra workout.schema.json devuelve True; ambos esquemas parsean y conservan integridad original.
+- Tabla de catálogo comparada con el fixture: 31 IDs cubiertos una vez, sin faltantes/duplicados; núcleo de doce patrones únicos. Presupuesto nuevo 480+720+600+960+480+360 = 3600 s, sin afirmar dosis validada. Ejemplo temporal 3600 base + 60 extra + 300 pausa = 3960 s comprobado aritméticamente, sin ejecutar un motor.
+- Grafo documental de seis paquetes revisado: dependencias acíclicas y solo permitidas; no prueba de imports de código inexistente.
+- Manifiesto original: 31/55 hashes intactos, 24 diferencias únicamente Markdown; no se regeneró. Archivos nuevos documentales quedan fuera de ese manifiesto histórico.
+- No se encontraron package.json, lockfiles ni GLB/glTF/BLEND en el proyecto. Sin código, dependencias instaladas, recursos descargados, cambios globales, commit ni publicación.
+- Fuentes técnicas oficiales de Three, Remotion, MDN y W3C reconsultadas; fuentes y límites en el informe. No se revalidaron todas las licencias/precios de 00 ni se midió rendimiento.
+
+Las comprobaciones corresponden a coherencia documental/datos. Build, lint, typecheck, E2E, pruebas visuales/de dispositivos/offline y revisión deportiva práctica no se ejecutaron: permanecen pendientes donde correspondan.
+
+## Historial de verificaciones de fase 00 (2026-09-24 a 26)
 
 - Lectura de instrucciones, PRD, contratos, políticas, roadmap y prompts posteriores únicamente como referencia del plan.
 - Inventario de herramientas: Git 2.40.0.windows.1, Node 22.14.0, npm 10.9.2, pnpm 11.19.0 dentro del runtime de Codex, Python 3.13.3 y PowerShell 7.6.5. Tres navegadores localizados mediante metadatos. Detalles y rutas en el diagnóstico.
@@ -32,20 +134,49 @@ También se actualizó este estado y se añadió una aclaración de vigencia a [
 - Recálculo independiente: 2475 s de trabajo + 1125 s de descanso = 3600 s; 36 filas, 60 entradas expandidas de ejercicio y 31 IDs distintos.
 - Antes de editar documentos, tools/validate_blueprint.py pasó: 3600 s y los 55 hashes originales correctos.
 - Investigación de fuentes primarias de licencias, compatibilidad, archivos gratuitos y condiciones de crecimiento; enlaces/fecha/límites dentro de los informes. Ninguna incorporación aprobada por desconocimiento.
-- Verificación documental final: git diff --check sin incidencias; 19 enlaces locales comprobados sin roturas; ocho documentos de la fase legibles como UTF-8. De los 55 archivos del manifiesto original, solo difieren los dos documentos actualizados; fixture y esquemas permanecen intactos.
+- Verificación del cierre inicial de la auditoría: git diff --check sin incidencias; 19 enlaces locales comprobados sin roturas; ocho documentos de la fase legibles como UTF-8. De los 55 archivos del manifiesto original, solo diferían los dos documentos actualizados; fixture y esquemas permanecían intactos. Después se añadieron las aclaraciones documentales de la revisión guiada.
+- Inspección complementaria de solo lectura del equipo actual: registro de Windows informa Intel Core i5-1235U; GlobalMemoryStatusEx informa 15,69 GiB de memoria física total visible; EnumDisplayDevicesW informa Intel UHD Graphics como adaptador primario conectado al escritorio. No se instalaron herramientas ni se elevaron permisos. Estos datos no son una medición de rendimiento.
+- Revisión de usabilidad solicitada: fuentes de W3C, Nielsen Norman Group, estudio original de Mehra y colaboradores y resumen oficial ACSM consultados; comparación documental de cinco alternativas. Sin prototipo ni participantes evaluados. Cuatro documentos modificados/añadidos comprobados como UTF-8, 15 enlaces locales sin roturas y git diff --check sin incidencias.
+- Revisión documental del calentamiento (2026-09-25): contraste de cinco IDs con fuentes NHS/AHA/ACE y resumen de metaanálisis; recálculo de 225 s de trabajo + 75 s de descanso. SHA-256 del fixture coincide con el original y conserva draft. No se realizaron pruebas físicas ni revisión por un profesional externo.
+- Ampliación de dirección deportiva (2026-09-25): investigación de fuentes de fútbol, aprendizaje y fuerza con límites de acceso registrados; tabla de pertinencia contrastada automáticamente con los 31 IDs, sin faltantes ni duplicados. Presupuesto propuesto 8/12/10/16/8/6 comprobado: 3600 s. Seis documentos legibles como UTF-8 y 30 enlaces locales comprobados; git diff --check sin incidencias. SHA-256 del fixture original sin cambios, 3600 s y draft. Son comprobaciones documentales, no validación deportiva, pruebas físicas ni de aplicación.
+- Repaso de licencias (2026-09-25): reconsulta de fuentes principales y explicación de obligaciones, variantes gratuitas/pagadas y escenarios de cambio. Tres documentos comprobados como UTF-8, 15 enlaces locales sin roturas y git diff --check sin incidencias. Fixture original intacto y draft. No se instalaron paquetes, descargaron assets ni verificaron sus licencias internas; ese trabajo conserva su estado pendiente.
+- Aclaración específica de Remotion (2026-09-25): consulta de LICENSE v4.0.524, FAQ, términos 4.0/5.0 y documentación de Player, integración 3D, renderer y telemetría. Cinco documentos comprobados como UTF-8, 28 enlaces locales válidos y git diff --check sin incidencias. SHA-256 del fixture original sin cambios y estado draft. Sin instalación, render, prototipo ni medición de dispositivo; no se afirma auditoría de transitivas ni elección de versión.
+- Repaso de reutilización (2026-09-25): reconsulta de fichas Quaternius/Kenney y APIs Three/Rapier; capacidades glTF de Blender contrastadas con contenido indexado oficial 4.2 tras fallo de acceso directo. Tres documentos comprobados como UTF-8, 17 enlaces locales válidos y git diff --check sin incidencias. Fixture original con el mismo SHA-256 y draft. Sin descarga, inspección de ZIP, apertura de modelo ni prueba de movimiento; cobertura real y editabilidad continúan pendientes.
+- Aclaración de demostraciones incorrectas o peligrosas (2026-09-25): contraste con requisitos existentes y documentación de cuerpos cinemáticos de Rapier. Criterios documentados de bloqueo, revisión y corrección, incluidos límites posteriores/offline. Tres documentos comprobados como UTF-8, 17 enlaces locales válidos, git diff --check sin incidencias y fixture original intacto/draft. No se ejecutaron controles de seguridad, pruebas físicas ni revisión deportiva; todavía no hay aplicación ni clips.
+- Precisión sobre corregir el recurso y conservar el ejercicio (2026-09-25): investigación documental de animación en Blender/Three y explicación de aerodinámica de balón de NASA; referencias sin selección/instalación de versiones. Cinco documentos comprobados como UTF-8, 21 enlaces locales válidos, git diff --check sin incidencias y fixture original intacto/draft. Se separan representación, resultado ilustrativo y predicción física. Sin clips, video incorporado, simulación ejecutada ni aprobación deportiva.
+- Repaso de costos futuros (2026-09-25): reconsulta de Garmin, documentación/acuerdo de Polar, licencia de llama.cpp, requisitos de MediaPipe, almacenamiento MDN y CC BY 4.0. Dos documentos comprobados como UTF-8, 20 enlaces locales válidos, git diff --check sin incidencias y fixture original intacto/draft. Tarifa actual y cambio futuro de Polar precisados; video y revisión deportiva añadidos con costos pendientes donde corresponde. Ninguna cuenta, API, descarga, compra o servicio profesional activado.
 
-## Pendientes y bloqueos de fases posteriores
+- Comparación de IA y recorrido del plan (2026-09-26): fuentes primarias de Meshy, Adobe/Mixamo, DeepMotion, Cascadeur, Microsoft/TRELLIS.2 y Runway consultadas. Límites de acceso y discrepancias registrados en el informe; sin auditoría completa de salidas o términos de incorporación. Seis documentos comprobados como UTF-8, 44 enlaces locales válidos, git diff --check sin incidencias y SHA-256 del fixture original intacto/draft. No se midieron calidad ni ahorro, ni se ejecutaron generaciones, cargas, modelos o aplicaciones.
 
-- 0/31 IDs del fixture con definición y recurso incorporado/revisado. Faltan variantes, clips, revisión humana y evidencia del espacio real 2×2.
-- Contratos de transiciones, dosis/repeticiones, lados, revisión, autoridad, recuperación e importación necesitan resolución en fase 01.
-- Versiones exactas y licencias de artefactos/transitivas, hash/licencia interna de assets y capacidad de editar la variante gratuita aún pendientes.
-- Blender no encontrado en PATH ni como ejecutable en su directorio habitual; hay subcarpetas, pero no se confirma instalación utilizable.
-- CIM denegó CPU/RAM/GPU. No se midió rendimiento ni se eligió dispositivo Android.
-- LICENSE MIT preexistente en la raíz Git: aclarar alcance/intención antes de publicar; se conservó intacto.
-- El manifiesto original describe el paquete importado. Los cambios documentales de PROJECT_STATUS.md y REMOTION_LICENSE_REVIEW.md alteran sus hashes; no se actualizó ese manifiesto. Conservar la distinción entre integridad inicial y estado vivo.
+- Aclaración del alcance de revisión deportiva (2026-09-26): contraste con reglas y criterios existentes del proyecto; no nueva evaluación clínica/deportiva. Dos documentos comprobados como UTF-8, 18 enlaces locales válidos, git diff --check sin incidencias y fixture original intacto/draft. Sin contacto con revisores, contratación, cambios de contenido de entrenamiento ni implementación.
 
-No se ejecutaron build, lint, typecheck, E2E, pruebas 3D/offline/de dispositivo ni validación de técnica: no hay aplicación ni assets. No existe evidencia visual de entrenamiento. Estos pendientes no se presentan como pruebas aprobadas.
+- Asignación de revisión al usuario (2026-09-26): cuatro documentos actualizados y comprobados como UTF-8; 34 enlaces locales válidos, git diff --check sin incidencias y fixture original intacto/draft. Solo cambian responsabilidades y alcance documentado; ninguna ficha, animación o dosis queda aprobada por la asignación.
+
+- Balance de cierre documental de 00 (2026-09-26): 16 documentos comprobados como UTF-8 y 73 enlaces locales válidos; git diff --check sin incidencias. Test-Json del fixture devuelve True; recálculo independiente confirma 2475 s de trabajo + 1125 s de descanso = 3600 s, 36 filas, 60 entradas expandidas y 31 IDs. Fixture con SHA-256 original y draft; ambos esquemas parsean. De los 55 archivos del manifiesto, 49 conservan su hash y seis diferencias corresponden únicamente a Markdown; no se reescribió el manifiesto. No se encontraron manifests/lockfiles de aplicación ni GLB/glTF/BLEND. Estas comprobaciones no son pruebas del producto, revisión deportiva ni una nueva consulta de todas las fuentes externas.
+
+## Pendientes posteriores y límites actuales
+
+- Fichas finales y clips incorporados: cero. El catálogo objetivo de doce patrones está conciliado documentalmente; no son doce clips listos ni 31 ejercicios aprobados. Faltan dosis, secuencia detallada, variantes/lados, material dentro de 2×2, revisión de representación y contenido.
+- Contratos de tiempo, lado, revisión, autoridad, recuperación e importación definidos en 01; validadores, tipos, motor y recursos aún por implementar/probar. Los esquemas v1 no validan automáticamente el nuevo contrato.
+- Versiones y dependencias incorporadas en 02 registradas; revisar las futuras por separado. Hashes/licencias internas de assets y editabilidad real siguen pendientes antes de incorporar recursos 3D.
+- Blender desinstalado según el usuario y sin ejecutable localizado. No se reinstaló. Prepararlo antes del primer clip si hace falta, tras concretar versión/licencia/necesidad y obtener permiso específico.
+- Pruebas PC/S24 FE, versión exacta de Chrome móvil, claridad, fluidez, pausa, hora real y offline pendientes. Origen seguro local del teléfono por resolver y comprobar en 08, sin desactivar seguridad ni cambiar configuración global implícitamente.
+- Revisión humana asignada al usuario; no realizada sobre fichas/clips inexistentes ni convertida en revisión profesional por aceptación. El agente conserva investigación y decisiones fundamentadas, sin cuestionario deportivo innecesario ni contratación externa automática.
+- LICENSE MIT preexistente en raíz Git intacto; aclarar alcance antes de publicar. No se publicó, creó commit ni eligió licencia nueva.
+- MANIFEST_SHA256 describe el paquete original, no los documentos vivos. No se reescribió. Los resultados de integridad inicial y los cambios documentales actuales se distinguen.
+- En 02 se ejecutaron build, lint, typecheck y pruebas unitarias/render HTML. E2E interactivo, revisión visual, 3D/offline/dispositivo y evaluación deportiva práctica siguen pendientes. No existe evidencia visual de entrenamiento.
 
 ## Siguiente paso permitido
 
-Detenerse aquí. El usuario puede revisar la fase 00 y solicitar únicamente prompts/01-architecture-review.md, que continúa documental. No hay autorización implícita para ejecutar esa fase ni para implementar o instalar después.
+Entregar la base técnica de 02 y revisar su pantalla cuando haya conexión de navegador o revisión directa del usuario. No pedir otra vez autorización de instalaciones ya cubiertas en 02. No comenzar 03 por esta entrega: esa fase implementará el reloj y estados puros con las dependencias existentes, sin avatar ni Blender, y requiere autorización de su alcance. El permiso actual permite corregir defectos de 02 y completar su revisión visual.
+
+No falta ahora ningún dato personal, equipo o selección técnica del usuario para entregar 01. No repetir preguntas sobre teléfono, computadora, espacio, material o revisión humana ya aclaradas. Fichas y pruebas se prepararán en sus fases; si un dato individual resulta indispensable, explicar su efecto concreto entonces.
+
+## Forma de acompañamiento solicitada por el usuario
+
+- Instrucción más reciente del 2026-09-27: «ya no avancemos paso a paso, avanza lo más que se pueda, documéntalo». Sustituye la revisión guiada obligatoria, no la restricción de instalaciones/código sin autorización.
+- Avanzar autónomamente dentro del alcance autorizado, resolver elecciones rutinarias y comunicar hallazgos/decisiones relevantes en lenguaje accesible. Los documentos conservan el detalle y la evidencia.
+- Detener el trabajo dependiente cuando falte una respuesta indispensable o un permiso nuevo. Antes de preguntar, completar la preparación que ya se puede hacer y agrupar un alcance concreto y revisable. No volver a consultar datos ya confirmados ni solicitar aprobación por cada archivo o dependencia rutinaria del alcance autorizado.
+- Sustentar todas las propuestas en requisitos, evidencia y evaluación de alternativas, conforme al criterio permanente de AGENTS.md; no esperar recordatorios ni basarse solo en popularidad o agrado. Investigar lo que requiere conocimiento especializado, explicar límites y consultar al usuario objetivos/contexto, sin delegarle validación científica. Distinguir evaluación documental, preferencia declarada, prueba observada y revisión profesional.
+- Hacer las comprobaciones de solo lectura ya autorizadas. Cuando una acción requiera autorización nueva, presentar necesidad, alcance, costo/licencia y forma de verificarla antes de pedirla.
+- Mostrar qué quedó verificado, qué continúa supuesto/pendiente y cuál es el siguiente alcance. No ejecutar fases sin autorización ni interpretar una aclaración como permiso de instalación.

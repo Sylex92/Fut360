@@ -4,13 +4,15 @@ Implementa una rebanada de extremo a extremo para un solo ejercicio de 60 segund
 
 Debe incluir:
 - escena 2×2;
-- humanoide libre ya riggeado aprobado para prototipo; primitivas solo como fallback técnico draft;
-- un clip GLB en bucle;
+- humanoide gratuito con licencia compatible, ya riggeado y aprobado para prototipo; primitivas solo como fallback técnico draft;
+- un clip GLB con reproducción cíclica o finita según ficha, sin imponer bucle a toda la ventana;
 - cámara frontal, lateral y 3/4;
 - nombre del ejercicio;
 - cronómetro;
 - pausar/continuar;
 - cambio de cámara sin reiniciar;
+- inspección lenta estando pausado y repetición adicional según contrato del motor;
+- vista previa automática y ampliación +30 s/+1 min con un toque, ejemplo independiente y autoinicio al acabar la cuenta; sin confirmación posterior. Probar Pausar todo y clips finitos con retorno/separación revisados;
 - fallback si falla el asset;
 - prueba de la máquina de estados;
 - prueba E2E del flujo.
@@ -23,6 +25,8 @@ Entrega evidencia visual y lista de limitaciones.
 ## Revisión de alcance
 
 Reutilizar GLTFLoader/AnimationMixer, no hacer reproductor esquelético propio. Registrar licencia del asset concreto. Antes de ampliar a toda la hora, realizar `05-contact-spike.md` y revisar un clip guiado con balón. Los placeholders no cuentan como entrenamiento final.
+
+Usar docs/plans/first-visible-exercise-ready.md: primer candidato hip-hinge, cámara lateral inicial. Los 60 s son un caso técnico declarado, no una dosis continua automática. Resolver ficha/clip/mapping antes de presentar práctica guiada. Preparar Blender aquí solo si resulta necesario y está autorizado; la fase 06 sistematiza el pipeline.
 
 
 ## Cierre de fase

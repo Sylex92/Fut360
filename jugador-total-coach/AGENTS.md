@@ -18,6 +18,7 @@ Construir un producto local-first de entrenamiento de fútbol y fuerza con avata
 - Buscar primero un humanoide ya riggeado y editable, con licencia de contenido compatible y descarga gratuita concreta. Un maniquí de primitivas solo es un fallback técnico temporal, no el entregable final.
 - Reutilizar herramientas de Blender para autoría/retargeting; no construir un editor o un sistema de rigging propio. Adaptar a un rig existente antes de imponer uno nuevo.
 - Priorizar clips guiados revisados en el reproductor. La simulación física libre tiene su propia prueba técnica y no sustituye la técnica del ejercicio.
+- Aclaración del usuario: conservar el objetivo de un ejercicio adecuado y corregir su representación; la dificultad de animarlo o la ausencia de física perfecta no justifican cambiarlo. Reutilizar/adaptar o preparar el clip específico, con detalles, trayectorias o video complementario cuando mejoren la explicación y sus derechos lo permitan. Sustituir un recurso defectuoso no equivale a sustituir el ejercicio. Cambiar el ejercicio requiere una razón de contenido, adecuación o contexto documentada. No prometer representación siempre trivial ni predicción exacta; si la solución sigue incompleta, mantener el contenido pendiente sin declararlo imposible ni rebajar la calidad de enseñanza.
 - Cada objeto tiene una única autoridad de transformación por instante. No animar y resolver físicamente el mismo balón a la vez sin un cambio de estado explícito.
 - Toda licencia desconocida queda pendiente/bloqueada. Mantener registro de origen, archivo, versión/hash, licencia y modificaciones; revisar dependencias transitivas.
 - Empaquetar modelos, WASM, fuentes permitidas y audio para uso local. No depender de CDNs ni de una voz cloud.
@@ -35,6 +36,22 @@ Construir un producto local-first de entrenamiento de fútbol y fuerza con avata
 6. No agregues dependencias de producción sin justificar su necesidad y alternativas.
 7. Nunca declares una tarea terminada si no ejecutaste sus verificaciones.
 8. No generes servicios vacíos “para el futuro”.
+
+## Criterio permanente de evidencia y decisiones
+
+Instrucción del usuario incorporada el 2026-09-25. Aplicar durante todo el proyecto, sin requerir que se repita en cada conversación.
+
+- Las preferencias del usuario orientan objetivos, restricciones y experiencia; su agrado no demuestra superioridad técnica, eficacia ni seguridad. Comparar alternativas y explicar desacuerdos fundamentados, respetando el alcance autorizado.
+- Aplicar este criterio a usabilidad, arquitectura, herramientas, licencias, costos, contenido deportivo y cualquier ampliación de salud, nutrición o aprendizaje. Investigar con profundidad proporcional al impacto; no convertir decisiones triviales en una auditoría interminable.
+- Antes de recomendar, distinguir qué se pretende mejorar, qué evidencia lo respalda, a quién y en qué condiciones aplica, qué incertidumbre queda y cómo se comprobará. Preferir fuentes primarias y síntesis científicas pertinentes; no elegir por popularidad, una explicación plausible o una cita aislada. La ausencia de evidencia no prueba eficacia ni ineficacia.
+- Mantener explícitos verificado, supuesto/propuesto y pendiente. Una preferencia declarada, un documento preparado, una evaluación del agente, una prueba observada y una revisión profesional son evidencias diferentes.
+- El agente debe investigar y formular una recomendación razonada; no trasladar al usuario la responsabilidad de validar afirmaciones científicas o decidir dosis por falta de conocimiento especializado. Preguntar por objetivos, contexto y restricciones solo cuando cambien la decisión.
+- El usuario delega expresamente las decisiones técnicas y deportivas: elegir y fundamentar ejercicios, variantes, secuencias y criterios de progresión dentro del alcance autorizado, sin pedirle que escoja entre métodos especializados. Desde el 2026-09-27 solicita avanzar autónomamente todo lo posible, documentando decisiones y resultados; sustituye la revisión paso a paso obligatoria. No bloquear la investigación documental por un cuestionario personal; tampoco inventar edad, condición física o antecedentes. Si un dato individual resulta indispensable para una decisión de salud posterior, explicar su efecto concreto y limitar la consulta a ese dato.
+- Los perfiles Bellingham/Firmino se traducen a capacidades observables, no a imitación de cargas de élite o promesa de carrera profesional. Distinguir fundamentos practicables en casa de táctica, oposición y demandas físicas que requieren campo; justificar la transferencia en vez de asumirla. Consultar fuentes públicas pertinentes no implica haber leído currículos privados de academias ni autoriza incorporar su contenido protegido.
+- En ejercicio y salud, separar información educativa general de valoración o prescripción individual. No diagnosticar ni presentar investigación documental como sustituto de revisión por el profesional competente. Una propuesta de ejercicio y su animación conservan draft hasta la revisión exigida; no atribuir revisión profesional a una aprobación del usuario.
+- Separar facilidad de uso, técnica del movimiento, adecuación de la dosis y aprendizaje. No inferir retención, transferencia al fútbol o automatización porque el usuario siga una animación o termine la sesión; no prometer aprendizaje acelerado, resultados fisiológicos ni plazos sin evidencia aplicable.
+- Si la evidencia contradice una propuesta anterior, explicar el motivo, corregir los documentos y probar lo que corresponda antes de declararlo validado. Informar avances relevantes sin pedir confirmación de cada decisión técnica rutinaria.
+- Este criterio no amplía el MVP1, no autoriza fases posteriores ni añade consultas, servicios, compras o tratamientos. Registrar necesidades de revisión pendientes y sus posibles costos antes de comprometer una vía de ejecución.
 
 ## Reglas de arquitectura
 
@@ -108,7 +125,9 @@ Construir un producto local-first de entrenamiento de fútbol y fuerza con avata
 
 
 ## Continuidad y autorizaciones
-- Ejecutar una fase por mensaje; no pasar automáticamente a la siguiente.
+- Tras completar el repaso manual de 02, el usuario restablece el avance normal/autónomo: «ya podemos avanzar con normalidad, solo interrumpir con preguntas muy necesarias por favor». Queda superada la revisión obligatoria de un pendiente por mensaje. Completar el trabajo autorizado, incluido el punto de control local propuesto, y preguntar únicamente ante información indispensable o una ampliación no autorizada del alcance.
+- En el flujo de entrenamiento, priorizar avance y demostración previa automáticos con mínima interacción. Si falta preparación, +30 s/+1 min deben añadir tiempo con un toque y mantener autoinicio, sin exigir después «Estoy listo». Pausar todo sigue disponible como interrupción indefinida explícita. Esta corrección del usuario sustituye la propuesta de preparación con espera manual; su comprensión y suficiencia se prueban, no se presumen.
+- Completar autónomamente todo el alcance autorizado; no exigir un mensaje por paso o decisión rutinaria. La instrucción de avanzar del 2026-09-27 cambia el acompañamiento, pero no levanta por sí sola la restricción expresa de no implementar ni instalar. Detenerse únicamente ante una decisión indispensable, un cambio de alcance o permiso nuevo; agrupar el siguiente alcance concreto para evitar autorizaciones repetidas. No iniciar fases no autorizadas.
 - Al cerrar la fase, actualizar PROJECT_STATUS.md con archivos, pruebas realmente ejecutadas, pendientes y siguiente paso.
 - No atribuir a Codex acceso automático a conversaciones o memorias de ChatGPT: el repositorio es la fuente de contexto.
 - No instalar herramientas globales, cambiar políticas de PowerShell, desactivar antivirus, publicar o subir archivos sin autorización específica.

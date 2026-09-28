@@ -1,0 +1,12 @@
+{
+  "name": "@fut360/coach-pwa",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "@fut360/domain": "workspace:*",
+    "@fut360/exercise-catalog": "workspace:*",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

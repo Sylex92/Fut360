@@ -2,8 +2,8 @@
 
 Solo ejecutar después de aceptar la rebanada vertical, el motor y el pipeline.
 
-1. Importa `content/examples/mvp1-60min.workout.json`.
-2. Crea el catálogo de ejercicios requerido.
+1. Conserva `content/examples/mvp1-60min.workout.json` como regresión v1. Compila una versión nueva de entrenamiento según docs/training/MVP1_60_MIN_SESSION.md, con dosis/fichas revisadas, referencias resueltas y suma 3600 s; no renombres los 31 IDs del fixture para fingir migración.
+2. Completa el catálogo de doce patrones con las variantes/combinaciones exigidas por la sesión, conforme a docs/training/EXERCISE_CATALOG_SCOPE.md. Doce patrones no equivalen a doce clips suficientes.
 3. Para assets aún no producidos usa fallback visual explícito, nunca silencio.
 4. Implementa:
    - timeline por bloques;

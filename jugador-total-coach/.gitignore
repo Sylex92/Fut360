@@ -15,5 +15,7 @@ outputs/
 assets/downloads/
 data/private/
 .local/
+.cache/
+*.tsbuildinfo
 .DS_Store
 Thumbs.db

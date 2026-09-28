@@ -1,77 +1,20 @@
-# Extensibilidad sin sobreconstrucción
+# Extensibilidad sin módulos vacíos
 
-## Wearables
+Actualización de arquitectura: 2026-09-27. [Árbol y dependencias vigentes](ARCHITECTURE.md).
 
-Preparar `MetricSample` y `WearableAdapter`, pero no implementar proveedores en MVP1.
+El MVP1 conserva datos versionados, eventos locales y límites entre dominio, catálogo, motor, visor y almacenamiento. Eso permite ampliar el producto sin anticipar proveedores. No crear MetricSample, WearableAdapter, integraciones, telemetry, API, Authoring Studio ni Render Worker vacíos.
 
-Ejemplos de métricas futuras:
+| Ampliación futura | Límite que se conserva ahora | Trabajo que espera su fase |
+|---|---|---|
+| Sesiones de 30/90 minutos y catálogo mayor | Duración declarada y plan inmutable | Nuevos contenidos, revisión de dosis y pruebas; no generador actual |
+| Estadísticas | Eventos de reproducción y feedback opcional | Vistas sin inferir técnica, calorías o rendimiento medidos |
+| Wearables | Dominio sin tipos de proveedores | Definir modelo canónico y conectores al concretar una métrica, costo/derechos y privacidad |
+| Sincronización/social | Archivo portable, privado por defecto | Consentimiento, backend si hace falta, cuotas, borrado y seguridad |
+| Escenas de partido | Ficha puede explicar transferencia y límites | Módulo táctico con oposición/contexto; no llamar táctica a una coreografía doméstica |
+| IA/cámara | Contenido y manifiestos independientes de un generador | Evaluar modelo/pesos/salida, equipo, corrección y costos por caso |
+| Video | Datos/assets reutilizables según derechos | Evaluar Remotion/exportador; no requiere backend por definición |
+| TV | UI separada del dominio | Navegador/método de visualización, controles, legibilidad y pruebas del dispositivo |
 
-- frecuencia cardiaca;
-- pasos;
-- energía activa;
-- sueño;
-- HRV;
-- carga estimada;
-- GPS.
+Backend solo por necesidad demostrada; renderizar video local no es por sí solo una razón para un servicio. Aplicar [revisión de costo](../product/FEATURE_COST_REVIEW.md) y [matriz futura](../reviews/feature-cost-matrix.md) en cada ampliación. Software gratuito no abierto es admisible; cuotas, equipo, contexto comercial, APIs y derechos pueden cambiar el costo. Sustituir un proveedor puede requerir trabajo; no garantizar gratuidad ilimitada ni equivalencia automática.
 
-## Estadísticas
-
-Los eventos de entrenamiento permiten construir vistas:
-
-- consistencia;
-- minutos;
-- RPE;
-- carga interna;
-- ejercicios completados;
-- evolución de dolor/inseguridad;
-- precisión técnica declarada;
-- rendimiento en partidos.
-
-## Redes sociales
-
-El dominio futuro debe separar:
-
-- dato privado;
-- resumen compartible;
-- consentimiento;
-- audiencia;
-- eliminación.
-
-Privado por defecto.
-
-## Escenas de partido
-
-No son una variante visual del entrenamiento. Son un módulo distinto:
-
-```text
-TransferScenario
-- format: fut5 | fut7 | fut11
-- phase: attack | defense | transition
-- role
-- initialPositions
-- trigger
-- playerPaths
-- ballPath
-- decisionOptions
-- desiredOutcome
-```
-
-Un ejercicio puede referenciar uno o más `TransferScenario`, pero el reproductor de ejercicios no debe depender del simulador táctico.
-
-## Crecimiento
-
-Añadir backend solo cuando exista una necesidad real:
-
-- sincronizar dispositivos;
-- cuentas;
-- entrenador remoto;
-- equipos;
-- compartir;
-- procesamiento asíncrono;
-- render MP4.
-
-Hasta entonces, mantener la aplicación local-first.
-
-## Crecimiento funcional sin dependencia económica obligatoria
-
-Aplicar FEATURE_COST_REVIEW.md antes de cada integración. Ejercicios, horarios, estadísticas locales y escenas propias se diseñan sin módulos premium obligatorios. Para wearable/social/IA separar conectores de proveedores y mantener importación/exportación o modo manual cuando cubra la necesidad. No dar por hecho que una API específica es gratis. No construir todos los adaptadores ni garantizar que una sustitución será automática o sin trabajo.
+No se implementa ninguna ampliación por documentarla.

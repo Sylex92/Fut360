@@ -1,0 +1,9 @@
+{
+  "name": "fut360-local-tooling",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Gestor fijado para desarrollo local, sin instalación global",
+  "dependencies": {
+    "pnpm": "11.19.0"
+  }
+}

@@ -1,8 +1,62 @@
 # Auditoría de reutilización — fase 00
 
-Fecha: 2026-09-24. Resultado: hay candidatos concretos para avatar, clips generales, props y motores. **No hay aún cobertura demostrada de los 31 ejercicios del fixture.** No se descargó ni abrió ningún modelo.
+Auditoría inicial: 2026-09-24. Repaso guiado y comprobación complementaria: 2026-09-25. Resultado: hay candidatos concretos para avatar, clips generales, props y motores. **No hay aún cobertura demostrada de los 31 ejercicios del fixture.** La propuesta posterior de doce patrones tampoco acredita clips existentes ni sustituye todavía ese fixture. No se descargó ni abrió ningún modelo.
 
 Verificado significa evidencia de la ficha o documentación consultada. Supuesto significa adecuación propuesta. Pendiente significa inspección o prueba necesaria. Oferta de un archivo gratuito y validación de su contenido son verificaciones distintas.
+
+## Recorrido guiado: qué aprovecharemos y qué falta producir
+
+**Recomendación:** evaluar primero un personaje Standard de Quaternius, aprovechar su esqueleto y los movimientos compatibles que realmente sirvan, y usar Blender para la adaptación necesaria. Conservar Three/Fiber para mostrar el resultado y Rapier para la prueba física separada. La principal incertidumbre de reutilización es la cobertura y calidad de los gestos deportivos; la existencia de un pack no la resuelve.
+
+### 1. Personaje, esqueleto y movimiento
+
+El **modelo o malla** es la superficie visible. El **rig** prepara su movimiento mediante un esqueleto digital; puede incluir controles que no viajan en el archivo exportado. Un **clip** es una secuencia concreta: disponer de personaje y rig no demuestra que exista la bisagra de cadera o el control con la planta que necesitamos.
+
+El candidato sigue siendo [Universal Base Characters Standard](https://quaternius.itch.io/universal-base-characters), separado de Source. La [ficha técnica](https://quaternius.com/packs/universalbasecharacters.html) anuncia rig humanoide, glTF y compatibilidad con su biblioteca de animaciones; los `.blend` riggeados corresponden a Source. Esto justifica examinar juntos ambos recursos, pero no demuestra que las variantes gratuitas encajen sin ajustes.
+
+**Criterio propuesto:** avatar genérico con proporciones y ropa que permitan distinguir apoyos, rodillas, cadera y tronco. Preferir Regular si está incluida y cumple esos criterios. Nombre interno, huesos de pie/dedos y editabilidad del gratuito siguen pendientes. No elegir por apariencia promocional ni comprar Source para resolver una carencia sin comparar alternativas.
+
+### 2. Biblioteca de movimientos
+
+La [Universal Animation Library](https://quaternius.itch.io/universal-animation-library) publica Standard separado de Pro/Source y anuncia movimientos generales. No se ha comprobado un clip gratuito exacto de hip-hinge o inside-inside. Un desplazamiento puede servir de base, pero no acredita una demostración de fútbol o fuerza.
+
+Para cada gesto: buscar e inspeccionar; reutilizar si coincide; adaptar si conserva una base útil; crear únicamente el movimiento faltante sobre el rig existente cuando la carencia esté documentada. Autoría específica no significa fabricar motor, esqueleto o editor. Cambiar velocidad o reflejar izquierda/derecha tampoco valida automáticamente otra variante deportiva.
+
+### 3. Función de Blender
+
+Blender se usaría en la computadora de preparación para importar el personaje, examinar articulaciones, adaptar movimientos, revisar contactos y exportar. La aplicación reproduciría el resultado sin necesitar Blender abierto. Su reinstalación sigue pendiente hasta la fase que lo necesite; no se ejecuta ahora.
+
+**Verificado documentalmente:** el [manual glTF de Blender 4.2](https://docs.blender.org/manual/en/4.2/addons/import_export/scene_gltf2.html), recuperado mediante contenido indexado oficial, documenta mallas, materiales, animación y skinning, además de muestreo/exportación del movimiento. Acredita capacidades, no elige esa versión para instalar.
+
+**Pendiente:** un GLB importado puede conservar los huesos que deforman el cuerpo sin recuperar todos los controles del `.blend` original. Debe comprobarse que basta para adaptar poses. Transferir una animación entre esqueletos —retargeting— puede requerir mapa de huesos y corrección de apoyos/proporciones. No se ha elegido un complemento ni se promete transferencia automática. Las ayudas de pose se reutilizarán de herramientas existentes y su resultado deberá exportarse a una animación reproducible.
+
+### 4. Enseñanza y contactos
+
+[AnimationMixer de Three.js](https://threejs.org/docs/pages/AnimationMixer.html) reproduce clips y permite evaluar un tiempo concreto. Nuestra parte coordina trabajo, descanso, pausa, lado e instrucciones; no se escribirá un motor de animación. Remotion Player conserva su estado de alternativa en la [revisión específica](../research/REMOTION_LICENSE_REVIEW.md).
+
+En la demostración, cuerpo y balón seguirían una secuencia revisada y sincronizada. En el laboratorio separado, [Rapier](https://rapier.rs/docs/user_guides/javascript/rigid_bodies/) aporta cuerpos dinámicos/cinemáticos para probar contactos. Un rebote calculado no determina si el ejercicio está bien enseñado. Clip y física no controlarán simultáneamente el mismo balón.
+
+**Aclaración solicitada por el usuario:** esta separación no permite mostrar gestos incorrectos, imposibles o peligrosos como entrenamiento. Rapier documenta que una trayectoria cinemática es impuesta por la aplicación y puede atravesar obstáculos; su cálculo no valida por sí mismo al humanoide. Una demostración defectuosa se bloquea mientras se corrige, conservando el objetivo del ejercicio adecuado. Sustituir el clip defectuoso no equivale a cambiar el ejercicio; una dificultad gráfica no basta para retirarlo. Se podrán proponer detalles, trayectorias o video complementario para explicar el resultado, con recursos revisados y sin exigir física perfecta. Véanse [gesto, resultado y simulación](../3d/PHYSICS_AND_ANIMATION.md) y el [criterio de aceptación](../quality/ACCEPTANCE_OSS_PHYSICS.md). Son requisitos documentales, sin implementación ni detección automática del movimiento del usuario.
+
+### 5. Objetos y escena
+
+[Furniture Kit de Kenney](https://kenney.nl/assets/furniture-kit) sigue como candidato de silla: ficha con esa categoría y descarga sin donación; silla concreta sin inspeccionar. Para suelo, límite de 2×2, balón neutro y tapete se proponen formas básicas existentes del motor. La banda se representará en los ejercicios que la utilicen, sin necesitar una simulación de sus propiedades materiales para la demostración guiada.
+
+Medidas y colocación deben representar el espacio ocupado. Una silla visible no acredita el apoyo previsto; un balón que atraviesa el pie impide considerar listo ese clip. Simplificar decoración no reduce la exigencia de claridad del movimiento.
+
+### 6. Comprobación antes de ampliar
+
+Primer hito propuesto: avatar y demostración breve de bisagra de cadera, sin balón ni apoyo, para examinar importación, articulaciones, encuadre y pausa. No es una rutina aprobada. Revisar de frente, de lado y en tres cuartos a velocidad normal; el modo lento complementa la inspección.
+
+Después, inside-inside examinaría coordinación pie-balón y glute-bridge la claridad en el suelo. Son casos complementarios propuestos, no clips ya encontrados. Solo después de comprobar esta preparación y conciliar el catálogo corresponde producir muchos gestos. Registrar origen, licencia, hash, modificaciones y estados separados de revisión técnica y deportiva.
+
+No falta una elección especializada del usuario para continuar 00. Las pruebas de archivos/ejecución corresponden a fases posteriores autorizadas. La [dirección deportiva recomendada](training-design-recommendation.md) debe conciliarse con el contrato vigente antes de convertir los 31 IDs originales en una lista de producción.
+
+## IA como ayuda de producción — ampliación 2026-09-26
+
+La [comparación específica](ai-production-tools-review.md) incorpora generación 3D, auto-rigging, captura desde video, asistencia a poses/física y video generativo. No se habían contrastado con suficiente detalle en la propuesta previa. Mantener la base local no excluye preparar recursos con IA: evaluar una ruta asistida pertinente si falta un clip, contabilizando también correcciones e integración. El ahorro y la calidad no están medidos; no se cambia el ejercicio adecuado para acomodar un resultado defectuoso.
+
+Meshy y DeepMotion quedan como candidatos auxiliares con límites y términos pendientes; Mixamo conserva su papel alternativo y exige revisar restricciones IA. Cascadeur Free no acredita exportación útil para este flujo y TRELLIS.2 no cuenta con hardware requerido acreditado en este equipo. Ninguna opción es una dependencia nueva aprobada. No se han producido ni inspeccionado salidas.
 
 ## Inventario de recursos concretos
 
@@ -33,7 +87,7 @@ Los archivos Standard están diferenciados públicamente de los archivos con pre
 | Persistencia | IndexedDB y exportación JSON | Adaptador pequeño; no backend preventivo. |
 | Futuro MP4 | Exportador existente elegible | Composición mínima separada; no construir un compositor completo por evitar revisar licencias. |
 
-Las licencias y versiones pendientes están en [license-audit.md](license-audit.md). El manual glTF de Blender no pudo recuperarse por la herramienta web en esta consulta; la compatibilidad exacta del exportador/addons se verificará con la versión elegida. No se considera aprobado un plugin por pertenecer al ecosistema Blender.
+Las licencias y versiones pendientes están en [license-audit.md](license-audit.md). El 2026-09-25 se reconsultaron fichas de Base Characters, Universal Animation Library y Kenney, y APIs de Three/Rapier. El acceso directo al manual glTF de Blender volvió a fallar con HTTP 402; se recuperó contenido indexado oficial 4.2. Ese fallo no indica una tarifa de Blender. La compatibilidad exacta del exportador/opciones/complementos se verificará con la versión elegida; no se aprueba un plugin por pertenecer al ecosistema Blender. MakeHuman/MPFB, Mixamo y Ultimate Animated Character Pack conservan la evidencia anterior; no se afirma una nueva inspección de sus archivos.
 
 ## Cobertura real del fixture
 
@@ -58,10 +112,11 @@ Antes de crear un gesto, registrar: problema, candidatos y clips inspeccionados,
 
 ## Recomendación de orden, no selección definitiva
 
-1. Evaluar Base Characters Standard y animación hip-hinge.
-2. Probar 60 s y después 5 min con el catálogo efectivamente disponible.
-3. Comparar inside-inside guiado con laboratorio Rapier aislado.
-4. Completar pipeline inicial con glute-bridge y después cerrar los 31 IDs/variantes.
-5. Si falla rig, licencia o claridad, evaluar el segundo candidato antes de modelar/riggear desde cero.
+1. Conciliar la propuesta de doce patrones con el catálogo/fixture vigente antes de autoría extensa; no modificar la rutina durante este repaso.
+2. Evaluar Base Characters Standard y buscar/inspeccionar una base para hip-hinge; no presuponer que el pack la contiene. Preparar Blender antes de adaptar el primer clip si hace falta, incluso para el hito de fase 04.
+3. Probar 60 s y después 5 min con el catálogo efectivamente disponible.
+4. Comparar inside-inside guiado con laboratorio Rapier aislado.
+5. Completar la preparación inicial con glute-bridge y después ampliar al catálogo conciliado. Los 31 IDs describen el fixture original, no una obligación de producir gestos descartados ni una cobertura aprobada.
+6. Si falla rig, licencia o claridad, evaluar el segundo candidato antes de modelar/riggear desde cero.
 
 Supuesto principal: el exportado gratuito conserva suficiente editabilidad. Si no se cumple, esa ruta se descarta sin comprar Source ni dar por terminado el MVP con un maniquí.

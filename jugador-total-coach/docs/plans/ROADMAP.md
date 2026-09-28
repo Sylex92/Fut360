@@ -1,6 +1,6 @@
 # Orden de ejecución
 
-Una fase por mensaje. No ejecutar todos los prompts seguidos. Leer PROJECT_STATUS.md para continuar.
+Completar el alcance autorizado sin pedir un mensaje por paso. El usuario solicitó avance autónomo el 2026-09-27; no ejecutar fases todavía no autorizadas. Leer PROJECT_STATUS.md para continuar.
 
 | Fase | Prompt | Entrega y condición de avance |
 |---|---|---|
@@ -16,6 +16,10 @@ Una fase por mensaje. No ejecutar todos los prompts seguidos. Leer PROJECT_STATU
 | 09 | prompts/09-final-review.md | Matriz requisito/evidencia; ninguna funcionalidad nueva. |
 
 El exportador MP4, una variante de 30 minutos, planificador dinámico, skills, MCP, wearables y escenas de partido se priorizan después del MVP1. No crear módulos vacíos para ellos.
+
+Consolidación 01 del 2026-09-27: árbol/contratos en [arquitectura](../architecture/ARCHITECTURE.md) y requisitos del primer gesto en [Definition of Ready](first-visible-exercise-ready.md). El fixture de 31 IDs conserva valor de prueba; 06/07 producen el [catálogo conciliado](../training/EXERCISE_CATALOG_SCOPE.md) y una nueva versión de la hora. Los prompts 02–07 se armonizaron documentalmente, sin ejecutarlos ni autorizarlos.
+
+El [alcance concreto de 02](phase02-ready.md) incluye versiones candidatas consultadas, instalación restringida al proyecto y verificaciones. Prepararlo no ejecuta ese prompt ni autoriza sus descargas.
 
 ## Instalar por necesidad
 Fase documental: aplicación con Codex, acceso a carpeta y Git recomendado. No instalar motores ni Blender todavía.

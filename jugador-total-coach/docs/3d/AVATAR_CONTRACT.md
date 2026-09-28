@@ -13,7 +13,7 @@
 - unidad: metro;
 - altura de referencia: configurable;
 - Y es vertical en runtime;
-- orientación frontal elegida y normalizada por el exportador;
+- orientación frontal normalizada a +Z; derecha anatómica del avatar en pose inicial hacia −X (cámara frontal mira hacia −Z);
 - origen del ejercicio en el centro del cuadrado 2×2.
 
 ## Esqueleto existente + mapa semántico
@@ -32,6 +32,8 @@ Adoptar primero un rig existente. Documentar un mapping estable, sin recrear el 
 - feet;
 - toes.
 
+Cada mapping registra rigId/versión/hash, nombre real de nodo por función, jerarquía, pose de referencia, escala/orientación y correcciones aplicadas. Si falta un hueso, justificar su equivalencia o declarar incompatibilidad para el gesto; no inventar que hay toes ni rehacer el rig automáticamente. No cambiar alturas/proporciones por clip para ocultar deslizamientos.
+
 ## Clips
 
 Convención:
@@ -44,8 +46,8 @@ Ejemplos:
 
 ```text
 EX_hip-hinge__neutral__v1
-EX_split-squat__right__v1
-EX_inside-touches__neutral__v1
+EX_inside-outside__right__v1
+EX_inside-inside__alternating__v1
 ```
 
 ## Propiedades obligatorias
@@ -61,6 +63,8 @@ EX_inside-touches__neutral__v1
 - supportedSides;
 - reviewStatus.
 
+Los ejemplos son nombres propuestos, no archivos existentes. El [contrato de dominio de fase 01](../architecture/DOMAIN_MODEL.md) precisa variantes, lados, manifiestos, hashes/licencias, autoridad y revisión. durationSeconds del recurso se normaliza a durationMs del contrato; fps indica autoría, no velocidad independiente del reloj. El nombre del clip dentro del GLB debe coincidir exactamente con su manifiesto.
+
 ## Cámaras
 
 - front;
@@ -68,6 +72,8 @@ EX_inside-touches__neutral__v1
 - threeQuarter.
 
 El cambio de cámara no debe alterar el estado de animación.
+
+El primer hip-hinge propone cámara lateral para observar el patrón; las otras siguen accesibles. El resto inicia en 3/4 salvo justificación de ficha. La etiqueta izquierda/derecha siempre nombra el lado del practicante, no el lado de la pantalla.
 
 ## Ball mastery
 

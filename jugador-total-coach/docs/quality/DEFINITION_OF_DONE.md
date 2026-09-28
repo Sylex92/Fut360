@@ -1,5 +1,7 @@
 # Definition of Done
 
+Aplicar los controles a la entrega de la fase: en 00/01, sin aplicación ni assets, lint/typecheck/build/E2E y pruebas visuales no aplican y deben registrarse como no ejecutados, nunca como aprobados. La entrega documental requiere revisión de coherencia, referencias, cálculos, alcance y estado actualizado. Un commit no sustituye esas comprobaciones; si no se crea, declararlo pendiente y no afirmar cierre de integración Git. Esta precisión no rebaja la aceptación del producto de entrenamiento ni autoriza fases nuevas.
+
 Una fase está terminada cuando:
 
 - satisface criterios de aceptación;

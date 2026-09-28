@@ -1,15 +1,15 @@
 # Matriz de reutilización
 
-Decisiones iniciales, sujetas a validar versiones y archivos concretos. No es un inventario de dependencias ya instaladas.
+Decisiones iniciales, sujetas a validar versiones y archivos concretos. No es un inventario de dependencias ya instaladas. Repaso documental del 2026-09-25: véase la [auditoría de reutilización](../reviews/reuse-audit.md), con criterios de elección, límites de edición y recorrido del primer gesto.
 
 | Necesidad | Reutilizar | Trabajo propio permitido |
 |---|---|---|
 | Interfaz | React + Vite + TypeScript | Pantallas, accesibilidad, flujo de entrenamiento |
 | Render 3D | Three.js + React Three Fiber | Escena, cámaras y adaptación de assets |
-| Reproducción | AnimationMixer / clips GLB | Coordinar tiempo, lado, cues y pausas |
+| Reproducción | AnimationMixer / clips GLB como base; Remotion Player como alternativa no adoptada, evaluada en la [revisión específica](../research/REMOTION_LICENSE_REVIEW.md) | Coordinar tiempo, lado, cues y pausas; una única autoridad temporal |
 | Física | Rapier + react-three-rapier | Configurar colliders, materiales, eventos, snapshots |
 | Avatar | Humanoide riggeado gratuito CC0/compatible | Ropa simple, escala, importación y mapa de huesos |
-| Rig y animación | Blender, herramientas existentes de retarget/IK | Adaptar gestos específicos no disponibles |
+| Rig y animación | Blender y rig existente; ayudas de retarget/IK auditadas si hacen falta, sin complemento elegido | Adaptar gestos específicos no disponibles; comprobar controles conservados al importar y resultado exportado |
 | Entorno/props | Assets CC0; primitivas de Three.js cuando sean más simples | Delimitar 2×2 y colocar recursos sin estorbar |
 | Datos | IndexedDB; evaluar wrapper gratuito compatible solo si reduce trabajo | Modelo de sesión y adaptador pequeño |
 | Tests | Vitest/Playwright, tras revisión de licencias y versión | Casos de tiempo, claridad, offline y contacto |
@@ -26,8 +26,35 @@ No crear un motor de animación, física o rigging. Sí crear el dominio de entr
 
 Antes de elegir avatar, documentar acceso gratuito, malla editable/importable, huesos, pies/toes, exportación GLB, restricciones, tamaño y prueba de un clip. No forzar un rig nuevo si basta un mapa de huesos.
 
+Estado del 2026-09-25: ningún archivo descargado ni clip aprobado. La compatibilidad anunciada entre packs no demuestra cobertura deportiva ni transferencia sin ajustes. Conciliar primero la propuesta de doce patrones con los 31 IDs del fixture antes de producir el catálogo completo. Empezar con hip-hinge como prueba de claridad propuesta; la preparación mínima en Blender puede ser necesaria antes del primer ejercicio de fase 04 y no debe aplazarse artificialmente hasta 06.
+
 ## Registro obligatorio para crear algo propio
 
 Problema concreto / componentes evaluados / carencia verificada / adaptación descartada y motivo / mínima pieza nueva / pruebas.
 
 Fuentes: S01–S17 en `docs/research/SOURCES.md`.
+
+## Consolidación de módulos propios — fase 01
+
+Fecha: 2026-09-27. Árbol normativo en [ARCHITECTURE](ARCHITECTURE.md). Son piezas previstas, ninguna implementada. Las carencias siguientes se deducen de las responsabilidades documentadas de las bibliotecas; no se ha comparado rendimiento ni probado una integración. Registrar nuevas evidencias al construir.
+
+| Pieza mínima | Reutilizar/adaptar primero | Carencia concreta y límite de lo propio | Comprobación futura |
+|---|---|---|---|
+| domain | Tipos y JSON Schema; formatos existentes | Reglas específicas de ejercicios, dosis, lados, evidencias y sesiones; ningún motor 3D define esas políticas del producto | Contratos, sumas y referencias; sin imports de plataforma |
+| exercise-catalog | Validador JSON Schema auditado, GLB/glTF estándar | Resolver versiones y referencias, expandir rondas/lados y calcular segmentos; schema valida estructura, no aprobación deportiva | Errores por ruta/ID, duración exacta y cobertura por variante |
+| session-engine | Tiempo monotónico mediante adaptador; bibliotecas de animación para reproducir | Política propia de pausa/extras/omisiones, estados y eventos. Reductor pequeño sin framework nuevo; evaluar una librería solo si reduce complejidad demostrada | Reloj inyectable, fronteras, duplicados y huecos |
+| viewer-3d | Three/Fiber, loaders y AnimationMixer | Escena, evaluación por cursor, cámaras y mapping. No crear loader, mixer, solver IK ni editor | Gesto real, escala, contactos, pausa/inspección y dispositivos |
+| physics-lab | Rapier/react-three-rapier y colliders existentes | Configuración de suelo/pie/bola, debug y reinicio; no física propia | Paso fijo, tolerancias, contactos y autoridad única |
+| persistence | IndexedDB; wrapper únicamente si simplifica transacciones | Eventos/checkpoint, archivo e historial; no base de datos o sincronizador propio | Recarga, concurrencia, importación y borrado |
+| apps/coach-pwa | React/Vite, APIs y ayuda PWA auditada cuando corresponda | Pantallas, accesibilidad, composición, audio y adaptación de tiempo/visibilidad; no framework de plugins propio | Diagnóstico, comprensión, E2E y offline |
+| Herramientas de autoría/validación | Blender/exportador/retarget y validador glTF existentes | Configuración, manifiestos y comprobaciones específicas. Script solo ante trabajo repetitivo identificado | Trazabilidad y cobertura; sin recrear rig/exportador |
+
+Avatar y escena se agrupan en viewer-3d porque no tienen consumidores independientes en MVP1. Esquemas en content/schemas, sin paquete duplicado. No crear módulos vacíos de estadísticas, telemetría, wearables o exportación.
+
+Remotion Player quedó evaluado y no adoptado para MVP1: comparte la necesidad de dominio y Three, añade sincronización por frames sin ahorro demostrado en este alcance. Es revisable, no una descalificación técnica/licenciataria; [ADR 0006](adr/0006-rapier-and-guided-clips.md). Exportación conserva evaluación posterior. No construir para evitarlo un compositor propio.
+
+El [catálogo conciliado](../training/EXERCISE_CATALOG_SCOPE.md) distingue doce patrones objetivo de 31 IDs históricos. Cobertura de recursos sigue en cero. Asistencia IA se añade solo por carencia concreta según [herramientas de producción](../reviews/ai-production-tools-review.md), sin asumir que elimina corrección ni costos.
+
+## Evidencia de fase 02 — 2026-09-28
+
+Implementados solo domain (tipos v1/aritmética), exercise-catalog (Ajv 2020-12 y reglas semánticas) y app (React/Vite). No se escribió un validador de JSON Schema ni un framework de estado. La suma y errores específicos del proyecto se probaron con 24 casos junto con el render de diagnóstico. Versiones/licencias y límites de evidencia: [informe de 02](../reviews/phase02-bootstrap-review.md). Los demás módulos de la tabla siguen previstos, no implementados.
