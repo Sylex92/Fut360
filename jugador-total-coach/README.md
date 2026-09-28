@@ -2,7 +2,7 @@
 
 Actualizado: 2026-09-28. Fase 02 implementada: base web local con diagnóstico del archivo de sesión. Todavía no es un entrenador ejecutable con avatar.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00 y 01 aceptadas; 02 autorizada e implementada con verificaciones técnicas, recorrido manual básico y captura revisada. Integración Git pendiente; 03 no autorizada. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00 y 01 aceptadas; 02 implementada y guardada en el punto de control local 7ea6b02, con verificaciones técnicas, recorrido manual básico y captura revisada. 03 no autorizada. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
 
 ## Ejecutar la base
 
@@ -14,7 +14,7 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. [Preparación reproducible y comandos](docs/setup/LOCAL_DEVELOPMENT.md), [resultado de fase 02](docs/reviews/phase02-bootstrap-review.md) y [dependencias/licencias](docs/reviews/phase02-dependencies.md).
 
-24 pruebas, lint, tipos y build correctos. Render HTML y HTTP verificados. El usuario confirmó resultado/contador del botón, apertura/cierre del desplegable y uso por teclado de ambos; no observó problemas al reducir el ancho ni errores en consola durante el recorrido. [Captura aportada por el usuario](docs/reviews/evidence/phase02-diagnostic-user.png) conservada e inspeccionada sin incidencias en la zona visible. El conector de navegador del agente sigue sin conectar: la interacción y consola se sustentan en el reporte manual, y la imagen en inspección directa. Integración Git pendiente; pruebas móviles para sus fases y sin certificación integral de accesibilidad. El usuario restableció el avance autónomo tras el repaso manual; consultar únicamente decisiones indispensables o ampliaciones de alcance.
+24 pruebas, lint, tipos y build correctos. Render HTML y HTTP verificados. El usuario confirmó resultado/contador del botón, apertura/cierre del desplegable y uso por teclado de ambos; no observó problemas al reducir el ancho ni errores en consola durante el recorrido. [Captura aportada por el usuario](docs/reviews/evidence/phase02-diagnostic-user.png) conservada e inspeccionada sin incidencias en la zona visible. El conector de navegador del agente sigue sin conectar: la interacción y consola se sustentan en el reporte manual, y la imagen en inspección directa. Integración Git completada; pruebas móviles para sus fases y sin certificación integral de accesibilidad. El usuario restableció el avance autónomo tras el repaso manual; consultar únicamente decisiones indispensables o ampliaciones de alcance.
 
 ## Decisiones vigentes
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.

@@ -1,12 +1,12 @@
 # Resultado de fase 02 — base técnica
 
-Fecha: 2026-09-28. El usuario aceptó 01 y autorizó únicamente 02 mediante «De acuerdo y autorizo». Implementación, verificaciones técnicas y recorrido manual básico realizados. El usuario revisó controles, teclado, ancho reducido y consola; aportó una captura que el agente inspeccionó y conservó. Integración Git pendiente. No se declara terminado el MVP1 ni autorizado 03.
+Fecha: 2026-09-28. El usuario aceptó 01 y autorizó únicamente 02 mediante «De acuerdo y autorizo». Implementación, verificaciones técnicas y recorrido manual básico realizados. El usuario revisó controles, teclado, ancho reducido y consola; aportó una captura que el agente inspeccionó y conservó. Integración Git completada en el punto de control 7ea6b029137b9d85b13bb034eca453bedf2a5e4d. No se declara terminado el MVP1 ni autorizado 03.
 
 ## Qué cambió y por qué
 
 - Monorepo pnpm con solo app, domain y exercise-catalog, conforme a la arquitectura. No hay módulos vacíos para las fases siguientes.
 - Dominio puro v1 con cálculo de tiempos multiplicados por rondas; catálogo reutiliza Ajv 2020-12 y agrega reglas de versión, identidad de bloques, dimensiones positivas, enteros seguros y duración coherente. No se reescribió el esquema para que aceptara errores.
-- Pantalla React/Vite en español: estado de validación, borrador explícito, tiempos reales, distribución por bloques, errores con ruta, nueva comprobación y consulta del archivo original. Los controles usan elementos HTML nativos, foco visible y anuncio de resultado; la accesibilidad real aún necesita prueba en navegador.
+- Pantalla React/Vite en español: estado de validación, borrador explícito, tiempos reales, distribución por bloques, errores con ruta, nueva comprobación y consulta del archivo original. Los controles usan elementos HTML nativos, foco visible y anuncio de resultado. Teclado/foco de los dos controles principales comprobados manualmente por el usuario; no equivale a certificación integral de accesibilidad.
 - Gestor local fijado, manifests privados, configuración estricta, lockfiles, scripts de formato/lint/tipos/tests/build y avisos de terceros. Sin dependencia de Codex para ejecutar los comandos.
 - Fixture y esquemas históricos conservados. Se muestra la sesión v1 para diagnóstico; no se reemplaza por el catálogo futuro ni se ofrece como entrenamiento aprobado.
 
@@ -31,6 +31,7 @@ Fecha: 2026-09-28. El usuario aceptó 01 y autorizó únicamente 02 mediante «D
 | Página con ancho reducido | El usuario no observa problemas de legibilidad, distribución ni acceso a controles al reducir el ancho en la computadora; dimensiones no medidas y sin captura |
 | Consola durante el recorrido manual | El usuario responde «no aparece nada» tras la indicación de recargar en Chrome con la consola abierta y usar ambos controles; no reporta errores en ese recorrido |
 | Evidencia visual | [Captura aportada por el usuario](evidence/phase02-diagnostic-user.png), inspeccionada por el agente: estado válido, Comprobación 3, Borrador y tiempos 60:00/41:15/18:45; sin incidencias visibles en esa sección |
+| Integración Git | Punto de control local 7ea6b029137b9d85b13bb034eca453bedf2a5e4d, 72 archivos revisados; índice comprobado y árbol de trabajo limpio después del commit |
 
 Pruebas: 3600 s = 2475 de trabajo + 1125 de descanso, seis bloques, 60 ocurrencias y 31 IDs; hash original; no mutación ni promoción de draft; rechazo de estructura, campos extra, suma incoherente, versiones no admitidas, nombres/IDs vacíos, bloques duplicados, lado no permitido, espacio no positivo, rondas inválidas y desbordamiento. Descanso cero admitido y rondas calculadas sin expansión masiva. Dos pruebas renderizan la pantalla a HTML para comprobar éxito/borrador y error; **no son pruebas de interacción en navegador**.
 
@@ -56,4 +57,6 @@ Finalizado el repaso manual, ante la propuesta concreta del punto de control loc
 
 No hay motor de sesión, preparación temporizada, avatar, física, fichas aprobadas, historial ni exportación. Los textos de pendientes en la pantalla explican este estado; no sustituyen esas funciones.
 
-Se conservan los cambios documentales previos del proyecto. No se creó commit ni se publicó: la integración Git sigue pendiente, sin afirmar cumplimiento de ese apartado de Definition of Done. La implementación técnica de 02 se entrega con estos límites visibles y se detiene antes de 03. En este registro posterior solo se actualizan documentos y se conserva la captura proporcionada; no se repiten pruebas de aplicación sin cambios de código.
+Se conservan los cambios documentales previos del proyecto en el commit local 7ea6b029137b9d85b13bb034eca453bedf2a5e4d, «Completar base tecnica de fase 02 y consolidar documentacion previa», creado en la rama main existente: 72 archivos, 8184 inserciones y 436 eliminaciones, incluida la captura sin modificaciones. git diff --cached --check correcto antes de crearlo y git status --porcelain sin cambios después. No se publicó ni se cambió configuración global; safe.directory se proporcionó únicamente a cada comando de Git. Los avisos LF/CRLF proceden de la configuración existente y no se alteró esa configuración.
+
+El cierre técnico de 02 queda completo dentro de las verificaciones y límites descritos. Este documento registra posteriormente el resultado real del commit, sin inventar un identificador previo ni reescribir ese historial. No se repiten pruebas de aplicación porque no cambió su código; la comparación contra la copia ya probada mantiene evidencia de los 22 archivos idénticos. El siguiente alcance sigue siendo 03, pendiente de autorización conjunta.

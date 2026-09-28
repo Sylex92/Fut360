@@ -4,7 +4,7 @@ Este documento conserva la guía histórica desde cero del paquete v4. Desde el 
 
 Continuidad del proyecto ya abierto: leer [PROJECT_STATUS.md](PROJECT_STATUS.md). 00 y 01 aceptadas; 02 autorizada con código/dependencias locales y ya implementada. No repetir extracción, Git init ni preparación global.
 
-La guía siguiente describe el inicio original. Tras revisar los pendientes de 02 uno a uno, el usuario restablece el avance autónomo y pide interrumpir únicamente por preguntas indispensables. [Resultado de 02](docs/reviews/phase02-bootstrap-review.md): controles, teclado, ancho reducido y consola revisados manualmente por el usuario; captura conservada e inspeccionada por el agente. Se continúa con el punto de control local propuesto y se conserva la detención antes de 03. No pedir confirmación de cada operación rutinaria del alcance vigente.
+La guía siguiente describe el inicio original. Tras revisar los pendientes de 02 uno a uno, el usuario restablece el avance autónomo y pide interrumpir únicamente por preguntas indispensables. [Resultado de 02](docs/reviews/phase02-bootstrap-review.md): controles, teclado, ancho reducido y consola revisados manualmente por el usuario; captura conservada e inspeccionada por el agente. Punto de control local creado: 7ea6b02. Se conserva la detención antes de 03. No pedir confirmación de cada operación rutinaria del alcance vigente.
 
 ## 1. Preparación mínima
 Abre Codex de escritorio e inicia sesión con tu cuenta ChatGPT Pro. Para el proyecto usa un equipo/carpeta personal. Git es recomendado para guardar cambios; Node y Blender pueden esperar a las fases que los necesitan. Ver `docs/setup/WINDOWS.md`.

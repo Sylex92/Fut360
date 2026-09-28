@@ -1,6 +1,6 @@
 # Preparación de fase 02 — alcance técnico listo para autorizar
 
-Preparado: 2026-09-27. **Autorizado por el usuario el 2026-09-28**, mediante «De acuerdo y autorizo» en respuesta al alcance concreto de código e instalación local. Implementación y verificaciones técnicas de 02 realizadas. Recorrido manual del usuario de controles, teclado, ancho reducido y consola completado; captura conservada e inspeccionada por el agente. Integración Git pendiente y límites de evidencia en el [resultado observado](../reviews/phase02-bootstrap-review.md). 03 y posteriores no autorizadas. Las secciones siguientes conservan el alcance previsto antes de ejecutar.
+Preparado: 2026-09-27. **Autorizado por el usuario el 2026-09-28**, mediante «De acuerdo y autorizo» en respuesta al alcance concreto de código e instalación local. Implementación y verificaciones técnicas de 02 realizadas. Recorrido manual del usuario de controles, teclado, ancho reducido y consola completado; captura conservada e inspeccionada por el agente. Integración Git completada en 7ea6b02 y límites de evidencia en el [resultado observado](../reviews/phase02-bootstrap-review.md). 03 y posteriores no autorizadas. Las secciones siguientes conservan el alcance previsto antes de ejecutar.
 
 ## Resultado que se entregará
 
