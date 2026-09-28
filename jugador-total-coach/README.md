@@ -1,8 +1,8 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-28. Fase 02 implementada: base web local con diagnóstico del archivo de sesión. Todavía no es un entrenador ejecutable con avatar.
+Actualizado: 2026-09-28. Fase 03 implementada y verificada por pruebas automatizadas: diagnóstico y motor temporal con vista de texto. Pendiente recorrido visual/interactivo de la pantalla nueva. Todavía no es un entrenador ejecutable con avatar.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00 y 01 aceptadas; 02 implementada y guardada en el punto de control local 7ea6b02, con verificaciones técnicas, recorrido manual básico y captura revisada. 03 no autorizada. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–02 aceptadas como base; 03 autorizada, con [informe de implementación y pendientes](docs/reviews/phase03-session-engine-review.md). Fases 04–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
 
 ## Ejecutar la base
 
@@ -14,7 +14,9 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. [Preparación reproducible y comandos](docs/setup/LOCAL_DEVELOPMENT.md), [resultado de fase 02](docs/reviews/phase02-bootstrap-review.md) y [dependencias/licencias](docs/reviews/phase02-dependencies.md).
 
-24 pruebas, lint, tipos y build correctos. Render HTML y HTTP verificados. El usuario confirmó resultado/contador del botón, apertura/cierre del desplegable y uso por teclado de ambos; no observó problemas al reducir el ancho ni errores en consola durante el recorrido. [Captura aportada por el usuario](docs/reviews/evidence/phase02-diagnostic-user.png) conservada e inspeccionada sin incidencias en la zona visible. El conector de navegador del agente sigue sin conectar: la interacción y consola se sustentan en el reporte manual, y la imagen en inspección directa. Integración Git completada; pruebas móviles para sus fases y sin certificación integral de accesibilidad. El usuario restableció el avance autónomo tras el repaso manual; consultar únicamente decisiones indispensables o ampliaciones de alcance.
+La sección **Prueba el avance automático** ofrece una secuencia técnica de un minuto y el archivo histórico de 60 minutos. Incluye inicio, pausa, continuación, omisión, repetición/cancelación y +30 s/+1 min de preparación con autoinicio. Ocultar la página pausa; volver exige continuar. Todo permanece en memoria: recargar pierde la prueba. No seguir sus intervalos como rutina deportiva.
+
+84 pruebas, formato, lint, tipos y build correctos. El conector del navegador sigue sin conectar: el render HTML y el reloj simulado no sustituyen una prueba E2E. La [captura y revisión manual de 02](docs/reviews/phase02-bootstrap-review.md) solo acreditan la pantalla anterior, no los controles nuevos. Pendientes de 03 y evidencia exacta en su informe. El usuario mantiene avance autónomo; consultar únicamente decisiones indispensables o ampliaciones de alcance.
 
 ## Decisiones vigentes
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
@@ -36,4 +38,4 @@ La secuencia siguiente describe el inicio original del paquete. El trabajo actua
 `docs/plans/ROADMAP.md` indica el orden 00–09. `PROJECT_STATUS.md` conserva el estado entre chats.
 
 ## Qué está comprobado en este paquete
-El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. La aplicación base calcula y muestra ese diagnóstico. El fixture sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. Dependencias de 02 instaladas localmente; ningún modelo, animación, Blender o motor 3D incorporado. PWA/offline, móvil, reloj y avatar siguen pendientes.
+El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. Se reutilizan las dependencias de 02, sin nuevas dependencias externas en 03. PWA/offline, móvil, persistencia, Blender, modelos, animación y avatar siguen pendientes.

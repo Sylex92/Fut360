@@ -58,3 +58,10 @@ El [catálogo conciliado](../training/EXERCISE_CATALOG_SCOPE.md) distingue doce 
 ## Evidencia de fase 02 — 2026-09-28
 
 Implementados solo domain (tipos v1/aritmética), exercise-catalog (Ajv 2020-12 y reglas semánticas) y app (React/Vite). No se escribió un validador de JSON Schema ni un framework de estado. La suma y errores específicos del proyecto se probaron con 24 casos junto con el render de diagnóstico. Versiones/licencias y límites de evidencia: [informe de 02](../reviews/phase02-bootstrap-review.md). Los demás módulos de la tabla siguen previstos, no implementados.
+
+## Evidencia de fase 03 — 2026-09-28
+
+- Problema: conservar programa, pausa, preparación adicional, omisión y repetición con un único cursor. Se reutilizan React/Vite para UI, Ajv para validar, Vitest para pruebas y performance.now/Page Visibility a través de un adaptador; ninguna dependencia externa nueva.
+- Pieza propia mínima: compilación v1 a ocurrencias inmutables y SessionEngine sin plataforma, dependiente solo de domain. La API del reloj entrega tiempo, pero no decide las reglas de omisión/repetición de este producto; el motor de animación futuro tampoco debe ser autoridad del programa.
+- Alternativa: añadir un framework de máquinas de estados no evita esas reglas ni sus pruebas. No hay benchmark que demuestre ahorro de complejidad en este alcance; se conserva la decisión de 01 y se evalúa de nuevo si crece el estado. No se construyen física, rigging, editor, loader, compositor ni almacenamiento propios.
+- Evidencia: 84 pruebas totales, incluidas fronteras, conservación, duplicados, IDs de extras, reloj/visibilidad inyectados y HTML. La prueba visual/E2E real de la nueva pantalla permanece pendiente por indisponibilidad del conector. [Informe](../reviews/phase03-session-engine-review.md).

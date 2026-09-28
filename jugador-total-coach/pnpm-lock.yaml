@@ -50,6 +50,9 @@ importers:
       '@fut360/exercise-catalog':
         specifier: workspace:*
         version: link:../../packages/exercise-catalog
+      '@fut360/session-engine':
+        specifier: workspace:*
+        version: link:../../packages/session-engine
       react:
         specifier: 19.3.0
         version: 19.3.0
@@ -67,6 +70,12 @@ importers:
       ajv:
         specifier: 8.20.0
         version: 8.20.0
+
+  packages/session-engine:
+    dependencies:
+      '@fut360/domain':
+        specifier: workspace:*
+        version: link:../domain
 
 packages:
 

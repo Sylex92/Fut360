@@ -1,6 +1,6 @@
 # Contrato del motor de sesión
 
-Fecha: 2026-09-27. Diseño de fase 01; sin motor implementado ni pruebas de aplicación. Unidades internas: milisegundos enteros; convertir los segundos del fixture una sola vez. Nombres de comandos/eventos son contratos documentales.
+Diseño: 2026-09-27. Actualización: 2026-09-28. Motor temporal y adaptador implementados en 03 con milisegundos enteros y conversión única del fixture. [Cobertura y límites](../reviews/phase03-session-engine-review.md): pruebas automáticas correctas; recorrido en navegador nuevo pendiente. Inspector, avatar, audio y recuperación durable siguen previstos para sus fases. Los nombres siguientes expresan el contrato; la API concreta está en domain/session.ts y session-engine.
 
 ## Autoridad y programa
 
@@ -159,4 +159,4 @@ Restore siempre pausado al último checkpoint confirmado, sin calcular trabajo d
 | Recarga/fallo de guardado | Recuperación pausada según último checkpoint, con límites visibles |
 | Evento después de completed/aborted | Sin doble finalización |
 
-Son requisitos de pruebas 03–09, no tests ejecutados en 01. Resuelven el diseño de S02, S03, S07–S09 y parte de S11.
+Son requisitos de pruebas 03–09, no tests ejecutados en 01. En 03 se probaron las reglas temporales y el adaptador; las filas que incluyen representación corporal, inspector, audio o recuperación durable requieren sus fases. La prueba con reloj inyectado no demuestra comportamiento real en todos los navegadores/dispositivos. Resuelven el diseño de S02, S03, S07–S09 y parte de S11.

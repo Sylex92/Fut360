@@ -5,6 +5,132 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+.session-panel {
+  margin: 28px 0;
+  border: 1px solid #cbd6bd;
+}
+.session-panel > p {
+  line-height: 1.65;
+}
+.session-selector {
+  display: grid;
+  gap: 8px;
+  max-width: 450px;
+  margin: 24px 0;
+  font-weight: 600;
+}
+.session-selector select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid #8d9f83;
+  border-radius: 8px;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+}
+.session-selector select:focus-visible {
+  outline: 3px solid #1769aa;
+  outline-offset: 4px;
+}
+.session-state {
+  color: #315631;
+  font-weight: 700;
+}
+.session-readout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.session-readout h3 {
+  overflow-wrap: anywhere;
+}
+.session-time {
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 16px 0;
+}
+.session-preview {
+  background: #eef2e4;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-wrap: anywhere;
+}
+.session-preview p {
+  line-height: 1.65;
+}
+.session-controls,
+.preparation-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.session-controls button,
+.preparation-controls button {
+  min-height: 44px;
+  padding: 12px 16px;
+  border: 1px solid #a6b598;
+  border-radius: 8px;
+  background: #f8faf3;
+  color: #213e34;
+  cursor: pointer;
+}
+.session-controls .primary-control {
+  background: #213e34;
+  color: #fff;
+  border-color: #213e34;
+}
+.session-controls button:disabled,
+.preparation-controls button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.preparation-controls {
+  padding-top: 18px;
+  border-top: 1px solid #d9dfd5;
+}
+.preparation-controls > span {
+  flex-basis: 100%;
+  font-weight: 600;
+}
+.session-totals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+.session-totals dt {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.session-totals dd {
+  margin: 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.countdown-cue {
+  font-size: 22px;
+  font-weight: 700;
+  color: #315631;
+}
+@media (max-width: 720px) {
+  .session-readout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .session-totals {
+    grid-template-columns: 1fr 1fr;
+  }
+  .session-controls button {
+    flex-grow: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }

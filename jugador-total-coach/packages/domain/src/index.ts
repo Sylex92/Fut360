@@ -1,4 +1,5 @@
-/** Historical format only. Future session/asset contracts are not implemented here. */
+export * from './session';
+/** Historical content format; full future asset/content contracts are not implemented here. */
 export type SideV1 = 'none' | 'right' | 'left' | 'alternate';
 export interface WorkoutItemV1 {
   readonly exerciseId: string;

@@ -54,4 +54,33 @@ export default ts.config(
     },
   },
   { files: ['tools/*.mjs'], languageOptions: { globals: { process: 'readonly' } } },
+  {
+    files: ['packages/session-engine/**/*.ts'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            'react*',
+            'three*',
+            'node:*',
+            '@fut360/coach-pwa',
+            '@fut360/exercise-catalog',
+          ],
+        },
+      ],
+      'no-restricted-globals': [
+        'error',
+        'window',
+        'document',
+        'fetch',
+        'performance',
+        'Date',
+        'localStorage',
+        'indexedDB',
+        'setTimeout',
+        'setInterval',
+      ],
+    },
+  },
 );

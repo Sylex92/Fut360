@@ -3,11 +3,12 @@
 ## Fase actual y autorización
 
 - Última actualización: 2026-09-28. Auditoría inicial: 2026-09-24.
+- Fase vigente: **03 autorizada, implementada y con verificación automatizada correcta; cierre visual/interactivo pendiente**. Autorización mediante «de acuerdo» en respuesta al alcance concreto del motor temporal y vista de texto con herramientas ya instaladas. La base 02 queda aceptada para continuar; conserva sus límites. [Plan de 03](docs/plans/phase03-session-engine.md) e [informe con pendientes](docs/reviews/phase03-session-engine-review.md). Sin autorización de 04–09 ni nuevas dependencias externas, modelos, Blender, publicación o cambios globales.
 - Fase 00: **aceptada por el usuario el 2026-09-27**, mediante «Acepto y autorizo» en respuesta al cierre y al alcance concreto de 01. Se conservan los pendientes declarados; aceptar la auditoría no aprueba la rutina ni los recursos futuros.
 - Fase 01: **aceptada por el usuario el 2026-09-28**, mediante «De acuerdo y autorizo» en respuesta al cierre documental y alcance de 02.
-- Fase 02: **implementación, verificaciones técnicas, recorrido manual básico e integración Git completados**, según prompts/02-repo-bootstrap.md y docs/plans/phase02-ready.md. Punto de control local 7ea6b029137b9d85b13bb034eca453bedf2a5e4d, con 72 archivos acumulados de 00–02. El usuario confirma controles, teclado, ancho reducido y consola; captura conservada e inspeccionada por el agente. Los pendientes enumerados para este cierre están resueltos dentro del alcance documentado; accesibilidad integral y todos los dispositivos/tamaños no certificados. Sin aceptación explícita del cierre global de 02. Fases 03–09 no autorizadas.
-- Implementación: base React/Vite y paquetes domain/exercise-catalog funcionales; diagnóstico de contenido, sin motor de sesión ni recursos 3D.
-- Autorización vigente: código base, dependencias gratuitas revisadas y sus descargas/instalación local, pruebas y documentos únicamente dentro del proyecto. Sin pagos, publicación, modelos, Blender ni cambios globales o fuera del proyecto.
+- Fase 02: **aceptada como base para continuar con 03**, después de implementación, verificaciones técnicas, recorrido manual básico e integración Git, según prompts/02-repo-bootstrap.md y docs/plans/phase02-ready.md. Punto de control local 7ea6b029137b9d85b13bb034eca453bedf2a5e4d, con 72 archivos acumulados de 00–02, y cierre documental 2d3c993. El usuario confirma controles, teclado, ancho reducido y consola; captura conservada e inspeccionada por el agente. Accesibilidad integral y todos los dispositivos/tamaños no certificados. Esa revisión no se atribuye a los controles nuevos de 03.
+- Implementación: React/Vite, domain, exercise-catalog y session-engine; diagnóstico, compilador v1, reloj/adaptador y vista técnica de texto. Sin recursos 3D ni persistencia de entrenamiento.
+- Autorización vigente: implementación/pruebas/documentos y punto de control local de 03 con herramientas ya instaladas. Solo se enlazan paquetes internos en el proyecto. Sin nuevas descargas externas, pagos, publicación, modelos, Blender ni cambios globales o fuera del proyecto.
 - Dependencias instaladas en el proyecto: versiones fijadas de 02, 137 pares nombre/versión en 141 contextos y pnpm local aparte; licencias/avisos registrados. Assets 3D descargados/incorporados/revisados visualmente: ninguno.
 - Política vigente: costo cero para construcción/uso local, excluyendo cuenta/tokens Codex; software gratuito no abierto permitido. No promesa de gratuidad ilimitada.
 - ADR 0008 vigente; 0005/0007 históricos. Demostración guiada separada del laboratorio Rapier.
@@ -22,7 +23,21 @@
 - Espacio confirmado por el usuario: habitación más grande, con muebles fuera de una zona de al menos 2×2 metros completamente libre de muebles y obstáculos. El MVP1 conserva el límite de diseño de 2×2; no se presupone espacio adicional disponible para los movimientos. La cabida de cada ejercicio con su material sigue pendiente de revisión.
 - Material confirmado por el usuario: balón de fútbol, silla firme, banda elástica corta de varias resistencias y tapete/colchoneta de ejercicio. Quedan cubiertas las cuatro categorías de material previstas en el fixture. Es una declaración de disponibilidad, no una inspección de dimensiones, estabilidad durante cada apoyo ni resistencia adecuada para cada ejercicio.
 
-## Entrega técnica de fase 02 — 2026-09-28
+## Entrega técnica de fase 03 — 2026-09-28
+
+[Informe de implementación, cobertura y límites](docs/reviews/phase03-session-engine-review.md).
+
+- Verificado: snapshot inmutable, compilación del fixture a 60 ocurrencias/3600000 ms, motor puro con eventos/comandos idempotentes, conservación de tiempos, pausa/reanudación, omisión/repetición/cancelación y preparación adicional automática. Adaptador monotónico muestrea antes de comandos, pausa al ocultar y no acredita huecos >2000 ms. Límites: 10000 ocurrencias y enteros seguros.
+- Vista añadida: «Prueba el avance automático», secuencia técnica de un minuto o archivo histórico de 60 minutos; objetivo/lado/cuenta, controles y contadores diferenciados. No es una rutina aprobada. Recargar descarta todo; no se simula recuperación durable.
+- Verificado: 84 pruebas en cinco archivos, formato, lint, tipos y build correctos. Las 60 pruebas nuevas incluyen motor, adaptador y HTML, además de conservar las 24 de 02. No equivalen a E2E ni a ejecución observada en navegador.
+- Verificado: enlace offline del paquete interno sin descargar ni añadir dependencias externas. Secciones externas del lockfile idénticas a 02; licencia/inventario anterior conservados. Fixture y esquema mantienen hashes. Servidor existente en 127.0.0.1:4173; HTTP correcto y build servido.
+- Verificación final: instalación offline con lockfile congelado correcta, 68 documentos UTF-8 y 199 enlaces locales válidos; git diff --check correcto. JavaScript servido idéntico al build por SHA-256. Apertura de la página en Codex solicitada y en cola, sin atribuirle observación de pantalla.
+- Pendiente para cerrar 03: recorrido visual/interactivo de los controles nuevos, teclado/ancho reducido y consola, con evidencia. browser-use volvió a fallar por ausencia de backend IAB. No atribuirle la captura/revisión manual de 02. La comprobación se agrupa en un único recorrido; se mantiene avance autónomo y no una autorización por botón.
+- Supuesto por verificar en dispositivos: adecuación del umbral de hueco y legibilidad/fluidez real. Móvil, PWA, inspector, audio, recuperación, avatar y revisión deportiva conservan sus fases; no son resultados de esta prueba temporal.
+
+Siguiente acción: cerrar únicamente la comprobación de navegador cuando esté disponible y registrar su resultado. Fase 04 y las siguientes requieren su alcance autorizado; no iniciarlas automáticamente. No reinstalar herramientas ni pedir otra aprobación de operaciones rutinarias ya autorizadas.
+
+## Entrega técnica de fase 02 — 2026-09-28 (historial)
 
 [Informe de implementación](docs/reviews/phase02-bootstrap-review.md), [licencias e inventario](docs/reviews/phase02-dependencies.md) y [comandos reproducibles](docs/setup/LOCAL_DEVELOPMENT.md).
 
@@ -47,7 +62,7 @@
 - Verificación del registro posterior: 66 documentos UTF-8 y 186 enlaces locales existentes, sin roturas; git diff --check correcto. Solo cinco documentos de continuidad/cierre actualizados después del punto de control, sin cambios de aplicación, dependencias ni configuración global.
 - Verificación documental final: 66 documentos UTF-8 y 183 enlaces locales válidos, hashes del fixture/esquemas y evidencias de licencia comprobados, git diff --check sin errores. 71 archivos acumulados de 00–02 modificados/nuevos, todos dentro del proyecto; dependencias, cachés y build ignorados por Git.
 
-Siguiente alcance concreto, aún no autorizado: fase 03 según prompts/03-session-engine.md, motor temporal independiente con vista mínima de texto, avance automático, pausa/reanudación, +30 s/+1 min de preparación, omisión y repetición conforme al contrato, y pruebas con reloj simulado. Usar las herramientas locales existentes, sin nuevas descargas previstas. No incluye avatar, Blender, recursos 3D, exportación ni cambios globales. Tras cerrar y guardar 02, consultar únicamente la autorización conjunta de este alcance nuevo; no volver a pedir aprobación del commit ya realizado ni de cada operación rutinaria.
+Transición histórica: después de cerrar y guardar 02, se presentó el alcance de 03 (motor temporal/vista de texto/pruebas con herramientas existentes). El usuario respondió «de acuerdo» y autorizó ese alcance. El resultado actual está en la sección de 03; no repetir esta solicitud ni interpretar su autorización como permiso de 04.
 
 ## Entrega documental de fase 01 (historial)
 
@@ -62,7 +77,7 @@ La fase 00 fue aceptada y únicamente 01 autorizada el 2026-09-27. Su aceptació
 - ADR 0006/0008 consolidados y [0009](docs/architecture/adr/0009-session-time-and-recovery.md) nuevo. 0005/0007 históricos.
 - PRD, contratos 3D, extensibilidad, plan, roadmap, Definition of Done y guías armonizados; prompts 02/03/04/06/07 corregidos documentalmente, sin ejecutarlos. Relación y motivo en el informe.
 
-Decisiones nuevas de diseño, todavía sin prueba de aplicación: repetir añade una ocurrencia completa después del descanso; omitir conserva descanso; cámara lenta es inspección con la sesión pausada y retorno al punto guardado; ocultar la página pausa; recuperar no acredita tiempo cerrado. La app registra reproducción, no repeticiones físicas observadas. Remotion Player sigue admisible, pero Three/Fiber + AnimationMixer se mantienen por alcance de integración sin benchmark de superioridad.
+Decisiones de diseño de 01: repetir añade una ocurrencia completa después del descanso; omitir conserva descanso; cámara lenta es inspección con la sesión pausada y retorno al punto guardado; ocultar la página pausa; recuperar no acredita tiempo cerrado. En 03 se implementaron/probaron las reglas temporales con reloj inyectado; inspector y recuperación siguen pendientes. La app registra reproducción, no repeticiones físicas observadas. Remotion Player sigue admisible, pero Three/Fiber + AnimationMixer se mantienen por alcance de integración sin benchmark de superioridad.
 
 ## Revisión guiada de fase 01
 
@@ -158,24 +173,24 @@ Las comprobaciones corresponden a coherencia documental/datos. Build, lint, type
 ## Pendientes posteriores y límites actuales
 
 - Fichas finales y clips incorporados: cero. El catálogo objetivo de doce patrones está conciliado documentalmente; no son doce clips listos ni 31 ejercicios aprobados. Faltan dosis, secuencia detallada, variantes/lados, material dentro de 2×2, revisión de representación y contenido.
-- Contratos de tiempo, lado, revisión, autoridad, recuperación e importación definidos en 01; validadores, tipos, motor y recursos aún por implementar/probar. Los esquemas v1 no validan automáticamente el nuevo contrato.
+- Contratos definidos en 01: validación v1 implementada en 02; contratos de ejecución, compilador, motor y adaptador implementados/probados en 03. Contratos completos de recursos, revisión, autoridad visual, recuperación e importación siguen pendientes. Los esquemas v1 no validan automáticamente todo el diseño futuro.
 - Versiones y dependencias incorporadas en 02 registradas; revisar las futuras por separado. Hashes/licencias internas de assets y editabilidad real siguen pendientes antes de incorporar recursos 3D.
 - Blender desinstalado según el usuario y sin ejecutable localizado. No se reinstaló. Prepararlo antes del primer clip si hace falta, tras concretar versión/licencia/necesidad y obtener permiso específico.
 - Pruebas PC/S24 FE, versión exacta de Chrome móvil, claridad, fluidez, pausa, hora real y offline pendientes. Origen seguro local del teléfono por resolver y comprobar en 08, sin desactivar seguridad ni cambiar configuración global implícitamente.
 - Revisión humana asignada al usuario; no realizada sobre fichas/clips inexistentes ni convertida en revisión profesional por aceptación. El agente conserva investigación y decisiones fundamentadas, sin cuestionario deportivo innecesario ni contratación externa automática.
-- LICENSE MIT preexistente en raíz Git intacto; aclarar alcance antes de publicar. No se publicó, creó commit ni eligió licencia nueva.
+- LICENSE MIT preexistente en raíz Git intacto; aclarar alcance antes de publicar. Se crean puntos de control locales autorizados; no se publicó ni eligió licencia nueva.
 - MANIFEST_SHA256 describe el paquete original, no los documentos vivos. No se reescribió. Los resultados de integridad inicial y los cambios documentales actuales se distinguen.
-- En 02 se ejecutaron build, lint, typecheck y pruebas unitarias/render HTML. E2E interactivo, revisión visual, 3D/offline/dispositivo y evaluación deportiva práctica siguen pendientes. No existe evidencia visual de entrenamiento.
+- En 02 y 03 se ejecutaron build, lint, typecheck y pruebas unitarias/render HTML. Recorrido manual básico y captura de 02 registrados. La nueva pantalla de 03 aún requiere recorrido visual/interactivo y consola; 3D/offline/dispositivo y evaluación deportiva práctica conservan sus fases. No existe evidencia visual de entrenamiento.
 
 ## Siguiente paso permitido
 
-Entregar la base técnica de 02 y revisar su pantalla cuando haya conexión de navegador o revisión directa del usuario. No pedir otra vez autorización de instalaciones ya cubiertas en 02. No comenzar 03 por esta entrega: esa fase implementará el reloj y estados puros con las dependencias existentes, sin avatar ni Blender, y requiere autorización de su alcance. El permiso actual permite corregir defectos de 02 y completar su revisión visual.
+El alcance 03 está autorizado e implementado. Conservar el punto de control local y completar el recorrido visual/interactivo de la nueva pantalla cuando haya conexión de navegador o revisión directa del usuario. El permiso vigente cubre correcciones de esta fase; no requiere otra autorización por cada operación. No iniciar 04, instalar Blender, descargar assets o añadir dependencias externas sin concretar y autorizar ese alcance.
 
-No falta ahora ningún dato personal, equipo o selección técnica del usuario para entregar 01. No repetir preguntas sobre teléfono, computadora, espacio, material o revisión humana ya aclaradas. Fichas y pruebas se prepararán en sus fases; si un dato individual resulta indispensable, explicar su efecto concreto entonces.
+No falta ahora ningún dato personal, equipo o selección técnica del usuario para esta entrega técnica de 03. No repetir preguntas sobre teléfono, computadora, espacio, material o revisión humana ya aclaradas. Fichas y pruebas se prepararán en sus fases; si un dato individual resulta indispensable, explicar su efecto concreto entonces.
 
 ## Forma de acompañamiento solicitada por el usuario
 
-- Instrucción más reciente del 2026-09-27: «ya no avancemos paso a paso, avanza lo más que se pueda, documéntalo». Sustituye la revisión guiada obligatoria, no la restricción de instalaciones/código sin autorización.
+- Preferencia vigente, reafirmada al terminar el recorrido de 02: «ya podemos avanzar con normalidad, solo interrumpir con preguntas muy necesarias por favor». Mantiene el avance autónomo solicitado el 2026-09-27 y sustituye la revisión guiada obligatoria. Cada fase conserva su alcance autorizado; la actual es 03.
 - Avanzar autónomamente dentro del alcance autorizado, resolver elecciones rutinarias y comunicar hallazgos/decisiones relevantes en lenguaje accesible. Los documentos conservan el detalle y la evidencia.
 - Detener el trabajo dependiente cuando falte una respuesta indispensable o un permiso nuevo. Antes de preguntar, completar la preparación que ya se puede hacer y agrupar un alcance concreto y revisable. No volver a consultar datos ya confirmados ni solicitar aprobación por cada archivo o dependencia rutinaria del alcance autorizado.
 - Sustentar todas las propuestas en requisitos, evidencia y evaluación de alternativas, conforme al criterio permanente de AGENTS.md; no esperar recordatorios ni basarse solo en popularidad o agrado. Investigar lo que requiere conocimiento especializado, explicar límites y consultar al usuario objetivos/contexto, sin delegarle validación científica. Distinguir evaluación documental, preferencia declarada, prueba observada y revisión profesional.

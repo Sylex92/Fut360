@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { validateWorkoutV1 } from '@fut360/exercise-catalog';
 import type { WorkoutSummary } from '@fut360/domain';
+import { SessionPanel } from './SessionPanel';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -101,7 +102,7 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 02 <span aria-hidden="true">/</span> BASE TÉCNICA
+          FASE 03 <span aria-hidden="true">/</span> RELOJ Y CONTROLES
         </span>
       </header>
       <main id="main">
@@ -181,6 +182,7 @@ export function App({ content }: { content: unknown }) {
             <SessionSummary summary={result.summary} />
           </>
         )}
+        <SessionPanel content={content} />
         <div className="bottom-grid">
           <section className="panel readiness" aria-labelledby="readiness-title">
             <p className="eyebrow">ESTADO DEL PROYECTO</p>
@@ -200,7 +202,7 @@ export function App({ content }: { content: unknown }) {
                   <strong>Reloj y controles</strong>
                   <p>Pausa, continuidad y preparación automática.</p>
                 </div>
-                <span className="step-state pending">Pendiente</span>
+                <span className="step-state">En prueba</span>
               </li>
               <li>
                 <span className="step-number">03</span>

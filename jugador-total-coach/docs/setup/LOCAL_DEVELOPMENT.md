@@ -1,4 +1,4 @@
-# Desarrollo local — base de fase 02
+# Desarrollo local — base 02 y motor temporal 03
 
 Fecha: 2026-09-28. Windows, Node 22.14.0 y npm 10.9.2 existentes. No requiere Codex, cuenta, nube ni instalación global de pnpm. Usar la carpeta jugador-total-coach, no la raíz Git superior.
 
@@ -10,11 +10,13 @@ Desde esta carpeta:
 node tools/pnpm.mjs dev
 ```
 
-Abrir http://127.0.0.1:5173/ en Chrome. Ctrl+C detiene el servidor. Solo escucha en la propia computadora: no abre el firewall ni sirve al teléfono. Pantalla de diagnóstico, sin avatar ni botón para entrenar. PWA/offline y prueba del Samsung corresponden a fases posteriores.
+Abrir http://127.0.0.1:5173/ en Chrome. Ctrl+C detiene el servidor. Solo escucha en la propia computadora: no abre el firewall ni sirve al teléfono. Diagnóstico y sección «Prueba el avance automático»: secuencia técnica de un minuto o archivo histórico de una hora. «Iniciar prueba» comprueba tiempos y controles; no indica aprobación de una rutina. Sin avatar. PWA/offline y prueba del Samsung corresponden a fases posteriores.
+
+Preparación +30 s/+1 min conserva autoinicio, sin confirmar al final. Pausar todo detiene el cursor; ocultar la página también pausa, y al volver hay que continuar. Recargar pierde el estado: todavía no hay historial/recuperación. El diagnóstico del archivo conserva su contador independiente.
 
 ## Preparar otra vez desde los lockfiles
 
-Los paquetes de npm ya fueron autorizados para esta fase y están inventariados en el informe de dependencias. Esto descarga herramientas de desarrollo locales; no es un instalador de Blender o modelos. No copiar los comandos a otro proyecto.
+Los paquetes de npm fueron autorizados e inventariados en 02. El bloque siguiente conserva la preparación reproducible de esa base; puede descargar paquetes si no están en caché. En 03 se utilizaron los paquetes existentes y solo se enlazó el paquete propio session-engine con --offline: no se autorizaron ni necesitaron nuevas descargas externas. No copiar los comandos a otro proyecto.
 
 ```powershell
 $taskProject = (Get-Location).Path
@@ -63,14 +65,15 @@ Recargar la página después de iniciar el servidor. Si vuelve a detenerse, abri
 
 El proceso iniciado por Codex deja registros en `.cache/preview/stdout.log`, `.cache/preview/stderr.log` y `.cache/preview/process.json`; este último registra el proceso lanzado, no garantiza que siga vivo. No se configuró arranque automático con Windows ni reinicio del servidor ante fallos. Esta dirección solo funciona en la computadora que ejecuta el servidor.
 
-format solo aplica al código/configuración nuevos; no reescribe documentos, fixture ni esquemas históricos. Domain y exercise-catalog son privados y sus APIs apuntan al código fuente TypeScript, que Vite procesa; no son librerías distribuidas a npm.
+format solo aplica al código/configuración; no reescribe documentos, fixture ni esquemas históricos. Domain, exercise-catalog y session-engine son privados y sus APIs apuntan al código fuente TypeScript, que Vite procesa; no son librerías distribuidas a npm.
 
 ## Estructura y límites
 
-- apps/coach-pwa: diagnóstico accesible del archivo original; CSS local sin fuentes externas.
-- packages/domain: tipos v1 y aritmética pura, sin plataforma ni UI.
-- packages/exercise-catalog: Ajv 2020-12 y comprobaciones semánticas; errores con ruta, sin red propia.
-- tests y pruebas de pantalla: original intacto, suma de rondas, datos inválidos, enteros seguros, errores y estado draft. La prueba de pantalla usa render de React a HTML, no un navegador.
+- apps/coach-pwa: diagnóstico y controles del motor; composición y adaptador de reloj/visibilidad separados de UI. CSS local sin fuentes externas.
+- packages/domain: tipos v1, aritmética y contratos/snapshot de ejecución, sin plataforma ni UI.
+- packages/exercise-catalog: Ajv 2020-12, reglas semánticas y compilador v1; errores con ruta, sin red propia.
+- packages/session-engine: motor puro que recibe tiempo/comandos y proyecta estado/eventos; solo depende de domain.
+- tests y pruebas de pantalla: 84 casos en cinco archivos; [cobertura y límites](../reviews/phase03-session-engine-review.md). Reloj inyectado y render React a HTML; no un navegador E2E.
 - .tooling: gestor fijado y lockfile separado. .cache y node_modules están excluidos de Git.
 
-No hay session-engine, visor 3D, simulación, almacenamiento de entrenamiento, PWA ni recurso deportivo aprobado. El tipo WorkoutV1 no implementa todavía los contratos futuros de fase 01; sus campos no se inventan en este bootstrap.
+No hay visor 3D, simulación, almacenamiento de entrenamiento, PWA ni recurso deportivo aprobado. WorkoutV1 se conserva intacto; el plan técnico compilado no inventa demostraciones dentro de la hora ni todos los contratos futuros de contenido/recursos. La revisión visual de la pantalla nueva y su consola sigue pendiente por indisponibilidad del conector.
