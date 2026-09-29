@@ -91,6 +91,8 @@ Verificaciones tras la aclaración: 108 pruebas/9 archivos, formato, lint, tipos
 
 ## Pendientes concretos de aceptación
 
+[Guía de comprobación en pantalla](phase04-manual-check.md): controles exactos, resultados esperados y estado de cada caso. Preparada el 2026-09-29 sin modificar aplicación ni recursos. En este seguimiento el conector IAB volvió a fallar; el inventario solo confirmó la pestaña local, sin observación de su contenido. Están solicitados al usuario el resultado de pausa/continuación y precisar si su observación sobre lo «raro» se refiere a apariencia o movimiento. Todavía no hay respuesta ni nueva aceptación; no se repitió la suite de aplicación al cambiar solo documentos.
+
 1. Comprobar pausa/continuación sincronizadas de reloj y avatar y calidad del movimiento. La aparición del modelo ya está confirmada por el usuario; no volver a pedir ese mismo dato. Revisar su observación sobre el aspecto y la lectura de las frases dinámicas más largas, conservando la explicación completa en su ubicación original; mantener separados funcionamiento y comprensión/aprobación del gesto.
 2. Recorrido real de 60 s y después 5 min, cámaras sin reinicio, +30/+60 con autoinicio, inspección/retorno, repetir/omitir, reintento y pérdida de recursos/contexto. Consola y captura de aplicación, teclado/foco y ancho reducido. La prueba del motor y los renders no sustituyen ese E2E.
 3. Revisión humana de comprensión/técnica de esta ficha y este clip, asignada al usuario con apoyo del agente. Una aprobación personal no se registrará como revisión profesional. Mantener `draft` hasta resolver el alcance y las observaciones.
