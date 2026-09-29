@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-09-29",
+  "method": "GLTFLoader CPU comparison against preceding committed resource; texture decoding excluded",
+  "beforeSha256": "14123518d2d1fbf194768c20d17c4e7bc56c77e0540cdf7e8ecca43dfd82bb97",
+  "afterSha256": "29e7c0b20d73ba170787c96b91e6b30946a23ff7bb17b517bb9c08ae58875ab0",
+  "boneHierarchyUnchanged": true,
+  "meshes": [
+    {
+      "mesh": "Eyebrows",
+      "attributesUnchanged": [
+        "position",
+        "normal",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    },
+    {
+      "mesh": "Eyes",
+      "attributesUnchanged": [
+        "position",
+        "normal",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    },
+    {
+      "mesh": "SuperHero_Male",
+      "attributesUnchanged": [
+        "position",
+        "normal",
+        "uv",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    }
+  ]
+}

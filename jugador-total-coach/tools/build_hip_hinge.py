@@ -179,6 +179,13 @@ def place_pose(amount):
     pelvis.matrix = Matrix.Translation(position) @ rotation @ rest['pelvis'].to_quaternion().to_matrix().to_4x4()
     bpy.context.view_layer.update()
     for side, sign in (('l', 1), ('r', -1)):
+        # Relax the elevated shoulder silhouette through the existing clavicle.
+        # Keep the supplied rest rig/weights and the arm's global direction.
+        clavicle = rig.pose.bones['clavicle_' + side]
+        clavicle.matrix = (Matrix.Translation(clavicle.head) @ rotation
+                           @ Matrix.Rotation(math.radians(12) * sign, 4, 'Y')
+                           @ rest[clavicle.name].to_quaternion().to_matrix().to_4x4())
+        bpy.context.view_layer.update()
         bone = rig.pose.bones['upperarm_' + side]
         # Arms stay beside the body and drop slightly forward with the torso.
         arm_rotation = Matrix.Rotation(math.radians(10) * amount, 4, 'X') @ Matrix.Rotation(math.radians(78) * sign, 4, 'Y')
@@ -240,6 +247,7 @@ for frame in range(241):
                     'feet': {s: list(rig.matrix_world @ rig.pose.bones['foot_' + s].head) for s in ('l', 'r')},
                     'knees': {s: list(rig.matrix_world @ rig.pose.bones['calf_' + s].head) for s in ('l', 'r')}})
 report = {'blenderVersion': bpy.app.version_string, 'sourceMissingImages': missing,
+          'shoulderPoseCorrectionDegrees': 12,
           'groundLiftMeters': ground_lift, 'samples': samples,
           'bones': [b.name for b in rig.data.bones], 'meshVertices': sum(len(o.data.vertices) for o in meshes)}
 (EVIDENCE / 'clip-authoring-report.json').write_text(json.dumps(report, indent=2), encoding='utf8')

@@ -20,7 +20,7 @@
   margin-top: 24px;
 }
 .avatar-stage {
-  height: 460px;
+  height: clamp(260px, 50svh, 440px);
   position: relative;
   background: #e6ece6;
   border-radius: 12px;
@@ -46,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 12px;
+  margin-bottom: 10px;
 }
 .camera-controls button[aria-pressed='true'] {
   background: #213e34;
@@ -54,6 +54,7 @@
 }
 .movement-cue {
   min-height: 3em;
+  margin: 10px 0;
   line-height: 1.5;
   font-weight: 600;
 }
@@ -79,9 +80,21 @@
 .inspection {
   border: 1px solid #a8bd97;
   background: #f4f7ec;
-  padding: 20px;
+  padding: 14px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+  scroll-margin-block: 16px;
+}
+.inspection:focus {
+  outline: 3px solid #1769aa;
+  outline-offset: 3px;
+}
+.inspection h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.inspection .quiet-note {
+  margin: 6px 0;
 }
 .inspection label {
   display: block;
@@ -116,7 +129,7 @@
     gap: 8px;
   }
   .avatar-stage {
-    height: 380px;
+    height: clamp(250px, 45svh, 380px);
   }
   .demo-guide .session-time {
     font-size: 48px;
@@ -214,6 +227,38 @@
 .preparation-controls > span {
   flex-basis: 100%;
   font-weight: 600;
+}
+.demo-viewer .session-controls,
+.demo-viewer .preparation-controls {
+  gap: 8px;
+  margin-top: 10px;
+}
+.demo-viewer .session-controls button,
+.demo-viewer .preparation-controls button {
+  padding: 8px 12px;
+}
+.demo-viewer .preparation-compact {
+  padding-top: 10px;
+  font-size: 13px;
+}
+.preparation-compact > span {
+  flex-basis: auto;
+  margin-right: auto;
+}
+.preparation-compact small {
+  flex-basis: 100%;
+  color: #4f6257;
+}
+.demo-viewer .secondary-controls {
+  border-top: 1px solid #d9dfd5;
+  padding-top: 10px;
+}
+.demo-viewer .secondary-controls:empty,
+.demo-viewer .check-feedback:empty {
+  display: none;
+}
+.demo-test-details {
+  margin-bottom: 8px;
 }
 .session-totals {
   display: grid;

@@ -61,6 +61,21 @@ export function DemoPanel() {
   const [failure, setFailure] = useState('');
   const [feedback, setFeedback] = useState('');
   const [attempt, setAttempt] = useState(0);
+  const inspectionPanel = useRef<HTMLElement>(null);
+  const inspectionButton = useRef<HTMLButtonElement>(null);
+  const playbackButton = useRef<HTMLButtonElement>(null);
+  const wasInspecting = useRef(false);
+  const inspecting = state?.inspecting ?? false;
+
+  useEffect(() => {
+    if (inspecting) {
+      inspectionPanel.current?.focus({ preventScroll: true });
+      inspectionPanel.current?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+    } else if (wasInspecting.current) {
+      (inspectionButton.current ?? playbackButton.current)?.focus({ preventScroll: true });
+    }
+    wasInspecting.current = inspecting;
+  }, [inspecting]);
 
   useEffect(() => {
     const next = new HingeDemo(
@@ -158,12 +173,20 @@ export function DemoPanel() {
         </div>
         <span className="draft-tag">EN REVISIÓN</span>
       </div>
-      <p>
-        Observa cómo se explica el gesto. Esta demostración prueba el reproductor; todavía no
-        es una rutina para seguir.
-      </p>
+      <p>Demostración en revisión. Todavía no es una rutina para seguir.</p>
       <div className="demo-layout">
-        <div>
+        <div className="demo-viewer">
+          <div className="camera-controls" role="group" aria-label="Vista del movimiento">
+            {(['side', 'front', 'threeQuarter'] as const).map((view) => (
+              <button
+                key={view}
+                aria-pressed={camera === view}
+                onClick={() => setCamera(view)}
+              >
+                {view === 'side' ? 'Lateral' : view === 'front' ? 'Frontal' : 'Tres cuartos'}
+              </button>
+            ))}
+          </div>
           <div
             className="avatar-stage"
             role="img"
@@ -196,18 +219,200 @@ export function DemoPanel() {
             )}
             <span className="scene-space">Área de referencia · 2 × 2 m</span>
           </div>
-          <div className="camera-controls" role="group" aria-label="Vista del movimiento">
-            {(['side', 'front', 'threeQuarter'] as const).map((view) => (
-              <button
-                key={view}
-                aria-pressed={camera === view}
-                onClick={() => setCamera(view)}
-              >
-                {view === 'side' ? 'Lateral' : view === 'front' ? 'Frontal' : 'Tres cuartos'}
-              </button>
-            ))}
-          </div>
           <p className="movement-cue">{movementCue}</p>
+          {failure && (
+            <div className="viewer-failure" role="alert">
+              <p>{failure}</p>
+              <button
+                onClick={() => {
+                  setFailure('');
+                  setAttempt((n) => n + 1);
+                }}
+              >
+                Volver a cargar avatar
+              </button>
+            </div>
+          )}
+          <div className="session-controls">
+            {(!session || session.can.start) && (
+              <button
+                ref={playbackButton}
+                className="primary-control"
+                disabled={!state?.resourcesReady}
+                onClick={() => act({ type: 'Start' })}
+              >
+                Iniciar prueba 3D
+              </button>
+            )}
+            {session?.status === 'ready' && (
+              <button
+                disabled={!state?.resourcesReady}
+                onClick={() => {
+                  demo.current?.toggleReadyPreview();
+                  refresh();
+                }}
+              >
+                {state?.previewPlaying ? 'Pausar ejemplo' : 'Reproducir ejemplo'}
+              </button>
+            )}
+            {session?.can.pause && (
+              <button
+                ref={playbackButton}
+                className="primary-control"
+                onClick={() => act({ type: 'Pause' })}
+              >
+                Pausar todo
+              </button>
+            )}
+            {session?.can.resume && (
+              <button
+                ref={playbackButton}
+                className="primary-control"
+                disabled={!state?.resourcesReady}
+                onClick={() => act({ type: 'Resume', visible: true, resourcesReady: true })}
+              >
+                Continuar
+              </button>
+            )}
+            {session?.status === 'paused' && (
+              <button
+                ref={inspectionButton}
+                disabled={!state?.resourcesReady}
+                aria-expanded={inspecting}
+                aria-controls={id + '-inspection'}
+                onClick={() => {
+                  if (inspecting) demo.current?.closeInspection();
+                  else setFeedback(demo.current?.openInspection() ?? '');
+                  refresh();
+                }}
+              >
+                {inspecting ? 'Cerrar revisión' : 'Ver despacio'}
+              </button>
+            )}
+            {finished && (
+              <button ref={playbackButton} onClick={reset}>
+                Preparar otra prueba 3D
+              </button>
+            )}
+          </div>
+          {state?.inspecting && (
+            <section
+              ref={inspectionPanel}
+              tabIndex={-1}
+              id={id + '-inspection'}
+              className="inspection"
+              aria-labelledby={id + '-inspection-title'}
+            >
+              <h3 id={id + '-inspection-title'}>Revisar movimiento</h3>
+              <p className="quiet-note">La sesión sigue pausada.</p>
+              <label>
+                Posición del ejemplo · {(state.poseMs / 1000).toFixed(1)} s de 8 s
+                <input
+                  type="range"
+                  min="0"
+                  max={hingeClip.durationMs}
+                  step="50"
+                  value={state.poseMs}
+                  onChange={(e) => {
+                    demo.current?.seekInspection(Number(e.target.value));
+                    refresh();
+                  }}
+                />
+              </label>
+              <div className="session-controls">
+                <button
+                  disabled={!state.resourcesReady}
+                  onClick={() => {
+                    demo.current?.playInspection(0.5);
+                    refresh();
+                  }}
+                >
+                  Reproducir a ½ velocidad
+                </button>
+                <button
+                  disabled={!state.resourcesReady}
+                  onClick={() => {
+                    demo.current?.playInspection(1);
+                    refresh();
+                  }}
+                >
+                  Reproducir a velocidad normal
+                </button>
+                <button
+                  disabled={!state.inspectionPlaying}
+                  onClick={() => {
+                    demo.current?.pauseInspection();
+                    refresh();
+                  }}
+                >
+                  Pausar inspección
+                </button>
+                <button
+                  onClick={() => {
+                    demo.current?.closeInspection();
+                    refresh();
+                  }}
+                >
+                  Volver al punto guardado
+                </button>
+              </div>
+              <p className="quiet-note">Al salir vuelves al punto guardado.</p>
+            </section>
+          )}
+          {active && !inspecting && (
+            <div
+              className="preparation-controls preparation-compact"
+              role="group"
+              aria-label="Más tiempo para prepararme"
+            >
+              <span>Más preparación</span>
+              <button
+                disabled={!session?.can.extend || state?.inspecting}
+                onClick={() => extend(30000)}
+              >
+                +30 s
+              </button>
+              <button
+                disabled={!session?.can.extend || state?.inspecting}
+                onClick={() => extend(60000)}
+              >
+                +1 min
+              </button>
+              <small>
+                {session?.status === 'paused' ? 'Sesión pausada' : 'Continúa automáticamente'}
+              </small>
+            </div>
+          )}
+          <div className="session-controls secondary-controls">
+            {active && (
+              <>
+                <button
+                  disabled={!session?.can.repeat || state?.inspecting}
+                  onClick={() => act({ type: 'QueueRepeat' })}
+                >
+                  Repetir bloque (+1 min)
+                </button>
+                {session?.can.cancelRepeat && (
+                  <button onClick={() => act({ type: 'CancelQueuedRepeat' })}>
+                    Cancelar repetición
+                  </button>
+                )}
+                <button
+                  disabled={!session?.can.skip || state?.inspecting}
+                  onClick={() => act({ type: 'SkipCurrentWork' })}
+                >
+                  Omitir secuencia actual
+                </button>
+                <button onClick={() => act({ type: 'Abort' })}>Terminar prueba 3D</button>
+              </>
+            )}
+          </div>
+          {session?.repeatQueued && (
+            <p role="status">Repetición añadida después del descanso.</p>
+          )}
+          <p className="check-feedback" role="status">
+            {feedback}
+          </p>
         </div>
         <div className="demo-guide">
           <p className="session-state" role="status">
@@ -245,205 +450,34 @@ export function DemoPanel() {
               <li key={text}>{text}</li>
             ))}
           </ol>
-          <p className="quiet-note">
-            10 s de ejemplo · 30 s de secuencia · 20 s de descanso. Dentro de la secuencia: 3
-            gestos de 8 s y 6 s de reposo. Son tiempos de prueba.
-          </p>
-        </div>
-      </div>
-      {failure && (
-        <div className="viewer-failure" role="alert">
-          <p>{failure}</p>
-          <button
-            onClick={() => {
-              setFailure('');
-              setAttempt((n) => n + 1);
-            }}
-          >
-            Volver a cargar avatar
-          </button>
-        </div>
-      )}
-      <div className="session-controls">
-        {(!session || session.can.start) && (
-          <button
-            className="primary-control"
-            disabled={!state?.resourcesReady}
-            onClick={() => act({ type: 'Start' })}
-          >
-            Iniciar prueba 3D
-          </button>
-        )}
-        {session?.status === 'ready' && (
-          <button
-            disabled={!state?.resourcesReady}
-            onClick={() => {
-              demo.current?.toggleReadyPreview();
-              refresh();
-            }}
-          >
-            {state?.previewPlaying ? 'Pausar ejemplo' : 'Reproducir ejemplo'}
-          </button>
-        )}
-        {session?.can.pause && (
-          <button className="primary-control" onClick={() => act({ type: 'Pause' })}>
-            Pausar todo
-          </button>
-        )}
-        {session?.can.resume && (
-          <button
-            className="primary-control"
-            disabled={!state?.resourcesReady}
-            onClick={() => act({ type: 'Resume', visible: true, resourcesReady: true })}
-          >
-            Continuar
-          </button>
-        )}
-        {session?.status === 'paused' && !state?.inspecting && (
-          <button
-            disabled={!state?.resourcesReady}
-            onClick={() => {
-              setFeedback(demo.current?.openInspection() ?? '');
-              refresh();
-            }}
-          >
-            Ver despacio
-          </button>
-        )}
-        {active && (
-          <>
-            <button
-              disabled={!session?.can.repeat || state?.inspecting}
-              onClick={() => act({ type: 'QueueRepeat' })}
-            >
-              Repetir bloque (+1 min)
-            </button>
-            {session?.can.cancelRepeat && (
-              <button onClick={() => act({ type: 'CancelQueuedRepeat' })}>
-                Cancelar repetición
-              </button>
-            )}
-            <button
-              disabled={!session?.can.skip || state?.inspecting}
-              onClick={() => act({ type: 'SkipCurrentWork' })}
-            >
-              Omitir secuencia actual
-            </button>
-            <button onClick={() => act({ type: 'Abort' })}>Terminar prueba 3D</button>
-          </>
-        )}
-        {finished && <button onClick={reset}>Preparar otra prueba 3D</button>}
-      </div>
-      {session?.repeatQueued && (
-        <p role="status">
-          Repetición añadida después del descanso; conserva el programa base.
-        </p>
-      )}
-      {active && (
-        <div
-          className="preparation-controls"
-          role="group"
-          aria-label="Más tiempo para prepararme"
-        >
-          <span>
-            Más tiempo para prepararme · el ejemplo sigue y la secuencia comienza sola
-          </span>
-          <button
-            disabled={!session?.can.extend || state?.inspecting}
-            onClick={() => extend(30000)}
-          >
-            +30 s
-          </button>
-          <button
-            disabled={!session?.can.extend || state?.inspecting}
-            onClick={() => extend(60000)}
-          >
-            +1 min
-          </button>
-          {session?.status === 'paused' && (
-            <p>«Pausar todo» mantiene detenida también la cuenta adicional hasta continuar.</p>
-          )}
-        </div>
-      )}
-      {state?.inspecting && (
-        <section className="inspection" aria-labelledby="inspection-title">
-          <h3 id="inspection-title">Revisar el movimiento sin avanzar la sesión</h3>
-          <label>
-            Posición del ejemplo · {(state.poseMs / 1000).toFixed(1)} s de 8 s
-            <input
-              type="range"
-              min="0"
-              max={hingeClip.durationMs}
-              step="50"
-              value={state.poseMs}
+          <label className="session-selector">
+            Duración de la prueba
+            <select
+              value={minutes}
+              disabled={active}
               onChange={(e) => {
-                demo.current?.seekInspection(Number(e.target.value));
-                refresh();
+                setMinutes(e.target.value === '5' ? 5 : 1);
+                setFeedback('');
               }}
-            />
+            >
+              <option value="1">1 minuto · un bloque</option>
+              <option value="5">5 minutos · cinco bloques del mismo gesto</option>
+            </select>
           </label>
-          <div className="session-controls">
-            <button
-              disabled={!state.resourcesReady}
-              onClick={() => {
-                demo.current?.playInspection(0.5);
-                refresh();
-              }}
-            >
-              Reproducir a ½ velocidad
-            </button>
-            <button
-              disabled={!state.resourcesReady}
-              onClick={() => {
-                demo.current?.playInspection(1);
-                refresh();
-              }}
-            >
-              Reproducir a velocidad normal
-            </button>
-            <button
-              disabled={!state.inspectionPlaying}
-              onClick={() => {
-                demo.current?.pauseInspection();
-                refresh();
-              }}
-            >
-              Pausar inspección
-            </button>
-            <button
-              onClick={() => {
-                demo.current?.closeInspection();
-                refresh();
-              }}
-            >
-              Volver al punto guardado
-            </button>
-          </div>
-          <p>El ejemplo termina tras un gesto. La sesión sigue pausada al salir.</p>
-        </section>
-      )}
-      <p className="check-feedback" role="status">
-        {feedback}
-      </p>
-      <label className="session-selector">
-        Duración del ensayo del reproductor
-        <select
-          value={minutes}
-          disabled={active}
-          onChange={(e) => {
-            setMinutes(e.target.value === '5' ? 5 : 1);
-            setFeedback('');
-          }}
-        >
-          <option value="1">1 minuto · un bloque</option>
-          <option value="5">5 minutos · cinco bloques del mismo gesto</option>
-        </select>
-      </label>
-      <p className="quiet-note">
-        Base restante: {time(session?.baseRemainingMs ?? minutes * 60000)} · Preparación
-        añadida: {time(session?.counters.preparationAddedMs ?? 0)} · Bloques extra restantes:{' '}
-        {time(session?.extraRemainingMs ?? 0)}.
-      </p>
+        </div>
+      </div>
+      <details className="demo-test-details">
+        <summary>Detalles de la prueba</summary>
+        <p>
+          Por bloque: 10 s de ejemplo, 30 s de secuencia y 20 s de descanso. La secuencia
+          muestra tres gestos de 8 s y 6 s de reposo. Son tiempos de prueba.
+        </p>
+        <p className="quiet-note">
+          Base restante: {time(session?.baseRemainingMs ?? minutes * 60000)} · Preparación
+          añadida: {time(session?.counters.preparationAddedMs ?? 0)} · Bloques extra restantes:{' '}
+          {time(session?.extraRemainingMs ?? 0)}.
+        </p>
+      </details>
       <details>
         <summary>Ficha, errores a observar y límites de esta prueba</summary>
         <p>

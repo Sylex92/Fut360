@@ -77,6 +77,9 @@ const mapping = {
     'Ground lift ' + authoring.groundLiftMeters + ' m',
     'Blender Z-up/-Y-front to glTF Y-up/+Z-front by existing exporter',
     'Original bone names/weights/hierarchy retained',
+    'Clavicle pose lowered ' +
+      authoring.shoulderPoseCorrectionDegrees +
+      ' degrees; rest rig and arm direction retained',
     'Skin meshes made identity scene roots without changing evaluated positions',
   ],
 };
@@ -129,6 +132,7 @@ const report = {
   finalMaterial: 'Local baked neutral sportswear; no missing external textures',
   rigBoneCount: authoring.bones.length,
   meshVertices: authoring.meshVertices,
+  shoulderPoseCorrectionDegrees: authoring.shoulderPoseCorrectionDegrees,
   boundsRuntimeMeters: manifest.boundingBoxMeters,
   maxFootDriftMeters: maxFootDrift,
   technicalToleranceMeters: 0.001,
