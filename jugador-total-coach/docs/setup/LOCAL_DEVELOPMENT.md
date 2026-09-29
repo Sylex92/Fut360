@@ -73,7 +73,7 @@ format solo aplica al código/configuración; no reescribe documentos, fixture n
 - packages/domain: tipos v1, aritmética y contratos/snapshot de ejecución, sin plataforma ni UI.
 - packages/exercise-catalog: Ajv 2020-12, reglas semánticas y compilador v1; errores con ruta, sin red propia.
 - packages/session-engine: motor puro que recibe tiempo/comandos y proyecta estado/eventos; solo depende de domain.
-- tests y pruebas de pantalla: 84 casos en cinco archivos; [cobertura y límites](../reviews/phase03-session-engine-review.md). Reloj inyectado y render React a HTML; no un navegador E2E.
+- tests y pruebas de pantalla: 85 casos en cinco archivos; [cobertura y límites](../reviews/phase03-session-engine-review.md). Reloj inyectado y render React a HTML; no un navegador E2E.
 - .tooling: gestor fijado y lockfile separado. .cache y node_modules están excluidos de Git.
 
-No hay visor 3D, simulación, almacenamiento de entrenamiento, PWA ni recurso deportivo aprobado. WorkoutV1 se conserva intacto; el plan técnico compilado no inventa demostraciones dentro de la hora ni todos los contratos futuros de contenido/recursos. La revisión visual de la pantalla nueva y su consola sigue pendiente por indisponibilidad del conector.
+No hay visor 3D, simulación, almacenamiento de entrenamiento, PWA ni recurso deportivo aprobado. WorkoutV1 se conserva intacto; el plan técnico compilado no inventa demostraciones dentro de la hora ni todos los contratos futuros de contenido/recursos. Cierre de 03 sustentado en pruebas, reporte manual de avance/botones/consola/Tab/ancho y captura revisada. El conector sigue indisponible; límites y corrección de redondeo posterior a la captura documentados en el informe.

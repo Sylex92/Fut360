@@ -5,8 +5,8 @@ import { compileWorkoutV1 } from '@fut360/exercise-catalog';
 import { prepareSession, shortTechnicalPlan } from '../composition/session';
 import type { SessionClock } from '../platform/session-clock';
 
-const time = (ms: number) => {
-  const seconds = Math.ceil(ms / 1000);
+const time = (ms: number, kind: 'remaining' | 'elapsed' = 'remaining') => {
+  const seconds = kind === 'elapsed' ? Math.floor(ms / 1000) : Math.ceil(ms / 1000);
   return (
     Math.floor(seconds / 60)
       .toString()
@@ -140,17 +140,18 @@ export function SessionReadout({ state }: { state: SessionProjection }) {
         </div>
         <div>
           <dt>Tiempo registrado</dt>
-          <dd>{time(state.recordedMs)}</dd>
+          <dd>{time(state.recordedMs, 'elapsed')}</dd>
         </div>
       </dl>
       <p className="table-note">
         Programado: {time(state.baseDurationMs)} · Preparación extra añadida:{' '}
         {time(state.counters.preparationAddedMs)} · Pausas observadas:{' '}
-        {time(state.counters.observedPauseMs)} · Huecos sin acreditar:{' '}
-        {time(state.counters.unobservedMs)}
+        {time(state.counters.observedPauseMs, 'elapsed')} · Huecos sin acreditar:{' '}
+        {time(state.counters.unobservedMs, 'elapsed')}
       </p>
       <p className="table-note">
-        Trabajo omitido: {time(state.counters.baseOmittedMs + state.counters.extraOmittedMs)} ·
+        Trabajo omitido:{' '}
+        {time(state.counters.baseOmittedMs + state.counters.extraOmittedMs, 'elapsed')} ·
         Tiempo de reproducción, no actividad física medida.
       </p>
     </>

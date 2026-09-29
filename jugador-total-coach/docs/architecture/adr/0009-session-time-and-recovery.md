@@ -1,6 +1,6 @@
 # ADR 0009 — Un reloj de sesión y recuperación explícita
 
-Fecha: 2026-09-27. Actualización: 2026-09-28. Estado: política temporal implementada y probada en 03; inspector/3D y recuperación durable pendientes. [Evidencia y límites de 03](../../reviews/phase03-session-engine-review.md). Pruebas con reloj simulado correctas; validación visual/interactiva nueva todavía pendiente.
+Fecha: 2026-09-27. Actualización: 2026-09-28. Estado: política temporal implementada y probada en 03; inspector/3D y recuperación durable pendientes. [Cierre y límites de 03](../../reviews/phase03-session-engine-review.md). Pruebas con reloj simulado correctas, reporte manual favorable de controles/consola/Tab/ancho y captura inspeccionada; sin certificación integral de accesibilidad ni E2E automatizado.
 
 ## Problema
 

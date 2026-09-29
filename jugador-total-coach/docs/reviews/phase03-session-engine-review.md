@@ -1,6 +1,6 @@
 # Fase 03 — motor temporal y vista de prueba
 
-Fecha: 2026-09-28. Alcance autorizado: prompts/03-session-engine.md, usando las herramientas existentes. Implementación y verificación automatizada completadas; **cierre visual/interactivo pendiente**. No declarar toda la Definition of Done satisfecha: no se ha observado la nueva pantalla ejecutándose en navegador ni su consola.
+Fecha: 2026-09-28. Alcance autorizado: prompts/03-session-engine.md, usando las herramientas existentes. **Cierre técnico de 03 completado**, con pruebas automatizadas, reporte manual favorable de avance/botones/consola/Tab/ancho y captura conservada e inspeccionada. La interacción y consola se sustentan en el reporte del usuario; la observación directa del agente corresponde a la imagen. Sin E2E automatizado, certificación integral de accesibilidad ni aprobación deportiva. La corrección menor de redondeo posterior a la captura se verificó con regresión automatizada y build; no se atribuye al usuario una segunda prueba.
 
 ## Resultado disponible
 
@@ -39,7 +39,7 @@ node tools/pnpm.mjs run test
 node tools/pnpm.mjs run build
 ```
 
-**84 pruebas en cinco archivos.** Incluyen las 24 existentes y 60 nuevas. Cobertura relevante:
+**85 pruebas en cinco archivos.** Incluyen las 24 existentes y 61 nuevas. Cobertura relevante:
 
 | Grupo | Evidencia automática |
 |---|---|
@@ -51,11 +51,11 @@ node tools/pnpm.mjs run build
 | Preparación | 20+30=50 s; 5+30+60=95 s; autoinicio; pausa total; retorno al cursor si llega tarde; transferencia/cancelación de objetivo al cambiar extra; base 60 min + preparación = 60:30/61:30 |
 | Conservación | 20 secuencias reproducibles de 100 acciones verifican contadores, identidades, finales de segmentos y terminal único |
 | Adaptador | Reloj fraccionario normalizado, umbral 2000/2001 ms, valores negativos/no finitos, ocultación/regreso y recursos no disponibles; comandos muestrean antes de actuar |
-| Pantalla | HTML identifica prueba/draft/pérdida por recarga; muestra preparación, pausa/huecos y lado del próximo objetivo. No acredita clics reales ni efectos React en navegador |
+| Pantalla | HTML identifica prueba/draft/pérdida por recarga; muestra preparación, pausa/huecos y lado del próximo objetivo. Regresión de redondeo a 3200 ms: base restante 59:57 y registrado 00:03, con milisegundos internos intactos. No acredita clics reales ni efectos React en navegador |
 
-Build correcto: 115 módulos; JavaScript 387,73 kB (117,14 kB gzip), CSS 8,74 kB (2,63 kB gzip). Son tamaños de salida, no mediciones de rendimiento móvil. El servidor preview existente escucha solo en 127.0.0.1:4173. HTTP y referencias del build se comprobaron; servir archivos no prueba ejecución de JavaScript ni ausencia de errores de consola.
+Build final correcto: 115 módulos; JavaScript 387,82 kB (117,17 kB gzip), CSS 8,74 kB (2,63 kB gzip). Son tamaños de salida, no mediciones de rendimiento móvil. El servidor preview existente escucha solo en 127.0.0.1:4173. Servir archivos no prueba ejecución de JavaScript ni ausencia de errores de consola.
 
-Comprobación final: HTML y JavaScript con HTTP 200; asset index-CvYP8xQb.js servido con SHA-256 idéntico al archivo compilado local y contiene el panel nuevo. 68 documentos decodificados como UTF-8, 199 enlaces locales válidos y git diff --check correcto. La petición de mostrar la página en Codex quedó en cola; no se interpreta como prueba de visualización.
+Comprobación de la entrega inicial: HTML y JavaScript con HTTP 200; asset index-CvYP8xQb.js servido con SHA-256 idéntico al archivo compilado local y contiene el panel nuevo. 68 documentos decodificados como UTF-8, 199 enlaces locales válidos y git diff --check correcto. La petición de mostrar la página en Codex quedó en cola; no se interpreta como prueba de visualización. El build de la corrección posterior genera index-CqYMhzmH.js.
 
 Fixture SHA-256: `0967293497539f57f71d201e019d7203b9707ab4152b7a6be0ecb9b4021fc40e`. Esquema de workout: `5dfb5c501845de1d4c0f5c352f931c42e9f6d1978f14200c471b5034f56fc1c8`. Ambos coinciden con la evidencia anterior. No se cambia la sesión ni se aprueba su contenido.
 
@@ -73,10 +73,22 @@ Se conserva el [inventario/licencias de 02](phase02-dependencies.md). No se pres
 - El fixture v1 no tiene segmentos propios de demostración: el compilador no inventa tiempo dentro de sus 60 minutos. La secuencia técnica corta sí los incluye para probarlos. La sesión deportiva definitiva requiere sus fichas y transiciones revisadas.
 - Recursos disponibles significa texto de prueba disponible. No hay avatar, bucle de demostración, inspección a 0,5×, cámaras, audio, física, material visual ni PWA offline. No se afirma haber validado enseñanza, técnica corporal, seguridad, usabilidad o rendimiento móvil.
 
-## Pendientes y siguiente comprobación
+## Revisión manual y cierre
+
+Actualización tras la entrega: el usuario informa «si hice pruebas de la parte de prueba de avance automático y como funcionan los botones y parecen estar correctos». Evidencia manual general favorable, sin detalle suficiente para atribuir todos los escenarios, teclado/ancho reducido o revisión exhaustiva de usabilidad. No se solicitan de nuevo las mismas pruebas como si no se hubieran realizado. Inicialmente pidió orientación para revisar la consola; su comprobación posterior se registra a continuación.
+
+Guía proporcionada: abrir la aplicación en Chrome de Windows y usar Ctrl+Mayús+J; mantener visible la consola y sus errores, recargar y utilizar los controles para observar mensajes. Comunicar el texto o captura de errores, o su ausencia durante ese recorrido. No requiere escribir comandos. Referencias oficiales consultadas para la guía: [abrir DevTools](https://developer.chrome.com/docs/devtools/open) y [consola/filtros](https://developer.chrome.com/docs/devtools/console/reference). No convertir la entrega de instrucciones en una comprobación ejecutada.
+
+Resultado posterior: el usuario confirma «listo comprobado no aparece ningún error en la consola». Se registra ausencia de errores observados durante su recorrido manual y se resuelve el pendiente de consola. No hay inspección directa del agente ni captura de consola; no generalizar a escenarios no probados. No se repiten pruebas de código porque esta actualización solo registra evidencia, sin modificar la aplicación.
 
 El intento con browser-use falló: «No Codex IAB backends were discovered». No se añadieron herramientas ni se usaron otras interfaces para eludir el conector. La captura y el recorrido del usuario de 02 siguen siendo evidencia de **02**, no de estos controles nuevos.
 
-Para cerrar la parte visual de 03, realizar un único recorrido integrado en el navegador disponible: recargar, localizar «Prueba el avance automático», iniciar el minuto, añadir +30 s y observar cuenta/autoinicio; pausar/continuar; repetir/cancelar u omitir conservando descanso; ocultar/volver y continuar explícitamente; completar, preparar otra y confirmar consola sin errores. Revisar teclado, foco y legibilidad a ancho reducido. Conservar evidencia visual/E2E y registrar resultados reales; no pedir al usuario autorización por cada botón. No ejecutar físicamente los intervalos.
+Comprobación final del usuario: «se comprobó la navegación de Tab de manera correcta, de misma manera el ancho de la ventana y acomodo de textos y botones» y entrega captura. Resueltos los pendientes de navegación básica/acomodo por reporte manual y evidencia visual mediante inspección del agente. No inventar resultados detallados de cada tecla, dimensiones probadas ni escenarios no enumerados; no es certificación integral de accesibilidad. No repetir el recorrido ya confirmado sin un cambio o fallo relevante.
 
-La indisponibilidad del conector deja esta comprobación pendiente; no exige reinstalar herramientas ni cambiar configuración global. La prueba real en Samsung, optimización y PWA se harán en sus fases. No comenzar 04 (avatar/escena) sin el alcance correspondiente autorizado. [Estado vigente](../../PROJECT_STATUS.md).
+[Captura de fase 03](evidence/phase03-session-user.png): 1213×581 píxeles, 38893 bytes, SHA-256 `fc16bf1da7ffe621bee098b1b8873241616bb52ac91ec238de76f5f82964db9f`, idéntico al original y sin edición. Muestra active-march, siguiente ankle-mobility, reloj 00:42, base 59:57, registrado 00:04, extras en cero y controles de pausa/omisión/repetición/terminación y preparación +30 s/+1 min. Se observan legibilidad y separación adecuadas en la zona mostrada. El borde superior está recortado; no acredita el resto de la página, consola o comportamiento por sí sola. Los nombres son IDs del fixture técnico histórico, no fichas finales.
+
+La revisión detectó un detalle de formato: se usaba ceil tanto en restantes como en acumulados y podía mostrarse 59:57 + 00:04. Corregido en SessionPanel: segundos completos para acumulados, redondeo superior para cuentas restantes, milisegundos del motor intactos. Regresión a 3200 ms verifica 59:57/00:03. Pasaron 85 pruebas, formato, lint, tipos y build. Se conserva la captura anterior sin editar y se distingue de esta corrección posterior. No cambian layout, semántica de botones ni navegación.
+
+Verificación final del cierre: 68 documentos UTF-8 y 201 enlaces locales sin roturas; git diff --check correcto. Hashes del fixture/esquema conservados. HTML y JavaScript final devuelven HTTP 200; index-CqYMhzmH.js servido con SHA-256 idéntico al build local. La implementación base está en c35ff3f; este cierre conserva las confirmaciones, captura y corrección como punto de control local, sin publicación.
+
+La indisponibilidad del conector queda como límite de la evidencia automatizada, no como motivo para repetir el recorrido manual ya documentado. La evidencia visual alternativa y el reporte cubren el cierre básico de esta fase. Prueba real en Samsung, optimización, PWA, demostración corporal y revisión deportiva conservan sus fases. No comenzar 04 (avatar/escena) sin el alcance correspondiente autorizado. [Estado vigente](../../PROJECT_STATUS.md).

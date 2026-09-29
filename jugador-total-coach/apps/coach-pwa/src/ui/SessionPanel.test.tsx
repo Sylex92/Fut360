@@ -12,6 +12,17 @@ it('identifica la prueba, la pérdida por recarga y el selector de una hora', ()
   expect(html).toContain('Recargar la página pierde');
   expect(html).not.toContain('Estoy listo');
 });
+it('no acredita visualmente segundos incompletos del tiempo registrado', () => {
+  const clock = prepareSession(compileWorkoutV1(fixture), 'rounding', () => 0);
+  clock.dispatch({ type: 'Start' });
+  clock.engine.advance(3200);
+  const state = clock.engine.project();
+  const html = renderToStaticMarkup(<SessionReadout state={state} />);
+  expect(html).toContain('<dt>Base restante</dt><dd>59:57</dd>');
+  expect(html).toContain('<dt>Tiempo registrado</dt><dd>00:03</dd>');
+  expect(state.recordedMs).toBe(3200);
+  expect(state.baseRemainingMs).toBe(3596800);
+});
 it('presenta una cuenta de preparación que se inicia automáticamente', () => {
   const clock = prepareSession(shortTechnicalPlan, 'render', () => 0);
   clock.dispatch({ type: 'Start' });

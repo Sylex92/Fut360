@@ -1,6 +1,6 @@
 # Contrato del motor de sesión
 
-Diseño: 2026-09-27. Actualización: 2026-09-28. Motor temporal y adaptador implementados en 03 con milisegundos enteros y conversión única del fixture. [Cobertura y límites](../reviews/phase03-session-engine-review.md): pruebas automáticas correctas; recorrido en navegador nuevo pendiente. Inspector, avatar, audio y recuperación durable siguen previstos para sus fases. Los nombres siguientes expresan el contrato; la API concreta está en domain/session.ts y session-engine.
+Diseño: 2026-09-27. Actualización: 2026-09-28. Motor temporal y adaptador implementados en 03 con milisegundos enteros y conversión única del fixture. [Cierre, cobertura y límites](../reviews/phase03-session-engine-review.md): pruebas automáticas correctas, reporte manual favorable de avance/botones/consola/Tab/ancho y captura inspeccionada. Inspector, avatar, audio y recuperación durable siguen previstos para sus fases. Los nombres siguientes expresan el contrato; la API concreta está en domain/session.ts y session-engine.
 
 ## Autoridad y programa
 
