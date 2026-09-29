@@ -143,15 +143,6 @@ export function DemoPanel() {
             : session?.phase === 'rest'
               ? 'Descanso · ejemplo siguiente'
               : 'Ejemplo de preparación';
-  const cue =
-    state && state.poseMs >= 1000 && state.poseMs < 3000
-      ? 'Lleva la cadera hacia atrás.'
-      : state && state.poseMs >= 3000 && state.poseMs < 4000
-        ? 'Tronco y cuello alineados; pies apoyados.'
-        : state && state.poseMs >= 4000 && state.poseMs < 6000
-          ? 'Vuelve de forma controlada.'
-          : 'Posición inicial · pies apoyados y rodillas suaves.';
-
   return (
     <section className="panel demo-panel" aria-labelledby="demo-title">
       <div className="section-heading">
@@ -170,7 +161,8 @@ export function DemoPanel() {
           <div
             className="avatar-stage"
             role="img"
-            aria-label={'Avatar de la bisagra de cadera. ' + cue}
+            aria-label="Avatar de la bisagra de cadera"
+            aria-describedby={id + '-movement-steps'}
           >
             {!failure && (
               <ViewerBoundary key={attempt} onFailure={onFailure}>
@@ -209,7 +201,14 @@ export function DemoPanel() {
               </button>
             ))}
           </div>
-          <p className="movement-cue">{cue}</p>
+          <div className="movement-instructions">
+            <h3>Cómo realizar el movimiento</h3>
+            <ol className="movement-steps" id={id + '-movement-steps'}>
+              {hingeExercise.cues.map((text) => (
+                <li key={text}>{text}</li>
+              ))}
+            </ol>
+          </div>
         </div>
         <div className="demo-guide">
           <p className="session-state" role="status">
@@ -242,11 +241,6 @@ export function DemoPanel() {
               «Continuar» lo retoma.
             </p>
           )}
-          <ol className="movement-steps">
-            {hingeExercise.cues.map((text) => (
-              <li key={text}>{text}</li>
-            ))}
-          </ol>
           <p className="quiet-note">
             10 s de ejemplo · 30 s de secuencia · 20 s de descanso. Dentro de la secuencia: 3
             gestos de 8 s y 6 s de reposo. Son tiempos de prueba.
