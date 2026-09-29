@@ -143,6 +143,12 @@ export function DemoPanel() {
             : session?.phase === 'rest'
               ? 'Descanso · ejemplo siguiente'
               : 'Ejemplo de preparación';
+  const movementCue =
+    state?.mode === 'rest'
+      ? 'Posición inicial · pies apoyados.'
+      : (state?.poseMs ?? 0) < hingeClip.durationMs / 2
+        ? 'Cadera hacia atrás; mantén los pies apoyados.'
+        : 'Vuelve despacio a la posición inicial.';
   return (
     <section className="panel demo-panel" aria-labelledby="demo-title">
       <div className="section-heading">
@@ -201,14 +207,7 @@ export function DemoPanel() {
               </button>
             ))}
           </div>
-          <div className="movement-instructions">
-            <h3>Cómo realizar el movimiento</h3>
-            <ol className="movement-steps" id={id + '-movement-steps'}>
-              {hingeExercise.cues.map((text) => (
-                <li key={text}>{text}</li>
-              ))}
-            </ol>
-          </div>
+          <p className="movement-cue">{movementCue}</p>
         </div>
         <div className="demo-guide">
           <p className="session-state" role="status">
@@ -241,6 +240,11 @@ export function DemoPanel() {
               «Continuar» lo retoma.
             </p>
           )}
+          <ol className="movement-steps" id={id + '-movement-steps'}>
+            {hingeExercise.cues.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
+          </ol>
           <p className="quiet-note">
             10 s de ejemplo · 30 s de secuencia · 20 s de descanso. Dentro de la secuencia: 3
             gestos de 8 s y 6 s de reposo. Son tiempos de prueba.

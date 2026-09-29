@@ -52,21 +52,14 @@
   background: #213e34;
   color: #fff;
 }
-.movement-instructions {
-  margin-top: 18px;
-  padding: 16px 18px;
-  border: 1px solid #d9dfd5;
-  border-radius: 10px;
-  background: #f4f7ec;
-}
-.movement-instructions h3 {
-  margin: 0 0 10px;
-  font-size: 16px;
+.movement-cue {
+  min-height: 3em;
+  line-height: 1.5;
+  font-weight: 600;
 }
 .movement-steps {
-  margin: 0;
   padding-left: 22px;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 .movement-steps li {
   padding: 5px 0 5px 6px;
