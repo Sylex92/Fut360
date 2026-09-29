@@ -1,9 +1,20 @@
 # Registro de recursos y licencias
 
-No hay recursos de terceros incorporados en este blueprint. Una referencia de catálogo no equivale a una licencia auditada del archivo.
+Actualizado el 2026-09-29, fase 04 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias por archivo, bytes y SHA-256](docs/reviews/phase04-asset-evidence.json).
 
 | Asset ID | Archivo/versión/hash | Autor y URL de origen | Licencia del archivo | Variante gratis | Fuente editable/importable | Modificaciones | Revisión |
 |---|---|---|---|---|---|---|---|
+| quaternius-superhero-male-source | Superhero_Male_FullBody.gltf, SHA-256 e7fcea214ecf8855afbf910b50de6f9c7d1decfb71ca28bad8a4481452dafeb4; bin/texturas con hashes en evidencia | Quaternius, [Base Characters Standard](https://quaternius.itch.io/universal-base-characters) | CC0-1.0 en [License_Standard conservada](assets/source/hip-hinge/QUATERNIUS_LICENSE.txt) | Sí, Standard; no Source | glTF/bin/texturas disponibles en assets/source/hip-hinge/original | Originales sin cambios; dos normales referenciadas ausentes en el ZIP, registradas | Licencia verificada; rig real de 65 huesos importado; aprobado solo para prototipo |
+| quaternius-hip-hinge-v1 | [GLB](assets/runtime/hip-hinge-v1.glb), 824816 bytes, SHA-256 14123518d2d1fbf194768c20d17c4e7bc56c77e0540cdf7e8ecca43dfd82bb97 | Derivado local de la base anterior | Componentes originales CC0; aportaciones del proyecto sin nueva licencia pública elegida | Flujo local sin compra | [Fuente .blend](assets/source/hip-hinge/hip-hinge-v1.blend), script y originales | Ropa neutra/textura propia de 512², pose, clip específico, normalización y bake; no nuevo rig | draft; validaciones técnicas y renders registrados, revisión humana/deportiva y navegador pendientes |
+| quaternius-animation-standard-evaluation | UAL1_Standard.glb del ZIP con SHA-256 cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724 | Quaternius, [Animation Library Standard](https://quaternius.itch.io/universal-animation-library) | CC0-1.0 en [License interna conservada](docs/licenses/quaternius-animation-standard.txt) | Sí, Standard; no Pro/Source | GLB importable inspeccionado localmente | Ninguna; inventario de 43 acciones y comparación visual del maniquí | Evaluado, sin clip hip-hinge; no incorporado al runtime ni fuente entregada |
+
+## Adquisición y alcance
+
+Descargas gratuitas del 2026-09-28 mediante el flujo público de itch.io del autor, sin cuenta ni compra. Universal Base Characters[Standard].zip: 128968391 bytes, SHA-256 fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40, upload 15861669. Universal Animation Library[Standard].zip: 15904933 bytes, SHA-256 cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724, upload 17958403. El hash identifica el archivo, sin inventar una versión que no declare internamente. ZIP completos en assets/downloads, ignorados por Git; no guardar URLs firmadas/tokens de descarga en documentos.
+
+La edición gratuita Base solo contiene las variantes Superhero; se corrigió la propuesta preliminar de Regular. Ropa, materiales y movimiento nuevos se hicieron localmente con herramientas existentes; no se reutilizaron shaders Source ni identidad de un futbolista. No se necesita el .blend comercial para editar el recurso importado. [Revisión completa y límites](docs/reviews/phase04-vertical-slice-review.md).
+
+Blender portable es herramienta de desarrollo y se registra en la [auditoría de dependencias](docs/reviews/phase04-dependencies.md); no forma parte del GLB ni del build. Conservar avisos de herramientas no concede derechos sobre otros assets que se quieran añadir en el futuro.
 
 Preferir CC0 o recursos propios; CC BY con atribución. Todo elemento desconocido queda bloqueado. Guardar evidencias al seleccionar el archivo. Revisar mallas, clips, materiales, texturas, audio, logos y scripts por separado cuando corresponda.
 

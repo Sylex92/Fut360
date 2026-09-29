@@ -7,6 +7,7 @@
     "@fut360/domain": "workspace:*",
     "@fut360/exercise-catalog": "workspace:*",
     "@fut360/session-engine": "workspace:*",
+    "@fut360/viewer-3d": "workspace:*",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   }

@@ -6,7 +6,7 @@ export default ts.config(
   js.configs.recommended,
   ...ts.configs.recommended,
   {
-    files: ['apps/**/*.{ts,tsx}', 'packages/**/*.ts'],
+    files: ['apps/**/*.{ts,tsx}', 'packages/**/*.{ts,tsx}'],
     rules: {
       'no-restricted-imports': [
         'error',
@@ -53,7 +53,27 @@ export default ts.config(
       ],
     },
   },
-  { files: ['tools/*.mjs'], languageOptions: { globals: { process: 'readonly' } } },
+  {
+    files: ['tools/*.mjs'],
+    languageOptions: { globals: { process: 'readonly', console: 'readonly' } },
+  },
+  {
+    files: ['packages/viewer-3d/**/*.{ts,tsx}'],
+    ignores: ['packages/viewer-3d/**/*.test.ts'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            '@fut360/session-engine',
+            '@fut360/coach-pwa',
+            '@fut360/exercise-catalog',
+            'node:*',
+          ],
+        },
+      ],
+    },
+  },
   {
     files: ['packages/session-engine/**/*.ts'],
     rules: {

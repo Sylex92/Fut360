@@ -5,6 +5,123 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+.demo-panel {
+  margin: 0 0 30px;
+}
+.demo-panel > p,
+.demo-guide p,
+.demo-panel details {
+  line-height: 1.65;
+}
+.demo-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 24px;
+}
+.avatar-stage {
+  height: 460px;
+  position: relative;
+  background: #e6ece6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.scene-space {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: #f4f5f0e8;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  pointer-events: none;
+}
+.scene-message {
+  position: absolute;
+  inset: 35% 20px auto;
+  text-align: center;
+  line-height: 1.6;
+}
+.camera-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.camera-controls button[aria-pressed='true'] {
+  background: #213e34;
+  color: #fff;
+}
+.movement-cue {
+  min-height: 3em;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.movement-steps {
+  padding-left: 22px;
+  line-height: 1.55;
+}
+.movement-steps li {
+  padding: 5px 0 5px 6px;
+}
+.quiet-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4f6257;
+}
+.demo-guide .session-time {
+  margin-top: 12px;
+}
+.auto-start {
+  border-left: 3px solid #6b7a43;
+  padding-left: 14px;
+}
+.inspection {
+  border: 1px solid #a8bd97;
+  background: #f4f7ec;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.inspection label {
+  display: block;
+  line-height: 1.6;
+}
+.inspection input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  accent-color: #213e34;
+}
+.inspection input:focus-visible {
+  outline: 3px solid #1769aa;
+  outline-offset: 4px;
+}
+.viewer-failure {
+  background: #fae8e0;
+  border: 1px solid #dab8a8;
+  padding: 16px;
+  border-radius: 8px;
+}
+.demo-panel button {
+  white-space: normal;
+}
+.demo-panel button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+@media (max-width: 850px) {
+  .demo-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .avatar-stage {
+    height: 380px;
+  }
+  .demo-guide .session-time {
+    font-size: 48px;
+  }
+}
 .session-panel {
   margin: 28px 0;
   border: 1px solid #cbd6bd;

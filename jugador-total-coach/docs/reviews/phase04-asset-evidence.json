@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-09-29",
+  "authoringTool": "Blender 4.5.14 LTS",
+  "clipName": "EX_hip-hinge__neutral__v1",
+  "samples": 241,
+  "fps": 30,
+  "durationMs": 8000,
+  "sourceMissingImages": [
+    "T_Hair_1_Normal_png.png",
+    "T_Eye_Normal_png.png"
+  ],
+  "finalMaterial": "Local baked neutral sportswear; no missing external textures",
+  "rigBoneCount": 65,
+  "meshVertices": 8483,
+  "boundsRuntimeMeters": {
+    "min": [
+      -0.3600420355796814,
+      -0.000035987235605716705,
+      -0.36020195484161377
+    ],
+    "max": [
+      0.3600422143936157,
+      1.8195866346359253,
+      0.3294827938079834
+    ]
+  },
+  "maxFootDriftMeters": 0.000035902328653603236,
+  "technicalToleranceMeters": 0.001,
+  "sportingReview": "pending",
+  "browserReview": "pending",
+  "files": [
+    {
+      "path": "assets/source/hip-hinge/hip-hinge-v1.blend",
+      "bytes": 1539035,
+      "sha256": "d74c248daa38d0f166ba72a65af7940368a1a0bd8117e0e117c20caeb2a049f4"
+    },
+    {
+      "path": "assets/source/hip-hinge/neutral-sportswear.png",
+      "bytes": 28221,
+      "sha256": "a28b8d7dd0f9e5ec10c71d829d036cff88398064366a2de1d9b77acb3f62ffe6"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/Superhero_Male_FullBody.bin",
+      "bytes": 720076,
+      "sha256": "459003f9745853ae562a85506a2b94dd56515c1f37728f9fa3d2ce1a3e4cd92f"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/Superhero_Male_FullBody.gltf",
+      "bytes": 30989,
+      "sha256": "e7fcea214ecf8855afbf910b50de6f9c7d1decfb71ca28bad8a4481452dafeb4"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/T_Eye_Brown.png",
+      "bytes": 35958,
+      "sha256": "d08e3356a83211bc6ca21fe3a8e39f4b5c1a3b8f85457fc2c0fb57be09935025"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/T_Hair_1_BaseColor.png",
+      "bytes": 1570376,
+      "sha256": "bc7aa863bd22ab0a995cd838cceb4d3a5186ee54ee2fb0108fad85d20c057e6e"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/T_Superhero_Male_Dark.png",
+      "bytes": 1384380,
+      "sha256": "df680cbc1967a61e85998bfafb8f7bc0a36dd604bb3266486c4b06b1a184bb45"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/T_Superhero_Male_Normal.png",
+      "bytes": 4252937,
+      "sha256": "9b25cf9200216eb754b79cf4c63b5380c419780788322f3c57cdd2b3e02679a6"
+    },
+    {
+      "path": "assets/source/hip-hinge/original/T_Superhero_Male_Roughness.png",
+      "bytes": 3152049,
+      "sha256": "c70dabf48574cda55644d556beae1ee7cf1bdcf68a50d259d20f2f2358f27991"
+    },
+    {
+      "path": "assets/source/hip-hinge/QUATERNIUS_LICENSE.txt",
+      "bytes": 806,
+      "sha256": "0f4beaf0fe360a7732e58bbe3dbf60a2422367fbea60cb9ea4add968f383268e"
+    },
+    {
+      "path": "assets/runtime/hip-hinge-v1.glb",
+      "bytes": 824816,
+      "sha256": "14123518d2d1fbf194768c20d17c4e7bc56c77e0540cdf7e8ecca43dfd82bb97"
+    },
+    {
+      "path": "assets/manifests/hip-hinge-v1.json",
+      "bytes": 829,
+      "sha256": "51bc4a8baf6ce8647a1ea63acc6e84ea8d352d4d23875ddec07c275c952148ba"
+    },
+    {
+      "path": "assets/manifests/quaternius-male-rig.json",
+      "bytes": 1288,
+      "sha256": "9c17a7ea0ffc217413fb2e856b50dfab0f21570ec3a362fb5ec7d3302ab6605a"
+    }
+  ]
+}

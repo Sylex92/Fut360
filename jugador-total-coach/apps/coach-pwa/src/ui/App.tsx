@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { validateWorkoutV1 } from '@fut360/exercise-catalog';
 import type { WorkoutSummary } from '@fut360/domain';
-import { SessionPanel } from './SessionPanel';
+import { DemoPanel } from './DemoPanel';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -102,7 +102,7 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 03 <span aria-hidden="true">/</span> RELOJ Y CONTROLES
+          FASE 04 <span aria-hidden="true">/</span> PRIMER MOVIMIENTO 3D
         </span>
       </header>
       <main id="main">
@@ -110,13 +110,13 @@ export function App({ content }: { content: unknown }) {
           <div>
             <p className="eyebrow">TU ENTRENADOR · EN CONSTRUCCIÓN</p>
             <h1 id="page-title">
-              Una base para
+              Mira el movimiento.
               <br />
-              <em>empezar bien.</em>
+              <em>Entiende cada paso.</em>
             </h1>
             <p className="lead">
-              El primer paso es comprobar el contenido de la sesión. Aquí puedes ver qué está
-              listo y qué falta antes de entrenar.
+              Una primera demostración con avatar, tres vistas y preparación automática.
+              Estamos revisando cómo se explica antes de convertirla en entrenamiento.
             </p>
           </div>
           <div className="intro-aside">
@@ -128,61 +128,64 @@ export function App({ content }: { content: unknown }) {
             </p>
           </div>
         </section>
-        <section
-          className={'status-strip ' + (result.ok ? 'status-ok' : 'status-error')}
-          aria-labelledby="validation-heading"
-        >
-          <div>
-            <h2 id="validation-heading">
-              {result.ok
-                ? 'Archivo de referencia válido'
-                : 'El contenido necesita correcciones'}
-            </h2>
-            <p>
-              {result.ok
-                ? 'La estructura y la suma de tiempos pasaron la comprobación.'
-                : 'Revisa los errores antes de usar este contenido.'}
-            </p>
-          </div>
-          <button type="button" onClick={recheck}>
-            Volver a comprobar <span aria-hidden="true">↻</span>
-          </button>
-        </section>
-        <p className="check-feedback" role="status" aria-live="polite">
-          {checks > 0
-            ? 'Comprobación ' +
-              checks +
-              ': ' +
-              (result.ok
-                ? 'estructura y duración correctas.'
-                : 'persisten errores en el contenido.')
-            : ''}
-        </p>
-        {!result.ok ? (
-          <section className="panel error-list" aria-label="Errores de validación">
-            <ul>
-              {result.issues.map((issue, index) => (
-                <li key={index}>
-                  <code>{issue.path}</code>
-                  <span>{issue.message}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ) : (
-          <>
-            <div className="session-label">
-              <h2>{result.workout.displayName}</h2>
-              <span className="draft-tag">
-                {result.workout.reviewStatus === 'draft'
-                  ? 'BORRADOR'
-                  : 'REVISIÓN DECLARADA EN EL ARCHIVO'}
-              </span>
+        <DemoPanel />
+        <details className="technical-details">
+          <summary>Comprobaciones del archivo de referencia de 60 minutos</summary>
+          <section
+            className={'status-strip ' + (result.ok ? 'status-ok' : 'status-error')}
+            aria-labelledby="validation-heading"
+          >
+            <div>
+              <h2 id="validation-heading">
+                {result.ok
+                  ? 'Archivo de referencia válido'
+                  : 'El contenido necesita correcciones'}
+              </h2>
+              <p>
+                {result.ok
+                  ? 'La estructura y la suma de tiempos pasaron la comprobación.'
+                  : 'Revisa los errores antes de usar este contenido.'}
+              </p>
             </div>
-            <SessionSummary summary={result.summary} />
-          </>
-        )}
-        <SessionPanel content={content} />
+            <button type="button" onClick={recheck}>
+              Volver a comprobar <span aria-hidden="true">↻</span>
+            </button>
+          </section>
+          <p className="check-feedback" role="status" aria-live="polite">
+            {checks > 0
+              ? 'Comprobación ' +
+                checks +
+                ': ' +
+                (result.ok
+                  ? 'estructura y duración correctas.'
+                  : 'persisten errores en el contenido.')
+              : ''}
+          </p>
+          {!result.ok ? (
+            <section className="panel error-list" aria-label="Errores de validación">
+              <ul>
+                {result.issues.map((issue, index) => (
+                  <li key={index}>
+                    <code>{issue.path}</code>
+                    <span>{issue.message}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : (
+            <>
+              <div className="session-label">
+                <h2>{result.workout.displayName}</h2>
+                <span className="draft-tag">
+                  {result.workout.reviewStatus === 'draft'
+                    ? 'BORRADOR'
+                    : 'REVISIÓN DECLARADA EN EL ARCHIVO'}
+                </span>
+              </div>
+              <SessionSummary summary={result.summary} />
+            </>
+          )}
+        </details>
         <div className="bottom-grid">
           <section className="panel readiness" aria-labelledby="readiness-title">
             <p className="eyebrow">ESTADO DEL PROYECTO</p>
@@ -202,7 +205,7 @@ export function App({ content }: { content: unknown }) {
                   <strong>Reloj y controles</strong>
                   <p>Pausa, continuidad y preparación automática.</p>
                 </div>
-                <span className="step-state">En prueba</span>
+                <span className="step-state">Comprobado</span>
               </li>
               <li>
                 <span className="step-number">03</span>
@@ -210,7 +213,7 @@ export function App({ content }: { content: unknown }) {
                   <strong>Ejercicio con avatar</strong>
                   <p>Demostración clara y revisión del movimiento.</p>
                 </div>
-                <span className="step-state pending">Pendiente</span>
+                <span className="step-state pending">En revisión</span>
               </li>
             </ol>
           </section>

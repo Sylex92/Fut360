@@ -8,7 +8,7 @@
 4. Adaptar la animación faltante y revisar técnica; no fabricar un rig completo por comodidad.
 5. Usar maniquí de primitivas solo para probar conexión técnica si no hay asset adecuado todavía.
 
-Quaternius y Kenney son candidatos, no dependencias adoptadas. No se han descargado ni revisado sus archivos. Las funciones comerciales de sus sitios y las variantes Source no se incluyen.
+Estado actual, 2026-09-29: Quaternius Standard se descargó/auditó en 04 y se adoptó Superhero_Male_FullBody para el prototipo; Kenney sigue como candidato. [Resultado real](../reviews/phase04-vertical-slice-review.md) y [licencias por archivo](../../ASSET_LICENSES.md). El plan del 2026-09-27 que sigue es histórico: la edición gratuita no contenía Regular y se corrigió esa propuesta. Las variantes comerciales Source/Pro no se adquirieron.
 
 ## Decisión de evaluación para el primer gesto — 2026-09-27
 
@@ -26,7 +26,7 @@ Una fuente editable puede ser el modelo riggeado importado legalmente en Blender
 
 La primera carencia a resolver es la representación de hip-hinge definida en la ficha. Un clip de saludo o caminar solo sirve para comprobar la conexión del rig. Si falta el gesto, adaptar o preparar esa animación sobre el rig adoptado con herramientas de Blender. No sustituir el ejercicio por el contenido más fácil de encontrar ni declarar que una biblioteca de locomoción enseña fútbol.
 
-Blender es la herramienta de autoría prevista, no un requisito para el bootstrap 02. Su preparación corresponderá a 04 si la adaptación del primer gesto lo necesita. Versión, compatibilidad gráfica y distribución local concreta siguen pendientes; el equipo no ha ejecutado una prueba de Blender. Véanse [pipeline](ANIMATION_PIPELINE.md), [primer ejercicio](../plans/first-visible-exercise-ready.md) y [auditoría de reutilización](../reviews/reuse-audit.md).
+Blender no fue requisito del bootstrap 02. En 04 se necesitó para el gesto faltante y se preparó 4.5.14 LTS portable con autorización concreta; licencia, hash, CPU e ida/vuelta comprobados. Compatibilidad/rendimiento de GUI/GPU no inferidos de esa ejecución. Véanse [pipeline](ANIMATION_PIPELINE.md), [primer ejercicio](../plans/first-visible-exercise-ready.md) e [informe de 04](../reviews/phase04-vertical-slice-review.md).
 
 ## Calidad mínima del MVP
 

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-29",
+  "samples": 241,
+  "bones": 65,
+  "maxBoneDifferenceMeters": 0.0000011472517890716015,
+  "toleranceMeters": 0.001,
+  "originalValidatorIssues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "roundtripValidatorIssues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "textureDecode": "Verified separately by Blender import; CPU comparison skips image decoding",
+  "result": "passed"
+}

@@ -1,8 +1,8 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-28. Fase 03 cerrada técnicamente: diagnóstico y motor temporal con vista de texto, pruebas automatizadas, recorrido manual básico y captura revisada. El usuario reporta avance/botones/Tab/ancho correctos y consola sin errores. Todavía no es un entrenador ejecutable con avatar.
+Actualizado: 2026-09-29. Fase 04 implementada: primer avatar riggeado y bisagra de cadera, con cámaras, preparación automática y pausa/inspección. Demostración en revisión; aceptación en navegador y humana pendientes. Todavía no es la rutina aprobada de una hora.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–02 aceptadas como base; 03 autorizada, con [informe de implementación y pendientes](docs/reviews/phase03-session-engine-review.md). Fases 04–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–03 aceptadas como base; 04 autorizada, incluido Blender portable, con [informe y pendientes](docs/reviews/phase04-vertical-slice-review.md). 04 no cerrada; 05–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
 
 ## Ejecutar la base
 
@@ -14,9 +14,9 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. [Preparación reproducible y comandos](docs/setup/LOCAL_DEVELOPMENT.md), [resultado de fase 02](docs/reviews/phase02-bootstrap-review.md) y [dependencias/licencias](docs/reviews/phase02-dependencies.md).
 
-La sección **Prueba el avance automático** ofrece una secuencia técnica de un minuto y el archivo histórico de 60 minutos. Incluye inicio, pausa, continuación, omisión, repetición/cancelación y +30 s/+1 min de preparación con autoinicio. Ocultar la página pausa; volver exige continuar. Todo permanece en memoria: recargar pierde la prueba. No seguir sus intervalos como rutina deportiva.
+La sección **Bisagra de cadera** permite ensayos técnicos de uno o cinco minutos del mismo gesto. Incluye tres vistas, pausa/continuación, inspector lento, omisión, repetición/cancelación y +30 s/+1 min de preparación con autoinicio. Ocultar la página pausa; volver exige continuar. Todo permanece en memoria: recargar pierde la prueba. No seguir sus intervalos como rutina deportiva. El diagnóstico histórico de 60 minutos sigue disponible en un desplegable.
 
-85 pruebas, formato, lint, tipos y build correctos, incluida una corrección de redondeo detectada al revisar la [captura de 03](docs/reviews/evidence/phase03-session-user.png). La captura y el reporte manual corresponden a la versión anterior al ajuste; la regresión automática verifica la corrección sin cambios de controles/layout. El conector sigue sin conectar: no se afirma E2E automatizado ni accesibilidad integral. Límites exactos en el informe de 03. El usuario mantiene avance autónomo; consultar únicamente decisiones indispensables o ampliaciones de alcance.
+105 pruebas, lint, tipos y build correctos; GLB validado y fuente editable conservada. [Licencias nuevas](docs/reviews/phase04-dependencies.md) y [registro de assets](ASSET_LICENSES.md). El conector sigue sin conectar: las imágenes conservadas son renders de Blender, no capturas del nuevo flujo de navegador. La revisión manual/captura de 03 no valida automáticamente 04. El usuario mantiene avance autónomo; consultar únicamente decisiones indispensables o ampliaciones de alcance.
 
 ## Decisiones vigentes
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
@@ -38,4 +38,4 @@ La secuencia siguiente describe el inicio original del paquete. El trabajo actua
 `docs/plans/ROADMAP.md` indica el orden 00–09. `PROJECT_STATUS.md` conserva el estado entre chats.
 
 ## Qué está comprobado en este paquete
-El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. Se reutilizan las dependencias de 02, sin nuevas dependencias externas en 03. PWA/offline, móvil, persistencia, Blender, modelos, animación y avatar siguen pendientes.
+El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. En 04 se añadieron únicamente herramientas/recursos auditados del primer gesto; PWA/offline, móvil, persistencia, contactos con balón y contenido de toda la hora siguen pendientes.

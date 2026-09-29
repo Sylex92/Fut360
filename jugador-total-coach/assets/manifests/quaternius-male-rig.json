@@ -1,0 +1,40 @@
+{
+  "id": "quaternius-superhero-male-65-v1",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/hip-hinge/original/Superhero_Male_FullBody.gltf",
+  "sourceSha256": "e7fcea214ecf8855afbf910b50de6f9c7d1decfb71ca28bad8a4481452dafeb4",
+  "referencePose": "T-pose imported; runtime clip starts standing with arms down",
+  "boneCount": 65,
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxisAtRest": "-X",
+  "semantics": {
+    "root": "root",
+    "hips": "pelvis",
+    "spine": "spine_01",
+    "chest": "spine_03",
+    "neck": "neck_01",
+    "head": "Head",
+    "leftUpperArm": "upperarm_l",
+    "leftLowerArm": "lowerarm_l",
+    "leftHand": "hand_l",
+    "rightUpperArm": "upperarm_r",
+    "rightLowerArm": "lowerarm_r",
+    "rightHand": "hand_r",
+    "leftUpperLeg": "thigh_l",
+    "leftLowerLeg": "calf_l",
+    "leftFoot": "foot_l",
+    "leftToes": "ball_l",
+    "rightUpperLeg": "thigh_r",
+    "rightLowerLeg": "calf_r",
+    "rightFoot": "foot_r",
+    "rightToes": "ball_r"
+  },
+  "corrections": [
+    "Ground lift 0.009510005824267864 m",
+    "Blender Z-up/-Y-front to glTF Y-up/+Z-front by existing exporter",
+    "Original bone names/weights/hierarchy retained",
+    "Skin meshes made identity scene roots without changing evaluated positions"
+  ]
+}

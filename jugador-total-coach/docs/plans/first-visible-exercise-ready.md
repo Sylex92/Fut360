@@ -49,3 +49,7 @@ La enseñanza se revisa con evidencia de ficha/clip y alcance real del revisor. 
 ## Bloqueos y tratamiento
 
 Archivo incompatible → evaluar otro recurso o adaptación con derechos; no rehacer rig sin necesidad. Clip defectuoso → corregirlo, añadir detalle pertinente o preparar el gesto. Falta de claridad → no liberar como entrenamiento; mantener prueba identificada. Problema de silla no afecta esta bisagra sin apoyo, pero sí bloquea el ejercicio que la requiere. Ninguno obliga ahora a comprar, instalar ni contratar servicios.
+
+## Actualización al implementar 04 — 2026-09-29
+
+03 aceptada como base; 04 y Blender portable autorizados. Ya existen ficha draft, avatar riggeado CC0 concreto, mapping, GLB finito, fuente .blend y visor con tres cámaras. 105 pruebas técnicas, validación glTF y renders de Blender disponibles. La tabla de entrada anterior describe el cierre histórico de 01; no volver a pedir la autorización de Blender ni afirmar que no hay recurso. [Evidencias y pendientes actuales](../reviews/phase04-vertical-slice-review.md): revisión de navegador/usuario/técnica y dispositivos todavía sin completar. La fase no queda aceptada por este documento.

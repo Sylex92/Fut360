@@ -1,6 +1,6 @@
 # Arquitectura MVP1 — fase 01
 
-Fecha: 2026-09-27. Diseño documental autorizado; ninguna carpeta de aplicación, paquete o dependencia se ha creado. Las decisiones se verificarán al implementar cada fase. Bases vigentes: [ADR 0001](adr/0001-modular-monolith.md), [0006](adr/0006-rapier-and-guided-clips.md) y [0008](adr/0008-zero-cost-extensible.md). ADR 0005/0007 son históricos.
+Diseño de fase 01 del 2026-09-27. Actualización 2026-09-29: 02–04 implementan app, domain, exercise-catalog, session-engine y viewer-3d; aceptación visual/humana de 04 pendiente. El árbol siguiente conserva el objetivo y no implica que existan módulos de fases posteriores. Bases vigentes: [ADR 0001](adr/0001-modular-monolith.md), [0006](adr/0006-rapier-and-guided-clips.md) y [0008](adr/0008-zero-cost-extensible.md). ADR 0005/0007 son históricos.
 
 ## Resultado y límites
 
@@ -33,7 +33,8 @@ jugador-total-coach/
     manifests/                escena, animación y revisiones
   assets/
     source/                   recursos editables con derechos
-    runtime/                  GLB y recursos locales aprobados
+    runtime/                  GLB y recursos locales con estado de revisión
+    manifests/                metadatos y mapping ligados a cada recurso (04)
   tools/                      herramientas existentes; adaptaciones justificadas
   tests/
     e2e/                      flujos cuando exista aplicación

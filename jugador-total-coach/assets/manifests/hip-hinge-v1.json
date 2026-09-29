@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-hip-hinge-v1",
+  "version": 1,
+  "file": "assets/runtime/hip-hinge-v1.glb",
+  "sha256": "14123518d2d1fbf194768c20d17c4e7bc56c77e0540cdf7e8ecca43dfd82bb97",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_hip-hinge__neutral__v1",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "neutral-standing-arms-down",
+  "endPose": "neutral-standing-arms-down",
+  "boundingBoxMeters": {
+    "min": [-0.3600420355796814, -0.000035987235605716705, -0.36020195484161377],
+    "max": [0.3600422143936157, 1.8195866346359253, 0.3294827938079834]
+  },
+  "requiredProps": [],
+  "supportedSides": ["none"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 3,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

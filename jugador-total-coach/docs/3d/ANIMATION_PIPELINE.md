@@ -23,7 +23,7 @@ Orden: hip-hinge sin carga en 04, después interior-interior para comprobar cont
 5. Conectar la pose al tiempo del motor. Durante preparación, +30 s/+1 min prolongan el ejemplo y mantienen el inicio automático. Pausar todo congela ambos; cámaras y revisión lenta conservan el punto de práctica. Probarlo, no deducir sincronía de que el GLB se vea bien.
 6. Registrar errores de representación y corregir el recurso conservando el objetivo del ejercicio adecuado. Contactos ilustrados, trayectorias o video complementario requieren explicación y derechos propios; no convierten la escena en una predicción física exacta.
 
-Blender sigue desinstalado según el usuario. Su licencia y las del contenido son asuntos distintos: que la herramienta sea gratuita no concede derechos sobre cualquier modelo o complemento. No hay plugins adicionales elegidos. La [auditoría de licencias](../reviews/license-audit.md) y el [diagnóstico](../reviews/environment-report.md) registran evidencias y límites; comprobar versión y GPU antes de preparar la herramienta, sin actualizar drivers ni configuración global implícitamente.
+Al cerrar 01, Blender estaba desinstalado según el usuario. En 04 autorizó expresamente Blender 4.5.14 LTS portable; se preparó dentro del proyecto y se probaron importación, autoría, exportación y render CPU. Su licencia y las del contenido son asuntos distintos: que la herramienta sea gratuita no concede derechos sobre cualquier modelo o complemento. No hay plugins adicionales elegidos ni drivers/configuración global modificados. [Informe de 04](../reviews/phase04-vertical-slice-review.md); GUI/GPU de Blender y rendimiento WebGL aún pendientes.
 
 ## Almacenamiento
 

@@ -1,6 +1,6 @@
 # Matriz de reutilización
 
-Decisiones iniciales, sujetas a validar versiones y archivos concretos. No es un inventario de dependencias ya instaladas. Repaso documental del 2026-09-25: véase la [auditoría de reutilización](../reviews/reuse-audit.md), con criterios de elección, límites de edición y recorrido del primer gesto.
+Decisiones iniciales y evidencias añadidas por fase. El inventario instalado está en los informes de 02/04. Repaso documental del 2026-09-25: véase la [auditoría de reutilización](../reviews/reuse-audit.md), con criterios de elección, límites de edición y recorrido del primer gesto.
 
 | Necesidad | Reutilizar | Trabajo propio permitido |
 |---|---|---|
@@ -65,3 +65,9 @@ Implementados solo domain (tipos v1/aritmética), exercise-catalog (Ajv 2020-12 
 - Pieza propia mínima: compilación v1 a ocurrencias inmutables y SessionEngine sin plataforma, dependiente solo de domain. La API del reloj entrega tiempo, pero no decide las reglas de omisión/repetición de este producto; el motor de animación futuro tampoco debe ser autoridad del programa.
 - Alternativa: añadir un framework de máquinas de estados no evita esas reglas ni sus pruebas. No hay benchmark que demuestre ahorro de complejidad en este alcance; se conserva la decisión de 01 y se evalúa de nuevo si crece el estado. No se construyen física, rigging, editor, loader, compositor ni almacenamiento propios.
 - Evidencia: 85 pruebas totales, incluidas fronteras, conservación, duplicados, IDs de extras, reloj/visibilidad inyectados, HTML y redondeo. Reporte manual favorable de controles/consola/Tab/ancho y captura inspeccionada. Conector indisponible: no se afirma E2E automatizado. [Cierre y límites](../reviews/phase03-session-engine-review.md).
+
+## Evidencia de fase 04 — 2026-09-29
+
+Problema: mostrar la bisagra y conservar las reglas temporales de 03. Se reutilizaron Three/Fiber, GLTFLoader/AnimationMixer, el rig CC0 de 65 huesos de Quaternius y las operaciones de IK/bake/exportación de Blender. Carencia comprobada: Regular no estaba en Base Standard y no había hip-hinge entre las 43 acciones del Animation Standard inspeccionado. Se adoptó Superhero masculino genérico y se creó solo el gesto sobre ese rig; no se compró Source ni se sustituyó el ejercicio.
+
+Piezas propias: escena/cámaras, composición de cursores, ficha/manifiesto/mapping y scripts acotados de autoría/comprobación. No nuevo rig, solver, loader o editor. El visor recibe pose explícita y no importa el motor. Pruebas de recurso, composición y retorno tras reexportar; [informe y límites](../reviews/phase04-vertical-slice-review.md). Licencias concretas en [ASSET_LICENSES](../../ASSET_LICENSES.md). La fase 06 no se ejecutó; otros gestos y balón siguen pendientes.

@@ -28,3 +28,7 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 
 ## Contrato de sesión vs. pared
 3,600 segundos es la duración programada incluyendo descansos/transiciones declarados. Pausas del usuario y repeticiones extra aumentan el tiempo real; guardarlo por separado. Las instrucciones explicativas fuera de la sesión no se suman sin declararlo.
+
+## Punto actual — 2026-09-29
+
+00–03 aceptadas como base; 04 autorizada e implementada con recurso real y verificaciones técnicas, incluida preparación portable de Blender autorizada. Completar su [aceptación visual/humana pendiente](../reviews/phase04-vertical-slice-review.md) antes de cerrar. 05–09 no autorizadas. Las reglas de instalación por necesidad anteriores describen cada momento, no prohíben usar Blender ya preparado en 04.

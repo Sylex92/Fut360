@@ -1,0 +1,24 @@
+{
+  "name": "@fut360/viewer-3d",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./scene": "./src/ExerciseScene.tsx",
+    "./clip-driver": "./src/clip-driver.ts"
+  },
+  "dependencies": {
+    "@fut360/domain": "workspace:*",
+    "@react-three/fiber": "9.8.1",
+    "three": "0.186.1"
+  },
+  "peerDependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

@@ -134,3 +134,7 @@ Una integración que exige gasto o cuyo derecho permanece desconocido se queda p
 ## Evidencia del repaso del 2026-09-25
 
 Reconsultados FAQ de Garmin, documentación y acuerdo de Polar, licencia fuente de llama.cpp, requisitos web de MediaPipe, documentación de almacenamiento de MDN y resumen oficial CC BY 4.0. La diferencia nueva es la tarifa actual y cláusula futura de Polar; se añadieron filas de apoyo visual/video y revisión deportiva. Las licencias del núcleo, assets y Remotion remiten a sus revisiones previas de esta misma fase, sin afirmar una nueva auditoría de todos los archivos. No se accedió a datos de salud ni cuentas, no se probaron APIs y no se seleccionaron modelos, videos, proveedores cloud o servicios profesionales.
+
+## Actualización de recursos concretos — fase 04, 2026-09-29
+
+La ruta local del primer gesto se materializó con Three 0.186.1/Fiber 9.8.1, Blender 4.5.14 LTS portable y Base Characters Standard CC0. Sin compra ni cuota de ejecución; revisadas 20 incorporaciones npm, licencia interna de los assets y avisos del build. [Revisión de funcionalidad con los campos de FEATURE_COST_REVIEW](phase04-dependencies.md). Base Standard no incluía Regular y la biblioteca gratuita no incluía hip-hinge: se adaptó el movimiento sobre el rig existente. Esto confirma un camino concreto, no cobertura gratuita automática del resto del catálogo ni gratuidad de trabajo/revisión. Servicios, IA, exportación, TV y nube conservan las condiciones anteriores; Remotion no se instaló.

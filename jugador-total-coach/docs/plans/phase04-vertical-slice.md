@@ -1,0 +1,46 @@
+# Fase 04 — primer ejercicio 3D verificable
+
+Fecha: 2026-09-28. Autorización del usuario: «adelante con la siguiente fase», después del cierre de 03 (b3fb216). Se acepta 03 como base y se autoriza 04; 05–09 no se ejecutan. Plan escrito antes de código.
+
+## Resultado y límites
+
+Una bisagra de cadera sin carga, con humanoide genérico riggeado reutilizado, clip finito GLB y fuente editable. Demostración en revisión, no prescripción ni rutina aprobada. Caso técnico de 60 s y, cuando el recurso esté revisado técnicamente, secuencia de prueba de cinco minutos del mismo gesto. No confundir repetición técnica con variedad deportiva.
+
+Escena en metros, 2×2, +Y vertical/+Z frontal, cámaras lateral inicial/frontal/3⁄4. Reutilizar el motor de 03: pausa exacta, repetir tras descanso, omisión, preparación automática +30 s/+1 min, ejemplo independiente y retorno al trabajo. Inspección lenta solo con sesión pausada y restauración del cursor. Sin voz, persistencia, exportación de video, simulación física ni catálogo de una hora.
+
+## Recursos y autorización
+
+| Recurso candidato | Necesidad, versión y licencia verificadas antes de descargar | Preparación |
+|---|---|---|
+| three 0.186.1 | GLTFLoader, AnimationMixer y render; MIT según registro oficial npm | Dependencia local de viewer-3d |
+| @react-three/fiber 9.8.1 | Integración React; MIT; peer React >=19 <19.4 compatible con 19.3.0 existente | Dependencia local; sin drei ni Rapier runtime |
+| @types/three 0.186.0 | Tipos estrictos; MIT | Desarrollo; revisar transitivas, incluye tipos/paquete Rapier sin implementar laboratorio |
+| gltf-validator 2.0.0-dev.3.10 | Validación reutilizada de GLB por Khronos; Apache-2.0 | Herramienta de desarrollo; sin exportador propio |
+| Universal Base Characters Standard | Quaternius, 122 MB anunciado; CC0 en página del autor/itch.io; variante Source de pago excluida | Plan inicial: Regular masculino. Inspección real: Standard solo trae Superhero; seleccionado masculino, conservando rig y licencia interna |
+| Universal Animation Library Standard | Quaternius, 15 MB anunciado; CC0; historial v3.0 publicado 2026-06-16 | Inventariar cobertura real. No afirmar que locomoción enseña hip-hinge ni adquirir Pro/Source |
+| Blender 4.5.14 LTS Windows x64 portable | Autoría/revisión/importación/exportación con herramientas existentes; binario GPL-3.0-or-later, contenido creado con derechos independientes | Permiso específico recibido: «Sí, autorizar Blender portable». ZIP oficial 398661046 bytes (~399 MB), hash verificado y ejecutable local probado. Configuración, caché y temporales locales; sin instalador/global/actualizar drivers |
+
+El permiso de 04 cubre sus cambios y dependencias/recursos locales auditados necesarios. La autorización específica de Blender prevista en first-visible-exercise-ready y ANIMATION_PIPELINE se recibió antes de descargarlo/ejecutarlo. No se necesita volver a pedirla para este alcance.
+
+Fuentes de herramientas: [npm three](https://registry.npmjs.org/three/0.186.1), [Fiber](https://registry.npmjs.org/@react-three%2ffiber/9.8.1), [tipos](https://registry.npmjs.org/@types%2fthree/0.186.0), [validador](https://registry.npmjs.org/gltf-validator/2.0.0-dev.3.10), [compatibilidad Fiber](https://r3f.docs.pmnd.rs/getting-started/installation), [Blender 4.5](https://download.blender.org/release/Blender4.5/), [licencia Blender](https://www.blender.org/about/license/), [directorio portable](https://docs.blender.org/manual/en/4.5/advanced/blender_directory_layout.html). Hash oficial ZIP Blender 4.5.14: b9533d2397ac1984db4466fb23a7a4649391cca93f6e84209f9bcc60d071c8b9. Consulta 2026-09-28; elegir una versión fijada, no latest como dependencia.
+
+Fuentes de assets: [Base Characters](https://quaternius.itch.io/universal-base-characters), [Animation Library](https://quaternius.itch.io/universal-animation-library). Licencia anunciada no sustituye comprobación interna; recursos aún pendientes de descarga/inspección al escribir el plan. Sin cuenta, pago, créditos o servicio generativo necesario.
+
+## Pasos y comprobaciones
+
+1. Resolver/auditar versiones y licencias de transitivas antes de instalar, scripts desactivados, lockfile y avisos locales. Registrar origen, hashes y copia de licencias de los archivos incorporados.
+2. Ficha draft: variante bilateral sin carga, fases/cues/errores, material/espacio, parada y límites. Contrastar fuentes públicas primarias y distinguir el patrón documentado de decisiones de representación. Duración/cadencia visual elegidas para examinar el gesto, no dosis personal.
+3. Inspeccionar el rig, malla, materiales, pies/toes y animaciones Standard. Conservar fuente importable. Si falta el gesto, preparar poses/clip sobre ese rig en Blender autorizado, sin crear editor/rig/solver/exportador. Mapear nombres existentes.
+4. Validar GLB con Khronos y reglas propias de nombre/duración/lados/bounds. Renderizar vistas/poses para revisar apoyos, penetraciones, escala y fin de clip; corregir antes de presentarlo. Estado draft hasta evidencia suficiente; revisión humana/deportiva tiene su alcance explícito.
+5. viewer-3d solo depende de domain y bibliotecas auditadas. Evaluar pose con AnimationMixer a tiempo explícito; no crear reloj de práctica independiente. La app controla el cursor de preview/inspección y pausa por recursos/WebGL/contexto perdido; sin fallback que permita acreditar entrenamiento.
+6. Integrar una pantalla legible de demostración con ficha, estado de revisión, controles y cámaras. Serie finita seguida de reposo durante el resto de la ventana. Preview puede repetir con separación/retorno declarado. Guardar y restaurar la pose de sesión al cerrar inspector.
+7. Pruebas de selección de cursor, clip finito, preview/pausa, inspector/retorno, cámaras sin reinicio, carga/fallo y contratos de recursos; ejecutar formato, lint, tipos, test y build. Intentar E2E mediante herramienta de navegador disponible. Declarar indisponibilidad si continúa, sin afirmar prueba móvil/visual automática no realizada.
+8. Conservar evidencia visual, informe de revisión, licencias, limitaciones y estado del proyecto; punto de control local. No publicar ni ejecutar 05. Si falta permiso/recurso/revisión indispensable, completar lo independiente y documentar el bloqueo concreto.
+
+## Costos y crecimiento
+
+Herramientas locales propuestas sin tarifa de uso. Assets Standard CC0 anunciados; paquetes de pago del mismo autor no necesarios ni autorizados. Avisos de MIT/Apache y licencias de recursos se conservan al distribuir; publicación/licencia del código propio no decididas. Blender portable no se empaqueta en la app; sus scripts bpy requerirán revisar obligaciones GPL antes de publicación. Ampliar ejercicios implica trabajo de autoría/revisión y almacenamiento, no gratuidad ilimitada de toda producción. Revisiones deportivas, nube, video o proveedores nuevos mantienen su revisión propia.
+
+Estado inicial: investigación y plan. Actualización: el usuario autoriza explícitamente Blender portable en respuesta a la pregunta concreta. ZIP oficial descargado, hash correcto, extracción dentro de .local/blender y versión 4.5.14 LTS comprobada. Sin instalador. Configuración portable y variables del proceso dirigidas al proyecto. Recursos y dependencias en preparación; resultados pendientes de verificar.
+
+Actualización 2026-09-29: implementación y verificaciones registradas en el [informe de 04](../reviews/phase04-vertical-slice-review.md). El estado inicial anterior se conserva como historial. 105 pruebas correctas, recurso real, fuente editable y renders disponibles. Aceptación de navegador/humana pendiente; 04 no cerrada y 05 no autorizada.
