@@ -74,7 +74,7 @@ format aplica al código/configuración y los metadatos nuevos de 04; no reescri
 - packages/exercise-catalog: Ajv 2020-12, reglas semánticas y compilador v1; errores con ruta, sin red propia.
 - packages/session-engine: motor puro que recibe tiempo/comandos y proyecta estado/eventos; solo depende de domain.
 - packages/viewer-3d: GLTFLoader/AnimationMixer, escena y cámaras; recibe pose explícita sin importar el motor.
-- tests y pruebas de pantalla/recurso: 105 casos en ocho archivos; [cobertura y límites de 04](../reviews/phase04-vertical-slice-review.md). Reloj inyectado, contratos GLB y render React a HTML; no un navegador E2E.
+- tests y pruebas de pantalla/recurso: 108 casos en nueve archivos; [cobertura y límites de 04](../reviews/phase04-vertical-slice-review.md). Reloj inyectado, contratos GLB, render React a HTML y efectos de carga/fallback con adaptadores simulados; no un navegador E2E.
 - .tooling: gestor fijado y lockfile separado. .cache y node_modules están excluidos de Git.
 
 No hay simulación, almacenamiento de entrenamiento, PWA ni recurso deportivo aprobado. WorkoutV1 se conserva intacto; el plan técnico de 04 es independiente y no convierte la hora histórica en una rutina 3D. El conector sigue indisponible; la revisión manual de 03 no se transfiere a la pantalla nueva.

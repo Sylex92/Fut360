@@ -16,7 +16,7 @@ Abrir http://127.0.0.1:5173/. [Preparación reproducible y comandos](docs/setup/
 
 La sección **Bisagra de cadera** permite ensayos técnicos de uno o cinco minutos del mismo gesto. Incluye tres vistas, pausa/continuación, inspector lento, omisión, repetición/cancelación y +30 s/+1 min de preparación con autoinicio. Ocultar la página pausa; volver exige continuar. Todo permanece en memoria: recargar pierde la prueba. No seguir sus intervalos como rutina deportiva. El diagnóstico histórico de 60 minutos sigue disponible en un desplegable.
 
-105 pruebas, lint, tipos y build correctos; GLB validado y fuente editable conservada. [Licencias nuevas](docs/reviews/phase04-dependencies.md) y [registro de assets](ASSET_LICENSES.md). El conector sigue sin conectar: las imágenes conservadas son renders de Blender, no capturas del nuevo flujo de navegador. La revisión manual/captura de 03 no valida automáticamente 04. El usuario mantiene avance autónomo; consultar únicamente decisiones indispensables o ampliaciones de alcance.
+108 pruebas, lint, tipos y build correctos; GLB validado y fuente editable conservada. [Licencias nuevas](docs/reviews/phase04-dependencies.md) y [registro de assets](ASSET_LICENSES.md). Se corrigió un aviso falso de WebGL disparado al montar el contenido de respaldo de Canvas. Renders de Blender y dos capturas del fallo aportadas por el usuario conservados; visualización posterior a la corrección pendiente. El conector sigue sin conectar. La revisión manual/captura de 03 no valida automáticamente 04. El usuario mantiene avance autónomo; consultar únicamente decisiones indispensables o ampliaciones de alcance.
 
 ## Decisiones vigentes
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.

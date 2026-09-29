@@ -45,7 +45,7 @@ El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduce
 
 | Comprobación | Resultado y alcance |
 |---|---|
-| Vitest | **105 pruebas, ocho archivos, correctas**: 85 previas + 13 de composición 3D + cinco de recurso/Mixer + dos de ficha/manifiesto. CPU y HTML, no E2E de navegador. |
+| Vitest | **108 pruebas, nueve archivos, correctas**: 85 previas + 13 de composición 3D + cinco de recurso/Mixer + dos de ficha/manifiesto + tres regresiones de montaje/carga. CPU, HTML y efectos controlados, no E2E de navegador. |
 | Programa | Ensayos lógicos de 60/300 s, extras/repetición, fin de clip/reposo, pausa, inspector/retorno, visibilidad, recurso y huecos. Cinco minutos comprobados con reloj inyectado; no recorrido humano de cinco minutos. |
 | glTF Validator de Khronos | Original final y reexportado: cero errores, advertencias, informaciones o hints. Se corrigieron tres advertencias iniciales de jerarquía de mallas y se quitaron UVs no usados. |
 | Geometría/AnimationMixer | 241 muestras a 30 FPS, 65 huesos y apoyos. AABB mundial dentro del cuadrado; altura máxima 1,81959 m. Desplazamiento máximo medido del origen de los pies en autoría: 0,00003591 m. Margen técnico de prueba: 1 mm; no umbral clínico ni análisis completo de biomecánica/autocolisiones. |
@@ -67,9 +67,21 @@ Renderizados en Blender, no capturas de la aplicación. [Inicio lateral](evidenc
 ![Bisagra, vista frontal en Blender](evidence/phase04/hinge-front-105.png)
 ![Bisagra, vista tres cuartos en Blender](evidence/phase04/hinge-threeQuarter-105.png)
 
+## Corrección del aviso falso de WebGL — 2026-09-29
+
+El usuario aporta [vista sin avatar](evidence/phase04/user-avatar-unavailable.png) y [aviso WebGL con inicio deshabilitado](evidence/phase04/user-webgl-fallback-message.png), y comunica que no observa errores en consola. Copias sin cambios: SHA-256 `bf9a6c8a5753487b114f4c6008cfc69d33d1302d39f256dcd27879a8a4d20396` (39961 bytes) y `362caffe6969a963b52ea68448b35f71b42f78f9dffdac94350978dab9b134b7` (23706 bytes). Inspección directa de ambas imágenes por el agente; la ausencia de errores es reporte del usuario, no captura de consola. Queda confirmada la pantalla nueva, sin visualización del avatar.
+
+Causa comprobada en Fiber 9.8.1 instalado: `fallback` se monta como hijo HTML de `<canvas>` aun con soporte gráfico. Nuestro componente Unavailable llamaba onFailure en su efecto de montaje y hacía desaparecer el visor. No se había consultado ni constatado falta de WebGL 2. El [código oficial de Canvas](https://github.com/pmndrs/react-three-fiber/blob/master/packages/fiber/src/web/Canvas.tsx) corrobora esa relación; la comprobación de versión se hizo sobre el paquete local fijado, no suponiendo que master sea 9.8.1.
+
+Corrección acotada: eliminar ese componente con efecto y usar texto de respaldo pasivo. Los errores reales de render conservan SceneBoundary; carga fallida/timeout y context-loss conservan su tratamiento y el inicio no se habilita hasta presentar el avatar. No se cambian recursos, dependencias, GPU, políticas ni configuración del navegador.
+
+Regresión: tres pruebas reproducen el mensaje falso con el código anterior y pasan después. Simulan únicamente el contrato DOM de Canvas y ejecutan los efectos de montaje capturados: sin error al montar el respaldo, timeout a 25 s y rechazo real de carga sin duplicación. No crean contexto WebGL ni equivalen a navegador real. Suite total 108/9, lint, tipos, formato y build correctos. La advertencia previa de tamaño del módulo 3D sigue documentada. Pendiente observar el resultado gráfico tras recargar la versión corregida.
+
+Versión corregida servida: HTML referencia `index-BPDITU30.js`; módulo `ExerciseScene-DdQw1qym.js`. Ambos y el GLB responden HTTP 200 y coinciden byte a byte con el build local; el hash del avatar no cambia. Para recibir el código corregido se debe recargar la página; reintentar solo el avatar desde una pestaña con el código anterior no actualiza JavaScript.
+
 ## Pendientes concretos de aceptación
 
-1. Confirmar en la pantalla nueva carga/movimiento y pausa de reloj/avatar. Consulta breve al usuario enviada el 2026-09-29; respuesta pendiente al redactar este informe.
+1. Confirmar el avatar visible y animado después de **recargar la página con la corrección del falso error** descrita arriba; después comprobar pausa de reloj/avatar. El origen del aviso anterior está identificado/corregido en código, pero la resolución visual permanece pendiente. No pedir de nuevo distinguir la pantalla anterior: las capturas ya prueban que el usuario ve la nueva sección.
 2. Recorrido real de 60 s y después 5 min, cámaras sin reinicio, +30/+60 con autoinicio, inspección/retorno, repetir/omitir, reintento y pérdida de recursos/contexto. Consola y captura de aplicación, teclado/foco y ancho reducido. La prueba del motor y los renders no sustituyen ese E2E.
 3. Revisión humana de comprensión/técnica de esta ficha y este clip, asignada al usuario con apoyo del agente. Una aprobación personal no se registrará como revisión profesional. Mantener `draft` hasta resolver el alcance y las observaciones.
 4. Comprobación de rendimiento/legibilidad en PC real y Galaxy S24 FE, con versiones, dimensiones y método. La URL loopback solo funciona en esta computadora; acceso móvil/origen seguro y offline siguen pendientes, sin cambios de firewall/certificados implícitos.

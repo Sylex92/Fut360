@@ -69,13 +69,6 @@ function Avatar({
   return <primitive object={driver.scene} dispose={null} />;
 }
 
-function Unavailable({ onFailure }: Pick<ExerciseSceneProps, 'onFailure'>) {
-  useEffect(() => {
-    onFailure('La vista 3D necesita WebGL 2 disponible en este navegador.');
-  }, [onFailure]);
-  return <p>Vista 3D no disponible.</p>;
-}
-
 class SceneBoundary extends Component<
   { children: ReactNode; onFailure: (message: string) => void },
   { failed: boolean }
@@ -137,7 +130,8 @@ export function ExerciseScene(props: ExerciseSceneProps) {
         dpr={[1, 1.5]}
         camera={{ near: 0.1, far: 30, position: [4, 1.35, 0], zoom: 150 }}
         gl={{ antialias: true, powerPreference: 'low-power' }}
-        fallback={<Unavailable onFailure={onFailure} />}
+        // Fiber mounts this HTML fallback even when WebGL works; keep it side-effect free.
+        fallback={<p>Tu navegador no puede mostrar este contenido 3D.</p>}
       >
         <color attach="background" args={['#e6ece6']} />
         <ambientLight intensity={1.5} />
