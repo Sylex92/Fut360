@@ -1,6 +1,6 @@
 {
   "id": "soft-step-turn-right",
-  "version": 1,
+  "version": 2,
   "displayName": "Giro por pasos · derecha",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar giro por pasos · derecha"],
@@ -12,8 +12,8 @@
   "impact": "low",
   "sidePolicy": "explicit",
   "animation": {
-    "assetId": "quaternius-soft-step-turn-right-v1",
-    "clipName": "EX_soft-step-turn__right__v1",
+    "assetId": "quaternius-soft-step-turn-right-v2",
+    "clipName": "EX_soft-step-turn__right__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },

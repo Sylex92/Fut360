@@ -2,6 +2,8 @@
 
 2026-09-30. Alcance autorizado: prompt 06 y revisión documental según ADR 0012. **Entrega técnica parcial: once de doce patrones; empuje con silla pendiente de condiciones reales.** No se ejecuta 07 ni se declara una rutina de una hora lista.
 
+**Actualización posterior:** el usuario informa buena visualización general, pero movimientos rígidos. La [corrección de naturalidad](phase06-natural-motion-review.md) incorpora nueve recursos v2 y 179 pruebas; conserva avatar, binarios v1 e informes siguientes como línea base. La nueva coordinación queda pendiente de aceptación visual. No atribuir a ese comentario una nueva comprobación específica en Samsung ni aceptación de técnica deportiva.
+
 ## Resultado concreto
 
 Quince ejemplos GLB: bisagra y campanitas existentes, más trece archivos nuevos. Variantes derecha/izquierda para tobillo, pasos con giro, planta lateral e interior/exterior. Marcha, sentadilla corta, puente bilateral, pierna alterna con brazos apoyados y respiración cómoda completan los once patrones. Esta última es postura quieta; no una simulación de la respiración. [Catálogo por recurso/lado](../../assets/phase06-catalog.json).

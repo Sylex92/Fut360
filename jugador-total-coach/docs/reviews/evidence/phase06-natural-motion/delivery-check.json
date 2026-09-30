@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-30",
+  "markdownFiles": 87,
+  "localLinks": 532,
+  "missing": [],
+  "distributedGlbs": 16,
+  "services": [
+    {
+      "base": "http://127.0.0.1:4173",
+      "htmlStatus": 200,
+      "scriptStatus": 200,
+      "script": "/assets/index-CpG44ZdP.js",
+      "sha256": "d9f8a8cc7a5d00504056014a1aa78fe559414005d9e88ee037857c0c84a33875",
+      "matchesBuild": true
+    },
+    {
+      "base": "http://192.168.18.6:4174",
+      "htmlStatus": 200,
+      "scriptStatus": 200,
+      "script": "/assets/index-CpG44ZdP.js",
+      "sha256": "d9f8a8cc7a5d00504056014a1aa78fe559414005d9e88ee037857c0c84a33875",
+      "matchesBuild": true
+    }
+  ]
+}

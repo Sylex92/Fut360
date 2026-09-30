@@ -1,6 +1,6 @@
 {
   "id": "mini-squat",
-  "version": 1,
+  "version": 2,
   "displayName": "Sentadilla corta",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar sentadilla corta"],
@@ -12,8 +12,8 @@
   "impact": "low",
   "sidePolicy": "none",
   "animation": {
-    "assetId": "quaternius-mini-squat-v1",
-    "clipName": "EX_mini-squat__bilateral__v1",
+    "assetId": "quaternius-mini-squat-v2",
+    "clipName": "EX_mini-squat__bilateral__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },

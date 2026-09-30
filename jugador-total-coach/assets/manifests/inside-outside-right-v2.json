@@ -1,0 +1,38 @@
+{
+  "assetId": "quaternius-inside-outside-right-v2",
+  "version": 2,
+  "file": "assets/runtime/inside-outside-right-v2.glb",
+  "sha256": "88dfb6b227c4ed96a78ad27183ab7d0bce940fd7b252b37092314274fdab7f41",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_inside-outside__right__v2",
+  "fps": 30,
+  "durationMs": 6500,
+  "loopable": false,
+  "startPose": "inside-outside-right-start",
+  "endPose": "inside-outside-right-start",
+  "boundingBoxMeters": {
+    "min": [-0.45195144501690065, -0.00002051971223806106, -0.4539166456486555],
+    "max": [0.5313441050345237, 1.719585808163625, 0.3899082765195978]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["right"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/inside-outside/inside-outside-right-v2.blend",
+  "sourceSha256": "23e3be60127877118d5768bcd48f64997d229b866f07c60c9104bdda91004b4a",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused"
+  ],
+  "ballProfile": {
+    "radiusMeters": 0.11,
+    "path": "authored illustration, not a predicted trajectory"
+  }
+}

@@ -14,6 +14,52 @@ import { movements } from '../../../apps/coach-pwa/src/composition/movement-libr
 const root = new URL('../../../', import.meta.url);
 const read = (file: string) => readFileSync(new URL(file, root));
 const json = (file: string) => JSON.parse(read(file).toString());
+// Compare the GLB's mesh/skin attributes and embedded appearance independently
+// of animation channels, file offsets and resource hashes.
+const appearance = (file: string) => {
+  const bytes = read(file);
+  const jsonLength = bytes.readUInt32LE(12);
+  const data = JSON.parse(bytes.subarray(20, 20 + jsonLength).toString());
+  const binary = bytes.subarray(28 + jsonLength);
+  const viewHash = (index: number) => {
+    const view = data.bufferViews[index];
+    return createHash('sha256')
+      .update(binary.subarray(view.byteOffset ?? 0, (view.byteOffset ?? 0) + view.byteLength))
+      .digest('hex');
+  };
+  const accessor = (index: number) => {
+    const value = data.accessors[index];
+    return {
+      type: value.type,
+      count: value.count,
+      componentType: value.componentType,
+      hash: viewHash(value.bufferView),
+    };
+  };
+  return {
+    meshes: data.meshes.map(
+      (mesh: {
+        primitives: {
+          attributes: Record<string, number>;
+          indices: number;
+          material: number;
+        }[];
+      }) =>
+        mesh.primitives.map((p) => ({
+          attributes: Object.fromEntries(
+            Object.entries(p.attributes).map(([name, index]) => [name, accessor(index)]),
+          ),
+          indices: accessor(p.indices),
+          material: p.material,
+        })),
+    ),
+    materials: data.materials,
+    images: data.images.map((image: { bufferView: number }) => viewHash(image.bufferView)),
+    joints: data.skins.map((skin: { joints: number[] }) =>
+      skin.joints.map((index) => data.nodes[index].name),
+    ),
+  };
+};
 const { Ajv2020 } = createRequire(
   new URL('../../exercise-catalog/package.json', import.meta.url),
 )('ajv/dist/2020.js');
@@ -82,6 +128,15 @@ it.each(catalog.entries)(
   },
 );
 
+it.each(catalog.entries.filter((entry) => 'previousManifest' in entry))(
+  'la corrección de $exerciseId conserva malla, pesos, materiales, texturas y huesos',
+  (entry) => {
+    const current = json(entry.manifest);
+    const previous = json((entry as { previousManifest: string }).previousManifest);
+    expect(appearance(current.file)).toEqual(appearance(previous.file));
+  },
+);
+
 it.each(catalog.entries)(
   'conserva la pose al pausar, llegar al final y volver atrás: $exerciseId',
   (entry) => {
@@ -138,3 +193,58 @@ it('la variante supina mueve una pierna por vez sin desplazar pelvis ni pie cont
     expect(position('pelvis').distanceTo(initial.pelvis!)).toBeLessThan(0.001);
   }
 });
+
+it('la marcha coordina seis pasos con el brazo contrario y conserva un apoyo, sin saltos', () => {
+  const { gltf, driver } = loaded.get('active-march')!;
+  const position = (name: string) =>
+    gltf.scene.getObjectByName(name)!.getWorldPosition(new Vector3());
+  driver.setTime(0);
+  const ground = { l: position('foot_l').y, r: position('foot_r').y };
+  for (let step = 0; step < 6; step++) {
+    driver.setTime((0.5 + (step + 0.5) * 1.1) * 1000);
+    const leg = step % 2 === 0 ? 'r' : 'l';
+    const support = leg === 'r' ? 'l' : 'r';
+    expect(position('foot_' + leg).y - ground[leg]).toBeGreaterThan(0.12);
+    expect(Math.abs(position('foot_' + support).y - ground[support])).toBeLessThan(0.002);
+    expect(position('hand_' + support).z - position('hand_' + leg).z).toBeGreaterThan(0.08);
+  }
+  for (let time = 0; time <= driver.durationMs; time += 1000 / 60) {
+    driver.setTime(time);
+    expect(
+      Math.min(
+        Math.abs(position('foot_l').y - ground.l),
+        Math.abs(position('foot_r').y - ground.r),
+      ),
+    ).toBeLessThan(0.002);
+  }
+});
+
+it.each(
+  catalog.entries.filter((e) =>
+    ['inside-inside', 'lateral-sole-roll', 'inside-outside'].includes(e.patternId),
+  ),
+)(
+  'la variante básica $exerciseId acompaña con brazos y conserva un pie en el suelo',
+  (entry) => {
+    const { gltf, driver } = loaded.get(entry.exerciseId)!;
+    const pos = (n: string) => gltf.scene.getObjectByName(n)!.getWorldPosition(new Vector3());
+    driver.setTime(0);
+    const ground = [pos('foot_l').y, pos('foot_r').y];
+    const handStart = pos('hand_l').sub(pos('pelvis'));
+    let handExcursion = 0;
+    for (let time = 0; time <= driver.durationMs; time += 1000 / 60) {
+      driver.setTime(time);
+      expect(
+        Math.min(
+          Math.abs(pos('foot_l').y - ground[0]!),
+          Math.abs(pos('foot_r').y - ground[1]!),
+        ),
+      ).toBeLessThan(0.002);
+      handExcursion = Math.max(
+        handExcursion,
+        pos('hand_l').sub(pos('pelvis')).distanceTo(handStart),
+      );
+    }
+    expect(handExcursion).toBeGreaterThan(0.12);
+  },
+);

@@ -1,6 +1,6 @@
 {
   "id": "inside-inside",
-  "version": 1,
+  "version": 2,
   "displayName": "Campanitas · interior-interior",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar campanitas · interior-interior"],
@@ -12,8 +12,8 @@
   "impact": "low",
   "sidePolicy": "alternate",
   "animation": {
-    "assetId": "quaternius-inside-inside-v1",
-    "clipName": "EX_inside-inside__alternating__v1",
+    "assetId": "quaternius-inside-inside-v2",
+    "clipName": "EX_inside-inside__alternating__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },

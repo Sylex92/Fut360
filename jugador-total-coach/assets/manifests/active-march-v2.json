@@ -1,0 +1,35 @@
+{
+  "assetId": "quaternius-active-march-v2",
+  "version": 2,
+  "file": "assets/runtime/active-march-v2.glb",
+  "sha256": "4c3dc89ab1b0e8239348d72d950fa7a437869f6a55f869177c31e18b0351b7f3",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_active-march__alternate__v2",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "active-march-alternate-start",
+  "endPose": "active-march-alternate-start",
+  "boundingBoxMeters": {
+    "min": [-0.35064554637773604, -0.000021829123898869182, -0.24271611802339005],
+    "max": [0.35047171602917765, 1.808554442774906, 0.36523615840451007]
+  },
+  "requiredProps": [],
+  "supportedSides": ["alternate"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/active-march/active-march-v2.blend",
+  "sourceSha256": "18aa0c2a5706267009d24beb67cd360994e46cdedb80a62da9422ac942224b6a",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused",
+    "Six alternating steps with contralateral arms adapted from Quaternius CC0 Walk_Loop"
+  ]
+}

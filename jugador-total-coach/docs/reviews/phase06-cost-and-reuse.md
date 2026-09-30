@@ -19,6 +19,8 @@ Se reutilizan esqueleto, pose base, pesos, materiales, ropa y herramientas de IK
 
 ## Derechos y condiciones futuras
 
+**Corrección de naturalidad dentro de 06:** se reutiliza parcialmente Walk_Loop del mismo GLB Standard ya descargado y auditado (CC0), concretamente sus curvas de brazos/codos para marcha y giro. No haber encontrado un ejercicio completo no impide aprovechar esa coordinación. Nueve derivados v2 conservan el avatar y corrigen apoyos/torso/brazos; tres usan esa referencia de caminata. Extracción reproducible y referencia JSON local, sin acceso adicional, créditos, captura comercial ni modelos IA. Las versiones v1 se conservan para comparación y la prueba de 05. [Registro de procedencia](../../ASSET_LICENSES.md), [resultado](phase06-natural-motion-review.md). Coste obligatorio adicional: ninguno en este uso; persisten recursos del equipo y trabajo de revisión.
+
 Los hashes de fuentes y exportaciones están en [evidencia](evidence/phase06/asset-validation.json) y el registro en [ASSET_LICENSES](../../ASSET_LICENSES.md). Se conservan licencia CC0 y originales. Las aportaciones del proyecto no adquieren automáticamente una licencia pública. Blender como herramienta y licencia de su salida son asuntos separados, ya auditados en 04; no se reaudita como si fuera una nueva adquisición.
 
 No cambia el lockfile ni los avisos de dependencias. No se incorpora Remotion, API de generación, modelo local ni complemento. Añadirlos posteriormente exige revisar versión, licencia de herramienta y salida, uso personal/comercial, distribución, créditos/cuotas, cuenta, datos y necesidad real. Packs Source/Pro, contenidos exclusivos, render cloud y servicios de revisión son opciones que pueden costar; no son dependencias de esta entrega.

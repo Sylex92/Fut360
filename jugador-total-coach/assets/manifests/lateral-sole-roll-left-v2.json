@@ -1,0 +1,38 @@
+{
+  "assetId": "quaternius-lateral-sole-roll-left-v2",
+  "version": 2,
+  "file": "assets/runtime/lateral-sole-roll-left-v2.glb",
+  "sha256": "efbeec5f720ff34b5e117e8573f436971e64c674045cf5b9b853f18926daf8af",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_lateral-sole-roll__left__v2",
+  "fps": 30,
+  "durationMs": 6500,
+  "loopable": false,
+  "startPose": "lateral-sole-roll-left-start",
+  "endPose": "lateral-sole-roll-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.5313437284228341, -0.000020710272494916486, -0.17336907950842234],
+    "max": [0.4519001988118183, 1.7195858118357017, 0.3899081062580507]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/lateral-sole-roll/lateral-sole-roll-left-v2.blend",
+  "sourceSha256": "95802e70d764f85f4f6a99d14dbc18a4b74c3877436e3e4bae105c907e6dab82",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused"
+  ],
+  "ballProfile": {
+    "radiusMeters": 0.11,
+    "path": "authored illustration, not a predicted trajectory"
+  }
+}

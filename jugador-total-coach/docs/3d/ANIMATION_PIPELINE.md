@@ -54,6 +54,23 @@ Los cuatro primeros comandos regeneran fuentes/GLB del grupo correspondiente; no
 
 Biblioteca: quince ejemplos, once patrones, variantes de lado explícitas; [catálogo](../../assets/phase06-catalog.json), [fundamento interno](../training/PHASE06_DOCUMENTARY_REVIEW.md), [informe](../reviews/phase06-pipeline-review.md). Cada reproducción es finita; volver al inicio es un control de revisión, no una transición enseñada. Respiración reutiliza una postura quieta. El empuje con silla espera sus condiciones reales. La secuencia completa de entrenamiento y sus transiciones se resolverán en 07, aún no autorizada.
 
-## Entornos
+## Corrección v2 de coordinación
+
+```powershell
+node tools/blender.mjs tools/extract_walk_reference.py
+node tools/blender.mjs tools/build_coordinated_movements.py
+node tools/review_movements.mjs --version=2 --record-draft
+node tools/review_ball_contacts.mjs --version=2
+node tools/pnpm.mjs test
+node tools/pnpm.mjs build
+```
+
+El extractor usa exclusivamente UAL1_Standard.glb ya adquirido en assets/downloads; si falta, no descarga nada. La referencia derivada [walk-arm-reference.json](../../assets/source/active-march/walk-arm-reference.json) está conservada, de modo que el constructor no necesita reimportar el paquete. El constructor admite IDs después del nombre del script (por ejemplo `active-march` o `inside-outside-left`) y escribe solo versiones v2. Reutiliza las poses v1 y las herramientas de Blender; no altera sus binarios. El material/licencia y el hash del GLB original constan en [ASSET_LICENSES](../../ASSET_LICENSES.md).
+
+El validador general acepta versiones 1/2; por defecto mantiene 1 para no mezclar informes históricos. `--record-draft` actualiza hash/bounds solo tras comprobar el recurso draft; no convierte el estado en aceptación. En v2 también se registra fuente/hash y propósito de la secuencia en el manifiesto. Si se vuelve a exportar, revisar/actualizar ese hash de fuente: las pruebas detectan desajustes. El comprobador geométrico v2 incluye las cuatro variantes unilaterales y campanitas: cinco clips, 196 muestras por clip, con ventanas de contacto ajustadas al nuevo tiempo. Tolerancias gráficas iguales: 2 mm de penetración y 10 mm de separación; no certifican fuerzas o todo instante continuo.
+
+[Informe de coordinación](../reviews/phase06-natural-motion-review.md). Nueve pruebas de identidad comparan atributos geométricos/pesos, materiales, imágenes y nombres de huesos de v1/v2; las pruebas de apoyo a 60 Hz y brazo contrario separan naturalidad propuesta de propiedades medibles. No añaden salto para disimular rigidez. Los cambios se observan en «Movimientos · fase 06»; la demostración/laboratorio de 05 conservan su recurso anterior.
+
+## Entornos del producto
 
 MVP: suelo y referencias neutras 2×2, props simples reutilizados. Futuro: canchas de fut 5/7/11 como recursos separados. El entorno no define la autoridad del movimiento ni certifica realismo.

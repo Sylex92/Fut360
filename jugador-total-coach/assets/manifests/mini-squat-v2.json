@@ -1,0 +1,34 @@
+{
+  "assetId": "quaternius-mini-squat-v2",
+  "version": 2,
+  "file": "assets/runtime/mini-squat-v2.glb",
+  "sha256": "ff89b9f237aa37089b4a7f7b1409d31ed30c78a5f6a3aebe8f715e545af10295",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_mini-squat__bilateral__v2",
+  "fps": 30,
+  "durationMs": 5200,
+  "loopable": false,
+  "startPose": "mini-squat-bilateral-start",
+  "endPose": "mini-squat-bilateral-start",
+  "boundingBoxMeters": {
+    "min": [-0.28632769346254117, -0.00005379403924446065, -0.1947398885983307],
+    "max": [0.2863282605720305, 1.8195868633123071, 0.46048998377803746]
+  },
+  "requiredProps": [],
+  "supportedSides": ["none"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/mini-squat/mini-squat-v2.blend",
+  "sourceSha256": "f02260907e78ae028281f8ee232db95f8f3ea7c33300d625beb6d61e5e7aa9cc",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused"
+  ]
+}

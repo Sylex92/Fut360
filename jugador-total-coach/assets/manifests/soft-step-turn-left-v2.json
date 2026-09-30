@@ -1,0 +1,35 @@
+{
+  "assetId": "quaternius-soft-step-turn-left-v2",
+  "version": 2,
+  "file": "assets/runtime/soft-step-turn-left-v2.glb",
+  "sha256": "4586a6fd26a371a9660f6f889142e7526e631c19b10edfa6a09c6fd4d3017f4d",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_soft-step-turn__left__v2",
+  "fps": 30,
+  "durationMs": 7200,
+  "loopable": false,
+  "startPose": "soft-step-turn-left-start",
+  "endPose": "soft-step-turn-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.32702632900083295, -0.000011181349892237793, -0.29779854309864784],
+    "max": [0.4739327843663885, 1.789585908731789, 0.4333189857738907]
+  },
+  "requiredProps": [],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/soft-step-turn/soft-step-turn-left-v2.blend",
+  "sourceSha256": "5ec999a814ebf84a42c1fcfb07181e63e686c1d6f1992db25e98fdb0e63cdfcb",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused",
+    "Arm coordination adapted from Quaternius CC0 Walk_Loop; no pivot over a fixed support"
+  ]
+}

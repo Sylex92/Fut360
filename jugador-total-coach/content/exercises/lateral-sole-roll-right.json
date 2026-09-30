@@ -1,6 +1,6 @@
 {
   "id": "lateral-sole-roll-right",
-  "version": 1,
+  "version": 2,
   "displayName": "Planta lateral · pie derecho",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar planta lateral · pie derecho"],
@@ -12,8 +12,8 @@
   "impact": "low",
   "sidePolicy": "explicit",
   "animation": {
-    "assetId": "quaternius-lateral-sole-roll-right-v1",
-    "clipName": "EX_lateral-sole-roll__right__v1",
+    "assetId": "quaternius-lateral-sole-roll-right-v2",
+    "clipName": "EX_lateral-sole-roll__right__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },

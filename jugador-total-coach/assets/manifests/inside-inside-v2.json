@@ -1,0 +1,61 @@
+{
+  "assetId": "quaternius-inside-inside-v2",
+  "version": 2,
+  "file": "assets/runtime/inside-inside-v2.glb",
+  "sha256": "c96528aeb997b0838ac7a70e7c8cec33a274a34abab43c14c2301468aa70032b",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_inside-inside__alternating__v2",
+  "fps": 30,
+  "durationMs": 6500,
+  "loopable": false,
+  "startPose": "inside-inside-alternating-start",
+  "endPose": "inside-inside-alternating-start",
+  "boundingBoxMeters": {
+    "min": [-0.45191074646830476, -0.00004498510013276521, -0.17336763661522311],
+    "max": [0.4519104756359996, 1.7195862666326682, 0.38989340285360485]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["alternate"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/inside-inside/inside-inside-v2.blend",
+  "sourceSha256": "9ce6c2f9b50799baaea0f8488e3a67eb5204b4843d48528caf00d1979dbfcc0a",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "notes": [
+    "Coordinated authored example; one finite sequence, not a prescribed training dose",
+    "Existing mesh, skin weights, clothing and rig retained; Blender IK and bake reused",
+    "Four touches in two right-left pairs; same ball path retimed, medial foot contact brought closer"
+  ],
+  "contactWindows": [
+    {
+      "side": "right",
+      "startMs": 858,
+      "endMs": 1075
+    },
+    {
+      "side": "left",
+      "startMs": 2308,
+      "endMs": 2525
+    },
+    {
+      "side": "right",
+      "startMs": 3758,
+      "endMs": 3975
+    },
+    {
+      "side": "left",
+      "startMs": 5208,
+      "endMs": 5425
+    }
+  ],
+  "ballProfile": {
+    "radiusMeters": 0.11,
+    "path": "authored illustration, not a predicted trajectory"
+  }
+}

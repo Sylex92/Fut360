@@ -202,7 +202,7 @@ function Preview({ movement }: { movement: MovementPreview }) {
             />
           </label>
           <output className="quiet-note" data-testid="movement-cursor" data-seconds={seconds}>
-            {seconds.toFixed(1)} / {(movement.durationMs / 1000).toFixed(0)} s del ejemplo
+            {seconds.toFixed(1)} / {movement.durationMs / 1000} s del ejemplo
             {hidden && running ? ' · en pausa mientras la ventana está oculta' : ''}
           </output>
         </div>
@@ -226,7 +226,7 @@ function Preview({ movement }: { movement: MovementPreview }) {
 }
 
 export function MovementLibrary() {
-  const [selected, setSelected] = useState('glute-bridge');
+  const [selected, setSelected] = useState('active-march');
   const movement = movements.find((item) => item.id === selected)!;
   return (
     <section

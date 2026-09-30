@@ -1,6 +1,6 @@
 {
   "id": "active-march",
-  "version": 1,
+  "version": 2,
   "displayName": "Marcha en el sitio",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar marcha en el sitio"],
@@ -12,15 +12,15 @@
   "impact": "low",
   "sidePolicy": "alternate",
   "animation": {
-    "assetId": "quaternius-active-march-v1",
-    "clipName": "EX_active-march__alternate__v1",
+    "assetId": "quaternius-active-march-v2",
+    "clipName": "EX_active-march__alternate__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },
   "cues": [
-    "Eleva un pie de forma suave y vuelve a apoyarlo.",
-    "Alterna con el otro pie, sin saltar ni correr.",
-    "Mantente dentro del espacio y deja los brazos relajados."
+    "Alterna los pasos en el sitio, sin saltar ni correr.",
+    "Acompaña cada pierna con el brazo contrario, con los codos flexionados.",
+    "Deja los hombros relajados y conserva un ritmo cómodo."
   ],
   "commonErrors": [
     "Forzar el recorrido para copiar al avatar.",

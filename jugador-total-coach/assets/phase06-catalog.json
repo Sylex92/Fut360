@@ -19,17 +19,18 @@
     {
       "exerciseId": "inside-inside",
       "patternId": "inside-inside",
-      "manifest": "assets/manifests/inside-inside-v1.json",
+      "manifest": "assets/manifests/inside-inside-v2.json",
       "exercise": "content/exercises/inside-inside.json",
-      "source": "assets/source/inside-inside/inside-inside-v1.blend",
+      "source": "assets/source/inside-inside/inside-inside-v2.blend",
       "supportedSides": [
         "alternate"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "clarity-accepted-in-previous-phase",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-inside-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-inside-review.png",
+      "previousManifest": "assets/manifests/inside-inside-v1.json"
     },
     {
       "exerciseId": "glute-bridge",
@@ -49,32 +50,34 @@
     {
       "exerciseId": "active-march",
       "patternId": "active-march",
-      "manifest": "assets/manifests/active-march-v1.json",
+      "manifest": "assets/manifests/active-march-v2.json",
       "exercise": "content/exercises/active-march.json",
-      "source": "assets/source/active-march/active-march-v1.blend",
+      "source": "assets/source/active-march/active-march-v2.blend",
       "supportedSides": [
         "alternate"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/active-march-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/active-march-review.png",
+      "previousManifest": "assets/manifests/active-march-v1.json"
     },
     {
       "exerciseId": "mini-squat",
       "patternId": "mini-squat",
-      "manifest": "assets/manifests/mini-squat-v1.json",
+      "manifest": "assets/manifests/mini-squat-v2.json",
       "exercise": "content/exercises/mini-squat.json",
-      "source": "assets/source/mini-squat/mini-squat-v1.blend",
+      "source": "assets/source/mini-squat/mini-squat-v2.blend",
       "supportedSides": [
         "none"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/mini-squat-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/mini-squat-review.png",
+      "previousManifest": "assets/manifests/mini-squat-v1.json"
     },
     {
       "exerciseId": "ankle-mobility-left",
@@ -109,32 +112,34 @@
     {
       "exerciseId": "soft-step-turn-left",
       "patternId": "soft-step-turn",
-      "manifest": "assets/manifests/soft-step-turn-left-v1.json",
+      "manifest": "assets/manifests/soft-step-turn-left-v2.json",
       "exercise": "content/exercises/soft-step-turn-left.json",
-      "source": "assets/source/soft-step-turn/soft-step-turn-left-v1.blend",
+      "source": "assets/source/soft-step-turn/soft-step-turn-left-v2.blend",
       "supportedSides": [
         "left"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/soft-step-turn-left-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/soft-step-turn-left-review.png",
+      "previousManifest": "assets/manifests/soft-step-turn-left-v1.json"
     },
     {
       "exerciseId": "soft-step-turn-right",
       "patternId": "soft-step-turn",
-      "manifest": "assets/manifests/soft-step-turn-right-v1.json",
+      "manifest": "assets/manifests/soft-step-turn-right-v2.json",
       "exercise": "content/exercises/soft-step-turn-right.json",
-      "source": "assets/source/soft-step-turn/soft-step-turn-right-v1.blend",
+      "source": "assets/source/soft-step-turn/soft-step-turn-right-v2.blend",
       "supportedSides": [
         "right"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/soft-step-turn-right-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/soft-step-turn-right-review.png",
+      "previousManifest": "assets/manifests/soft-step-turn-right-v1.json"
     },
     {
       "exerciseId": "dead-bug",
@@ -169,62 +174,66 @@
     {
       "exerciseId": "lateral-sole-roll-left",
       "patternId": "lateral-sole-roll",
-      "manifest": "assets/manifests/lateral-sole-roll-left-v1.json",
+      "manifest": "assets/manifests/lateral-sole-roll-left-v2.json",
       "exercise": "content/exercises/lateral-sole-roll-left.json",
-      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-left-v1.blend",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-left-v2.blend",
       "supportedSides": [
         "left"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/lateral-sole-roll-left-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/lateral-sole-roll-left-review.png",
+      "previousManifest": "assets/manifests/lateral-sole-roll-left-v1.json"
     },
     {
       "exerciseId": "lateral-sole-roll-right",
       "patternId": "lateral-sole-roll",
-      "manifest": "assets/manifests/lateral-sole-roll-right-v1.json",
+      "manifest": "assets/manifests/lateral-sole-roll-right-v2.json",
       "exercise": "content/exercises/lateral-sole-roll-right.json",
-      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-right-v1.blend",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-right-v2.blend",
       "supportedSides": [
         "right"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/lateral-sole-roll-right-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/lateral-sole-roll-right-review.png",
+      "previousManifest": "assets/manifests/lateral-sole-roll-right-v1.json"
     },
     {
       "exerciseId": "inside-outside-left",
       "patternId": "inside-outside",
-      "manifest": "assets/manifests/inside-outside-left-v1.json",
+      "manifest": "assets/manifests/inside-outside-left-v2.json",
       "exercise": "content/exercises/inside-outside-left.json",
-      "source": "assets/source/inside-outside/inside-outside-left-v1.blend",
+      "source": "assets/source/inside-outside/inside-outside-left-v2.blend",
       "supportedSides": [
         "left"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-outside-left-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-outside-left-review.png",
+      "previousManifest": "assets/manifests/inside-outside-left-v1.json"
     },
     {
       "exerciseId": "inside-outside-right",
       "patternId": "inside-outside",
-      "manifest": "assets/manifests/inside-outside-right-v1.json",
+      "manifest": "assets/manifests/inside-outside-right-v2.json",
       "exercise": "content/exercises/inside-outside-right.json",
-      "source": "assets/source/inside-outside/inside-outside-right-v1.blend",
+      "source": "assets/source/inside-outside/inside-outside-right-v2.blend",
       "supportedSides": [
         "right"
       ],
-      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
-      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-outside-right-review.png"
+      "humanReview": "natural-motion-pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-outside-right-review.png",
+      "previousManifest": "assets/manifests/inside-outside-right-v1.json"
     }
   ],
   "unresolved": [

@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-09-30",
+  "method": "Independent Playwright browser, foreground, real WebGL; 390px is emulation, not Samsung hardware",
+  "results": [
+    {
+      "name": "La biblioteca abre la marcha corregida",
+      "passed": true
+    },
+    {
+      "name": "Reproducción avanza",
+      "passed": true,
+      "detail": 1.0486999999999997
+    },
+    {
+      "name": "Pausa conserva cursor y píxeles del avatar",
+      "passed": true,
+      "detail": {
+        "paused": 1.0486999999999997
+      }
+    },
+    {
+      "name": "Cámara conserva el instante",
+      "passed": true
+    },
+    {
+      "name": "Media velocidad de observación",
+      "passed": true,
+      "detail": 0.5246
+    },
+    {
+      "name": "Cambio de movimiento detiene y reinicia",
+      "passed": true
+    },
+    {
+      "name": "Campanitas permite observar a 2×",
+      "passed": true,
+      "detail": 2.131
+    },
+    {
+      "name": "Final finito active-march",
+      "passed": true,
+      "detail": {
+        "duration": 8,
+        "atEnd": 8
+      }
+    },
+    {
+      "name": "Final finito mini-squat",
+      "passed": true,
+      "detail": {
+        "duration": 5.2,
+        "atEnd": 5.2
+      }
+    },
+    {
+      "name": "Final finito soft-step-turn-left",
+      "passed": true,
+      "detail": {
+        "duration": 7.2,
+        "atEnd": 7.2
+      }
+    },
+    {
+      "name": "Final finito soft-step-turn-right",
+      "passed": true,
+      "detail": {
+        "duration": 7.2,
+        "atEnd": 7.2
+      }
+    },
+    {
+      "name": "Final finito inside-inside",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "atEnd": 6.5
+      }
+    },
+    {
+      "name": "Final finito lateral-sole-roll-left",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "atEnd": 6.5
+      }
+    },
+    {
+      "name": "Final finito lateral-sole-roll-right",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "atEnd": 6.5
+      }
+    },
+    {
+      "name": "Final finito inside-outside-left",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "atEnd": 6.5
+      }
+    },
+    {
+      "name": "Final finito inside-outside-right",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "atEnd": 6.5
+      }
+    },
+    {
+      "name": "Revisión por teclado",
+      "passed": true,
+      "detail": 0.05
+    },
+    {
+      "name": "Ancho 390 sin desbordamiento horizontal",
+      "passed": true,
+      "detail": {
+        "body": 375,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "Sin errores de consola o página",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Sin solicitudes externas en el recorrido",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+  ],
+  "requestedGlbs": [
+    "http://127.0.0.1:4173/assets/active-march-v2-Bu-0wR_o.glb",
+    "http://127.0.0.1:4173/assets/inside-inside-v2-B5JRSjv2.glb",
+    "http://127.0.0.1:4173/assets/mini-squat-v2-CUtG2e9v.glb",
+    "http://127.0.0.1:4173/assets/soft-step-turn-left-v2-Da-wG1b0.glb",
+    "http://127.0.0.1:4173/assets/soft-step-turn-right-v2-C_kXhoCz.glb",
+    "http://127.0.0.1:4173/assets/lateral-sole-roll-left-v2-Ctg2PSKD.glb",
+    "http://127.0.0.1:4173/assets/lateral-sole-roll-right-v2-Bj2dNYXv.glb",
+    "http://127.0.0.1:4173/assets/inside-outside-left-v2-0hJljcmy.glb",
+    "http://127.0.0.1:4173/assets/inside-outside-right-v2-DhMq0woe.glb"
+  ]
+}

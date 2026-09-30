@@ -18,8 +18,17 @@ const write = (file, value) =>
   writeFileSync(resolve(root, file), JSON.stringify(value, null, 2) + '\n');
 const reports = [];
 const recordDraft = process.argv.includes('--record-draft');
+const versionFilter =
+  process.argv.find((a) => a.startsWith('--version='))?.split('=')[1] ?? '1';
+if (!['1', '2'].includes(versionFilter)) throw new Error('Supported versions: 1 or 2');
+const reportDirectory =
+  versionFilter === '2'
+    ? 'docs/reviews/evidence/phase06-natural-motion'
+    : 'docs/reviews/evidence/phase06';
 for (const name of readdirSync(resolve(root, 'assets/runtime'))
-  .filter((n) => n.endsWith('.glb'))
+  .filter(
+    (n) => n.endsWith('.glb') && (!versionFilter || n.endsWith('-v' + versionFilter + '.glb')),
+  )
   .sort()) {
   const file = 'assets/runtime/' + name;
   const bytes = readFileSync(resolve(root, file));
@@ -30,9 +39,9 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
   const clip = gltf.animations[0];
   if (!clip || gltf.animations.length !== 1)
     throw new Error('Se requiere un clip por recurso: ' + name);
-  const match = /^EX_(.+)__(.+)__v1$/.exec(clip.name);
+  const match = /^EX_(.+)__(.+)__v([1-9][0-9]*)$/.exec(clip.name);
   if (!match) throw new Error('Nombre de clip incompatible: ' + name);
-  const [, kind, variant] = match;
+  const [, kind, variant, version] = match;
   const mixer = new AnimationMixer(gltf.scene);
   const action = mixer.clipAction(clip);
   action.setLoop(LoopOnce, 1);
@@ -62,7 +71,8 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     point = new Vector3(),
     samples = [];
   let previous,
-    maxJointStep = 0;
+    maxJointStep = 0,
+    maxJointStepAt;
   for (let frame = 0; frame <= Math.round(clip.duration * 30); frame++) {
     action.paused = false;
     action.enabled = true;
@@ -79,11 +89,13 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
       bones.map((b, i) => [jointNames[i], b.getWorldPosition(new Vector3()).toArray()]),
     );
     if (previous)
-      for (const key of jointNames)
-        maxJointStep = Math.max(
-          maxJointStep,
-          Math.hypot(...joints[key].map((v, i) => v - previous[key][i])),
-        );
+      for (const key of jointNames) {
+        const distance = Math.hypot(...joints[key].map((v, i) => v - previous[key][i]));
+        if (distance > maxJointStep) {
+          maxJointStep = distance;
+          maxJointStepAt = { frame, key };
+        }
+      }
     previous = joints;
     samples.push({ frame, joints });
   }
@@ -134,7 +146,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     const floor = ['glute-bridge', 'dead-bug'].includes(kind);
     write(manifestFile, {
       assetId: 'quaternius-' + name.replace('.glb', ''),
-      version: 1,
+      version: Number(version),
       file,
       sha256: sha(bytes),
       rigId: 'quaternius-superhero-male-65-v1',
@@ -152,8 +164,10 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
           ? ['ball']
           : [],
       supportedSides: [
-        ['left', 'right', 'alternate'].includes(variant)
-          ? variant
+        ['left', 'right', 'alternate', 'alternating'].includes(variant)
+          ? variant === 'alternating'
+            ? 'alternate'
+            : variant
           : kind === 'dead-bug'
             ? 'alternate'
             : 'none',
@@ -169,7 +183,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     if (
       recordDraft &&
       existing.reviewStatus === 'draft' &&
-      !['hip-hinge', 'inside-inside'].includes(kind) &&
+      !(version === '1' && ['hip-hinge', 'inside-inside'].includes(kind)) &&
       issues.length === 0
     ) {
       existing.sha256 = sha(bytes);
@@ -197,6 +211,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     samples: samples.length,
     bounds,
     maxJointStep,
+    maxJointStepAt,
     returnError,
     supportDrift: drift,
     gltf: { errors: validation.issues.numErrors, warnings: validation.issues.numWarnings },
@@ -206,8 +221,8 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
   mixer.stopAllAction();
   mixer.uncacheRoot(gltf.scene);
 }
-mkdirSync(resolve(root, 'docs/reviews/evidence/phase06'), { recursive: true });
-write('docs/reviews/evidence/phase06/asset-validation.json', {
+mkdirSync(resolve(root, reportDirectory), { recursive: true });
+write(reportDirectory + '/asset-validation.json', {
   checkedAt: '2026-09-30',
   method:
     'GLTFLoader/AnimationMixer + posed vertices at 30 Hz; texture decode excluded; not sporting certification',

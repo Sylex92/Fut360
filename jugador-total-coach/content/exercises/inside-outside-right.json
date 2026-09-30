@@ -1,6 +1,6 @@
 {
   "id": "inside-outside-right",
-  "version": 1,
+  "version": 2,
   "displayName": "Interior/exterior · pie derecho",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar interior/exterior · pie derecho"],
@@ -12,8 +12,8 @@
   "impact": "low",
   "sidePolicy": "explicit",
   "animation": {
-    "assetId": "quaternius-inside-outside-right-v1",
-    "clipName": "EX_inside-outside__right__v1",
+    "assetId": "quaternius-inside-outside-right-v2",
+    "clipName": "EX_inside-outside__right__v2",
     "loopable": false,
     "cameraPresets": ["side", "front", "threeQuarter"]
   },

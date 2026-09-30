@@ -1,5 +1,6 @@
 // Geometric inspection using Three's triangle queries, not a physics/contact solver.
 import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -12,72 +13,85 @@ const { AnimationMixer, Texture, Vector3, Triangle, SkinnedMesh, LoopOnce } = aw
   pathToFileURL(resolve(dirname(req.resolve('three')), 'three.module.js')).href
 );
 const reports = [];
-for (const kind of ['lateral-sole-roll', 'inside-outside'])
-  for (const side of ['left', 'right']) {
-    const bytes = readFileSync(resolve(root, `assets/runtime/${kind}-${side}-v1.glb`));
-    const gltf = await new GLTFLoader()
-      .register(() => ({ name: 'CPU_GEOMETRY', loadTexture: async () => new Texture() }))
-      .parseAsync(
-        bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
-        '',
+const version = process.argv.includes('--version=2') ? 2 : 1;
+const cases = ['lateral-sole-roll', 'inside-outside'].flatMap((kind) =>
+  ['left', 'right'].map((side) => ({ kind, side })),
+);
+if (version === 2) cases.push({ kind: 'inside-inside', side: 'alternate' });
+for (const { kind, side } of cases) {
+  const stem = kind === 'inside-inside' ? kind : `${kind}-${side}`;
+  const bytes = readFileSync(resolve(root, `assets/runtime/${stem}-v${version}.glb`));
+  const gltf = await new GLTFLoader()
+    .register(() => ({ name: 'CPU_GEOMETRY', loadTexture: async () => new Texture() }))
+    .parseAsync(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength), '');
+  const mixer = new AnimationMixer(gltf.scene);
+  const action = mixer.clipAction(gltf.animations[0]);
+  action.setLoop(LoopOnce, 1);
+  action.clampWhenFinished = true;
+  action.play();
+  const body = [];
+  gltf.scene.traverse((o) => {
+    if (o instanceof SkinnedMesh) body.push(o);
+  });
+  const samples = [];
+  const duration = gltf.animations[0].duration;
+  for (let frame = 0; frame <= Math.round(duration * 30); frame++) {
+    const time = frame / 30;
+    mixer.setTime(time);
+    gltf.scene.updateMatrixWorld(true);
+    const center = gltf.scene.getObjectByName('TutorialBall').getWorldPosition(new Vector3());
+    let nearest = Infinity,
+      nearestBone = '';
+    const closest = new Vector3(),
+      triangle = new Triangle();
+    for (const mesh of body) {
+      mesh.skeleton.update();
+      const g = mesh.geometry;
+      const vertices = Array.from({ length: g.attributes.position.count }, (_, i) =>
+        mesh.getVertexPosition(i, new Vector3()).applyMatrix4(mesh.matrixWorld),
       );
-    const mixer = new AnimationMixer(gltf.scene);
-    const action = mixer.clipAction(gltf.animations[0]);
-    action.setLoop(LoopOnce, 1);
-    action.clampWhenFinished = true;
-    action.play();
-    const body = [];
-    gltf.scene.traverse((o) => {
-      if (o instanceof SkinnedMesh) body.push(o);
-    });
-    const samples = [];
-    for (let frame = 0; frame <= 300; frame++) {
-      const time = frame / 30;
-      mixer.setTime(time);
-      gltf.scene.updateMatrixWorld(true);
-      const center = gltf.scene
-        .getObjectByName('TutorialBall')
-        .getWorldPosition(new Vector3());
-      let nearest = Infinity,
-        nearestBone = '';
-      const closest = new Vector3(),
-        triangle = new Triangle();
-      for (const mesh of body) {
-        mesh.skeleton.update();
-        const g = mesh.geometry;
-        const vertices = Array.from({ length: g.attributes.position.count }, (_, i) =>
-          mesh.getVertexPosition(i, new Vector3()).applyMatrix4(mesh.matrixWorld),
-        );
-        const indices = g.index?.array ?? Array.from({ length: vertices.length }, (_, i) => i);
-        for (let i = 0; i < indices.length; i += 3) {
-          const ids = [indices[i], indices[i + 1], indices[i + 2]];
-          if (ids.every((k) => vertices[k].y > 0.5)) continue;
-          triangle.set(...ids.map((k) => vertices[k]));
-          triangle.closestPointToPoint(center, closest);
-          const distance = closest.distanceTo(center) - 0.11;
-          if (distance < nearest) {
-            nearest = distance;
-            nearestBone = mesh.skeleton.bones[g.attributes.skinIndex.getX(ids[0])]?.name;
-          }
+      const indices = g.index?.array ?? Array.from({ length: vertices.length }, (_, i) => i);
+      for (let i = 0; i < indices.length; i += 3) {
+        const ids = [indices[i], indices[i + 1], indices[i + 2]];
+        if (ids.every((k) => vertices[k].y > 0.5)) continue;
+        triangle.set(...ids.map((k) => vertices[k]));
+        triangle.closestPointToPoint(center, closest);
+        const distance = closest.distanceTo(center) - 0.11;
+        if (distance < nearest) {
+          nearest = distance;
+          nearestBone = mesh.skeleton.bones[g.attributes.skinIndex.getX(ids[0])]?.name;
         }
       }
-      samples.push({ time, gapToAvatarSurfaceMeters: nearest, nearestBone });
     }
-    const contacts = samples.filter((s) =>
-      kind === 'lateral-sole-roll'
-        ? s.time >= 2 && s.time <= 7
-        : (s.time >= 2 && s.time <= 3) || (s.time >= 5 && s.time <= 7),
-    );
-    reports.push({
-      kind,
-      side,
-      minGap: Math.min(...samples.map((s) => s.gapToAvatarSurfaceMeters)),
-      maxContactGap: Math.max(...contacts.map((s) => s.gapToAvatarSurfaceMeters)),
-      samples,
-    });
+    samples.push({ time, gapToAvatarSurfaceMeters: nearest, nearestBone });
   }
+  const contacts = samples.filter((sample) => {
+    if (kind === 'inside-inside') {
+      if (sample.time < 0.35 || sample.time >= 6.15) return false;
+      const old = (((sample.time - 0.35) / 2.9) % 1) * 8;
+      return (old >= 1.4 && old <= 2) || (old >= 5.4 && old <= 6);
+    }
+    const s = { time: (sample.time * 10) / duration };
+    return kind === 'lateral-sole-roll'
+      ? s.time >= 2 && s.time <= 7
+      : (s.time >= 2 && s.time <= 3) || (s.time >= 5 && s.time <= 7);
+  });
+  reports.push({
+    kind,
+    side,
+    sha256: createHash('sha256').update(bytes).digest('hex'),
+    minGap: Math.min(...samples.map((s) => s.gapToAvatarSurfaceMeters)),
+    maxContactGap: Math.max(...contacts.map((s) => s.gapToAvatarSurfaceMeters)),
+    samples,
+  });
+}
 writeFileSync(
-  resolve(root, 'docs/reviews/evidence/phase06/ball-surface-check.json'),
+  resolve(
+    root,
+    version === 2
+      ? 'docs/reviews/evidence/phase06-natural-motion/ball-surface-check.json'
+      : 'docs/reviews/evidence/phase06/ball-surface-check.json',
+  ),
   JSON.stringify(
     {
       method:
