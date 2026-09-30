@@ -187,8 +187,8 @@ def place_pose(amount):
                            @ rest[clavicle.name].to_quaternion().to_matrix().to_4x4())
         bpy.context.view_layer.update()
         bone = rig.pose.bones['upperarm_' + side]
-        # Arms stay beside the body and drop slightly forward with the torso.
-        arm_rotation = Matrix.Rotation(math.radians(10) * amount, 4, 'X') @ Matrix.Rotation(math.radians(78) * sign, 4, 'Y')
+        # Keep a small lateral clearance without the previous outward arm presentation.
+        arm_rotation = Matrix.Rotation(math.radians(10) * amount, 4, 'X') @ Matrix.Rotation(math.radians(84) * sign, 4, 'Y')
         bone.matrix = Matrix.Translation(bone.head) @ arm_rotation @ rest[bone.name].to_quaternion().to_matrix().to_4x4()
         bpy.context.view_layer.update()
     for bone in rig.pose.bones:
@@ -248,6 +248,7 @@ for frame in range(241):
                     'knees': {s: list(rig.matrix_world @ rig.pose.bones['calf_' + s].head) for s in ('l', 'r')}})
 report = {'blenderVersion': bpy.app.version_string, 'sourceMissingImages': missing,
           'shoulderPoseCorrectionDegrees': 12,
+          'armLoweringFromTPoseDegrees': 84,
           'groundLiftMeters': ground_lift, 'samples': samples,
           'bones': [b.name for b in rig.data.bones], 'meshVertices': sum(len(o.data.vertices) for o in meshes)}
 (EVIDENCE / 'clip-authoring-report.json').write_text(json.dumps(report, indent=2), encoding='utf8')

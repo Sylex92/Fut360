@@ -1,0 +1,208 @@
+{
+  "checkedAt": "2026-09-29",
+  "comparedToCommit": "3c86b32",
+  "method": "GLTFLoader/AnimationMixer CPU comparison; no texture decoding or browser",
+  "beforeSha256": "29e7c0b20d73ba170787c96b91e6b30946a23ff7bb17b517bb9c08ae58875ab0",
+  "afterSha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe",
+  "boneHierarchyUnchanged": true,
+  "meshes": [
+    {
+      "name": "Eyebrows",
+      "identicalAttributes": [
+        "position",
+        "normal",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    },
+    {
+      "name": "Eyes",
+      "identicalAttributes": [
+        "position",
+        "normal",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    },
+    {
+      "name": "SuperHero_Male",
+      "identicalAttributes": [
+        "position",
+        "normal",
+        "uv",
+        "color",
+        "color_1",
+        "color_2",
+        "skinIndex",
+        "skinWeight"
+      ],
+      "triangleIndicesUnchanged": true
+    }
+  ],
+  "keptBones": [
+    "root",
+    "pelvis",
+    "spine_01",
+    "spine_02",
+    "spine_03",
+    "neck_01",
+    "Head",
+    "clavicle_l",
+    "clavicle_r",
+    "thigh_l",
+    "thigh_r",
+    "calf_l",
+    "calf_r",
+    "foot_l",
+    "foot_r",
+    "ball_l",
+    "ball_r"
+  ],
+  "samples": 241,
+  "maxMatrixElementDifference": 0,
+  "poseSamples": [
+    {
+      "frame": 0,
+      "before": {
+        "l": {
+          "elbowBendDegrees": 3.522201246060488,
+          "upperArmLateralOffsetMeters": 0.05218575417513152,
+          "wristLateralOffsetMeters": 0.10280722003792689
+        },
+        "r": {
+          "elbowBendDegrees": 3.522198908799391,
+          "upperArmLateralOffsetMeters": 0.05218573616187688,
+          "wristLateralOffsetMeters": 0.10280730952795042
+        }
+      },
+      "after": {
+        "l": {
+          "elbowBendDegrees": 3.522207518753196,
+          "upperArmLateralOffsetMeters": 0.026236608571982845,
+          "wristLateralOffsetMeters": 0.05168688984661621
+        },
+        "r": {
+          "elbowBendDegrees": 3.5222054583632936,
+          "upperArmLateralOffsetMeters": 0.02623652615189545,
+          "wristLateralOffsetMeters": 0.051686820583565884
+        }
+      }
+    },
+    {
+      "frame": 60,
+      "before": {
+        "l": {
+          "elbowBendDegrees": 3.5222014849819088,
+          "upperArmLateralOffsetMeters": 0.05218579423142097,
+          "wristLateralOffsetMeters": 0.1028073231719355
+        },
+        "r": {
+          "elbowBendDegrees": 3.522199389734702,
+          "upperArmLateralOffsetMeters": 0.05218576145368434,
+          "wristLateralOffsetMeters": 0.10280734211420997
+        }
+      },
+      "after": {
+        "l": {
+          "elbowBendDegrees": 3.522207807709338,
+          "upperArmLateralOffsetMeters": 0.026236626440646255,
+          "wristLateralOffsetMeters": 0.05168693351314038
+        },
+        "r": {
+          "elbowBendDegrees": 3.522205126450079,
+          "upperArmLateralOffsetMeters": 0.026236501650331173,
+          "wristLateralOffsetMeters": 0.05168676661612151
+        }
+      }
+    },
+    {
+      "frame": 105,
+      "before": {
+        "l": {
+          "elbowBendDegrees": 3.522201758501115,
+          "upperArmLateralOffsetMeters": 0.05218573500396009,
+          "wristLateralOffsetMeters": 0.10280722904762465
+        },
+        "r": {
+          "elbowBendDegrees": 3.5221999944482882,
+          "upperArmLateralOffsetMeters": 0.05218567356284562,
+          "wristLateralOffsetMeters": 0.10280716268613607
+        }
+      },
+      "after": {
+        "l": {
+          "elbowBendDegrees": 3.5222080068645116,
+          "upperArmLateralOffsetMeters": 0.02623660022182689,
+          "wristLateralOffsetMeters": 0.051686888715316986
+        },
+        "r": {
+          "elbowBendDegrees": 3.5222051061158757,
+          "upperArmLateralOffsetMeters": 0.02623653594993705,
+          "wristLateralOffsetMeters": 0.05168683040304542
+        }
+      }
+    },
+    {
+      "frame": 150,
+      "before": {
+        "l": {
+          "elbowBendDegrees": 3.5222015365037946,
+          "upperArmLateralOffsetMeters": 0.052185759227832085,
+          "wristLateralOffsetMeters": 0.10280729133027128
+        },
+        "r": {
+          "elbowBendDegrees": 3.5221999705434226,
+          "upperArmLateralOffsetMeters": 0.05218571648226872,
+          "wristLateralOffsetMeters": 0.1028072349387445
+        }
+      },
+      "after": {
+        "l": {
+          "elbowBendDegrees": 3.52220803413297,
+          "upperArmLateralOffsetMeters": 0.02623652012307917,
+          "wristLateralOffsetMeters": 0.05168673496504761
+        },
+        "r": {
+          "elbowBendDegrees": 3.52220444997948,
+          "upperArmLateralOffsetMeters": 0.026236495460588122,
+          "wristLateralOffsetMeters": 0.051686745106713894
+        }
+      }
+    },
+    {
+      "frame": 240,
+      "before": {
+        "l": {
+          "elbowBendDegrees": 3.522201696033644,
+          "upperArmLateralOffsetMeters": 0.05218565068544309,
+          "wristLateralOffsetMeters": 0.10280711317499366
+        },
+        "r": {
+          "elbowBendDegrees": 3.522200562260365,
+          "upperArmLateralOffsetMeters": 0.05218564914396201,
+          "wristLateralOffsetMeters": 0.10280708506607539
+        }
+      },
+      "after": {
+        "l": {
+          "elbowBendDegrees": 3.5222081225509116,
+          "upperArmLateralOffsetMeters": 0.026236578932234383,
+          "wristLateralOffsetMeters": 0.05168685982488205
+        },
+        "r": {
+          "elbowBendDegrees": 3.522203914736293,
+          "upperArmLateralOffsetMeters": 0.026236502089737074,
+          "wristLateralOffsetMeters": 0.05168674984790017
+        }
+      }
+    }
+  ]
+}

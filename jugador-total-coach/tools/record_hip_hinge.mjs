@@ -79,7 +79,10 @@ const mapping = {
     'Original bone names/weights/hierarchy retained',
     'Clavicle pose lowered ' +
       authoring.shoulderPoseCorrectionDegrees +
-      ' degrees; rest rig and arm direction retained',
+      ' degrees; rest rig retained',
+    'Arms lowered ' +
+      authoring.armLoweringFromTPoseDegrees +
+      ' degrees from T-pose to reduce lateral spread',
     'Skin meshes made identity scene roots without changing evaluated positions',
   ],
 };
@@ -133,6 +136,7 @@ const report = {
   rigBoneCount: authoring.bones.length,
   meshVertices: authoring.meshVertices,
   shoulderPoseCorrectionDegrees: authoring.shoulderPoseCorrectionDegrees,
+  armLoweringFromTPoseDegrees: authoring.armLoweringFromTPoseDegrees,
   boundsRuntimeMeters: manifest.boundingBoxMeters,
   maxFootDriftMeters: maxFootDrift,
   technicalToleranceMeters: 0.001,

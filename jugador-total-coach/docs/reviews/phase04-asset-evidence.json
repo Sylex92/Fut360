@@ -13,14 +13,15 @@
   "rigBoneCount": 65,
   "meshVertices": 8483,
   "shoulderPoseCorrectionDegrees": 12,
+  "armLoweringFromTPoseDegrees": 84,
   "boundsRuntimeMeters": {
     "min": [
-      -0.34782034158706665,
+      -0.28632795810699463,
       -0.000035987235605716705,
       -0.36020195484161377
     ],
     "max": [
-      0.3478204011917114,
+      0.2863285541534424,
       1.8195866346359253,
       0.3294827938079834
     ]
@@ -32,8 +33,8 @@
   "files": [
     {
       "path": "assets/source/hip-hinge/hip-hinge-v1.blend",
-      "bytes": 1552640,
-      "sha256": "c037e2aa021245f7015c2c4a14a907fb40f2ddd35d7b70feba974965600e1a8a"
+      "bytes": 1543502,
+      "sha256": "7d7290eab0490f3606db9855d40fc781a83827fbb0e54a81022fb0c87a673d74"
     },
     {
       "path": "assets/source/hip-hinge/neutral-sportswear.png",
@@ -82,18 +83,18 @@
     },
     {
       "path": "assets/runtime/hip-hinge-v1.glb",
-      "bytes": 825704,
-      "sha256": "29e7c0b20d73ba170787c96b91e6b30946a23ff7bb17b517bb9c08ae58875ab0"
+      "bytes": 825240,
+      "sha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe"
     },
     {
       "path": "assets/manifests/hip-hinge-v1.json",
       "bytes": 830,
-      "sha256": "2948afff3caafd329b6f83982e5691dabb647cefacfca7d2cb42086ddcdce480"
+      "sha256": "70af0a860151a4adf75d33ca2f785c16fe90cfac41efd0e1eb2c9a8da69402df"
     },
     {
       "path": "assets/manifests/quaternius-male-rig.json",
-      "bytes": 1365,
-      "sha256": "8760b9c73e94637639beaca54f8776b2c06446fa12ed8cd5e87bf24b5e0882e5"
+      "bytes": 1415,
+      "sha256": "3bcdabd8cbc3f416f926024a0a98843093255cfc8771a6130f5b973aa579de44"
     }
   ]
 }

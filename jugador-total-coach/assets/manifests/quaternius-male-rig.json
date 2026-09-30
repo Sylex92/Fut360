@@ -35,7 +35,8 @@
     "Ground lift 0.009510005824267864 m",
     "Blender Z-up/-Y-front to glTF Y-up/+Z-front by existing exporter",
     "Original bone names/weights/hierarchy retained",
-    "Clavicle pose lowered 12 degrees; rest rig and arm direction retained",
+    "Clavicle pose lowered 12 degrees; rest rig retained",
+    "Arms lowered 84 degrees from T-pose to reduce lateral spread",
     "Skin meshes made identity scene roots without changing evaluated positions"
   ]
 }
