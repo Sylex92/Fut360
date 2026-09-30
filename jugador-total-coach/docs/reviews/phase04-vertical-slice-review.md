@@ -1,6 +1,6 @@
-# Fase 04 — demostración 3D implementada, aceptación pendiente
+# Fase 04 — demostración 3D, prototipo técnico cerrado
 
-Trabajo iniciado el 2026-09-28 y continuado hasta el 2026-09-30. Alcance autorizado: «adelante con la siguiente fase» y, para la herramienta, «Sí, autorizar Blender portable». Se ejecutó únicamente 04. Ya hay comprobación E2E en navegador de escritorio y reporte favorable del usuario de cinco minutos. Pendientes: teléfono físico/rendimiento móvil y revisión del gesto; no cerrar la fase ni avanzar a 05. El historial siguiente conserva las evidencias de cada revisión; el estado actual está al final y en phase04-browser-review.md.
+Trabajo iniciado el 2026-09-28 y continuado hasta el 2026-09-30. Alcance autorizado: «adelante con la siguiente fase» y, para la herramienta, «Sí, autorizar Blender portable». Se ejecutó únicamente 04. Ya hay comprobación E2E en navegador de escritorio y reporte favorable del usuario de cinco minutos. Teléfono físico comprobado favorablemente por reporte y claridad aceptada por el usuario. [04 cerrada como prototipo técnico](phase04-closeout.md), sin avanzar a 05. El historial siguiente conserva las evidencias de cada revisión; el estado actual está al final y en phase04-browser-review.md.
 
 ## Resultado disponible
 
@@ -157,12 +157,12 @@ La guía manual contenía una expectativa equivocada: omitir debe conservar desc
 
 La muestra RAF inicial resultó lenta (mediana aproximada de 1015,6 ms). Se puso el navegador al frente y el canvas visible y se repitió durante 20 s de preparación/trabajo: 1201 intervalos, mediana 16,6 ms, p95 17 ms, máximo 33,3 ms y cero >50 ms. [Datos del contraste](phase04-browser-foreground.json). El cambio apunta a la condición de presentación del navegador de pruebas; no prueba una causa interna concreta de Chromium ni promete ese rendimiento en todos los escenarios. Se conservan ambos resultados. El flujo completo previo terminó tras 60009 ms entre primera actualización y fin.
 
-El usuario confirmó la misma Wi-Fi de confianza para PC y Samsung. Se inició un segundo preview temporal únicamente en la IPv4 Wi-Fi y puerto 4174; se conserva 127.0.0.1:4173. La IP cambió entre la consulta inicial y el primer arranque; se volvió a consultar y el segundo arranque fue correcto. HTML y cuatro recursos respondieron HTTP 200 con bytes idénticos al build final. PID y logs locales, sin datos de red versionados. No se modificaron firewall, router, certificados ni configuración global. Dirección y recorrido móvil entregados en la conversación; respuesta pendiente.
+El usuario confirmó la misma Wi-Fi de confianza para PC y Samsung. Se inició un segundo preview temporal únicamente en la IPv4 Wi-Fi y puerto 4174; se conserva 127.0.0.1:4173. La IP cambió entre la consulta inicial y el primer arranque; se volvió a consultar y el segundo arranque fue correcto. HTML y cuatro recursos respondieron HTTP 200 con bytes idénticos al build final. PID y logs locales, sin datos de red versionados. No se modificaron firewall, router, certificados ni configuración global. Dirección y recorrido móvil entregados en la conversación. El usuario informa que realizó las validaciones y confirma «Todas salieron bien» respecto a fluidez, lectura, cámaras y preparación +30 s/autoinicio. [Registro móvil](phase04-mobile-review.md): prueba funcional cualitativa aceptada, sin mediciones de FPS ni consola móvil observada por el agente.
 
-## Pendientes vigentes de aceptación
+## Cierre y límites conservados
 
-1. **Samsung Galaxy S24 FE / Chrome:** probar carga, fluidez, lectura, cámaras y +30 s con autoinicio; registrar versión del navegador cuando esté disponible. El usuario ya confirmó conectividad de red compartida, pero eso no prueba funcionamiento de la app en el teléfono.
-2. **Rendimiento móvil:** muestra de escritorio al frente ya medida; contrastar en el teléfono y evitar generalizar una muestra breve a cinco minutos sostenidos, temperatura o batería. El reporte manual de cinco minutos sin anomalías es favorable, pero no es una medición de cuadros por segundo.
-3. **Comprensión y revisión del gesto:** revisar conjuntamente claridad de movimiento/texto y apariencia, conservando lo ya aceptado sobre hombros y controles. La aceptación personal no acredita revisión profesional ni dosis; ficha y clip siguen draft.
+El usuario responde «La demostración se entiende claramente» a la revisión específica del avatar y las indicaciones de una bisagra completa. Junto con la aceptación funcional en Samsung, resuelve los últimos pendientes del prototipo. [Fase 04 cerrada](phase04-closeout.md).
 
-[Guía actualizada](phase04-manual-check.md). No repetir las comprobaciones de escritorio ya resueltas sin una nueva incidencia. La fase 04 continúa abierta por estos pendientes; 05–09 no están autorizadas. Sin voz, persistencia, PWA/offline, simulación de balón, Remotion ni contenido de una hora. No hubo pagos ni publicación.
+Versión exacta de Chrome móvil y FPS/temperatura/batería no medidos; no se convierten en resultados aprobados ni se exige repetir el recorrido funcional ya aceptado. La revisión de contenido deportivo mantiene su alcance separado; ficha/clip siguen draft. No se valida técnica personal ni dosis.
+
+[Guía actualizada](phase04-manual-check.md). No repetir las comprobaciones de escritorio ya resueltas sin una nueva incidencia. La fase 04 está cerrada como prototipo técnico; 05–09 no están autorizadas. Sin voz, persistencia, PWA/offline, simulación de balón, Remotion ni contenido de una hora. No hubo pagos ni publicación.

@@ -2,6 +2,8 @@
 
 Fecha: 2026-09-28. Autorización del usuario: «adelante con la siguiente fase», después del cierre de 03 (b3fb216). Se acepta 03 como base y se autoriza 04; 05–09 no se ejecutan. Plan escrito antes de código.
 
+Estado al 2026-09-30: [04 cerrada como prototipo técnico](../reviews/phase04-closeout.md), tras pruebas de escritorio y aceptación del usuario de funcionamiento en Samsung y claridad de la demostración. Los apartados siguientes conservan planes/pendientes históricos con su fecha; no repetir sus solicitudes ya resueltas. Ficha/clip draft como contenido deportivo; 05 todavía no autorizada.
+
 ## Resultado y límites
 
 Una bisagra de cadera sin carga, con humanoide genérico riggeado reutilizado, clip finito GLB y fuente editable. Demostración en revisión, no prescripción ni rutina aprobada. Caso técnico de 60 s y, cuando el recurso esté revisado técnicamente, secuencia de prueba de cinco minutos del mismo gesto. No confundir repetición técnica con variedad deportiva.

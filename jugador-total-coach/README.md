@@ -1,8 +1,8 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-30. Fase 04 implementada y comprobada en navegador de escritorio: avatar riggeado, bisagra de cadera, cámaras, preparación automática y pausa/inspección. Prueba y rendimiento en Samsung y revisión del gesto pendientes. Todavía no es la rutina aprobada de una hora.
+Actualizado: 2026-09-30. Fase 04 cerrada como prototipo técnico: avatar riggeado, bisagra de cadera, cámaras, preparación automática y pausa/inspección. Funcionamiento en Samsung y claridad de la demostración aceptados por el usuario. Todavía no es la rutina aprobada de una hora.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–03 aceptadas como base; 04 autorizada, incluido Blender portable, con [informe y pendientes](docs/reviews/phase04-vertical-slice-review.md). 04 no cerrada; 05–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–04 completadas como base, incluido Blender portable autorizado. [Cierre de 04 y límites](docs/reviews/phase04-closeout.md). 05–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
 
 ## Ejecutar la base
 
@@ -22,7 +22,7 @@ La explicación completa permanece junto al cronómetro; las indicaciones dinám
 
 ## Decisiones vigentes
 
-Validación más reciente de 04 (2026-09-30): recorrido de cinco minutos aceptado por reporte y controles de escritorio comprobados por el agente. El usuario confirma PC/teléfono en la misma Wi-Fi; preview temporal de la app compilada en puerto 4174 preparado y verificado desde la computadora, sin cambios de firewall. Respuesta de la prueba en Samsung pendiente. No se cierra 04 ni se valida la dosis deportiva.
+Validación más reciente de 04 (2026-09-30): recorrido de cinco minutos aceptado por reporte y controles de escritorio comprobados por el agente. El usuario confirma PC/teléfono en la misma Wi-Fi; preview temporal de la app compilada en puerto 4174 preparado y verificado desde la computadora, sin cambios de firewall. El usuario confirma que las comprobaciones móviles salieron bien; [registro y límites](docs/reviews/phase04-mobile-review.md). El usuario confirma después que la demostración se entiende claramente. 04 cerrada como prototipo; no se valida la dosis deportiva. Siguiente alcance: prueba acotada de contactos pie–balón con comparación guiada, pendiente de autorización.
 
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
 - Claridad, continuidad y funcionalidad antes que hiperrealismo.
