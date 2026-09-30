@@ -27,6 +27,7 @@ Restante base = 3.600.000 − baseConsumidaMs − baseOmitidaMs. Restante de eje
 | running | Advance confiable | Consumir fronteras ordenadas; completed al final una sola vez |
 | running | Pause, PageHidden, ResourceFailed o ClockGap | paused, conservando punto y motivo |
 | paused | Resume, con página visible y recursos listos | running en punto guardado |
+| paused solo por PageHidden; antes estaba running | PageVisible con reloj/recursos válidos y sin otra interrupción | El adaptador emite Resume una vez, sin consumir tiempo oculto |
 | running/paused | QueueRepeat | Encolar extra según reglas inferiores; conservar pausa previa |
 | running/paused con phase work | SkipCurrentWork | Omitir trabajo restante, conservar descanso y pausa previa |
 | running/paused durante preparación del trabajo objetivo | ExtendPreparation(30000 o 60000 ms) | Sumar tiempo adicional, conservar el estado de pausa si existía; sin confirmación posterior |
@@ -43,9 +44,9 @@ Prepare expresa el estado lógico; la app ejecuta validación/carga y envía su 
 
 ## Pausa, visibilidad y huecos
 
-Pause muestrea hasta el instante confiable del comando y congela programa, cuerpo, balón y audio. Resume establece nuevo anclaje. PageHidden pausa; volver a visible no reanuda solo. Un blur sin ocultación no basta.
+Pause muestrea hasta el instante confiable del comando y congela programa, cuerpo, balón y audio. Resume establece nuevo anclaje. PageHidden pausa; volver a visible reanuda desde ese punto únicamente si estaba running y no hubo otra causa de pausa o fallo. Un blur sin ocultación no basta. Corrección expresa del usuario del 2026-09-29: [ADR 0010](adr/0010-resume-on-visible.md), que sustituye la continuación manual obligatoria al regresar.
 
-Aquí Pause se presenta como «Pausar todo»: también detiene la vista previa/inspector y la cuenta de preparación adicional. Ocultación, pérdida de recursos o interrupción del reloj detienen ambos; volver requiere acción explícita y conserva lo pendiente. Esta recuperación excepcional no añade una confirmación al flujo normal de preparación, que termina automáticamente.
+Aquí Pause se presenta como «Pausar todo»: también detiene la vista previa/inspector y la cuenta de preparación adicional. Pausa manual, pérdida de recursos o interrupción del reloj requieren acción explícita para continuar. Ocultación conserva su motivo previo y no invalida una pausa manual ni una inspección. Si solo interrumpió una sesión corriendo, el regreso retoma automáticamente cuenta y pose; nunca consume lo ocurrido oculto. Un fallo durante ocultación cancela ese regreso automático incluso si el recurso se recupera. Eventos repetidos no duplican reanudación. El estado ready y los estados terminales nunca inician una sesión al hacerse visibles.
 
 Umbral inicial del adaptador: >2000 ms entre muestras visibles es interrupción no observada. No enviar ese salto al motor; pausar en el último cursor confirmado y registrar hueco, sin acreditar trabajo. Delta negativo/no finito es error. El umbral se comprobará en dispositivos; no tiene significado deportivo.
 
@@ -85,7 +86,7 @@ El usuario rechaza tener que volver a pulsar para empezar después de pedir tiem
 4. Conservar descanso/demostración programados y, antes del trabajo, consumir preparación adicional como segmento virtual preparation-extra. Durante ese segmento el programa base no avanza y el trabajo queda intacto; el ejemplo visual sigue reproduciéndose. Mostrar una cuenta clara «Empieza en…» que incluya todos los segmentos previos y la extensión.
 5. Al agotarse la cuenta, detener preview, colocar la pose inicial e iniciar automáticamente el ejercicio, sin botón de estar listo. El visor sigue entonces la pauta real de práctica: serie finita cuando corresponda. Nunca continuar desde el instante arbitrario del bucle ni reducir trabajo para mantener una hora de calendario.
 6. Aviso visible de los últimos cinco segundos y aviso sonoro opcional según configuración existente; sin avisos por cada vuelta del ejemplo. Si se amplía la cuenta durante el aviso, actualizarla y volver a avisar al nuevo vencimiento, evitando audios atrasados.
-7. Pausar todo queda accesible para una interrupción de duración desconocida; congela también cuenta adicional y animación. Reanudar tras esa acción explícita continúa lo restante. Añadir tiempo mientras está pausado no reanuda por sorpresa. Ocultación, fallo o recarga conservan esta pausa excepcional, sin consumir tiempo cerrado.
+7. Pausar todo queda accesible para una interrupción de duración desconocida; congela también cuenta adicional y animación. Reanudar tras esa acción explícita continúa lo restante. Añadir tiempo mientras está pausado no reanuda por sorpresa. Volver de ocultación retoma automáticamente solo si la pausa fue exclusivamente por ocultación; pausa manual, fallo y recarga mantienen recuperación explícita, sin consumir tiempo cerrado.
 8. La extensión es local al cambio actual, no una preferencia que añada esperas a todos los ejercicios. Abort cancela lo pendiente y detiene la presentación. Cerrar un panel de detalles no altera la cuenta ni se interpreta como confirmación para iniciar.
 
 Durante preparación, controles opcionales de la demostración: pausar/reproducir imagen, 1×/0,5× y cámaras. Pausar solo la imagen no detiene la cuenta visible ni el autoinicio; Pausar todo sí. La reproducción previa no cuenta repeticiones ni demuestra aprendizaje. Un clip finito puede repetir su presentación con salida/retorno o separación revisados; no unir poses imposibles ni convertir la práctica en bucle infinito.
@@ -143,7 +144,7 @@ Restore siempre pausado al último checkpoint confirmado, sin calcular trabajo d
 | Repetir a mitad del descanso | Termina descanso, luego copia completa; siguiente base intacto |
 | Dos omisiones sobre misma revisión/ocurrencia | Solo primera aplicable muta; segunda no afecta al siguiente |
 | Pause/Abort llega justo después de una frontera | Detiene estado vigente de la misma sesión, sin rechazo por revisión vieja |
-| Ocultar durante trabajo | Pausa automática y Resume explícito al volver |
+| Ocultar durante trabajo | Pausa automática; Resume automático al volver solo si la sesión estaba corriendo y no hubo otro motivo de pausa/fallo |
 | Gap visible >2000 ms | Último cursor confirmado; hueco sin trabajo |
 | Inspector durante trabajo a 0,5× y cambio de cámara | Cero avance base; retorno al punto guardado |
 | Quedan 20 s hasta trabajo; ExtendPreparation(30000) | Empieza en 50 s sin confirmar; trabajo íntegro y 30 s añadidos |
@@ -152,7 +153,8 @@ Restore siempre pausado al último checkpoint confirmado, sin calcular trabajo d
 | Advance cruza final de preparación adicional | Cerrar preview una vez y consumir solo el excedente confiable en trabajo |
 | Ejemplo completa vueltas o se pausa la imagen | Cero repeticiones/trabajo registrados; cuenta y autoinicio siguen activos |
 | Cuenta acaba a mitad del bucle | Cambiar al inicio del trabajo, sin mezclar cursores ni exigir otro toque |
-| Pausar todo/ocultar/recargar durante preparación | Congelar cuenta e imagen; recuperación explícita conservando restante |
+| Ocultar durante preparación activa | Congelar cuenta e imagen; volver retoma automáticamente el restante y conserva autoinicio |
+| Pausar todo/recargar/fallar durante preparación | Congelar cuenta e imagen; recuperación explícita conservando restante según la fase de persistencia disponible |
 | Ampliar cuando se anuncia el final | Actualizar cuenta y avisos al nuevo vencimiento, sin audio atrasado |
 | Cambia el próximo extra | Conservar segundos añadidos y actualizar objetivo/preview |
 | Comando llega justo tras iniciar su objetivo | Pausa temporizada; reanudar automáticamente el cursor ya consumido |

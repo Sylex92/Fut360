@@ -45,7 +45,7 @@ El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduce
 
 | Comprobación | Resultado y alcance |
 |---|---|
-| Vitest | **112 pruebas, nueve archivos, correctas**: 85 previas + 13 de composición 3D + cinco de recurso/Mixer + dos de ficha/manifiesto + siete de montaje, carga y recuperación. CPU, HTML y efectos controlados, no E2E de navegador. |
+| Vitest | **128 pruebas, nueve archivos, correctas**: base, motor/adaptador, composición 3D, recurso/Mixer, ficha/manifiesto y montaje/carga. Incluyen 16 casos nuevos de regreso tras ocultación y conservación de pausas/tiempos. CPU, HTML y efectos controlados, no E2E de navegador. |
 | Programa | Ensayos lógicos de 60/300 s, extras/repetición, fin de clip/reposo, pausa, inspector/retorno, visibilidad, recurso y huecos. Cinco minutos comprobados con reloj inyectado; no recorrido humano de cinco minutos. |
 | glTF Validator de Khronos | Original final y reexportado: cero errores, advertencias, informaciones o hints. Se corrigieron tres advertencias iniciales de jerarquía de mallas y se quitaron UVs no usados. |
 | Geometría/AnimationMixer | 241 muestras a 30 FPS, 65 huesos y apoyos. AABB mundial dentro del cuadrado; altura máxima 1,81959 m. Desplazamiento máximo medido del origen de los pies en autoría: 0,00003591 m. Margen técnico de prueba: 1 mm; no umbral clínico ni análisis completo de biomecánica/autocolisiones. |
@@ -133,12 +133,24 @@ Resultado: 112 pruebas en nueve archivos; formato, lint, tipos y build correctos
 
 Entrega local: HTML y los cuatro recursos del build responden HTTP 200 con bytes idénticos. Build de esta corrección: `index-C5m4AveH.js`, `ExerciseScene-DR4Dq4Mw.js`, `index-Bmh7R24Y.css` y `hip-hinge-v1-BNOtzeRP.glb`; el GLB conserva su hash. No se recarga la pestaña del usuario desde el agente ni se atribuye una prueba de WebGL a esta comprobación HTTP.
 
+## Regreso automático y respuesta del usuario — 2026-09-29
+
+Fuente: reporte del usuario después del checkpoint 20c6e6a. Confirma recarga/inicio del ensayo de un minuto y que «Ver despacio» aparece a la vista y sus controles funcionan. No declara fin continuo de un minuto ni cinco minutos, medición de foco por teclado o aprobación deportiva. Reporta una pausa al pulsar +30 s y duda si minimizó: no se conoce la causa concreta. Usó Continuar; no hay traza de ese momento que permita atribuirlo al botón.
+
+Solicita pausa al minimizar y reanudación al regresar. [ADR 0010](../architecture/adr/0010-resume-on-visible.md) sustituye la exigencia anterior de continuar tras toda ocultación. SessionClock recuerda si estaba corriendo, preserva el motivo de pausas previas y emite Resume al volver solo si la pausa se debe exclusivamente a ocultación y no hubo fallos. Pausas manuales/inspector, recursos/reloj y estados sin iniciar/terminados no se reactivan automáticamente. Se siguen registrando los huecos sin acreditar trabajo ni descontar preparación; no se modifica el motor puro.
+
+Pruebas: antes del cambio fallaron diez expectativas nuevas de regreso/motivo; después pasan 128 casos en nueve archivos (16 casos añadidos). Incluyen preparación +30 s, conservación de pose/cuenta, trabajo/descanso, inspección, pausa manual previa/posterior, errores de recurso/reloj y eventos duplicados. Formato, lint, tipos y build correctos. CPU/HTML/reloj inyectado, no interacción real con visibilidad del navegador. En la suite apareció una advertencia de Node `THREE_CJS_DEPRECATED`; no se reprodujo al ejecutar aisladamente App.test.tsx con trace-warnings. Origen exacto no identificado; no se oculta ni se atribuye a la consola del navegador. Persiste el aviso conocido de build del módulo 3D >500 KB.
+
+Texto aclarado: «Secuencia · 3 repeticiones de bisagra» y definición de una repetición en detalles. Son tres gestos completos de 8 s, seguidos de 6 s de reposo en la ventana técnica de 30 s; no tres ciclos del bloque ni dosis deportiva validada. El clip, tamaño y postura del avatar no cambian.
+
+Entrega HTTP: HTML y cuatro recursos responden 200 con bytes idénticos al build. JavaScript principal `index-BsGX2eQT.js`, escena `ExerciseScene-11u1SfKs.js`; CSS/GLB sin cambios. No nuevo intento de navegador ni E2E atribuido al agente. Regreso real al minimizar/restaurar y el caso +30 s quedan pendientes tras esta corrección.
+
 ## Pendientes vigentes de aceptación
 
-[Guía de comprobación en pantalla](phase04-manual-check.md): controles exactos, resultados esperados y estado de cada caso. El usuario ya confirma que «se detiene el avatar y el reloj» y precisa que los hombros se ven raros. La detención sincronizada queda registrada por reporte manual; no repetir esa pregunta. Su respuesta no detalla la reanudación ni constituye aceptación del resto del recorrido. El conector IAB sigue sin conectar.
+[Guía de comprobación en pantalla](phase04-manual-check.md): controles exactos, resultados esperados y estado de cada caso. El usuario confirma aparición, detención sincronizada, corrección de hombros, recarga/inicio e inspector visible con controles correctos. No repetir esas preguntas. La incidencia de +30 s no tiene causa confirmada y el regreso automático se implementó después del reporte. El conector IAB sigue sin conectar.
 
 1. Aparición, detención sincronizada y ajuste visual de hombros confirmados por el usuario. Completar observación de continuación y calidad del movimiento, brazos/tamaño restituido, lectura del texto y nueva disposición de controles; mantener separados funcionamiento y comprensión/aprobación del gesto.
-2. Recorrido real de 60 s y después 5 min, cámaras sin reinicio, +30/+60 con autoinicio, inspección/retorno, repetir/omitir, reintento y pérdida de recursos/contexto. Consola y captura de aplicación, teclado/foco y ancho reducido. La prueba del motor y los renders no sustituyen ese E2E.
+2. Recorrido real completo de 60 s y después 5 min, cámaras sin reinicio, +30/+60 con autoinicio y regreso de ocultación tras la corrección, repetir/omitir, reintento y pérdida de recursos/contexto. Inspector/controles aceptados por reporte; consola y captura de aplicación, teclado/foco y ancho reducido aún pendientes. La prueba del motor y los renders no sustituyen ese E2E.
 3. Revisión humana de comprensión/técnica de esta ficha y este clip, asignada al usuario con apoyo del agente. Una aprobación personal no se registrará como revisión profesional. Mantener `draft` hasta resolver el alcance y las observaciones.
 4. Comprobación de rendimiento/legibilidad en PC real y Galaxy S24 FE, con versiones, dimensiones y método. La URL loopback solo funciona en esta computadora; acceso móvil/origen seguro y offline siguen pendientes, sin cambios de firewall/certificados implícitos.
 

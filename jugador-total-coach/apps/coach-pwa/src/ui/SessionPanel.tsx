@@ -324,8 +324,9 @@ export function SessionPanel({ content }: { content: unknown }) {
         {feedback}
       </p>
       <p className="table-note">
-        Cambiar de pestaña pausa la prueba. Volver requiere «Continuar». Recargar la página
-        pierde la prueba actual; todavía no se guarda historial.
+        Cambiar de pestaña pausa la prueba; volver la retoma si estaba en marcha. Una pausa
+        manual espera «Continuar». Recargar la página pierde la prueba actual; todavía no se
+        guarda historial.
       </p>
     </section>
   );

@@ -83,6 +83,75 @@ it('sumar +30/+60 durante el ejemplo mantiene autoinicio y la ventana completa',
     counters: { baseConsumedMs: 60000, preparationConsumedMs: 90000 },
   });
 });
+it('añadir +30 s, ocultar y volver conserva ejemplo/cuenta y luego inicia automáticamente', () => {
+  const { demo, tick, jump } = setup();
+  demo.setReady(true);
+  demo.act({ type: 'Start' });
+  tick(2200);
+  expect(
+    demo.act({ type: 'ExtendPreparation', targetOccurrenceId: 'hinge-1', amountMs: 30000 }),
+  ).toBe('');
+  expect(demo.snapshot().session.status).toBe('running');
+  tick(1000);
+  const saved = demo.snapshot();
+  demo.setVisible(false);
+  expect(jump(60000)).toMatchObject({
+    poseMs: saved.poseMs,
+    session: { status: 'paused', startsInMs: saved.session.startsInMs },
+  });
+  expect(demo.setVisible(true)).toMatchObject({
+    poseMs: saved.poseMs,
+    mode: 'preview',
+    session: { status: 'running', startsInMs: saved.session.startsInMs },
+  });
+  expect(tick(36800)).toMatchObject({
+    poseMs: 0,
+    mode: 'practice',
+    session: {
+      status: 'running',
+      phaseRemainingMs: 30000,
+      counters: { baseConsumedMs: 10000, preparationConsumedMs: 30000, unobservedMs: 60000 },
+    },
+  });
+});
+it.each([13250, 42000])(
+  'volver durante trabajo/descanso (%s ms) restaura pose y tiempo',
+  (elapsed) => {
+    const { demo, tick, jump } = setup(5);
+    demo.setReady(true);
+    demo.act({ type: 'Start' });
+    const saved = tick(elapsed);
+    demo.setVisible(false);
+    jump(60000);
+    expect(demo.setVisible(true)).toMatchObject({
+      poseMs: saved.poseMs,
+      mode: saved.mode,
+      session: { status: 'running', phaseElapsedMs: saved.session.phaseElapsedMs },
+    });
+    expect(tick(750).session.counters.baseConsumedMs).toBe(elapsed + 750);
+  },
+);
+it('añadir +30 s estando oculto conserva el extra y retoma automáticamente al volver', () => {
+  const { demo, tick, jump } = setup();
+  demo.setReady(true);
+  demo.act({ type: 'Start' });
+  tick(13250);
+  demo.setVisible(false);
+  jump(5000);
+  expect(
+    demo.act({ type: 'ExtendPreparation', targetOccurrenceId: 'hinge-1', amountMs: 30000 }),
+  ).toBe('');
+  expect(demo.setVisible(true).session).toMatchObject({
+    status: 'running',
+    phase: 'preparation-extra',
+    startsInMs: 30000,
+  });
+  expect(tick(30000)).toMatchObject({
+    mode: 'practice',
+    poseMs: 3250,
+    session: { status: 'running', phaseElapsedMs: 3250 },
+  });
+});
 it('añadir preparación durante trabajo conserva exactamente su cursor', () => {
   const { demo, tick } = setup();
   demo.setReady(true);
@@ -181,7 +250,12 @@ it('ocultar y huecos del reloj detienen también la inspección', () => {
   demo.setVisible(false);
   jump(60000);
   demo.setVisible(true);
-  expect(demo.snapshot()).toMatchObject({ poseMs: 1000, inspectionPlaying: false });
+  expect(demo.snapshot()).toMatchObject({
+    poseMs: 1000,
+    inspecting: true,
+    inspectionPlaying: false,
+    session: { status: 'paused', pauseReason: 'manual' },
+  });
   demo.playInspection(0.5);
   expect(jump(2001)).toMatchObject({ poseMs: 1000, inspectionPlaying: false });
 });

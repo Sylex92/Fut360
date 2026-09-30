@@ -4,6 +4,8 @@ Fecha: 2026-09-27. Actualización: 2026-09-28. Estado: política temporal implem
 
 ## Problema
 
+**Actualización del 2026-09-29:** [ADR 0010](0010-resume-on-visible.md) sustituye la decisión original de exigir continuar al volver visible. Ahora el adaptador retoma automáticamente solo la sesión que se pausó por ocultación mientras corría. Las pausas manuales y recuperaciones por fallos/recarga conservan acción explícita. El texto inferior registra el razonamiento original de 01/03.
+
 Cronómetro, animación y audio podrían avanzar por separado; repetir o recargar podría recortar programa, duplicar ejercicio o atribuir entrenamiento durante un cierre. El usuario exige pausa exacta y tiempo adicional real al repetir.
 
 ## Decisión

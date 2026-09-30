@@ -155,7 +155,7 @@ export function DemoPanel() {
       : finished
         ? 'Prueba terminada'
         : state?.mode === 'practice'
-          ? 'Secuencia visual · 3 repeticiones'
+          ? 'Secuencia · 3 repeticiones de bisagra'
           : state?.mode === 'rest'
             ? 'Reposo · secuencia visual terminada'
             : session?.phase === 'rest'
@@ -479,7 +479,9 @@ export function DemoPanel() {
         <summary>Detalles de la prueba</summary>
         <p>
           Por bloque: 10 s de ejemplo, 30 s de secuencia y 20 s de descanso. La secuencia
-          muestra tres gestos de 8 s y 6 s de reposo. Son tiempos de prueba.
+          muestra tres repeticiones completas de bisagra de 8 s y después 6 s de reposo. Cada
+          repetición lleva la cadera hacia atrás y vuelve a la posición inicial. Son tiempos de
+          prueba.
         </p>
         <p className="quiet-note">
           Base restante: {time(session?.baseRemainingMs ?? minutes * 60000)} · Preparación
@@ -502,8 +504,9 @@ export function DemoPanel() {
         </ul>
         <p>{hingeExercise.safetyCues[1]}</p>
         <p>
-          {hingeExercise.safetyCues[2]} No se miden tus movimientos ni repeticiones. Cambiar de
-          pestaña pausa; recargar descarta la prueba.
+          {hingeExercise.safetyCues[2]} No se miden tus movimientos ni repeticiones. Ocultar la
+          ventana pausa; al volver se retoma si estaba en marcha. Una pausa manual espera
+          «Continuar». Recargar descarta la prueba.
         </p>
         <p>
           Avatar genérico de Quaternius (CC0), adaptado localmente; demostración pendiente de
