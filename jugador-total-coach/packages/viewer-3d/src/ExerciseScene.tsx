@@ -14,9 +14,16 @@ export interface ExerciseSceneProps {
   readonly getPoseMs: () => number;
   readonly onReady: () => void;
   readonly onFailure: (message: string) => void;
+  readonly framing?: 'standing' | 'floor';
 }
 
-function Camera({ preset }: { preset: CameraPreset }) {
+function Camera({
+  preset,
+  framing,
+}: {
+  preset: CameraPreset;
+  framing?: 'standing' | 'floor';
+}) {
   const { camera, size } = useThree();
   useEffect(() => {
     const positions = {
@@ -26,13 +33,17 @@ function Camera({ preset }: { preset: CameraPreset }) {
     } as const;
     const [x, y, z] = positions[preset];
     camera.position.set(x, y, z);
-    camera.lookAt(0, 0.85, 0);
+    if (framing === 'floor') camera.position.y = preset === 'threeQuarter' ? 2.1 : 0.9;
+    camera.lookAt(0, framing === 'floor' ? 0.25 : 0.85, 0);
     if (camera instanceof OrthographicCamera) {
       // Fit both a 2 m floor and a 1.82 m avatar even in a narrow portrait viewport.
-      camera.zoom = Math.min(size.height / 2.6, size.width / 2.8);
+      camera.zoom =
+        framing === 'floor'
+          ? Math.min(size.height / 2.1, size.width / 2.35)
+          : Math.min(size.height / 2.6, size.width / 2.8);
       camera.updateProjectionMatrix();
     }
-  }, [camera, preset, size]);
+  }, [camera, preset, size, framing]);
   return null;
 }
 
@@ -136,13 +147,19 @@ export function ExerciseScene(props: ExerciseSceneProps) {
         <color attach="background" args={['#e6ece6']} />
         <ambientLight intensity={1.5} />
         <directionalLight position={[3, 5, 4]} intensity={2.5} />
-        <Camera preset={cameraPreset} />
+        <Camera preset={cameraPreset} framing={props.framing ?? 'standing'} />
         <ContextGuard onFailure={onFailure} />
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.002, 0]}>
           <planeGeometry args={[2, 2]} />
           <meshStandardMaterial color="#b9c8b5" roughness={1} />
         </mesh>
         <gridHelper args={[2, 2, '#536f58', '#a2b39e']} position={[0, -0.001, 0]} />
+        {props.framing === 'floor' && (
+          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.0005, 0]}>
+            <planeGeometry args={[0.85, 1.85]} />
+            <meshStandardMaterial color="#779ea0" roughness={1} />
+          </mesh>
+        )}
         {driver && <Avatar driver={driver} getPoseMs={getPoseMs} onReady={onReady} />}
       </Canvas>
     </SceneBoundary>

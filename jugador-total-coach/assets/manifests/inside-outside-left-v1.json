@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-inside-outside-left-v1",
+  "version": 1,
+  "file": "assets/runtime/inside-outside-left-v1.glb",
+  "sha256": "4d0d12cc92851a65c162e9328682ef13f90fe198bc44624313f295abda743c32",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_inside-outside__left__v1",
+  "fps": 30,
+  "durationMs": 10000,
+  "loopable": false,
+  "startPose": "inside-outside-left-start",
+  "endPose": "inside-outside-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.4519046684599604, -0.00001964070229827389, -0.4541086462082591],
+    "max": [0.45190068572718356, 1.7195862702472144, 0.20538741192787377]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

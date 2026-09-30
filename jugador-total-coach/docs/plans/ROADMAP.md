@@ -29,11 +29,15 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 ## Contrato de sesión vs. pared
 3,600 segundos es la duración programada incluyendo descansos/transiciones declarados. Pausas del usuario y repeticiones extra aumentan el tiempo real; guardarlo por separado. Las instrucciones explicativas fuera de la sesión no se suman sin declararlo.
 
-## Punto actual — 2026-09-30
+## Punto histórico al cerrar 04 — 2026-09-30
 
 00–03 aceptadas como base; 04 autorizada e implementada con recurso real, Blender portable y verificaciones técnicas. Cinco minutos aceptados por reporte del usuario; controles, minuto completo y fallos comprobados con WebGL real en [navegador independiente](../reviews/phase04-browser-review.md). Samsung físico comprobado con resultado favorable por reporte, sin FPS instrumentales. El usuario acepta después la claridad del gesto. [04 cerrada como prototipo técnico](../reviews/phase04-closeout.md); ficha y clip siguen draft como contenido deportivo. Preview temporal LAN preparado para el teléfono, sin cambios de firewall. 05–09 no autorizadas. Las reglas de instalación por necesidad anteriores describen cada momento, no prohíben usar Blender ya preparado en 04.
 
 
-## Estado de avance — 2026-09-30
+## Estado histórico al cerrar 05 — 2026-09-30
 
 00–04 aceptadas como base con sus límites. 05 autorizada, implementada y verificada técnicamente; el usuario confirma funcionamiento en computadora/Samsung y reconoce el nuevo ejemplo como campanitas. Se aclara el propósito del laboratorio, cuya trayectoria no enseña un control orientado. [Informe](../reviews/phase05-contact-review.md). No avanzar automáticamente a 06–09. PROJECT_STATUS es la referencia vigente; la tabla de fases sigue describiendo el plan global.
+
+## Punto vigente de 06 — 2026-09-30
+
+06 autorizada: once patrones/quince recursos producidos y revisados técnicamente, fundamento exclusivamente documental según ADR 0012. Empuje con silla pendiente de condiciones reales; aceptación de nuevos recursos y Samsung físico pendientes. No declarar cerrada toda 06 ni iniciar 07–09. [Informe y pendientes](../reviews/phase06-pipeline-review.md).

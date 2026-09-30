@@ -1,6 +1,6 @@
 # Registro de recursos y licencias
 
-Actualizado el 2026-09-30, fase 05 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias de 04](docs/reviews/phase04-asset-evidence.json) y [recursos/WASM de 05](docs/reviews/phase05-asset-evidence.json).
+Actualizado el 2026-09-30, fase 06 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias de 04](docs/reviews/phase04-asset-evidence.json) y [recursos/WASM de 05](docs/reviews/phase05-asset-evidence.json).
 
 | Asset ID | Archivo/versión/hash | Autor y URL de origen | Licencia del archivo | Variante gratis | Fuente editable/importable | Modificaciones | Revisión |
 |---|---|---|---|---|---|---|---|
@@ -23,3 +23,25 @@ Blender portable es herramienta de desarrollo y se registra en la [auditoría de
 Preferir CC0 o recursos propios; CC BY con atribución. Todo elemento desconocido queda bloqueado. Guardar evidencias al seleccionar el archivo. Revisar mallas, clips, materiales, texturas, audio, logos y scripts por separado cuando corresponda.
 
 Consultar docs/product/ZERO_COST_AND_GROWTH_POLICY.md. Prohibido asumir que los .blend Source de un pack son gratuitos porque el exportado esté bajo CC0.
+
+## Derivados de fase 06 — 2026-09-30
+
+Trece GLB nuevos, todos derivados del mismo Quaternius CC0 ya auditado; sin adquisición de otros avatares, animaciones, imágenes o videos. Ropa/textura y balón reutilizados del proyecto. Poses y scripts específicos propios; ninguna licencia pública nueva para esas aportaciones. [Inventario verificable](assets/phase06-catalog.json) y [hashes de fuente/GLB y mediciones](docs/reviews/evidence/phase06/asset-validation.json).
+
+| Recurso | GLB SHA-256 | Fuente y modificaciones |
+|---|---|---|
+| [active-march-v1.glb](assets/runtime/active-march-v1.glb) | e9de3989f65b229441177cfd417309ad49b673328b98b18c7823a6e29dfca366 | [Fuente](assets/source/active-march/active-march-v1.blend); poses finitas de active-march, alternate, 8 s |
+| [ankle-mobility-left-v1.glb](assets/runtime/ankle-mobility-left-v1.glb) | 7fa938d70f7f8e78e331edceee031feb8cf1fc63dfdb0bbd95c2748cf361c0ec | [Fuente](assets/source/ankle-mobility/ankle-mobility-left-v1.blend); poses finitas de ankle-mobility, left, 8 s |
+| [ankle-mobility-right-v1.glb](assets/runtime/ankle-mobility-right-v1.glb) | b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb | [Fuente](assets/source/ankle-mobility/ankle-mobility-right-v1.blend); poses finitas de ankle-mobility, right, 8 s |
+| [dead-bug-v1.glb](assets/runtime/dead-bug-v1.glb) | 7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de | [Fuente](assets/source/dead-bug/dead-bug-v1.blend); poses finitas de dead-bug, arms-supported, 14 s |
+| [glute-bridge-v1.glb](assets/runtime/glute-bridge-v1.glb) | 412c0d349515ba4cbe70620f96d15e0ff7e23852d807f7bcd7dc0238b68fc195 | [Fuente](assets/source/glute-bridge/glute-bridge-v1.blend); poses finitas de glute-bridge, bilateral, 8 s |
+| [inside-outside-left-v1.glb](assets/runtime/inside-outside-left-v1.glb) | 4d0d12cc92851a65c162e9328682ef13f90fe198bc44624313f295abda743c32 | [Fuente](assets/source/inside-outside/inside-outside-left-v1.blend); poses finitas de inside-outside, left, 10 s |
+| [inside-outside-right-v1.glb](assets/runtime/inside-outside-right-v1.glb) | 4b2a90afa68197d2e727d87305c2c88e1e71f09e9a62b16143305526c88e2d19 | [Fuente](assets/source/inside-outside/inside-outside-right-v1.blend); poses finitas de inside-outside, right, 10 s |
+| [lateral-sole-roll-left-v1.glb](assets/runtime/lateral-sole-roll-left-v1.glb) | 93aea63930cb613998e3799aaeaf2d907222bef0bd7e6907806a357c2ee2c008 | [Fuente](assets/source/lateral-sole-roll/lateral-sole-roll-left-v1.blend); poses finitas de lateral-sole-roll, left, 10 s |
+| [lateral-sole-roll-right-v1.glb](assets/runtime/lateral-sole-roll-right-v1.glb) | 9129e600be5e137ea52a57970b636362ac86e433185364862006ae7449f1dad4 | [Fuente](assets/source/lateral-sole-roll/lateral-sole-roll-right-v1.blend); poses finitas de lateral-sole-roll, right, 10 s |
+| [mini-squat-v1.glb](assets/runtime/mini-squat-v1.glb) | 580741097245cd44f7f6c401ecf6d5a49c02d41e71d5b7bb751d379e2b0fa1ff | [Fuente](assets/source/mini-squat/mini-squat-v1.blend); poses finitas de mini-squat, bilateral, 8 s |
+| [slow-breathing-v1.glb](assets/runtime/slow-breathing-v1.glb) | 2cb821747e60e1eb9d2cd56926f7523777b31584092fa3f1e9ee82000861e132 | [Fuente](assets/source/slow-breathing/slow-breathing-v1.blend); poses finitas de slow-breathing, comfortable-standing, 8 s |
+| [soft-step-turn-left-v1.glb](assets/runtime/soft-step-turn-left-v1.glb) | a658d2586ad2384d17b088b2caae30ec38f155d543c1b5895f4f5389ea99ed90 | [Fuente](assets/source/soft-step-turn/soft-step-turn-left-v1.blend); poses finitas de soft-step-turn, left, 10 s |
+| [soft-step-turn-right-v1.glb](assets/runtime/soft-step-turn-right-v1.glb) | 5faba68d469bb4013b549c86b744b9a0d9e3acc8aba9cab267175065b3fdf292 | [Fuente](assets/source/soft-step-turn/soft-step-turn-right-v1.blend); poses finitas de soft-step-turn, right, 10 s |
+
+Conservan draft: comprobaciones técnicas del agente separadas de aceptación humana. El análisis de ACE/NHS/NASM/FIFA/FA/AHA es documental, con enlaces y síntesis propia; no se incorporan sus medios ni se supone licencia de reutilización de sus videos. Blender, exportador, Three/Fiber y validador son los existentes: [costo/reutilización de 06](docs/reviews/phase06-cost-and-reuse.md).

@@ -20,8 +20,8 @@
     "max": [0.45191136207737703, 1.7195866118302134, 0.20059481122573322]
   },
   "requiredProps": ["ball"],
-  "supportedSides": ["alternating"],
-  "authority": "authored",
+  "supportedSides": ["alternate"],
+  "authority": "animation",
   "reviewStatus": "draft",
   "contactWindows": [
     {
@@ -44,5 +44,9 @@
     "Avatar and TutorialBall share one AnimationMixer clip",
     "Lab hides TutorialBall and gives a different PhysicsBall exclusively to Rapier",
     "Original rig, skin weights, shoulder/arm correction and clothing reused; new IK poses and ball authored locally"
-  ]
+  ],
+  "startPose": "standing-wide-ball-at-right-instep",
+  "endPose": "standing-wide-ball-at-right-instep",
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1
 }

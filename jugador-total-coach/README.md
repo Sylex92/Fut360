@@ -1,24 +1,25 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-30. **Fase 05 implementada y verificada técnicamente:** comparación entre un interior-interior guiado y contactos reales calculados por Rapier. Dos modos separados, cámaras, detalle de pies, pausa/reinicio y revisión lenta. La bisagra de 04 sigue disponible.
+Actualizado: 2026-09-30. **Fase 06 en curso: biblioteca con quince ejemplos de once patrones.** Se reutilizan el avatar y las herramientas existentes. El empuje con silla espera medidas/condiciones reales; aún no es una rutina aprobada de una hora. 07–09 no autorizadas.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 05 y evidencias](docs/reviews/phase05-contact-review.md), [licencias/costos](docs/reviews/phase05-cost-and-dependencies.md), [registro de recursos](ASSET_LICENSES.md). El usuario confirma buen funcionamiento del nuevo caso en computadora y Samsung y reconoce las campanitas. Se aclara en pantalla que el laboratorio es una prueba de contactos, no otra variante del ejercicio; revisión deportiva pendiente. 06–09 no autorizadas. Todavía no es una rutina aprobada de una hora.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 06](docs/reviews/phase06-pipeline-review.md), [fundamento interno por ejercicio](docs/training/PHASE06_DOCUMENTARY_REVIEW.md), [costo/reutilización](docs/reviews/phase06-cost-and-reuse.md), [recursos/licencias](ASSET_LICENSES.md). La investigación no aparece en la app. No se exige contratación externa para avanzar ni se atribuye revisión profesional a las fuentes.
 
 ## Ejecutar la aplicación
 
-Desde jugador-total-coach, con dependencias locales instaladas:
+Desde jugador-total-coach, con dependencias locales existentes:
 
 ```powershell
 node tools/pnpm.mjs dev
 ```
 
-Abrir http://127.0.0.1:5173/. El preview local existente en http://127.0.0.1:4173/ sirve el build actualizado; recargar la página. Elegir «Pie y balón · fase 05» o «Bisagra de cadera · fase 04». Cambiar de ejemplo reinicia la prueba, sin guardar entrenamiento.
+Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar y elegir «Movimientos · fase 06». El teléfono usa el preview LAN documentado en desarrollo local.
 
-- Demostración guiada de campanitas (interior-interior): cuerpo y balón en un clip finito de 10 s, pausa, media velocidad, revisión de instante y tres vistas. Trayectoria ilustrativa; contenido draft.
-- Laboratorio: Rapier 0.19.2/react-three-rapier 2.2.0; pie cinemático, balón dinámico y suelo fijo. Contactos lentos/rápidos, forma aislada o huesos del avatar, colliders opcionales y reinicio explícito. El avatar no adapta sus pies si el balón se desvía: el resultado no enseña un control orientado. Se detiene al salir del área. El tiempo visible representa el recorrido del clip; en rápido se recorre a 4× sin cambiar gravedad/paso físico.
-- Bisagra: ensayo de uno/cinco minutos ya aceptado como prototipo en escritorio y Samsung, con preparación automática, +30/+60, pausa e inspector. Se conserva ese comportamiento.
+- Biblioteca: selector de movimiento, frontal/lateral/tres cuartos, pausa, revisión por instante y media velocidad. Cada ejemplo termina; reproducir otra vez es explícito. Campanitas ofrece también 2× para observar. El ritmo visual no prescribe el ritmo de entrenamiento.
+- Puente y pierna alterna: vista de suelo; el ejemplo empieza ya tumbado. No se han animado las transiciones de bajar/levantarse. Respiración: postura cómoda quieta, sin metrónomo obligatorio.
+- «Pie y balón · fase 05» conserva demostración guiada y laboratorio Rapier separado. El laboratorio prueba contactos; no enseña una variante cuando el balón se desvía.
+- «Bisagra de cadera · fase 04» conserva su prueba de uno/cinco minutos con preparación y +30/+60 automáticos, pausa e inspector.
 
-132 pruebas, lint, tipos, formato y build correctos; dos GLB validados, fuentes editables y avisos locales. Pruebas CPU de contactos a 30/60/120 Hz y comprobación adicional del wrapper en navegador. Consola normal sin errores, con avisos de obsolescencia documentados de Fiber/Rapier; build advierte chunks grandes. Viewport de 390 px comprobado, distinto de móvil físico. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md).
+164 pruebas, lint y tipos correctos; quince GLB pasan Khronos. Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. Los clips nuevos mantienen draft y esperan aceptación de claridad/prueba móvil real. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
 
 ## Decisiones vigentes
 
@@ -43,4 +44,4 @@ La secuencia siguiente describe el inicio original del paquete. El trabajo actua
 `docs/plans/ROADMAP.md` indica el orden 00–09. `PROJECT_STATUS.md` conserva el estado entre chats.
 
 ## Qué está comprobado en este paquete
-El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. En 04 se añadieron únicamente herramientas/recursos auditados del primer gesto; PWA/offline, móvil, persistencia, contactos con balón y contenido de toda la hora siguen pendientes.
+El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. 04/05 tienen aceptación funcional en computadora/Samsung. 06 añade recursos y revisión documental. PWA/offline, persistencia y contenido de toda la hora siguen pendientes; la nueva biblioteca requiere su propia comprobación en el móvil.

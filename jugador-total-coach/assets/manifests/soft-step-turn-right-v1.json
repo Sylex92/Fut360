@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-soft-step-turn-right-v1",
+  "version": 1,
+  "file": "assets/runtime/soft-step-turn-right-v1.glb",
+  "sha256": "5faba68d469bb4013b549c86b744b9a0d9e3acc8aba9cab267175065b3fdf292",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_soft-step-turn__right__v1",
+  "fps": 30,
+  "durationMs": 10000,
+  "loopable": false,
+  "startPose": "soft-step-turn-right-start",
+  "endPose": "soft-step-turn-right-start",
+  "boundingBoxMeters": {
+    "min": [-0.2863279766304858, -0.000010926158582163326, -0.2776562088076098],
+    "max": [0.2867596577741203, 1.7895864106780555, 0.237995030039875]
+  },
+  "requiredProps": [],
+  "supportedSides": ["right"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

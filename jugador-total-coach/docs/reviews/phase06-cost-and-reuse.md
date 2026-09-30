@@ -1,0 +1,28 @@
+# Fase 06 — costo, licencias y reutilización
+
+2026-09-30. Aplicación concreta de FEATURE_COST_REVIEW, sin ampliación de presupuesto ni servicios. Decisión: admisible para el prototipo local autorizado con los archivos existentes. No se instaló, descargó ni contrató nada en esta fase.
+
+| Necesidad | Recurso reutilizado | Adaptación específica / carencia | Costo obligatorio adicional |
+|---|---|---|---|
+| Avatar editable | Quaternius Superhero masculino Standard, CC0; rig de 65 huesos ya probado | Conservar malla, pesos, ropa y correcciones; poses de los patrones faltantes | Ninguno |
+| Autoría | Blender 4.5.14 LTS portable ya auditado/autorizado, IK, bake, exportador glTF integrado | Tres scripts de lote y lanzador con configuración/temporales dentro del proyecto | Ninguno; tiempo de autoría/corrección y recursos del equipo |
+| Reproducción | Three/Fiber, GLTFLoader, AnimationMixer y ClipDriver existentes | Biblioteca de ejemplos, encuadre de suelo, controles y cámaras existentes | Ninguno; no CDN ni cuenta |
+| Contactos ilustrados | Balón local, un clip para cuerpo y balón | Planta e interior/exterior, cada lado; Rapier conserva laboratorio independiente | Ninguno |
+| Validación | Khronos glTF Validator, Three, Ajv, Vitest, Playwright disponibles | Reglas de cobertura, apoyos, espacio, continuidad y contactos por superficie | Ninguno |
+| Fundamento | Fuentes públicas consultadas | Síntesis y límites internos; sin redistribuir medios protegidos | Ninguno para lo consultado; no se promete acceso permanente a toda fuente |
+
+## Búsqueda de reutilización antes de autoría
+
+Se inspeccionó de nuevo el inventario del GLB Animation Library Standard ya descargado: 43 acciones. Incluye Walk/Jog/Sprint, Crouch, Jump, Sitting, Push, Punch, Sword, Pistol, Swim, Spell, Dance, etc. No incluye bisagra, puente, marcha supina, campanitas, planta o interior/exterior que cumplan estas fichas. Walk/Jog no son marcha estacionaria; Crouch y Push no acreditan por su nombre una sentadilla corta o empuje inclinado sobre nuestra silla. No se sustituye el ejercicio por un clip de videojuego.
+
+Se reutilizan esqueleto, pose base, pesos, materiales, ropa y herramientas de IK. Se anima únicamente la trayectoria específica faltante. Para respiración se conserva una postura cómoda, sin inventar una expansión torácica como guía obligatoria. Trece nuevos GLB más dos existentes cubren once patrones; lados explícitos donde corresponde. La silla sigue pendiente de dimensiones/condiciones.
+
+## Derechos y condiciones futuras
+
+Los hashes de fuentes y exportaciones están en [evidencia](evidence/phase06/asset-validation.json) y el registro en [ASSET_LICENSES](../../ASSET_LICENSES.md). Se conservan licencia CC0 y originales. Las aportaciones del proyecto no adquieren automáticamente una licencia pública. Blender como herramienta y licencia de su salida son asuntos separados, ya auditados en 04; no se reaudita como si fuera una nueva adquisición.
+
+No cambia el lockfile ni los avisos de dependencias. No se incorpora Remotion, API de generación, modelo local ni complemento. Añadirlos posteriormente exige revisar versión, licencia de herramienta y salida, uso personal/comercial, distribución, créditos/cuotas, cuenta, datos y necesidad real. Packs Source/Pro, contenidos exclusivos, render cloud y servicios de revisión son opciones que pueden costar; no son dependencias de esta entrega.
+
+Más clips aumentan almacenamiento, transferencia local y trabajo de revisión. Todos se empaquetan en el build, pero el visor carga el elegido; no se promete memoria ilimitada ni buen rendimiento en cualquier dispositivo. La prueba nueva en Samsung físico sigue pendiente. Tampoco se declara PWA offline, exportación, sincronización o entrenamiento completo por disponer de estos archivos.
+
+La revisión documental autorizada en [ADR 0012](../architecture/adr/0012-documentary-training-review.md) evita una contratación obligatoria para avanzar; no se convierte en certificación profesional ni elimina dudas individuales. Su costo en cuenta/tokens Codex está fuera de la restricción del usuario. No se promete gratuidad ilimitada ante cambios de contexto.

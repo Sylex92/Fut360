@@ -31,7 +31,28 @@ Conservar fuente editable/importable legalmente accesible, clip GLB y manifiesto
 
 ## Estados
 
-`draft` -> `technical-reviewed` -> `coaching-reviewed`, con evidencias ligadas a versión/hash, ficha y alcance del revisor. El motor físico o la exportación exitosa no otorgan el último estado. El usuario está asignado a la revisión humana; no se registra como realizada ni profesional por esa asignación. Si faltan evidencias, la vista sigue identificada como demostración en revisión y no se libera como entrenamiento aprobado.
+`draft` -> `technical-reviewed` -> `coaching-reviewed`, con evidencias ligadas a versión/hash, ficha y alcance del revisor. El motor físico o la exportación exitosa no otorgan el último estado. Desde 2026-09-30, [ADR 0012](../architecture/adr/0012-documentary-training-review.md) permite fundamentación documental sin contratación externa obligatoria. Registrar por separado esa revisión, comprobaciones técnicas y claridad observada por el usuario; ninguna se etiqueta como evaluación profesional. Los recursos nuevos de 06 conservan draft hasta la revisión humana de su representación. Dudas concretas no resueltas permanecen vinculadas al recurso afectado.
+
+## Recorrido disponible desde 06
+
+Desde la raíz jugador-total-coach, con las herramientas ya preparadas:
+
+```powershell
+node tools/blender.mjs tools/build_glute_bridge.py
+node tools/blender.mjs tools/build_glute_bridge.py dead-bug
+node tools/blender.mjs tools/build_standing_movements.py
+node tools/blender.mjs tools/build_ball_variants.py
+node tools/review_movements.mjs
+node tools/review_ball_contacts.mjs
+node tools/pnpm.mjs test
+node tools/pnpm.mjs build
+```
+
+Los cuatro primeros comandos regeneran fuentes/GLB del grupo correspondiente; no son lecturas. Revisar diferencias antes de aceptar una reexportación. `review_movements.mjs` usa el validador Khronos y skinning de Three a 30 Hz, incluye balón, apoyos, continuidad, inicio/final y límites del área. Crea manifiesto para un recurso nuevo; no actualiza hashes existentes por defecto. Solo después de revisar cambios, `--record-draft` registra hashes/bounds de derivados nuevos en draft; excluye bisagra y campanitas ya aceptadas. El informe conserva hash de cada fuente.
+
+`review_ball_contacts.mjs` comprueba distancias entre esfera y triángulos deformados de las cuatro variantes nuevas a 30 Hz. Es una consulta geométrica de Three; no un solver. Tolerancias de inspección: no intersección mayor de 2 mm y separación de contacto menor de 10 mm. Estos umbrales no certifican técnica deportiva ni precisión física continua entre muestras.
+
+Biblioteca: quince ejemplos, once patrones, variantes de lado explícitas; [catálogo](../../assets/phase06-catalog.json), [fundamento interno](../training/PHASE06_DOCUMENTARY_REVIEW.md), [informe](../reviews/phase06-pipeline-review.md). Cada reproducción es finita; volver al inicio es un control de revisión, no una transición enseñada. Respiración reutiliza una postura quieta. El empuje con silla espera sus condiciones reales. La secuencia completa de entrenamiento y sus transiciones se resolverán en 07, aún no autorizada.
 
 ## Entornos
 

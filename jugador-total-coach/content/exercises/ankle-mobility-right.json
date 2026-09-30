@@ -1,0 +1,38 @@
+{
+  "id": "ankle-mobility-right",
+  "version": 1,
+  "displayName": "Balanceo de tobillo · derecho delante",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar balanceo de tobillo · derecho delante"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": [],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-ankle-mobility-right-v1",
+    "clipName": "EX_ankle-mobility__right__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "Ambos pies apoyados y posición escalonada.",
+    "Desplaza suavemente la rodilla delantera hacia delante sin despegar el talón.",
+    "Vuelve al inicio sin forzar el recorrido."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

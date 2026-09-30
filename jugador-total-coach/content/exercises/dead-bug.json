@@ -1,0 +1,39 @@
+{
+  "id": "dead-bug",
+  "version": 1,
+  "displayName": "Pierna alterna con brazos apoyados",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar pierna alterna con brazos apoyados"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["mat"],
+  "impact": "low",
+  "sidePolicy": "alternate",
+  "animation": {
+    "assetId": "quaternius-dead-bug-v1",
+    "clipName": "EX_dead-bug__arms-supported__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "Boca arriba, brazos relajados y rodillas flexionadas.",
+    "Eleva una pierna con recorrido corto, manteniendo el otro pie apoyado.",
+    "Devuélvela al suelo antes de cambiar de lado.",
+    "Mantén el tronco estable y respira sin contener el aire."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

@@ -26,40 +26,171 @@
     "reviewStatus"
   ],
   "properties": {
-    "assetId": { "type": "string", "minLength": 1 },
-    "version": { "type": "integer", "minimum": 1 },
-    "file": { "type": "string", "pattern": "^assets/runtime/[a-z0-9-]+\\.glb$" },
-    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
-    "rigId": { "type": "string", "minLength": 1 },
-    "rigMapping": { "type": "string", "pattern": "^assets/manifests/[a-z0-9-]+\\.json$" },
-    "clipName": { "type": "string", "pattern": "^EX_[a-z0-9-]+__[a-z0-9-]+__v[1-9][0-9]*$" },
-    "fps": { "type": "integer", "minimum": 1, "maximum": 120 },
-    "durationMs": { "type": "integer", "minimum": 1, "maximum": 600000 },
-    "loopable": { "type": "boolean" },
-    "startPose": { "type": "string", "minLength": 1 },
-    "endPose": { "type": "string", "minLength": 1 },
+    "assetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "file": {
+      "type": "string",
+      "pattern": "^assets/runtime/[a-z0-9-]+\\.glb$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "rigId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rigMapping": {
+      "type": "string",
+      "pattern": "^assets/manifests/[a-z0-9-]+\\.json$"
+    },
+    "clipName": {
+      "type": "string",
+      "pattern": "^EX_[a-z0-9-]+__[a-z0-9-]+__v[1-9][0-9]*$"
+    },
+    "fps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "durationMs": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 600000
+    },
+    "loopable": {
+      "type": "boolean"
+    },
+    "startPose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "endPose": {
+      "type": "string",
+      "minLength": 1
+    },
     "boundingBoxMeters": {
       "type": "object",
       "required": ["min", "max"],
       "additionalProperties": false,
       "properties": {
-        "min": { "$ref": "#/$defs/vector" },
-        "max": { "$ref": "#/$defs/vector" }
+        "min": {
+          "$ref": "#/$defs/vector"
+        },
+        "max": {
+          "$ref": "#/$defs/vector"
+        }
       }
     },
-    "requiredProps": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "requiredProps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
     "supportedSides": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "items": { "enum": ["none", "left", "right", "alternate"] }
+      "items": {
+        "enum": ["none", "left", "right", "alternate"]
+      }
     },
-    "previewSeparationMs": { "type": "integer", "minimum": 0, "maximum": 60000 },
-    "practiceRepetitions": { "type": "integer", "minimum": 1, "maximum": 100 },
-    "authority": { "const": "animation" },
-    "reviewStatus": { "enum": ["draft", "technical-reviewed", "coaching-reviewed"] }
+    "previewSeparationMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 60000
+    },
+    "practiceRepetitions": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "authority": {
+      "const": "animation"
+    },
+    "reviewStatus": {
+      "enum": ["draft", "technical-reviewed", "coaching-reviewed"]
+    },
+    "sourceFile": {
+      "type": "string",
+      "pattern": "^assets/source/[a-z0-9-]+/[a-z0-9-]+\\.blend$"
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "meters": {
+      "const": true
+    },
+    "upAxis": {
+      "const": "+Y"
+    },
+    "forwardAxis": {
+      "const": "+Z"
+    },
+    "anatomicalRightAxis": {
+      "const": "-X"
+    },
+    "contactWindows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["side", "startMs", "endMs"],
+        "properties": {
+          "side": {
+            "enum": ["left", "right"]
+          },
+          "startMs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endMs": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "ballProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["radiusMeters", "path"],
+      "properties": {
+        "radiusMeters": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
   },
   "$defs": {
-    "vector": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } }
+    "vector": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    }
   }
 }

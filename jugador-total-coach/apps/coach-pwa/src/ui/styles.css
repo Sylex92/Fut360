@@ -14,6 +14,21 @@
   align-items: center;
   gap: 10px;
 }
+.library-actions {
+  margin-top: 12px;
+}
+.library-actions .button-primary {
+  background: #213e34;
+  color: #fff;
+  border-color: #213e34;
+}
+.movement-library select {
+  border: 1px solid #8ca180;
+  border-radius: 8px;
+  padding: 8px;
+  color: #213e34;
+  background: #fff;
+}
 .contact-option {
   display: block;
   margin: 14px 0;

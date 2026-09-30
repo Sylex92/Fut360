@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-mini-squat-v1",
+  "version": 1,
+  "file": "assets/runtime/mini-squat-v1.glb",
+  "sha256": "580741097245cd44f7f6c401ecf6d5a49c02d41e71d5b7bb751d379e2b0fa1ff",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_mini-squat__bilateral__v1",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "mini-squat-bilateral-start",
+  "endPose": "mini-squat-bilateral-start",
+  "boundingBoxMeters": {
+    "min": [-0.28632782773289833, -0.00005333898927063017, -0.1948307861795784],
+    "max": [0.2863284822386277, 1.8195867276105184, 0.4033863579861112]
+  },
+  "requiredProps": [],
+  "supportedSides": ["none"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

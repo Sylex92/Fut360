@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-ankle-mobility-right-v1",
+  "version": 1,
+  "file": "assets/runtime/ankle-mobility-right-v1.glb",
+  "sha256": "b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_ankle-mobility__right__v1",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "ankle-mobility-right-start",
+  "endPose": "ankle-mobility-right-start",
+  "boundingBoxMeters": {
+    "min": [-0.3163278497972055, -0.00004633786658640698, -0.3525829960241731],
+    "max": [0.28632827357505897, 1.7695868459833484, 0.37607897617164904]
+  },
+  "requiredProps": [],
+  "supportedSides": ["right"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "soft-step-turn-right",
+  "version": 1,
+  "displayName": "Giro por pasos · derecha",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar giro por pasos · derecha"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": [],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-soft-step-turn-right-v1",
+    "clipName": "EX_soft-step-turn__right__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "Recoloca los pies en pasos pequeños.",
+    "Levanta el pie antes de cambiar su orientación.",
+    "Acompaña con el cuerpo, sin girar sobre un pie fijo.",
+    "Regresa al frente también mediante pasos."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

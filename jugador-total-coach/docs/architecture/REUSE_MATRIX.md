@@ -80,3 +80,7 @@ physics-lab implementado con Rapier 0.19.2/react-three-rapier 2.2.0: paso fijo, 
 Avatar, rig de 65 huesos, ropa, correcciones de brazos/hombros y ClipDriver reutilizados. Blender IK/bake/exportador prepara únicamente el clip interior-interior faltante, con balón geométrico propio y fuente editable. La bisagra y el motor de sesión no cambian. La matriz de pruebas demuestra contactos y continuidad, sin afirmar técnica deportiva validada.
 
 La física libre no conserva automáticamente la trayectoria didáctica: se mantiene un clip sincronizado para enseñar y un laboratorio separado para inspeccionar. [ADR 0011](adr/0011-contact-spike-result.md), [costos/alternativas](../reviews/phase05-cost-and-dependencies.md), [evidencia](../reviews/phase05-contact-review.md).
+
+## Evidencia de fase 06 — 2026-09-30
+
+Se reutilizan rig, pesos, ropa, clips de 04/05, Blender IK/bake/exportador, Three/Fiber y validador Khronos. Inventario de 43 acciones Standard revisado: ninguna cubre sin adaptación los nuevos patrones. Trece derivados locales cubren nueve patrones adicionales, con lados separados; no se añade motor/editor/solver ni dependencias. Fuentes editables y scripts de grupo, validación a 30 Hz y previsualización finita. [Decisión, límites y costos](../reviews/phase06-cost-and-reuse.md). No se ejecuta 07.

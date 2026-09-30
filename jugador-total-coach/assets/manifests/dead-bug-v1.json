@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-dead-bug-v1",
+  "version": 1,
+  "file": "assets/runtime/dead-bug-v1.glb",
+  "sha256": "7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_dead-bug__arms-supported__v1",
+  "fps": 30,
+  "durationMs": 14000,
+  "loopable": false,
+  "startPose": "supine-bent-knees-arms-supported",
+  "endPose": "supine-bent-knees-arms-supported",
+  "boundingBoxMeters": {
+    "min": [-0.3514173005557014, -0.000019227008444662163, -0.8560408131172328],
+    "max": [0.3514173218644272, 0.5746622451674595, 0.7655581925827738]
+  },
+  "requiredProps": ["mat"],
+  "supportedSides": ["alternate"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

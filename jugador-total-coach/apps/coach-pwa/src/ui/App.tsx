@@ -3,6 +3,7 @@ import { validateWorkoutV1 } from '@fut360/exercise-catalog';
 import type { WorkoutSummary } from '@fut360/domain';
 import { DemoPanel } from './DemoPanel';
 import { ContactPanel } from './ContactPanel';
+import { MovementLibrary } from './MovementLibrary';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -84,7 +85,7 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
-  const [example, setExample] = useState<'contact' | 'hinge'>('contact');
+  const [example, setExample] = useState<'library' | 'contact' | 'hinge'>('library');
   const [result, setResult] = useState(() => validateWorkoutV1(content));
   const [checks, setChecks] = useState(0);
   function recheck() {
@@ -104,7 +105,7 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 05 <span aria-hidden="true">/</span> PIE Y BALÓN
+          FASE 06 <span aria-hidden="true">/</span> MOVIMIENTOS
         </span>
       </header>
       <main id="main">
@@ -117,8 +118,8 @@ export function App({ content }: { content: unknown }) {
               <em>Entiende cada paso.</em>
             </h1>
             <p className="lead">
-              Observa el contacto entre el pie y el balón. Comparamos una demostración guiada
-              con una prueba de física antes de convertirlas en entrenamiento.
+              Explora los movimientos desde varios ángulos. Puedes detener el ejemplo y
+              revisarlo despacio antes de continuar.
             </p>
           </div>
           <div className="intro-aside">
@@ -131,6 +132,13 @@ export function App({ content }: { content: unknown }) {
           </div>
         </section>
         <nav className="camera-controls" aria-label="Ejemplo visible">
+          <button
+            type="button"
+            aria-pressed={example === 'library'}
+            onClick={() => setExample('library')}
+          >
+            Movimientos · fase 06
+          </button>
           <button
             type="button"
             aria-pressed={example === 'contact'}
@@ -147,7 +155,13 @@ export function App({ content }: { content: unknown }) {
           </button>
         </nav>
         <p className="quiet-note">Cambiar de ejemplo reinicia la prueba que estás viendo.</p>
-        {example === 'contact' ? <ContactPanel /> : <DemoPanel />}
+        {example === 'library' ? (
+          <MovementLibrary />
+        ) : example === 'contact' ? (
+          <ContactPanel />
+        ) : (
+          <DemoPanel />
+        )}
         <details className="technical-details">
           <summary>Comprobaciones del archivo de referencia de 60 minutos</summary>
           <section

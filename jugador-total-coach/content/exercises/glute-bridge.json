@@ -1,0 +1,39 @@
+{
+  "id": "glute-bridge",
+  "version": 1,
+  "displayName": "Puente de glúteos",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar puente de glúteos"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["mat"],
+  "impact": "low",
+  "sidePolicy": "none",
+  "animation": {
+    "assetId": "quaternius-glute-bridge-v1",
+    "clipName": "EX_glute-bridge__bilateral__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "Boca arriba, rodillas flexionadas y pies apoyados.",
+    "Eleva la cadera de forma controlada, sin buscar la máxima altura.",
+    "Conserva el apoyo de cabeza, parte alta de la espalda y pies; respira sin contener el aire.",
+    "Baja suavemente hasta la posición inicial."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

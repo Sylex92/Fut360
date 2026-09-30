@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-lateral-sole-roll-left-v1",
+  "version": 1,
+  "file": "assets/runtime/lateral-sole-roll-left-v1.glb",
+  "sha256": "93aea63930cb613998e3799aaeaf2d907222bef0bd7e6907806a357c2ee2c008",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_lateral-sole-roll__left__v1",
+  "fps": 30,
+  "durationMs": 10000,
+  "loopable": false,
+  "startPose": "lateral-sole-roll-left-start",
+  "endPose": "lateral-sole-roll-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.4519046684599604, -0.00001964070229827389, -0.16345090748006796],
+    "max": [0.45190028276834804, 1.7195862702472144, 0.3151148599680391]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

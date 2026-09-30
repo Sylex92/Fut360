@@ -1,0 +1,167 @@
+{
+  "checkedAt": "2026-09-30",
+  "normal": {
+    "checks": [
+      {
+        "name": "only selected GLB loaded",
+        "passed": true,
+        "detail": [
+          "http://127.0.0.1:4173/assets/glute-bridge-v1-BT5ZVAAV.glb"
+        ]
+      },
+      {
+        "name": "pause holds time",
+        "passed": true,
+        "detail": 0.5659000000000001
+      },
+      {
+        "name": "camera preserves time",
+        "passed": true,
+        "detail": 0.5659000000000001
+      },
+      {
+        "name": "finite end",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "name": "replay resets",
+        "passed": true,
+        "detail": 0.03339999999999986
+      },
+      {
+        "name": "keyboard seek",
+        "passed": true,
+        "detail": 0.05
+      },
+      {
+        "name": "hidden freezes time",
+        "passed": true,
+        "detail": 0.4333000000000002
+      },
+      {
+        "name": "manual pause not auto-resumed",
+        "passed": true,
+        "detail": 0.6995999999999999
+      },
+      {
+        "name": "selection resets",
+        "passed": true,
+        "detail": 0
+      },
+      {
+        "name": "2x finite end",
+        "passed": true,
+        "detail": 10
+      },
+      {
+        "name": "normal console errors",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "no external requests",
+        "passed": true,
+        "detail": [
+          "blob:http://127.0.0.1:4173/47a04525-8333-4f8f-90f1-7b0df7aaa9c0",
+          "blob:http://127.0.0.1:4173/b5784152-3a2f-43e7-9389-e193b854c4f5"
+        ]
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "visibility": "simulated, not native minimize"
+  },
+  "faults": {
+    "checks": [
+      {
+        "name": "failed load stops and disables",
+        "passed": true,
+        "detail": "No se pudo cargar el avatar local. Vuelve a intentarlo."
+      },
+      {
+        "name": "retry loads without autostart",
+        "passed": true,
+        "detail": 0
+      },
+      {
+        "name": "context loss freezes and disables",
+        "passed": true,
+        "detail": 0.34959999999999125
+      },
+      {
+        "name": "context recovery remains paused",
+        "passed": true,
+        "detail": 0.34959999999999125
+      },
+      {
+        "name": "390px no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "scrollWidth": 375,
+          "width": 390
+        }
+      },
+      {
+        "name": "buttons and selects at least 44px",
+        "passed": true,
+        "detail": [
+          {
+            "text": "Bisagra de caderaCampanitas · interior-interi",
+            "height": 44,
+            "width": 289
+          },
+          {
+            "text": "Frontal",
+            "height": 44,
+            "width": 70.109375
+          },
+          {
+            "text": "Lateral",
+            "height": 44,
+            "width": 68.359375
+          },
+          {
+            "text": "Tres cuartos",
+            "height": 44,
+            "width": 97.78125
+          },
+          {
+            "text": "Reproducir ejemplo",
+            "height": 44,
+            "width": 141.0625
+          },
+          {
+            "text": "Volver al inicio",
+            "height": 44,
+            "width": 112.703125
+          },
+          {
+            "text": "Despacio · ½×Detalle · 1×",
+            "height": 44,
+            "width": 289
+          }
+        ]
+      },
+      {
+        "name": "camera works by keyboard",
+        "passed": true,
+        "detail": "Lateral"
+      }
+    ],
+    "performance": {
+      "samples": 120,
+      "medianMs": 16.69999999999709,
+      "p95Ms": 16.89999999999418
+    },
+    "faults": "Aborted GLB request and synthetic webglcontextlost; expected console error separate from normal run",
+    "mobile": "desktop viewport only; Samsung physical pending"
+  },
+  "limits": [
+    "Desktop browser in foreground; physical Samsung pending",
+    "Visibility tested with synthetic hidden/visibilitychange",
+    "Initial background browser throttled RAF to about 1 Hz; bringing the test tab to foreground restored about 60 Hz; no application change for that condition"
+  ]
+}

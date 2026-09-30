@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "exerciseId": "hip-hinge",
+      "patternId": "hip-hinge",
+      "manifest": "assets/manifests/hip-hinge-v1.json",
+      "exercise": "content/exercises/hip-hinge.json",
+      "source": "assets/source/hip-hinge/hip-hinge-v1.blend",
+      "supportedSides": [
+        "none"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "clarity-accepted-in-previous-phase",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/hip-hinge-review.png"
+    },
+    {
+      "exerciseId": "inside-inside",
+      "patternId": "inside-inside",
+      "manifest": "assets/manifests/inside-inside-v1.json",
+      "exercise": "content/exercises/inside-inside.json",
+      "source": "assets/source/inside-inside/inside-inside-v1.blend",
+      "supportedSides": [
+        "alternate"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "clarity-accepted-in-previous-phase",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-inside-review.png"
+    },
+    {
+      "exerciseId": "glute-bridge",
+      "patternId": "glute-bridge",
+      "manifest": "assets/manifests/glute-bridge-v1.json",
+      "exercise": "content/exercises/glute-bridge.json",
+      "source": "assets/source/glute-bridge/glute-bridge-v1.blend",
+      "supportedSides": [
+        "none"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/glute-bridge-review.png"
+    },
+    {
+      "exerciseId": "active-march",
+      "patternId": "active-march",
+      "manifest": "assets/manifests/active-march-v1.json",
+      "exercise": "content/exercises/active-march.json",
+      "source": "assets/source/active-march/active-march-v1.blend",
+      "supportedSides": [
+        "alternate"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/active-march-review.png"
+    },
+    {
+      "exerciseId": "mini-squat",
+      "patternId": "mini-squat",
+      "manifest": "assets/manifests/mini-squat-v1.json",
+      "exercise": "content/exercises/mini-squat.json",
+      "source": "assets/source/mini-squat/mini-squat-v1.blend",
+      "supportedSides": [
+        "none"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/mini-squat-review.png"
+    },
+    {
+      "exerciseId": "ankle-mobility-left",
+      "patternId": "ankle-mobility",
+      "manifest": "assets/manifests/ankle-mobility-left-v1.json",
+      "exercise": "content/exercises/ankle-mobility-left.json",
+      "source": "assets/source/ankle-mobility/ankle-mobility-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/ankle-mobility-left-review.png"
+    },
+    {
+      "exerciseId": "ankle-mobility-right",
+      "patternId": "ankle-mobility",
+      "manifest": "assets/manifests/ankle-mobility-right-v1.json",
+      "exercise": "content/exercises/ankle-mobility-right.json",
+      "source": "assets/source/ankle-mobility/ankle-mobility-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/ankle-mobility-right-review.png"
+    },
+    {
+      "exerciseId": "soft-step-turn-left",
+      "patternId": "soft-step-turn",
+      "manifest": "assets/manifests/soft-step-turn-left-v1.json",
+      "exercise": "content/exercises/soft-step-turn-left.json",
+      "source": "assets/source/soft-step-turn/soft-step-turn-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/soft-step-turn-left-review.png"
+    },
+    {
+      "exerciseId": "soft-step-turn-right",
+      "patternId": "soft-step-turn",
+      "manifest": "assets/manifests/soft-step-turn-right-v1.json",
+      "exercise": "content/exercises/soft-step-turn-right.json",
+      "source": "assets/source/soft-step-turn/soft-step-turn-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/soft-step-turn-right-review.png"
+    },
+    {
+      "exerciseId": "dead-bug",
+      "patternId": "dead-bug",
+      "manifest": "assets/manifests/dead-bug-v1.json",
+      "exercise": "content/exercises/dead-bug.json",
+      "source": "assets/source/dead-bug/dead-bug-v1.blend",
+      "supportedSides": [
+        "alternate"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/dead-bug-review.png"
+    },
+    {
+      "exerciseId": "slow-breathing",
+      "patternId": "slow-breathing",
+      "manifest": "assets/manifests/slow-breathing-v1.json",
+      "exercise": "content/exercises/slow-breathing.json",
+      "source": "assets/source/slow-breathing/slow-breathing-v1.blend",
+      "supportedSides": [
+        "none"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/slow-breathing-review.png"
+    },
+    {
+      "exerciseId": "lateral-sole-roll-left",
+      "patternId": "lateral-sole-roll",
+      "manifest": "assets/manifests/lateral-sole-roll-left-v1.json",
+      "exercise": "content/exercises/lateral-sole-roll-left.json",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/lateral-sole-roll-left-review.png"
+    },
+    {
+      "exerciseId": "lateral-sole-roll-right",
+      "patternId": "lateral-sole-roll",
+      "manifest": "assets/manifests/lateral-sole-roll-right-v1.json",
+      "exercise": "content/exercises/lateral-sole-roll-right.json",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/lateral-sole-roll-right-review.png"
+    },
+    {
+      "exerciseId": "inside-outside-left",
+      "patternId": "inside-outside",
+      "manifest": "assets/manifests/inside-outside-left-v1.json",
+      "exercise": "content/exercises/inside-outside-left.json",
+      "source": "assets/source/inside-outside/inside-outside-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-outside-left-review.png"
+    },
+    {
+      "exerciseId": "inside-outside-right",
+      "patternId": "inside-outside",
+      "manifest": "assets/manifests/inside-outside-right-v1.json",
+      "exercise": "content/exercises/inside-outside-right.json",
+      "source": "assets/source/inside-outside/inside-outside-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-cpu-and-browser-poses",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06/previews/inside-outside-right-review.png"
+    }
+  ],
+  "unresolved": [
+    {
+      "patternId": "incline-push-up-chair",
+      "reason": "Dimensions, stability and footprint of the actual chair pending; no placeholder clip."
+    }
+  ]
+}

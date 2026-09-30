@@ -1,0 +1,39 @@
+{
+  "id": "inside-inside",
+  "version": 1,
+  "displayName": "Campanitas · interior-interior",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar campanitas · interior-interior"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["ball"],
+  "impact": "low",
+  "sidePolicy": "alternate",
+  "animation": {
+    "assetId": "quaternius-inside-inside-v1",
+    "clipName": "EX_inside-inside__alternating__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "Balón entre los pies, cerca del cuerpo.",
+    "El interior del pie derecho dirige el balón hacia el izquierdo.",
+    "El interior izquierdo lo devuelve con un recorrido corto.",
+    "Mantén el control antes de aumentar el ritmo."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

@@ -42,7 +42,7 @@ Se podrán proponer ampliaciones visuales concretas —detalle del contacto, fas
 
 - Ficha y demostración coinciden en variante, apoyos, equipo, lado, cadencia, dosis y entrada/salida. Revisar también la transición y el retorno del bucle; un corte no debe aparentar un movimiento continuo imposible.
 - Revisión técnica del archivo y reproducción final: articulaciones, deslizamiento, interpenetraciones, contacto cuerpo-balón, dimensiones, espacio 2×2 y materiales presentes. Las pruebas geométricas ayudan a encontrar errores, pero no certifican viabilidad humana.
-- Revisión deportiva por una persona con competencia pertinente sobre ficha y clip final, con evidencia de versión, alcance y observaciones resueltas. La aceptación del usuario y el análisis del agente no sustituyen esa competencia. Si surge una cuestión clínica individual, su evaluación corresponde al ámbito adecuado; no convertir toda animación en consulta médica.
+- Criterio vigente desde 2026-09-30: revisión documental trazable de ficha y clip, con objetivos, fuente, adaptación, incertidumbres y hallazgos resueltos, según [ADR 0012](../architecture/adr/0012-documentary-training-review.md). No exigir revisión externa para avanzar ni etiquetar el análisis como revisión profesional. Una cuestión individual o un defecto concreto se resuelve con el alcance que requiera; no se declara aprobado por preferencia.
 - Claridad en teléfono/computadora, a velocidad normal y desde las cámaras previstas. Primero se comprueba que la demostración pueda entenderse por observación; no se pide al usuario ejecutar un gesto dudoso para decidir si es correcto.
 - La aprobación se refiere al contenido y contexto examinados, no garantiza que toda persona pueda repetir idéntico rango o ritmo. La adecuación individual y las alternativas revisadas son aspectos distintos de que el avatar funcione.
 
@@ -60,9 +60,11 @@ Al conocerlo, indicar que no se siga esa demostración y retirar o deshabilitar 
 
 El MVP1 no observa al usuario por cámara ni identifica en tiempo real si una ejecución es peligrosa. Tampoco se promete retirada remota instantánea de contenido en un dispositivo sin conexión: una corrección conocida requiere actualizar su copia local. El mecanismo de versión/cache y su comprobación se concretarán en las fases de arquitectura/offline. No añadir un servicio remoto obligatorio como solución implícita.
 
-**Estado actual:** el usuario se ha ofrecido a realizar la revisión humana. Todavía no hay clips ni revisión realizada; esa asignación no acredita por sí sola competencia deportiva ni cambia el estado del contenido. El alcance se concreta en el apartado siguiente. No se promete riesgo cero ni detección de todos los defectos.
+**Estado histórico de 00:** el usuario se había ofrecido a realizar la revisión humana. Entonces no había clips ni revisión realizada; esa asignación no acredita por sí sola competencia deportiva ni cambia el estado del contenido. El alcance se concreta en el apartado siguiente. No se promete riesgo cero ni detección de todos los defectos.
 
-### Qué significa «revisión deportiva competente»
+### Historial del criterio anterior: «revisión deportiva competente»
+
+Desde 2026-09-30 aplica ADR 0012: el texto siguiente explica una revisión especializada si llegara a hacerse; ya no es un requisito universal para desarrollar el producto.
 
 Aclaración solicitada por el usuario el 2026-09-26. Es un criterio de calidad del contenido del proyecto, no una afirmación de obligación legal, certificación oficial o examen médico general. La competencia debe corresponder a la tarea: técnica y enseñanza del fútbol para los gestos de balón; preparación física para selección, dificultad, repeticiones, descansos y progresiones. Una persona podría cubrir varios aspectos si su formación y experiencia lo permiten; no se exige contratar un equipo de especialistas por defecto.
 

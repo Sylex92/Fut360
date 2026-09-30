@@ -1,0 +1,39 @@
+{
+  "id": "lateral-sole-roll-right",
+  "version": 1,
+  "displayName": "Planta lateral · pie derecho",
+  "categories": ["demostración de movimiento"],
+  "goals": ["Observar planta lateral · pie derecho"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["ball"],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-lateral-sole-roll-right-v1",
+    "clipName": "EX_lateral-sole-roll__right__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "El pie izquierdo sostiene el apoyo en el suelo.",
+    "Coloca suavemente la planta derecha sobre el balón.",
+    "Desliza el balón de lado y vuelve, sin apoyar tu peso sobre él.",
+    "Retira el pie y vuelve a apoyarlo en el suelo."
+  ],
+  "commonErrors": [
+    "Forzar el recorrido para copiar al avatar.",
+    "Acelerar sin conservar los apoyos y el control indicados."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión: esta prueba del reproductor no es una rutina para seguir.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y las repeticiones del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}
