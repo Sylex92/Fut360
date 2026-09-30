@@ -102,7 +102,11 @@ export function ContactPanel() {
       <div className="section-heading">
         <div>
           <p className="eyebrow">PIE Y BALÓN · PRUEBA DE CONTACTOS</p>
-          <h2 id="contact-heading">De un pie al otro</h2>
+          <h2 id="contact-heading">
+            {mode === 'tutorial'
+              ? 'Campanitas · interior-interior'
+              : 'Prueba técnica de contactos'}
+          </h2>
         </div>
         <span className="draft-tag">EN REVISIÓN</span>
       </div>
@@ -124,8 +128,8 @@ export function ContactPanel() {
       </div>
       <p>
         {mode === 'tutorial'
-          ? 'Observa dos toques con el interior del pie. El cuerpo y el balón siguen el mismo ejemplo.'
-          : 'El pie sigue un recorrido; el balón responde al contacto. Su recorrido puede cambiar o salir del área.'}{' '}
+          ? 'Observa las campanitas: dos toques con el interior del pie. El cuerpo y el balón siguen el mismo ejemplo.'
+          : 'Prueba de desarrollo: comprobamos cómo responde el balón al pie y al suelo. Este recorrido no es una demostración para imitar.'}{' '}
         Esta prueba todavía no es una rutina para seguir.
       </p>
       <div className="demo-layout">
@@ -282,19 +286,21 @@ export function ContactPanel() {
           ) : (
             <>
               <p>
-                La forma del pie empuja el balón y el suelo sostiene su peso. El ejemplo se
-                detiene si el balón sale del cuadrado.
+                El avatar repite un movimiento preparado, pero no ajusta los pies si el balón
+                se desvía. Por eso la devolución puede parecer un control orientado: no estamos
+                enseñando ese ejercicio aquí.
               </p>
               <p>
-                El resultado depende de la velocidad, la forma de contacto y los materiales de
-                prueba. No predice con exactitud un balón real.
+                Probamos contactos lentos y rápidos para revisar que el pie empuje el balón sin
+                atravesarlo y que el suelo lo sostenga. Si sale del cuadrado, la prueba
+                termina.
               </p>
             </>
           )}
           <p className="quiet-note">
             {mode === 'tutorial'
               ? 'La trayectoria está preparada para explicar el gesto. Puedes detenerla y volver a cualquier instante.'
-              : 'La trayectoria la calcula el motor de física. Reiniciar restaura el estado inicial; no corrige el recorrido mientras se reproduce.'}
+              : 'La trayectoria la calcula el motor de física con parámetros de prueba. No predice con exactitud un balón real ni define el ritmo de entrenamiento.'}
           </p>
           <details className="technical-details">
             <summary>Detalles de esta prueba</summary>

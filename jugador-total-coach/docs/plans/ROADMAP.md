@@ -36,4 +36,4 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 
 ## Estado de avance — 2026-09-30
 
-00–04 aceptadas como base con sus límites. 05 autorizada, implementada y verificada técnicamente; pendientes de aceptación de claridad y Samsung del nuevo ejemplo. [Informe](../reviews/phase05-contact-review.md). No avanzar automáticamente a 06–09. PROJECT_STATUS es la referencia vigente; la tabla de fases sigue describiendo el plan global.
+00–04 aceptadas como base con sus límites. 05 autorizada, implementada y verificada técnicamente; el usuario confirma funcionamiento en computadora/Samsung y reconoce el nuevo ejemplo como campanitas. Se aclara el propósito del laboratorio, cuya trayectoria no enseña un control orientado. [Informe](../reviews/phase05-contact-review.md). No avanzar automáticamente a 06–09. PROJECT_STATUS es la referencia vigente; la tabla de fases sigue describiendo el plan global.

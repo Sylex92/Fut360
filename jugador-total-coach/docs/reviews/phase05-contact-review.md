@@ -1,6 +1,6 @@
 # Fase 05 — Contactos y comparación guiada
 
-Fecha: 2026-09-30. Autorizada mediante «vamos con la fase 5», después del cierre de 04 en `7694685`. [Plan previo](../plans/phase05-contact-spike.md). Implementación y verificación técnica completadas; aceptación visual del usuario y comprobación del nuevo caso en Samsung pendientes. No se inicia 06.
+Fecha: 2026-09-30. Autorizada mediante «vamos con la fase 5», después del cierre de 04 en `7694685`. [Plan previo](../plans/phase05-contact-spike.md). Implementación y verificación técnica completadas; funcionamiento en computadora y Samsung confirmado por el usuario, que reconoce las campanitas en la demostración. El propósito del laboratorio se aclara tras su consulta. No se inicia 06.
 
 ## Resultado y decisión
 
@@ -50,10 +50,19 @@ Se reutilizan Rapier/react-three-rapier, Three/Fiber, GLTFLoader, ClipDriver/Ani
 2. El primer recorrido guiado dejaba demasiado espacio al contacto: se ajustó la curva al interior del pie y se comprobó con consultas existentes de Rapier y capturas. No se alteró el ejercicio para acomodar el defecto.
 3. A 30 Hz podía quedar un paso físico extra antes de que React aplicara la pausa terminal. Ahora se duerme el balón en el paso final y se bloquean nuevas entradas; el wrapper sigue siendo dueño del paso fijo/solver. Se probó con pasos adicionales y se repitió la matriz de navegador. No se teletransporta el balón.
 
+## Revisión del usuario y aclaración — 2026-09-30
+
+- El usuario comunica que todo funciona bien en computadora y Samsung. Evidencia manual cualitativa de este caso nuevo, sin captura, FPS ni comprobación adicional de consola aportados en este mensaje.
+- Reconoce el gesto guiado como campanitas o inside-inside. Pregunta por qué la devolución del laboratorio parece un control orientado. Es una duda sobre el propósito de los modos: el clip mueve los pies por un recorrido fijado, mientras Rapier mueve libremente el balón. No hay adaptación del pie a su nueva posición ni intención de enseñar un control orientado.
+- Se nombran las campanitas en la demostración y la prueba técnica en el laboratorio. Los textos explican la diferencia y para qué se prueban velocidades distintas. Animación, física, controles y velocidades permanecen iguales. La explicación se entrega; no se atribuye al usuario una aceptación posterior que aún no ha comunicado.
+- El usuario valora poder observar un gesto más rápido. Se registra como criterio para el diseño posterior: distinguir velocidad didáctica para examinar el gesto y reproducción más ágil para comprender su continuidad. No se añade ahora un control nuevo ni se valida 4× del laboratorio como ritmo humano habitual, dosis o recomendación de práctica.
+- Con estas evidencias se cierra la comprobación funcional pendiente de 05. Los clips conservan draft como contenido deportivo y 06 sigue sin autorización.
+
+Verificación de esta aclaración: 132 pruebas/10 archivos, lint, tipos, formato y build correctos. Navegador independiente sobre el build local: títulos y textos nuevos visibles al cambiar entre ambos modos; cero errores de página/consola y los dos avisos conocidos de dependencias. Permanece la advertencia de chunks grandes. No se repite la matriz física ni la exportación porque solo cambian textos y documentos. La revisión del Samsung procede del reporte anterior a este ajuste, no de una nueva ejecución del agente en el teléfono.
+
 ## Pendientes y límites
 
-- Revisión de claridad/aceptación del nuevo ejemplo por el usuario y prueba funcional en Samsung. No repetir la aceptación de bisagra ya obtenida; se trata de un recurso y un motor nuevos.
-- Técnica, dosis y adecuación de entrenamiento continúan en borrador. La revisión del usuario se documentará con su alcance, sin convertirla en revisión profesional.
+- Técnica, dosis y adecuación de entrenamiento continúan en borrador. La revisión del usuario cubre funcionamiento y reconocimiento del gesto, sin convertirse en revisión profesional.
 - Colliders simplificados; no contacto exacto con la malla ni calibración de balón/suelo. CCD reduce túneles en estos casos, sin garantía universal. No se probó un rango arbitrario de velocidades ni otros dispositivos.
 - No sesión completa, audio, persistencia, PWA/offline de servidor, exportación, pagos, cuentas ni cambios globales. Recursos locales verificables; servirlos desde loopback no equivale a instalar una PWA offline.
-- Fase 06 requiere nueva autorización después de revisar este resultado. El alcance de 05 queda implementado, con los pendientes de aceptación explícitos.
+- Fase 06 requiere nueva autorización después de revisar este resultado. El alcance de 05 queda completado como prototipo técnico con funcionamiento aceptado por reporte; no se declara aprobada una rutina deportiva.

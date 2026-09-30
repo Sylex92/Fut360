@@ -22,3 +22,7 @@ Fecha: 2026-09-30. Autorización explícita: «vamos con la fase 5». Fase 04 ce
 ## Fuera de alcance
 
 Ragdoll, solver propio, controlador de drible, aerodinámica, partido, sesión completa, audio, persistencia, PWA/offline de servidor, exportación Remotion y fases 06–09.
+
+## Aclaración tras la revisión del usuario — 2026-09-30
+
+Plan previo a este ajuste: registrar el funcionamiento favorable comunicado en computadora y Samsung y el reconocimiento de las campanitas en la demostración. Aclarar en los títulos y textos de ambos modos que el laboratorio comprueba contactos; el pie no adapta su recorrido a la desviación del balón y el resultado no enseña un control orientado. Conservar animación, física, controles y velocidades. Registrar la preferencia por observar también un gesto más rápido, sin validar 4× como cadencia deportiva. Comprobar lint, tipos, pruebas existentes, formato, build y textos visibles de ambos modos; actualizar el cierre técnico y detenerse antes de 06.

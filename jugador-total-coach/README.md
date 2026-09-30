@@ -2,7 +2,7 @@
 
 Actualizado: 2026-09-30. **Fase 05 implementada y verificada técnicamente:** comparación entre un interior-interior guiado y contactos reales calculados por Rapier. Dos modos separados, cámaras, detalle de pies, pausa/reinicio y revisión lenta. La bisagra de 04 sigue disponible.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 05 y evidencias](docs/reviews/phase05-contact-review.md), [licencias/costos](docs/reviews/phase05-cost-and-dependencies.md), [registro de recursos](ASSET_LICENSES.md). Pendientes: aceptación de claridad del nuevo gesto y prueba en Samsung; no se atribuye la aceptación anterior de bisagra a este caso. 06–09 no autorizadas. Todavía no es una rutina aprobada de una hora.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 05 y evidencias](docs/reviews/phase05-contact-review.md), [licencias/costos](docs/reviews/phase05-cost-and-dependencies.md), [registro de recursos](ASSET_LICENSES.md). El usuario confirma buen funcionamiento del nuevo caso en computadora y Samsung y reconoce las campanitas. Se aclara en pantalla que el laboratorio es una prueba de contactos, no otra variante del ejercicio; revisión deportiva pendiente. 06–09 no autorizadas. Todavía no es una rutina aprobada de una hora.
 
 ## Ejecutar la aplicación
 
@@ -14,15 +14,15 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. El preview local existente en http://127.0.0.1:4173/ sirve el build actualizado; recargar la página. Elegir «Pie y balón · fase 05» o «Bisagra de cadera · fase 04». Cambiar de ejemplo reinicia la prueba, sin guardar entrenamiento.
 
-- Demostración guiada: cuerpo y balón en un clip finito de 10 s, pausa, media velocidad, revisión de instante y tres vistas. Trayectoria ilustrativa; contenido draft.
-- Laboratorio: Rapier 0.19.2/react-three-rapier 2.2.0; pie cinemático, balón dinámico y suelo fijo. Contactos lentos/rápidos, forma aislada o huesos del avatar, colliders opcionales y reinicio explícito. Se detiene al salir del área. El tiempo visible representa el recorrido del clip; en rápido se recorre a 4× sin cambiar gravedad/paso físico.
+- Demostración guiada de campanitas (interior-interior): cuerpo y balón en un clip finito de 10 s, pausa, media velocidad, revisión de instante y tres vistas. Trayectoria ilustrativa; contenido draft.
+- Laboratorio: Rapier 0.19.2/react-three-rapier 2.2.0; pie cinemático, balón dinámico y suelo fijo. Contactos lentos/rápidos, forma aislada o huesos del avatar, colliders opcionales y reinicio explícito. El avatar no adapta sus pies si el balón se desvía: el resultado no enseña un control orientado. Se detiene al salir del área. El tiempo visible representa el recorrido del clip; en rápido se recorre a 4× sin cambiar gravedad/paso físico.
 - Bisagra: ensayo de uno/cinco minutos ya aceptado como prototipo en escritorio y Samsung, con preparación automática, +30/+60, pausa e inspector. Se conserva ese comportamiento.
 
 132 pruebas, lint, tipos, formato y build correctos; dos GLB validados, fuentes editables y avisos locales. Pruebas CPU de contactos a 30/60/120 Hz y comprobación adicional del wrapper en navegador. Consola normal sin errores, con avisos de obsolescencia documentados de Fiber/Rapier; build advierte chunks grandes. Viewport de 390 px comprobado, distinto de móvil físico. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md).
 
 ## Decisiones vigentes
 
-Fase 04 conserva su aceptación de funcionamiento móvil y claridad por el usuario; [cierre y límites](docs/reviews/phase04-closeout.md). Fase 05 fue autorizada mediante «vamos con la fase 5»; su entrega técnica y pendientes se describen arriba.
+Fase 04 conserva su aceptación de funcionamiento móvil y claridad por el usuario; [cierre y límites](docs/reviews/phase04-closeout.md). Fase 05 fue autorizada mediante «vamos con la fase 5»; su funcionamiento en computadora y Samsung queda aceptado por reporte del usuario, con los límites descritos arriba.
 
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
 - Claridad, continuidad y funcionalidad antes que hiperrealismo.

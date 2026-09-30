@@ -2,10 +2,10 @@
 
 ## Fase actual y autorización
 
-- **2026-09-30: fase 05 implementada y verificada técnicamente**, autorizada mediante «vamos con la fase 5». Pendientes: aceptación de claridad del nuevo interior-interior y comprobación en Samsung; no se atribuyen los resultados de 04 a este caso. [Informe y evidencias](docs/reviews/phase05-contact-review.md), [plan](docs/plans/phase05-contact-spike.md). 06–09, pagos, publicación y cambios globales siguen sin autorización.
+- **2026-09-30: fase 05 implementada y verificada técnicamente**, autorizada mediante «vamos con la fase 5». El usuario confirma buen funcionamiento en computadora y Samsung y reconoce las campanitas en la demostración guiada. Su duda sobre el laboratorio motiva una aclaración de propósito en pantalla; no reporta un fallo funcional. [Informe y evidencias](docs/reviews/phase05-contact-review.md), [plan](docs/plans/phase05-contact-spike.md). 06–09, pagos, publicación y cambios globales siguen sin autorización.
 
 - Última actualización: 2026-09-30. Auditoría inicial: 2026-09-24.
-- Fase vigente: **05, entrega técnica preparada para revisión**. Fase 04 cerrada como prototipo y aceptada en claridad/móvil, punto de control previo `7694685`; [cierre de 04](docs/reviews/phase04-closeout.md). Se conserva su bisagra y motor de sesión. Blender portable ya autorizado reutilizado en 05.
+- Fase vigente: **05, prototipo técnico comprobado y funcionamiento aceptado por reporte del usuario**. Fase 04 cerrada como prototipo y aceptada en claridad/móvil, punto de control previo `7694685`; [cierre de 04](docs/reviews/phase04-closeout.md). Se conserva su bisagra y motor de sesión. Blender portable ya autorizado reutilizado en 05.
 - Fase 00: **aceptada por el usuario el 2026-09-27**, mediante «Acepto y autorizo» en respuesta al cierre y al alcance concreto de 01. Se conservan los pendientes declarados; aceptar la auditoría no aprueba la rutina ni los recursos futuros.
 - Fase 01: **aceptada por el usuario el 2026-09-28**, mediante «De acuerdo y autorizo» en respuesta al cierre documental y alcance de 02.
 - Fase 02: **aceptada como base para continuar con 03**, después de implementación, verificaciones técnicas, recorrido manual básico e integración Git, según prompts/02-repo-bootstrap.md y docs/plans/phase02-ready.md. Punto de control local 7ea6b029137b9d85b13bb034eca453bedf2a5e4d, con 72 archivos acumulados de 00–02, y cierre documental 2d3c993. El usuario confirma controles, teclado, ancho reducido y consola; captura conservada e inspeccionada por el agente. Accesibilidad integral y todos los dispositivos/tamaños no certificados. Esa revisión no se atribuye a los controles nuevos de 03.
@@ -228,7 +228,7 @@ Las comprobaciones corresponden a coherencia documental/datos. Build, lint, type
 
 ## Pendientes posteriores y límites actuales
 
-- Fase 05: revisión de claridad del nuevo interior-interior por el usuario y comprobación funcional en Samsung. Lo observado en viewport estrecho es escritorio. Se conservan aceptaciones PC/móvil/claridad de 04; no repetirlas sin incidencia.
+- Fase 05: funcionamiento en computadora/Samsung y reconocimiento del gesto guiado confirmados por el usuario el 2026-09-30. Se aclara que la desviación del balón en laboratorio no enseña un control orientado. El reporte es cualitativo, sin nuevas mediciones de FPS ni revisión deportiva; no repetir comprobaciones ya aceptadas sin incidencia.
 - Dos clips incorporados, ambos draft como entrenamiento; ninguna nueva dosis ni técnica certificada. Para la hora completa faltan fichas/dosis/variantes/material/secuencia/representación/revisión del resto del catálogo. Usuario asignado a revisar junto con el agente; su aceptación no se atribuye a un profesional.
 - Parámetros de física ilustrativos y colliders simples; trayectoria guiada preparada. No calibración deportiva ni predicción exacta. No ragdoll, aerodinámica, simulación de partido o control de drible.
 - Hora real, persistencia, audio, instalación/offline PWA y origen seguro del teléfono quedan para fases posteriores. No son fallos ocultos de la entrega acotada de 05.
@@ -237,7 +237,7 @@ Las comprobaciones corresponden a coherencia documental/datos. Build, lint, type
 
 ## Siguiente paso permitido
 
-Revisar el resultado visible de 05 en la misma dirección local, recargando la página. Elegir «Pie y balón · fase 05»; observar el ejemplo guiado y comparar con «Laboratorio de contactos». Registrar claridad y comportamiento del nuevo caso en Samsung, corregir incidencias dentro de 05 y cerrar su aceptación. No pedir al usuario que valide física, medicina o dosis; solo observaciones de funcionamiento/comprensión cuando sean indispensables.
+Revisión funcional de 05 recibida: el usuario comunica buen funcionamiento en computadora y Samsung y reconoce el interior-interior. Aclaración incorporada: el laboratorio comprueba contactos y sus pies no corrigen la trayectoria del balón; no es otro ejercicio para imitar. La nueva explicación no se atribuye como aceptada expresamente por el usuario. Conservar el interés por una velocidad de observación más rápida para el diseño de los clips; no equiparar 4× del laboratorio con una cadencia deportiva validada. Corregir cualquier incidencia nueva de 05 dentro de su alcance, sin repetir cuestionarios ni iniciar 06.
 
 La implementación autorizada está completa; no ejecutar 06 automáticamente. El alcance posterior sería preparar el pipeline y primeros clips, conservando lo aprendido en 04/05; necesita autorización específica. No repetir preguntas sobre dispositivo, equipo, espacio/material ni permisos ya concedidos.
 
