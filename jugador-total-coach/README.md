@@ -16,12 +16,12 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar y elegir «Movimientos · fase 06». El teléfono usa el preview LAN documentado en desarrollo local.
 
-- Biblioteca: selector de movimiento, frontal/lateral/tres cuartos, pausa, revisión por instante y media velocidad. Cada ejemplo termina; reproducir otra vez es explícito. Campanitas ofrece también 2× para observar. El ritmo visual no prescribe el ritmo de entrenamiento.
+- Biblioteca: selector de movimiento, frontal/lateral/tres cuartos y «Detalle de pies» en los ejercicios con balón, pausa, revisión por instante y media velocidad. Cada ejemplo termina; reproducir otra vez es explícito. Campanitas ofrece también 2× para observar. El ritmo visual no prescribe el ritmo de entrenamiento.
 - Puente y pierna alterna: vista de suelo; el ejemplo empieza ya tumbado. No se han animado las transiciones de bajar/levantarse. Respiración: postura cómoda quieta, sin metrónomo obligatorio.
 - «Pie y balón · fase 05» conserva demostración guiada y laboratorio Rapier separado. El laboratorio prueba contactos; no enseña una variante cuando el balón se desvía.
 - «Bisagra de cadera · fase 04» conserva su prueba de uno/cinco minutos con preparación y +30/+60 automáticos, pausa e inspector.
 
-179 pruebas, lint y tipos correctos; nueve GLB v2 pasan Khronos, además de la línea base anterior. La biblioteca selecciona quince ejemplos; el build conserva también las campanitas v1 para 05 (dieciséis GLB). Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. Los clips corregidos mantienen draft y esperan aceptación de naturalidad/claridad y prueba móvil real. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
+179 pruebas, lint y tipos correctos; nueve GLB v2 pasan Khronos, además de la línea base anterior. La biblioteca selecciona quince ejemplos; el build conserva también las campanitas v1 para 05 (dieciséis GLB). Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. El usuario aceptó visualmente las animaciones corregidas; mantienen draft como contenido deportivo y la prueba específica nueva en Samsung no está declarada. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
 
 ## Decisiones vigentes
 

@@ -2,6 +2,8 @@
 
 2026-09-30. Respuesta al comentario del usuario: buena visualización general, pero movimiento estático/robotizado, brazos de marcha sin acompañar y preferencia por básicos con balón sin saltos. Se conserva el diseño del maniquí. La observación no identifica una nueva prueba específica en Samsung ni supone aceptación deportiva. [Plan previo](../plans/phase06-natural-motion.md).
 
+**Estado posterior:** el usuario aceptó las animaciones corregidas. Se recuperó además «Detalle de pies» en la biblioteca para balón; ver [seguimiento](#seguimiento-aceptación-y-cámara-de-pies). Los apartados siguientes conservan las verificaciones y pendientes de la entrega original.
+
 ## Resultado
 
 Nueve recursos v2 sustituyen a sus v1 en «Movimientos · fase 06». Son versiones nuevas y corregibles; las v1, la bisagra de 04 y el laboratorio de 05 se conservan. La biblioteca abre con la marcha y muestra las duraciones decimales reales. No cambian encuadre/tamaño del visor, apariencia, motor de sesión o ejercicio seleccionado por razones de comodidad de animación.
@@ -48,3 +50,11 @@ La naturalidad propuesta proviene de coordinación entre segmentos y transicione
 Verificado: salida técnica, diseño conservado, coordinación medida, apoyos/contactos en las muestras y comportamiento de reproducción. Propuesto: estas curvas y amplitudes como mejora visual de los ejemplos. Pendiente: que el usuario vea y acepte la nueva naturalidad/claridad y funcionamiento de estos recursos en su Samsung. No se presenta «más humano» como un resultado cuantificado o ya aceptado. Las manos conservan su pose sencilla; no se añade actuación de dedos ni realismo facial.
 
 La animación sigue siendo una ilustración guiada: la revisión no mide fuerzas ni estabilidad del centro de masa, y no certifica técnica o dosis individual. Los recursos mantienen draft. Silla, entradas/salidas al suelo y composición de la hora mantienen sus pendientes anteriores; no se repite la pregunta de silla durante esta corrección ni se ejecuta 07. Sin publicación ni cambios globales. [Estado vigente](../../PROJECT_STATUS.md).
+
+## Seguimiento: aceptación y cámara de pies
+
+2026-09-30. El usuario confirma que revisó las animaciones y están bien. Aceptación visual por reporte registrada en el catálogo; no se atribuye certificación deportiva ni un recorrido explícito en Samsung. Solicita recuperar la vista cercana que conocía de 05. Ese encuadre continuaba disponible allí y no se había incorporado a la biblioteca de 06.
+
+Se reutilizan posición, objetivo y zoom adaptativo de «Detalle de pies» en ExerciseScene, ofreciendo el botón encima del modelo solo para campanitas, planta izquierda/derecha e interior/exterior izquierda/derecha. Se conservan las tres cámaras generales, el tamaño del visor y todos los archivos GLB/.blend aprobados. El cambio de vista mantiene el cursor y el estado de reproducción.
+
+179 pruebas existentes correctas, lint, tipos, formato y build. Verificación focalizada en navegador: cinco cambios de cámara con cursor en pausa intacto, cambio durante reproducción sin reinicio, teclado, ausencia del botón en marcha y ancho 390 px sin desbordamiento. Consola sin errores, aviso conocido de THREE.Clock; advertencia de chunks grandes conservada. [Resultado](evidence/phase06-natural-motion/feet-camera-results.json), [campanitas](evidence/phase06-natural-motion/feet-inside-inside.png), [interior/exterior](evidence/phase06-natural-motion/feet-inside-outside-left.png), [ancho 390 px](evidence/phase06-natural-motion/feet-library-390.png). La emulación de ancho no equivale a probar el teléfono físico. Sin dependencias, descargas, cambios del modelo o ampliación de fase.

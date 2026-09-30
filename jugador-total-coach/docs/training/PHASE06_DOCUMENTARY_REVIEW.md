@@ -91,7 +91,7 @@ El usuario encuentra rígidos los movimientos, en particular la marcha sin acomp
 
 **Supuesto/propuesto:** seis pasos en 8 s y cuatro toques de campanitas en 6,5 s son secuencias visuales finitas para observar coordinación. Las trayectorias, amplitudes y flexión de codos son autoría específica revisable; no una forma única óptima de moverse. `practiceRepetitions: 1` describe una reproducción de esa secuencia; no significa un solo paso/toque ni una dosis autorizada. No se modifica la tabla candidata siguiente ni el entrenamiento de una hora.
 
-**Pendiente:** aceptación de la nueva naturalidad/claridad por el usuario y observación de estos recursos en Samsung real. Las comprobaciones de apoyos y contactos se limitan a muestras de geometría; no miden fuerzas, centro de masa humano, eficacia ni adecuación individual. [Corrección y evidencias técnicas](../reviews/phase06-natural-motion-review.md). El fundamento permanece solo en documentación.
+**Seguimiento:** el usuario aceptó visualmente las animaciones corregidas tras c421cab; observación específica de estos recursos en Samsung real no declarada. Las comprobaciones de apoyos y contactos se limitan a muestras de geometría; no miden fuerzas, centro de masa humano, eficacia ni adecuación individual. [Corrección y evidencias técnicas](../reviews/phase06-natural-motion-review.md). El fundamento permanece solo en documentación.
 
 ## Dosis y tiempos propuestos para preparar 07
 

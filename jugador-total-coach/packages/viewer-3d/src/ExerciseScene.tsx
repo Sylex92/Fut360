@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrthographicCamera } from 'three';
 import { ClipDriver, disposeScene } from './clip-driver';
 
-export type CameraPreset = 'side' | 'front' | 'threeQuarter';
+export type CameraPreset = 'side' | 'front' | 'threeQuarter' | 'detail';
 export interface ExerciseSceneProps {
   readonly assetUrl: string;
   readonly clipName: string;
@@ -30,17 +30,20 @@ function Camera({
       side: [4, 1.35, 0],
       front: [0, 1.35, 4],
       threeQuarter: [3, 2.1, 4],
+      detail: [0, 1.5, 3],
     } as const;
     const [x, y, z] = positions[preset];
     camera.position.set(x, y, z);
     if (framing === 'floor') camera.position.y = preset === 'threeQuarter' ? 2.1 : 0.9;
-    camera.lookAt(0, framing === 'floor' ? 0.25 : 0.85, 0);
+    camera.lookAt(0, preset === 'detail' ? 0.22 : framing === 'floor' ? 0.25 : 0.85, 0);
     if (camera instanceof OrthographicCamera) {
       // Fit both a 2 m floor and a 1.82 m avatar even in a narrow portrait viewport.
       camera.zoom =
-        framing === 'floor'
-          ? Math.min(size.height / 2.1, size.width / 2.35)
-          : Math.min(size.height / 2.6, size.width / 2.8);
+        preset === 'detail'
+          ? Math.min(size.width / 1.3, size.height / 1.1)
+          : framing === 'floor'
+            ? Math.min(size.height / 2.1, size.width / 2.35)
+            : Math.min(size.height / 2.6, size.width / 2.8);
       camera.updateProjectionMatrix();
     }
   }, [camera, preset, size, framing]);

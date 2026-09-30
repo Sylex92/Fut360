@@ -107,6 +107,7 @@ function Preview({ movement }: { movement: MovementPreview }) {
                 ['front', 'Frontal'],
                 ['side', 'Lateral'],
                 ['threeQuarter', 'Tres cuartos'],
+                ...(movement.footDetail ? ([['detail', 'Detalle de pies']] as const) : []),
               ] as const
             ).map(([key, label]) => (
               <button

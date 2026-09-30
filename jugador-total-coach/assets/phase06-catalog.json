@@ -28,7 +28,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-inside-review.png",
       "previousManifest": "assets/manifests/inside-inside-v1.json"
     },
@@ -59,7 +59,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/active-march-review.png",
       "previousManifest": "assets/manifests/active-march-v1.json"
     },
@@ -75,7 +75,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/mini-squat-review.png",
       "previousManifest": "assets/manifests/mini-squat-v1.json"
     },
@@ -121,7 +121,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/soft-step-turn-left-review.png",
       "previousManifest": "assets/manifests/soft-step-turn-left-v1.json"
     },
@@ -137,7 +137,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/soft-step-turn-right-review.png",
       "previousManifest": "assets/manifests/soft-step-turn-right-v1.json"
     },
@@ -183,7 +183,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/lateral-sole-roll-left-review.png",
       "previousManifest": "assets/manifests/lateral-sole-roll-left-v1.json"
     },
@@ -199,7 +199,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/lateral-sole-roll-right-review.png",
       "previousManifest": "assets/manifests/lateral-sole-roll-right-v1.json"
     },
@@ -215,7 +215,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-outside-left-review.png",
       "previousManifest": "assets/manifests/inside-outside-left-v1.json"
     },
@@ -231,7 +231,7 @@
       "technicalReview": "agent-checked-v2-geometry-supports-contacts-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "natural-motion-pending",
+      "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-outside-right-review.png",
       "previousManifest": "assets/manifests/inside-outside-right-v1.json"
     }

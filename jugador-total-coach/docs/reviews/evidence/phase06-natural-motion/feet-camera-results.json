@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-09-30",
+  "results": [
+    {
+      "id": "inside-inside",
+      "pausedTimePreserved": true,
+      "seconds": 1
+    },
+    {
+      "id": "lateral-sole-roll-left",
+      "pausedTimePreserved": true,
+      "seconds": 3.9
+    },
+    {
+      "id": "lateral-sole-roll-right",
+      "pausedTimePreserved": true,
+      "seconds": 3.9
+    },
+    {
+      "id": "inside-outside-left",
+      "pausedTimePreserved": true,
+      "seconds": 3.9
+    },
+    {
+      "id": "inside-outside-right",
+      "pausedTimePreserved": true,
+      "seconds": 3.9
+    },
+    {
+      "runningCameraSwitch": true,
+      "before": 4.15,
+      "after": 4.799099999999998
+    },
+    {
+      "keyboardDetail": true
+    },
+    {
+      "width390": {
+        "actual": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "noDetailWithoutBall": true
+    }
+  ],
+  "errors": [],
+  "limits": "390px desktop emulation; not a new Samsung device test",
+  "delivery": [
+    {
+      "url": "http://127.0.0.1:4173",
+      "status": 200,
+      "script": "/assets/index-CpeRYaHd.js",
+      "matchesBuild": true
+    },
+    {
+      "url": "http://192.168.18.6:4174",
+      "status": 200,
+      "script": "/assets/index-CpeRYaHd.js",
+      "matchesBuild": true
+    }
+  ]
+}

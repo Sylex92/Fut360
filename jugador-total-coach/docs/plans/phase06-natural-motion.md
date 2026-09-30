@@ -10,3 +10,9 @@
 6. Actualizar ficha, catálogo, manifiesto, licencias, fundamento, evidencia y PROJECT_STATUS. No declarar naturalidad aceptada por el usuario antes de que examine la corrección; entregar resultado concreto, sin nuevas preguntas técnicas de ejercicio.
 
 Ejecución terminada dentro de este alcance: nueve v2, referencia de brazos reutilizada, diseño conservado, 179 pruebas y veinte comprobaciones de navegador correctas. [Resultado y límites](../reviews/phase06-natural-motion-review.md). La aceptación visual de la corrección y los pendientes generales de 06 permanecen abiertos; no se ejecuta 07.
+
+## Seguimiento: cámara de pies
+
+El usuario acepta las animaciones corregidas («ya los revisé y están ok») y pide recuperar la vista cercana de pies para balón. Plan: reutilizar el encuadre «Detalle de pies» de 05 en el visor de la biblioteca; ofrecerlo únicamente en los cinco ejemplos con balón; comprobar cambio de cámara con pausa/reproducción sin reinicio y encuadre en escritorio/390 px. Conservar archivos de animación y las otras cámaras. Registrar la aceptación visual por reporte, sin inventar prueba específica en Samsung ni revisión deportiva profesional. Actualizar estado, ejecutar las verificaciones habituales y guardar el punto de control local; no iniciar 07.
+
+Realizado: encuadre incorporado, 179 pruebas correctas y nueve comprobaciones focalizadas de navegador; capturas/resultados en el [seguimiento](../reviews/phase06-natural-motion-review.md#seguimiento-aceptación-y-cámara-de-pies). Animaciones conservadas.

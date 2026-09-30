@@ -5,6 +5,7 @@ export interface MovementPreview {
   clipName: string;
   durationMs: number;
   framing: 'standing' | 'floor';
+  footDetail?: boolean;
   equipment: string;
   preparation: string;
   cues: readonly string[];
@@ -35,6 +36,7 @@ export const movements: readonly MovementPreview[] = [
     clipName: 'EX_inside-inside__alternating__v2',
     durationMs: 6500,
     framing: 'standing',
+    footDetail: true,
     equipment: 'Balón · sin saltos',
     preparation: 'Cuatro toques alternos: dos pares de interior derecho e izquierdo.',
     cues: [
@@ -204,6 +206,7 @@ export const movements: readonly MovementPreview[] = [
     clipName: 'EX_lateral-sole-roll__left__v2',
     durationMs: 6500,
     framing: 'standing',
+    footDetail: true,
     equipment: 'Balón · sin saltos',
     preparation: 'Desplaza el balón con la planta y devuélvelo antes de apoyar el pie.',
     cues: [
@@ -223,6 +226,7 @@ export const movements: readonly MovementPreview[] = [
     clipName: 'EX_lateral-sole-roll__right__v2',
     durationMs: 6500,
     framing: 'standing',
+    footDetail: true,
     equipment: 'Balón · sin saltos',
     preparation: 'Desplaza el balón con la planta y devuélvelo antes de apoyar el pie.',
     cues: [
@@ -240,6 +244,7 @@ export const movements: readonly MovementPreview[] = [
     clipName: 'EX_inside-outside__left__v2',
     durationMs: 6500,
     framing: 'standing',
+    footDetail: true,
     equipment: 'Balón · sin saltos',
     preparation: 'Dos toques con el mismo pie: primero interior, después exterior.',
     cues: [
@@ -259,6 +264,7 @@ export const movements: readonly MovementPreview[] = [
     clipName: 'EX_inside-outside__right__v2',
     durationMs: 6500,
     framing: 'standing',
+    footDetail: true,
     equipment: 'Balón · sin saltos',
     preparation: 'Dos toques con el mismo pie: primero interior, después exterior.',
     cues: [
