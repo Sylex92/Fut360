@@ -21,6 +21,9 @@ La sección **Bisagra de cadera** permite ensayos técnicos de uno o cinco minut
 Último ajuste de 04: el usuario confirma detención de avatar/reloj y acepta el ajuste visual de hombros. Se recupera el tamaño anterior del visor y se reduce la apertura lateral de los brazos; clavículas, torso y piernas conservados. Cámaras arriba, controles debajo, preparación compacta e inspector próximo al botón con foco al abrir. Desglose temporal bajo «Detalles de la prueba». Malla, pesos y jerarquía sin cambios; recurso y ocho renders regenerados/verificados. Brazos/tamaño restituido, foco y distribución aún pendientes de observación posterior en navegador. [Guía y resultados](docs/reviews/phase04-manual-check.md).
 
 ## Decisiones vigentes
+
+Validación más reciente de 04: el usuario confirma las modificaciones del regreso automático tras minimizar/restaurar. Inspector visible y controles ya aceptados por reporte. El siguiente recorrido es completar cinco minutos y comprobar cámaras/final; sigue pendiente. La aceptación de esos cambios no cierra la fase ni valida la dosis deportiva.
+
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
 - Claridad, continuidad y funcionalidad antes que hiperrealismo.
 - Costo cero para construcción/uso local: se admite software gratuito abierto o no abierto, con derechos compatibles. Ver ZERO_COST_AND_GROWTH_POLICY.md.

@@ -22,3 +22,5 @@ El usuario desea minimizar sin perder el punto y volver sin otro toque. Informa 
 Se elimina un toque al regresar y se mantiene la intención de Pausar todo. No se añade cuenta de preparación ni duración artificial al retorno. El usuario puede usar la pausa manual si desea que volver a la ventana no reactive la secuencia.
 
 Verificar tiempos/poses conservados, extras/autoinicio, eventos duplicados, pausas manuales e inspección, fallos durante ocultación y estados terminales. Reloj inyectado demuestra la política, no la entrega real del evento en cada navegador. Medición de dispositivos y comprobación visual posterior continúan pendientes. Sin cambios de avatar, instalaciones, servicios, costo o alcance de fase.
+
+Evidencia posterior del 2026-09-29: implementación e8457ee, 128 pruebas totales correctas y validación del usuario de las modificaciones tras solicitar minimizar/restaurar. Regreso automático aceptado por reporte manual. Los casos de fallo y mediciones por dispositivo conservan sus límites; no se atribuye E2E al agente. [Registro de aceptación](../../reviews/phase04-manual-check.md).
