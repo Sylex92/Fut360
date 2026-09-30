@@ -1,0 +1,23 @@
+{
+  "sample": {
+    "date": "2026-09-30",
+    "mode": "Ventana al frente, canvas visible, preparación y trabajo en marcha",
+    "visibility": "visible",
+    "focus": true,
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "dpr": 1
+    },
+    "durationMs": 20013.79999997618,
+    "samples": 1201,
+    "meanMs": 16.66194837635304,
+    "medianMs": 16.600000000093132,
+    "p95Ms": 17,
+    "p99Ms": 17.20000000006985,
+    "maxMs": 33.29999999993015,
+    "over50Ms": 0
+  },
+  "pausedText": "Preparación pendiente: 00:30. El tiempo avanzará al continuar.",
+  "clock": "00:30"
+}

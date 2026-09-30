@@ -29,6 +29,6 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 ## Contrato de sesión vs. pared
 3,600 segundos es la duración programada incluyendo descansos/transiciones declarados. Pausas del usuario y repeticiones extra aumentan el tiempo real; guardarlo por separado. Las instrucciones explicativas fuera de la sesión no se suman sin declararlo.
 
-## Punto actual — 2026-09-29
+## Punto actual — 2026-09-30
 
-00–03 aceptadas como base; 04 autorizada e implementada con recurso real y verificaciones técnicas, incluida preparación portable de Blender autorizada. Completar su [aceptación visual/humana pendiente](../reviews/phase04-vertical-slice-review.md) antes de cerrar. 05–09 no autorizadas. Las reglas de instalación por necesidad anteriores describen cada momento, no prohíben usar Blender ya preparado en 04.
+00–03 aceptadas como base; 04 autorizada e implementada con recurso real, Blender portable y verificaciones técnicas. Cinco minutos aceptados por reporte del usuario; controles, minuto completo y fallos comprobados con WebGL real en [navegador independiente](../reviews/phase04-browser-review.md). Completar Samsung físico/rendimiento móvil y [revisión del gesto](../reviews/phase04-vertical-slice-review.md) antes de cerrar. Preview temporal LAN preparado para el teléfono, sin cambios de firewall. 05–09 no autorizadas. Las reglas de instalación por necesidad anteriores describen cada momento, no prohíben usar Blender ya preparado en 04.

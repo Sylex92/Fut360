@@ -1,6 +1,6 @@
 # Fase 04 — demostración 3D implementada, aceptación pendiente
 
-Trabajo iniciado el 2026-09-28 y continuado el 2026-09-29. Alcance autorizado: «adelante con la siguiente fase» y, para la herramienta, «Sí, autorizar Blender portable». Se ejecutó únicamente 04. La revisión humana del nuevo gesto y el recorrido en navegador todavía no están realizados; no cerrar la fase ni avanzar a 05 por tener pruebas automáticas correctas.
+Trabajo iniciado el 2026-09-28 y continuado hasta el 2026-09-30. Alcance autorizado: «adelante con la siguiente fase» y, para la herramienta, «Sí, autorizar Blender portable». Se ejecutó únicamente 04. Ya hay comprobación E2E en navegador de escritorio y reporte favorable del usuario de cinco minutos. Pendientes: teléfono físico/rendimiento móvil y revisión del gesto; no cerrar la fase ni avanzar a 05. El historial siguiente conserva las evidencias de cada revisión; el estado actual está al final y en phase04-browser-review.md.
 
 ## Resultado disponible
 
@@ -37,16 +37,16 @@ Se muestran indicaciones de respiración sin contener el aire, errores comunes y
 
 La preparación extra conserva el cursor de trabajo; el ejemplo tiene cursor independiente y al agotarse el extra se vuelve automáticamente al mismo punto. Pausar todo congela cuenta y pose. Añadir preparación estando pausado conserva esa pausa. El inspector funciona solo con la sesión pausada, permite ½ velocidad/velocidad normal y búsqueda de posición; termina tras un gesto y salir restaura la pose guardada sin reanudar por sí solo. Continuar desde el inspector retoma la sesión.
 
-La pérdida de visibilidad, huecos del reloj >2000 ms y pérdida del recurso pausan sin acreditar ese hueco. Carga fallida, clip incompatible, WebGL no disponible, pérdida de contexto y demora de carga tienen tratamiento de error; iniciar/continuar quedan bloqueados mientras falte el recurso. Reintentar carga no reanuda automáticamente. No aparece un cubo o imagen suplente que se contabilice como entrenamiento válido. La respuesta real de WebGL/context-loss todavía necesita prueba en navegador.
+La pérdida de visibilidad, huecos del reloj >2000 ms y pérdida del recurso pausan sin acreditar ese hueco. Carga fallida, clip incompatible, WebGL no disponible, pérdida de contexto y demora de carga tienen tratamiento de error; iniciar/continuar quedan bloqueados mientras falte el recurso. Reintentar carga no reanuda automáticamente. No aparece un cubo o imagen suplente que se contabilice como entrenamiento válido. La respuesta de WebGL/context-loss se comprobó posteriormente en navegador el 2026-09-30; detalle en el informe de navegador.
 
-El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduced-motion` desactivando su reproducción inicial; una prueba iniciada expresamente sigue su secuencia. Botones nativos, foco visible, controles fuera del canvas y textos del movimiento. La accesibilidad y los tamaños nuevos aún necesitan revisión real; la aceptación manual de 03 no se transfiere a esta interfaz.
+El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduced-motion` desactivando su reproducción inicial; una prueba iniciada expresamente sigue su secuencia. Botones nativos, foco visible, controles fuera del canvas y textos del movimiento. El foco del inspector, ancho reducido y controles se comprobaron en navegador el 2026-09-30; no constituye una auditoría integral de accesibilidad ni transfiere automáticamente la aceptación manual de 03.
 
 ## Verificaciones realizadas
 
 | Comprobación | Resultado y alcance |
 |---|---|
 | Vitest | **128 pruebas, nueve archivos, correctas**: base, motor/adaptador, composición 3D, recurso/Mixer, ficha/manifiesto y montaje/carga. Incluyen 16 casos nuevos de regreso tras ocultación y conservación de pausas/tiempos. CPU, HTML y efectos controlados, no E2E de navegador. |
-| Programa | Ensayos lógicos de 60/300 s, extras/repetición, fin de clip/reposo, pausa, inspector/retorno, visibilidad, recurso y huecos. Cinco minutos comprobados con reloj inyectado; no recorrido humano de cinco minutos. |
+| Programa | Ensayos lógicos de 60/300 s, extras/repetición, fin de clip/reposo, pausa, inspector/retorno, visibilidad, recurso y huecos. Cinco minutos comprobados con reloj inyectado y, posteriormente, por reporte manual del usuario del 2026-09-30. |
 | glTF Validator de Khronos | Original final y reexportado: cero errores, advertencias, informaciones o hints. Se corrigieron tres advertencias iniciales de jerarquía de mallas y se quitaron UVs no usados. |
 | Geometría/AnimationMixer | 241 muestras a 30 FPS, 65 huesos y apoyos. AABB mundial dentro del cuadrado; altura máxima 1,81959 m. Desplazamiento máximo medido del origen de los pies en autoría: 0,00003591 m. Margen técnico de prueba: 1 mm; no umbral clínico ni análisis completo de biomecánica/autocolisiones. |
 | Importar/editar/exportar | GLB importado en Blender, textura decodificada, rig/acción conservados y reexportación correcta. Comparación CPU de 65 huesos × 241 muestras: diferencia máxima ≈0,00000115 m, inferior a 1 mm. [Registro](phase04-roundtrip.json). |
@@ -55,7 +55,7 @@ El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduce
 | Integridad documental | 71 documentos UTF-8 y 244 enlaces locales correctos; 13 hashes de recursos y 20 de avisos de licencia coincidentes. Fixture y esquemas históricos sin cambios. Git conserva sin conversión de saltos de línea los originales y licencias importados, incluidos sus espacios finales; el aviso ensamblado normaliza solo esos espacios. |
 | Licencias/seguridad | 20 pares adicionales revisados; avisos preservados. Consulta pnpm audit: cero avisos conocidos el 2026-09-29; no auditoría forense. [Detalle](phase04-dependencies.md). |
 | Servicio local | Preview reiniciado tras detectar que 4173 no escuchaba; HTTP 200 para HTML y GLB, hash servido idéntico. Solo 127.0.0.1. Abrir en Codex quedó en cola; eso no demuestra visualización. |
-| Navegador | Dos intentos del conector IAB sin conexión, incluido el posterior a reabrir preview. El inventario alternativo solo mostró IAB; sin Chrome automatizable. No se afirma E2E, ausencia de errores de consola ni rendimiento WebGL observado. |
+| Navegador | IAB sin conexión. El 2026-09-30 se descubre Playwright independiente: E2E WebGL real, controles, capturas y fallos inducidos comprobados. Cero errores normales de consola, aviso de THREE.Clock y muestra RAF lenta registrados; rendimiento no aceptado. |
 
 El build separa el visor en carga diferida: JavaScript principal ≈397 KB y módulo 3D ≈959 KB sin comprimir (≈120/256 KB gzip), CSS ≈10 KB y GLB ≈825 KB. Vite advierte que el módulo 3D supera 500 KB. No se ocultó esa advertencia ni se cambió su umbral. DPR limitado a 1,5, sin sombras ni postprocesado; el resultado en el teléfono sigue sin medir.
 
@@ -145,15 +145,24 @@ Texto aclarado: «Secuencia · 3 repeticiones de bisagra» y definición de una 
 
 Entrega HTTP: HTML y cuatro recursos responden 200 con bytes idénticos al build. JavaScript principal `index-BsGX2eQT.js`, escena `ExerciseScene-11u1SfKs.js`; CSS/GLB sin cambios. No nuevo intento de navegador ni E2E atribuido al agente. Regreso real al minimizar/restaurar y el caso +30 s quedan pendientes tras esta corrección.
 
+## Aceptación y pruebas en navegador — 2026-09-30
+
+El usuario informa «listo no ocurrió ninguna anomalía, continuamos» tras el recorrido solicitado de cinco minutos. Se registra aceptación manual de cinco bloques y final único, sin inventar cronometría, mediciones de FPS o aprobación deportiva. El regreso automático al restaurar la ventana ya había sido aceptado el 2026-09-29.
+
+Después de fallar de nuevo IAB y la apertura de Chrome mediante la herramienta de control, se descubrió Playwright MCP independiente y se abrió la aplicación con WebGL 2/Intel UHD. Queda superada la limitación de no disponer de E2E de escritorio. Las dos preguntas manuales iniciales sobre controles/teclado fueron retiradas expresamente; el agente realizó esas comprobaciones.
+
+[Informe del navegador](phase04-browser-review.md) y [datos de observación](phase04-browser-evidence.json): +60 de preparación, +30 durante trabajo/pausa, autoinicio, inspector con retorno de pose/foco, cámaras, repetir/cancelar/omitir, ancho 390×844, minuto completo en tiempo real y fallos inducidos de GLB, timeout, contexto y módulo del visor. Cero errores de consola en uso normal; un aviso de THREE.Clock procedente de Fiber. Las capturas del navegador se suman a los renders previos de Blender.
+
+La guía manual contenía una expectativa equivocada: omitir debe conservar descanso y cancelar la repetición pendiente de esa ocurrencia, según el contrato ya vigente. Se corrigió la guía, sin cambiar el motor. Único cambio de aplicación: estando pausado, el texto de preparación ya no anuncia un autoinicio; indica tiempo pendiente hasta continuar. Se observaron ambos mensajes correctos después del build. Suite repetida: 128 pruebas/nueve archivos, lint, tipos, formato y build correctos; avisos conocidos conservados.
+
+La muestra RAF inicial resultó lenta (mediana aproximada de 1015,6 ms). Se puso el navegador al frente y el canvas visible y se repitió durante 20 s de preparación/trabajo: 1201 intervalos, mediana 16,6 ms, p95 17 ms, máximo 33,3 ms y cero >50 ms. [Datos del contraste](phase04-browser-foreground.json). El cambio apunta a la condición de presentación del navegador de pruebas; no prueba una causa interna concreta de Chromium ni promete ese rendimiento en todos los escenarios. Se conservan ambos resultados. El flujo completo previo terminó tras 60009 ms entre primera actualización y fin.
+
+El usuario confirmó la misma Wi-Fi de confianza para PC y Samsung. Se inició un segundo preview temporal únicamente en la IPv4 Wi-Fi y puerto 4174; se conserva 127.0.0.1:4173. La IP cambió entre la consulta inicial y el primer arranque; se volvió a consultar y el segundo arranque fue correcto. HTML y cuatro recursos respondieron HTTP 200 con bytes idénticos al build final. PID y logs locales, sin datos de red versionados. No se modificaron firewall, router, certificados ni configuración global. Dirección y recorrido móvil entregados en la conversación; respuesta pendiente.
+
 ## Pendientes vigentes de aceptación
 
-**Validación posterior del 2026-09-29:** el usuario responde «listo ya valide las modificaciones, continuamos» a la entrega e8457ee y la solicitud de comprobar minimizar/restaurar. Se acepta el regreso automático por reporte manual. La causa histórica de la pausa tras +30 s sigue sin estar determinada; el reporte no la demuestra. No se reabre la misma comprobación ni se atribuyen pruebas de recursos, mediciones o cinco minutos completos. Esta actualización es documental; conserva las 128 pruebas de la implementación anterior sin afirmar otra ejecución.
+1. **Samsung Galaxy S24 FE / Chrome:** probar carga, fluidez, lectura, cámaras y +30 s con autoinicio; registrar versión del navegador cuando esté disponible. El usuario ya confirmó conectividad de red compartida, pero eso no prueba funcionamiento de la app en el teléfono.
+2. **Rendimiento móvil:** muestra de escritorio al frente ya medida; contrastar en el teléfono y evitar generalizar una muestra breve a cinco minutos sostenidos, temperatura o batería. El reporte manual de cinco minutos sin anomalías es favorable, pero no es una medición de cuadros por segundo.
+3. **Comprensión y revisión del gesto:** revisar conjuntamente claridad de movimiento/texto y apariencia, conservando lo ya aceptado sobre hombros y controles. La aceptación personal no acredita revisión profesional ni dosis; ficha y clip siguen draft.
 
-[Guía de comprobación en pantalla](phase04-manual-check.md): controles exactos, resultados esperados y estado de cada caso. El usuario confirma aparición, detención sincronizada, corrección de hombros, recarga/inicio e inspector visible con controles correctos. No repetir esas preguntas. La incidencia de +30 s no tiene causa confirmada y el regreso automático se implementó después del reporte. El conector IAB sigue sin conectar.
-
-1. Aparición, detención sincronizada y ajuste visual de hombros confirmados por el usuario. Completar observación de continuación y calidad del movimiento, brazos/tamaño restituido, lectura del texto y nueva disposición de controles; mantener separados funcionamiento y comprensión/aprobación del gesto.
-2. Recorrido completo de cinco minutos solicitado, con cinco bloques, cámaras sin reinicio y final único. Ampliación +60 y escenarios de extra durante trabajo/pausa, repetir/omitir, reintento y pérdida de recursos/contexto conservan sus pendientes de pantalla. Regreso automático e inspector/controles aceptados por reporte; consola y captura de aplicación, teclado/foco y ancho reducido aún pendientes. La prueba del motor y los renders no sustituyen ese E2E. No se acredita un ensayo continuo independiente de 60 s a partir del reporte de inicio/modificaciones.
-3. Revisión humana de comprensión/técnica de esta ficha y este clip, asignada al usuario con apoyo del agente. Una aprobación personal no se registrará como revisión profesional. Mantener `draft` hasta resolver el alcance y las observaciones.
-4. Comprobación de rendimiento/legibilidad en PC real y Galaxy S24 FE, con versiones, dimensiones y método. La URL loopback solo funciona en esta computadora; acceso móvil/origen seguro y offline siguen pendientes, sin cambios de firewall/certificados implícitos.
-
-No hay voz, persistencia, PWA/offline, simulación de balón, Remotion, contenido de una hora ni fases 05–09. No hubo pagos ni publicación. El siguiente trabajo es resolver estos pendientes de 04; no pedir permiso nuevamente para lo ya autorizado ni iniciar 05 automáticamente.
+[Guía actualizada](phase04-manual-check.md). No repetir las comprobaciones de escritorio ya resueltas sin una nueva incidencia. La fase 04 continúa abierta por estos pendientes; 05–09 no están autorizadas. Sin voz, persistencia, PWA/offline, simulación de balón, Remotion ni contenido de una hora. No hubo pagos ni publicación.

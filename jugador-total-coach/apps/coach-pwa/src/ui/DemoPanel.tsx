@@ -438,10 +438,19 @@ export function DemoPanel() {
           </p>
           {session?.startsInMs !== null && session?.startsInMs !== undefined && (
             <p className="auto-start">
-              {session.resumingWork
-                ? 'Retoma el punto guardado'
-                : 'La secuencia visual empieza'}{' '}
-              automáticamente en <strong>{time(session.startsInMs)}</strong>.
+              {session.status === 'paused' ? (
+                <>
+                  Preparación pendiente: <strong>{time(session.startsInMs)}</strong>. El tiempo
+                  avanzará al continuar.
+                </>
+              ) : (
+                <>
+                  {session.resumingWork
+                    ? 'Retoma el punto guardado'
+                    : 'La secuencia visual empieza'}{' '}
+                  automáticamente en <strong>{time(session.startsInMs)}</strong>.
+                </>
+              )}
             </p>
           )}
           {session?.status === 'paused' && (

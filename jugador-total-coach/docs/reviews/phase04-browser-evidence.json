@@ -1,0 +1,331 @@
+{
+  "date": "2026-09-30",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+  "visibility": "visible",
+  "viewport": {
+    "width": 1280,
+    "height": 800,
+    "dpr": 1
+  },
+  "transitions": [
+    {
+      "ms": 2050,
+      "label": "Ejemplo de preparación",
+      "clock": "00:10"
+    },
+    {
+      "ms": 3055,
+      "label": "Ejemplo de preparación",
+      "clock": "00:09"
+    },
+    {
+      "ms": 4052,
+      "label": "Ejemplo de preparación",
+      "clock": "00:08"
+    },
+    {
+      "ms": 5054,
+      "label": "Ejemplo de preparación",
+      "clock": "00:07"
+    },
+    {
+      "ms": 6053,
+      "label": "Ejemplo de preparación",
+      "clock": "00:06"
+    },
+    {
+      "ms": 7064,
+      "label": "Ejemplo de preparación",
+      "clock": "00:05"
+    },
+    {
+      "ms": 8062,
+      "label": "Ejemplo de preparación",
+      "clock": "00:04"
+    },
+    {
+      "ms": 9065,
+      "label": "Ejemplo de preparación",
+      "clock": "00:03"
+    },
+    {
+      "ms": 10063,
+      "label": "Ejemplo de preparación",
+      "clock": "00:02"
+    },
+    {
+      "ms": 11060,
+      "label": "Ejemplo de preparación",
+      "clock": "00:01"
+    },
+    {
+      "ms": 12060,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:30"
+    },
+    {
+      "ms": 13061,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:29"
+    },
+    {
+      "ms": 14060,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:28"
+    },
+    {
+      "ms": 15054,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:27"
+    },
+    {
+      "ms": 16059,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:26"
+    },
+    {
+      "ms": 17055,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:25"
+    },
+    {
+      "ms": 18057,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:24"
+    },
+    {
+      "ms": 19053,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:23"
+    },
+    {
+      "ms": 20066,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:22"
+    },
+    {
+      "ms": 21051,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:21"
+    },
+    {
+      "ms": 22052,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:20"
+    },
+    {
+      "ms": 23063,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:19"
+    },
+    {
+      "ms": 24060,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:18"
+    },
+    {
+      "ms": 25064,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:17"
+    },
+    {
+      "ms": 26062,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:16"
+    },
+    {
+      "ms": 27061,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:15"
+    },
+    {
+      "ms": 28054,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:14"
+    },
+    {
+      "ms": 29058,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:13"
+    },
+    {
+      "ms": 30057,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:12"
+    },
+    {
+      "ms": 31054,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:11"
+    },
+    {
+      "ms": 32052,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:10"
+    },
+    {
+      "ms": 33053,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:09"
+    },
+    {
+      "ms": 34053,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:08"
+    },
+    {
+      "ms": 35051,
+      "label": "Secuencia · 3 repeticiones de bisagra",
+      "clock": "00:07"
+    },
+    {
+      "ms": 36066,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:06"
+    },
+    {
+      "ms": 37066,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:05"
+    },
+    {
+      "ms": 38066,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:04"
+    },
+    {
+      "ms": 39060,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:03"
+    },
+    {
+      "ms": 40059,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:02"
+    },
+    {
+      "ms": 41062,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:01"
+    },
+    {
+      "ms": 42062,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:20"
+    },
+    {
+      "ms": 43057,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:19"
+    },
+    {
+      "ms": 44056,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:18"
+    },
+    {
+      "ms": 45059,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:17"
+    },
+    {
+      "ms": 46059,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:16"
+    },
+    {
+      "ms": 47065,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:15"
+    },
+    {
+      "ms": 48055,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:14"
+    },
+    {
+      "ms": 49053,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:13"
+    },
+    {
+      "ms": 50052,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:12"
+    },
+    {
+      "ms": 51051,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:11"
+    },
+    {
+      "ms": 52067,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:10"
+    },
+    {
+      "ms": 53065,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:09"
+    },
+    {
+      "ms": 54065,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:08"
+    },
+    {
+      "ms": 55062,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:07"
+    },
+    {
+      "ms": 56061,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:06"
+    },
+    {
+      "ms": 57060,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:05"
+    },
+    {
+      "ms": 58059,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:04"
+    },
+    {
+      "ms": 59060,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:03"
+    },
+    {
+      "ms": 60057,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:02"
+    },
+    {
+      "ms": 61061,
+      "label": "Reposo · secuencia visual terminada",
+      "clock": "00:01"
+    },
+    {
+      "ms": 62059,
+      "label": "Prueba terminada",
+      "clock": "00:00"
+    }
+  ],
+  "elapsedFromFirstRunningUpdateMs": 60009,
+  "requestAnimationFrameSample": {
+    "samples": 19,
+    "totalMs": 19295.1,
+    "medianMs": 1015.5999999999985,
+    "p95Ms": 1015.9000000000015
+  },
+  "assets": [
+    "index-C6taBwK4.js",
+    "index-Bmh7R24Y.css",
+    "ExerciseScene-DJob9nch.js",
+    "hip-hinge-v1-BNOtzeRP.glb"
+  ],
+  "method": "MutationObserver de texto renderizado y requestAnimationFrame real; sin sustituir reloj. Muestra de RAF lenta en este navegador controlado; causa no aislada, no acredita fluidez del PC ni del teléfono."
+}
