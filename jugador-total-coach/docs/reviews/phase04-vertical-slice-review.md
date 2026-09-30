@@ -45,7 +45,7 @@ El ejemplo previo al inicio también se puede pausar. Se respeta `prefers-reduce
 
 | Comprobación | Resultado y alcance |
 |---|---|
-| Vitest | **108 pruebas, nueve archivos, correctas**: 85 previas + 13 de composición 3D + cinco de recurso/Mixer + dos de ficha/manifiesto + tres regresiones de montaje/carga. CPU, HTML y efectos controlados, no E2E de navegador. |
+| Vitest | **112 pruebas, nueve archivos, correctas**: 85 previas + 13 de composición 3D + cinco de recurso/Mixer + dos de ficha/manifiesto + siete de montaje, carga y recuperación. CPU, HTML y efectos controlados, no E2E de navegador. |
 | Programa | Ensayos lógicos de 60/300 s, extras/repetición, fin de clip/reposo, pausa, inspector/retorno, visibilidad, recurso y huecos. Cinco minutos comprobados con reloj inyectado; no recorrido humano de cinco minutos. |
 | glTF Validator de Khronos | Original final y reexportado: cero errores, advertencias, informaciones o hints. Se corrigieron tres advertencias iniciales de jerarquía de mallas y se quitaron UVs no usados. |
 | Geometría/AnimationMixer | 241 muestras a 30 FPS, 65 huesos y apoyos. AABB mundial dentro del cuadrado; altura máxima 1,81959 m. Desplazamiento máximo medido del origen de los pies en autoría: 0,00003591 m. Margen técnico de prueba: 1 mm; no umbral clínico ni análisis completo de biomecánica/autocolisiones. |
@@ -122,6 +122,16 @@ Verificación: 108 pruebas/9 archivos, formato, lint, tipos y build correctos. K
 Build actual: index-BTrAK_iK.js, index-Bmh7R24Y.css, ExerciseScene-BavP0bMV.js y hip-hinge-v1-BNOtzeRP.glb. Advertencia conocida de módulo 3D >500 KB sin cambios.
 
 Entrega comprobada: HTML y esos cuatro recursos responden HTTP 200 y son idénticos al build local. Seis documentos UTF-8, 86 enlaces locales y 13 hashes de recursos correctos; git diff --check sin incidencias. La apariencia posterior al cambio sigue pendiente de observación del usuario; HTTP, render de Blender y pruebas CPU no equivalen a captura o interacción real del navegador.
+
+## Recuperación de carga y continuación — 2026-09-29
+
+Revisión del agente: React conserva un import `lazy` rechazado; volver a montar el boundary con otra key no reintenta su carga. La pantalla ofrecía para ese fallo la misma acción que para un archivo GLB fallido. Se corrige el boundary exterior para ofrecer «Recargar página», con aviso previo de que descarta la prueba. Solo ocurre tras pulsar; no hay recarga automática. Fallos del GLB, contrato, timeout y contexto conservan el reintento del avatar y la continuación explícita. Es un defecto hallado por lectura de código, no una incidencia informada por el usuario.
+
+Cuatro pruebas nuevas de efectos/carga con recursos Three verifican: liberar un recurso que llega después del timeout; liberar una carga pendiente que termina después del desmontaje sin notificar un fallo obsoleto; rechazar/liberar un clip incompatible; y cargar otro recurso después de un fallo, liberándolo al desmontar. El callback de listo sigue reservado al frame del avatar. Son pruebas de CPU con callbacks controlados, sin GPU ni observación de interacción real.
+
+Resultado: 112 pruebas en nueve archivos; formato, lint, tipos y build correctos. No se cambian avatar, layout, motor, dependencias ni licencias. Persiste la advertencia conocida de módulo 3D >500 KB. El nuevo intento del conector IAB falla antes de adquirir pestaña. Se solicita al usuario comprobar +30 s durante el ejemplo, autoinicio e inspector visible; respuesta pendiente. «Listo continuamos» autoriza seguir trabajando, sin constituir evidencia de esos casos.
+
+Entrega local: HTML y los cuatro recursos del build responden HTTP 200 con bytes idénticos. Build de esta corrección: `index-C5m4AveH.js`, `ExerciseScene-DR4Dq4Mw.js`, `index-Bmh7R24Y.css` y `hip-hinge-v1-BNOtzeRP.glb`; el GLB conserva su hash. No se recarga la pestaña del usuario desde el agente ni se atribuye una prueba de WebGL a esta comprobación HTTP.
 
 ## Pendientes vigentes de aceptación
 

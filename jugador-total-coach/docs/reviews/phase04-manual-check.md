@@ -5,7 +5,7 @@ Actualizada el 2026-09-29 tras el reporte de pausa, hombros y disposición de co
 ## Estado de la evidencia
 
 - **Confirmado por el usuario:** el avatar aparece y «se detiene el avatar y el reloj» al pausar. No volver a pedir esas confirmaciones. El usuario aceptó después el ajuste de hombros y señaló la postura/volumen del bíceps como nueva observación.
-- **Verificado técnicamente:** 108 pruebas de CPU/HTML, contratos de recurso y reloj; detalles y límites en el informe. No son interacción real con WebGL.
+- **Verificado técnicamente:** 112 pruebas de CPU/HTML, contratos de recurso y reloj; detalles y límites en el informe. No son interacción real con WebGL.
 - **Pendiente en pantalla:** los casos de la tabla y la observación de apariencia/movimiento. La guía completa está nuevamente junto al reloj y el texto inferior cambia por mitades de cuatro segundos del clip; su comodidad posterior no está confirmada.
 - **Limitación del agente:** el conector IAB no conecta. El inventario ve la pestaña `http://127.0.0.1:4173/`, sin dar evidencia de render ni interacción. No hay otro navegador automatizable disponible. No se ha realizado E2E automatizado.
 
@@ -31,6 +31,8 @@ Los contadores de pantalla redondean segundos; registrar saltos o desviaciones p
 ## Comprobaciones técnicas restantes
 
 El agente conserva la responsabilidad de verificar reintento de recurso, timeout, pérdida de contexto y recuperación en un navegador controlable. Las pruebas automatizadas existentes cubren parte del contrato; falta la integración real con WebGL. No pedir al usuario cambios de GPU, drivers, seguridad o configuración global para simular fallos.
+
+Revisión adicional del 2026-09-29: corregida la acción tras fallo de carga del código del visor. Ofrece «Recargar página» y advierte que descarta la prueba; los fallos del archivo del avatar conservan «Volver a cargar avatar» y el punto pausado. Siete pruebas de montaje/carga incluyen ahora liberación tras timeout/desmontaje, recurso incompatible y reintento; no prueban la interacción WebGL. El recorrido agrupado de +30 s, autoinicio y apertura visible de «Ver despacio» está solicitado, aún sin resultado recibido.
 
 Rendimiento en PC y Galaxy S24 FE sigue pendiente de medición, con versión del navegador, dimensiones y método. La dirección loopback de la computadora no sirve desde el teléfono. El acceso móvil, origen seguro y offline requieren su preparación prevista; no introducir cambios de red por esta guía.
 

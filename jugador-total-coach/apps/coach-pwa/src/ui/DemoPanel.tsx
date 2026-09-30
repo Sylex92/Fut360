@@ -43,7 +43,7 @@ class ViewerBoundary extends Component<
     return { failed: true };
   }
   componentDidCatch() {
-    this.props.onFailure('No se pudo abrir la vista 3D. Vuelve a cargarla.');
+    this.props.onFailure('No se pudo abrir la vista 3D. Recarga la página para intentarlo.');
   }
   render() {
     return this.state.failed ? null : this.props.children;
@@ -58,7 +58,10 @@ export function DemoPanel() {
   const [state, setState] = useState<DemoSnapshot | null>(null);
   const [minutes, setMinutes] = useState<1 | 5>(1);
   const [camera, setCamera] = useState<CameraPreset>('side');
-  const [failure, setFailure] = useState('');
+  const [failure, setFailure] = useState<{
+    message: string;
+    reloadPage: boolean;
+  } | null>(null);
   const [feedback, setFeedback] = useState('');
   const [attempt, setAttempt] = useState(0);
   const inspectionPanel = useRef<HTMLElement>(null);
@@ -107,10 +110,10 @@ export function DemoPanel() {
     loaded.current = true;
     if (demo.current) setState(demo.current.setReady(true));
   }, []);
-  const onFailure = useCallback((message: string) => {
+  const onFailure = useCallback((message: string, reloadPage = false) => {
     loaded.current = false;
     if (demo.current) setState(demo.current.setReady(false));
-    setFailure(message);
+    setFailure({ message, reloadPage });
   }, []);
   const getPoseMs = useCallback(() => demo.current?.sample().poseMs ?? 0, []);
   const refresh = () => {
@@ -194,7 +197,7 @@ export function DemoPanel() {
             aria-describedby={id + '-movement-steps'}
           >
             {!failure && (
-              <ViewerBoundary key={attempt} onFailure={onFailure}>
+              <ViewerBoundary key={attempt} onFailure={(message) => onFailure(message, true)}>
                 <Suspense fallback={<p className="scene-message">Preparando la vista 3D…</p>}>
                   <ExerciseScene
                     assetUrl={assetUrl}
@@ -222,14 +225,20 @@ export function DemoPanel() {
           <p className="movement-cue">{movementCue}</p>
           {failure && (
             <div className="viewer-failure" role="alert">
-              <p>{failure}</p>
+              <p>{failure.message}</p>
+              {failure.reloadPage && <p>Al recargar se descarta la prueba actual.</p>}
               <button
                 onClick={() => {
-                  setFailure('');
+                  // A rejected React.lazy import stays cached until a page reload.
+                  if (failure.reloadPage) {
+                    window.location.reload();
+                    return;
+                  }
+                  setFailure(null);
                   setAttempt((n) => n + 1);
                 }}
               >
-                Volver a cargar avatar
+                {failure.reloadPage ? 'Recargar página' : 'Volver a cargar avatar'}
               </button>
             </div>
           )}
