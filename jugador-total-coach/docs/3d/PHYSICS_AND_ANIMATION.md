@@ -77,3 +77,10 @@ No exigir físicamente un bucle perfecto a un rebote que pierde energía. Solo c
 ## Fuentes
 
 S01: función y tipos de cuerpos rígidos; S02: colliders y materiales; S04: wrapper y paso fijo; S07: reproducción/pausa/tiempo exacto de clips. Ver SOURCES.md.
+
+
+## Implementación contrastada en fase 05
+
+2026-09-30: Rapier 0.19.2 y wrapper 2.2.0 con paso fijo 1/60 s, interpolación y CCD. Se comprobó forma de pie aislada y collider derivado de huesos foot/ball; el balón dinámico no recibe escrituras del mixer. El tutorial tiene un GLB único para avatar y otro nodo TutorialBall. Cambio de modo desmonta la escena; no hay transferencia oculta de autoridad.
+
+Se reutiliza el acumulador del wrapper. El final exacto duerme el balón antes de posibles pasos acumulados adicionales, sin teletransporte. Comparación de cadencias y decisión de conservar clips para enseñar: [informe de 05](../reviews/phase05-contact-review.md). Revisión deportiva pendiente; parámetros ilustrativos.

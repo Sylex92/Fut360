@@ -1,0 +1,216 @@
+{
+  "rapier": "0.19.2",
+  "config": {
+    "step": 0.016666666666666666,
+    "duration": 10,
+    "gravity": [
+      0,
+      -9.81,
+      0
+    ],
+    "radius": 0.11,
+    "mass": 0.43,
+    "ballStart": [
+      -0.15,
+      0.11,
+      0.035
+    ],
+    "footHalfExtents": [
+      0.055,
+      0.045,
+      0.12
+    ],
+    "ballFriction": 0.5,
+    "groundFriction": 0.65,
+    "footFriction": 0.5,
+    "restitution": 0.25,
+    "linearDamping": 0.15,
+    "angularDamping": 0.2,
+    "ccd": true,
+    "maxCcdSubsteps": 4
+  },
+  "environment": "v22.14.0",
+  "kind": "CPU WASM; synthetic render grouping, not GPU FPS",
+  "runs": [
+    {
+      "source": "debug",
+      "speed": 1,
+      "renderHz": 30,
+      "steps": 538,
+      "contacts": 1,
+      "firstContact": 1.25,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8906537890434265,
+        0.1087225005030632,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "debug",
+      "speed": 1,
+      "renderHz": 60,
+      "steps": 538,
+      "contacts": 1,
+      "firstContact": 1.25,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8906537890434265,
+        0.1087225005030632,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "debug",
+      "speed": 1,
+      "renderHz": 120,
+      "steps": 538,
+      "contacts": 1,
+      "firstContact": 1.25,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8906537890434265,
+        0.1087225005030632,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "debug",
+      "speed": 4,
+      "renderHz": 30,
+      "steps": 95,
+      "contacts": 1,
+      "firstContact": 1.3333333333333333,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8983342051506042,
+        0.10855454206466675,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "debug",
+      "speed": 4,
+      "renderHz": 60,
+      "steps": 95,
+      "contacts": 1,
+      "firstContact": 1.3333333333333333,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8983342051506042,
+        0.10855454206466675,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "debug",
+      "speed": 4,
+      "renderHz": 120,
+      "steps": 95,
+      "contacts": 1,
+      "firstContact": 1.3333333333333333,
+      "maxHeight": 0.10992805659770966,
+      "outside": true,
+      "final": [
+        0.8983342051506042,
+        0.10855454206466675,
+        0.03500000014901161
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 1,
+      "renderHz": 30,
+      "steps": 600,
+      "contacts": 2,
+      "firstContact": 1.4166666666666667,
+      "maxHeight": 0.10992805659770966,
+      "outside": false,
+      "final": [
+        -0.2729521095752716,
+        0.10872235894203186,
+        0.3243218958377838
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 1,
+      "renderHz": 60,
+      "steps": 600,
+      "contacts": 2,
+      "firstContact": 1.4166666666666667,
+      "maxHeight": 0.10992805659770966,
+      "outside": false,
+      "final": [
+        -0.2729521095752716,
+        0.10872235894203186,
+        0.3243218958377838
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 1,
+      "renderHz": 120,
+      "steps": 600,
+      "contacts": 2,
+      "firstContact": 1.4166666666666667,
+      "maxHeight": 0.10992805659770966,
+      "outside": false,
+      "final": [
+        -0.2729521095752716,
+        0.10872235894203186,
+        0.3243218958377838
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 4,
+      "renderHz": 30,
+      "steps": 150,
+      "contacts": 3,
+      "firstContact": 1.4666666666666666,
+      "maxHeight": 0.11071677505970001,
+      "outside": false,
+      "final": [
+        -0.2976445257663727,
+        0.10866393893957138,
+        0.453467458486557
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 4,
+      "renderHz": 60,
+      "steps": 150,
+      "contacts": 3,
+      "firstContact": 1.4666666666666666,
+      "maxHeight": 0.11071677505970001,
+      "outside": false,
+      "final": [
+        -0.2976445257663727,
+        0.10866393893957138,
+        0.453467458486557
+      ]
+    },
+    {
+      "source": "avatar",
+      "speed": 4,
+      "renderHz": 120,
+      "steps": 150,
+      "contacts": 3,
+      "firstContact": 1.4666666666666666,
+      "maxHeight": 0.11071677505970001,
+      "outside": false,
+      "final": [
+        -0.2976445257663727,
+        0.10866393893957138,
+        0.453467458486557
+      ]
+    }
+  ]
+}

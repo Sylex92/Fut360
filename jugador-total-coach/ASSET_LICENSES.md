@@ -1,6 +1,6 @@
 # Registro de recursos y licencias
 
-Actualizado el 2026-09-29, fase 04 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias por archivo, bytes y SHA-256](docs/reviews/phase04-asset-evidence.json).
+Actualizado el 2026-09-30, fase 05 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias de 04](docs/reviews/phase04-asset-evidence.json) y [recursos/WASM de 05](docs/reviews/phase05-asset-evidence.json).
 
 | Asset ID | Archivo/versión/hash | Autor y URL de origen | Licencia del archivo | Variante gratis | Fuente editable/importable | Modificaciones | Revisión |
 |---|---|---|---|---|---|---|---|
@@ -9,6 +9,10 @@ Actualizado el 2026-09-29, fase 04 autorizada. Las licencias internas de los ZIP
 | quaternius-animation-standard-evaluation | UAL1_Standard.glb del ZIP con SHA-256 cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724 | Quaternius, [Animation Library Standard](https://quaternius.itch.io/universal-animation-library) | CC0-1.0 en [License interna conservada](docs/licenses/quaternius-animation-standard.txt) | Sí, Standard; no Pro/Source | GLB importable inspeccionado localmente | Ninguna; inventario de 43 acciones y comparación visual del maniquí | Evaluado, sin clip hip-hinge; no incorporado al runtime ni fuente entregada |
 
 ## Adquisición y alcance
+
+Recurso añadido en 05: **quaternius-inside-inside-v1**, [GLB](assets/runtime/inside-inside-v1.glb) de 872284 bytes, SHA-256 `c195511201131c201b7dc205d1d16825a2c6d0250b6b95f82e838e5b9f007129`; [fuente editable](assets/source/inside-inside/inside-inside-v1.blend) y [manifiesto](assets/manifests/inside-inside-v1.json). Derivado local del avatar ya incorporado y su ropa; componentes originales CC0 y aportaciones del proyecto sin nueva licencia pública. Poses de interior-interior mediante IK/bake y balón geométrico/material propios; un clip sincronizado finito de 10 s. No nueva descarga de avatar ni recurso deportivo externo. Técnica y aceptación humana pendientes, estado draft. Validación técnica/visual del agente y límites en el [informe de 05](docs/reviews/phase05-contact-review.md).
+
+Actualización de revisión de bisagra respecto de la tabla histórica: fase 04 cerrada técnicamente, aceptación móvil y claridad recibidas del usuario el 2026-09-30. Continúa draft como entrenamiento; no se atribuye revisión profesional. Su GLB, fuente y licencia permanecen intactos.
 
 Descargas gratuitas del 2026-09-28 mediante el flujo público de itch.io del autor, sin cuenta ni compra. Universal Base Characters[Standard].zip: 128968391 bytes, SHA-256 fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40, upload 15861669. Universal Animation Library[Standard].zip: 15904933 bytes, SHA-256 cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724, upload 17958403. El hash identifica el archivo, sin inventar una versión que no declare internamente. ZIP completos en assets/downloads, ignorados por Git; no guardar URLs firmadas/tokens de descarga en documentos.
 

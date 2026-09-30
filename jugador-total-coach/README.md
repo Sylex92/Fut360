@@ -1,28 +1,28 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-30. Fase 04 cerrada como prototipo técnico: avatar riggeado, bisagra de cadera, cámaras, preparación automática y pausa/inspección. Funcionamiento en Samsung y claridad de la demostración aceptados por el usuario. Todavía no es la rutina aprobada de una hora.
+Actualizado: 2026-09-30. **Fase 05 implementada y verificada técnicamente:** comparación entre un interior-interior guiado y contactos reales calculados por Rapier. Dos modos separados, cámaras, detalle de pies, pausa/reinicio y revisión lenta. La bisagra de 04 sigue disponible.
 
-**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** Fases 00–04 completadas como base, incluido Blender portable autorizado. [Cierre de 04 y límites](docs/reviews/phase04-closeout.md). 05–09 no autorizadas. START_HERE conserva la preparación histórica: no repetir extracción ni inicialización de Git.
+**Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 05 y evidencias](docs/reviews/phase05-contact-review.md), [licencias/costos](docs/reviews/phase05-cost-and-dependencies.md), [registro de recursos](ASSET_LICENSES.md). Pendientes: aceptación de claridad del nuevo gesto y prueba en Samsung; no se atribuye la aceptación anterior de bisagra a este caso. 06–09 no autorizadas. Todavía no es una rutina aprobada de una hora.
 
-## Ejecutar la base
+## Ejecutar la aplicación
 
-Desde jugador-total-coach, con las dependencias locales ya instaladas:
+Desde jugador-total-coach, con dependencias locales instaladas:
 
 ```powershell
 node tools/pnpm.mjs dev
 ```
 
-Abrir http://127.0.0.1:5173/. [Preparación reproducible y comandos](docs/setup/LOCAL_DEVELOPMENT.md), [resultado de fase 02](docs/reviews/phase02-bootstrap-review.md) y [dependencias/licencias](docs/reviews/phase02-dependencies.md).
+Abrir http://127.0.0.1:5173/. El preview local existente en http://127.0.0.1:4173/ sirve el build actualizado; recargar la página. Elegir «Pie y balón · fase 05» o «Bisagra de cadera · fase 04». Cambiar de ejemplo reinicia la prueba, sin guardar entrenamiento.
 
-La sección **Bisagra de cadera** permite ensayos técnicos de uno o cinco minutos del mismo gesto. Incluye tres vistas, pausa/continuación, inspector lento, omisión, repetición/cancelación y +30 s/+1 min de preparación con autoinicio. Ocultar la página pausa; volver retoma automáticamente si estaba en marcha y no hubo otro motivo de pausa. Pausa manual y fallos mantienen «Continuar». Todo permanece en memoria: recargar pierde la prueba. No seguir sus intervalos como rutina deportiva. El diagnóstico histórico de 60 minutos sigue disponible en un desplegable.
+- Demostración guiada: cuerpo y balón en un clip finito de 10 s, pausa, media velocidad, revisión de instante y tres vistas. Trayectoria ilustrativa; contenido draft.
+- Laboratorio: Rapier 0.19.2/react-three-rapier 2.2.0; pie cinemático, balón dinámico y suelo fijo. Contactos lentos/rápidos, forma aislada o huesos del avatar, colliders opcionales y reinicio explícito. Se detiene al salir del área. El tiempo visible representa el recorrido del clip; en rápido se recorre a 4× sin cambiar gravedad/paso físico.
+- Bisagra: ensayo de uno/cinco minutos ya aceptado como prototipo en escritorio y Samsung, con preparación automática, +30/+60, pausa e inspector. Se conserva ese comportamiento.
 
-128 pruebas, lint, tipos, formato y build correctos. GLB validado y fuente editable conservada. [Licencias nuevas](docs/reviews/phase04-dependencies.md) y [registro de assets](ASSET_LICENSES.md). [Pruebas E2E y capturas reales](docs/reviews/phase04-browser-review.md): minuto completo, cámaras, preparación/pausa/inspector, repetición/omisión, ancho reducido y recuperación de fallos. Cinco minutos aceptados por reporte del usuario. Consola normal sin errores y con un aviso de THREE.Clock en Fiber. El conector IAB sigue fallando, pero se utilizó un navegador Playwright independiente. La primera muestra RAF fue lenta; al poner el navegador al frente, con avatar en marcha, se midieron 1201 intervalos en 20 s, mediana 16,6 ms y p95 17 ms. Es una muestra breve de escritorio, no una garantía de rendimiento móvil. Avance autónomo, consultando solo decisiones indispensables o ampliaciones de alcance.
-
-La explicación completa permanece junto al cronómetro; las indicaciones dinámicas inferiores se agrupan en dos mitades de 4 s. Cámaras arriba, controles debajo, preparación compacta e inspector próximo al botón, con foco comprobado. Tamaño original restituido y menor apertura de brazos, conservando malla/pesos y la corrección de hombros aceptada. Última corrección: durante pausa se indica preparación pendiente, sin anunciar un autoinicio que no puede ocurrir hasta continuar. [Guía y resultados](docs/reviews/phase04-manual-check.md).
+132 pruebas, lint, tipos, formato y build correctos; dos GLB validados, fuentes editables y avisos locales. Pruebas CPU de contactos a 30/60/120 Hz y comprobación adicional del wrapper en navegador. Consola normal sin errores, con avisos de obsolescencia documentados de Fiber/Rapier; build advierte chunks grandes. Viewport de 390 px comprobado, distinto de móvil físico. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md).
 
 ## Decisiones vigentes
 
-Validación más reciente de 04 (2026-09-30): recorrido de cinco minutos aceptado por reporte y controles de escritorio comprobados por el agente. El usuario confirma PC/teléfono en la misma Wi-Fi; preview temporal de la app compilada en puerto 4174 preparado y verificado desde la computadora, sin cambios de firewall. El usuario confirma que las comprobaciones móviles salieron bien; [registro y límites](docs/reviews/phase04-mobile-review.md). El usuario confirma después que la demostración se entiende claramente. 04 cerrada como prototipo; no se valida la dosis deportiva. Siguiente alcance: prueba acotada de contactos pie–balón con comparación guiada, pendiente de autorización.
+Fase 04 conserva su aceptación de funcionamiento móvil y claridad por el usuario; [cierre y límites](docs/reviews/phase04-closeout.md). Fase 05 fue autorizada mediante «vamos con la fase 5»; su entrega técnica y pendientes se describen arriba.
 
 - MVP1: sesión fija de 60 minutos, avatar 3D genérico y espacio 2×2 m.
 - Claridad, continuidad y funcionalidad antes que hiperrealismo.

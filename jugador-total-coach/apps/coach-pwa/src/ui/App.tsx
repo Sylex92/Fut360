@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { validateWorkoutV1 } from '@fut360/exercise-catalog';
 import type { WorkoutSummary } from '@fut360/domain';
 import { DemoPanel } from './DemoPanel';
+import { ContactPanel } from './ContactPanel';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -83,6 +84,7 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
+  const [example, setExample] = useState<'contact' | 'hinge'>('contact');
   const [result, setResult] = useState(() => validateWorkoutV1(content));
   const [checks, setChecks] = useState(0);
   function recheck() {
@@ -102,7 +104,7 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 04 <span aria-hidden="true">/</span> PRIMER MOVIMIENTO 3D
+          FASE 05 <span aria-hidden="true">/</span> PIE Y BALÓN
         </span>
       </header>
       <main id="main">
@@ -115,8 +117,8 @@ export function App({ content }: { content: unknown }) {
               <em>Entiende cada paso.</em>
             </h1>
             <p className="lead">
-              Una primera demostración con avatar, tres vistas y preparación automática.
-              Estamos revisando cómo se explica antes de convertirla en entrenamiento.
+              Observa el contacto entre el pie y el balón. Comparamos una demostración guiada
+              con una prueba de física antes de convertirlas en entrenamiento.
             </p>
           </div>
           <div className="intro-aside">
@@ -128,7 +130,24 @@ export function App({ content }: { content: unknown }) {
             </p>
           </div>
         </section>
-        <DemoPanel />
+        <nav className="camera-controls" aria-label="Ejemplo visible">
+          <button
+            type="button"
+            aria-pressed={example === 'contact'}
+            onClick={() => setExample('contact')}
+          >
+            Pie y balón · fase 05
+          </button>
+          <button
+            type="button"
+            aria-pressed={example === 'hinge'}
+            onClick={() => setExample('hinge')}
+          >
+            Bisagra de cadera · fase 04
+          </button>
+        </nav>
+        <p className="quiet-note">Cambiar de ejemplo reinicia la prueba que estás viendo.</p>
+        {example === 'contact' ? <ContactPanel /> : <DemoPanel />}
         <details className="technical-details">
           <summary>Comprobaciones del archivo de referencia de 60 minutos</summary>
           <section

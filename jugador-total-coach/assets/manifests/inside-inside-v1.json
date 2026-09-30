@@ -1,0 +1,48 @@
+{
+  "assetId": "quaternius-inside-inside-v1",
+  "version": 1,
+  "file": "assets/runtime/inside-inside-v1.glb",
+  "sha256": "c195511201131c201b7dc205d1d16825a2c6d0250b6b95f82e838e5b9f007129",
+  "sourceFile": "assets/source/inside-inside/inside-inside-v1.blend",
+  "sourceSha256": "555cabd9de2239c85bcd35459d43fe98cfebde25bce89a7ec3c857a7a0d9588f",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_inside-inside__alternating__v1",
+  "fps": 30,
+  "durationMs": 10000,
+  "loopable": false,
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "boundingBoxMeters": {
+    "min": [-0.45191118313363865, -0.000044172474260561334, -0.16345091456432678],
+    "max": [0.45191136207737703, 1.7195866118302134, 0.20059481122573322]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["alternating"],
+  "authority": "authored",
+  "reviewStatus": "draft",
+  "contactWindows": [
+    {
+      "side": "right",
+      "startMs": 1400,
+      "endMs": 2000
+    },
+    {
+      "side": "left",
+      "startMs": 5400,
+      "endMs": 6000
+    }
+  ],
+  "ballProfile": {
+    "radiusMeters": 0.11,
+    "path": "authored illustration, not a predicted trajectory"
+  },
+  "notes": [
+    "Finite two-touch illustration; explicit restart",
+    "Avatar and TutorialBall share one AnimationMixer clip",
+    "Lab hides TutorialBall and gives a different PhysicsBall exclusively to Rapier",
+    "Original rig, skin weights, shoulder/arm correction and clothing reused; new IK poses and ball authored locally"
+  ]
+}

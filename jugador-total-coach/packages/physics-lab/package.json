@@ -1,0 +1,25 @@
+{
+  "name": "@fut360/physics-lab",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./scene": "./src/ContactScene.tsx"
+  },
+  "dependencies": {
+    "@fut360/viewer-3d": "workspace:*",
+    "@react-three/rapier": "2.2.0",
+    "@dimforge/rapier3d-compat": "0.19.2",
+    "@react-three/fiber": "9.8.1",
+    "three": "0.186.1"
+  },
+  "peerDependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "assetReview": "draft; technical checks do not approve sports technique",
+  "source": "Quaternius CC0 source already audited in phase04; no new avatar download",
+  "blender": "4.5.14 portable, existing authorized copy",
+  "files": [
+    {
+      "path": "assets/runtime/inside-inside-v1.glb",
+      "bytes": 872284,
+      "sha256": "c195511201131c201b7dc205d1d16825a2c6d0250b6b95f82e838e5b9f007129"
+    },
+    {
+      "path": "assets/source/inside-inside/inside-inside-v1.blend",
+      "bytes": 1512462,
+      "sha256": "555cabd9de2239c85bcd35459d43fe98cfebde25bce89a7ec3c857a7a0d9588f"
+    },
+    {
+      "path": "tools/build_inside_inside.py",
+      "bytes": 6417,
+      "sha256": "6c0c2aeb36d791279d59e49bded8941188aa7f37606c67fa134c5c67dc67e357"
+    },
+    {
+      "path": "assets/source/hip-hinge/hip-hinge-v1.blend",
+      "bytes": 1543502,
+      "sha256": "7d7290eab0490f3606db9855d40fc781a83827fbb0e54a81022fb0c87a673d74"
+    },
+    {
+      "path": "assets/runtime/hip-hinge-v1.glb",
+      "bytes": 825240,
+      "sha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe"
+    },
+    {
+      "path": "packages/physics-lab/node_modules/@dimforge/rapier3d-compat/rapier_wasm3d_bg.wasm",
+      "bytes": 1569397,
+      "sha256": "18157113bd106b5c9644f4a293fea7ba8513e9d44a8b2ec47d11225439c381ca"
+    }
+  ]
+}

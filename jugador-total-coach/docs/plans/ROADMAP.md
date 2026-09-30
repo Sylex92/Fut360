@@ -32,3 +32,8 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 ## Punto actual — 2026-09-30
 
 00–03 aceptadas como base; 04 autorizada e implementada con recurso real, Blender portable y verificaciones técnicas. Cinco minutos aceptados por reporte del usuario; controles, minuto completo y fallos comprobados con WebGL real en [navegador independiente](../reviews/phase04-browser-review.md). Samsung físico comprobado con resultado favorable por reporte, sin FPS instrumentales. El usuario acepta después la claridad del gesto. [04 cerrada como prototipo técnico](../reviews/phase04-closeout.md); ficha y clip siguen draft como contenido deportivo. Preview temporal LAN preparado para el teléfono, sin cambios de firewall. 05–09 no autorizadas. Las reglas de instalación por necesidad anteriores describen cada momento, no prohíben usar Blender ya preparado en 04.
+
+
+## Estado de avance — 2026-09-30
+
+00–04 aceptadas como base con sus límites. 05 autorizada, implementada y verificada técnicamente; pendientes de aceptación de claridad y Samsung del nuevo ejemplo. [Informe](../reviews/phase05-contact-review.md). No avanzar automáticamente a 06–09. PROJECT_STATUS es la referencia vigente; la tabla de fases sigue describiendo el plan global.

@@ -8,6 +8,37 @@
 .demo-panel {
   margin: 0 0 30px;
 }
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.contact-option {
+  display: block;
+  margin: 14px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.contact-option select,
+.contact-option input[type='range'] {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  min-height: 44px;
+  margin-top: 4px;
+  accent-color: #213e34;
+}
+.contact-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.contact-panel output {
+  display: block;
+  line-height: 1.7;
+}
 .demo-panel > p,
 .demo-guide p,
 .demo-panel details {

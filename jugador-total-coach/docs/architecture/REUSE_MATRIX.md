@@ -71,3 +71,12 @@ Implementados solo domain (tipos v1/aritmética), exercise-catalog (Ajv 2020-12 
 Problema: mostrar la bisagra y conservar las reglas temporales de 03. Se reutilizaron Three/Fiber, GLTFLoader/AnimationMixer, el rig CC0 de 65 huesos de Quaternius y las operaciones de IK/bake/exportación de Blender. Carencia comprobada: Regular no estaba en Base Standard y no había hip-hinge entre las 43 acciones del Animation Standard inspeccionado. Se adoptó Superhero masculino genérico y se creó solo el gesto sobre ese rig; no se compró Source ni se sustituyó el ejercicio.
 
 Piezas propias: escena/cámaras, composición de cursores, ficha/manifiesto/mapping y scripts acotados de autoría/comprobación. No nuevo rig, solver, loader o editor. El visor recibe pose explícita y no importa el motor. Pruebas de recurso, composición y retorno tras reexportar; [informe y límites](../reviews/phase04-vertical-slice-review.md). Licencias concretas en [ASSET_LICENSES](../../ASSET_LICENSES.md). La fase 06 no se ejecutó; otros gestos y balón siguen pendientes.
+
+
+## Evidencia de fase 05 — 2026-09-30
+
+physics-lab implementado con Rapier 0.19.2/react-three-rapier 2.2.0: paso fijo, interpolación, CCD, consultas de formas y debug existentes. Adaptación propia limitada a configuración, muestreo de huesos antes del paso, panel y estado terminal. No solver, ragdoll ni controlador de drible.
+
+Avatar, rig de 65 huesos, ropa, correcciones de brazos/hombros y ClipDriver reutilizados. Blender IK/bake/exportador prepara únicamente el clip interior-interior faltante, con balón geométrico propio y fuente editable. La bisagra y el motor de sesión no cambian. La matriz de pruebas demuestra contactos y continuidad, sin afirmar técnica deportiva validada.
+
+La física libre no conserva automáticamente la trayectoria didáctica: se mantiene un clip sincronizado para enseñar y un laboratorio separado para inspeccionar. [ADR 0011](adr/0011-contact-spike-result.md), [costos/alternativas](../reviews/phase05-cost-and-dependencies.md), [evidencia](../reviews/phase05-contact-review.md).

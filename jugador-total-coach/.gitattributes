@@ -9,4 +9,4 @@
 # Preserve upstream source and license bytes for the recorded SHA-256 evidence.
 assets/source/hip-hinge/original/** -text
 assets/source/hip-hinge/QUATERNIUS_LICENSE.txt -text whitespace=-blank-at-eol
-docs/licenses/* -text whitespace=-blank-at-eol,-blank-at-eof
+docs/licenses/** -text whitespace=-blank-at-eol,-blank-at-eof

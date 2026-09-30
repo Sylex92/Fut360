@@ -1,0 +1,185 @@
+{
+  "date": "2026-09-30",
+  "scope": "Exact registry metadata versus installed packages and copied notices; not a source security audit",
+  "packages": [
+    {
+      "name": "@react-three/rapier",
+      "version": "2.2.0",
+      "license": "MIT",
+      "integrity": "sha512-mVsqbKXlGZoN+XrqdhzFZUQmy8pibEOVzl4k7LC+LHe84bQnYBSagy1Hvbda6bL1PJDdTFyiDiBk5buKFinNIQ==",
+      "repository": {
+        "url": "git+https://github.com/pmndrs/react-three-rapier.git#master",
+        "type": "git"
+      },
+      "gitHead": "ae5c3fede5ca489fd7eaa8271e9d9c5eabc88e98",
+      "noticeOrigin": "official repository at exact commit/tag",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/react-three-rapier-2.2.0-LICENSE",
+          "sha256": "cd14add33d47bcecae9fed5559224ae135c5ec41e1d3a126601f5fbd82291834"
+        }
+      ]
+    },
+    {
+      "name": "@dimforge/rapier3d-compat",
+      "version": "0.19.2",
+      "license": "Apache-2.0",
+      "integrity": "sha512-AZHL1jqUF55QJkJyU1yKeh4ImX2J93bVLIezT1+o0FZqTix6O06MOaqpKoJ4MmbDCsoZmwO+qc471/SDMDm2AA==",
+      "repository": {
+        "url": "git+https://github.com/dimforge/rapier.js.git",
+        "type": "git"
+      },
+      "gitHead": "f072e6efa75f4f61a290bd0b58b61c443685ec01",
+      "noticeOrigin": "official repository at exact commit/tag",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/rapier3d-compat-0.19.2-LICENSE",
+          "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519"
+        }
+      ]
+    },
+    {
+      "name": "three-stdlib",
+      "version": "2.36.1",
+      "license": "MIT",
+      "integrity": "sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==",
+      "repository": {
+        "url": "git+https://github.com/pmndrs/three-stdlib.git",
+        "type": "git"
+      },
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/three-stdlib-2.36.1-LICENSE",
+          "sha256": "28eb7edf059a39094aa3d169db1fec46ac4a6279c921a90f965828d92ec86e79"
+        }
+      ]
+    },
+    {
+      "name": "suspend-react",
+      "version": "0.1.3",
+      "license": "MIT",
+      "integrity": "sha512-aqldKgX9aZqpoDp3e8/BZ8Dm7x1pJl+qI3ZKxDN0i/IQTWUwBx/ManmlVJ3wowqbno6c2bmiIfs+Um6LbsjJyQ==",
+      "repository": {
+        "url": "git+https://github.com/pmndrs/suspend-react.git",
+        "type": "git"
+      },
+      "gitHead": "302d8cf52e0145385331ffc8bd822bff86bfd39a",
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/suspend-react-0.1.3-LICENSE",
+          "sha256": "997e79b828d8b85d6f18730c8dbf58074811360a199506bd84e1263e17c227a2"
+        }
+      ]
+    },
+    {
+      "name": "fflate",
+      "version": "0.6.10",
+      "license": "MIT",
+      "integrity": "sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg==",
+      "repository": {
+        "url": "git+https://github.com/101arrowz/fflate.git",
+        "type": "git"
+      },
+      "gitHead": "3a5537523f5bdf71ddaeaec58e8450f85887ffb4",
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/fflate-0.6.10-LICENSE",
+          "sha256": "62249119bb7df6e54300f37a37145c26a6d4420410aac8881a119c5b427cf751"
+        }
+      ]
+    },
+    {
+      "name": "draco3d",
+      "version": "1.5.7",
+      "license": "Apache-2.0",
+      "integrity": "sha512-m6WCKt/erDXcw+70IJXnG7M3awwQPAsZvJGX5zY7beBqpELw6RDGkYVU0W43AFxye4pDZ5i2Lbyc/NNGqwjUVQ==",
+      "repository": {
+        "url": "git+https://github.com/google/draco.git",
+        "type": "git"
+      },
+      "gitHead": "8786740086a9f4d83f44aa83badfbea4dce7a1b5",
+      "noticeOrigin": "official repository at exact commit/tag",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/draco3d-1.5.7-LICENSE",
+          "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+        }
+      ]
+    },
+    {
+      "name": "potpack",
+      "version": "1.0.2",
+      "license": "ISC",
+      "integrity": "sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==",
+      "repository": {
+        "url": "git+https://github.com/mapbox/potpack.git",
+        "type": "git"
+      },
+      "gitHead": "b2df24995f43740e362a1ceb2ad25da77e44dd88",
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/potpack-1.0.2-LICENSE",
+          "sha256": "2c620eaf6c3ee3e33b07f3b6ef0dfd0a9e0a52c93a46aa4ccf7773dbb562daec"
+        }
+      ]
+    },
+    {
+      "name": "@types/webxr",
+      "version": "0.5.24",
+      "license": "MIT",
+      "integrity": "sha512-h8fgEd/DpoS9CBrjEQXR+dIDraopAEfu4wYVNY2tEPwk60stPWhvZMf4Foo5FakuQ7HFZoa8WceaWFervK2Ovg==",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/webxr"
+      },
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/types-webxr-0.5.24-LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/draco3d",
+      "version": "1.4.10",
+      "license": "MIT",
+      "integrity": "sha512-AX22jp8Y7wwaBgAixaSvkoG4M/+PlAcm3Qs4OW8yT9DM4xUpWKeFhLueTAyZF39pviAdcDdeJoACapiAceqNcw==",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/draco3d"
+      },
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/types-draco3d-1.4.10-LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/offscreencanvas",
+      "version": "2019.7.3",
+      "license": "MIT",
+      "integrity": "sha512-ieXiYmgSRXUDeOntE1InxjWyvEelZGP63M+cGuquuRLuIKKT1osnkXjxev9B7d1nXSug5vpunx+gNlbVxMlC9A==",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/offscreencanvas"
+      },
+      "noticeOrigin": "installed package",
+      "notices": [
+        {
+          "path": "docs/licenses/phase05/types-offscreencanvas-2019.7.3-LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    }
+  ]
+}

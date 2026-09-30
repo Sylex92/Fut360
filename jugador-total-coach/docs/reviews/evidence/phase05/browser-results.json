@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-30",
+  "results": {
+    "browser-rate-results": [
+      {
+        "nominalHz": 30,
+        "medianIntervalMs": 33,
+        "frames": 133,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.304053395986557,
+          0.10866428166627884,
+          0.4571429193019867
+        ]
+      },
+      {
+        "nominalHz": 60,
+        "medianIntervalMs": 13,
+        "frames": 278,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.2976445257663727,
+          0.10866393893957138,
+          0.453467458486557
+        ]
+      },
+      {
+        "nominalHz": 120,
+        "medianIntervalMs": 8.299999952316284,
+        "frames": 315,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.2976445257663727,
+          0.10866393893957138,
+          0.453467458486557
+        ]
+      }
+    ],
+    "browser-rate-fixed-results": [
+      {
+        "nominalHz": 30,
+        "medianIntervalMs": 32.89999997615814,
+        "frames": 135,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.2976445257663727,
+          0.10866393893957138,
+          0.453467458486557
+        ]
+      },
+      {
+        "nominalHz": 60,
+        "medianIntervalMs": 16.100000023841858,
+        "frames": 273,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.2976445257663727,
+          0.10866393893957138,
+          0.453467458486557
+        ]
+      },
+      {
+        "nominalHz": 120,
+        "medianIntervalMs": 8.300000071525574,
+        "frames": 316,
+        "seconds": 10,
+        "contacts": 3,
+        "ball": [
+          -0.2976445257663727,
+          0.10866393893957138,
+          0.453467458486557
+        ]
+      }
+    ],
+    "browser-controls-results": {
+      "paused": "1.0 / 10 s",
+      "pausedAfter": "1.0 / 10 s",
+      "slowTutorial": "6.1 / 10 s",
+      "debug": {
+        "testid": "contact-metrics",
+        "seconds": "6.333333333333333",
+        "contacts": "1",
+        "ball": "[0.8983342051506042,0.10855454206466675,0.03500000014901161]",
+        "outside": "true"
+      },
+      "hingeAccessible": false,
+      "errors": [],
+      "warnings": [
+        "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+        "using deprecated parameters for the initialization function; pass a single object instead"
+      ],
+      "requestOrigins": [
+        "http://127.0.0.1:4173"
+      ]
+    },
+    "visibility-simulated-results": {
+      "kind": "simulated visibility event; browser automation keeps background tabs visible",
+      "hiddenBefore": "1",
+      "hiddenAfter": "1",
+      "resumed": "1.1",
+      "manualRemained": true,
+      "hinge": true
+    },
+    "recovery-results": {
+      "error": "No se pudo cargar el recurso local. Vuelve a cargar la prueba.",
+      "blocked": true,
+      "recovered": true
+    },
+    "layout-fixed-results": {
+      "layout": {
+        "viewport": 390,
+        "document": 390,
+        "controls": [
+          {
+            "label": "Demostración guiada",
+            "width": 150.375,
+            "height": 44
+          },
+          {
+            "label": "Laboratorio de contactos",
+            "width": 171.15625,
+            "height": 44
+          },
+          {
+            "label": "Frontal",
+            "width": 70.109375,
+            "height": 44
+          },
+          {
+            "label": "Tres cuartos",
+            "width": 97.78125,
+            "height": 44
+          },
+          {
+            "label": "Detalle de pies",
+            "width": 112.953125,
+            "height": 44
+          },
+          {
+            "label": "Continuar prueba",
+            "width": 129.015625,
+            "height": 44
+          },
+          {
+            "label": "Reiniciar prueba",
+            "width": 121.609375,
+            "height": 44
+          },
+          {
+            "label": "NormalDespacio · ½ velocidad",
+            "width": 304,
+            "height": 44
+          },
+          {
+            "label": "Instante del contacto",
+            "width": 304,
+            "height": 44
+          }
+        ]
+      },
+      "keyboardPaused": true
+    },
+    "perf-results": {
+      "nativeDesktopRaf": {
+        "frames": 282,
+        "medianMs": 17.899999998509884,
+        "p95Ms": 18.199999999254942,
+        "seconds": 5.011700000070036
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+    }
+  }
+}

@@ -9,6 +9,7 @@
     "@fut360/session-engine": "workspace:*",
     "@fut360/viewer-3d": "workspace:*",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "@fut360/physics-lab": "workspace:*"
   }
 }
