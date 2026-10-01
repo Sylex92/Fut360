@@ -96,7 +96,7 @@ La presentación previa puede repetir ejemplos de un clip finito sin convertir l
 | practiceArea, clearance | Cuadrado x/z entre −1 y +1; altura y márgenes explícitos por ficha, sin margen universal inventado |
 | avatar | Referencia/version/hash, escala coherente, rigMapping y posición inicial |
 | objects | IDs únicos, modelo o primitiva, tamaño real, posición, autoridad y uso/apoyo |
-| cameras | front/side/threeQuarter, encuadre del cuerpo y contacto completo, sin cambiar lado o tiempo |
+| cameras | front/side/threeQuarter y detail cuando lo declare la ficha (pies/balón); encuadre pertinente, sin cambiar lado o tiempo |
 | exerciseCompatibility | Variantes/props y límites espaciales que puede mostrar |
 | physicsConfig | Solo laboratorio: motor/WASM fijados, paso, parámetros, colliders, estado inicial e inputs |
 | review | Evidencia de encuadre, colocación, espacio, contraste y limitaciones |

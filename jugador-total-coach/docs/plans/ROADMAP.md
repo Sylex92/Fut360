@@ -40,4 +40,4 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 
 ## Punto vigente de 06 — 2026-09-30
 
-06 autorizada: once patrones/quince recursos producidos y revisados técnicamente, fundamento exclusivamente documental según ADR 0012. Empuje con silla pendiente de condiciones reales; aceptación de nuevos recursos y Samsung físico pendientes. No declarar cerrada toda 06 ni iniciar 07–09. [Informe y pendientes](../reviews/phase06-pipeline-review.md).
+06 autorizada: once patrones/quince ejemplos producidos y revisados técnicamente, incluidos nueve recursos v2. Usuario confirma movimientos corregidos y detalle de pies en computadora/Samsung; fundamento exclusivamente documental según ADR 0012. Falta producir el empuje: conocida la referencia de silla plástica, se propone variante en pared y se consulta disponibilidad del soporte. Ficha de autoría preparada; no contarla como clip ni cerrar toda 06/iniciar 07–09. [Informe y pendientes](../reviews/phase06-pipeline-review.md).

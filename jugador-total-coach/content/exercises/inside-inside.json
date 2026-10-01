@@ -1,6 +1,6 @@
 {
   "id": "inside-inside",
-  "version": 2,
+  "version": 3,
   "displayName": "Campanitas · interior-interior",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar campanitas · interior-interior"],
@@ -15,7 +15,7 @@
     "assetId": "quaternius-inside-inside-v2",
     "clipName": "EX_inside-inside__alternating__v2",
     "loopable": false,
-    "cameraPresets": ["side", "front", "threeQuarter"]
+    "cameraPresets": ["side", "front", "threeQuarter", "detail"]
   },
   "cues": [
     "Balón entre los pies, cerca del cuerpo.",

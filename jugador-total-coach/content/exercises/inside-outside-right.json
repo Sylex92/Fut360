@@ -1,6 +1,6 @@
 {
   "id": "inside-outside-right",
-  "version": 2,
+  "version": 3,
   "displayName": "Interior/exterior · pie derecho",
   "categories": ["demostración de movimiento"],
   "goals": ["Observar interior/exterior · pie derecho"],
@@ -15,7 +15,7 @@
     "assetId": "quaternius-inside-outside-right-v2",
     "clipName": "EX_inside-outside__right__v2",
     "loopable": false,
-    "cameraPresets": ["side", "front", "threeQuarter"]
+    "cameraPresets": ["side", "front", "threeQuarter", "detail"]
   },
   "cues": [
     "El pie izquierdo sostiene el apoyo.",

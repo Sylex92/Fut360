@@ -69,7 +69,8 @@ Los ejemplos son nombres propuestos, no archivos existentes. El [contrato de dom
 
 - front;
 - side;
-- threeQuarter.
+- threeQuarter;
+- detail: encuadre de pies y balón cuando la ficha lo ofrezca; incorporado a la biblioteca en fase 06.
 
 El cambio de cámara no debe alterar el estado de animación.
 

@@ -104,7 +104,8 @@
             "enum": [
               "front",
               "side",
-              "threeQuarter"
+              "threeQuarter",
+              "detail"
             ]
           },
           "minItems": 1,

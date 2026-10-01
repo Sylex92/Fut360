@@ -16,3 +16,7 @@ Fecha: 2026-09-30. Autorización: «ah perfecto entonces por lo mientras adelant
 Fuentes escritas sirven para fundamentar y contrastar la representación, no para atribuir a sus autores la revisión del avatar. Revisión documental, técnica y claridad por el usuario son evidencias separadas. Ningún control de física certifica aprendizaje o seguridad personal. No contratar ni exigir por defecto revisor externo; una incertidumbre concreta queda vinculada al recurso afectado.
 
 El empuje con silla depende de dimensiones, estabilidad y cabida no acreditadas por tener una silla firme. No inventar esa comprobación ni cambiar silenciosamente de ejercicio. Preparación/entrada al suelo se documenta y se distingue de la repetición; no presentar un salto instantáneo de postura como una transición enseñada. Fase 07 deberá resolver la cobertura completa antes de ofrecer la hora como terminada.
+
+## Continuación después de aceptar la cámara de pies
+
+El usuario confirma que ya ve el detalle y solicita avanzar. Registrar esa aceptación; conciliar `detail` en las cinco fichas con balón y en su esquema, porque el visor ya lo ofrece pero los datos aún solo declaran las tres vistas originales. Comprobar correspondencia entre ficha y vista mediante el contrato existente, sin modificar animaciones o reproducción. Preparar la ficha de autoría del único patrón sin clip (empuje con silla), manteniendo abiertos los datos reales del asiento y la comprobación móvil explícita, solicitados juntos. No fabricar medidas ni iniciar 07 mientras se resuelve el cierre de 06.

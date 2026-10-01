@@ -34,8 +34,8 @@ Se normalizó el manifiesto de campanitas al contrato común: alternate/animatio
 
 ## Pendientes concretos
 
-1. Empuje inclinado: se consultaron medidas aproximadas del asiento, ruedas/plegado/apoyabrazos. Faltan esa respuesta, variante de agarre, estabilidad contra vuelco/deslizamiento y cabida de silla+cuerpo. Sin recurso sustituto invisible ni aprobación basada solo en «silla firme».
-2. Aceptación de claridad de los nuevos gestos y recorrido en Samsung físico. La aceptación de 04/05 no se extiende automáticamente a los clips de 06. Se puede agrupar el recorrido; no exigir una autorización por cada cámara.
+1. Empuje: el usuario describe silla de plástico similar a la miniatura inspeccionada, con apoyabrazos en la referencia. No hay medidas/especificaciones que resuelvan agarre y estabilidad para una flexión. Se propone variante de empuje en pared por ese contexto; disponibilidad de pared consultada y pendiente antes de producir. [Ficha de autoría y alternativa](../3d/INCLINE_PUSH_UP_AUTHORING_BRIEF.md), sin contarla como clip ni cambiar todavía la cobertura. No declarar que toda silla plástica sea inadecuada ni exigir una compra.
+2. Resuelto por reporte: movimientos corregidos y vista de pies revisados favorablemente **en computadora y Samsung**, según respuesta expresa del usuario. No repetir ese pendiente sin cambio/incidencia ni atribuir revisión profesional o FPS medidos. Los nuevos recursos que se produzcan después requerirán su propia comprobación.
 3. Tobillo de pie y marcha supina son adaptaciones explícitas, con límites documentados; no equivalencias exactas a las fuentes. Revisar comprensión de apoyos. Entradas/salidas al suelo no animadas: la repetición empieza ya colocado.
 4. Composición, dosificación individual, preparación/transiciones suficientes y nueva hora completa pertenecen a 07. Regresiones/dosis candidatas están en el documento interno; no son variantes GLB ya producidas ni prescripción liberada. Fichas y recursos conservan draft.
 

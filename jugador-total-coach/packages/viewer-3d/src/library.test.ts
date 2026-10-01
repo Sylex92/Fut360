@@ -107,6 +107,9 @@ it.each(catalog.entries)(
     expect(preview.clipName).toBe(manifest.clipName);
     expect(preview.durationMs).toBe(manifest.durationMs);
     expect(preview.cues).toEqual(exercise.cues);
+    expect(preview.footDetail === true).toBe(
+      exercise.animation.cameraPresets.includes('detail'),
+    );
     expect(exercise.equipment).toEqual(manifest.requiredProps);
     expect(entry.supportedSides).toEqual(manifest.supportedSides);
     expect(createHash('sha256').update(read(manifest.file)).digest('hex')).toBe(
