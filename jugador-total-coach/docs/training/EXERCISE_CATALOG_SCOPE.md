@@ -14,7 +14,7 @@ Conciliación documental de fase 01: 2026-09-27. Se adopta para planificación e
 | inside-inside | Interior-interior controlado | Contactos alternados, balón cercano y límites |
 | lateral-sole-roll | Planta lateral y detención controlada | Pie de apoyo, ambos lados, no apoyar peso corporal en el balón |
 | inside-outside | Interior/exterior de un pie | Derecha e izquierda separadas y sin velocidad máxima exigida |
-| incline-push-up-chair | Empuje inclinado con silla | Condicionado a estabilidad, agarre, dimensiones y cabida; pendiente |
+| wall-push-up | Flexión contra pared | Sustitución contextual explícita del empuje con silla; pared disponible, fuente NHS, recurso de 06 revisado técnicamente |
 | glute-bridge | Puente bilateral sin banda | Apoyos y transición al suelo con colchoneta |
 | dead-bug | Brazos apoyados, una pierna alterna | Variante simplificada propia; no usar clip contralateral avanzado |
 | slow-breathing | Respiración cómoda al bajar actividad | Sin apneas ni cadencia rígida; no promesas metabólicas |
@@ -47,7 +47,7 @@ La columna destino expresa intención documental, no una migración automática 
 | press-recover-protect | Fuera de base doméstica | Sin rival ni balón disputado |
 | supported-split-squat | Reserva de progresión | Si se añade, ambos pies en suelo |
 | single-leg-rdl-supported | Reserva de progresión | Apoyo/equilibrio por revisar |
-| incline-push-up-chair | Núcleo condicionado | Apoyo y espacio no verificados |
+| incline-push-up-chair | Empuje mediante wall-push-up | Pared confirmada; variante inicial de pie con ID propio, sin equiparar cargas. Silla resistente/estable declarada; alternativa posterior pendiente de geometría/agarre |
 | prone-ytw | Candidato posterior | No equivalente a tracción completa |
 | glute-bridge | Núcleo | Bilateral sin banda |
 | dead-bug | Núcleo con variante simplificada | Clip específico |
@@ -61,7 +61,7 @@ La columna destino expresa intención documental, no una migración automática 
 | recovery-pose | Retirar etiqueta | No define movimiento |
 | chest-shoulder-opener | Reserva opcional | Falta variante/objetivo |
 
-Estado: 31/31 IDs con destino documental; 0 fichas finales y 0 clips incorporados. La pertinencia no acredita adecuación individual. La revisión con el usuario está asignada, aún no realizada sobre estos recursos.
+Estado histórico de fase 01: 31/31 IDs con destino documental y ningún clip incorporado entonces. Actualización 2026-09-30: fase 06 dispone de dieciséis ejemplos/doce patrones según [catálogo](../../assets/phase06-catalog.json); el empuje se representa con pared confirmada. Aceptación anterior de movimientos separada del nuevo clip pendiente. La pertinencia no acredita adecuación individual.
 
 ## Lados y liberación
 

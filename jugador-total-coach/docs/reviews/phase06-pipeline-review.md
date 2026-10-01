@@ -1,6 +1,6 @@
 # Fase 06 — biblioteca y pipeline de movimientos
 
-2026-09-30. Alcance autorizado: prompt 06 y revisión documental según ADR 0012. **Entrega técnica parcial: once de doce patrones; empuje con silla pendiente de condiciones reales.** No se ejecuta 07 ni se declara una rutina de una hora lista.
+2026-09-30. Alcance autorizado: prompt 06 y revisión documental según ADR 0012. **Actualización vigente: doce patrones representados por dieciséis ejemplos; añadido empuje en pared tras confirmar soporte. Nuevo clip pendiente de aceptación de claridad/funcionamiento.** [Informe del empuje](phase06-wall-push-up-review.md). Los resultados de quince recursos siguientes conservan la línea base anterior. No se ejecuta 07 ni se declara una rutina de una hora lista.
 
 **Actualización posterior:** el usuario informó movimientos rígidos. La [corrección de naturalidad](phase06-natural-motion-review.md) incorpora nueve recursos v2 y 179 pruebas; conserva avatar, binarios v1 e informes siguientes como línea base. Después confirma que revisó los cambios y están bien; aceptación visual registrada, sin inferir prueba específica en Samsung ni certificación deportiva. Se incorpora también la vista «Detalle de pies» para los cinco ejemplos con balón, solicitada tras esa aceptación.
 
@@ -34,9 +34,9 @@ Se normalizó el manifiesto de campanitas al contrato común: alternate/animatio
 
 ## Pendientes concretos
 
-1. Empuje: el usuario describe silla de plástico similar a la miniatura inspeccionada, con apoyabrazos en la referencia. No hay medidas/especificaciones que resuelvan agarre y estabilidad para una flexión. Se propone variante de empuje en pared por ese contexto; disponibilidad de pared consultada y pendiente antes de producir. [Ficha de autoría y alternativa](../3d/INCLINE_PUSH_UP_AUTHORING_BRIEF.md), sin contarla como clip ni cambiar todavía la cobertura. No declarar que toda silla plástica sea inadecuada ni exigir una compra.
+1. Empuje: soporte resuelto, pared confirmada y silla declarada resistente/estable. `wall-push-up` ya producido y comprobado; [autoría](../3d/INCLINE_PUSH_UP_AUTHORING_BRIEF.md), [pruebas](phase06-wall-push-up-review.md). Falta que el usuario confirme claridad/funcionamiento del nuevo ejemplo en sus dispositivos; aceptación previa no se atribuye a este clip. La silla se conserva como alternativa, no como un recurso defectuoso.
 2. Resuelto por reporte: movimientos corregidos y vista de pies revisados favorablemente **en computadora y Samsung**, según respuesta expresa del usuario. No repetir ese pendiente sin cambio/incidencia ni atribuir revisión profesional o FPS medidos. Los nuevos recursos que se produzcan después requerirán su propia comprobación.
-3. Tobillo de pie y marcha supina son adaptaciones explícitas, con límites documentados; no equivalencias exactas a las fuentes. Revisar comprensión de apoyos. Entradas/salidas al suelo no animadas: la repetición empieza ya colocado.
+3. Límite conservado: tobillo de pie y marcha supina son adaptaciones explícitas, no equivalencias exactas a las fuentes. La aceptación de los movimientos no demuestra su efecto individual. Entradas/salidas al suelo no animadas: la repetición empieza ya colocado; su composición pertenece a 07.
 4. Composición, dosificación individual, preparación/transiciones suficientes y nueva hora completa pertenecen a 07. Regresiones/dosis candidatas están en el documento interno; no son variantes GLB ya producidas ni prescripción liberada. Fichas y recursos conservan draft.
 
 Advertencias conocidas: exportador Blender avisa sobre parentesco de mallas y color de vértices no usado; se comprobaron rig/materiales y salida glTF. Build advierte chunks grandes. No se desactiva un aviso para simular un resultado limpio. No PWA/offline, medición física del usuario, sincronización o exportación en esta fase.

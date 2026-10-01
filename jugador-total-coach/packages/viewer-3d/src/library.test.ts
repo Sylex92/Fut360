@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import type { GLTF } from 'three/addons/loaders/GLTFLoader.js';
-import { Texture, Vector3 } from 'three';
+import { SkinnedMesh, Texture, Vector3 } from 'three';
 import catalog from '../../../assets/phase06-catalog.json';
 import animationSchema from '../../../content/schemas/animation.schema.json';
 import exerciseSchema from '../../../content/schemas/exercise.schema.json';
@@ -16,7 +16,7 @@ const read = (file: string) => readFileSync(new URL(file, root));
 const json = (file: string) => JSON.parse(read(file).toString());
 // Compare the GLB's mesh/skin attributes and embedded appearance independently
 // of animation channels, file offsets and resource hashes.
-const appearance = (file: string) => {
+const appearance = (file: string, avatarOnly = false) => {
   const bytes = read(file);
   const jsonLength = bytes.readUInt32LE(12);
   const data = JSON.parse(bytes.subarray(20, 20 + jsonLength).toString());
@@ -27,17 +27,33 @@ const appearance = (file: string) => {
       .update(binary.subarray(view.byteOffset ?? 0, (view.byteOffset ?? 0) + view.byteLength))
       .digest('hex');
   };
-  const accessor = (index: number) => {
+  const accessor = (index: number, semantic?: string) => {
     const value = data.accessors[index];
     return {
       type: value.type,
       count: value.count,
       componentType: value.componentType,
-      hash: viewHash(value.bufferView),
+      hash:
+        avatarOnly && (semantic === 'POSITION' || semantic === 'NORMAL')
+          ? 'compared-numerically-after-scene-placement'
+          : viewHash(value.bufferView),
     };
   };
+  const meshes = data.meshes.filter(
+    (_mesh: unknown, index: number) =>
+      !avatarOnly ||
+      data.nodes.some(
+        (node: { mesh?: number; skin?: number }) =>
+          node.mesh === index && node.skin !== undefined,
+      ),
+  );
+  const usedMaterials = new Set(
+    meshes.flatMap((mesh: { primitives: { material: number }[] }) =>
+      mesh.primitives.map((p) => p.material),
+    ),
+  );
   return {
-    meshes: data.meshes.map(
+    meshes: meshes.map(
       (mesh: {
         primitives: {
           attributes: Record<string, number>;
@@ -47,13 +63,15 @@ const appearance = (file: string) => {
       }) =>
         mesh.primitives.map((p) => ({
           attributes: Object.fromEntries(
-            Object.entries(p.attributes).map(([name, index]) => [name, accessor(index)]),
+            Object.entries(p.attributes).map(([name, index]) => [name, accessor(index, name)]),
           ),
           indices: accessor(p.indices),
           material: p.material,
         })),
     ),
-    materials: data.materials,
+    materials: data.materials.filter(
+      (_material: unknown, index: number) => !avatarOnly || usedMaterials.has(index),
+    ),
     images: data.images.map((image: { bufferView: number }) => viewHash(image.bufferView)),
     joints: data.skins.map((skin: { joints: number[] }) =>
       skin.joints.map((index) => data.nodes[index].name),
@@ -90,6 +108,77 @@ beforeAll(async () => {
       ),
     });
   }
+});
+
+it('el empuje reutiliza la apariencia y el rig de la bisagra; la pared es un prop aparte', () => {
+  expect(appearance('assets/runtime/wall-push-up-v1.glb', true)).toEqual(
+    appearance('assets/runtime/hip-hinge-v1.glb', true),
+  );
+  const skins = (id: string) => {
+    const meshes: SkinnedMesh[] = [];
+    loaded.get(id)!.gltf.scene.traverse((obj) => {
+      if (obj instanceof SkinnedMesh) meshes.push(obj);
+    });
+    return meshes.sort((a, b) => a.name.localeCompare(b.name));
+  };
+  const base = skins('hip-hinge');
+  const current = skins('wall-push-up');
+  expect(current.length).toBe(base.length);
+  // Placement at the floor edge is baked as a translation into the rest mesh.
+  // Applying it in Blender can change normal float rounding, not shape/weights.
+  current.forEach((mesh, index) => {
+    expect(mesh.name).toBe(base[index]!.name);
+    for (const key of ['position', 'normal']) {
+      const a = mesh.geometry.getAttribute(key);
+      const b = base[index]!.geometry.getAttribute(key);
+      let maxDifference = 0;
+      for (let i = 0; i < a.count; i++) {
+        const difference = new Vector3()
+          .fromBufferAttribute(a, i)
+          .sub(new Vector3().fromBufferAttribute(b, i));
+        if (key === 'position') difference.z -= 0.5959;
+        maxDifference = Math.max(maxDifference, difference.length());
+      }
+      // Unit-normal difference 0.001 is below 0.06 degrees; export recalculates
+      // normals after translating the same float32 rest vertices.
+      expect(maxDifference).toBeLessThan(key === 'position' ? 1e-6 : 0.001);
+    }
+  });
+});
+
+it('el empuje flexiona los codos y vuelve sin desplazar manos ni pies', () => {
+  const { gltf, driver } = loaded.get('wall-push-up')!;
+  const position = (name: string) =>
+    gltf.scene.getObjectByName(name)!.getWorldPosition(new Vector3());
+  const angle = (side: string) => {
+    const elbow = position('lowerarm_' + side);
+    return (
+      (position('upperarm_' + side)
+        .sub(elbow)
+        .angleTo(position('hand_' + side).sub(elbow)) *
+        180) /
+      Math.PI
+    );
+  };
+  driver.setTime(0);
+  const names = ['hand_l', 'hand_r', 'foot_l', 'foot_r', 'ball_l', 'ball_r'];
+  const initial = names.map(position);
+  const head = position('Head');
+  for (const side of ['l', 'r']) expect(angle(side)).toBeGreaterThan(150);
+  for (let time = 0; time <= 8000; time += 1000 / 60) {
+    driver.setTime(time);
+    names.forEach((name, i) =>
+      expect(position(name).distanceTo(initial[i]!)).toBeLessThan(0.001),
+    );
+  }
+  driver.setTime(3500);
+  for (const side of ['l', 'r']) {
+    expect(angle(side)).toBeLessThan(105);
+    expect(angle(side)).toBeGreaterThan(65);
+  }
+  expect(position('Head').z - head.z).toBeGreaterThan(0.2);
+  driver.setTime(8000);
+  expect(position('Head').distanceTo(head)).toBeLessThan(0.001);
 });
 
 it.each(catalog.entries)(

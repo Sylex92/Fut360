@@ -2,6 +2,21 @@
   "version": 1,
   "entries": [
     {
+      "exerciseId": "wall-push-up",
+      "patternId": "wall-push-up",
+      "manifest": "assets/manifests/wall-push-up-v1.json",
+      "exercise": "content/exercises/wall-push-up.json",
+      "source": "assets/source/wall-push-up/wall-push-up-v1.blend",
+      "supportedSides": [
+        "none"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-wall-and-browser",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase06-wall-push-up/wall-side-bottom.png"
+    },
+    {
       "exerciseId": "hip-hinge",
       "patternId": "hip-hinge",
       "manifest": "assets/manifests/hip-hinge-v1.json",
@@ -236,10 +251,13 @@
       "previousManifest": "assets/manifests/inside-outside-right-v1.json"
     }
   ],
-  "unresolved": [
+  "unresolved": [],
+  "contextualSubstitutions": [
     {
-      "patternId": "incline-push-up-chair",
-      "reason": "Dimensions, stability and footprint of the actual chair pending; no placeholder clip."
+      "originalPatternId": "incline-push-up-chair",
+      "replacementPatternId": "wall-push-up",
+      "reason": "Available wall confirmed by user; initial standing push example. Chair reported stable and resistant, not rejected. Different support and loading; historic workout fixture unchanged.",
+      "review": "docs/3d/INCLINE_PUSH_UP_AUTHORING_BRIEF.md"
     }
   ]
 }

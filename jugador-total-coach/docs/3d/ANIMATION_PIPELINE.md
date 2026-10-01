@@ -74,3 +74,15 @@ El validador general acepta versiones 1/2; por defecto mantiene 1 para no mezcla
 ## Entornos del producto
 
 MVP: suelo y referencias neutras 2×2, props simples reutilizados. Futuro: canchas de fut 5/7/11 como recursos separados. El entorno no define la autoridad del movimiento ni certifica realismo.
+
+## Empuje en pared de fase 06
+
+Soporte confirmado y selección contextual en [ficha de autoría](INCLINE_PUSH_UP_AUTHORING_BRIEF.md). Generar únicamente este recurso con las herramientas existentes:
+
+```powershell
+node tools/blender.mjs tools/build_wall_push_up.py
+node tools/review_movements.mjs --asset=wall-push-up --record-draft
+node tools/review_wall_contacts.mjs
+```
+
+El filtro --asset conserva informes históricos y registra la revisión en evidence/phase06-wall-push-up. Exportación finita de 8 s, 65 huesos, IK de brazos/piernas horneada. Pared propia en el límite de 2×2; cara exterior sin relleno para ver al avatar. Tras regenerar, actualizar/verificar sourceSha256 del manifiesto contra la fuente editable. Los ensayos de contactos miden 481 poses a 60 Hz: todos los vértices frente a la pared, proximidad de palmas/dedos por grupo dominante y suelas. Tolerancias gráficas documentadas; no fuerzas, equilibrio ni certificación deportiva. [Informe](../reviews/phase06-wall-push-up-review.md).

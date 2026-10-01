@@ -14,6 +14,23 @@ export interface MovementPreview {
 // Product instructions only; the documentary review is not imported into the app.
 export const movements: readonly MovementPreview[] = [
   {
+    id: 'wall-push-up',
+    name: 'Flexión contra la pared',
+    assetUrl: new URL('../../../../assets/runtime/wall-push-up-v1.glb', import.meta.url).href,
+    clipName: 'EX_wall-push-up__bilateral__v1',
+    durationMs: 8000,
+    framing: 'standing',
+    equipment: 'Pared firme y despejada',
+    preparation:
+      'Una repetición: acércate a la pared y empuja para volver. La vista lateral muestra el recorrido.',
+    cues: [
+      'De pie frente a la pared, apoya las palmas a la altura del pecho, con los dedos hacia arriba.',
+      'Flexiona los codos cerca del cuerpo y acércate de forma controlada.',
+      'Mantén el tronco alineado y los pies apoyados; respira sin contener el aire.',
+      'Empuja la pared para volver, sin dar un impulso ni forzar el recorrido.',
+    ],
+  },
+  {
     id: 'hip-hinge',
     name: 'Bisagra de cadera',
     assetUrl: new URL('../../../../assets/runtime/hip-hinge-v1.glb', import.meta.url).href,

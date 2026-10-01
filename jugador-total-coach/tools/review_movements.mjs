@@ -20,14 +20,20 @@ const reports = [];
 const recordDraft = process.argv.includes('--record-draft');
 const versionFilter =
   process.argv.find((a) => a.startsWith('--version='))?.split('=')[1] ?? '1';
+const assetFilter = process.argv.find((a) => a.startsWith('--asset='))?.split('=')[1];
+if (assetFilter && !/^[a-z0-9-]+$/.test(assetFilter)) throw new Error('Invalid asset name');
 if (!['1', '2'].includes(versionFilter)) throw new Error('Supported versions: 1 or 2');
-const reportDirectory =
-  versionFilter === '2'
+const reportDirectory = assetFilter
+  ? 'docs/reviews/evidence/phase06-' + assetFilter
+  : versionFilter === '2'
     ? 'docs/reviews/evidence/phase06-natural-motion'
     : 'docs/reviews/evidence/phase06';
 for (const name of readdirSync(resolve(root, 'assets/runtime'))
   .filter(
-    (n) => n.endsWith('.glb') && (!versionFilter || n.endsWith('-v' + versionFilter + '.glb')),
+    (n) =>
+      n.endsWith('.glb') &&
+      n.endsWith('-v' + versionFilter + '.glb') &&
+      (!assetFilter || n === assetFilter + '-v' + versionFilter + '.glb'),
   )
   .sort()) {
   const file = 'assets/runtime/' + name;
@@ -105,10 +111,12 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     'ankle-mobility',
     'slow-breathing',
     'glute-bridge',
+    'wall-push-up',
   ].includes(kind)
     ? ['foot_l', 'foot_r', 'ball_l', 'ball_r']
     : [];
   if (['glute-bridge', 'dead-bug'].includes(kind)) fixed.push('Head');
+  if (kind === 'wall-push-up') fixed.push('hand_l', 'hand_r');
   if (['lateral-sole-roll', 'inside-outside'].includes(kind)) {
     const support = variant === 'left' ? 'r' : 'l';
     fixed.push('foot_' + support, 'ball_' + support);
@@ -160,9 +168,11 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
       boundingBoxMeters: bounds,
       requiredProps: floor
         ? ['mat']
-        : gltf.scene.getObjectByName('TutorialBall')
-          ? ['ball']
-          : [],
+        : gltf.scene.getObjectByName('TutorialWall')
+          ? ['wall']
+          : gltf.scene.getObjectByName('TutorialBall')
+            ? ['ball']
+            : [],
       supportedSides: [
         ['left', 'right', 'alternate', 'alternating'].includes(variant)
           ? variant === 'alternating'
@@ -221,6 +231,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
   mixer.stopAllAction();
   mixer.uncacheRoot(gltf.scene);
 }
+if (!reports.length) throw new Error('No GLB matched the requested asset/version');
 mkdirSync(resolve(root, reportDirectory), { recursive: true });
 write(reportDirectory + '/asset-validation.json', {
   checkedAt: '2026-09-30',

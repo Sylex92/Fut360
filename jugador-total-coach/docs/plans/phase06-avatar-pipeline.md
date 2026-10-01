@@ -20,3 +20,12 @@ El empuje con silla depende de dimensiones, estabilidad y cabida no acreditadas 
 ## Continuación después de aceptar la cámara de pies
 
 El usuario confirma que ya ve el detalle y solicita avanzar. Registrar esa aceptación; conciliar `detail` en las cinco fichas con balón y en su esquema, porque el visor ya lo ofrece pero los datos aún solo declaran las tres vistas originales. Comprobar correspondencia entre ficha y vista mediante el contrato existente, sin modificar animaciones o reproducción. Preparar la ficha de autoría del único patrón sin clip (empuje con silla), manteniendo abiertos los datos reales del asiento y la comprobación móvil explícita, solicitados juntos. No fabricar medidas ni iniciar 07 mientras se resuelve el cierre de 06.
+
+## Empuje en pared — contexto resuelto y plan antes de autoría
+
+El usuario confirma pared despejada disponible y aclara que su silla sí es resistente y estable: la foto solo ilustra su forma. Registrar ambos hechos como declaración, sin desacreditar la silla por su material. La variante de pared se selecciona como ejemplo inicial del patrón de empuje con soporte disponible y postura de pie; no es una conclusión sobre incapacidad del usuario ni una equivalencia de carga con silla. Silla conservada como alternativa pendiente de geometría/agarre si se incorpora después. Computadora y Samsung ya aceptados para los recursos anteriores; no atribuir esa aceptación al nuevo clip.
+
+1. Producir `wall-push-up` con el mismo avatar/rig y Blender IK/bake/exportador. Palmas a altura de pecho, dedos arriba, flexión y extensión controladas, tronco alineado y pies apoyados, según NHS. Una repetición finita; duración de observación, sin dosis personal ni isometría prescrita.
+2. Usar un plano de pared propio como referencia visual, con vista a través de la cara exterior para conservar visibilidad frontal. Medir geometría de avatar y pared dentro de 2×2, contactos de manos/pies, separación de cara y pared, continuidad y retorno. No añadir solver, rig ni dependencia.
+3. Incorporar fuente editable/GLB/manifiesto/ficha, biblioteca y catálogo con ID explícito; mantener intacto el fixture histórico y todos los clips aceptados. Registrar reemplazo contextual del patrón de empuje, no una animación de silla bajo otro nombre.
+4. Comprobar con Khronos, geometría muestreada, pruebas del contrato y navegador: frontal/lateral/¾, pausa, cursor, final finito y encuadre estrecho. Registrar límites, hashes/licencias y revisión documental interna; actualizar estado. No habilitar sesión de 07.

@@ -1,0 +1,32 @@
+{
+  "assetId": "quaternius-wall-push-up-v1",
+  "version": 1,
+  "file": "assets/runtime/wall-push-up-v1.glb",
+  "sha256": "9826e9d1660ba734d9dbb8b4170e69442985ebf83efe1f2672172c6160bc4268",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_wall-push-up__bilateral__v1",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "wall-push-up-bilateral-start",
+  "endPose": "wall-push-up-bilateral-start",
+  "boundingBoxMeters": {
+    "min": [-0.7540000001899898, -0.0000017685681883035037, 0.3451787409455445],
+    "max": [0.7540000001899898, 1.903999976348132, 0.9999000350944698]
+  },
+  "requiredProps": ["wall"],
+  "supportedSides": ["none"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/wall-push-up/wall-push-up-v1.blend",
+  "sourceSha256": "f61f6a2dded63781fa8359723545626f575b4cb7106c3c4a2f71a0d6d8b26598",
+  "notes": [
+    "One finite wall press-up; 8 seconds of observation, not a personal exercise dose.",
+    "Wall availability confirmed by user. Chair reported resistant and stable; not rejected because of material.",
+    "Single-sided wall guide and perimeter; outside views remain unobstructed.",
+    "Same avatar translated 0.5959 m toward the wall boundary; no morphology, weights or material changes."
+  ]
+}

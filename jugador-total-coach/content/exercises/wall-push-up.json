@@ -1,0 +1,37 @@
+{
+  "id": "wall-push-up",
+  "version": 1,
+  "displayName": "Flexión contra la pared",
+  "categories": ["demostración de movimiento", "empuje"],
+  "goals": ["Observar el apoyo de palmas, flexión de codos y retorno en un empuje de pie"],
+  "space": { "widthM": 2, "lengthM": 2 },
+  "equipment": ["wall"],
+  "impact": "low",
+  "sidePolicy": "none",
+  "animation": {
+    "assetId": "quaternius-wall-push-up-v1",
+    "clipName": "EX_wall-push-up__bilateral__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter"]
+  },
+  "cues": [
+    "De pie frente a la pared, apoya las palmas a la altura del pecho, con los dedos hacia arriba.",
+    "Flexiona los codos cerca del cuerpo y acércate de forma controlada.",
+    "Mantén el tronco alineado y los pies apoyados; respira sin contener el aire.",
+    "Empuja la pared para volver, sin dar un impulso ni forzar el recorrido."
+  ],
+  "commonErrors": [
+    "Arquear o doblar el tronco para acercar la cara.",
+    "Separar las manos o deslizar los pies durante el empuje.",
+    "Dar un impulso o contener el aire."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Usa una pared firme y despejada y un suelo con buen agarre.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.",
+    "El recorrido, la cadencia y la repetición del avatar no determinan tu dosis personal."
+  ],
+  "reviewStatus": "draft"
+}

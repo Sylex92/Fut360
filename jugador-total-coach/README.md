@@ -1,6 +1,6 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-30. **Fase 06 en curso: biblioteca con quince ejemplos de once patrones.** Se reutilizan el avatar y las herramientas existentes. Falta el patrón de empuje: la referencia de silla plástica lleva a proponer una variante en pared, pendiente de confirmar ese soporte. Aún no es una rutina aprobada de una hora. 07–09 no autorizadas.
+Actualizado: 2026-09-30. **Fase 06 en curso: biblioteca con dieciséis ejemplos de doce patrones.** Se reutilizan el avatar y las herramientas existentes. Añadida «Flexión contra la pared», con soporte disponible confirmado. Pendiente de aceptación de claridad/funcionamiento del nuevo ejemplo; los anteriores ya se revisaron en computadora y Samsung. [Empuje y verificaciones](docs/reviews/phase06-wall-push-up-review.md). Aún no es una rutina aprobada de una hora. 07–09 no autorizadas.
 
 Corrección actual: nueve animaciones con coordinación de brazos, tronco y apoyos; mismo diseño del avatar. Marcha con seis pasos y campanitas con cuatro toques; variantes básicas sin saltos. [Cambios y verificación](docs/reviews/phase06-natural-motion-review.md). Al abrir la biblioteca se muestra la marcha para facilitar su revisión.
 
@@ -21,7 +21,7 @@ Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sir
 - «Pie y balón · fase 05» conserva demostración guiada y laboratorio Rapier separado. El laboratorio prueba contactos; no enseña una variante cuando el balón se desvía.
 - «Bisagra de cadera · fase 04» conserva su prueba de uno/cinco minutos con preparación y +30/+60 automáticos, pausa e inspector.
 
-179 pruebas, lint y tipos correctos; nueve GLB v2 pasan Khronos, además de la línea base anterior. La biblioteca selecciona quince ejemplos; el build conserva también las campanitas v1 para 05 (dieciséis GLB). Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. El usuario confirma revisión favorable de las animaciones corregidas y detalle de pies en computadora y Samsung; mantienen draft como contenido deportivo. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
+183 pruebas, lint y tipos correctos; nueve GLB v2 pasan Khronos, además de la línea base anterior. La biblioteca selecciona dieciséis ejemplos; el build conserva también las campanitas v1 para 05 (diecisiete GLB). Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. El usuario confirma revisión favorable de las animaciones corregidas y detalle de pies en computadora y Samsung; mantienen draft como contenido deportivo. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
 
 ## Decisiones vigentes
 

@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-09-30",
+  "checks": [
+    {
+      "name": "local asset loaded",
+      "passed": true
+    },
+    {
+      "name": "pause keeps cursor",
+      "passed": true,
+      "detail": 0.5828999999999999
+    },
+    {
+      "name": "Lateral preserves cursor",
+      "passed": true
+    },
+    {
+      "name": "Frontal preserves cursor",
+      "passed": true
+    },
+    {
+      "name": "Tres cuartos preserves cursor",
+      "passed": true
+    },
+    {
+      "name": "keyboard seek",
+      "passed": true,
+      "detail": 0.05
+    },
+    {
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "name": "half speed advances approximately 1 second",
+      "passed": true,
+      "detail": 1.0321500000000001
+    },
+    {
+      "name": "finite 8 second finish",
+      "passed": true
+    },
+    {
+      "name": "does not repeat automatically",
+      "passed": true
+    },
+    {
+      "name": "explicit replay restarts",
+      "passed": true
+    },
+    {
+      "name": "narrow layout has no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "buttons": [
+          {
+            "text": "Frontal",
+            "height": 44
+          },
+          {
+            "text": "Lateral",
+            "height": 44
+          },
+          {
+            "text": "Tres cuartos",
+            "height": 44
+          },
+          {
+            "text": "Reproducir ejemplo",
+            "height": 44
+          },
+          {
+            "text": "Volver al inicio",
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "name": "touch controls at least 44px",
+      "passed": true,
+      "detail": [
+        {
+          "text": "Frontal",
+          "height": 44
+        },
+        {
+          "text": "Lateral",
+          "height": 44
+        },
+        {
+          "text": "Tres cuartos",
+          "height": 44
+        },
+        {
+          "text": "Reproducir ejemplo",
+          "height": 44
+        },
+        {
+          "text": "Volver al inicio",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "feet camera remains available for ball",
+      "passed": true
+    },
+    {
+      "name": "wall has the three full body cameras",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no external network requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+  ],
+  "requests": [
+    "http://127.0.0.1:4173/",
+    "http://127.0.0.1:4173/assets/index-DY9uabG7.js",
+    "http://127.0.0.1:4173/assets/index-D20desse.css",
+    "http://127.0.0.1:4173/assets/ExerciseScene-CVH8oKhC.js",
+    "http://127.0.0.1:4173/assets/clip-driver-DbIMB3RF.js",
+    "http://127.0.0.1:4173/assets/wall-push-up-v1-2S8iMkso.glb",
+    "blob:http://127.0.0.1:4173/573f9746-ea1e-4b5c-81bf-5af858ee72b3",
+    "http://127.0.0.1:4173/assets/inside-inside-v2-B5JRSjv2.glb",
+    "blob:http://127.0.0.1:4173/80a3cebb-6e09-4d42-951a-57d4cf2ae930",
+    "blob:http://127.0.0.1:4173/eabbdf94-d908-41fc-9ae0-39f1df56c72e"
+  ],
+  "limits": "Desktop automation at 390px is not a Samsung hardware test. Previous user acceptance excludes this new clip."
+}
