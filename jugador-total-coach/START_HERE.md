@@ -6,6 +6,8 @@ Continuidad del proyecto ya abierto: leer [PROJECT_STATUS.md](PROJECT_STATUS.md)
 
 La guía siguiente describe el inicio original. Tras revisar los pendientes de 02 uno a uno, el usuario restablece el avance autónomo y pide interrumpir únicamente por preguntas indispensables. [Resultado de 02](docs/reviews/phase02-bootstrap-review.md): controles, teclado, ancho reducido y consola revisados manualmente por el usuario; captura conservada e inspeccionada por el agente. Puntos de control locales: 7ea6b02 y 2d3c993; cierre de 03 en b3fb216. Las autorizaciones posteriores están en PROJECT_STATUS. La evidencia visual previa no valida la pantalla nueva. No pedir confirmación de cada operación rutinaria del alcance vigente.
 
+Último seguimiento documental: [plan gradual](docs/training/GRADUAL_DEVELOPMENT_PLAN.md) y [siguiente contenido de 07](docs/plans/phase07-progressive-content.md). El usuario prepara la aplicación antes de entrenar. Las semanas propuestas no son una fecha garantizada de nivel profesional; no asumir acceso a datos médicos de otros chats ni guardarlos en Git. Continuar desde esas decisiones sin repetir los objetivos ya respondidos.
+
 ## 1. Preparación mínima
 Abre Codex de escritorio e inicia sesión con tu cuenta ChatGPT Pro. Para el proyecto usa un equipo/carpeta personal. Git es recomendado para guardar cambios; Node y Blender pueden esperar a las fases que los necesitan. Ver `docs/setup/WINDOWS.md`.
 

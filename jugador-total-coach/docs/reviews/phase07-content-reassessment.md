@@ -1,5 +1,7 @@
 # Fase 07 — revisión de repetición, dificultad y propósito
 
+Continuación del 2026-10-01: el usuario solicita plan gradual antes de entrenar. [Plan de desarrollo](../training/GRADUAL_DEVELOPMENT_PLAN.md), [fuentes y evaluación de los canales aportados](progressive-training-sources.md), [siguiente contenido de 07](../plans/phase07-progressive-content.md). Desarrollan las correcciones siguientes sin modificar todavía v2 ni cerrar la revisión de contenido.
+
 2026-10-01. Respuesta al usuario: el flujo parece correcto, pero los ejercicios se repiten mucho y resultan demasiado básicos para lo esperado. Se registra aceptación cualitativa del flujo, sin inferir una nueva prueba instrumental, dispositivos concretos ni aprobación del contenido deportivo. Esta revisión es interna; no se importa al portal. No inicia 08 ni modifica el programa servido.
 
 ## Dictamen del agente

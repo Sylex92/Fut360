@@ -4,6 +4,8 @@ Actualizado: 2026-10-01. **Fase 07 implementada y verificada técnicamente: sesi
 
 Recursos heredados de 06: nueve animaciones con coordinación de brazos, tronco y apoyos; mismo diseño del avatar. Marcha con seis pasos y campanitas con cuatro toques; variantes básicas sin saltos. [Cambios y verificación](docs/reviews/phase06-natural-motion-review.md). Al abrir la biblioteca se muestra la marcha para facilitar su revisión.
 
+Planificación ampliada solicitada el 2026-10-01: [desarrollo gradual de 24 semanas y horizonte de 52](docs/training/GRADUAL_DEVELOPMENT_PLAN.md), [fuentes y canales aportados](docs/reviews/progressive-training-sources.md) y [ruta de corrección de la hora](docs/plans/phase07-progressive-content.md). Propuesta condicionada a capacidades y contexto; no promesa de profesionalización ni programa anual implementado. La aplicación conserva v2 mientras se prepara el contenido siguiente.
+
 **Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 06](docs/reviews/phase06-pipeline-review.md), [fundamento interno por ejercicio](docs/training/PHASE06_DOCUMENTARY_REVIEW.md), [costo/reutilización](docs/reviews/phase06-cost-and-reuse.md), [recursos/licencias](ASSET_LICENSES.md). La investigación no aparece en la app. No se exige contratación externa para avanzar ni se atribuye revisión profesional a las fuentes.
 
 ## Ejecutar la aplicación
