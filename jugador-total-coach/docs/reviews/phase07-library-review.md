@@ -10,7 +10,7 @@ Dos GLB nuevos: interior, exterior y planta, izquierdo/derecho, 13,6 s, una secu
 
 ## Verificado
 
-- Blender 4.5.14 portable existente: `tools/build_ball_combination.py`, dos .blend editables y dos GLB de 926.652 bytes cada uno. Reutiliza clips v2 y herramientas existentes; no nuevo rig, física o dependencia.
+- Blender 4.5.14 portable existente: `tools/build_ball_combination.py`, dos .blend editables y GLB de 926.652 bytes (izquierdo) y 926.656 bytes (derecho). Reutiliza clips v2 y herramientas existentes; no nuevo rig, física o dependencia.
 - Khronos: cero errores/advertencias. 409 poses por lado a 30 Hz, 65 huesos, dentro de 2×2, continuidad, retorno y apoyos dentro de los umbrales del validador. [Izquierdo](evidence/phase07-library-left/asset-validation.json), [derecho](evidence/phase07-library-right/asset-validation.json).
 - Contactos: 409 muestras por lado; separación máxima durante contacto ≈6,95 mm, intersección mínima ≈0,01 mm. [Medición](evidence/phase07-library/ball-surface-check.json). Muestreo geométrico discreto, no dinámica biomecánica, fuerza o validación deportiva.
 - 227 pruebas correctas. Una prueba de hora real omitida por diseño del runner general, ya ejecutada históricamente y no repetida para esta entrega. Contratos de fichas/manifiestos/hashes, apariencia, apoyos y pausa/retorno cubren los nuevos recursos. La primera ejecución detectó formato incorrecto de `footballTransfer`; corregido antes de la ejecución final.
