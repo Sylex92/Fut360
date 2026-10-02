@@ -1,16 +1,16 @@
 # Desarrollo gradual: primer ciclo de 24 semanas y horizonte de 52
 
-2026-10-01. **Propuesta de planificación**, solicitada por el usuario para preparar la aplicación antes de entrenar. No es una orden de iniciar ahora ni una rutina personalizada ya validada. [Fuentes y límites](../reviews/progressive-training-sources.md), [traducción a la aplicación](../plans/phase07-progressive-content.md), [decisión permanente](../architecture/adr/0013-evidence-led-progression.md).
+Creado: 2026-10-01. Actualizado: 2026-10-02. **Propuesta de planificación**, solicitada por el usuario para preparar la aplicación antes de entrenar. No es una orden de iniciar ahora ni una rutina personalizada ya validada. [Fuentes y límites](../reviews/progressive-training-sources.md), [traducción a la aplicación](../plans/phase07-progressive-content.md), [decisión permanente](../architecture/adr/0013-evidence-led-progression.md). La ampliación incluye [cuatro funciones y varios entornos](ROLE_AND_ENVIRONMENT_PLAN.md) y [diseño/seguimiento conversacional dentro del producto](../product/ADAPTIVE_FOOTBALL_COACH_VISION.md).
 
-El perfil y los antecedentes individuales permanecen en conversación, fuera de Git. Hay contexto declarado sobre experiencia de juego, objetivos, espacio y material; faltan registros disponibles de antecedentes relevantes, evaluación de capacidades, calendario/formato de partidos y acceso a campo/compañeros. No se supone que estén en otro chat ni se infieren del aspecto del avatar. Se solicitaron solo esos datos necesarios; la planificación documental continúa mientras se aclaran.
+El perfil y los antecedentes individuales permanecen en conversación, fuera de Git. El usuario amplió el contexto y declaró acceso a cancha de cemento de fútbol rápido, césped natural y gimnasio, así como disposición a ajustar partidos/entrenamiento. No volver a preguntar por esos accesos ni por su objetivo. La frecuencia de fútbol citada anteriormente corresponde a actividad histórica; no representa carga actual confirmada. Faltan evaluación actual, restricciones relevantes aclaradas, equipo concreto y colaboradores/calendario sostenible. Se hizo una consulta clínica acotada, sin pedir pruebas físicas; la planificación continúa mientras se responde. No se presume acceso a estudios o diagnósticos de otros chats.
 
 ## 1. Meta y plazo que sí se pueden sostener
 
-Meta de trabajo: mejorar el rendimiento competitivo real, con un núcleo de mediocampista que recibe, conecta, progresa y ayuda a recuperar, conservando versatilidad para otros roles. Bellingham/Firmino orientan esa selección de capacidades; no se copian sus cargas, identidad ni programas privados. No se promete alcanzar su nivel ni un contrato profesional.
+Meta de trabajo: mejorar el rendimiento competitivo real en cuatro funciones explícitas: goleador, extremo con velocidad y gol, mediocentro y defensor. Se corrige el énfasis previo que podía reducir el objetivo a mediocampo: habrá una base común y bloques de énfasis según necesidad, sin intentar maximizar todos los roles cada día. Bellingham/Firmino orientan capacidades de juego; no se copian sus cargas, identidad ni programas privados. No se promete alcanzar su nivel ni un contrato profesional.
 
 Se eligen **24 semanas para un primer ciclo evaluable y 52 para un horizonte anual**. Cálculo de organización: 2 semanas de referencia inicial + 6 de adaptación/fundamentos exigentes + 8 de integración + 8 de transferencia competitiva = 24; después, 28 de ciclos de ajuste y competición = 52. Son ventanas de diseño para poder observar, corregir y volver a comprobar. No proceden de una fórmula que prediga el potencial de una persona.
 
-Las semanas empiezan al poder retomar actividad de forma adecuada, no en la fecha de este documento. Interrupciones y criterios no alcanzados desplazan el calendario. Dos semanas de entrada tampoco constituyen un protocolo universal de recuperación. La experiencia y los resultados pueden permitir comenzar algunas capacidades más adelante y mantener otras en adaptación.
+Las semanas empiezan al poder retomar actividad de forma adecuada, no en la fecha de este documento. Interrupciones y criterios no alcanzados desplazan el calendario. Dos semanas de entrada tampoco constituyen un protocolo universal de recuperación. Ante una interrupción relevante, la etapa de retorno puede necesitar otro plazo; recuperar participación no equivale a recuperar rendimiento competitivo. La experiencia y los resultados pueden permitir comenzar algunas capacidades más adelante y mantener otras en adaptación.
 
 En 8 semanas se revisará si hay una base y carga sostenibles; en 16, si lo practicado funciona ante presión; en 24, si hay mejora repetida en partidos; en 52, cuál es el nivel competitivo demostrado y el siguiente entorno apropiado. No hay base para dar una probabilidad o fecha de nivel semiprofesional/profesional. Para acercarse a ese estándar harán falta oportunidades de juego y evaluación en una competición identificable, no solo una puntuación doméstica.
 
@@ -79,9 +79,11 @@ Progresión: repetir condiciones, completar el rango con control en dos exposici
 
 Más adelante harán falta fuerza y potencia acordes al nivel buscado. El material existente puede bastar para empezar, pero no se promete que cubra indefinidamente la carga necesaria. Revisión concreta de equipo/costo antes de proponer una compra; no es una condición para terminar la planificación ni el MVP.
 
+Actualización del 2026-10-02: el acceso declarado a gimnasio amplía las opciones de tracción y resistencia graduable. Inventariar el equipo pertinente cuando se elija la variante; no asumir un gimnasio completo ni mantener artificialmente todas las tareas limitadas a bandas cortas. El menú y la banda de repeticiones anteriores son candidatos generales; no constituyen una pauta individual de retorno lista para ejecutarse.
+
 ## 6. Distribución semanal: encajar, no acumular
 
-La duración y dureza de los partidos, el formato y su separación importan más que contar únicamente días. El calendario siguiente es una **plantilla condicional**, no el calendario personal final.
+La duración y dureza de los partidos, el formato y su separación importan más que contar únicamente días. El calendario siguiente es una **plantilla condicional**, no el calendario personal final. La fila de cuatro jornadas describe un escenario posible/histórico, no la actividad actual del usuario. Primero se diseña el retorno; después se decide cuánta práctica y competición aporta al objetivo.
 
 | Situación de la semana | Decisión de planificación |
 |---|---|
@@ -113,10 +115,12 @@ Revisión breve cada dos semanas; comprobaciones más amplias al final de 8, 16 
 
 La planificación puede continuar mientras no se entrena. La vuelta física se decide por evolución y restricciones relevantes; F07 no permite usar solo «sin fiebre» como permiso. No hace falta una consulta profesional genérica para crear documentos/animaciones, pero una cuestión clínica concreta no se resolverá inventando datos o mediante el reproductor.
 
+Ampliación de criterio (F08–F10): síntomas respiratorios recurrentes o persistentes que limitan la participación requieren valorar la causa antes de fijar esfuerzo intenso. No asumir que todos los episodios tienen el mismo origen ni que «presión estable» acredita cifras normales. Si hay dificultad respiratoria importante o dolor torácico, corresponde atención urgente, no una prueba en la app. Esto es orientación para solicitar valoración, no diagnóstico ni una prohibición general de toda actividad. El asistente no interpreta el peso aislado como necesidad de adelgazar ni prescribe dieta o fármacos.
+
 Reservar recuperación y alimentación suficiente forma parte del plan. No se fija pérdida de peso, déficit calórico, suplementos ni dieta terapéutica sin contexto. Tampoco se infiere metabolismo o composición corporal a partir del objetivo futbolístico. El registro de peso, si después aporta una decisión útil, no será el indicador principal de progreso deportivo.
 
 ## 9. Estado de cierre de esta propuesta
 
-**Verificado:** fuentes/accesos descritos, límites de la hora actual y capacidades técnicas existentes de la aplicación. **Propuesto:** horizonte, etapas, menú, criterios y plantillas semanales. **Pendiente:** calendario personal, antecedentes realmente disponibles, nivel inicial, acceso de campo/compañeros, dosis final, recursos nuevos y transferencia real. No se requiere resolver todo para avanzar en diseño; sí los datos que cambien una prescripción individual antes de ponerla en práctica.
+**Verificado:** fuentes/accesos descritos, límites de la hora actual y capacidades técnicas existentes de la aplicación. Recursos/contexto declarados se distinguen de inspección o valoración profesional. **Propuesto:** horizonte, etapas, menú, criterios y plantillas semanales. **Pendiente:** restricciones relevantes, nivel inicial, equipo/colaboradores concretos, calendario sostenible, dosis final, recursos nuevos y transferencia real. No se requiere resolver todo para avanzar en diseño; sí los datos que cambien una prescripción individual antes de ponerla en práctica.
 
 La primera entrega de producto será una hora mejor justificada y explicada; el programa anual completo requiere evolución posterior del producto. No se mostrará una promesa de profesionalización, un perfil médico supuesto ni bibliografía técnica en el portal. No se ha modificado el entrenamiento servido por este documento.

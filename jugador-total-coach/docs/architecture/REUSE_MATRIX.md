@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Planificación conversacional — 2026-10-02
+
+Reutilizar dominio, compilador, motor, React, visor/rig y autoría Blender. Extender formato/catálogo y persistencia por entregas, sin construir otro reproductor ni editor de animación. La carencia verificada: el esquema v2 fija duración/bloques y la composición importa un workout al compilar; no existen conversación, perfil persistido ni planes longitudinales. [Visión y comprobaciones](../product/ADAPTIVE_FOOTBALL_COACH_VISION.md), [alternativas de integración](../reviews/conversational-coach-feasibility.md). No se han seleccionado dependencias ni creado adaptadores vacíos.
+
 ## Actualización de fase 07 — 2026-10-01
 
 La sesión completa reutiliza SessionEngine/SessionClock, React, Ajv, GLTFLoader/ClipDriver/AnimationMixer y las cámaras de 04–06. Precarga dieciséis recursos existentes para cambiar de ejercicio sin nueva red; solo un avatar/clip es visible y evalúa pose por instante. No cambia rig, geometría, física ni editor. La composición específica añade workout v2, resolución de lados/tiempos, instrucciones y timeline. Web Audio proporciona el aviso final local tras gesto; no hay archivo/servicio musical. [Costos y condiciones](../reviews/phase07-cost-and-reuse.md).

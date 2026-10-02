@@ -1,5 +1,7 @@
 # Matriz de costos por funcionalidad — fase 00
 
+Ampliación del 2026-10-02: [conversación dentro de Fut360](conversational-coach-feasibility.md). Se comparan importación desde este chat, reglas locales, integración elegible con plan de ChatGPT, modelo local y API ordinaria. No se aprueba proveedor ni gratuidad universal; la posibilidad documental de usar un plan no demuestra elegibilidad de Fut360/cuenta. El núcleo guardado debe seguir funcionando sin IA y ninguna vía autoriza publicar código, enviar salud personal o contratar pagos.
+
 Auditoría inicial: 2026-09-24. Repaso guiado y comprobación complementaria: 2026-09-25. Cubre VISION, EXTENSIBILITY, ROADMAP, PRD y FEATURE_COST_REVIEW, más los apoyos explicativos y la revisión de contenido discutidos con el usuario. Evaluación documental; ninguna función futura ni contratación queda autorizada.
 
 ## Cómo leerla

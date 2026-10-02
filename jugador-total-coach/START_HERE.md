@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+Continuidad del 2026-10-02: leer primero [PROJECT_STATUS](PROJECT_STATUS.md) y la [visión ampliada](docs/product/ADAPTIVE_FOOTBALL_COACH_VISION.md). El objetivo ya incluye creación conversacional de planes, explicación y seguimiento en varios entornos. Las referencias históricas a una hora fija describen el primer entregable; no descartan esa evolución. El plan anual, conversación y seguimiento no están implementados todavía.
+
 Este documento conserva la guía histórica desde cero del paquete v4. Desde el 2026-09-28 sí existe una base web de diagnóstico: consultar [desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md) y el estado actual antes de usar las instrucciones históricas. No combines carpetas anteriores.
 
 Continuidad del proyecto ya abierto: leer [PROJECT_STATUS.md](PROJECT_STATUS.md). Al 2026-10-01, 00–06 aceptadas con sus límites documentados; 07 implementada y verificada técnicamente, incluidas dos pruebas independientes de una hora real. El usuario considera correcto el flujo, pero cuestiona repetición/nivel: [revisión de contenido abierta](docs/reviews/phase07-content-reassessment.md). [Cierre de 06](docs/reviews/phase06-closeout.md), [informe de 07](docs/reviews/phase07-hour-review.md). No iniciar 08–09 ni repetir extracción, Git init o preparación global.

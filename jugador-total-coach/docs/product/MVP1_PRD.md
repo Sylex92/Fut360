@@ -1,5 +1,7 @@
 # PRD — MVP1: sesión 3D de 60 minutos en 2×2 m
 
+Actualización de visión del 2026-10-02: el usuario solicita [diseñar y seguir planes conversando desde la app](ADAPTIVE_FOOTBALL_COACH_VISION.md), con distintos objetivos, duraciones y entornos. Este PRD conserva el primer entregable y sus pruebas; sus exclusiones no son un veto permanente al producto ampliado. El planificador y la conversación todavía no están implementados.
+
 ## Resultado esperado
 
 Una PWA instalable reproduce una sesión fija de 60 minutos. El usuario puede seguir un avatar 3D y completar la sesión sin consultar una hoja externa.

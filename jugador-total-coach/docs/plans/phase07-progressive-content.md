@@ -2,6 +2,8 @@
 
 2026-10-01. Plan documental solicitado para preparar una progresión real; no ejecuta 08/09 ni implementa un planificador anual. Parte de la [reevaluación de v2](../reviews/phase07-content-reassessment.md), el [plan gradual](../training/GRADUAL_DEVELOPMENT_PLAN.md) y la [auditoría de fuentes](../reviews/progressive-training-sources.md).
 
+Ampliación del 2026-10-02: la [visión conversacional](../product/ADAPTIVE_FOOTBALL_COACH_VISION.md) y la [matriz por funciones/entorno](../training/ROLE_AND_ENVIRONMENT_PLAN.md) fijan el destino posterior. Mantener esta corrección de la hora como incremento concreto; no confundir disponibilidad deportiva histórica con actual ni limitar el catálogo futuro a mediocampo/casa. Nuevo formato necesario para duración libre: el esquema v2 actual fija 3600 s y seis bloques; incluso la tabla candidata de cinco bloques siguiente requiere un formato compatible nuevo, no solo cambiar su JSON.
+
 ## Problema y resultado buscado
 
 La hora v2 prueba reproducción y cobertura, pero repite contactos aislados y fuerza sin calibración. El usuario quiere desarrollar capacidades futbolísticas con una progresión comprensible. La siguiente versión deberá justificar cada reaparición, enlazar contactos reales y representar la variante que se pretende enseñar. Una lista más larga de animaciones no resuelve por sí sola el problema.
