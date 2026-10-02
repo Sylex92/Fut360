@@ -1,6 +1,6 @@
 # Fase 07 — sesión completa v2
 
-2026-10-01. Implementación y verificación técnica terminadas; pendiente la aceptación del nuevo flujo en computadora/Samsung. Autorizada al aceptar el empuje contra pared y solicitar continuar. [Plan previo al código](../plans/phase07-expand-hour.md), [cierre de 06](phase06-closeout.md). No se ejecuta 08–09.
+2026-10-01. Implementación y verificación técnica terminadas. El usuario posteriormente considera correcto el flujo y cuestiona la repetición/dificultad: [contenido reabierto](phase07-content-reassessment.md). Su mensaje no detalla dispositivos ni mediciones nuevas. Autorizada al aceptar el empuje contra pared y solicitar continuar. [Plan previo al código](../plans/phase07-expand-hour.md), [cierre de 06](phase06-closeout.md). No se ejecuta 08–09.
 
 ## Qué se entrega
 
@@ -39,7 +39,7 @@ Claridad de recursos aceptada cualitativamente en 06; la aceptación de pared qu
 
 ## Límites y pendientes concretos
 
-El usuario tiene una consulta pendiente de revisión breve del nuevo flujo en computadora/Samsung, sin solicitarle hacer los ejercicios ni esperar una hora. Pruebas a ancho 390 px y la aceptación anterior de clips no sustituyen esa comprobación física.
+El usuario responde favorablemente sobre el flujo y objeta la calidad de la rutina; no se le repite la pregunta funcional. No se infieren mediciones o dispositivos de ese mensaje. La prioridad es resolver la pertinencia, repetición y progresión del contenido conforme al seguimiento enlazado, antes de cerrar esta fase.
 
 Se conserva `draft`: las dosis son una propuesta documentada de familiarización, no una prescripción individual. No se ha observado al usuario entrenar ni se han medido tolerancia, aprendizaje o transferencia al campo. Tobillo de pie y pierna alterna son adaptaciones propias con los límites de sus fichas. No existe una obligación genérica de contratar revisor externo para avanzar; cualquier necesidad personal posterior debe plantearse con una razón concreta conforme a ADR 0012.
 

@@ -1,5 +1,7 @@
 # Revisión documental de la hora v2
 
+**Seguimiento 2026-10-01:** el usuario considera correcto el flujo, pero cuestiona repetición y nivel excesivamente básico. [Reevaluación del contenido](../reviews/phase07-content-reassessment.md): esta propuesta de familiarización no acredita una dosis adecuada al objetivo; revisar progresión, distribución y nivel antes de dar el programa por aceptado. El texto siguiente conserva la justificación original y sus límites, no una aprobación posterior.
+
 2026-10-01. Documento interno; no se importa a la app. [Workout independiente](../../content/workouts/mvp1-60min-v2.json), [generador explícito](../../tools/build_workout_v2.mjs). Conserva el fixture v1 de 31 IDs sin renombrarlo ni convertir sus cargas. Selección y dosis propuestas por el agente conforme a la delegación del usuario; no revisión profesional ni prescripción individual.
 
 ## Fundamento y límites
