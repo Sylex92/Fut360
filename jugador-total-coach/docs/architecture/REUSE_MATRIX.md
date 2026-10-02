@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Actualización de fase 07 — 2026-10-01
+
+La sesión completa reutiliza SessionEngine/SessionClock, React, Ajv, GLTFLoader/ClipDriver/AnimationMixer y las cámaras de 04–06. Precarga dieciséis recursos existentes para cambiar de ejercicio sin nueva red; solo un avatar/clip es visible y evalúa pose por instante. No cambia rig, geometría, física ni editor. La composición específica añade workout v2, resolución de lados/tiempos, instrucciones y timeline. Web Audio proporciona el aviso final local tras gesto; no hay archivo/servicio musical. [Costos y condiciones](../reviews/phase07-cost-and-reuse.md).
+
 Decisiones iniciales y evidencias añadidas por fase. El inventario instalado está en los informes de 02/04. Repaso documental del 2026-09-25: véase la [auditoría de reutilización](../reviews/reuse-audit.md), con criterios de elección, límites de edición y recorrido del primer gesto.
 
 | Necesidad | Reutilizar | Trabajo propio permitido |

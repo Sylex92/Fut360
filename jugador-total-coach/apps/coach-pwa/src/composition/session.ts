@@ -36,6 +36,7 @@ export function prepareSession(
   sessionId: string,
   now: () => number,
   visible = true,
+  testRate = 1,
 ): SessionClock {
   const engine = new SessionEngine(sessionId);
   engine.send({
@@ -50,5 +51,5 @@ export function prepareSession(
     expectedControlRevision: engine.project().controlRevision,
     action: { type: 'PreparationSucceeded', plan },
   });
-  return new SessionClock(engine, now, visible);
+  return new SessionClock(engine, now, visible, testRate);
 }

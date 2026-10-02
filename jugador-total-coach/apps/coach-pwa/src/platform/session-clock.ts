@@ -12,7 +12,9 @@ export class SessionClock {
     readonly engine: SessionEngine,
     private readonly now: () => number,
     private visible = true,
+    private readonly testRate = 1,
   ) {
+    if (![1, 60].includes(testRate)) throw new Error('Velocidad de prueba no admitida.');
     this.sample();
   }
 
@@ -38,7 +40,7 @@ export class SessionClock {
     } else if (delta > 2000) {
       this.resumeOnVisible = false;
       this.engine.interrupt('clock-gap', delta);
-    } else this.engine.advance(delta);
+    } else this.engine.advance(delta * this.testRate);
     return this.engine.project();
   }
   dispatch(action: SessionAction, observed = this.engine.project()): CommandResult {

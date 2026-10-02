@@ -13,7 +13,7 @@
       "technicalReview": "agent-checked-geometry-supports-wall-and-browser",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-2026-10-01",
       "visualEvidence": "docs/reviews/evidence/phase06-wall-push-up/wall-side-bottom.png"
     },
     {
@@ -59,7 +59,7 @@
       "technicalReview": "agent-checked-cpu-and-browser-poses",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-in-phase06",
       "visualEvidence": "docs/reviews/evidence/phase06/previews/glute-bridge-review.png"
     },
     {
@@ -106,7 +106,7 @@
       "technicalReview": "agent-checked-cpu-and-browser-poses",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-in-phase06",
       "visualEvidence": "docs/reviews/evidence/phase06/previews/ankle-mobility-left-review.png"
     },
     {
@@ -121,7 +121,7 @@
       "technicalReview": "agent-checked-cpu-and-browser-poses",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-in-phase06",
       "visualEvidence": "docs/reviews/evidence/phase06/previews/ankle-mobility-right-review.png"
     },
     {
@@ -168,7 +168,7 @@
       "technicalReview": "agent-checked-cpu-and-browser-poses",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-in-phase06",
       "visualEvidence": "docs/reviews/evidence/phase06/previews/dead-bug-review.png"
     },
     {
@@ -183,7 +183,7 @@
       "technicalReview": "agent-checked-cpu-and-browser-poses",
       "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
       "coachingReview": "not-claimed",
-      "humanReview": "pending",
+      "humanReview": "clarity-accepted-by-user-in-phase06",
       "visualEvidence": "docs/reviews/evidence/phase06/previews/slow-breathing-review.png"
     },
     {

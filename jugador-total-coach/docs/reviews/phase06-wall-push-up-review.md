@@ -1,5 +1,7 @@
 # Fase 06 — flexión contra la pared
 
+**Seguimiento 2026-10-01:** el usuario confirma que se entiende y visualiza bien y solicita continuar. Cierra la aceptación de claridad del recurso; no se atribuyen nuevas mediciones ni revisión profesional. [Cierre de 06](phase06-closeout.md). Los pendientes descritos abajo corresponden al estado histórico anterior.
+
 2026-09-30. Se incorpora el duodécimo patrón: biblioteca de dieciséis ejemplos, diecisiete GLB en el build al conservar campanitas v1 para 05. **Comprobado técnicamente; pendiente de aceptación visual/funcional del nuevo clip por el usuario.** No se inicia 07 ni se ofrece una rutina completa.
 
 ## Contexto y decisión

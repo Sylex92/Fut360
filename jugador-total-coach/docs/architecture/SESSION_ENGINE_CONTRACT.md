@@ -1,5 +1,7 @@
 # Contrato del motor de sesión
 
+Actualización de 07 — 2026-10-01: sesión v2 compilada a 52 ocurrencias explícitas y 3.600.000 ms. La máquina de estados no cambia. El adaptador conserva por defecto factor 1; solo el modo de ensayo visible `?e2e=1` usa factor 60 **después** de comprobar el delta real y su límite de 2000 ms. No transforma un hueco no observado en tiempo acreditado. Inspector y sonido ya implementados; recuperación durable pertenece a 08. [Informe de 07](../reviews/phase07-hour-review.md).
+
 Diseño: 2026-09-27. Actualización: 2026-09-28. Motor temporal y adaptador implementados en 03 con milisegundos enteros y conversión única del fixture. [Cierre, cobertura y límites](../reviews/phase03-session-engine-review.md): pruebas automáticas correctas, reporte manual favorable de avance/botones/consola/Tab/ancho y captura inspeccionada. Inspector, avatar, audio y recuperación durable siguen previstos para sus fases. Los nombres siguientes expresan el contrato; la API concreta está en domain/session.ts y session-engine.
 
 ## Autoridad y programa

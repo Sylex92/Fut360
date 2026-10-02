@@ -2,7 +2,7 @@
 
 Este documento conserva la guía histórica desde cero del paquete v4. Desde el 2026-09-28 sí existe una base web de diagnóstico: consultar [desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md) y el estado actual antes de usar las instrucciones históricas. No combines carpetas anteriores.
 
-Continuidad del proyecto ya abierto: leer [PROJECT_STATUS.md](PROJECT_STATUS.md). 00–03 aceptadas como base; 04 autorizada e implementada, incluido Blender portable, con [resultado y pendientes visuales/humanos](docs/reviews/phase04-vertical-slice-review.md). Completar 04 sin iniciar 05–09. No repetir extracción, Git init ni preparación global.
+Continuidad del proyecto ya abierto: leer [PROJECT_STATUS.md](PROJECT_STATUS.md). Al 2026-10-01, 00–06 aceptadas con sus límites documentados; 07 implementada y verificada técnicamente, incluidas dos pruebas independientes de una hora real. Pendiente aceptación del nuevo flujo en computadora/Samsung. [Cierre de 06](docs/reviews/phase06-closeout.md), [informe de 07](docs/reviews/phase07-hour-review.md). No iniciar 08–09 ni repetir extracción, Git init o preparación global.
 
 La guía siguiente describe el inicio original. Tras revisar los pendientes de 02 uno a uno, el usuario restablece el avance autónomo y pide interrumpir únicamente por preguntas indispensables. [Resultado de 02](docs/reviews/phase02-bootstrap-review.md): controles, teclado, ancho reducido y consola revisados manualmente por el usuario; captura conservada e inspeccionada por el agente. Puntos de control locales: 7ea6b02 y 2d3c993; cierre de 03 en b3fb216. Las autorizaciones posteriores están en PROJECT_STATUS. La evidencia visual previa no valida la pantalla nueva. No pedir confirmación de cada operación rutinaria del alcance vigente.
 

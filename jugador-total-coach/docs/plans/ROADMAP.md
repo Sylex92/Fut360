@@ -38,6 +38,10 @@ Antes de adaptar animaciones: Blender, cuando los assets y el pipeline lo requie
 
 00–04 aceptadas como base con sus límites. 05 autorizada, implementada y verificada técnicamente; el usuario confirma funcionamiento en computadora/Samsung y reconoce el nuevo ejemplo como campanitas. Se aclara el propósito del laboratorio, cuya trayectoria no enseña un control orientado. [Informe](../reviews/phase05-contact-review.md). No avanzar automáticamente a 06–09. PROJECT_STATUS es la referencia vigente; la tabla de fases sigue describiendo el plan global.
 
-## Punto vigente de 06 — 2026-09-30
+## Punto histórico de 06 — 2026-09-30
 
 06 autorizada: once patrones/quince ejemplos producidos y revisados técnicamente, incluidos nueve recursos v2. Usuario confirma movimientos corregidos y detalle de pies en computadora/Samsung; fundamento exclusivamente documental según ADR 0012. Empuje en pared producido tras confirmar disponibilidad: ahora doce patrones/dieciséis ejemplos. Silla también declarada resistente/estable; no descartada por su material. Nuevo clip pendiente de aceptación visual/funcional; 183 pruebas y verificación geométrica/navegador correctas. No iniciar 07–09. [Informe y pendientes](../reviews/phase06-pipeline-review.md).
+
+## Punto vigente de 07 — 2026-10-01
+
+El usuario acepta claridad/visualización de pared y solicita continuar. [06 cerrada](../reviews/phase06-closeout.md); [07 autorizada](phase07-expand-hour.md), implementada y verificada técnicamente con dos pruebas independientes de una hora real. Seis bloques, 52 intervalos, todos los recursos existentes, sin nuevas dependencias ni cambios de assets. [Informe y evidencia](../reviews/phase07-hour-review.md). Pendiente aceptación del nuevo flujo en computadora/Samsung; la aceptación anterior no sustituye probar este nuevo recorrido. No iniciar 08–09.

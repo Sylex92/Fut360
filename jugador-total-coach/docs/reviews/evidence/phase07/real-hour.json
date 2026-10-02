@@ -1,0 +1,1004 @@
+{
+  "startedAt": "2026-10-01T23:37:42.682Z",
+  "endedAt": "2026-10-02T00:37:42.739Z",
+  "scope": "Node SessionClock + SessionEngine, real monotonic clock; no browser/rendering or exercise performed",
+  "playbackRate": 1,
+  "workoutSha256": "8c85206966ac42b7a66b86044acea09d145ad3f03d8568d664a8b6d351d6d367",
+  "elapsedMs": 3600055.6089999997,
+  "maximumSampleGapMs": 80.10499999998137,
+  "transitions": [
+    {
+      "elapsedMs": 62.30880000000002,
+      "current": "warmup-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 3599938
+    },
+    {
+      "elapsedMs": 15060.493,
+      "current": "warmup-1",
+      "phase": "work",
+      "baseRemainingMs": 3584940
+    },
+    {
+      "elapsedMs": 55016.6039,
+      "current": "warmup-1",
+      "phase": "rest",
+      "baseRemainingMs": 3544983
+    },
+    {
+      "elapsedMs": 60011.6811,
+      "current": "warmup-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 3539988
+    },
+    {
+      "elapsedMs": 75023.68789999999,
+      "current": "warmup-2",
+      "phase": "work",
+      "baseRemainingMs": 3524976
+    },
+    {
+      "elapsedMs": 110017.44799999999,
+      "current": "warmup-2",
+      "phase": "rest",
+      "baseRemainingMs": 3489983
+    },
+    {
+      "elapsedMs": 120053.0321,
+      "current": "warmup-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 3479947
+    },
+    {
+      "elapsedMs": 135017.6621,
+      "current": "warmup-3",
+      "phase": "work",
+      "baseRemainingMs": 3464982
+    },
+    {
+      "elapsedMs": 170031.0032,
+      "current": "warmup-3",
+      "phase": "rest",
+      "baseRemainingMs": 3429969
+    },
+    {
+      "elapsedMs": 180031.9081,
+      "current": "warmup-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 3419968
+    },
+    {
+      "elapsedMs": 195030.9115,
+      "current": "warmup-4",
+      "phase": "work",
+      "baseRemainingMs": 3404969
+    },
+    {
+      "elapsedMs": 229999.706,
+      "current": "warmup-4",
+      "phase": "rest",
+      "baseRemainingMs": 3370000
+    },
+    {
+      "elapsedMs": 240049.6819,
+      "current": "warmup-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 3359950
+    },
+    {
+      "elapsedMs": 255048.0435,
+      "current": "warmup-5",
+      "phase": "work",
+      "baseRemainingMs": 3344952
+    },
+    {
+      "elapsedMs": 295051.7795,
+      "current": "warmup-5",
+      "phase": "rest",
+      "baseRemainingMs": 3304948
+    },
+    {
+      "elapsedMs": 300026.0615,
+      "current": "warmup-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 3299974
+    },
+    {
+      "elapsedMs": 315012.4843,
+      "current": "warmup-6",
+      "phase": "work",
+      "baseRemainingMs": 3284988
+    },
+    {
+      "elapsedMs": 345018.8414,
+      "current": "warmup-6",
+      "phase": "rest",
+      "baseRemainingMs": 3254981
+    },
+    {
+      "elapsedMs": 360044.9698,
+      "current": "warmup-7",
+      "phase": "demonstration",
+      "baseRemainingMs": 3239955
+    },
+    {
+      "elapsedMs": 380051.8531,
+      "current": "warmup-7",
+      "phase": "work",
+      "baseRemainingMs": 3219948
+    },
+    {
+      "elapsedMs": 400059.3714,
+      "current": "warmup-7",
+      "phase": "rest",
+      "baseRemainingMs": 3199941
+    },
+    {
+      "elapsedMs": 420041.40009999997,
+      "current": "warmup-8",
+      "phase": "demonstration",
+      "baseRemainingMs": 3179959
+    },
+    {
+      "elapsedMs": 440000.7169,
+      "current": "warmup-8",
+      "phase": "work",
+      "baseRemainingMs": 3159999
+    },
+    {
+      "elapsedMs": 460007.146,
+      "current": "warmup-8",
+      "phase": "rest",
+      "baseRemainingMs": 3139993
+    },
+    {
+      "elapsedMs": 480060.5585,
+      "current": "ball-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 3119940
+    },
+    {
+      "elapsedMs": 495017.7206,
+      "current": "ball-1",
+      "phase": "work",
+      "baseRemainingMs": 3104982
+    },
+    {
+      "elapsedMs": 525057.2102000001,
+      "current": "ball-1",
+      "phase": "rest",
+      "baseRemainingMs": 3074943
+    },
+    {
+      "elapsedMs": 540049.3864000001,
+      "current": "ball-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 3059951
+    },
+    {
+      "elapsedMs": 555062.2465,
+      "current": "ball-2",
+      "phase": "work",
+      "baseRemainingMs": 3044938
+    },
+    {
+      "elapsedMs": 585015.2418000001,
+      "current": "ball-2",
+      "phase": "rest",
+      "baseRemainingMs": 3014985
+    },
+    {
+      "elapsedMs": 600050.7568000001,
+      "current": "ball-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 2999949
+    },
+    {
+      "elapsedMs": 615040.5405,
+      "current": "ball-3",
+      "phase": "work",
+      "baseRemainingMs": 2984960
+    },
+    {
+      "elapsedMs": 645022.3315000001,
+      "current": "ball-3",
+      "phase": "rest",
+      "baseRemainingMs": 2954978
+    },
+    {
+      "elapsedMs": 660029.0525000001,
+      "current": "ball-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 2939971
+    },
+    {
+      "elapsedMs": 675052.1715,
+      "current": "ball-4",
+      "phase": "work",
+      "baseRemainingMs": 2924948
+    },
+    {
+      "elapsedMs": 705045.3355,
+      "current": "ball-4",
+      "phase": "rest",
+      "baseRemainingMs": 2894955
+    },
+    {
+      "elapsedMs": 720002.8815,
+      "current": "ball-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 2879997
+    },
+    {
+      "elapsedMs": 735018.7567,
+      "current": "ball-5",
+      "phase": "work",
+      "baseRemainingMs": 2864981
+    },
+    {
+      "elapsedMs": 765008.1603000001,
+      "current": "ball-5",
+      "phase": "rest",
+      "baseRemainingMs": 2834992
+    },
+    {
+      "elapsedMs": 780039.4001000001,
+      "current": "ball-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 2819961
+    },
+    {
+      "elapsedMs": 795058.2804,
+      "current": "ball-6",
+      "phase": "work",
+      "baseRemainingMs": 2804942
+    },
+    {
+      "elapsedMs": 825053.258,
+      "current": "ball-6",
+      "phase": "rest",
+      "baseRemainingMs": 2774947
+    },
+    {
+      "elapsedMs": 840003.2317,
+      "current": "ball-7",
+      "phase": "demonstration",
+      "baseRemainingMs": 2759997
+    },
+    {
+      "elapsedMs": 855022.3963,
+      "current": "ball-7",
+      "phase": "work",
+      "baseRemainingMs": 2744978
+    },
+    {
+      "elapsedMs": 885054.9719,
+      "current": "ball-7",
+      "phase": "rest",
+      "baseRemainingMs": 2714945
+    },
+    {
+      "elapsedMs": 900048.8067000001,
+      "current": "ball-8",
+      "phase": "demonstration",
+      "baseRemainingMs": 2699951
+    },
+    {
+      "elapsedMs": 915038.6304,
+      "current": "ball-8",
+      "phase": "work",
+      "baseRemainingMs": 2684961
+    },
+    {
+      "elapsedMs": 945034.4063,
+      "current": "ball-8",
+      "phase": "rest",
+      "baseRemainingMs": 2654966
+    },
+    {
+      "elapsedMs": 960012.5494,
+      "current": "ball-9",
+      "phase": "demonstration",
+      "baseRemainingMs": 2639988
+    },
+    {
+      "elapsedMs": 975017.3214,
+      "current": "ball-9",
+      "phase": "work",
+      "baseRemainingMs": 2624983
+    },
+    {
+      "elapsedMs": 1005007.6761,
+      "current": "ball-9",
+      "phase": "rest",
+      "baseRemainingMs": 2594992
+    },
+    {
+      "elapsedMs": 1020055.4631,
+      "current": "ball-10",
+      "phase": "demonstration",
+      "baseRemainingMs": 2579945
+    },
+    {
+      "elapsedMs": 1035015.4778000001,
+      "current": "ball-10",
+      "phase": "work",
+      "baseRemainingMs": 2564985
+    },
+    {
+      "elapsedMs": 1065005.7485,
+      "current": "ball-10",
+      "phase": "rest",
+      "baseRemainingMs": 2534994
+    },
+    {
+      "elapsedMs": 1080001.7899,
+      "current": "ball-11",
+      "phase": "demonstration",
+      "baseRemainingMs": 2519998
+    },
+    {
+      "elapsedMs": 1095019.196,
+      "current": "ball-11",
+      "phase": "work",
+      "baseRemainingMs": 2504981
+    },
+    {
+      "elapsedMs": 1125006.0548,
+      "current": "ball-11",
+      "phase": "rest",
+      "baseRemainingMs": 2474994
+    },
+    {
+      "elapsedMs": 1140055.6614,
+      "current": "ball-12",
+      "phase": "demonstration",
+      "baseRemainingMs": 2459944
+    },
+    {
+      "elapsedMs": 1155007.8802,
+      "current": "ball-12",
+      "phase": "work",
+      "baseRemainingMs": 2444992
+    },
+    {
+      "elapsedMs": 1185031.5942000002,
+      "current": "ball-12",
+      "phase": "rest",
+      "baseRemainingMs": 2414969
+    },
+    {
+      "elapsedMs": 1200028.1463000001,
+      "current": "orientation-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 2399972
+    },
+    {
+      "elapsedMs": 1215048.3851,
+      "current": "orientation-1",
+      "phase": "work",
+      "baseRemainingMs": 2384952
+    },
+    {
+      "elapsedMs": 1245004.048,
+      "current": "orientation-1",
+      "phase": "rest",
+      "baseRemainingMs": 2354996
+    },
+    {
+      "elapsedMs": 1260019.6886,
+      "current": "orientation-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 2339980
+    },
+    {
+      "elapsedMs": 1280030.0732,
+      "current": "orientation-2",
+      "phase": "work",
+      "baseRemainingMs": 2319970
+    },
+    {
+      "elapsedMs": 1300007.5477,
+      "current": "orientation-2",
+      "phase": "rest",
+      "baseRemainingMs": 2299993
+    },
+    {
+      "elapsedMs": 1320046.5808,
+      "current": "orientation-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 2279954
+    },
+    {
+      "elapsedMs": 1335046.6733000001,
+      "current": "orientation-3",
+      "phase": "work",
+      "baseRemainingMs": 2264953
+    },
+    {
+      "elapsedMs": 1365058.2215,
+      "current": "orientation-3",
+      "phase": "rest",
+      "baseRemainingMs": 2234942
+    },
+    {
+      "elapsedMs": 1380050.6369,
+      "current": "orientation-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 2219949
+    },
+    {
+      "elapsedMs": 1400037.4145,
+      "current": "orientation-4",
+      "phase": "work",
+      "baseRemainingMs": 2199963
+    },
+    {
+      "elapsedMs": 1420027.2516,
+      "current": "orientation-4",
+      "phase": "rest",
+      "baseRemainingMs": 2179973
+    },
+    {
+      "elapsedMs": 1440026.5067,
+      "current": "orientation-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 2159974
+    },
+    {
+      "elapsedMs": 1455030.3289,
+      "current": "orientation-5",
+      "phase": "work",
+      "baseRemainingMs": 2144970
+    },
+    {
+      "elapsedMs": 1485020.4421,
+      "current": "orientation-5",
+      "phase": "rest",
+      "baseRemainingMs": 2114980
+    },
+    {
+      "elapsedMs": 1500024.5524000002,
+      "current": "orientation-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 2099976
+    },
+    {
+      "elapsedMs": 1520002.129,
+      "current": "orientation-6",
+      "phase": "work",
+      "baseRemainingMs": 2079998
+    },
+    {
+      "elapsedMs": 1540048.4515,
+      "current": "orientation-6",
+      "phase": "rest",
+      "baseRemainingMs": 2059952
+    },
+    {
+      "elapsedMs": 1560031.6919,
+      "current": "orientation-7",
+      "phase": "demonstration",
+      "baseRemainingMs": 2039968
+    },
+    {
+      "elapsedMs": 1575024.7097,
+      "current": "orientation-7",
+      "phase": "work",
+      "baseRemainingMs": 2024975
+    },
+    {
+      "elapsedMs": 1605016.3741000001,
+      "current": "orientation-7",
+      "phase": "rest",
+      "baseRemainingMs": 1994984
+    },
+    {
+      "elapsedMs": 1620045.5149,
+      "current": "orientation-8",
+      "phase": "demonstration",
+      "baseRemainingMs": 1979955
+    },
+    {
+      "elapsedMs": 1640035.4891000001,
+      "current": "orientation-8",
+      "phase": "work",
+      "baseRemainingMs": 1959965
+    },
+    {
+      "elapsedMs": 1660039.8965,
+      "current": "orientation-8",
+      "phase": "rest",
+      "baseRemainingMs": 1939960
+    },
+    {
+      "elapsedMs": 1680014.7876000002,
+      "current": "orientation-9",
+      "phase": "demonstration",
+      "baseRemainingMs": 1919985
+    },
+    {
+      "elapsedMs": 1695021.6399,
+      "current": "orientation-9",
+      "phase": "work",
+      "baseRemainingMs": 1904978
+    },
+    {
+      "elapsedMs": 1725049.6905,
+      "current": "orientation-9",
+      "phase": "rest",
+      "baseRemainingMs": 1874950
+    },
+    {
+      "elapsedMs": 1740057.8660000002,
+      "current": "orientation-10",
+      "phase": "demonstration",
+      "baseRemainingMs": 1859942
+    },
+    {
+      "elapsedMs": 1755019.1225,
+      "current": "orientation-10",
+      "phase": "work",
+      "baseRemainingMs": 1844981
+    },
+    {
+      "elapsedMs": 1785062.5553000001,
+      "current": "orientation-10",
+      "phase": "rest",
+      "baseRemainingMs": 1814938
+    },
+    {
+      "elapsedMs": 1800048.1981000002,
+      "current": "physical-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 1799952
+    },
+    {
+      "elapsedMs": 1820033.7283,
+      "current": "physical-1",
+      "phase": "work",
+      "baseRemainingMs": 1779966
+    },
+    {
+      "elapsedMs": 1860018.2861000001,
+      "current": "physical-1",
+      "phase": "rest",
+      "baseRemainingMs": 1739982
+    },
+    {
+      "elapsedMs": 1920056.9596,
+      "current": "physical-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 1679943
+    },
+    {
+      "elapsedMs": 1940048.3024000002,
+      "current": "physical-2",
+      "phase": "work",
+      "baseRemainingMs": 1659952
+    },
+    {
+      "elapsedMs": 1980049.0697,
+      "current": "physical-2",
+      "phase": "rest",
+      "baseRemainingMs": 1619951
+    },
+    {
+      "elapsedMs": 2040059.7106,
+      "current": "physical-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 1559940
+    },
+    {
+      "elapsedMs": 2060000.3944,
+      "current": "physical-3",
+      "phase": "work",
+      "baseRemainingMs": 1540000
+    },
+    {
+      "elapsedMs": 2100041.6154,
+      "current": "physical-3",
+      "phase": "rest",
+      "baseRemainingMs": 1499958
+    },
+    {
+      "elapsedMs": 2160021.5675,
+      "current": "physical-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 1439979
+    },
+    {
+      "elapsedMs": 2180053.5171,
+      "current": "physical-4",
+      "phase": "work",
+      "baseRemainingMs": 1419947
+    },
+    {
+      "elapsedMs": 2220019.9650999997,
+      "current": "physical-4",
+      "phase": "rest",
+      "baseRemainingMs": 1379980
+    },
+    {
+      "elapsedMs": 2280034.8822999997,
+      "current": "physical-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 1319965
+    },
+    {
+      "elapsedMs": 2300024.4214,
+      "current": "physical-5",
+      "phase": "work",
+      "baseRemainingMs": 1299976
+    },
+    {
+      "elapsedMs": 2340002.616,
+      "current": "physical-5",
+      "phase": "rest",
+      "baseRemainingMs": 1259997
+    },
+    {
+      "elapsedMs": 2400002.9808,
+      "current": "physical-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 1199997
+    },
+    {
+      "elapsedMs": 2420048.0925999996,
+      "current": "physical-6",
+      "phase": "work",
+      "baseRemainingMs": 1179952
+    },
+    {
+      "elapsedMs": 2460021.3246999998,
+      "current": "physical-6",
+      "phase": "rest",
+      "baseRemainingMs": 1139979
+    },
+    {
+      "elapsedMs": 2520015.2843,
+      "current": "physical-7",
+      "phase": "demonstration",
+      "baseRemainingMs": 1079985
+    },
+    {
+      "elapsedMs": 2580006.5653,
+      "current": "physical-7",
+      "phase": "work",
+      "baseRemainingMs": 1019994
+    },
+    {
+      "elapsedMs": 2620016.4645,
+      "current": "physical-7",
+      "phase": "rest",
+      "baseRemainingMs": 979984
+    },
+    {
+      "elapsedMs": 2640042.8619999997,
+      "current": "physical-8",
+      "phase": "demonstration",
+      "baseRemainingMs": 959957
+    },
+    {
+      "elapsedMs": 2670047.5412,
+      "current": "physical-8",
+      "phase": "work",
+      "baseRemainingMs": 929953
+    },
+    {
+      "elapsedMs": 2730008.2106,
+      "current": "physical-8",
+      "phase": "rest",
+      "baseRemainingMs": 869992
+    },
+    {
+      "elapsedMs": 2760027.7542,
+      "current": "integration-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 839972
+    },
+    {
+      "elapsedMs": 2800015.7489,
+      "current": "integration-1",
+      "phase": "work",
+      "baseRemainingMs": 799984
+    },
+    {
+      "elapsedMs": 2813037.1212999998,
+      "current": "integration-1",
+      "phase": "rest",
+      "baseRemainingMs": 786963
+    },
+    {
+      "elapsedMs": 2820019.5768,
+      "current": "integration-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 779981
+    },
+    {
+      "elapsedMs": 2840005.764,
+      "current": "integration-2",
+      "phase": "work",
+      "baseRemainingMs": 759994
+    },
+    {
+      "elapsedMs": 2860026.2682999996,
+      "current": "integration-2",
+      "phase": "rest",
+      "baseRemainingMs": 739974
+    },
+    {
+      "elapsedMs": 2880003.9683,
+      "current": "integration-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 719996
+    },
+    {
+      "elapsedMs": 2895008.9716,
+      "current": "integration-3",
+      "phase": "work",
+      "baseRemainingMs": 704991
+    },
+    {
+      "elapsedMs": 2925037.1081999997,
+      "current": "integration-3",
+      "phase": "rest",
+      "baseRemainingMs": 674963
+    },
+    {
+      "elapsedMs": 2940039.1256,
+      "current": "integration-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 659961
+    },
+    {
+      "elapsedMs": 2960022.0796999997,
+      "current": "integration-4",
+      "phase": "work",
+      "baseRemainingMs": 639978
+    },
+    {
+      "elapsedMs": 2980010.7279999997,
+      "current": "integration-4",
+      "phase": "rest",
+      "baseRemainingMs": 619989
+    },
+    {
+      "elapsedMs": 3000009.5404999997,
+      "current": "integration-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 599991
+    },
+    {
+      "elapsedMs": 3015005.6719,
+      "current": "integration-5",
+      "phase": "work",
+      "baseRemainingMs": 584994
+    },
+    {
+      "elapsedMs": 3045006.479,
+      "current": "integration-5",
+      "phase": "rest",
+      "baseRemainingMs": 554994
+    },
+    {
+      "elapsedMs": 3060049.3939,
+      "current": "integration-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 539951
+    },
+    {
+      "elapsedMs": 3075011.6141999997,
+      "current": "integration-6",
+      "phase": "work",
+      "baseRemainingMs": 524988
+    },
+    {
+      "elapsedMs": 3105034.2473999998,
+      "current": "integration-6",
+      "phase": "rest",
+      "baseRemainingMs": 494966
+    },
+    {
+      "elapsedMs": 3120000.7106999997,
+      "current": "integration-7",
+      "phase": "demonstration",
+      "baseRemainingMs": 479999
+    },
+    {
+      "elapsedMs": 3135056.9118,
+      "current": "integration-7",
+      "phase": "work",
+      "baseRemainingMs": 464943
+    },
+    {
+      "elapsedMs": 3165022.9179999996,
+      "current": "integration-7",
+      "phase": "rest",
+      "baseRemainingMs": 434977
+    },
+    {
+      "elapsedMs": 3180040.5862999996,
+      "current": "integration-8",
+      "phase": "demonstration",
+      "baseRemainingMs": 419960
+    },
+    {
+      "elapsedMs": 3195001.7629,
+      "current": "integration-8",
+      "phase": "work",
+      "baseRemainingMs": 404998
+    },
+    {
+      "elapsedMs": 3225028.6972,
+      "current": "integration-8",
+      "phase": "rest",
+      "baseRemainingMs": 374971
+    },
+    {
+      "elapsedMs": 3240037.4573,
+      "current": "cooldown-1",
+      "phase": "demonstration",
+      "baseRemainingMs": 359963
+    },
+    {
+      "elapsedMs": 3255000.5305,
+      "current": "cooldown-1",
+      "phase": "work",
+      "baseRemainingMs": 345000
+    },
+    {
+      "elapsedMs": 3295018.2076999997,
+      "current": "cooldown-1",
+      "phase": "rest",
+      "baseRemainingMs": 304982
+    },
+    {
+      "elapsedMs": 3300059.2723999997,
+      "current": "cooldown-2",
+      "phase": "demonstration",
+      "baseRemainingMs": 299941
+    },
+    {
+      "elapsedMs": 3315021.1775999996,
+      "current": "cooldown-2",
+      "phase": "work",
+      "baseRemainingMs": 284979
+    },
+    {
+      "elapsedMs": 3355015.0839,
+      "current": "cooldown-2",
+      "phase": "rest",
+      "baseRemainingMs": 244985
+    },
+    {
+      "elapsedMs": 3360055.8258999996,
+      "current": "cooldown-3",
+      "phase": "demonstration",
+      "baseRemainingMs": 239944
+    },
+    {
+      "elapsedMs": 3375046.5359,
+      "current": "cooldown-3",
+      "phase": "work",
+      "baseRemainingMs": 224954
+    },
+    {
+      "elapsedMs": 3410018.4475999996,
+      "current": "cooldown-3",
+      "phase": "rest",
+      "baseRemainingMs": 189982
+    },
+    {
+      "elapsedMs": 3420021.9442,
+      "current": "cooldown-4",
+      "phase": "demonstration",
+      "baseRemainingMs": 179978
+    },
+    {
+      "elapsedMs": 3435044.0097999997,
+      "current": "cooldown-4",
+      "phase": "work",
+      "baseRemainingMs": 164956
+    },
+    {
+      "elapsedMs": 3470056.4538,
+      "current": "cooldown-4",
+      "phase": "rest",
+      "baseRemainingMs": 129944
+    },
+    {
+      "elapsedMs": 3480020.4871,
+      "current": "cooldown-5",
+      "phase": "demonstration",
+      "baseRemainingMs": 119980
+    },
+    {
+      "elapsedMs": 3490000.8266999996,
+      "current": "cooldown-5",
+      "phase": "work",
+      "baseRemainingMs": 109999
+    },
+    {
+      "elapsedMs": 3530022.9664,
+      "current": "cooldown-5",
+      "phase": "rest",
+      "baseRemainingMs": 69977
+    },
+    {
+      "elapsedMs": 3540040.0431999997,
+      "current": "cooldown-6",
+      "phase": "demonstration",
+      "baseRemainingMs": 59960
+    },
+    {
+      "elapsedMs": 3550011.8444999997,
+      "current": "cooldown-6",
+      "phase": "work",
+      "baseRemainingMs": 49988
+    },
+    {
+      "elapsedMs": 3590009.9294999996,
+      "current": "cooldown-6",
+      "phase": "rest",
+      "baseRemainingMs": 9990
+    },
+    {
+      "elapsedMs": 3600054.7571,
+      "phase": null,
+      "baseRemainingMs": 0
+    }
+  ],
+  "final": {
+    "sessionId": "real-hour-1790897862682",
+    "status": "completed",
+    "phase": null,
+    "controlRevision": 160,
+    "current": null,
+    "next": null,
+    "preparationTarget": null,
+    "startsInMs": null,
+    "resumingWork": false,
+    "phaseElapsedMs": 0,
+    "phaseRemainingMs": 0,
+    "baseDurationMs": 3600000,
+    "baseRemainingMs": 0,
+    "extraRemainingMs": 0,
+    "preparationRemainingMs": 0,
+    "executionRemainingMs": 0,
+    "recordedMs": 3600000,
+    "counters": {
+      "baseConsumedMs": 3600000,
+      "baseOmittedMs": 0,
+      "extraAddedMs": 0,
+      "extraConsumedMs": 0,
+      "extraOmittedMs": 0,
+      "extraCancelledMs": 0,
+      "preparationAddedMs": 0,
+      "preparationConsumedMs": 0,
+      "preparationCancelledMs": 0,
+      "observedPauseMs": 0,
+      "unobservedMs": 0
+    },
+    "repeatQueued": false,
+    "pauseReason": null,
+    "error": null,
+    "outcome": "completed",
+    "can": {
+      "start": false,
+      "pause": false,
+      "resume": false,
+      "abort": false,
+      "repeat": false,
+      "cancelRepeat": false,
+      "skip": false,
+      "extend": false
+    }
+  },
+  "provenance": {
+    "testedInputSha256": "13f1ac76297dea2049d174f33fb339f083a90992bc947d857df772650104c99f",
+    "workoutSha256FieldCapturedAt": "finish by the originally started harness; not the input snapshot hash",
+    "finalInputSha256": "8c85206966ac42b7a66b86044acea09d145ad3f03d8568d664a8b6d351d6d367",
+    "equivalence": "timing-equivalence.json confirms identical identities, sides, rounds, dosage text, instructions and timing; added version/hash metadata after run began. Future harness captures hash at start."
+  }
+}

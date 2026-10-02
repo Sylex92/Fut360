@@ -1,0 +1,1315 @@
+{
+  "scope": "Independent real Chromium/WebGL browser observation at 1x; not physical training or a Samsung test",
+  "finalVisibleSummary": {
+    "base": "60:00",
+    "preparationAdded": "00:00",
+    "workOmitted": "00:00",
+    "observedPauses": "00:00",
+    "played": "60:00",
+    "verifiedBy": "Expanded visible summary after completion; captured in real-hour-complete.png"
+  },
+  "evidence": {
+    "startedAt": "2026-10-01T23:45:50.796Z",
+    "start": 690,
+    "transitions": [
+      {
+        "elapsedMs": 51,
+        "status": "ready",
+        "phase": "",
+        "occurrence": "warmup-1",
+        "remaining": "3600000",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 285.2000000476837,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-1",
+        "remaining": "3600000",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 15357.100000023842,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-1",
+        "remaining": "3584934",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 55351.89999997616,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-1",
+        "remaining": "3544941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 60351,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-2",
+        "remaining": "3539940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 75351.20000004768,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-2",
+        "remaining": "3524942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 110350.70000004768,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-2",
+        "remaining": "3489941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 120350.89999997616,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-3",
+        "remaining": "3479940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 135350.5,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-3",
+        "remaining": "3464941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 170350.70000004768,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-3",
+        "remaining": "3429942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 180350.20000004768,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-4",
+        "remaining": "3419940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 195351.39999997616,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-4",
+        "remaining": "3404941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 230352.5,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-4",
+        "remaining": "3369940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 240351.79999995232,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-5",
+        "remaining": "3359941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 255350.79999995232,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-5",
+        "remaining": "3344941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 295351.2999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-5",
+        "remaining": "3304941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 300350.60000002384,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-6",
+        "remaining": "3299941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 315351.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-6",
+        "remaining": "3284941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 345350.5,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-6",
+        "remaining": "3254941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 360350.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-7",
+        "remaining": "3239941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 380353.5,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-7",
+        "remaining": "3219940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 400350.7000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-7",
+        "remaining": "3199941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 420350.7999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "warmup-8",
+        "remaining": "3179941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 440351.60000002384,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "warmup-8",
+        "remaining": "3159942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 460350.89999997616,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "warmup-8",
+        "remaining": "3139941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 480350.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-1",
+        "remaining": "3119941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 495350.7000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-1",
+        "remaining": "3104941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 525351.1000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-1",
+        "remaining": "3074940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 540350.5,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-2",
+        "remaining": "3059941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 555350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-2",
+        "remaining": "3044941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 585350.7000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-2",
+        "remaining": "3014942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 600350.7999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-3",
+        "remaining": "2999941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 615350.7999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-3",
+        "remaining": "2984940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 645351.3999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-3",
+        "remaining": "2954941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 660350.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-4",
+        "remaining": "2939941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 675350.7000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-4",
+        "remaining": "2924941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 705351,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-4",
+        "remaining": "2894941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 720350.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-5",
+        "remaining": "2879942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 735350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-5",
+        "remaining": "2864941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 765351,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-5",
+        "remaining": "2834941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 780351.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-6",
+        "remaining": "2819941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 795350.7999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-6",
+        "remaining": "2804942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 825351.1000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-6",
+        "remaining": "2774941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 840350.6000000238,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-7",
+        "remaining": "2759941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 855350.7000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-7",
+        "remaining": "2744941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 885351.2000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-7",
+        "remaining": "2714940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 900350.8999999762,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-8",
+        "remaining": "2699941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 915351.8999999762,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-8",
+        "remaining": "2684941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 945350.3999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-8",
+        "remaining": "2654941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 960350.5,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-9",
+        "remaining": "2639941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 975351,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-9",
+        "remaining": "2624941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1005351,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-9",
+        "remaining": "2594941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1020350.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-10",
+        "remaining": "2579941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1035350.8999999762,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-10",
+        "remaining": "2564941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1065350.7999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-10",
+        "remaining": "2534941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1080350.3999999762,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-11",
+        "remaining": "2519941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1095350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-11",
+        "remaining": "2504941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1125350.8999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-11",
+        "remaining": "2474941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1140353.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "ball-12",
+        "remaining": "2459941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1155351.5,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "ball-12",
+        "remaining": "2444941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1185352.1000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "ball-12",
+        "remaining": "2414941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1200353.1000000238,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-1",
+        "remaining": "2399940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1215351.6000000238,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-1",
+        "remaining": "2384941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1245354.6000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-1",
+        "remaining": "2354939",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1260352.7999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-2",
+        "remaining": "2339940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1280350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-2",
+        "remaining": "2319941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1300351,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-2",
+        "remaining": "2299942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1320353.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-3",
+        "remaining": "2279939",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1335352.5,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-3",
+        "remaining": "2264940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1365352.8999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-3",
+        "remaining": "2234940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1380352.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-4",
+        "remaining": "2219940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1400350.7000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-4",
+        "remaining": "2199941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1420350.2000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-4",
+        "remaining": "2179941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1440352.1000000238,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-5",
+        "remaining": "2159941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1455351.8999999762,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-5",
+        "remaining": "2144940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1485351.8999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-5",
+        "remaining": "2114940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1500352.1000000238,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-6",
+        "remaining": "2099941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1520350.8999999762,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-6",
+        "remaining": "2079941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1540350.1000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-6",
+        "remaining": "2059941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1560352,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-7",
+        "remaining": "2039941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1575350.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-7",
+        "remaining": "2024942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1605353,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-7",
+        "remaining": "1994941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1620351.7999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-8",
+        "remaining": "1979940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1640350.7999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-8",
+        "remaining": "1959931",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1660350.8999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-8",
+        "remaining": "1939941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1680352.3999999762,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-9",
+        "remaining": "1919941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1695350.5,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-9",
+        "remaining": "1904941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1725353,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-9",
+        "remaining": "1874941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1740351,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "orientation-10",
+        "remaining": "1859942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1755351.7999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "orientation-10",
+        "remaining": "1844942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1785350.2999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "orientation-10",
+        "remaining": "1814941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1800350.7999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-1",
+        "remaining": "1799941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1820351.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-1",
+        "remaining": "1779941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1860351.3999999762,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-1",
+        "remaining": "1739941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1920350.6000000238,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-2",
+        "remaining": "1679941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1940351,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-2",
+        "remaining": "1659941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 1980351.1000000238,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-2",
+        "remaining": "1619942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2040350.3999999762,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-3",
+        "remaining": "1559940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2060351.1000000238,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-3",
+        "remaining": "1539941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2100351.2000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-3",
+        "remaining": "1499941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2160350.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-4",
+        "remaining": "1439940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2180351.100000024,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-4",
+        "remaining": "1419941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2220350.7999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-4",
+        "remaining": "1379940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2280354.600000024,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-5",
+        "remaining": "1319941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2300351.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-5",
+        "remaining": "1299941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2340351.7999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-5",
+        "remaining": "1259940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2400350.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-6",
+        "remaining": "1199941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2420353.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-6",
+        "remaining": "1179941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2460351.2000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-6",
+        "remaining": "1139940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2520350.399999976,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-7",
+        "remaining": "1079941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2580350.7000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-7",
+        "remaining": "1019941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2620350.600000024,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-7",
+        "remaining": "979938",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2640350.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "physical-8",
+        "remaining": "959941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2670350.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "physical-8",
+        "remaining": "929941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2730352.100000024,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "physical-8",
+        "remaining": "869941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2760350.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-1",
+        "remaining": "839942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2800350.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-1",
+        "remaining": "799941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2813350.899999976,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-1",
+        "remaining": "786941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2820351.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-2",
+        "remaining": "779941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2840350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-2",
+        "remaining": "759937",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2860351.7000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-2",
+        "remaining": "739940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2880351.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-3",
+        "remaining": "719942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2895350.7999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-3",
+        "remaining": "704942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2925350.399999976,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-3",
+        "remaining": "674940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2940350.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-4",
+        "remaining": "659941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2960350.600000024,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-4",
+        "remaining": "639942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 2980352.100000024,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-4",
+        "remaining": "619941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3000353,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-5",
+        "remaining": "599941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3015350.899999976,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-5",
+        "remaining": "584941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3045350.5,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-5",
+        "remaining": "554940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3060350.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-6",
+        "remaining": "539941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3075351,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-6",
+        "remaining": "524940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3105350.399999976,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-6",
+        "remaining": "494941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3120353,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-7",
+        "remaining": "479942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3135350.600000024,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-7",
+        "remaining": "464940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3165350.7000000477,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-7",
+        "remaining": "434941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3180351.2000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "integration-8",
+        "remaining": "419941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3195350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "integration-8",
+        "remaining": "404941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3225351.7999999523,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "integration-8",
+        "remaining": "374942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3240350.600000024,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-1",
+        "remaining": "359942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3255355.600000024,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-1",
+        "remaining": "344939",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3295351.600000024,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-1",
+        "remaining": "304941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3300353,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-2",
+        "remaining": "299941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3315350.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-2",
+        "remaining": "284941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3355350.5,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-2",
+        "remaining": "244941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3360350.7000000477,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-3",
+        "remaining": "239941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3375354.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-3",
+        "remaining": "224940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3410351.899999976,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-3",
+        "remaining": "189941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3420350.5,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-4",
+        "remaining": "179941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3435350.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-4",
+        "remaining": "164941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3470355.399999976,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-4",
+        "remaining": "129940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3480354,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-5",
+        "remaining": "119942",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3490351.2999999523,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-5",
+        "remaining": "109940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3530351,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-5",
+        "remaining": "69941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3540351.2999999523,
+        "status": "running",
+        "phase": "demonstration",
+        "occurrence": "cooldown-6",
+        "remaining": "59941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3550351.2000000477,
+        "status": "running",
+        "phase": "work",
+        "occurrence": "cooldown-6",
+        "remaining": "49940",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3590350.600000024,
+        "status": "running",
+        "phase": "rest",
+        "occurrence": "cooldown-6",
+        "remaining": "9941",
+        "hidden": false
+      },
+      {
+        "elapsedMs": 3600351,
+        "status": "completed",
+        "phase": "",
+        "occurrence": "",
+        "remaining": "0",
+        "hidden": false
+      }
+    ],
+    "errors": [],
+    "last": "//completed",
+    "finished": {
+      "elapsedMs": 3600351.100000024,
+      "at": "2026-10-02T00:45:51.148Z",
+      "remaining": "0",
+      "text": "SESIÓN COMPLETA · 2 × 2 M\n\nFundamentos en casa\nEN REVISIÓN\n\nRecorrido de 60 minutos en revisión. Balón, pared despejada y colchoneta. Los cambios son automáticos; añade tiempo cuando lo necesites.\n\n1. Preparación gradual\n8 min\n2. Fundamentos de balón\n12 min\n3. Orientación corporal\n10 min\n4. Preparación física general\n16 min\n5. Integración técnica\n8 min\n6. Descenso gradual de actividad\n6 min\nRecorrido finalizado\nRestante 00:00\nLateral\nFrontal\nTres cuartos\nÁrea de referencia · 2 × 2 m\n\nObserva la postura; el avatar no marca tus ciclos de respiración.\n\nPreparar otra sesión\nSilenciar sonido final\n\nSesión terminada\n\n00:00\n\nTerminaste el recorrido.\n\nEl avatar es un ejemplo: no cuenta tus repeticiones. Si aparecen dolor, bloqueo, inflamación o inestabilidad, detente y busca valoración.\n\nResumen de tiempos de esta sesión"
+    },
+    "tones": [
+      {
+        "at": 3601024,
+        "state": "running"
+      }
+    ]
+  },
+  "scripts": [
+    "http://127.0.0.1:4173/assets/index-BLqMSo0e.js"
+  ],
+  "text": "Ir al contenido\nF\nFut\n360\nFASE 07 / SESIÓN COMPLETA\n\nTU ENTRENADOR · EN CONSTRUCCIÓN\n\nTu sesión,\npaso a paso.\n\nObserva, prepárate y sigue el recorrido. La demostración y los descansos avanzan contigo; puedes detenerte y revisar cualquier movimiento.\n\nEjecución local\n\nSin cuenta ni servicios de pago.\nTus datos de entrenamiento todavía no se registran.\n\nSesión de 60 minutos\nMovimientos · fase 06\nPie y balón · fase 05\nBisagra de cadera · fase 04\n\nElige la sesión completa o revisa un movimiento por separado.\n\nSESIÓN COMPLETA · 2 × 2 M\n\nFundamentos en casa\nEN REVISIÓN\n\nRecorrido de 60 minutos en revisión. Balón, pared despejada y colchoneta. Los cambios son automáticos; añade tiempo cuando lo necesites.\n\n1. Preparación gradual\n8 min\n2. Fundamentos de balón\n12 min\n3. Orientación corporal\n10 min\n4. Preparación física general\n16 min\n5. Integración técnica\n8 min\n6. Descenso gradual de actividad\n6 min\nRecorrido finalizado\nRestante 00:00\nLateral\nFrontal\nTres cuartos\nÁrea de referencia · 2 × 2 m\n\nObserva la postura; el avatar no marca tus ciclos de respiración.\n\nPreparar otra sesión\nSilenciar sonido final\n\nSesión terminada\n\n00:00\n\nTerminaste el recorrido.\n\nEl avatar es un ejemplo: no cuenta tus repeticiones. Si aparecen dolor, bloqueo, inflamación o inestabilidad, detente y busca valoración.\n\nResumen de tiempos de esta sesión\nComprobaciones del archivo de referencia de 60 minutos\n\nESTADO DEL PROYECTO\n\nEl camino hasta entrenar\n01\nBase y contenido\n\nComprobación del formato y de los tiempos.\n\nComprobado\n02\nReloj y controles\n\nPausa, continuidad y preparación automática.\n\nComprobado\n03\nEjercicio con avatar\n\nDemostración clara y revisión del movimiento.\n\nEn revisión\nANTES DE ENTRENAR\nEl tiempo cuadra.\nLa revisión continúa.\n\nEste ejemplo histórico sirve para comprobar la aplicación. No es todavía una rutina aprobada para practicar.\n\nLa nueva sesión reúne las demostraciones revisadas. Su dosificación y adecuación individual siguen en revisión.\n\nVer datos del archivo de referencia\nFut360 · Jugador Total Coach\nSesión objetivo: 60 min · espacio: 2 × 2 m",
+  "now": "2026-10-02T00:45:52.032Z",
+  "summary": {
+    "uniqueOccurrences": 52,
+    "transitions": 158,
+    "hiddenSamples": 0,
+    "pausedTransitions": 0,
+    "errorCount": 0,
+    "finalToneCount": 1
+  },
+  "provenance": {
+    "initialMainBundle": "index-BLqMSo0e.js",
+    "initialDefinitionSha256": "13f1ac76297dea2049d174f33fb339f083a90992bc947d857df772650104c99f",
+    "finalMainBundle": "index-Dy61YhU7.js",
+    "equivalence": "timing-equivalence.json; versions/dose metadata and later UI refinements tested separately, not reloaded into this real-hour page",
+    "elapsedNote": "elapsedMs measured from DOM observer initialization before Start click, includes about 300 ms setup; UI sampled every 50 ms. Exact program duration established by definition and independent real-hour engine counters."
+  }
+}

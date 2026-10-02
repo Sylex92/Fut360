@@ -1,5 +1,7 @@
 # Sesión MVP1 — presupuesto de 60 minutos
 
+Actualización de ejecución 2026-10-01: [workout v2](../../content/workouts/mvp1-60min-v2.json), 52 intervalos y 3600 s; [revisión de dosis, transiciones y tiempos](PHASE07_SESSION_REVIEW.md). Fase 07 autorizada/en verificación. El presupuesto siguiente queda concretado por esa definición; conserva draft y no constituye prescripción individual. Fixture v1 intacto.
+
 Actualización: 2026-09-27. Dos estados distintos: fixture histórico comprobable y programa objetivo documental. Ninguno está aprobado para entrenar.
 
 ## Fixture v1 conservado

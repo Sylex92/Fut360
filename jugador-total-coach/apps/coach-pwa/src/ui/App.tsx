@@ -4,6 +4,7 @@ import type { WorkoutSummary } from '@fut360/domain';
 import { DemoPanel } from './DemoPanel';
 import { ContactPanel } from './ContactPanel';
 import { MovementLibrary } from './MovementLibrary';
+import { WorkoutPanel } from './WorkoutPanel';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -85,7 +86,10 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
-  const [example, setExample] = useState<'library' | 'contact' | 'hinge'>('library');
+  const [example, setExample] = useState<'workout' | 'library' | 'contact' | 'hinge'>(
+    'workout',
+  );
+  const [sessionActive, setSessionActive] = useState(false);
   const [result, setResult] = useState(() => validateWorkoutV1(content));
   const [checks, setChecks] = useState(0);
   function recheck() {
@@ -105,7 +109,7 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 06 <span aria-hidden="true">/</span> MOVIMIENTOS
+          FASE 07 <span aria-hidden="true">/</span> SESIÓN COMPLETA
         </span>
       </header>
       <main id="main">
@@ -113,13 +117,13 @@ export function App({ content }: { content: unknown }) {
           <div>
             <p className="eyebrow">TU ENTRENADOR · EN CONSTRUCCIÓN</p>
             <h1 id="page-title">
-              Mira el movimiento.
+              Tu sesión,
               <br />
-              <em>Entiende cada paso.</em>
+              <em>paso a paso.</em>
             </h1>
             <p className="lead">
-              Explora los movimientos desde varios ángulos. Puedes detener el ejemplo y
-              revisarlo despacio antes de continuar.
+              Observa, prepárate y sigue el recorrido. La demostración y los descansos avanzan
+              contigo; puedes detenerte y revisar cualquier movimiento.
             </p>
           </div>
           <div className="intro-aside">
@@ -134,6 +138,14 @@ export function App({ content }: { content: unknown }) {
         <nav className="camera-controls" aria-label="Ejemplo visible">
           <button
             type="button"
+            aria-pressed={example === 'workout'}
+            onClick={() => setExample('workout')}
+          >
+            Sesión de 60 minutos
+          </button>
+          <button
+            type="button"
+            disabled={sessionActive}
             aria-pressed={example === 'library'}
             onClick={() => setExample('library')}
           >
@@ -142,6 +154,7 @@ export function App({ content }: { content: unknown }) {
           <button
             type="button"
             aria-pressed={example === 'contact'}
+            disabled={sessionActive}
             onClick={() => setExample('contact')}
           >
             Pie y balón · fase 05
@@ -149,13 +162,20 @@ export function App({ content }: { content: unknown }) {
           <button
             type="button"
             aria-pressed={example === 'hinge'}
+            disabled={sessionActive}
             onClick={() => setExample('hinge')}
           >
             Bisagra de cadera · fase 04
           </button>
         </nav>
-        <p className="quiet-note">Cambiar de ejemplo reinicia la prueba que estás viendo.</p>
-        {example === 'library' ? (
+        <p className="quiet-note">
+          {sessionActive
+            ? 'Termina la sesión para abrir otra vista.'
+            : 'Elige la sesión completa o revisa un movimiento por separado.'}
+        </p>
+        {example === 'workout' ? (
+          <WorkoutPanel onActiveChange={setSessionActive} />
+        ) : example === 'library' ? (
           <MovementLibrary />
         ) : example === 'contact' ? (
           <ContactPanel />
@@ -262,8 +282,8 @@ export function App({ content }: { content: unknown }) {
               rutina aprobada para practicar.
             </p>
             <p>
-              Faltan las fichas, las demostraciones y su revisión. La sesión final puede
-              cambiar al completar ese trabajo.
+              La nueva sesión reúne las demostraciones revisadas. Su dosificación y adecuación
+              individual siguen en revisión.
             </p>
           </aside>
         </div>

@@ -1,5 +1,15 @@
 # Contratos de contenido y registro — fase 01
 
+## Concreción de fase 07 — 2026-10-01
+
+La definición nueva implementa `schemaVersion: 2` separado de `version: 2`, `locale: es-MX`, espacio 2×2, unión de material de las fichas, condición para detenerse y `reviewStatus: draft`. Los segundos de autoría se convierten una sola vez a milisegundos al compilar. Se conserva el v1 sin migración de nombres. [Esquema v2](../../content/schemas/workout-v2.schema.json), [compilador](../../packages/exercise-catalog/src/workout-v2.ts).
+
+En v2 las entradas están **expandidas explícitamente**, cada una con `round`; `rounds` declara las rondas que deben existir ordenadas y no vuelve a multiplicar la lista. Así las transiciones excepcionales de material tienen tiempos propios. `resources` fija ejercicio/versión, asset/versión/SHA-256, nombre exacto de clip y escena existente versionada (`guided-standing-v1` o `guided-floor-v1`). El compilador contrasta esas referencias con fichas/manifiestos importados; el snapshot inmutable conserva los hashes junto al plan temporal. El motor sigue recibiendo solo el plan temporal independiente de 3D.
+
+Cada entrada separa `doseKind` (time-based/repetition-based), `targetRepetitions`, `repetitionUnit` y la instrucción `dose`. Una ventana temporal no tiene repeticiones obligatorias; una serie finita debe declarar objetivo/unidad y caber en su trabajo. `exampleRepetitions` cuenta reproducciones del clip, no actividad observada. En pierna alterna la unidad es por lado y cada clip contiene ambas elevaciones. El propósito ejecutable se denomina `training-draft`: concreta el candidato documental sin otorgar aprobación deportiva. No se implementan todavía persistencia ni recuperación.
+
+El resto conserva el contrato de diseño de 01 y sus campos previstos; fichas/manifiestos existentes se adaptan mediante sus versiones auditadas, sin fingir una migración de todos sus esquemas.
+
 Fecha: 2026-09-27. Especificación documental, sin tipos TypeScript ni esquemas nuevos implementados. El fixture y los dos esquemas v1 siguen intactos. La implementación futura separará schemaVersion (formato) de version (revisión del contenido); no tratar este documento como si el esquema actual ya lo exigiera.
 
 ## Reglas comunes y relaciones

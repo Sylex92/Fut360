@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "title",
+    "reviewStatus",
+    "expectedDurationSeconds",
+    "blocks",
+    "schemaVersion",
+    "locale",
+    "space",
+    "equipment",
+    "safety",
+    "resources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "const": 2
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewStatus": {
+      "const": "draft"
+    },
+    "expectedDurationSeconds": {
+      "const": 3600
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "rounds", "expectedSeconds", "items"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rounds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "expectedSeconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3600
+          },
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "exerciseId",
+                "side",
+                "round",
+                "demonstrationSeconds",
+                "workSeconds",
+                "restSeconds",
+                "exampleRepetitions",
+                "dose",
+                "preparation",
+                "exerciseVersion",
+                "doseKind",
+                "targetRepetitions",
+                "repetitionUnit"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "exerciseId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "side": {
+                  "enum": ["none", "left", "right", "alternate"]
+                },
+                "round": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 10
+                },
+                "demonstrationSeconds": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 120
+                },
+                "workSeconds": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 120
+                },
+                "restSeconds": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 120
+                },
+                "exampleRepetitions": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 10
+                },
+                "dose": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "preparation": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "exerciseVersion": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "doseKind": {
+                  "enum": ["time-based", "repetition-based"]
+                },
+                "targetRepetitions": {
+                  "type": ["integer", "null"],
+                  "minimum": 1,
+                  "maximum": 10
+                },
+                "repetitionUnit": {
+                  "enum": ["complete-movement", "out-and-back", "per-side", null]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "schemaVersion": {
+      "const": 2
+    },
+    "locale": {
+      "const": "es-MX"
+    },
+    "space": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["widthM", "lengthM"],
+      "properties": {
+        "widthM": {
+          "const": 2
+        },
+        "lengthM": {
+          "const": 2
+        }
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "enum": ["ball", "mat", "wall"]
+      }
+    },
+    "safety": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "exerciseId",
+          "exerciseVersion",
+          "assetId",
+          "assetVersion",
+          "sha256",
+          "clipName",
+          "sceneId"
+        ],
+        "properties": {
+          "exerciseId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exerciseVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "assetId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assetVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "clipName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sceneId": {
+            "enum": ["guided-standing-v1", "guided-floor-v1"]
+          }
+        }
+      }
+    }
+  }
+}

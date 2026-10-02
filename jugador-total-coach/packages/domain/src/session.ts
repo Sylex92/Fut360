@@ -12,7 +12,7 @@ export interface ExecutionPlan {
   readonly id: string;
   readonly version: number;
   readonly title: string;
-  readonly purpose: 'technical-test';
+  readonly purpose: 'technical-test' | 'training-draft';
   readonly expectedDurationMs: number;
   readonly occurrences: readonly PlanOccurrence[];
 }
@@ -119,7 +119,7 @@ export function snapshotPlan(plan: ExecutionPlan): ExecutionPlan {
     !plan ||
     !plan.id?.trim() ||
     !plan.title?.trim() ||
-    plan.purpose !== 'technical-test' ||
+    !['technical-test', 'training-draft'].includes(plan.purpose) ||
     !Number.isSafeInteger(plan.version) ||
     plan.version < 1 ||
     !Array.isArray(plan.occurrences) ||

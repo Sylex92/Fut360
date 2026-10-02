@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-02T00:29:43.189Z",
+  "initialDefinitionSha256": "13f1ac76297dea2049d174f33fb339f083a90992bc947d857df772650104c99f",
+  "finalDefinitionSha256": "8c85206966ac42b7a66b86044acea09d145ad3f03d8568d664a8b6d351d6d367",
+  "sameIdentitySidesRoundsDoseInstructionsAndTiming": true,
+  "changes": "Added schemaVersion/locale/space/equipment/safety, discriminated dose metadata and exact asset/exercise/scene bindings; no change to sequence, text, durations or dose. Later UI labels/mobile clock and repeat-preview reset tested separately."
+}

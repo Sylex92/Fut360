@@ -1,5 +1,23 @@
 # Desarrollo local — base, reloj y primera demostración 3D
 
+## Actualización de fase 07 — 2026-10-01
+
+La pantalla inicial abre la sesión v2 de 60 minutos. `?e2e=1` activa exclusivamente una prueba ×60 con aviso; no seguir movimientos a esa velocidad. Sin ese parámetro, usa tiempo real. Las pruebas normales no esperan una hora: para verificar el reloj real explícitamente, ejecutar desde el proyecto:
+
+```powershell
+$env:FUT360_REAL_HOUR='1'
+node tools/pnpm.mjs exec vitest run tests/realtime-hour.test.ts
+Remove-Item Env:FUT360_REAL_HOUR
+```
+
+Ese ensayo escribe evidencia del motor/reloj Node y tarda una hora real; no prueba renderizado. La evidencia separada de navegador está en el informe de 07. El entorno de la variable afecta solo al proceso PowerShell actual, no configuración global. No cerrar/suspender el equipo durante el ensayo; si un hueco supera 2 s, debe fallar y registrarse sin acreditar ese tiempo.
+
+Preview PC: 127.0.0.1:4173. La Wi-Fi puede cambiar de dirección: el 2026-10-01 se encontró 192.168.18.6 y se enlazó el preview de teléfono únicamente a esa IPv4, puerto 4174. La dirección 192.168.68.105 de la mañana dejó de corresponder al equipo. No modificar firewall ni usar `0.0.0.0` por defecto. Ver `.cache/preview-lan/process.json` para el proceso actual; no considerar estas direcciones permanentes.
+
+`tools/review_hour_coverage.mjs` verifica referencias, lados, hashes y conservación del fixture/lockfile. `tools/review_hour_delivery.mjs http://127.0.0.1:4173 http://192.168.18.6:4174` compara los bytes servidos con el build; admite solo direcciones presentes en las interfaces locales y esos puertos.
+
+Las secciones siguientes conservan las instrucciones y límites históricos de fases anteriores.
+
 Actualizado: 2026-09-29. Windows, Node 22.14.0 y npm 10.9.2 existentes. No requiere Codex, cuenta, nube ni instalación global de pnpm. Usar la carpeta jugador-total-coach, no la raíz Git superior.
 
 ## Abrir la aplicación ya instalada

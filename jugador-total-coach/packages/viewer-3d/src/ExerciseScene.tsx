@@ -17,7 +17,7 @@ export interface ExerciseSceneProps {
   readonly framing?: 'standing' | 'floor';
 }
 
-function Camera({
+export function Camera({
   preset,
   framing,
 }: {
@@ -50,7 +50,7 @@ function Camera({
   return null;
 }
 
-function ContextGuard({ onFailure }: Pick<ExerciseSceneProps, 'onFailure'>) {
+export function ContextGuard({ onFailure }: Pick<ExerciseSceneProps, 'onFailure'>) {
   const { gl } = useThree();
   useEffect(() => {
     const lost = (event: Event) => {
@@ -83,7 +83,7 @@ function Avatar({
   return <primitive object={driver.scene} dispose={null} />;
 }
 
-class SceneBoundary extends Component<
+export class SceneBoundary extends Component<
   { children: ReactNode; onFailure: (message: string) => void },
   { failed: boolean }
 > {

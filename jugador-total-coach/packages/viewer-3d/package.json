@@ -6,6 +6,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./scene": "./src/ExerciseScene.tsx",
+    "./workout-scene": "./src/WorkoutScene.tsx",
     "./clip-driver": "./src/clip-driver.ts"
   },
   "dependencies": {

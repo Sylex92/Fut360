@@ -1,0 +1,315 @@
+{
+  "checkedAt": "2026-10-02T00:43:54.915Z",
+  "deliveries": [
+    {
+      "origin": "http://127.0.0.1:4173",
+      "results": [
+        {
+          "file": "index.html",
+          "status": 200,
+          "sha256": "37f46392e2ebeb8351ed32d51eb67fbb10e80b64c5f4c4b1d3175e96cb7f9b1c",
+          "matches": true
+        },
+        {
+          "file": "assets/active-march-v2-Bu-0wR_o.glb",
+          "status": 200,
+          "sha256": "4c3dc89ab1b0e8239348d72d950fa7a437869f6a55f869177c31e18b0351b7f3",
+          "matches": true
+        },
+        {
+          "file": "assets/ankle-mobility-left-v1-DcMEP-D3.glb",
+          "status": 200,
+          "sha256": "7fa938d70f7f8e78e331edceee031feb8cf1fc63dfdb0bbd95c2748cf361c0ec",
+          "matches": true
+        },
+        {
+          "file": "assets/ankle-mobility-right-v1-BabXRHAt.glb",
+          "status": 200,
+          "sha256": "b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb",
+          "matches": true
+        },
+        {
+          "file": "assets/clip-driver-HsegqOYX.js",
+          "status": 200,
+          "sha256": "58f958919fafd23cc31e8dc2b9e16a1312433e001a00b758d3a58c1e9ab42d87",
+          "matches": true
+        },
+        {
+          "file": "assets/ContactScene-B3cf2yAa.js",
+          "status": 200,
+          "sha256": "9d8356fe56306bb82d1eceb8b32213fddc25406aed1e7b065e3ef0266e76417a",
+          "matches": true
+        },
+        {
+          "file": "assets/dead-bug-v1-BenB9z_b.glb",
+          "status": 200,
+          "sha256": "7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de",
+          "matches": true
+        },
+        {
+          "file": "assets/ExerciseScene-D8q_dtZy.js",
+          "status": 200,
+          "sha256": "4927eb1115249f58e539bd050bd95973c4738db02a7b88a02133043091a2594b",
+          "matches": true
+        },
+        {
+          "file": "assets/glute-bridge-v1-BT5ZVAAV.glb",
+          "status": 200,
+          "sha256": "412c0d349515ba4cbe70620f96d15e0ff7e23852d807f7bcd7dc0238b68fc195",
+          "matches": true
+        },
+        {
+          "file": "assets/hip-hinge-v1-BNOtzeRP.glb",
+          "status": 200,
+          "sha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe",
+          "matches": true
+        },
+        {
+          "file": "assets/index-DJkWr2PC.css",
+          "status": 200,
+          "sha256": "0a1c9253d9702a74ef41d633f96d6af08535a5172a4580527e09414d8a39af72",
+          "matches": true
+        },
+        {
+          "file": "assets/index-Dy61YhU7.js",
+          "status": 200,
+          "sha256": "69f49bfc004bf84f6be309139a253dfbba2ecc9cfce97b8596adf83e350bbc25",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-inside-v1-nsID_nKu.glb",
+          "status": 200,
+          "sha256": "c195511201131c201b7dc205d1d16825a2c6d0250b6b95f82e838e5b9f007129",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-inside-v2-B5JRSjv2.glb",
+          "status": 200,
+          "sha256": "c96528aeb997b0838ac7a70e7c8cec33a274a34abab43c14c2301468aa70032b",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-outside-left-v2-0hJljcmy.glb",
+          "status": 200,
+          "sha256": "a6e08d54003dc807cee6bf15001a73b2b9b62fcce5fb82291d18ad6d8dd88776",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-outside-right-v2-DhMq0woe.glb",
+          "status": 200,
+          "sha256": "88dfb6b227c4ed96a78ad27183ab7d0bce940fd7b252b37092314274fdab7f41",
+          "matches": true
+        },
+        {
+          "file": "assets/lateral-sole-roll-left-v2-Ctg2PSKD.glb",
+          "status": 200,
+          "sha256": "efbeec5f720ff34b5e117e8573f436971e64c674045cf5b9b853f18926daf8af",
+          "matches": true
+        },
+        {
+          "file": "assets/lateral-sole-roll-right-v2-Bj2dNYXv.glb",
+          "status": 200,
+          "sha256": "14a8173378bc47782349d674feafd61b39347135d83001d4d6cd51d85dc8e38d",
+          "matches": true
+        },
+        {
+          "file": "assets/mini-squat-v2-CUtG2e9v.glb",
+          "status": 200,
+          "sha256": "ff89b9f237aa37089b4a7f7b1409d31ed30c78a5f6a3aebe8f715e545af10295",
+          "matches": true
+        },
+        {
+          "file": "assets/rapier-CM3z8uzN.js",
+          "status": 200,
+          "sha256": "0b0dd0c3b518cbc9b0e78dc3713ae9ee4b2470f46ad233673bed15fe9a6ddf76",
+          "matches": true
+        },
+        {
+          "file": "assets/slow-breathing-v1-DUkka31u.glb",
+          "status": 200,
+          "sha256": "2cb821747e60e1eb9d2cd56926f7523777b31584092fa3f1e9ee82000861e132",
+          "matches": true
+        },
+        {
+          "file": "assets/soft-step-turn-left-v2-Da-wG1b0.glb",
+          "status": 200,
+          "sha256": "4586a6fd26a371a9660f6f889142e7526e631c19b10edfa6a09c6fd4d3017f4d",
+          "matches": true
+        },
+        {
+          "file": "assets/soft-step-turn-right-v2-C_kXhoCz.glb",
+          "status": 200,
+          "sha256": "da5d91c5543eaf9efc2e04e8770bed32d9ac47e8321904fb72cff788130554b1",
+          "matches": true
+        },
+        {
+          "file": "assets/wall-push-up-v1-2S8iMkso.glb",
+          "status": 200,
+          "sha256": "9826e9d1660ba734d9dbb8b4170e69442985ebf83efe1f2672172c6160bc4268",
+          "matches": true
+        },
+        {
+          "file": "assets/WorkoutScene-DI1KMDny.js",
+          "status": 200,
+          "sha256": "7e2cfa5fec3e28a6fe491adb63a40b5b5435d2b3a0e029dc46fb4fd1f72eff9d",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "origin": "http://192.168.18.6:4174",
+      "results": [
+        {
+          "file": "index.html",
+          "status": 200,
+          "sha256": "37f46392e2ebeb8351ed32d51eb67fbb10e80b64c5f4c4b1d3175e96cb7f9b1c",
+          "matches": true
+        },
+        {
+          "file": "assets/active-march-v2-Bu-0wR_o.glb",
+          "status": 200,
+          "sha256": "4c3dc89ab1b0e8239348d72d950fa7a437869f6a55f869177c31e18b0351b7f3",
+          "matches": true
+        },
+        {
+          "file": "assets/ankle-mobility-left-v1-DcMEP-D3.glb",
+          "status": 200,
+          "sha256": "7fa938d70f7f8e78e331edceee031feb8cf1fc63dfdb0bbd95c2748cf361c0ec",
+          "matches": true
+        },
+        {
+          "file": "assets/ankle-mobility-right-v1-BabXRHAt.glb",
+          "status": 200,
+          "sha256": "b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb",
+          "matches": true
+        },
+        {
+          "file": "assets/clip-driver-HsegqOYX.js",
+          "status": 200,
+          "sha256": "58f958919fafd23cc31e8dc2b9e16a1312433e001a00b758d3a58c1e9ab42d87",
+          "matches": true
+        },
+        {
+          "file": "assets/ContactScene-B3cf2yAa.js",
+          "status": 200,
+          "sha256": "9d8356fe56306bb82d1eceb8b32213fddc25406aed1e7b065e3ef0266e76417a",
+          "matches": true
+        },
+        {
+          "file": "assets/dead-bug-v1-BenB9z_b.glb",
+          "status": 200,
+          "sha256": "7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de",
+          "matches": true
+        },
+        {
+          "file": "assets/ExerciseScene-D8q_dtZy.js",
+          "status": 200,
+          "sha256": "4927eb1115249f58e539bd050bd95973c4738db02a7b88a02133043091a2594b",
+          "matches": true
+        },
+        {
+          "file": "assets/glute-bridge-v1-BT5ZVAAV.glb",
+          "status": 200,
+          "sha256": "412c0d349515ba4cbe70620f96d15e0ff7e23852d807f7bcd7dc0238b68fc195",
+          "matches": true
+        },
+        {
+          "file": "assets/hip-hinge-v1-BNOtzeRP.glb",
+          "status": 200,
+          "sha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe",
+          "matches": true
+        },
+        {
+          "file": "assets/index-DJkWr2PC.css",
+          "status": 200,
+          "sha256": "0a1c9253d9702a74ef41d633f96d6af08535a5172a4580527e09414d8a39af72",
+          "matches": true
+        },
+        {
+          "file": "assets/index-Dy61YhU7.js",
+          "status": 200,
+          "sha256": "69f49bfc004bf84f6be309139a253dfbba2ecc9cfce97b8596adf83e350bbc25",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-inside-v1-nsID_nKu.glb",
+          "status": 200,
+          "sha256": "c195511201131c201b7dc205d1d16825a2c6d0250b6b95f82e838e5b9f007129",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-inside-v2-B5JRSjv2.glb",
+          "status": 200,
+          "sha256": "c96528aeb997b0838ac7a70e7c8cec33a274a34abab43c14c2301468aa70032b",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-outside-left-v2-0hJljcmy.glb",
+          "status": 200,
+          "sha256": "a6e08d54003dc807cee6bf15001a73b2b9b62fcce5fb82291d18ad6d8dd88776",
+          "matches": true
+        },
+        {
+          "file": "assets/inside-outside-right-v2-DhMq0woe.glb",
+          "status": 200,
+          "sha256": "88dfb6b227c4ed96a78ad27183ab7d0bce940fd7b252b37092314274fdab7f41",
+          "matches": true
+        },
+        {
+          "file": "assets/lateral-sole-roll-left-v2-Ctg2PSKD.glb",
+          "status": 200,
+          "sha256": "efbeec5f720ff34b5e117e8573f436971e64c674045cf5b9b853f18926daf8af",
+          "matches": true
+        },
+        {
+          "file": "assets/lateral-sole-roll-right-v2-Bj2dNYXv.glb",
+          "status": 200,
+          "sha256": "14a8173378bc47782349d674feafd61b39347135d83001d4d6cd51d85dc8e38d",
+          "matches": true
+        },
+        {
+          "file": "assets/mini-squat-v2-CUtG2e9v.glb",
+          "status": 200,
+          "sha256": "ff89b9f237aa37089b4a7f7b1409d31ed30c78a5f6a3aebe8f715e545af10295",
+          "matches": true
+        },
+        {
+          "file": "assets/rapier-CM3z8uzN.js",
+          "status": 200,
+          "sha256": "0b0dd0c3b518cbc9b0e78dc3713ae9ee4b2470f46ad233673bed15fe9a6ddf76",
+          "matches": true
+        },
+        {
+          "file": "assets/slow-breathing-v1-DUkka31u.glb",
+          "status": 200,
+          "sha256": "2cb821747e60e1eb9d2cd56926f7523777b31584092fa3f1e9ee82000861e132",
+          "matches": true
+        },
+        {
+          "file": "assets/soft-step-turn-left-v2-Da-wG1b0.glb",
+          "status": 200,
+          "sha256": "4586a6fd26a371a9660f6f889142e7526e631c19b10edfa6a09c6fd4d3017f4d",
+          "matches": true
+        },
+        {
+          "file": "assets/soft-step-turn-right-v2-C_kXhoCz.glb",
+          "status": 200,
+          "sha256": "da5d91c5543eaf9efc2e04e8770bed32d9ac47e8321904fb72cff788130554b1",
+          "matches": true
+        },
+        {
+          "file": "assets/wall-push-up-v1-2S8iMkso.glb",
+          "status": 200,
+          "sha256": "9826e9d1660ba734d9dbb8b4170e69442985ebf83efe1f2672172c6160bc4268",
+          "matches": true
+        },
+        {
+          "file": "assets/WorkoutScene-DI1KMDny.js",
+          "status": 200,
+          "sha256": "7e2cfa5fec3e28a6fe491adb63a40b5b5435d2b3a0e029dc46fb4fd1f72eff9d",
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

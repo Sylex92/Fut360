@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-01T23:56:56.190Z",
+  "scope": "Playwright escritorio y ancho 390; ocultación por evento sintético, no Samsung físico",
+  "checks": [
+    {
+      "name": "16 recursos precargados localmente",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "sin red externa",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "pausa previa conserva píxeles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inicio en modo real",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cambio de vista bloqueado durante sesión",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "pausa conserva reloj",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inspector visible y enfocado",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inspección mueve solo ejemplo",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "foco vuelve al control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "extra en pausa no obliga arranque inmediato",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "continuar conserva ejecución",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "se puede cancelar extra",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mostrar no levanta pausa manual",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ocultar pausa",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mostrar retoma si solo se ocultó",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "pérdida de WebGL pausa el reloj",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "recuperar recurso no reanuda sin orden",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final anticipado y navegación liberada",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reinicio usa instancia nueva y reloj activo",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "un recurso ausente bloquea sesión completa",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reintento vuelve a preparar toda la cobertura",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 px sin desbordamiento horizontal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "controles de al menos 44 px",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cámara operable por teclado",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Tab alcanza siguiente cámara",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "sin excepciones JavaScript",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "inducedFailures": [
+    "GLB abortado",
+    "webglcontextlost"
+  ],
+  "requests": [
+    "http://127.0.0.1:4173/",
+    "http://127.0.0.1:4173/assets/index-BLqMSo0e.js",
+    "http://127.0.0.1:4173/assets/index-DkKqC1su.css",
+    "http://127.0.0.1:4173/assets/WorkoutScene-CMaSsOzN.js",
+    "http://127.0.0.1:4173/assets/clip-driver-BbsGyQRc.js",
+    "http://127.0.0.1:4173/assets/ExerciseScene-DKHDll0I.js",
+    "http://127.0.0.1:4173/assets/wall-push-up-v1-2S8iMkso.glb",
+    "http://127.0.0.1:4173/assets/hip-hinge-v1-BNOtzeRP.glb",
+    "http://127.0.0.1:4173/assets/inside-inside-v2-B5JRSjv2.glb",
+    "http://127.0.0.1:4173/assets/glute-bridge-v1-BT5ZVAAV.glb",
+    "http://127.0.0.1:4173/assets/active-march-v2-Bu-0wR_o.glb",
+    "http://127.0.0.1:4173/assets/mini-squat-v2-CUtG2e9v.glb",
+    "http://127.0.0.1:4173/assets/ankle-mobility-left-v1-DcMEP-D3.glb",
+    "http://127.0.0.1:4173/assets/ankle-mobility-right-v1-BabXRHAt.glb",
+    "http://127.0.0.1:4173/assets/soft-step-turn-left-v2-Da-wG1b0.glb",
+    "http://127.0.0.1:4173/assets/soft-step-turn-right-v2-C_kXhoCz.glb",
+    "http://127.0.0.1:4173/assets/dead-bug-v1-BenB9z_b.glb",
+    "http://127.0.0.1:4173/assets/slow-breathing-v1-DUkka31u.glb",
+    "http://127.0.0.1:4173/assets/lateral-sole-roll-left-v2-Ctg2PSKD.glb",
+    "http://127.0.0.1:4173/assets/lateral-sole-roll-right-v2-Bj2dNYXv.glb",
+    "http://127.0.0.1:4173/assets/inside-outside-left-v2-0hJljcmy.glb",
+    "http://127.0.0.1:4173/assets/inside-outside-right-v2-DhMq0woe.glb",
+    "blob:http://127.0.0.1:4173/7bad09f7-3421-41cf-8b3b-11901aac6593",
+    "blob:http://127.0.0.1:4173/5984d612-63de-4c9e-ac65-dfa375fc871a",
+    "blob:http://127.0.0.1:4173/60757de8-4321-4ed6-9044-78a85f4d7294",
+    "blob:http://127.0.0.1:4173/d3acc9d0-16ab-46c4-8eef-e22052987b68",
+    "blob:http://127.0.0.1:4173/f4895add-2e07-4bb5-a106-649475246f57",
+    "blob:http://127.0.0.1:4173/4ade4a10-7672-48b6-868b-d03b68e0e38d",
+    "blob:http://127.0.0.1:4173/7b566d96-09fa-4d64-b31d-75108d1d6e34",
+    "blob:http://127.0.0.1:4173/d904a1ec-eb7e-4223-a33a-fc3c3b690962",
+    "blob:http://127.0.0.1:4173/08e55f75-8e8c-413f-9d32-cff777ce780c",
+    "blob:http://127.0.0.1:4173/e8b9d1ea-19cd-4b1a-b4c1-0011f9b14d7b",
+    "blob:http://127.0.0.1:4173/ca35e8ea-bc87-4ef9-acec-80c7397c7807",
+    "blob:http://127.0.0.1:4173/9c1b6eb9-3905-464a-877d-c708266dfa24",
+    "blob:http://127.0.0.1:4173/f388ffc8-90b6-485e-94d0-908572d63ca7",
+    "blob:http://127.0.0.1:4173/1d868790-ec0d-4e0e-be2e-9211e0f7da7e",
+    "blob:http://127.0.0.1:4173/15a07199-d91a-4602-b585-151818f61464",
+    "blob:http://127.0.0.1:4173/d46f792c-f0b7-4261-97f4-9a9d21bef951",
+    "blob:http://127.0.0.1:4173/7b6e708d-8959-4dc7-80d6-2540114d8af1",
+    "blob:http://127.0.0.1:4173/8159cbbd-0e88-46bd-977d-4ddd4d58316a",
+    "blob:http://127.0.0.1:4173/b7f5df64-ae67-453e-a60d-95e16a1c62b2",
+    "blob:http://127.0.0.1:4173/59db7a16-7243-4cbe-8158-534cfe248512",
+    "blob:http://127.0.0.1:4173/8d80e5f0-9c93-4dff-9d44-84e33aca3cce",
+    "blob:http://127.0.0.1:4173/89ec8056-e23b-4e84-9799-055f6bc25b30",
+    "blob:http://127.0.0.1:4173/bc12bd49-6a3f-4dce-b6f0-69fdb70a8f26",
+    "blob:http://127.0.0.1:4173/5359f386-4f0c-44f0-ae93-afab77c4f9cd",
+    "blob:http://127.0.0.1:4173/628a2436-88de-4462-88e5-e8f758fa3126",
+    "blob:http://127.0.0.1:4173/00656737-6b2a-43bc-84b9-669bc540670e",
+    "blob:http://127.0.0.1:4173/4333396d-eba6-48b9-85b2-50004ca3c85c",
+    "blob:http://127.0.0.1:4173/c84b5d5e-afed-420b-8223-336fb97496e9",
+    "blob:http://127.0.0.1:4173/717165f5-ba89-4f7e-8155-bf39fdcf5c75",
+    "blob:http://127.0.0.1:4173/99d029c8-3c60-490a-85d6-293044e94ea4",
+    "blob:http://127.0.0.1:4173/a08cbeb2-4fbc-4f2f-94ba-f5cdd3704952",
+    "blob:http://127.0.0.1:4173/5b595152-17b0-4bb6-98dc-8b621d52fdb7",
+    "blob:http://127.0.0.1:4173/3e4fe649-a6f3-4b7e-99b2-1ced1e9fef06",
+    "blob:http://127.0.0.1:4173/2444ed5b-acc0-49bf-960c-4791f9ad33f9",
+    "blob:http://127.0.0.1:4173/c4e6a42c-53e3-4a84-8701-5e38f29ea1e1",
+    "blob:http://127.0.0.1:4173/fddc5610-212b-4796-9167-24f811131936",
+    "blob:http://127.0.0.1:4173/3115ea53-679f-4d60-98c5-1e3fae7330f6",
+    "blob:http://127.0.0.1:4173/54519c6d-0511-488e-ad9a-14214fce8a88",
+    "blob:http://127.0.0.1:4173/70310527-5f34-4775-a583-f412eeaf4848",
+    "blob:http://127.0.0.1:4173/d8894986-0c73-41f5-b18c-ac45c3b6f420",
+    "blob:http://127.0.0.1:4173/e72c9f92-3d79-47e0-8053-d9eb1901848c",
+    "blob:http://127.0.0.1:4173/3c41ff46-8300-452c-8011-6830dd2904b5",
+    "blob:http://127.0.0.1:4173/01855247-90ba-4258-a2fd-752167ee9d3b",
+    "blob:http://127.0.0.1:4173/8c41b88c-34eb-4e37-81c9-e8cf50575a40",
+    "blob:http://127.0.0.1:4173/eb31a131-2321-475e-958c-5982cdc32be7",
+    "blob:http://127.0.0.1:4173/c05e5b19-1b75-4ab3-bd05-d6d4f6c91bb3",
+    "blob:http://127.0.0.1:4173/c88ad0dc-901c-4aae-8a93-331fc4321cdc",
+    "blob:http://127.0.0.1:4173/0a40e804-45fa-4c11-a941-dc16bfe07bf9",
+    "blob:http://127.0.0.1:4173/d187485f-199e-47e8-ae22-ee9aa4813e03",
+    "blob:http://127.0.0.1:4173/f306a780-22f0-4995-b0b7-617c973e6302",
+    "blob:http://127.0.0.1:4173/eb83adf2-9a4a-4f4e-b9e2-1ea61f74cb1b",
+    "blob:http://127.0.0.1:4173/6b7ae60d-84bb-46c4-bdc9-3136bff46514",
+    "blob:http://127.0.0.1:4173/d92042c4-fe22-4c8f-8166-8b535a80c2ff",
+    "blob:http://127.0.0.1:4173/9217caa9-e9df-4206-b802-54a7490a4853",
+    "blob:http://127.0.0.1:4173/7d4b87bd-ac06-4366-8c77-3edd7f0f5796",
+    "blob:http://127.0.0.1:4173/eee72c83-42e0-4cff-9222-80d5d668d2fb"
+  ]
+}

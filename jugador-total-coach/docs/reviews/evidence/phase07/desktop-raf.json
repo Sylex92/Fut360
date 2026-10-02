@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-02T00:11:14.838Z",
+  "scope": "20-second requestAnimationFrame intervals, desktop visible canvas with 16 parsed resources; not Samsung or physically presented frames",
+  "durationMs": 20001.200000023935,
+  "count": 1202,
+  "medianMs": 16.699999999953434,
+  "p95Ms": 16.9000000001397,
+  "maxMs": 17.199999999953434,
+  "over50ms": 0,
+  "hidden": false,
+  "status": "running",
+  "occurrence": "orientation-6"
+}

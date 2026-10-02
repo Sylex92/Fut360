@@ -1,8 +1,8 @@
 # Fut360 — Jugador Total Coach
 
-Actualizado: 2026-09-30. **Fase 06 en curso: biblioteca con dieciséis ejemplos de doce patrones.** Se reutilizan el avatar y las herramientas existentes. Añadida «Flexión contra la pared», con soporte disponible confirmado. Pendiente de aceptación de claridad/funcionamiento del nuevo ejemplo; los anteriores ya se revisaron en computadora y Samsung. [Empuje y verificaciones](docs/reviews/phase06-wall-push-up-review.md). Aún no es una rutina aprobada de una hora. 07–09 no autorizadas.
+Actualizado: 2026-10-01. **Fase 07 implementada y verificada técnicamente: sesión v2 de 60 minutos.** Pendiente aceptación del nuevo flujo en computadora/Samsung. Fase 06 aceptada en claridad, incluido el empuje contra pared. Se integran dieciséis ejemplos de doce patrones, 52 intervalos y seis bloques, conservando el fixture histórico. [Informe y pruebas de una hora real](docs/reviews/phase07-hour-review.md), [dosis y transiciones](docs/training/PHASE07_SESSION_REVIEW.md), [cierre de 06](docs/reviews/phase06-closeout.md). Programa/recursos siguen draft: no se atribuye adecuación personal ni revisión profesional. No ejecutar 08–09.
 
-Corrección actual: nueve animaciones con coordinación de brazos, tronco y apoyos; mismo diseño del avatar. Marcha con seis pasos y campanitas con cuatro toques; variantes básicas sin saltos. [Cambios y verificación](docs/reviews/phase06-natural-motion-review.md). Al abrir la biblioteca se muestra la marcha para facilitar su revisión.
+Recursos heredados de 06: nueve animaciones con coordinación de brazos, tronco y apoyos; mismo diseño del avatar. Marcha con seis pasos y campanitas con cuatro toques; variantes básicas sin saltos. [Cambios y verificación](docs/reviews/phase06-natural-motion-review.md). Al abrir la biblioteca se muestra la marcha para facilitar su revisión.
 
 **Consulta [PROJECT_STATUS.md](PROJECT_STATUS.md) para continuar.** [Informe de 06](docs/reviews/phase06-pipeline-review.md), [fundamento interno por ejercicio](docs/training/PHASE06_DOCUMENTARY_REVIEW.md), [costo/reutilización](docs/reviews/phase06-cost-and-reuse.md), [recursos/licencias](ASSET_LICENSES.md). La investigación no aparece en la app. No se exige contratación externa para avanzar ni se atribuye revisión profesional a las fuentes.
 
@@ -14,14 +14,17 @@ Desde jugador-total-coach, con dependencias locales existentes:
 node tools/pnpm.mjs dev
 ```
 
-Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar y elegir «Movimientos · fase 06». El teléfono usa el preview LAN documentado en desarrollo local.
+Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar para abrir «Sesión de 60 minutos». El teléfono usa el preview LAN documentado en desarrollo local.
+
+- Sesión v2: precarga todos los movimientos, timeline, lado/ronda, siguiente ejercicio, preparación automática, +30 s/+1 min, pausa, inspección lenta, repetición, omisión y final sonoro silenciable. Mientras está activa hay que terminarla para cambiar de vista. Recargar descarta el recorrido; persistencia pertenece a 08.
+- Para E2E exclusivamente, `?e2e=1` acelera el programa ×60 con aviso visible: no seguir los ejercicios. Abrir sin ese parámetro para tiempo real.
 
 - Biblioteca: selector de movimiento, frontal/lateral/tres cuartos y «Detalle de pies» en los ejercicios con balón, pausa, revisión por instante y media velocidad. Cada ejemplo termina; reproducir otra vez es explícito. Campanitas ofrece también 2× para observar. El ritmo visual no prescribe el ritmo de entrenamiento.
 - Puente y pierna alterna: vista de suelo; el ejemplo empieza ya tumbado. No se han animado las transiciones de bajar/levantarse. Respiración: postura cómoda quieta, sin metrónomo obligatorio.
 - «Pie y balón · fase 05» conserva demostración guiada y laboratorio Rapier separado. El laboratorio prueba contactos; no enseña una variante cuando el balón se desvía.
 - «Bisagra de cadera · fase 04» conserva su prueba de uno/cinco minutos con preparación y +30/+60 automáticos, pausa e inspector.
 
-183 pruebas, lint y tipos correctos; nueve GLB v2 pasan Khronos, además de la línea base anterior. La biblioteca selecciona dieciséis ejemplos; el build conserva también las campanitas v1 para 05 (diecisiete GLB). Fuentes editables, manifiestos, muestras de apoyos/contactos y vistas guardadas. El usuario confirma revisión favorable de las animaciones corregidas y detalle de pies en computadora y Samsung; mantienen draft como contenido deportivo. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
+217 pruebas generales correctas, más el ensayo real de una hora ejecutado aparte; lint, tipos, formato y build correctos. [Evidencias y límites de 07](docs/reviews/phase07-hour-review.md). Los dieciséis recursos conservan la verificación geométrica/Khronos de 06 y sus archivos sin cambios; el build conserva también las campanitas v1 para 05 (diecisiete GLB). El usuario confirmó las animaciones corregidas y detalle de pies en computadora y Samsung; la nueva pantalla de sesión tiene su propia revisión pendiente. [Desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md), [pipeline de autoría](docs/3d/ANIMATION_PIPELINE.md).
 
 ## Decisiones vigentes
 
@@ -46,4 +49,4 @@ La secuencia siguiente describe el inicio original del paquete. El trabajo actua
 `docs/plans/ROADMAP.md` indica el orden 00–09. `PROJECT_STATUS.md` conserva el estado entre chats.
 
 ## Qué está comprobado en este paquete
-El workout original conserva su hash, valida contra su esquema y suma 3600 segundos. Se compila sin alterarlo en 60 ocurrencias para probar el motor. Sigue en draft: validar los datos no acredita técnica ni adecuación deportiva. 04/05 tienen aceptación funcional en computadora/Samsung. En 06 el usuario confirma ambos dispositivos para los movimientos corregidos y la vista de pies. PWA/offline, persistencia y contenido de toda la hora siguen pendientes.
+El workout original conserva su hash y sus 60 ocurrencias como regresión del motor. La nueva hora v2 tiene 52 intervalos explícitos y todos sus recursos resueltos; validar datos y reproducción no acredita adecuación deportiva individual. 04/05 tienen aceptación funcional en computadora/Samsung. En 06 el usuario confirmó ambos dispositivos para los movimientos corregidos y la vista de pies, y después aceptó la claridad del empuje en pared. PWA/offline y persistencia pertenecen a 08; todavía no se implementan.

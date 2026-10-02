@@ -1,0 +1,1363 @@
+{
+  "scope": "Full browser route at explicit 60x rate, no manual skips/extras",
+  "startedAt": "2026-10-01T23:57:42.068Z",
+  "start": 3473,
+  "occurrences": [
+    "warmup-1",
+    "warmup-2",
+    "warmup-3",
+    "warmup-4",
+    "warmup-5",
+    "warmup-6",
+    "warmup-7",
+    "warmup-8",
+    "ball-1",
+    "ball-2",
+    "ball-3",
+    "ball-4",
+    "ball-5",
+    "ball-6",
+    "ball-7",
+    "ball-8",
+    "ball-9",
+    "ball-10",
+    "ball-11",
+    "ball-12",
+    "orientation-1",
+    "orientation-2",
+    "orientation-3",
+    "orientation-4",
+    "orientation-5",
+    "orientation-6",
+    "orientation-7",
+    "orientation-8",
+    "orientation-9",
+    "orientation-10",
+    "physical-1",
+    "physical-2",
+    "physical-3",
+    "physical-4",
+    "physical-5",
+    "physical-6",
+    "physical-7",
+    "physical-8",
+    "integration-1",
+    "integration-2",
+    "integration-3",
+    "integration-4",
+    "integration-5",
+    "integration-6",
+    "integration-7",
+    "integration-8",
+    "cooldown-1",
+    "cooldown-2",
+    "cooldown-3",
+    "cooldown-4",
+    "cooldown-5",
+    "cooldown-6"
+  ],
+  "movements": [
+    "active-march",
+    "ankle-mobility-left",
+    "ankle-mobility-right",
+    "hip-hinge",
+    "mini-squat",
+    "soft-step-turn-left",
+    "soft-step-turn-right",
+    "inside-inside",
+    "lateral-sole-roll-left",
+    "lateral-sole-roll-right",
+    "inside-outside-left",
+    "inside-outside-right",
+    "wall-push-up",
+    "glute-bridge",
+    "dead-bug",
+    "slow-breathing"
+  ],
+  "blocks": [
+    "1. Preparación gradual8 min",
+    "2. Fundamentos de balón12 min",
+    "3. Orientación corporal10 min",
+    "4. Preparación física general16 min",
+    "5. Integración técnica8 min",
+    "6. Descenso gradual de actividad6 min"
+  ],
+  "transitions": [
+    {
+      "elapsedMs": 3416.600000023842,
+      "testid": "hour-session",
+      "status": "ready",
+      "phase": "",
+      "occurrence": "warmup-1",
+      "baseRemaining": "3600000"
+    },
+    {
+      "elapsedMs": 181.20000004768372,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-1",
+      "baseRemaining": "3600000"
+    },
+    {
+      "elapsedMs": 524.6000000238419,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-1",
+      "baseRemaining": "3579960"
+    },
+    {
+      "elapsedMs": 1124.1000000238419,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-1",
+      "baseRemaining": "3543420"
+    },
+    {
+      "elapsedMs": 1223.8999999761581,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-2",
+      "baseRemaining": "3538020"
+    },
+    {
+      "elapsedMs": 1523.6000000238419,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-2",
+      "baseRemaining": "3519960"
+    },
+    {
+      "elapsedMs": 2024,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-2",
+      "baseRemaining": "3489960"
+    },
+    {
+      "elapsedMs": 2223.899999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-3",
+      "baseRemaining": "3478020"
+    },
+    {
+      "elapsedMs": 2523.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-3",
+      "baseRemaining": "3459960"
+    },
+    {
+      "elapsedMs": 3023.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-3",
+      "baseRemaining": "3429960"
+    },
+    {
+      "elapsedMs": 3224.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-4",
+      "baseRemaining": "3417960"
+    },
+    {
+      "elapsedMs": 3523.7000000476837,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-4",
+      "baseRemaining": "3399960"
+    },
+    {
+      "elapsedMs": 4023.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-4",
+      "baseRemaining": "3369960"
+    },
+    {
+      "elapsedMs": 4224.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-5",
+      "baseRemaining": "3358020"
+    },
+    {
+      "elapsedMs": 4523.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-5",
+      "baseRemaining": "3339960"
+    },
+    {
+      "elapsedMs": 5123.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-5",
+      "baseRemaining": "3303900"
+    },
+    {
+      "elapsedMs": 5223,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-6",
+      "baseRemaining": "3297960"
+    },
+    {
+      "elapsedMs": 5523.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-6",
+      "baseRemaining": "3279960"
+    },
+    {
+      "elapsedMs": 6024.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-6",
+      "baseRemaining": "3249960"
+    },
+    {
+      "elapsedMs": 6224,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-7",
+      "baseRemaining": "3238020"
+    },
+    {
+      "elapsedMs": 6528.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-7",
+      "baseRemaining": "3219960"
+    },
+    {
+      "elapsedMs": 6929.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-7",
+      "baseRemaining": "3195960"
+    },
+    {
+      "elapsedMs": 7227,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "warmup-8",
+      "baseRemaining": "3178020"
+    },
+    {
+      "elapsedMs": 7528.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "warmup-8",
+      "baseRemaining": "3159960"
+    },
+    {
+      "elapsedMs": 7930.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "warmup-8",
+      "baseRemaining": "3136020"
+    },
+    {
+      "elapsedMs": 8229.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-1",
+      "baseRemaining": "3118020"
+    },
+    {
+      "elapsedMs": 8527.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-1",
+      "baseRemaining": "3100020"
+    },
+    {
+      "elapsedMs": 9028.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-1",
+      "baseRemaining": "3069960"
+    },
+    {
+      "elapsedMs": 9225.899999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-2",
+      "baseRemaining": "3058020"
+    },
+    {
+      "elapsedMs": 9525.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-2",
+      "baseRemaining": "3039960"
+    },
+    {
+      "elapsedMs": 10025.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-2",
+      "baseRemaining": "3010020"
+    },
+    {
+      "elapsedMs": 10224.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-3",
+      "baseRemaining": "2998020"
+    },
+    {
+      "elapsedMs": 10524.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-3",
+      "baseRemaining": "2979960"
+    },
+    {
+      "elapsedMs": 11025.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-3",
+      "baseRemaining": "2950020"
+    },
+    {
+      "elapsedMs": 11222.899999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-4",
+      "baseRemaining": "2938020"
+    },
+    {
+      "elapsedMs": 11523.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-4",
+      "baseRemaining": "2920020"
+    },
+    {
+      "elapsedMs": 12023.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-4",
+      "baseRemaining": "2890020"
+    },
+    {
+      "elapsedMs": 12223.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-5",
+      "baseRemaining": "2878020"
+    },
+    {
+      "elapsedMs": 12524.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-5",
+      "baseRemaining": "2859960"
+    },
+    {
+      "elapsedMs": 13022.899999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-5",
+      "baseRemaining": "2830020"
+    },
+    {
+      "elapsedMs": 13224,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-6",
+      "baseRemaining": "2818020"
+    },
+    {
+      "elapsedMs": 13523.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-6",
+      "baseRemaining": "2799960"
+    },
+    {
+      "elapsedMs": 14024.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-6",
+      "baseRemaining": "2769960"
+    },
+    {
+      "elapsedMs": 14224.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-7",
+      "baseRemaining": "2758020"
+    },
+    {
+      "elapsedMs": 14523.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-7",
+      "baseRemaining": "2739960"
+    },
+    {
+      "elapsedMs": 15023.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-7",
+      "baseRemaining": "2709960"
+    },
+    {
+      "elapsedMs": 15223.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-8",
+      "baseRemaining": "2698020"
+    },
+    {
+      "elapsedMs": 15524,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-8",
+      "baseRemaining": "2679960"
+    },
+    {
+      "elapsedMs": 16024.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-8",
+      "baseRemaining": "2650020"
+    },
+    {
+      "elapsedMs": 16223.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-9",
+      "baseRemaining": "2637960"
+    },
+    {
+      "elapsedMs": 16523.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-9",
+      "baseRemaining": "2619960"
+    },
+    {
+      "elapsedMs": 17023.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-9",
+      "baseRemaining": "2590020"
+    },
+    {
+      "elapsedMs": 17223.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-10",
+      "baseRemaining": "2577960"
+    },
+    {
+      "elapsedMs": 17523.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-10",
+      "baseRemaining": "2560020"
+    },
+    {
+      "elapsedMs": 18023.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-10",
+      "baseRemaining": "2530020"
+    },
+    {
+      "elapsedMs": 18223.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-11",
+      "baseRemaining": "2517960"
+    },
+    {
+      "elapsedMs": 18523.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-11",
+      "baseRemaining": "2500020"
+    },
+    {
+      "elapsedMs": 19024,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-11",
+      "baseRemaining": "2470020"
+    },
+    {
+      "elapsedMs": 19223.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "ball-12",
+      "baseRemaining": "2458020"
+    },
+    {
+      "elapsedMs": 19523.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "ball-12",
+      "baseRemaining": "2439960"
+    },
+    {
+      "elapsedMs": 20024,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "ball-12",
+      "baseRemaining": "2409960"
+    },
+    {
+      "elapsedMs": 20223.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-1",
+      "baseRemaining": "2397960"
+    },
+    {
+      "elapsedMs": 20523.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-1",
+      "baseRemaining": "2379960"
+    },
+    {
+      "elapsedMs": 21023,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-1",
+      "baseRemaining": "2350020"
+    },
+    {
+      "elapsedMs": 21223.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-2",
+      "baseRemaining": "2338020"
+    },
+    {
+      "elapsedMs": 21623.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-2",
+      "baseRemaining": "2314020"
+    },
+    {
+      "elapsedMs": 21923.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-2",
+      "baseRemaining": "2296020"
+    },
+    {
+      "elapsedMs": 22223.899999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-3",
+      "baseRemaining": "2277960"
+    },
+    {
+      "elapsedMs": 22524.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-3",
+      "baseRemaining": "2259960"
+    },
+    {
+      "elapsedMs": 23024.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-3",
+      "baseRemaining": "2229960"
+    },
+    {
+      "elapsedMs": 23223.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-4",
+      "baseRemaining": "2218020"
+    },
+    {
+      "elapsedMs": 23623.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-4",
+      "baseRemaining": "2193960"
+    },
+    {
+      "elapsedMs": 23923.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-4",
+      "baseRemaining": "2176020"
+    },
+    {
+      "elapsedMs": 24223.100000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-5",
+      "baseRemaining": "2157960"
+    },
+    {
+      "elapsedMs": 24523.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-5",
+      "baseRemaining": "2139840"
+    },
+    {
+      "elapsedMs": 25024.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-5",
+      "baseRemaining": "2109840"
+    },
+    {
+      "elapsedMs": 25224.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-6",
+      "baseRemaining": "2097900"
+    },
+    {
+      "elapsedMs": 25524.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-6",
+      "baseRemaining": "2079900"
+    },
+    {
+      "elapsedMs": 25923.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-6",
+      "baseRemaining": "2055960"
+    },
+    {
+      "elapsedMs": 26223.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-7",
+      "baseRemaining": "2037960"
+    },
+    {
+      "elapsedMs": 26523.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-7",
+      "baseRemaining": "2019960"
+    },
+    {
+      "elapsedMs": 27023.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-7",
+      "baseRemaining": "1990020"
+    },
+    {
+      "elapsedMs": 27224.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-8",
+      "baseRemaining": "1977960"
+    },
+    {
+      "elapsedMs": 27623.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-8",
+      "baseRemaining": "1954020"
+    },
+    {
+      "elapsedMs": 27923.600000023842,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-8",
+      "baseRemaining": "1936020"
+    },
+    {
+      "elapsedMs": 28224.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-9",
+      "baseRemaining": "1918020"
+    },
+    {
+      "elapsedMs": 28524.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-9",
+      "baseRemaining": "1900020"
+    },
+    {
+      "elapsedMs": 29023.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-9",
+      "baseRemaining": "1869960"
+    },
+    {
+      "elapsedMs": 29203.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "orientation-10",
+      "baseRemaining": "1858500"
+    },
+    {
+      "elapsedMs": 29523.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "orientation-10",
+      "baseRemaining": "1840020"
+    },
+    {
+      "elapsedMs": 30024.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "orientation-10",
+      "baseRemaining": "1810020"
+    },
+    {
+      "elapsedMs": 30224.399999976158,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-1",
+      "baseRemaining": "1798020"
+    },
+    {
+      "elapsedMs": 30624,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-1",
+      "baseRemaining": "1774020"
+    },
+    {
+      "elapsedMs": 31223.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-1",
+      "baseRemaining": "1737960"
+    },
+    {
+      "elapsedMs": 32223.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-2",
+      "baseRemaining": "1678020"
+    },
+    {
+      "elapsedMs": 32623.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-2",
+      "baseRemaining": "1654020"
+    },
+    {
+      "elapsedMs": 33223.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-2",
+      "baseRemaining": "1617240"
+    },
+    {
+      "elapsedMs": 34224.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-3",
+      "baseRemaining": "1558020"
+    },
+    {
+      "elapsedMs": 34523.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-3",
+      "baseRemaining": "1539960"
+    },
+    {
+      "elapsedMs": 35223.10000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-3",
+      "baseRemaining": "1498020"
+    },
+    {
+      "elapsedMs": 36223.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-4",
+      "baseRemaining": "1438020"
+    },
+    {
+      "elapsedMs": 36626.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-4",
+      "baseRemaining": "1414020"
+    },
+    {
+      "elapsedMs": 37226.60000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-4",
+      "baseRemaining": "1378020"
+    },
+    {
+      "elapsedMs": 38225,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-5",
+      "baseRemaining": "1318020"
+    },
+    {
+      "elapsedMs": 38624.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-5",
+      "baseRemaining": "1294020"
+    },
+    {
+      "elapsedMs": 39224.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-5",
+      "baseRemaining": "1258020"
+    },
+    {
+      "elapsedMs": 40224.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-6",
+      "baseRemaining": "1198020"
+    },
+    {
+      "elapsedMs": 40625.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-6",
+      "baseRemaining": "1174020"
+    },
+    {
+      "elapsedMs": 41224.89999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-6",
+      "baseRemaining": "1137960"
+    },
+    {
+      "elapsedMs": 42223.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-7",
+      "baseRemaining": "1078020"
+    },
+    {
+      "elapsedMs": 43223.10000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-7",
+      "baseRemaining": "1018020"
+    },
+    {
+      "elapsedMs": 43924.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-7",
+      "baseRemaining": "976020"
+    },
+    {
+      "elapsedMs": 44223.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "physical-8",
+      "baseRemaining": "958020"
+    },
+    {
+      "elapsedMs": 44724.60000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "physical-8",
+      "baseRemaining": "927960"
+    },
+    {
+      "elapsedMs": 45723.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "physical-8",
+      "baseRemaining": "868020"
+    },
+    {
+      "elapsedMs": 46223.89999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-1",
+      "baseRemaining": "838020"
+    },
+    {
+      "elapsedMs": 46923.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-1",
+      "baseRemaining": "796020"
+    },
+    {
+      "elapsedMs": 47123.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-1",
+      "baseRemaining": "784020"
+    },
+    {
+      "elapsedMs": 47223.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-2",
+      "baseRemaining": "778020"
+    },
+    {
+      "elapsedMs": 47623.60000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-2",
+      "baseRemaining": "753960"
+    },
+    {
+      "elapsedMs": 47923,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-2",
+      "baseRemaining": "736020"
+    },
+    {
+      "elapsedMs": 48223.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-3",
+      "baseRemaining": "717960"
+    },
+    {
+      "elapsedMs": 48524.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-3",
+      "baseRemaining": "700020"
+    },
+    {
+      "elapsedMs": 49023.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-3",
+      "baseRemaining": "669960"
+    },
+    {
+      "elapsedMs": 49224,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-4",
+      "baseRemaining": "658020"
+    },
+    {
+      "elapsedMs": 49623.10000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-4",
+      "baseRemaining": "633960"
+    },
+    {
+      "elapsedMs": 49923.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-4",
+      "baseRemaining": "615960"
+    },
+    {
+      "elapsedMs": 50224.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-5",
+      "baseRemaining": "597960"
+    },
+    {
+      "elapsedMs": 50523.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-5",
+      "baseRemaining": "579960"
+    },
+    {
+      "elapsedMs": 51023.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-5",
+      "baseRemaining": "550020"
+    },
+    {
+      "elapsedMs": 51223.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-6",
+      "baseRemaining": "538020"
+    },
+    {
+      "elapsedMs": 51523.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-6",
+      "baseRemaining": "520020"
+    },
+    {
+      "elapsedMs": 52024.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-6",
+      "baseRemaining": "490020"
+    },
+    {
+      "elapsedMs": 52224.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-7",
+      "baseRemaining": "477960"
+    },
+    {
+      "elapsedMs": 52525,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-7",
+      "baseRemaining": "459960"
+    },
+    {
+      "elapsedMs": 53023.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-7",
+      "baseRemaining": "429960"
+    },
+    {
+      "elapsedMs": 53223.89999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "integration-8",
+      "baseRemaining": "418020"
+    },
+    {
+      "elapsedMs": 53524.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "integration-8",
+      "baseRemaining": "400020"
+    },
+    {
+      "elapsedMs": 54023.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "integration-8",
+      "baseRemaining": "370020"
+    },
+    {
+      "elapsedMs": 54224.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-1",
+      "baseRemaining": "358020"
+    },
+    {
+      "elapsedMs": 54524.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-1",
+      "baseRemaining": "340020"
+    },
+    {
+      "elapsedMs": 55123.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-1",
+      "baseRemaining": "303900"
+    },
+    {
+      "elapsedMs": 55223.89999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-2",
+      "baseRemaining": "297840"
+    },
+    {
+      "elapsedMs": 55524,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-2",
+      "baseRemaining": "279900"
+    },
+    {
+      "elapsedMs": 56124,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-2",
+      "baseRemaining": "243900"
+    },
+    {
+      "elapsedMs": 56224,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-3",
+      "baseRemaining": "237900"
+    },
+    {
+      "elapsedMs": 56523.200000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-3",
+      "baseRemaining": "219960"
+    },
+    {
+      "elapsedMs": 57023.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-3",
+      "baseRemaining": "189960"
+    },
+    {
+      "elapsedMs": 57224.700000047684,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-4",
+      "baseRemaining": "177960"
+    },
+    {
+      "elapsedMs": 57523.60000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-4",
+      "baseRemaining": "160020"
+    },
+    {
+      "elapsedMs": 58123.60000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-4",
+      "baseRemaining": "124020"
+    },
+    {
+      "elapsedMs": 58223.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-5",
+      "baseRemaining": "118020"
+    },
+    {
+      "elapsedMs": 58423.39999997616,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-5",
+      "baseRemaining": "106020"
+    },
+    {
+      "elapsedMs": 59124.5,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-5",
+      "baseRemaining": "64020"
+    },
+    {
+      "elapsedMs": 59223.800000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "demonstration",
+      "occurrence": "cooldown-6",
+      "baseRemaining": "58020"
+    },
+    {
+      "elapsedMs": 59423.300000071526,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "work",
+      "occurrence": "cooldown-6",
+      "baseRemaining": "46020"
+    },
+    {
+      "elapsedMs": 60124.10000002384,
+      "testid": "hour-session",
+      "status": "running",
+      "phase": "rest",
+      "occurrence": "cooldown-6",
+      "baseRemaining": "4020"
+    },
+    {
+      "elapsedMs": 60227.10000002384,
+      "testid": "hour-session",
+      "status": "completed",
+      "phase": "",
+      "occurrence": "",
+      "baseRemaining": "0"
+    }
+  ],
+  "last": "//completed",
+  "finished": {
+    "at": "2026-10-01T23:58:42.373Z",
+    "elapsedMs": 60227.200000047684,
+    "text": "SESIÓN COMPLETA · 2 × 2 M\n\nFundamentos en casa\nEN REVISIÓN\n\nRecorrido de 60 minutos en revisión. Balón, pared despejada y colchoneta. Los cambios son automáticos; añade tiempo cuando lo necesites.\n\nPRUEBA ACELERADA ×60 · Solo para comprobar el recorrido. No sigas los ejercicios a esta velocidad.\n\n1. Preparación gradual\n8 min\n2. Fundamentos de balón\n12 min\n3. Orientación corporal\n10 min\n4. Preparación física general\n16 min\n5. Integración técnica\n8 min\n6. Descenso gradual de actividad\n6 min\nRecorrido finalizado\nRestante 00:00\nLateral\nFrontal\nTres cuartos\nÁrea de referencia · 2 × 2 m\n\nObserva la postura; el avatar no marca tus ciclos de respiración.\n\nPreparar otra sesión\nSilenciar sonido final\n\nSesión terminada\n\n00:00\n\nTerminaste el recorrido.\n\nEl avatar es un ejemplo: no cuenta tus repeticiones. Si aparecen dolor, bloqueo, inflamación o inestabilidad, detente y busca valoración.\n\nResumen de tiempos de esta sesión"
+  },
+  "tones": [
+    {
+      "at": 63680,
+      "state": "running"
+    }
+  ]
+}
