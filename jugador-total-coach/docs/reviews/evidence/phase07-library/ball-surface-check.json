@@ -1,0 +1,4113 @@
+{
+  "method": "Sphere radius subtracted from distance to deformed avatar triangles at 30 Hz; negative means surface intersects sphere; not sports validation",
+  "reports": [
+    {
+      "kind": "inside-outside-sole",
+      "side": "left",
+      "sha256": "a623183188a1ddac2449da755b0728aa3383eb866f75411f9b20f6290891936b",
+      "minGap": -0.000009994964327131317,
+      "maxContactGap": 0.006953493029485683,
+      "samples": [
+        {
+          "time": 0,
+          "gapToAvatarSurfaceMeters": 0.06764134909077128,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.03333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06759833037542783,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.06666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06747541003234565,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.1,
+          "gapToAvatarSurfaceMeters": 0.06728218395023412,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.13333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06702799593284782,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.16666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06672247216126002,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.2,
+          "gapToAvatarSurfaceMeters": 0.06637493000697044,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.23333333333333334,
+          "gapToAvatarSurfaceMeters": 0.06599476420918642,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.26666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06559124492270914,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.3,
+          "gapToAvatarSurfaceMeters": 0.06517351469662551,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.3333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0647506486359559,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.36666666666666664,
+          "gapToAvatarSurfaceMeters": 0.06433108903427097,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.4,
+          "gapToAvatarSurfaceMeters": 0.06392388292267927,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.43333333333333335,
+          "gapToAvatarSurfaceMeters": 0.06353756553149979,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.4666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06318071996972234,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.5,
+          "gapToAvatarSurfaceMeters": 0.06286212846959195,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.5333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06259004513789436,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.5666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06237332627418714,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.6,
+          "gapToAvatarSurfaceMeters": 0.0622201657440198,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.062139481133541605,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.6666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06207335295562315,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.7,
+          "gapToAvatarSurfaceMeters": 0.06167620496354369,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.7333333333333333,
+          "gapToAvatarSurfaceMeters": 0.060859046709937595,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.7666666666666667,
+          "gapToAvatarSurfaceMeters": 0.059560791791117326,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.8,
+          "gapToAvatarSurfaceMeters": 0.057790312712112366,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.8333333333333334,
+          "gapToAvatarSurfaceMeters": 0.055440132003885964,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.052559022470086966,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.9,
+          "gapToAvatarSurfaceMeters": 0.04896899894231192,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.9333333333333333,
+          "gapToAvatarSurfaceMeters": 0.04487447990137937,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 0.9666666666666667,
+          "gapToAvatarSurfaceMeters": 0.04040926937716251,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1,
+          "gapToAvatarSurfaceMeters": 0.03577096972911577,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.0333333333333334,
+          "gapToAvatarSurfaceMeters": 0.030933818956406553,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.0666666666666667,
+          "gapToAvatarSurfaceMeters": 0.025943988666639287,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.1,
+          "gapToAvatarSurfaceMeters": 0.020913437020328038,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.015935958748124576,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.1666666666666667,
+          "gapToAvatarSurfaceMeters": 0.01106875504731153,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.2,
+          "gapToAvatarSurfaceMeters": 0.0062423464566747355,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 1.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.0035968397624788068,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.003640259969996229,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.3,
+          "gapToAvatarSurfaceMeters": 0.003684537856468967,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.3333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0036896980689388875,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.003686390436514572,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.4,
+          "gapToAvatarSurfaceMeters": 0.003692213825113533,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.4333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0036898727202078208,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.4666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0036946849367408136,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.5,
+          "gapToAvatarSurfaceMeters": 0.003694567439184379,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.5333333333333334,
+          "gapToAvatarSurfaceMeters": 0.0036955558974488267,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.5666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0036996286647306142,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.6,
+          "gapToAvatarSurfaceMeters": 0.003694624675094335,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0037048562431677423,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.6666666666666667,
+          "gapToAvatarSurfaceMeters": 0.003691002890816822,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.7,
+          "gapToAvatarSurfaceMeters": 0.003709431077631914,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.003684372724558141,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0037131195862652455,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.8,
+          "gapToAvatarSurfaceMeters": 0.0036932835294850447,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.8333333333333333,
+          "gapToAvatarSurfaceMeters": 0.003715336710139988,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0037027124264648326,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.9,
+          "gapToAvatarSurfaceMeters": 0.0037153912365527064,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.9333333333333333,
+          "gapToAvatarSurfaceMeters": 0.003712130076181236,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 1.9666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00434578486843884,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 2,
+          "gapToAvatarSurfaceMeters": 0.008264555414908947,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 2.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.014480421091215362,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 2.066666666666667,
+          "gapToAvatarSurfaceMeters": 0.022715523426320258,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 2.1,
+          "gapToAvatarSurfaceMeters": 0.03376511290203622,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.051901191744461325,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.1666666666666665,
+          "gapToAvatarSurfaceMeters": 0.0779301801932324,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.2,
+          "gapToAvatarSurfaceMeters": 0.10453311841232747,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.12618786147555777,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.13631869510643863,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.3,
+          "gapToAvatarSurfaceMeters": 0.1366284460609679,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.3333333333333335,
+          "gapToAvatarSurfaceMeters": 0.1331052253773481,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.1275282673288503,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.4,
+          "gapToAvatarSurfaceMeters": 0.12062088195596703,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.433333333333333,
+          "gapToAvatarSurfaceMeters": 0.1133802523556716,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.1068841669189572,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.5,
+          "gapToAvatarSurfaceMeters": 0.10151233424958468,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.09767344986506692,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.566666666666667,
+          "gapToAvatarSurfaceMeters": 0.09731701927537,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.6,
+          "gapToAvatarSurfaceMeters": 0.10079722374791185,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.10800855758336393,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.6666666666666665,
+          "gapToAvatarSurfaceMeters": 0.11333407010151729,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.7,
+          "gapToAvatarSurfaceMeters": 0.12053972723126814,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.12941086747991531,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.13734855003849744,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.8,
+          "gapToAvatarSurfaceMeters": 0.1453590418703541,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 2.8333333333333335,
+          "gapToAvatarSurfaceMeters": 0.14769696575747204,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 2.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.14792802043154046,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 2.9,
+          "gapToAvatarSurfaceMeters": 0.1481233565653693,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 2.933333333333333,
+          "gapToAvatarSurfaceMeters": 0.147438057540968,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 2.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.14129297220776438,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3,
+          "gapToAvatarSurfaceMeters": 0.1264625694026585,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 3.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.09634291819668696,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 3.066666666666667,
+          "gapToAvatarSurfaceMeters": 0.0642210002817827,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 3.1,
+          "gapToAvatarSurfaceMeters": 0.037314044063437204,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 3.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.021482113427791508,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.1666666666666665,
+          "gapToAvatarSurfaceMeters": 0.012058673795576152,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.2,
+          "gapToAvatarSurfaceMeters": 0.00811492430200668,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.006297663889954827,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0049475010587528845,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.3,
+          "gapToAvatarSurfaceMeters": 0.004975284272988503,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.3333333333333335,
+          "gapToAvatarSurfaceMeters": 0.005038297486363308,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.005116668171882749,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.4,
+          "gapToAvatarSurfaceMeters": 0.005234982054908674,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.433333333333333,
+          "gapToAvatarSurfaceMeters": 0.00535780661083457,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.005523585137542614,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.5,
+          "gapToAvatarSurfaceMeters": 0.005685602959156974,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00588515471423505,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.566666666666667,
+          "gapToAvatarSurfaceMeters": 0.006085392574134027,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.6,
+          "gapToAvatarSurfaceMeters": 0.006306026760696484,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.006530952656424657,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.6666666666666665,
+          "gapToAvatarSurfaceMeters": 0.0067691312971890905,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 3.7,
+          "gapToAvatarSurfaceMeters": 0.006953493029485683,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.0066704225759949415,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.006381224572271582,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.8,
+          "gapToAvatarSurfaceMeters": 0.006083799160407494,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.8333333333333335,
+          "gapToAvatarSurfaceMeters": 0.005783809663067491,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.005479682954038015,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.9,
+          "gapToAvatarSurfaceMeters": 0.0051740316178897905,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.933333333333333,
+          "gapToAvatarSurfaceMeters": 0.004871087244560909,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 3.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.004566510611105815,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4,
+          "gapToAvatarSurfaceMeters": 0.004270336669292496,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00397449272535641,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.003689724106249667,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.1,
+          "gapToAvatarSurfaceMeters": 0.0034103966849020617,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.0031418417517119768,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.0028865336448921364,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.2,
+          "gapToAvatarSurfaceMeters": 0.0026390449439873537,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.0024145937633855835,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.0021927498314909116,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.3,
+          "gapToAvatarSurfaceMeters": 0.0020069915920578885,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0018155382153876298,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.0016753438626798817,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.4,
+          "gapToAvatarSurfaceMeters": 0.0015299252197091828,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.0014319180652132418,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.001339642556552903,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.5,
+          "gapToAvatarSurfaceMeters": 0.0012885369434573885,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0012567513244252787,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.0008591816653547996,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.6,
+          "gapToAvatarSurfaceMeters": -0.000009994964327131317,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.004032694480259044,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.013508842798220816,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 4.7,
+          "gapToAvatarSurfaceMeters": 0.030170580989389337,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.05816697638502165,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.09123378810230769,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.8,
+          "gapToAvatarSurfaceMeters": 0.12198256613850748,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.1455792414076429,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.15574385836769067,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.9,
+          "gapToAvatarSurfaceMeters": 0.15591722068942981,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.15193701200670912,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 4.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.14569771175756924,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5,
+          "gapToAvatarSurfaceMeters": 0.13784400841905214,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.12928892234878808,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.12014084657007791,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.1,
+          "gapToAvatarSurfaceMeters": 0.11220919396726999,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.10667176512820002,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.09977863816471406,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.2,
+          "gapToAvatarSurfaceMeters": 0.09805373934946064,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.1019099823823041,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.10999239462033693,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.3,
+          "gapToAvatarSurfaceMeters": 0.12057513467595742,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.13376756323168,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.14801935766956792,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.4,
+          "gapToAvatarSurfaceMeters": 0.1619171582099292,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.17412928664483385,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.18350318319525233,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.5,
+          "gapToAvatarSurfaceMeters": 0.18925486767161892,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.18972904768833876,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.1815016707821191,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.6,
+          "gapToAvatarSurfaceMeters": 0.16439578691841145,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.1443556287249103,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.1261524912000001,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.7,
+          "gapToAvatarSurfaceMeters": 0.1117176192161219,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 5.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.1007670948871101,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.08336974990620337,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.8,
+          "gapToAvatarSurfaceMeters": 0.07070487432731985,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.06363303451109419,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.06263186572408534,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.9,
+          "gapToAvatarSurfaceMeters": 0.06286211844494859,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.06312472237700721,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 5.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06341490196911796,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6,
+          "gapToAvatarSurfaceMeters": 0.06372749207611635,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06405777340877643,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06440037011827272,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.1,
+          "gapToAvatarSurfaceMeters": 0.06475060481206589,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.06510321317428118,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.06545322128560073,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.2,
+          "gapToAvatarSurfaceMeters": 0.06579540599068863,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.06612457662560907,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06643531739342289,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.3,
+          "gapToAvatarSurfaceMeters": 0.06672251987549525,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06698037826029683,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.06720372818143365,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.4,
+          "gapToAvatarSurfaceMeters": 0.06738704585512799,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06752479189792061,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.06761135772012354,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.5,
+          "gapToAvatarSurfaceMeters": 0.06764132731267765,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764130578455714,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764133465173673,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.6,
+          "gapToAvatarSurfaceMeters": 0.06764135761198851,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.06764134772516588,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764136772769778,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.7,
+          "gapToAvatarSurfaceMeters": 0.06764132198716981,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764132046892503,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764133003097093,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.8,
+          "gapToAvatarSurfaceMeters": 0.06764132073490971,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764132225321547,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764137299801716,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.9,
+          "gapToAvatarSurfaceMeters": 0.06764136650501089,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.06764133543429716,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 6.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764131622417525,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7,
+          "gapToAvatarSurfaceMeters": 0.06764132211888389,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764131851397932,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764131941893896,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.1,
+          "gapToAvatarSurfaceMeters": 0.06764132460833495,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.06759832990636712,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.06747540910455375,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.2,
+          "gapToAvatarSurfaceMeters": 0.06728218250045105,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.0670279938623141,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06672247417731554,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.3,
+          "gapToAvatarSurfaceMeters": 0.06637493198907156,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0659947660352354,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.06559124631347056,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.4,
+          "gapToAvatarSurfaceMeters": 0.06517351575797926,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06475064932674206,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.0643310893388304,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.5,
+          "gapToAvatarSurfaceMeters": 0.06392388284881627,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.06353756514877042,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06318071934730186,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.6,
+          "gapToAvatarSurfaceMeters": 0.06286212769854722,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.06259004408822454,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.062373325565902374,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.7,
+          "gapToAvatarSurfaceMeters": 0.062220165173501416,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.06213948170553436,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 7.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.06187675723691112,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.8,
+          "gapToAvatarSurfaceMeters": 0.05661286421195129,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.04670222955680654,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.032909313786346026,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.9,
+          "gapToAvatarSurfaceMeters": 0.01887821066214447,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.008213107935975142,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 7.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.003052284199359559,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8,
+          "gapToAvatarSurfaceMeters": 0.0020046986895885244,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.006764086381849083,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.013768046969318729,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.1,
+          "gapToAvatarSurfaceMeters": 0.020607117865361638,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.02343961866321538,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.023254098537417903,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.2,
+          "gapToAvatarSurfaceMeters": 0.02076637168366384,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.016629791947337977,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.011745279886417673,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.3,
+          "gapToAvatarSurfaceMeters": 0.007053984080018033,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 8.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00330297697736541,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.0009929225921156831,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.4,
+          "gapToAvatarSurfaceMeters": 0.00011072988918861548,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011388643161631962,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011153454931062123,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.5,
+          "gapToAvatarSurfaceMeters": 0.00011296640129691837,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011181047169092628,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011184471865277601,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.6,
+          "gapToAvatarSurfaceMeters": 0.00011132416767704878,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011096422820110197,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011030454462013228,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.7,
+          "gapToAvatarSurfaceMeters": 0.00011052070979751527,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010904940916121875,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011023468503897071,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.8,
+          "gapToAvatarSurfaceMeters": 0.00010792547335299052,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011104255066735069,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010697490272948418,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.9,
+          "gapToAvatarSurfaceMeters": 0.00010939696790923659,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010641100279833171,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 8.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010831787558730765,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9,
+          "gapToAvatarSurfaceMeters": 0.00010631096066682222,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010674302460340901,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010675275292942876,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.1,
+          "gapToAvatarSurfaceMeters": 0.0001059729478366106,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.0001077893753819309,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010550659785972527,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.2,
+          "gapToAvatarSurfaceMeters": 0.00010899289491660136,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010500087337600439,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011077629480867046,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.3,
+          "gapToAvatarSurfaceMeters": 0.0001054662956374991,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010914746151718946,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010628090562729564,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.4,
+          "gapToAvatarSurfaceMeters": 0.00010838877690241833,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010726880153075213,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010798771173982369,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.5,
+          "gapToAvatarSurfaceMeters": 0.00010809636365465003,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0001078311879439825,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010903363966227597,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.6,
+          "gapToAvatarSurfaceMeters": 0.00010791838056950498,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011005781244627366,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010785202179362796,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.7,
+          "gapToAvatarSurfaceMeters": 0.00011079649357960408,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011090642711240883,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011079284216299057,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.8,
+          "gapToAvatarSurfaceMeters": 0.00011078822154068912,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011086664508561106,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011083109367973631,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.9,
+          "gapToAvatarSurfaceMeters": 0.00011092652150807014,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.0001108456850853895,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 9.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011093038636834918,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10,
+          "gapToAvatarSurfaceMeters": 0.00011083233770614598,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011082771708614825,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011080930458087779,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.1,
+          "gapToAvatarSurfaceMeters": 0.00011083320821997367,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011086519538665296,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011083093045584358,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.2,
+          "gapToAvatarSurfaceMeters": 0.00011077034228805516,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011084773378927659,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.0001108642403978427,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.3,
+          "gapToAvatarSurfaceMeters": 0.00011085223548017165,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011076970366970251,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010891897475606704,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.4,
+          "gapToAvatarSurfaceMeters": 0.00010816344651481957,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010920040067852188,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010773345827773395,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.5,
+          "gapToAvatarSurfaceMeters": 0.00010977542278198249,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0001072303938241953,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011082572075971076,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.6,
+          "gapToAvatarSurfaceMeters": 0.00010684513030276288,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010943580992264779,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010637682427053208,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.7,
+          "gapToAvatarSurfaceMeters": 0.0001080313713224812,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010634498140162096,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010687015614850581,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.8,
+          "gapToAvatarSurfaceMeters": 0.00010687889587543409,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010592457677349731,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010773228749715036,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.9,
+          "gapToAvatarSurfaceMeters": 0.00010530862718716172,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.0001091832414859828,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 10.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010509460513791202,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11,
+          "gapToAvatarSurfaceMeters": 0.00011075676850420824,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010541164339140929,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010938253005621235,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.1,
+          "gapToAvatarSurfaceMeters": 0.00010628881501660581,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010846150195865933,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010722713868381584,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.2,
+          "gapToAvatarSurfaceMeters": 0.00010829221205066464,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010849477720853429,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010871742489899916,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.3,
+          "gapToAvatarSurfaceMeters": 0.00010967910651221713,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.0001095683418732285,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011074398478225222,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.4,
+          "gapToAvatarSurfaceMeters": 0.00011079933068768033,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011083969041597586,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011181314096098127,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.5,
+          "gapToAvatarSurfaceMeters": 0.00011120754705318259,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011275415614532547,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.0001122883037480149,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.6,
+          "gapToAvatarSurfaceMeters": 0.00011316966357738378,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011286640423552319,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00017392120318734938,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.7,
+          "gapToAvatarSurfaceMeters": 0.0005747690091753022,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.0013730414412760628,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.0025743693172375626,
+          "nearestBone": "ball_l"
+        },
+        {
+          "time": 11.8,
+          "gapToAvatarSurfaceMeters": 0.00410274461818827,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 11.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.005985641040610001,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 11.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.008148501185321289,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 11.9,
+          "gapToAvatarSurfaceMeters": 0.010525153411197058,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 11.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.013016896152976104,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 11.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.015487451722185061,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12,
+          "gapToAvatarSurfaceMeters": 0.017846962672572228,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.019935462216390656,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.021670649794743965,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.1,
+          "gapToAvatarSurfaceMeters": 0.022934035768826785,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.023641250272678202,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.023785830380935638,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.2,
+          "gapToAvatarSurfaceMeters": 0.023270659445641564,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.02187385543323088,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.019248321139733085,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.3,
+          "gapToAvatarSurfaceMeters": 0.01586037095881336,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.012093648553910347,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.008498539104673061,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.4,
+          "gapToAvatarSurfaceMeters": 0.0052460485714237864,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.0028823960362996948,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.0017239121860891937,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.5,
+          "gapToAvatarSurfaceMeters": 0.002162293730772716,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.004185156665980516,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00652526876493599,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.6,
+          "gapToAvatarSurfaceMeters": 0.01037659909209998,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.015742620012523814,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.02225205935192158,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.7,
+          "gapToAvatarSurfaceMeters": 0.029338609600936552,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.03655896443472052,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.04348047563541828,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.8,
+          "gapToAvatarSurfaceMeters": 0.04971661395883821,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.054627777104867645,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.0585144570337572,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.9,
+          "gapToAvatarSurfaceMeters": 0.06116165566410482,
+          "nearestBone": "foot_l"
+        },
+        {
+          "time": 12.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.062461004412275714,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 12.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06263187949878264,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13,
+          "gapToAvatarSurfaceMeters": 0.06286213387378846,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06312467353487426,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06341495405737206,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.1,
+          "gapToAvatarSurfaceMeters": 0.06372749511278734,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.06405779048453218,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.06440041967250311,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.2,
+          "gapToAvatarSurfaceMeters": 0.06475061291342467,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.06510320639779267,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06545326357855656,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.3,
+          "gapToAvatarSurfaceMeters": 0.06579535130844909,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.06612454812012035,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.06643537597017536,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.4,
+          "gapToAvatarSurfaceMeters": 0.06672254998091788,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06698037962874008,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.06720372708035414,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.5,
+          "gapToAvatarSurfaceMeters": 0.06738704495271232,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.06752471263529973,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06761129355439703,
+          "nearestBone": "calf_l"
+        },
+        {
+          "time": 13.6,
+          "gapToAvatarSurfaceMeters": 0.06764131408677927,
+          "nearestBone": "calf_l"
+        }
+      ]
+    },
+    {
+      "kind": "inside-outside-sole",
+      "side": "right",
+      "sha256": "742291c854a7cd04a54838c49be065de2b73ffd61600f81578a8b3739bdb26d8",
+      "minGap": -0.000009917493631203533,
+      "maxContactGap": 0.006953343249474941,
+      "samples": [
+        {
+          "time": 0,
+          "gapToAvatarSurfaceMeters": 0.06764137617266298,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.03333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06759853071314785,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.06666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06747566004109025,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.1,
+          "gapToAvatarSurfaceMeters": 0.06728235363082348,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.13333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06702815409141864,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.16666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06672247188442372,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.2,
+          "gapToAvatarSurfaceMeters": 0.06637503820352818,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.23333333333333334,
+          "gapToAvatarSurfaceMeters": 0.06599493418570453,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.26666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06559142560336713,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.3,
+          "gapToAvatarSurfaceMeters": 0.06517361725159503,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.3333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06475069552896247,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.36666666666666664,
+          "gapToAvatarSurfaceMeters": 0.06433113583803839,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.4,
+          "gapToAvatarSurfaceMeters": 0.0639238713677966,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.43333333333333335,
+          "gapToAvatarSurfaceMeters": 0.06353765731135534,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.4666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06318095974840483,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.5,
+          "gapToAvatarSurfaceMeters": 0.06286222598236023,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.5333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06259012497248422,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.5666666666666667,
+          "gapToAvatarSurfaceMeters": 0.062373393926183615,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.6,
+          "gapToAvatarSurfaceMeters": 0.06222021619953173,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06213950771614181,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.6666666666666666,
+          "gapToAvatarSurfaceMeters": 0.06207345360972054,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.7,
+          "gapToAvatarSurfaceMeters": 0.06167619438973525,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.7333333333333333,
+          "gapToAvatarSurfaceMeters": 0.060859266884115984,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.7666666666666667,
+          "gapToAvatarSurfaceMeters": 0.059560952671128,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.8,
+          "gapToAvatarSurfaceMeters": 0.057790499703037915,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.8333333333333334,
+          "gapToAvatarSurfaceMeters": 0.05544012311406578,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.052559242608927845,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.9,
+          "gapToAvatarSurfaceMeters": 0.048968886941858455,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.9333333333333333,
+          "gapToAvatarSurfaceMeters": 0.04487463112097957,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 0.9666666666666667,
+          "gapToAvatarSurfaceMeters": 0.04040934975828185,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1,
+          "gapToAvatarSurfaceMeters": 0.035770921338395864,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.0333333333333334,
+          "gapToAvatarSurfaceMeters": 0.030933988801219905,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.0666666666666667,
+          "gapToAvatarSurfaceMeters": 0.025944138322689728,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.1,
+          "gapToAvatarSurfaceMeters": 0.020913576575500706,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.015936041508867696,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.1666666666666667,
+          "gapToAvatarSurfaceMeters": 0.011068892964040136,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.2,
+          "gapToAvatarSurfaceMeters": 0.0062425669612064805,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 1.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.003596494202660644,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0036399720552180714,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.3,
+          "gapToAvatarSurfaceMeters": 0.0036841555276596605,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.3333333333333333,
+          "gapToAvatarSurfaceMeters": 0.003689386039307782,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0036863141036550806,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.4,
+          "gapToAvatarSurfaceMeters": 0.0036920532243435306,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.4333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0036896860892786237,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.4666666666666666,
+          "gapToAvatarSurfaceMeters": 0.003694303033259877,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.5,
+          "gapToAvatarSurfaceMeters": 0.0036943070738007094,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.5333333333333334,
+          "gapToAvatarSurfaceMeters": 0.0036952158344956826,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.5666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0036993880927803924,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.6,
+          "gapToAvatarSurfaceMeters": 0.003694317489765092,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0037046336254321494,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.6666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0036907017936159275,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.7,
+          "gapToAvatarSurfaceMeters": 0.0037091303520361135,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.003684269414781602,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0037128759539195866,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.8,
+          "gapToAvatarSurfaceMeters": 0.0036931727545392035,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.8333333333333333,
+          "gapToAvatarSurfaceMeters": 0.003715112571914536,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.0037023151313834712,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.9,
+          "gapToAvatarSurfaceMeters": 0.0037153258053629346,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.9333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0037117159126966587,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 1.9666666666666666,
+          "gapToAvatarSurfaceMeters": 0.004345482900406053,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 2,
+          "gapToAvatarSurfaceMeters": 0.008264231978110576,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 2.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.014480221448973637,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 2.066666666666667,
+          "gapToAvatarSurfaceMeters": 0.02271505766941488,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 2.1,
+          "gapToAvatarSurfaceMeters": 0.03376471148611972,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.051900817610217545,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.1666666666666665,
+          "gapToAvatarSurfaceMeters": 0.07792988378471559,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.2,
+          "gapToAvatarSurfaceMeters": 0.1045329447657707,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.1261875303371937,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.13631847431017363,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.3,
+          "gapToAvatarSurfaceMeters": 0.136628012090392,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.3333333333333335,
+          "gapToAvatarSurfaceMeters": 0.13310485808608458,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.12752795892660712,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.4,
+          "gapToAvatarSurfaceMeters": 0.1206204385050411,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.433333333333333,
+          "gapToAvatarSurfaceMeters": 0.11337985877235489,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.10688388740917594,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.5,
+          "gapToAvatarSurfaceMeters": 0.10151221067452325,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0976733011651948,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.566666666666667,
+          "gapToAvatarSurfaceMeters": 0.09731689390535005,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.6,
+          "gapToAvatarSurfaceMeters": 0.10079715207070088,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.10800857741988214,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.6666666666666665,
+          "gapToAvatarSurfaceMeters": 0.11333395726628127,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.7,
+          "gapToAvatarSurfaceMeters": 0.12053968210469675,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.1294106642358977,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.13734857636608316,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.8,
+          "gapToAvatarSurfaceMeters": 0.14535900894575632,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 2.8333333333333335,
+          "gapToAvatarSurfaceMeters": 0.14769710945200643,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 2.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.147928165587716,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 2.9,
+          "gapToAvatarSurfaceMeters": 0.14812351094381415,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 2.933333333333333,
+          "gapToAvatarSurfaceMeters": 0.1474382139767756,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 2.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.14129318069520896,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3,
+          "gapToAvatarSurfaceMeters": 0.12646278971317054,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 3.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.09634289775510814,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 3.066666666666667,
+          "gapToAvatarSurfaceMeters": 0.06422061627212079,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 3.1,
+          "gapToAvatarSurfaceMeters": 0.037314023679714384,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 3.1333333333333333,
+          "gapToAvatarSurfaceMeters": 0.02148195296407711,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.1666666666666665,
+          "gapToAvatarSurfaceMeters": 0.012058500957196308,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.2,
+          "gapToAvatarSurfaceMeters": 0.008114700923091342,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.2333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00629809842211608,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.2666666666666666,
+          "gapToAvatarSurfaceMeters": 0.004947790616381245,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.3,
+          "gapToAvatarSurfaceMeters": 0.004975569569236338,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.3333333333333335,
+          "gapToAvatarSurfaceMeters": 0.005038751157858887,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.3666666666666667,
+          "gapToAvatarSurfaceMeters": 0.005116974186574044,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.4,
+          "gapToAvatarSurfaceMeters": 0.005235122408861981,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.433333333333333,
+          "gapToAvatarSurfaceMeters": 0.005358093362938021,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.0055239424899636985,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.5,
+          "gapToAvatarSurfaceMeters": 0.005685713501775755,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.005885368861999543,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.566666666666667,
+          "gapToAvatarSurfaceMeters": 0.006085723815107774,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.6,
+          "gapToAvatarSurfaceMeters": 0.006306267611109154,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.6333333333333333,
+          "gapToAvatarSurfaceMeters": 0.006531106635548414,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.6666666666666665,
+          "gapToAvatarSurfaceMeters": 0.006769531671759255,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 3.7,
+          "gapToAvatarSurfaceMeters": 0.006953343249474941,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.7333333333333334,
+          "gapToAvatarSurfaceMeters": 0.006670274590183836,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.7666666666666666,
+          "gapToAvatarSurfaceMeters": 0.006381301477928897,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.8,
+          "gapToAvatarSurfaceMeters": 0.0060837676748373565,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.8333333333333335,
+          "gapToAvatarSurfaceMeters": 0.0057837080766900695,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.8666666666666667,
+          "gapToAvatarSurfaceMeters": 0.00547967243828483,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.9,
+          "gapToAvatarSurfaceMeters": 0.005173853338697534,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.933333333333333,
+          "gapToAvatarSurfaceMeters": 0.004870940613846145,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 3.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.004566547879799765,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4,
+          "gapToAvatarSurfaceMeters": 0.0042702023655765975,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.003974576629965018,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.0036897088961437563,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.1,
+          "gapToAvatarSurfaceMeters": 0.003410442541148348,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.0031418200290752873,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.0028864625175299558,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.2,
+          "gapToAvatarSurfaceMeters": 0.002638965371261348,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.002414689466871442,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.002192631317935456,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.3,
+          "gapToAvatarSurfaceMeters": 0.002007061682010522,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.0018154930851259216,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.0016753510307050412,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.4,
+          "gapToAvatarSurfaceMeters": 0.0015298535372491318,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.001431925323214997,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.0013395835755821428,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.5,
+          "gapToAvatarSurfaceMeters": 0.0012886817456684713,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0012566362389472008,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.0008593357607318414,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.6,
+          "gapToAvatarSurfaceMeters": -0.000009917493631203533,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.004032724507658916,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.013508887263474628,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 4.7,
+          "gapToAvatarSurfaceMeters": 0.030170428007278663,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.058167017954801684,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.09123387409014265,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.8,
+          "gapToAvatarSurfaceMeters": 0.12198271499840042,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.1455793425484872,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.15574396541621,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.9,
+          "gapToAvatarSurfaceMeters": 0.15591726699864777,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.15193701220792893,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 4.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.14569776618288954,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5,
+          "gapToAvatarSurfaceMeters": 0.13784389161626182,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.12928894396588375,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.12014099204896823,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.1,
+          "gapToAvatarSurfaceMeters": 0.11220907527252753,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.10667184220015825,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.09977849414152747,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.2,
+          "gapToAvatarSurfaceMeters": 0.09805366460809044,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.10190971069120726,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.10999209505386638,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.3,
+          "gapToAvatarSurfaceMeters": 0.12057481358863341,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.13376718568635165,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.14801883845810204,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.4,
+          "gapToAvatarSurfaceMeters": 0.16191679696713757,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.17412882219946846,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.18350245988540725,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.5,
+          "gapToAvatarSurfaceMeters": 0.18925434867941066,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.18972887713330783,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.18150102003851382,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.6,
+          "gapToAvatarSurfaceMeters": 0.16439551815194853,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.14435512527215005,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.12615202675871234,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.7,
+          "gapToAvatarSurfaceMeters": 0.11171714366496681,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 5.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.10076718133279082,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.08336977048662851,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.8,
+          "gapToAvatarSurfaceMeters": 0.07070486399118321,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.06363290141141596,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.06263193574142999,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.9,
+          "gapToAvatarSurfaceMeters": 0.06286221645540853,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.0631247980905484,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 5.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06341501502156462,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6,
+          "gapToAvatarSurfaceMeters": 0.06372755214969673,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06405785587083347,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06440040030796616,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.1,
+          "gapToAvatarSurfaceMeters": 0.06475071014448276,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.06510320679112648,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.06545331282113916,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.2,
+          "gapToAvatarSurfaceMeters": 0.06579552020777375,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.06612457745546506,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06643538726988281,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.3,
+          "gapToAvatarSurfaceMeters": 0.06672251581964163,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06698038207811406,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.06720388884638771,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.4,
+          "gapToAvatarSurfaceMeters": 0.06738710749578576,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06752479683216005,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.06761140124117378,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.5,
+          "gapToAvatarSurfaceMeters": 0.06764139476028432,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764129841861312,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764130746418122,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.6,
+          "gapToAvatarSurfaceMeters": 0.06764132436823396,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.06764129356611485,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764130252150628,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.7,
+          "gapToAvatarSurfaceMeters": 0.06764129726085542,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.0676413189002432,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764131506310335,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.8,
+          "gapToAvatarSurfaceMeters": 0.06764137601499938,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764133160464626,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764136679710041,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.9,
+          "gapToAvatarSurfaceMeters": 0.06764132995369466,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.06764143998249532,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 6.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06764144769862264,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7,
+          "gapToAvatarSurfaceMeters": 0.06764145211570181,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06764148541497363,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06764148541497363,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.1,
+          "gapToAvatarSurfaceMeters": 0.06764149362466627,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.133333333333334,
+          "gapToAvatarSurfaceMeters": 0.0675985302442862,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.166666666666667,
+          "gapToAvatarSurfaceMeters": 0.06747565911292137,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.2,
+          "gapToAvatarSurfaceMeters": 0.06728235218097188,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.06702815201981828,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06672247390150716,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.3,
+          "gapToAvatarSurfaceMeters": 0.06637504018501768,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.333333333333333,
+          "gapToAvatarSurfaceMeters": 0.06599493601146435,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.366666666666666,
+          "gapToAvatarSurfaceMeters": 0.06559142699409772,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.4,
+          "gapToAvatarSurfaceMeters": 0.06517361831314221,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06475069621983663,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.06433113614259754,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.5,
+          "gapToAvatarSurfaceMeters": 0.06392387129392334,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.0635376569287797,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06318095912572376,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.6,
+          "gapToAvatarSurfaceMeters": 0.06286222521126271,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.633333333333334,
+          "gapToAvatarSurfaceMeters": 0.06259012392275305,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.666666666666667,
+          "gapToAvatarSurfaceMeters": 0.06237339321781997,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.7,
+          "gapToAvatarSurfaceMeters": 0.06222021562886461,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.06213950829002897,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 7.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.06187663187083432,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.8,
+          "gapToAvatarSurfaceMeters": 0.056612332107823335,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.833333333333333,
+          "gapToAvatarSurfaceMeters": 0.046701960037442994,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.866666666666666,
+          "gapToAvatarSurfaceMeters": 0.032909014624832464,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.9,
+          "gapToAvatarSurfaceMeters": 0.018877695646009815,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.00821289710349915,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 7.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.0030522293671364636,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8,
+          "gapToAvatarSurfaceMeters": 0.0020044053263282707,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.0067639194954291215,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.013767951298879394,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.1,
+          "gapToAvatarSurfaceMeters": 0.02060709406157353,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.023439215409348638,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.02325417315849422,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.2,
+          "gapToAvatarSurfaceMeters": 0.020766351662261248,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.016629979759624505,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.011745356867876158,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.3,
+          "gapToAvatarSurfaceMeters": 0.007054152505832301,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 8.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.003302919311021557,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.000993183834289868,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.4,
+          "gapToAvatarSurfaceMeters": 0.00011111932873092423,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011388004329268564,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011185391198358097,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.5,
+          "gapToAvatarSurfaceMeters": 0.00011313804364310176,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011167535927594785,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011203402993169298,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.6,
+          "gapToAvatarSurfaceMeters": 0.00011147475340175794,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011114310620734258,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011068987621529192,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.7,
+          "gapToAvatarSurfaceMeters": 0.00011062371844007546,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010946733123395891,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011045358651122494,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.8,
+          "gapToAvatarSurfaceMeters": 0.00010818382455396458,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011090817304501566,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010706511831122534,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.9,
+          "gapToAvatarSurfaceMeters": 0.00011002375880704574,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.0001064819003566142,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 8.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010833802708744289,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9,
+          "gapToAvatarSurfaceMeters": 0.00010659917864186408,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010703702336359311,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010715158619840903,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.1,
+          "gapToAvatarSurfaceMeters": 0.0001059571912946089,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010792750752816604,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010562497358704293,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.2,
+          "gapToAvatarSurfaceMeters": 0.00010919793615933593,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010561984844768835,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011096447158225053,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.3,
+          "gapToAvatarSurfaceMeters": 0.00010581851927678187,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010951134906889148,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010657674085733093,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.4,
+          "gapToAvatarSurfaceMeters": 0.00010881609415515359,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010740233692413392,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010821845972132371,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.5,
+          "gapToAvatarSurfaceMeters": 0.00010843480985742171,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010809923415200373,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010926046774649423,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.6,
+          "gapToAvatarSurfaceMeters": 0.00010814859008446975,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011027524846576875,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0001080572241085459,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.7,
+          "gapToAvatarSurfaceMeters": 0.0001110573241315943,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011095466439846324,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011094025490486492,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.8,
+          "gapToAvatarSurfaceMeters": 0.00011095755383183636,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011114501744811933,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011107991654879523,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.9,
+          "gapToAvatarSurfaceMeters": 0.0001110806791813912,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011109786757365625,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 9.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011111928159009132,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10,
+          "gapToAvatarSurfaceMeters": 0.00011096833556316354,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011115516561395478,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011106579307118558,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.1,
+          "gapToAvatarSurfaceMeters": 0.0001110320900535311,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011108855200080148,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011103020948927123,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.2,
+          "gapToAvatarSurfaceMeters": 0.00011105535382842369,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011115407238145025,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011124444447636883,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.3,
+          "gapToAvatarSurfaceMeters": 0.00011103129318321137,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011096042719865862,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010895662296170339,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.4,
+          "gapToAvatarSurfaceMeters": 0.00010849524400356747,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010949805040350036,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010814832935066021,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.5,
+          "gapToAvatarSurfaceMeters": 0.0001101364574635777,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010752180902988406,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011098566020058265,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.6,
+          "gapToAvatarSurfaceMeters": 0.0001071096870800814,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010993160921901612,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010671165569908769,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.7,
+          "gapToAvatarSurfaceMeters": 0.00010849855911279627,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010674060911229633,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010711063886149896,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.8,
+          "gapToAvatarSurfaceMeters": 0.00010709662597598035,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010640777973641713,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.0001080785696762343,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.9,
+          "gapToAvatarSurfaceMeters": 0.0001054579952247392,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010918790644982856,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 10.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010533649132146716,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11,
+          "gapToAvatarSurfaceMeters": 0.00011100740551019117,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010563456583138897,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.00010930932929960335,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.1,
+          "gapToAvatarSurfaceMeters": 0.00010647048084327926,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.00010863209180125843,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.0001074734407709721,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.2,
+          "gapToAvatarSurfaceMeters": 0.00010841753123626285,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.0001088892999116936,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.00010880560443057852,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.3,
+          "gapToAvatarSurfaceMeters": 0.00010967432282794898,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.00010968000346600615,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011075383008357642,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.4,
+          "gapToAvatarSurfaceMeters": 0.00011098942442756832,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.00011108180217657415,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.00011187996099425168,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.5,
+          "gapToAvatarSurfaceMeters": 0.00011146309497353513,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011293177094663653,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.00011228540995959768,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.6,
+          "gapToAvatarSurfaceMeters": 0.00011337181992369938,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.00011317808523751693,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.0001740680514876608,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.7,
+          "gapToAvatarSurfaceMeters": 0.0005750270735471741,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.001373337539064226,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.0025744196334091946,
+          "nearestBone": "ball_r"
+        },
+        {
+          "time": 11.8,
+          "gapToAvatarSurfaceMeters": 0.004102816929570152,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 11.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.0059858973034997015,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 11.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.008148550572028596,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 11.9,
+          "gapToAvatarSurfaceMeters": 0.010525407874793488,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 11.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.01301704138321301,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 11.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.015487490877113666,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12,
+          "gapToAvatarSurfaceMeters": 0.017846662814061262,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.019935524570674282,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.021670468291370384,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.1,
+          "gapToAvatarSurfaceMeters": 0.02293420997635219,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.023641014755889103,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.023785823962139754,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.2,
+          "gapToAvatarSurfaceMeters": 0.02327064036625022,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.021873740977305697,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.01924806596333979,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.3,
+          "gapToAvatarSurfaceMeters": 0.015860195196369817,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.012093616552777242,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.008498474715603471,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.4,
+          "gapToAvatarSurfaceMeters": 0.005246168351349723,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.0028823309832917005,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.0017239156362826025,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.5,
+          "gapToAvatarSurfaceMeters": 0.0021620973931520543,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.004185010599025887,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.006524924837778626,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.6,
+          "gapToAvatarSurfaceMeters": 0.010376307682690503,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.633333333333333,
+          "gapToAvatarSurfaceMeters": 0.015742503861897142,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.666666666666666,
+          "gapToAvatarSurfaceMeters": 0.022251945004570353,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.7,
+          "gapToAvatarSurfaceMeters": 0.029338193240675922,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.733333333333333,
+          "gapToAvatarSurfaceMeters": 0.03655861488990107,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.766666666666667,
+          "gapToAvatarSurfaceMeters": 0.0434802356045378,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.8,
+          "gapToAvatarSurfaceMeters": 0.04971622294065177,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.833333333333334,
+          "gapToAvatarSurfaceMeters": 0.05462762456320634,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.866666666666667,
+          "gapToAvatarSurfaceMeters": 0.05851415390283578,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.9,
+          "gapToAvatarSurfaceMeters": 0.06116131044420316,
+          "nearestBone": "foot_r"
+        },
+        {
+          "time": 12.933333333333334,
+          "gapToAvatarSurfaceMeters": 0.062461026112992216,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 12.966666666666667,
+          "gapToAvatarSurfaceMeters": 0.06263194346271035,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13,
+          "gapToAvatarSurfaceMeters": 0.062862227183112,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.033333333333333,
+          "gapToAvatarSurfaceMeters": 0.06312480305727271,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.066666666666666,
+          "gapToAvatarSurfaceMeters": 0.06341502703713252,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.1,
+          "gapToAvatarSurfaceMeters": 0.06372756210891493,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.133333333333333,
+          "gapToAvatarSurfaceMeters": 0.06405785215924663,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.166666666666666,
+          "gapToAvatarSurfaceMeters": 0.06440043502657096,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.2,
+          "gapToAvatarSurfaceMeters": 0.06475070698438427,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.233333333333333,
+          "gapToAvatarSurfaceMeters": 0.06510327342732063,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.266666666666667,
+          "gapToAvatarSurfaceMeters": 0.06545332949769493,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.3,
+          "gapToAvatarSurfaceMeters": 0.06579551550299394,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.333333333333334,
+          "gapToAvatarSurfaceMeters": 0.06612457656513486,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.366666666666667,
+          "gapToAvatarSurfaceMeters": 0.06643538933058808,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.4,
+          "gapToAvatarSurfaceMeters": 0.06672252169810021,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.433333333333334,
+          "gapToAvatarSurfaceMeters": 0.06698038280900111,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.466666666666667,
+          "gapToAvatarSurfaceMeters": 0.06720389215434057,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.5,
+          "gapToAvatarSurfaceMeters": 0.0673870921990402,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.533333333333333,
+          "gapToAvatarSurfaceMeters": 0.06752479526411657,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.566666666666666,
+          "gapToAvatarSurfaceMeters": 0.06761140138077591,
+          "nearestBone": "calf_r"
+        },
+        {
+          "time": 13.6,
+          "gapToAvatarSurfaceMeters": 0.06764139441741664,
+          "nearestBone": "calf_r"
+        }
+      ]
+    }
+  ]
+}

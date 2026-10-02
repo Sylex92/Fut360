@@ -1,0 +1,55 @@
+{
+  "assetId": "quaternius-inside-outside-sole-left-v1",
+  "version": 1,
+  "file": "assets/runtime/inside-outside-sole-left-v1.glb",
+  "sha256": "a623183188a1ddac2449da755b0728aa3383eb866f75411f9b20f6290891936b",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_inside-outside-sole__left__v1",
+  "fps": 30,
+  "durationMs": 13600,
+  "loopable": false,
+  "startPose": "inside-outside-sole-left-start",
+  "endPose": "inside-outside-sole-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.5313437019531844, -0.000020734632159472994, -0.45391677287155974],
+    "max": [0.45195186417966415, 1.7195858118573324, 0.38990838724388877]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft",
+  "sourceFile": "assets/source/inside-outside-sole/inside-outside-sole-left-v1.blend",
+  "sourceSha256": "b4dce06b27120694f055496c8a6fdeab70cdd8ef46c2bdba54a85d44fcd7759c",
+  "meters": true,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "anatomicalRightAxis": "-X",
+  "ballProfile": {
+    "radiusMeters": 0.11,
+    "path": "Authored combination of existing v2 paths; not a predicted physical trajectory"
+  },
+  "contactWindows": [
+    {
+      "side": "left",
+      "startMs": 1300,
+      "endMs": 1950
+    },
+    {
+      "side": "left",
+      "startMs": 3250,
+      "endMs": 4550
+    },
+    {
+      "side": "left",
+      "startMs": 8400,
+      "endMs": 11650
+    }
+  ],
+  "notes": [
+    "Existing v2 inside/outside and lateral sole sequences joined with Blender; 6.5 + 0.6 + 6.5 seconds",
+    "One finite illustration; not a prescribed exercise dose"
+  ]
+}

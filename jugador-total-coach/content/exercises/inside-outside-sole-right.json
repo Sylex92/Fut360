@@ -1,0 +1,40 @@
+{
+  "id": "inside-outside-sole-right",
+  "version": 1,
+  "displayName": "Interior, exterior y planta · pie derecho",
+  "categories": ["control del balón", "combinación de superficies"],
+  "goals": ["Enlazar interior, exterior y planta manteniendo el balón cerca"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["ball"],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-inside-outside-sole-right-v1",
+    "clipName": "EX_inside-outside-sole__right__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter", "detail"]
+  },
+  "cues": [
+    "Mantén el apoyo en el pie izquierdo, sin saltar.",
+    "Acerca el balón con el interior derecho; recoloca el pie por detrás y devuélvelo con el exterior.",
+    "Después, coloca suavemente la planta del pie derecho sobre el balón.",
+    "Rueda el balón de lado y de vuelta, sin cargar tu peso sobre él; retira el pie y apóyalo."
+  ],
+  "commonErrors": [
+    "Cargar el peso sobre el balón al usar la planta.",
+    "Cruzar el pie a través del balón en lugar de recolocarlo por detrás.",
+    "Acelerar perdiendo el control o forzando el alcance."
+  ],
+  "regressionId": "inside-outside-right",
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "Demostración en revisión; la cadencia del avatar no determina tu dosis personal.",
+    "Conserva el apoyo en el suelo; no te subas al balón.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración."
+  ],
+  "reviewStatus": "draft"
+}

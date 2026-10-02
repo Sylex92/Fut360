@@ -46,6 +46,20 @@ El [perfil compartido](https://www.facebook.com/profile.php?id=61573433638197) n
 
 ## Cómo revisar futuros videos
 
+### Seguimiento de la biblioteca — 2026-10-02
+
+Se revisaron los nuevos enlaces aportados mediante consulta web y navegador independiente, sin iniciar sesión ni descargar medios:
+
+| Enlace | Evidencia obtenida | Decisión |
+|---|---|---|
+| [Reel 2103500517219937](https://www.facebook.com/reel/2103500517219937) | Consulta web fallida; navegador mostró página Facebook sin ejercicio identificable. | Autor, secuencia y finalidad pendientes. No incorporado ni atribuido. |
+| [Reel 975636694923025](https://www.facebook.com/reel/975636694923025) | Consulta web fallida; navegador mostró acceso/inicio de sesión y «Ver más en Facebook». | Sin contenido audiovisual comprobado; no se inicia sesión ni se elude el acceso. |
+| [7MLC: biblioteca de videos](https://www.youtube.com/@7mlc/videos) | El intento de navegación agotó su tiempo; consulta web del video Maestro devolvió título pero no secuencia verificable. | Sigue siendo candidato; no se declaran movimientos revisados por una miniatura/título. |
+
+F03 reconsultada: texto completo de organización, variantes y orientaciones disponible. Se produce una combinación propia limitada de tres superficies, con [fundamento y límites](../training/BALL_COMBINATION_REVIEW.md), sin copiar medios ni adoptar la sesión de campo como dosis doméstica. No es una revisión exhaustiva de redes sociales.
+
+La cola de producción se vincula con [las tareas por función](../training/ROLE_AND_ENVIRONMENT_PLAN.md): B1 comienza con esta combinación; siguiente recurso doméstico propuesto, salida diagonal con planta/reorientación. G1/E1 (recepción y finalización/salida), M1 (recepción perfilada con información útil) y D1 (aproximación y orientación defensiva) conservan fuentes textuales F11/F02/F12 y necesitan ficha visual/entorno propio. Son prioridades, no nuevos ejercicios ejecutables ni ejercicios observados en los reels.
+
 Antes de incorporar una tarea: identificar autor y variante; observar la secuencia completa, apoyos, contactos y resultado; comprobar concordancia entre explicación y ejecución; distinguir ejemplo lento de ritmo objetivo; revisar espacio, equipo, regresión y progresión; contrastar promesas con evidencia pertinente. Registrar URL y fragmento efectivamente visto. Una miniatura, etiquetas o resumen no equivalen a ver el movimiento.
 
 La selección no premiará movimientos vistosos sin propósito, saltos como dificultad universal, entrenamiento al agotamiento ni promesas de profesionalización rápida. Tampoco rechazará una tarea sencilla si resuelve una carencia observable. Los desacuerdos entre fuentes se resolverán por variante, población, objetivo y contexto, no por número de seguidores.

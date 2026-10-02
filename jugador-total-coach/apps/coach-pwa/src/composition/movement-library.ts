@@ -1,5 +1,7 @@
 export interface MovementPreview {
   id: string;
+  category: 'ball' | 'strength' | 'mobility' | 'breathing';
+  equipmentKind: 'none' | 'ball' | 'mat' | 'wall';
   name: string;
   assetUrl: string;
   clipName: string;
@@ -14,7 +16,55 @@ export interface MovementPreview {
 // Product instructions only; the documentary review is not imported into the app.
 export const movements: readonly MovementPreview[] = [
   {
+    id: 'inside-outside-sole-left',
+    category: 'ball',
+    equipmentKind: 'ball',
+    name: 'Interior, exterior y planta · pie izquierdo',
+    assetUrl: new URL(
+      '../../../../assets/runtime/inside-outside-sole-left-v1.glb',
+      import.meta.url,
+    ).href,
+    clipName: 'EX_inside-outside-sole__left__v1',
+    durationMs: 13600,
+    framing: 'standing',
+    footDetail: true,
+    equipment: 'Balón · sin saltos',
+    preparation:
+      'Una secuencia con el mismo pie: dos toques (interior y exterior), luego planta de ida y vuelta.',
+    cues: [
+      'Mantén el apoyo en el pie derecho, sin saltar.',
+      'Acerca el balón con el interior izquierdo; recoloca el pie por detrás y devuélvelo con el exterior.',
+      'Después, coloca suavemente la planta del pie izquierdo sobre el balón.',
+      'Rueda el balón de lado y de vuelta, sin cargar tu peso sobre él; retira el pie y apóyalo.',
+    ],
+  },
+  {
+    id: 'inside-outside-sole-right',
+    category: 'ball',
+    equipmentKind: 'ball',
+    name: 'Interior, exterior y planta · pie derecho',
+    assetUrl: new URL(
+      '../../../../assets/runtime/inside-outside-sole-right-v1.glb',
+      import.meta.url,
+    ).href,
+    clipName: 'EX_inside-outside-sole__right__v1',
+    durationMs: 13600,
+    framing: 'standing',
+    footDetail: true,
+    equipment: 'Balón · sin saltos',
+    preparation:
+      'Una secuencia con el mismo pie: dos toques (interior y exterior), luego planta de ida y vuelta.',
+    cues: [
+      'Mantén el apoyo en el pie izquierdo, sin saltar.',
+      'Acerca el balón con el interior derecho; recoloca el pie por detrás y devuélvelo con el exterior.',
+      'Después, coloca suavemente la planta del pie derecho sobre el balón.',
+      'Rueda el balón de lado y de vuelta, sin cargar tu peso sobre él; retira el pie y apóyalo.',
+    ],
+  },
+  {
     id: 'wall-push-up',
+    category: 'strength',
+    equipmentKind: 'wall',
     name: 'Flexión contra la pared',
     assetUrl: new URL('../../../../assets/runtime/wall-push-up-v1.glb', import.meta.url).href,
     clipName: 'EX_wall-push-up__bilateral__v1',
@@ -32,6 +82,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'hip-hinge',
+    category: 'strength',
+    equipmentKind: 'none',
     name: 'Bisagra de cadera',
     assetUrl: new URL('../../../../assets/runtime/hip-hinge-v1.glb', import.meta.url).href,
     clipName: 'EX_hip-hinge__neutral__v1',
@@ -48,6 +100,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'inside-inside',
+    category: 'ball',
+    equipmentKind: 'ball',
     name: 'Campanitas · interior-interior',
     assetUrl: new URL('../../../../assets/runtime/inside-inside-v2.glb', import.meta.url).href,
     clipName: 'EX_inside-inside__alternating__v2',
@@ -65,6 +119,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'glute-bridge',
+    category: 'strength',
+    equipmentKind: 'mat',
     name: 'Puente de glúteos',
     assetUrl: new URL('../../../../assets/runtime/glute-bridge-v1.glb', import.meta.url).href,
     clipName: 'EX_glute-bridge__bilateral__v1',
@@ -82,6 +138,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'active-march',
+    category: 'mobility',
+    equipmentKind: 'none',
     name: 'Marcha en el sitio',
     assetUrl: new URL('../../../../assets/runtime/active-march-v2.glb', import.meta.url).href,
     clipName: 'EX_active-march__alternate__v2',
@@ -97,6 +155,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'mini-squat',
+    category: 'strength',
+    equipmentKind: 'none',
     name: 'Sentadilla corta',
     assetUrl: new URL('../../../../assets/runtime/mini-squat-v2.glb', import.meta.url).href,
     clipName: 'EX_mini-squat__bilateral__v2',
@@ -113,6 +173,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'ankle-mobility-left',
+    category: 'mobility',
+    equipmentKind: 'none',
     name: 'Balanceo de tobillo · izquierdo delante',
     assetUrl: new URL('../../../../assets/runtime/ankle-mobility-left-v1.glb', import.meta.url)
       .href,
@@ -129,6 +191,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'ankle-mobility-right',
+    category: 'mobility',
+    equipmentKind: 'none',
     name: 'Balanceo de tobillo · derecho delante',
     assetUrl: new URL(
       '../../../../assets/runtime/ankle-mobility-right-v1.glb',
@@ -147,6 +211,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'soft-step-turn-left',
+    category: 'mobility',
+    equipmentKind: 'none',
     name: 'Giro por pasos · izquierda',
     assetUrl: new URL('../../../../assets/runtime/soft-step-turn-left-v2.glb', import.meta.url)
       .href,
@@ -164,6 +230,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'soft-step-turn-right',
+    category: 'mobility',
+    equipmentKind: 'none',
     name: 'Giro por pasos · derecha',
     assetUrl: new URL(
       '../../../../assets/runtime/soft-step-turn-right-v2.glb',
@@ -183,6 +251,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'dead-bug',
+    category: 'strength',
+    equipmentKind: 'mat',
     name: 'Pierna alterna con brazos apoyados',
     assetUrl: new URL('../../../../assets/runtime/dead-bug-v1.glb', import.meta.url).href,
     clipName: 'EX_dead-bug__arms-supported__v1',
@@ -199,6 +269,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'slow-breathing',
+    category: 'breathing',
+    equipmentKind: 'none',
     name: 'Postura para respirar cómodamente',
     assetUrl: new URL('../../../../assets/runtime/slow-breathing-v1.glb', import.meta.url)
       .href,
@@ -215,6 +287,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'lateral-sole-roll-left',
+    category: 'ball',
+    equipmentKind: 'ball',
     name: 'Planta lateral · pie izquierdo',
     assetUrl: new URL(
       '../../../../assets/runtime/lateral-sole-roll-left-v2.glb',
@@ -235,6 +309,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'lateral-sole-roll-right',
+    category: 'ball',
+    equipmentKind: 'ball',
     name: 'Planta lateral · pie derecho',
     assetUrl: new URL(
       '../../../../assets/runtime/lateral-sole-roll-right-v2.glb',
@@ -255,6 +331,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'inside-outside-left',
+    category: 'ball',
+    equipmentKind: 'ball',
     name: 'Interior/exterior · pie izquierdo',
     assetUrl: new URL('../../../../assets/runtime/inside-outside-left-v2.glb', import.meta.url)
       .href,
@@ -273,6 +351,8 @@ export const movements: readonly MovementPreview[] = [
   },
   {
     id: 'inside-outside-right',
+    category: 'ball',
+    equipmentKind: 'ball',
     name: 'Interior/exterior · pie derecho',
     assetUrl: new URL(
       '../../../../assets/runtime/inside-outside-right-v2.glb',

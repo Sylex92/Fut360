@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-02T21:11:08.650Z",
+  "environment": "Independent Chromium on Windows; 412/360 px viewports, not Samsung hardware",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "name": "Búsqueda sin acentos y mayúsculas",
+      "pass": true
+    },
+    {
+      "name": "Vacío sin visor antiguo",
+      "pass": true
+    },
+    {
+      "name": "Intersección incompatible vacía",
+      "pass": true
+    },
+    {
+      "name": "Limpiar restaura 18 variantes",
+      "pass": true
+    },
+    {
+      "name": "Filtrar conserva selección visible",
+      "pass": true
+    },
+    {
+      "name": "Siete variantes con balón",
+      "pass": true
+    },
+    {
+      "name": "Reproducción 2× y pausa con cambio de cámara",
+      "pass": true
+    },
+    {
+      "name": "Final único finito de la combinación derecha",
+      "pass": true
+    },
+    {
+      "name": "Cambiar lado reinicia en pausa y velocidad 1×",
+      "pass": true
+    },
+    {
+      "name": "412 px sin desbordamiento horizontal",
+      "pass": true
+    },
+    {
+      "name": "Tab lleva de búsqueda a objetivo",
+      "pass": true
+    },
+    {
+      "name": "Filtrado móvil cambia a colchoneta",
+      "pass": true
+    },
+    {
+      "name": "360 px sin desbordamiento horizontal",
+      "pass": true
+    },
+    {
+      "name": "Combinación izquierda completa y final finito",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "The first timed observation needed the test tab brought to foreground; repeated successfully without changing the app.",
+    "Known THREE.Clock warnings; no console errors.",
+    "Saving from the browser VM was unsupported; evidence saved through workspace file tools."
+  ],
+  "screenshots": [
+    "library-desktop.png",
+    "library-mobile.png",
+    "right-feet.png",
+    "left-feet.png",
+    "left-interior.png"
+  ]
+}

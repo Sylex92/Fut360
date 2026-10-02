@@ -23,11 +23,15 @@ const versionFilter =
 const assetFilter = process.argv.find((a) => a.startsWith('--asset='))?.split('=')[1];
 if (assetFilter && !/^[a-z0-9-]+$/.test(assetFilter)) throw new Error('Invalid asset name');
 if (!['1', '2'].includes(versionFilter)) throw new Error('Supported versions: 1 or 2');
-const reportDirectory = assetFilter
-  ? 'docs/reviews/evidence/phase06-' + assetFilter
-  : versionFilter === '2'
-    ? 'docs/reviews/evidence/phase06-natural-motion'
-    : 'docs/reviews/evidence/phase06';
+const reportGroup = process.argv.find((a) => a.startsWith('--report-group='))?.split('=')[1];
+if (reportGroup && !/^[a-z0-9-]+$/.test(reportGroup)) throw new Error('Invalid report group');
+const reportDirectory = reportGroup
+  ? 'docs/reviews/evidence/' + reportGroup
+  : assetFilter
+    ? 'docs/reviews/evidence/phase06-' + assetFilter
+    : versionFilter === '2'
+      ? 'docs/reviews/evidence/phase06-natural-motion'
+      : 'docs/reviews/evidence/phase06';
 for (const name of readdirSync(resolve(root, 'assets/runtime'))
   .filter(
     (n) =>
@@ -117,7 +121,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     : [];
   if (['glute-bridge', 'dead-bug'].includes(kind)) fixed.push('Head');
   if (kind === 'wall-push-up') fixed.push('hand_l', 'hand_r');
-  if (['lateral-sole-roll', 'inside-outside'].includes(kind)) {
+  if (['lateral-sole-roll', 'inside-outside', 'inside-outside-sole'].includes(kind)) {
     const support = variant === 'left' ? 'r' : 'l';
     fixed.push('foot_' + support, 'ball_' + support);
   }
@@ -234,7 +238,7 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
 if (!reports.length) throw new Error('No GLB matched the requested asset/version');
 mkdirSync(resolve(root, reportDirectory), { recursive: true });
 write(reportDirectory + '/asset-validation.json', {
-  checkedAt: '2026-09-30',
+  checkedAt: new Date().toISOString(),
   method:
     'GLTFLoader/AnimationMixer + posed vertices at 30 Hz; texture decode excluded; not sporting certification',
   reports,

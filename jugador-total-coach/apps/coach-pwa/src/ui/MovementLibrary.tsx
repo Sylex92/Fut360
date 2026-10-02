@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import type { CameraPreset } from '@fut360/viewer-3d/scene';
 import { movements } from '../composition/movement-library';
 import type { MovementPreview } from '../composition/movement-library';
+import { filterMovements } from '../composition/movement-search';
 
 const Scene = lazy(() =>
   import('@fut360/viewer-3d/scene').then((m) => ({ default: m.ExerciseScene })),
@@ -183,7 +184,7 @@ function Preview({ movement }: { movement: MovementPreview }) {
             <select value={speed} onChange={(e) => setSpeed(Number(e.target.value))}>
               <option value="0.5">Despacio · ½×</option>
               <option value="1">Detalle · 1×</option>
-              {movement.id === 'inside-inside' && <option value="2">Más ágil · 2×</option>}
+              {movement.footDetail && <option value="2">Más ágil · 2×</option>}
             </select>
           </label>
           <label className="contact-option">
@@ -228,23 +229,87 @@ function Preview({ movement }: { movement: MovementPreview }) {
 
 export function MovementLibrary() {
   const [selected, setSelected] = useState('active-march');
-  const movement = movements.find((item) => item.id === selected)!;
+  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState('');
+  const [equipment, setEquipment] = useState('');
+  const filtered = filterMovements(movements, { query, category, equipment });
+  const movement = filtered.find((item) => item.id === selected) ?? filtered[0];
+  const hasFilters = query !== '' || category !== '' || equipment !== '';
+  // Remember the visible selection when filtering removes the previous one.
+  useEffect(() => {
+    if (movement && movement.id !== selected) setSelected(movement.id);
+  }, [movement, selected]);
   return (
     <section
       className="panel demo-panel movement-library"
       aria-label="Biblioteca de movimientos"
     >
-      <label className="contact-option">
-        Movimiento
-        <select value={selected} onChange={(e) => setSelected(e.target.value)}>
-          {movements.map((item) => (
-            <option key={item.id} value={item.id}>
-              {item.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <Preview key={movement.id} movement={movement} />
+      <h2>Biblioteca de ejercicios</h2>
+      <div className="library-filters">
+        <label className="contact-option library-search">
+          Buscar ejercicio
+          <input
+            type="search"
+            value={query}
+            placeholder="Nombre, movimiento o indicación"
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </label>
+        <label className="contact-option">
+          Objetivo
+          <select value={category} onChange={(e) => setCategory(e.target.value)}>
+            <option value="">Todos los objetivos</option>
+            <option value="ball">Control del balón</option>
+            <option value="strength">Fuerza y estabilidad</option>
+            <option value="mobility">Movilidad y coordinación</option>
+            <option value="breathing">Respiración</option>
+          </select>
+        </label>
+        <label className="contact-option">
+          Material
+          <select value={equipment} onChange={(e) => setEquipment(e.target.value)}>
+            <option value="">Todo el material</option>
+            <option value="none">Sin material</option>
+            <option value="ball">Balón</option>
+            <option value="mat">Colchoneta</option>
+            <option value="wall">Pared</option>
+          </select>
+        </label>
+      </div>
+      <div className="library-results">
+        <p role="status">
+          {filtered.length} de {movements.length} variantes disponibles
+        </p>
+        {hasFilters && (
+          <button
+            type="button"
+            onClick={() => {
+              setQuery('');
+              setCategory('');
+              setEquipment('');
+            }}
+          >
+            Limpiar filtros
+          </button>
+        )}
+      </div>
+      {movement ? (
+        <>
+          <label className="contact-option">
+            Movimiento
+            <select value={movement.id} onChange={(e) => setSelected(e.target.value)}>
+              {filtered.map((item) => (
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <Preview key={movement.id} movement={movement} />
+        </>
+      ) : (
+        <p>No hay ejercicios con estos filtros. Prueba otro término o limpia los filtros.</p>
+      )}
     </section>
   );
 }

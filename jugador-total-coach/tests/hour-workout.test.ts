@@ -40,7 +40,12 @@ describe('programa v2 y cobertura', () => {
     ]);
     expect(hourWorkout.plan.purpose).toBe('training-draft');
     expect(new Set(hourWorkout.plan.occurrences.map((o) => o.exerciseId)).size).toBe(16);
-    expect(new Set(catalog.entries.map((e) => e.patternId)).size).toBe(12);
+    const used = new Set(hourWorkout.plan.occurrences.map((o) => o.exerciseId));
+    expect(
+      new Set(catalog.entries.filter((e) => used.has(e.exerciseId)).map((e) => e.patternId))
+        .size,
+    ).toBe(12);
+    expect(used.has('inside-outside-sole-left')).toBe(false);
   });
   it('cada clip/variante realmente existe y coincide con el manifiesto y la ficha', () => {
     for (const m of movements) {

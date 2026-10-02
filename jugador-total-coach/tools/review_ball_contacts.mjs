@@ -1,5 +1,5 @@
 // Geometric inspection using Three's triangle queries, not a physics/contact solver.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { resolve, dirname } from 'node:path';
@@ -13,10 +13,12 @@ const { AnimationMixer, Texture, Vector3, Triangle, SkinnedMesh, LoopOnce } = aw
   pathToFileURL(resolve(dirname(req.resolve('three')), 'three.module.js')).href
 );
 const reports = [];
+const combination = process.argv.includes('--combination');
 const version = process.argv.includes('--version=2') ? 2 : 1;
-const cases = ['lateral-sole-roll', 'inside-outside'].flatMap((kind) =>
-  ['left', 'right'].map((side) => ({ kind, side })),
-);
+if (combination && version !== 1) throw new Error('Combination version must be 1');
+const cases = (
+  combination ? ['inside-outside-sole'] : ['lateral-sole-roll', 'inside-outside']
+).flatMap((kind) => ['left', 'right'].map((side) => ({ kind, side })));
 if (version === 2) cases.push({ kind: 'inside-inside', side: 'alternate' });
 for (const { kind, side } of cases) {
   const stem = kind === 'inside-inside' ? kind : `${kind}-${side}`;
@@ -66,6 +68,10 @@ for (const { kind, side } of cases) {
     samples.push({ time, gapToAvatarSurfaceMeters: nearest, nearestBone });
   }
   const contacts = samples.filter((sample) => {
+    if (kind === 'inside-outside-sole') {
+      const t = sample.time;
+      return (t >= 1.3 && t <= 1.95) || (t >= 3.25 && t <= 4.55) || (t >= 8.4 && t <= 11.65);
+    }
     if (kind === 'inside-inside') {
       if (sample.time < 0.35 || sample.time >= 6.15) return false;
       const old = (((sample.time - 0.35) / 2.9) % 1) * 8;
@@ -85,13 +91,17 @@ for (const { kind, side } of cases) {
     samples,
   });
 }
-writeFileSync(
-  resolve(
-    root,
-    version === 2
+const reportFile = resolve(
+  root,
+  combination
+    ? 'docs/reviews/evidence/phase07-library/ball-surface-check.json'
+    : version === 2
       ? 'docs/reviews/evidence/phase06-natural-motion/ball-surface-check.json'
       : 'docs/reviews/evidence/phase06/ball-surface-check.json',
-  ),
+);
+mkdirSync(dirname(reportFile), { recursive: true });
+writeFileSync(
+  reportFile,
   JSON.stringify(
     {
       method:

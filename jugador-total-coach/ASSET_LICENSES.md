@@ -71,3 +71,12 @@ Se conservan las versiones v1 anteriores. Nueve recursos v2 corrigen movimiento 
 ## Integración de sesión v2 — 2026-10-01
 
 Los dieciséis recursos de 04–06 se reutilizan sin modificar archivos GLB/fuentes ni adquirir contenido. La aceptación de claridad del empuje contra pared queda registrada en [cierre de 06](docs/reviews/phase06-closeout.md); no modifica derechos ni otorga revisión profesional. El aviso final de 07 se sintetiza mediante Web Audio nativo, sin archivo musical ajeno. [Cobertura y hashes](docs/reviews/evidence/phase07/coverage.json), [revisión de costos/reutilización](docs/reviews/phase07-cost-and-reuse.md). Se conservan las licencias/avisos auditados y el lockfile; aportaciones del proyecto sin nueva licencia pública.
+
+## Combinación de superficies — 2026-10-02
+
+Dos GLB propios derivados de interior/exterior v2 y planta lateral v2, del mismo Quaternius CC0 ya auditado. Conservan rig, geometría, pesos, materiales y ropa mediante pruebas. Blender existente une poses con transición de 0,6 s; no contenido de redes o FIFA redistribuido, nuevas descargas, dependencias o pagos. Aportaciones propias sin nueva licencia pública. Estado draft; [fundamento](docs/training/BALL_COMBINATION_REVIEW.md) y [verificaciones/costos](docs/reviews/phase07-library-review.md).
+
+| Recurso | SHA-256 GLB | Fuente y SHA-256 |
+|---|---|---|
+| [quaternius-inside-outside-sole-left-v1](assets/runtime/inside-outside-sole-left-v1.glb) | `a623183188a1ddac2449da755b0728aa3383eb866f75411f9b20f6290891936b` | [Fuente](assets/source/inside-outside-sole/inside-outside-sole-left-v1.blend), `b4dce06b27120694f055496c8a6fdeab70cdd8ef46c2bdba54a85d44fcd7759c` |
+| [quaternius-inside-outside-sole-right-v1](assets/runtime/inside-outside-sole-right-v1.glb) | `742291c854a7cd04a54838c49be065de2b73ffd61600f81578a8b3739bdb26d8` | [Fuente](assets/source/inside-outside-sole/inside-outside-sole-right-v1.blend), `8baadd73068b54e17c1950eadf4258679ca861a0bd36e093a9235746c8470f34` |

@@ -229,6 +229,15 @@ it.each(catalog.entries.filter((entry) => 'previousManifest' in entry))(
   },
 );
 
+it.each(['left', 'right'])(
+  'la combinación %s conserva geometría, pesos, materiales y rig de sus fuentes',
+  (side) => {
+    expect(appearance(`assets/runtime/inside-outside-sole-${side}-v1.glb`)).toEqual(
+      appearance(`assets/runtime/inside-outside-${side}-v2.glb`),
+    );
+  },
+);
+
 it.each(catalog.entries)(
   'conserva la pose al pausar, llegar al final y volver atrás: $exerciseId',
   (entry) => {
@@ -313,7 +322,9 @@ it('la marcha coordina seis pasos con el brazo contrario y conserva un apoyo, si
 
 it.each(
   catalog.entries.filter((e) =>
-    ['inside-inside', 'lateral-sole-roll', 'inside-outside'].includes(e.patternId),
+    ['inside-inside', 'lateral-sole-roll', 'inside-outside', 'inside-outside-sole'].includes(
+      e.patternId,
+    ),
   ),
 )(
   'la variante básica $exerciseId acompaña con brazos y conserva un pie en el suelo',

@@ -149,7 +149,7 @@ export function App({ content }: { content: unknown }) {
             aria-pressed={example === 'library'}
             onClick={() => setExample('library')}
           >
-            Movimientos · fase 06
+            Biblioteca de ejercicios
           </button>
           <button
             type="button"

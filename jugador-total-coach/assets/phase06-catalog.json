@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "entries": [
     {
       "exerciseId": "wall-push-up",
@@ -249,6 +249,36 @@
       "humanReview": "natural-motion-accepted-by-user",
       "visualEvidence": "docs/reviews/evidence/phase06-natural-motion/inside-outside-right-review.png",
       "previousManifest": "assets/manifests/inside-outside-right-v1.json"
+    },
+    {
+      "exerciseId": "inside-outside-sole-left",
+      "patternId": "inside-outside-sole",
+      "manifest": "assets/manifests/inside-outside-sole-left-v1.json",
+      "exercise": "content/exercises/inside-outside-sole-left.json",
+      "source": "assets/source/inside-outside-sole/inside-outside-sole-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/BALL_COMBINATION_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase07-library/left-feet.png"
+    },
+    {
+      "exerciseId": "inside-outside-sole-right",
+      "patternId": "inside-outside-sole",
+      "manifest": "assets/manifests/inside-outside-sole-right-v1.json",
+      "exercise": "content/exercises/inside-outside-sole-right.json",
+      "source": "assets/source/inside-outside-sole/inside-outside-sole-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/BALL_COMBINATION_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/phase07-library/right-feet.png"
     }
   ],
   "unresolved": [],

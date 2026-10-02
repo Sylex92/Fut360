@@ -91,6 +91,8 @@ La física libre no conserva automáticamente la trayectoria didáctica: se mant
 
 ## Evidencia de fase 06 — 2026-09-30
 
+Seguimiento de biblioteca 07 (2026-10-02): dos variantes de una combinación reutilizan íntegramente malla/rig/materiales y poses coordinadas v2, con unión y exportación en Blender. Búsqueda/filtros con React/HTML/TypeScript existentes; ninguna dependencia nueva. Validadores del proyecto ampliados para el recurso y sus ventanas de contacto. [Decisión, costos y límites](../reviews/phase07-library-review.md).
+
 Se reutilizan rig, pesos, ropa, clips de 04/05, Blender IK/bake/exportador, Three/Fiber y validador Khronos. Inventario de 43 acciones Standard revisado: ninguna cubre sin adaptación los nuevos patrones. Trece derivados locales cubren nueve patrones adicionales, con lados separados; no se añade motor/editor/solver ni dependencias. Fuentes editables y scripts de grupo, validación a 30 Hz y previsualización finita. [Decisión, límites y costos](../reviews/phase06-cost-and-reuse.md). No se ejecuta 07.
 
 Corrección posterior de naturalidad: un clip completo de caminar no cumple la marcha estacionaria, pero sus curvas de brazos sí son reutilizables. Se extraen 129 muestras de Walk_Loop del Standard CC0 existente y se adaptan al ritmo de los apoyos de marcha/giro, sin retargetear sus piernas ni alterar el cuerpo. Se conservan mallas, pesos, materiales, texturas y huesos; nueve versiones v2 corrigen coordinación con Blender IK/bake. Balón y apoyos conservan autoría guiada, con pequeñas correcciones de contacto. No nuevo motor de locomoción, solver, modelo IA o dependencia. [Evidencia y límites](../reviews/phase06-natural-motion-review.md), [origen/licencia](../../ASSET_LICENSES.md).
