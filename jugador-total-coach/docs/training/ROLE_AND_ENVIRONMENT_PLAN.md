@@ -1,5 +1,7 @@
 # Desarrollo por funciones: gol, extremo, mediocentro y defensa
 
+Ampliación del 2026-10-02: [base documental de capacidades y tareas](FOOTBALL_KNOWLEDGE_BASE.json) y [modalidades/progresión](MODALITY_AND_PROGRESSION_MODEL.md). Las familias T01–T32 detallan candidatos compatibles con G1–F2, sin reemplazar estos objetivos ni contar como ejercicios ejecutables. [Análisis de las siete fuentes solicitadas](../research/TRAINING_SOURCE_ANALYSIS.md).
+
 2026-10-02. Amplía el [plan gradual](GRADUAL_DEVELOPMENT_PLAN.md) con los objetivos aclarados por el usuario. Es selección razonada de tareas candidatas para planificación y autoría, no una sesión dosificada lista para ejecutar. [Registro de fuentes](../reviews/progressive-training-sources.md). Los antecedentes, medidas y síntomas personales permanecen en conversación, fuera de Git.
 
 ## Decisión de programación

@@ -1,5 +1,7 @@
 # Fuentes para el desarrollo gradual del jugador
 
+**Ampliación posterior del 2026-10-02:** [análisis de siete fuentes](../research/TRAINING_SOURCE_ANALYSIS.md) y [base de 33 capacidades/32 familias](../training/FOOTBALL_KNOWLEDGE_BASE.json). El navegador permitió confirmar metadatos y capítulos de un video concreto de 7mlc y otro de AllAttack; no se atribuye visionado completo. Las limitaciones de acceso descritas abajo conservan el registro de los intentos anteriores. La nueva comparación incluye FUT 5/futsal, FUT 7 y FUT 11, con práctica técnica, oposición y preparación física diferenciadas. No cambia la valoración de los reels ni importa fuentes al portal.
+
 Consulta: 2026-10-01. Revisión documental dirigida, no revisión sistemática ni análisis de todo el contenido de internet. Acompaña al [plan gradual](../training/GRADUAL_DEVELOPMENT_PLAN.md) y la [revisión de la hora](phase07-content-reassessment.md). Bibliografía interna: no importarla al portal.
 
 Ampliación: 2026-10-02, F08–F13 para el retorno y los objetivos ofensivos/defensivos. No se atribuye una nueva inspección audiovisual de 7MLC ni acceso al perfil de Facebook. [Tareas propuestas por función](../training/ROLE_AND_ENVIRONMENT_PLAN.md).

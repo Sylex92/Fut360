@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-02",
+  "schemaValid": true,
+  "counts": {
+    "sources": 26,
+    "channels": 7,
+    "claims": 19,
+    "capabilities": 33,
+    "modalities": 3,
+    "practices": 32
+  },
+  "requestedCapabilitiesCovered": 33,
+  "uniqueIds": true,
+  "referencesResolve": true,
+  "titleOnlySourcesExcludedFromClaims": true,
+  "allPracticesHaveThreeModalityAdaptations": true,
+  "runtimeReady": false,
+  "doseStatus": "pending",
+  "utf8Files": 8,
+  "localLinksChecked": 145,
+  "brokenLocalLinks": 0,
+  "applicationTestsRun": false,
+  "scope": "Documentary structure and traceability, not efficacy, sports technique or individual dose validation."
+}
