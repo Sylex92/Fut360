@@ -1,5 +1,7 @@
 # Fuentes iniciales de entrenamiento: análisis y decisiones
 
+**Seguimiento visual posterior, 2026-10-02:** Playwright permitió reproducir y observar muestras de 7mlc y Futsal Movement mediante pausa y avance por fotogramas. [Registro, alcance y método](VIDEO_VISUAL_REVIEW.md). La comparación siguiente conserva el análisis inicial; S01/S12 ya tienen una clasificación más completa en la base JSON. No se ha visionado íntegramente ningún canal ni se han habilitado ejercicios por esta comprobación.
+
 Consulta: 2026-10-02. Investigación dirigida de material público, no revisión sistemática ni visionado completo de siete canales. Documento interno: no importarlo al portal.
 
 **Resultado:** una base compartida para fútbol, con 33 capacidades y 32 familias de tareas propuestas. La selección combina técnica individual, información/oposición y preparación física. Ninguna fuente basta por sí sola para diseñar todo el desarrollo de un jugador.

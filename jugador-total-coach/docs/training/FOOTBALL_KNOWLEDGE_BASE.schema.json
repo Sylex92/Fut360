@@ -118,6 +118,7 @@
           "accessKind": {
             "enum": [
               "youtube-metadata",
+              "youtube-visual-samples",
               "publisher-text",
               "commercial-description",
               "coaching-text",

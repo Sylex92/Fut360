@@ -21,9 +21,9 @@
       "url": "https://www.youtube.com/watch?v=e5RxAJM-oxc",
       "publishedAt": "2023-06-29",
       "consultedAt": "2026-10-02",
-      "accessKind": "youtube-metadata",
-      "inspectedScope": "Título, autor, descripción y capítulos mediante navegador; no secuencia completa visionada.",
-      "limit": "Coordinación individual como tema; no identificar cada ejercicio por su número ni inferir eficacia de etiquetas."
+      "accessKind": "youtube-visual-samples",
+      "inspectedScope": "Metadatos y muestras visuales de aproximadamente 0:50–1:01 mediante pausa y avance por fotogramas; registro V01 en VIDEO_VISUAL_REVIEW.md.",
+      "limit": "No visionado íntegro del video/canal ni medición biomecánica. Completar inicio, ritmo normal y contactos antes de cerrar autoría."
     },
     {
       "id": "S02",
@@ -142,9 +142,9 @@
       "url": "https://www.youtube.com/watch?v=VkDQ4F9c6Fk",
       "publishedAt": "2018-08-18",
       "consultedAt": "2026-10-02",
-      "accessKind": "youtube-description",
-      "inspectedScope": "Descripción pública indexada del autor sobre orientación, opciones y tiempo.",
-      "limit": "No se comprobó la secuencia audiovisual ni una dosis."
+      "accessKind": "youtube-visual-samples",
+      "inspectedScope": "Descripción pública, fotogramas de contexto y muestras visuales aproximadamente entre 1:45 y 1:58; registro V02 en VIDEO_VISUAL_REVIEW.md.",
+      "limit": "No visionado íntegro ni verificación de todos los contactos/alternativas. No dosis individual."
     },
     {
       "id": "S13",
@@ -306,8 +306,8 @@
       "id": "7mlc",
       "name": "7mlc",
       "sourceIds": ["S01", "S02"],
-      "review": "metadata-and-public-site",
-      "next": "Verificar una secuencia completa y apoyos antes de atribuir un ejercicio."
+      "review": "visual-samples-and-public-site",
+      "next": "Ampliar V01: inicio completo, ciclos a ritmo normal, contactos y cobertura por ejercicio."
     },
     {
       "id": "become-elite",
@@ -348,8 +348,8 @@
       "id": "futsal-movement",
       "name": "Futsal Movement",
       "sourceIds": ["S12", "S13"],
-      "review": "primary-video-description-and-title",
-      "next": "Comprobar ejecución y apoyos; no confundir con LdnMovements."
+      "review": "visual-samples-and-primary-description",
+      "next": "Completar V02: explicación, contactos y alternativas; no confundir con LdnMovements."
     }
   ],
   "capabilities": [
