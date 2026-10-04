@@ -1,5 +1,7 @@
 # Visión de producto: diseñar, mostrar y seguir planes de fútbol
 
+**Continuidad aclarada el 2026-10-04:** los tres objetivos se añaden a esta visión y al alcance anterior. Conservan requisitos, avances y pendientes; no la reemplazan. [Trazabilidad](THREE_OBJECTIVES.md) y [responsabilidad del agente y criterios de cierre](../plans/three-objectives-delivery.md).
+
 **Requisito 2026-10-04:** [tres objetivos](THREE_OBJECTIVES.md): plataforma móvil/web/TV, ruta adulta polivalente y ruta infantil propia. Perfil de persona distinto de referente de estilo; planes/dosis/historial aislados, seguimiento por evidencia y protección de datos infantiles. No copiar cargas adultas, encasillar precozmente ni certificar profesionalización. [Secuencia](../plans/three-objectives-delivery.md). No se han implementado por esta actualización.
 
 **Estado 2026-10-03:** implementados Mi plan, etapas 24/52 semanas, cinco propuestas variables con seguimiento y 52 fichas, 20 con referencia humana del gesto o parcial. [Entrega](../reviews/video-guided-delivery.md). No equivalen al planificador editable/adaptativo ni a la conversación descritos aquí. El 3D pierde prioridad por la objeción de claridad del usuario.

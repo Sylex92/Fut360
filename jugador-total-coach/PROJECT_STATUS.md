@@ -1,5 +1,17 @@
 # Estado del proyecto
 
+## Aclaración de alcance y responsabilidad · 2026-10-04
+
+El usuario confirma que los tres objetivos **se suman** a todo lo acordado; no son una nueva base, un reinicio ni sustitución de los pendientes anteriores. Delega creación, investigación, revisión, aprobación técnica, corrección y seguimiento del alcance autorizado. Se incorpora como instrucción permanente en AGENTS y como [trazabilidad de requisitos](docs/product/THREE_OBJECTIVES.md) y [criterios de entrega](docs/plans/three-objectives-delivery.md). No se requiere aprobación por operación rutinaria.
+
+**Comprobado documentalmente:** los planes conservan la hora doméstica, duraciones/contextos ampliados, investigación de fuentes, mejora de enseñanza, avatar/videos y laboratorio separados, automatización, planes, historial/offline, costos y ampliaciones. Los perfiles adulto/infantil y TV se incorporan sin cancelar esos compromisos. La secuencia adicional ya no desplaza la cobertura visual ni el encadenado automático pendiente.
+
+**Aplicación sin cambios en esta aclaración.** Permanecen pendientes las referencias exactas de 32 fichas sin video, completar la enseñanza de las siete fichas con recurso parcial, la claridad/naturalidad del 3D, el encadenado audiovisual, la personalización, perfiles aislados, métricas, conversación y TV. Se conservan las consultas ya formuladas sobre estado actual adulto y carga/supervisión infantil; solo condicionan dosis dependientes. No repetirlas ni exigir pruebas físicas para seguir construyendo.
+
+**Siguiente trabajo:** preparar e implementar el aislamiento de perfiles e historial legado, con pruebas de conservación de datos; continuar cobertura y claridad de tareas prioritarias sin esperar la integración de TV. Las aprobaciones se apoyan en criterios/evidencia por requisito y dispositivo, no en un porcentaje global o promesa de rendimiento. La revisión documental deportiva sigue fuera de la app.
+
+**Verificación de esta aclaración:** ocho documentos revisados, 222 enlaces locales comprobados sin destinos ausentes y `git diff --check` correcto. Sin cambios de código; no se ejecutan de nuevo pruebas de aplicación ni se presentan resultados anteriores como validación nueva.
+
 ## Requisito vigente — tres objetivos · 2026-10-04
 
 El usuario define plataforma móvil/web/Smart TV y dos rutas distintas: adulto polivalente y desarrollo infantil. [Especificación completa](docs/product/THREE_OBJECTIVES.md), [progresiones y menú infantil documental](docs/training/ADULT_AND_YOUTH_PATHWAYS.md), [siguientes entregas](docs/plans/three-objectives-delivery.md). La TV es parte explícita del destino; no se declara compatible ni instalada.

@@ -1,6 +1,23 @@
 # Tres objetivos del producto y del entrenamiento
 
-Fecha: 2026-10-04. Requisito vigente del usuario. Esta especificación amplía el destino del producto; no declara implementadas las funciones pendientes. Los datos personales y antropométricos recibidos permanecen en la conversación, fuera del repositorio, fixtures, capturas y búsquedas externas.
+Fecha: 2026-10-04. Requisitos adicionales del usuario, incorporados al alcance acumulado. **Los tres objetivos se suman a lo acordado y construido; no son una nueva base ni sustituyen el proyecto anterior.** Este documento no declara implementadas las funciones pendientes. Los datos personales y antropométricos recibidos permanecen en la conversación, fuera del repositorio, fixtures, capturas y búsquedas externas.
+
+## Continuidad del alcance
+
+Esta tabla conecta la ampliación con compromisos anteriores; no es una lista exhaustiva que elimine lo no enumerado. Se conservan los requisitos compatibles, avances y pendientes de las especificaciones enlazadas. Un cambio de prioridad no cancela una función ni convierte su estado pendiente en terminado. Toda sustitución real de alcance debe tener motivo y decisión explícitos; una ampliación no la autoriza por omisión.
+
+| Compromiso que se conserva | Cómo se integra con los tres objetivos | Referencia |
+|---|---|---|
+| Construcción y uso local sin nuevos pagos obligatorios, licencias auditadas y reutilización | Se aplica también a perfiles, infancia, conversación y TV; sin prometer servicios ilimitados | [Política de costo](ZERO_COST_AND_GROWTH_POLICY.md), [reutilización](../architecture/REUSE_MATRIX.md) |
+| Sesión de 60 minutos en casa 2×2 m | Permanece como escenario y regresión; convive con otras duraciones, cancha, gimnasio y tareas con compañeros | [MVP1](MVP1_PRD.md), [visión ampliada](ADAPTIVE_FOOTBALL_COACH_VISION.md) |
+| Enseñanza clara y fluida, avatar y videos por fragmentos | Corregir representaciones confusas; conservar el 3D en revisión y usar referencias pertinentes. El laboratorio físico sigue separado de enseñar un ejercicio | [Entrega visual y pendientes](../reviews/video-guided-delivery.md), [ADR 0016](../architecture/adr/0016-human-reference-and-visible-plan.md) |
+| Mínima interacción y avance automático | Mantener preparación extra, demostración, pausa y recuperación sin acreditar tiempo oculto. El encadenado audiovisual automático sigue pendiente | [Flujo esperado](ADAPTIVE_FOOTBALL_COACH_VISION.md), [estado vigente](../../PROJECT_STATUS.md) |
+| Investigar las siete fuentes, ampliar ejercicios y jugadas, fundamentar progresiones | Conservar todo el inventario y su cobertura real; distinguir localizado, observado, explicado y revisado. Añadir tareas infantiles y variantes sin perder las adultas | [Ampliación autorizada](../plans/product-completion.md), [inventario](../training/COACHING_LIBRARY_INVENTORY.md) |
+| Desarrollo polivalente FUT 5, FUT 7 y FUT 11, con referencias de estilo | Mantener objetivos técnicos, físicos, tácticos y de decisión; sumar una ruta infantil propia, sin imponer posición ni cargas adultas | [Funciones y entornos](../training/ROLE_AND_ENVIRONMENT_PLAN.md), [rutas](../training/ADULT_AND_YOUTH_PATHWAYS.md) |
+| Planes, seguimiento, estadísticas y continuidad local | Reutilizar reloj, historial, recuperación, respaldos y recursos locales offline; extenderlos por persona y capacidad. Medios externos y sincronización conservan sus límites | [Visión](ADAPTIVE_FOOTBALL_COACH_VISION.md), [ADR 0015](../architecture/adr/0015-local-recovery-offline.md) |
+| Crecimiento posterior auditado, incluida exportación local candidata con Remotion | Conservarlo en el roadmap con sus condiciones y prioridad; no instalar ni declarar una ampliación aprobada por mencionarla | [Matriz de costos futura](../reviews/feature-cost-matrix.md) |
+
+El agente asume investigar, diseñar, crear, revisar, corregir, comprobar y mantener el seguimiento del trabajo autorizado. Puede aprobar técnicamente una entrega con evidencia registrada, sin pedir autorización por cada decisión rutinaria. La aprobación técnica, la revisión documental deportiva, la comprensión observada y una valoración clínica son estados diferentes. La exigencia de “1000%” se traduce en criterios comprobables y corrección de defectos, no en una garantía literal de perfección o rendimiento deportivo. [Responsabilidades y cierre](../plans/three-objectives-delivery.md).
 
 ## 1. Aplicación de desarrollo futbolístico
 

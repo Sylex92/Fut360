@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+Corrección de continuidad 2026-10-04: los tres objetivos nuevos se suman al alcance acumulado. Conservar requisitos, avances y pendientes anteriores; no reiniciar el proyecto. El usuario delega crear, investigar, revisar, aprobar técnicamente y dar seguimiento al trabajo autorizado con [criterios verificables](docs/plans/three-objectives-delivery.md). Continuar sin pedir aprobación por paso; consultar solo información o permisos indispensables que no estén resueltos.
+
 Continuidad 2026-10-04: leer [PROJECT_STATUS](PROJECT_STATUS.md) y [tres objetivos](docs/product/THREE_OBJECTIVES.md). El destino incluye móvil/web/TV y rutas adulta/infantil separadas. Hay biblioteca y recorridos de la entrega anterior; no perfiles aislados ni plan infantil ejecutable. El texto de fases iniciales siguiente es histórico, no una orden de reiniciar ni un veto al alcance posteriormente autorizado.
 
 Continuidad del 2026-10-02: leer primero [PROJECT_STATUS](PROJECT_STATUS.md) y la [visión ampliada](docs/product/ADAPTIVE_FOOTBALL_COACH_VISION.md). El objetivo ya incluye creación conversacional de planes, explicación y seguimiento en varios entornos. Las referencias históricas a una hora fija describen el primer entregable; no descartan esa evolución. El plan anual, conversación y seguimiento no están implementados todavía.

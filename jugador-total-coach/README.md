@@ -1,5 +1,7 @@
 # Fut360 — Jugador Total Coach
 
+**Continuidad y responsabilidad · 2026-10-04:** los tres objetivos siguientes **se suman a todo lo acordado**, sin sustituir requisitos, trabajo ni pendientes. El agente asume investigación, creación, revisión, aprobación técnica con evidencia, corrección y seguimiento del alcance autorizado; solo consulta lo indispensable. [Alcance conservado](docs/product/THREE_OBJECTIVES.md) y [criterios de entrega](docs/plans/three-objectives-delivery.md).
+
 **Objetivos vigentes · 2026-10-04:** aplicación móvil/web/Smart TV con creación de rutinas y seguimiento, más rutas separadas adulta e infantil. [Especificación](docs/product/THREE_OBJECTIVES.md), [fundamento y tareas propuestas](docs/training/ADULT_AND_YOUTH_PATHWAYS.md), [entregas](docs/plans/three-objectives-delivery.md). Actualización documental; perfiles aislados, plan infantil, estadísticas por capacidad y TV siguen por implementar. Datos reales fuera de Git; avance observable no equivale a certificar nivel profesional.
 
 **Entrega actual · 2026-10-03:** **Mi plan**, cinco propuestas de 30–50 minutos y etapas de desarrollo; **Biblioteca de ejercicios**, 52 fichas / 32 familias. Video humano por fragmentos en 20 fichas (13 del gesto, siete parciales); 32 videos exactos pendientes. Diez esquemas propios de organización. [Entrega y límites](docs/reviews/video-guided-delivery.md), [inventario real](docs/training/COACHING_LIBRARY_INVENTORY.md). Los 22 recursos 3D anteriores son opcionales y su claridad/naturalidad está en revisión.
