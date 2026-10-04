@@ -1,5 +1,7 @@
 # Desarrollo local — base, reloj y primera demostración 3D
 
+Agenda 2026-10-04: IndexedDB v3 conserva datos de v1/v2 y protege campos frente a clientes antiguos. Aplicar la versión nueva mediante el panel offline si hay una copia anterior; **no borrar almacenamiento** para resolver un error de versión. Respaldos completos con agenda son formato 2, los anteriores siguen admitidos sin agenda. `tests/browser-planning.mjs` comprueba migración/contexto/versiones en contextos sintéticos; storage usa dev 4175 e interfaz usa preview 4173. [Evidencia](../reviews/context-and-week.md).
+
 Actualización 2026-10-04: perfiles e historial separados en la aplicación compilada. PC: `http://127.0.0.1:4173/`. Wi-Fi observada actualmente: `192.168.68.101`, preview enlazado solo a esa dirección en `http://192.168.68.101:4174/`. Las IP de los párrafos históricos no son permanentes. La prueba de persistencia `tests/browser-participants.mjs` usa un contexto sintético nuevo y Vite dev local en `4175`; nunca ejecutarla sobre datos personales. No se han cambiado firewall ni certificados; el teléfono debe estar en la misma red accesible. Servidor LAN comprobado desde el navegador de PC; Samsung físico sigue pendiente para esta entrega.
 
 ## Actualización de fase 07 — 2026-10-01

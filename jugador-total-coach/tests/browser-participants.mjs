@@ -269,7 +269,7 @@ export async function verifyParticipantUI(page, url = 'http://127.0.0.1:4173/') 
   await page.evaluate(async () => {
     window.releaseProfileWrite = false;
     await new Promise((resolve, reject) => {
-      const request = indexedDB.open('fut360-training', 2);
+      const request = indexedDB.open('fut360-training');
       request.onerror = () => reject(request.error);
       request.onsuccess = () => {
         const db = request.result;

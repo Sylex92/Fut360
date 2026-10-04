@@ -84,7 +84,7 @@ export function ParticipantBoundary({ children }: { children: ReactNode }) {
     );
   return (
     <ManagementContext.Provider value={{ profiles, selectedId, select, refresh, setBusy }}>
-      <ParticipantContext.Provider value={{ participant, store }}>
+      <ParticipantContext.Provider value={{ participant, store, refreshParticipant: refresh }}>
         <fieldset className="profile-application" disabled={busy} aria-busy={busy}>
           <div key={selectedId || 'legacy'}>{children}</div>
         </fieldset>
@@ -331,6 +331,7 @@ function ParticipantForm({
                 v.toString(16).padStart(2, '0'),
               ).join('');
           const p = validateParticipant({
+            ...value,
             id,
             alias,
             kind,

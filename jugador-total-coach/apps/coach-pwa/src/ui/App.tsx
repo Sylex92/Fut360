@@ -10,6 +10,7 @@ import { CoachingWorkspace } from './CoachingWorkspace';
 import { useParticipant } from './ParticipantContext';
 import { ParticipantManager, ParticipantHistory } from './ParticipantManager';
 import { participantGoals } from '../platform/participant';
+import { WeeklyPlanner } from './WeeklyPlanner';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -221,6 +222,7 @@ export function App({ content }: { content: unknown }) {
           <section className="panel" aria-labelledby="child-plan-heading">
             <p className="eyebrow">PERFIL INFANTIL · ADMINISTRADO POR UN ADULTO</p>
             <h2 id="child-plan-heading">El plan de {participant.alias}</h2>
+            <WeeklyPlanner onBusyChange={setSessionActive} />
             <p>
               Perfil guardado. Su plan y sus demostraciones infantiles todavía están en
               preparación. Las sesiones adultas no se asignan a este perfil.

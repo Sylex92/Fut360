@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+Continuación actual: [contexto y agenda semanal versionada](docs/reviews/context-and-week.md) implementados por perfil, incluyendo actividad externa y requisitos de las propuestas. Contexto personal recibido; solo queda aclarar la unidad del tiempo adicional infantil. TV Sony A80J identificada; [ruta documental](docs/reviews/sony-a80j-compatibility.md). No repetir cuestionario ni confundir agenda manual con plan adaptativo/infantil completo. Consultar primero PROJECT_STATUS; datos reales fuera de Git.
+
 Última entrega técnica 2026-10-04: [perfiles e historiales aislados](docs/reviews/participant-isolation.md) implementados, con respaldo/restauración y conservación del legado. Continuar desde la [cobertura pendiente de los tres objetivos](docs/reviews/three-objective-coverage.md) y PROJECT_STATUS, no rehacer perfiles ni confundirlos con planes personales completos. El menú infantil sigue documental y la biblioteca visual incompleta.
 
 Corrección de continuidad 2026-10-04: los tres objetivos nuevos se suman al alcance acumulado. Conservar requisitos, avances y pendientes anteriores; no reiniciar el proyecto. El usuario delega crear, investigar, revisar, aprobar técnicamente y dar seguimiento al trabajo autorizado con [criterios verificables](docs/plans/three-objectives-delivery.md). Continuar sin pedir aprobación por paso; consultar solo información o permisos indispensables que no estén resueltos.

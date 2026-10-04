@@ -1486,3 +1486,70 @@ label.profile-checks {
 .profile-import {
   margin-top: 1rem;
 }
+/* A readable list on phones instead of a seven-column calendar. */
+.weekly-planner > fieldset {
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+.weekly-planner details {
+  margin-block: 1rem;
+}
+.weekly-planner summary {
+  cursor: pointer;
+  font-weight: 650;
+  padding-block: 0.7rem;
+}
+.week-availability {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.8rem;
+  margin-block: 1rem;
+}
+.weekly-planner label {
+  display: grid;
+  gap: 0.4rem;
+}
+.weekly-planner .profile-checks label {
+  display: flex;
+}
+.weekly-planner input[type='number'] {
+  max-width: 12rem;
+}
+.weekly-planner input[type='number'],
+.weekly-planner input:not([type]) {
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #859879;
+  border-radius: 8px;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+}
+.weekly-planner fieldset {
+  min-width: 0;
+}
+.week-days {
+  display: grid;
+  gap: 1rem;
+}
+.week-days > fieldset {
+  border: 1px solid #c8d2bc;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+.week-days select,
+.week-days input {
+  width: 100%;
+  min-width: 0;
+}
+.week-external {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(5rem, 0.4fr);
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+.week-total {
+  font-weight: 650;
+}

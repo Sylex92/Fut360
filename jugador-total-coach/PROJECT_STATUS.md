@@ -1,6 +1,20 @@
 # Estado del proyecto
 
-## Entrega actual — perfiles separados y cobertura mínima · 2026-10-04
+## Entrega actual — contexto y semana por persona · 2026-10-04
+
+Respuestas de contexto recibidas en conversación; **no volver a pedir objetivos, medidas, estado adulto, disponibilidad, compañía o modelo de TV**. Sus datos privados no se transcriben a Git. Solo falta aclarar si el tiempo adicional infantil es semanal o diario para fijar esa dosis. Modelo TV conocido: Sony A80J; Google TV/Cast verificados en documentación, funcionamiento físico pendiente.
+
+**Implementado:** disponibilidad, personas/lugares/recursos y agenda semanal versionada por perfil; cuenta actividad externa, avisa excesos y contrasta requisitos de las cinco propuestas existentes. No inicia una propuesta incompatible con el contexto guardado. Infancia organiza actividad existente/descanso, sin recibir dosis adultas. IndexedDB v3 conserva v1/v2 e impide que una app vieja omita los nuevos campos; respaldo completo con agenda formato 2. [Entrega y límites](docs/reviews/context-and-week.md), [plan previo y costo](docs/plans/context-and-week.md).
+
+**Comprobado:** 269 pruebas correctas, una opt-in omitida; tipos/lint/build, aislamiento/restauración, contexto individual, versiones/alias/recarga, interfaz a 390 px y recarga offline con agenda. Regresión de perfiles/journal/guardado final correcta. [Evidencia](docs/reviews/evidence/planning/checks.json). Sin nuevas dependencias, pagos, descargas ni cambios globales. Aviso de chunks >500 kB conservado; nueva comprobación física Samsung y TV pendiente.
+
+**No confundir con entrega final:** biblioteca sigue en 52 fichas (13 referencias del gesto, siete parciales, 32 sin video exacto); menú infantil documental, sin programa enseñado/ejecutable. La agenda es manual, de un bloque por día y sin fechas; no es aún el plan adaptativo individual ni mide capacidades. Siguen pendientes enseñanza suficiente, dosis/progresiones, calendario completo y vínculo con cumplimiento, conversación y Smart TV operable.
+
+**Siguiente trabajo:** producir las sesiones individuales faltantes y enseñanza prioritaria; completar biblioteca/ruta infantil al aclarar la unidad de tiempo extra, sin copiar dosis adulta. Incorporar contexto a propuestas por capacidades y mantener criterios de retorno/recuperación; [decisiones metodológicas internas](docs/training/CONTEXT_AND_LOAD_DECISIONS.md). [Ruta Sony A80J](docs/reviews/sony-a80j-compatibility.md): primera prueba por pestaña enviada desde Chrome, sin receptor Cast propio de pago; no equivale aún a operación con mando.
+
+Los apartados siguientes conservan evidencia de entregas anteriores; los pendientes de contexto arriba sustituyen las consultas antiguas.
+
+## Entrega anterior — perfiles separados y cobertura mínima · 2026-10-04
 
 El usuario solicita cumplir los tres objetivos de inicio a fin antes de ampliar lo accesorio. La [matriz de cobertura](docs/reviews/three-objective-coverage.md) conserva todos los compromisos y distingue lo esencial de ampliaciones posteriores. **La biblioteca todavía es insuficiente:** 52 fichas, 13 con referencia del gesto, siete parciales y 32 sin video exacto; infancia tiene 11 propuestas documentales, sin biblioteca/plan ejecutable. Este incremento no amplía esas cifras.
 

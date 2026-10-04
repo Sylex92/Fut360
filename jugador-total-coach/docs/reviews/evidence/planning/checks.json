@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-04",
+  "environment": "Isolated Chromium contexts; synthetic profiles only",
+  "storage": {
+    "v2Preserved": true,
+    "staleAppsBlocked": true,
+    "immutablePastWeeks": true,
+    "conflictsRejected": true,
+    "profileIsolation": true,
+    "backupV2RoundTrip": true,
+    "restoreIdempotent": true
+  },
+  "ui": {
+    "soloEligibility": true,
+    "versionsPreserved": true,
+    "contextSavePreservesDraft": true,
+    "aliasEditPreservesWeek": true,
+    "reloadPersists": true,
+    "childExternalOnly": true,
+    "isolatedWeeks": true,
+    "narrowOverflow": false,
+    "pageErrors": []
+  },
+  "finalUIAndOffline": {
+    "ui": {
+      "soloEligibility": true,
+      "versionsPreserved": true,
+      "contextSavePreservesDraft": true,
+      "aliasEditPreservesWeek": true,
+      "reloadPersists": true,
+      "childExternalOnly": true,
+      "isolatedWeeks": true,
+      "narrowOverflow": false,
+      "pageErrors": []
+    },
+    "inputHeight": 44,
+    "offlineWeekPreserved": true,
+    "build": "/assets/index-CV-lK-He.js"
+  },
+  "participantRegressions": {
+    "storage": {
+      "upgradeV1Preserved": true,
+      "isolatedProfiles": 3,
+      "crossProfileWritesRejected": true,
+      "staleRevisionRejected": true,
+      "legacyAssignedExplicitly": true,
+      "legacyJournalUnchanged": true,
+      "childAssignmentRejected": true,
+      "atomicRestoreRollback": true,
+      "deleteScoped": true,
+      "deletedProfileWriteRejected": true,
+      "backupRoundtrip": true,
+      "pendingSessionPointersPreserved": true
+    },
+    "ui": {
+      "createdAdultAndChild": true,
+      "childContentSeparated": true,
+      "adultHistoryHiddenFromChild": true,
+      "profilePreservedOnReload": true,
+      "recoveredPaused": true,
+      "selectionLockedWhileActive": true,
+      "waitsForFinalSaveBeforeNavigation": true,
+      "deletingFinalRecordKeepsNavigationAvailable": true,
+      "leftFootPreserved": true,
+      "narrowOverflow": false,
+      "providerRequests": 0,
+      "pageErrors": []
+    }
+  },
+  "unitTests": {
+    "passed": 269,
+    "skippedOptIn": 1
+  },
+  "limitations": [
+    "Not tested on physical Samsung or Sony A80J in this increment",
+    "52 existing cards unchanged; no new instructional media",
+    "Weekly organization is not a clinical clearance or measured performance",
+    "One block per day; no dated calendar or automatic personalized dose"
+  ],
+  "dependenciesAdded": 0
+}

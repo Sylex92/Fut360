@@ -14,6 +14,8 @@ import { CoachingTaskCard } from './CoachingTask';
 import { CoachingRunner, clockText } from './CoachingRunner';
 import { useParticipant } from './ParticipantContext';
 import { SessionEngine } from '@fut360/session-engine';
+import { WeeklyPlanner } from './WeeklyPlanner';
+import { sessionRequirements } from '../composition/session-eligibility';
 export function CoachingWorkspace({
   mode,
   onActiveChange,
@@ -21,7 +23,7 @@ export function CoachingWorkspace({
   mode: 'plan' | 'library';
   onActiveChange: (v: boolean) => void;
 }) {
-  const { store: trainingStore } = useParticipant();
+  const { store: trainingStore, participant } = useParticipant();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [place, setPlace] = useState('');
@@ -72,6 +74,9 @@ export function CoachingWorkspace({
   const session = coachingSessions.find((s) => s.id === selectedSession)!;
   const currentStage = developmentStages.find((s) => s.id === stage)!;
   const runnerSession = coachingSessions.find((s) => s.id === running);
+  const requirements = participant?.planning
+    ? sessionRequirements(session.id, participant.planning.context)
+    : [];
   if (runnerSession)
     return (
       <CoachingRunner
@@ -111,6 +116,7 @@ export function CoachingWorkspace({
       )}
       {mode === 'plan' ? (
         <>
+          <WeeklyPlanner onBusyChange={onActiveChange} />
           <p className="plan-lead">
             Un primer ciclo de 24 semanas, con un horizonte de 52. La meta es mejorar tu
             rendimiento en juego: controlar, decidir, crear gol y defender. El calendario
@@ -209,6 +215,7 @@ export function CoachingWorkspace({
             </p>
             <button
               className="primary"
+              disabled={requirements.length > 0}
               onClick={() => {
                 setSelected(null);
                 setRunning(session.id);
@@ -216,6 +223,16 @@ export function CoachingWorkspace({
             >
               Recorrer esta propuesta
             </button>
+            {requirements.length > 0 && (
+              <div className="reference-pending">
+                <p>Puedes estudiar las fichas. Para realizar esta propuesta falta resolver:</p>
+                <ul>
+                  {requirements.map((reason) => (
+                    <li key={reason}>{reason}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </article>
           <details className="plan-progress">
             <summary>Qué observar para progresar</summary>

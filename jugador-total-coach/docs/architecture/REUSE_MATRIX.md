@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Contexto y agenda — 2026-10-04
+
+Se amplía Participant/IndexedDB para disponibilidad, semana tipo y versiones; mismo compilador y propuestas. Sin dependencia nueva ni calendario externo. IndexedDB v3 conserva almacenes y registros y evita escrituras de aplicaciones antiguas que perderían campos. Respaldos con agenda usan formato 2; los anteriores siguen legibles. [Plan y costo](../plans/context-and-week.md), [Sony A80J y límites](../reviews/sony-a80j-compatibility.md).
+
 ## Perfiles — 2026-10-04
 
 Extensión de IndexedDB existente a v2, sin borrar v1: almacén de participantes, ámbito de persona y transacciones nativas. Reutiliza SessionEngine/journal, historial, componentes React y validación de archivos. No se añade proveedor de identidad, nube, librería de datos o dependencia. [Pruebas, costo y límites](../reviews/participant-isolation.md).

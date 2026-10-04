@@ -91,7 +91,7 @@ describe('Perfiles y respaldos por persona', () => {
     expect(() =>
       parseParticipantBackup(JSON.stringify({ ...backup, records: [r, r] })),
     ).toThrow();
-    expect(() => parseParticipantBackup(JSON.stringify({ ...backup, version: 2 }))).toThrow();
+    expect(() => parseParticipantBackup(JSON.stringify({ ...backup, version: 3 }))).toThrow();
   });
   it('no ofrece plantillas adultas ni un proveedor audiovisual al perfil infantil', () => {
     const html = renderToStaticMarkup(

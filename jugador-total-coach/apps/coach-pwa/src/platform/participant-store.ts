@@ -7,7 +7,7 @@ import type { StoredTraining, TrainingRecord } from './training-store';
 
 export interface ParticipantBackup {
   format: 'fut360-participant';
-  version: 1;
+  version: 1 | 2;
   participant: Participant;
   records: TrainingRecord[];
 }
@@ -18,8 +18,10 @@ export function parseParticipantBackup(text: string): ParticipantBackup {
   if (new TextEncoder().encode(text).byteLength > MAX_ARCHIVE_BYTES)
     throw new Error('El archivo supera 10 MiB.');
   const value = JSON.parse(text) as ParticipantBackup | null;
-  if (!value || value.format !== 'fut360-participant' || value.version !== 1)
+  if (!value || value.format !== 'fut360-participant' || ![1, 2].includes(value.version))
     throw new Error('Selecciona un respaldo completo de perfil de Fut360.');
+  if (value.version === 1 && value.participant?.planning !== undefined)
+    throw new Error('Las agendas requieren el formato de respaldo 2.');
   const participant = validateParticipant(value.participant);
   const records = parseArchive(
     JSON.stringify({
@@ -30,7 +32,7 @@ export function parseParticipantBackup(text: string): ParticipantBackup {
   );
   if (records.filter(isActive).length > 1)
     throw new Error('Hay más de un recorrido pendiente.');
-  return { format: 'fut360-participant', version: 1, participant, records };
+  return { format: 'fut360-participant', version: value.version, participant, records };
 }
 
 export function listParticipants(): Promise<Participant[]> {
@@ -55,7 +57,13 @@ export function saveParticipant(
       const prior = req.result as Participant | undefined;
       if (
         JSON.stringify(prior ?? null) !== JSON.stringify(expected) ||
-        (prior && (prior.kind !== p.kind || prior.createdAt !== p.createdAt))
+        (prior && (prior.kind !== p.kind || prior.createdAt !== p.createdAt)) ||
+        (prior?.planning &&
+          (!p.planning ||
+            p.planning.weeks.length < prior.planning.weeks.length ||
+            prior.planning.weeks.some(
+              (week, i) => JSON.stringify(week) !== JSON.stringify(p.planning?.weeks[i]),
+            )))
       ) {
         fail('El perfil cambió en otra ventana. Recarga para revisarlo.');
         return;
@@ -77,7 +85,7 @@ export function participantBackup(id: string): Promise<ParticipantBackup> {
       }
       result({
         format: 'fut360-participant',
-        version: 1,
+        version: (p.result as Participant).planning ? 2 : 1,
         participant: p.result as Participant,
         records: (rows.result as StoredTraining[])
           .filter((r) => r.record.participantId === id)

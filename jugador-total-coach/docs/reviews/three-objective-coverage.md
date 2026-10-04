@@ -1,5 +1,7 @@
 # Cobertura mínima para entregar los tres objetivos
 
+Actualización 2026-10-04: [contexto y agenda semanal por persona implementados](context-and-week.md), con actividad externa, versiones y comprobación logística. No son aún dosificación propia, calendario fechado o plan adaptativo. Respuestas de contexto recibidas; queda aclarar la unidad del tiempo adicional infantil. Modelo Sony A80J conocido, [compatibilidad documental y prueba pendiente](sony-a80j-compatibility.md). Las cifras de biblioteca de esta matriz no cambian.
+
 2026-10-04. El usuario pide entregar los tres objetivos de inicio a fin y ampliar después lo restante. Esto prioriza un producto completo para esos casos, no autoriza omitir una función esencial y declararla futura. Se conserva el alcance acumulado de [THREE_OBJECTIVES](../product/THREE_OBJECTIVES.md).
 
 ## Dictamen sobre la biblioteca
@@ -34,4 +36,4 @@ Una limitación temporal para realizar esfuerzo no impide preparar contenido. No
 
 ## Datos personales que condicionan decisiones
 
-Preguntas enviadas, sin registrar respuestas privadas aquí: estado adulto actual/indicaciones existentes, disponibilidad y compañeros; carga actual, disponibilidad, contexto y supervisión infantil; marca/modelo TV. Ya se conocen objetivos, medidas declaradas y lugares generales; no repetirlos. Solo las decisiones dependientes esperan estas respuestas. Investigar, crear fichas, implementar flujos y verificar datos corresponde al agente.
+Respuestas de estado/contexto, disponibilidad y compañía adultas, actividad y supervisión infantil recibidas; no se registran aquí los datos privados. No volver a solicitarlas. Queda por aclarar la unidad de tiempo adicional infantil (semanal o diario); no asignar volumen por suposición. Sony A80J identificado, con comprobación física pendiente. Solo la decisión dependiente espera esa aclaración. Investigar, crear fichas, implementar flujos y verificar datos corresponde al agente.

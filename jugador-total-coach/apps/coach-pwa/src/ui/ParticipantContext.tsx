@@ -6,5 +6,6 @@ import type { TrainingStore } from '../platform/training-store';
 export const ParticipantContext = createContext<{
   participant: Participant | null;
   store: TrainingStore;
+  refreshParticipant?: () => Promise<void>;
 }>({ participant: null, store: trainingStore });
 export const useParticipant = () => useContext(ParticipantContext);
