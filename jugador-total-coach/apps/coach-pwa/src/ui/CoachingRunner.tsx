@@ -38,8 +38,8 @@ export function CoachingRunner({
   const history = useTrainingHistory(controller, rate === 60, JSON.stringify(plan));
   const active = state?.status === 'running' || state?.status === 'paused';
   useEffect(() => {
-    onActiveChange(active);
-  }, [active, onActiveChange]);
+    onActiveChange(active || history.finalSavePending);
+  }, [active, history.finalSavePending, onActiveChange]);
   useEffect(() => {
     const next = new GuidedSession(plan, () => performance.now(), !document.hidden, rate);
     controller.current = next;
@@ -111,7 +111,7 @@ export function CoachingRunner({
           </p>
           <h2 id="runner-heading">{session.name}</h2>
         </div>
-        <button disabled={active} onClick={onClose}>
+        <button disabled={active || history.finalSavePending} onClick={onClose}>
           Volver al plan
         </button>
       </div>

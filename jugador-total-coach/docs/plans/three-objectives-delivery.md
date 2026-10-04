@@ -1,5 +1,7 @@
 # Entregas para los tres objetivos
 
+Avance técnico 2026-10-04: [perfiles e historial aislados implementados](../reviews/participant-isolation.md), con límites y pruebas. [Cobertura para el cierre integral](../reviews/three-objective-coverage.md): todavía faltan biblioteca suficiente, planes personales, métricas, conversación y TV. La entrega final de los tres objetivos no puede dejar ninguna de esas funciones esenciales como ampliación accesoria.
+
 2026-10-04. [Requisitos adicionales y alcance conservado](../product/THREE_OBJECTIVES.md), [rutas y evidencia](../training/ADULT_AND_YOUTH_PATHWAYS.md). Plan verificable anterior a implementación de esta ampliación. Se suma a [completar el producto](product-completion.md) y [enseñanza con video y plan](video-guided-plan.md); no sustituye sus pendientes ni reinicia las fases. No ejecuta instaladores, servicios ni migración de datos reales.
 
 ## Responsabilidad y continuidad

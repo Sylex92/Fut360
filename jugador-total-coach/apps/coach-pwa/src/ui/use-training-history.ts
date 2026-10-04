@@ -4,7 +4,7 @@ import { SessionEngine } from '@fut360/session-engine';
 import type { SessionAction, SessionProjection } from '@fut360/domain';
 import type { SessionJournal } from '@fut360/session-engine';
 import { hourWorkout } from '../composition/hour-workout';
-import { trainingStore } from '../platform/training-store';
+import { useParticipant } from './ParticipantContext';
 import type {
   StoredTraining,
   TrainingFeedback,
@@ -22,9 +22,11 @@ export function useTrainingHistory(
   test: boolean,
   stamp = contentStamp,
 ) {
+  const { participant, store: trainingStore } = useParticipant();
   const owner = useRef('window-' + Math.random().toString(36).slice(2));
   const known = useRef(new Map<string, StoredTraining>());
   const savedJournals = useRef(new Map<string, string>());
+  const savedTerminalSessions = useRef(new Set<string>());
   const queue = useRef(Promise.resolve());
   const [ready, setReady] = useState(false);
   const [error, setError] = useState('');
@@ -35,9 +37,17 @@ export function useTrainingHistory(
   const refresh = useCallback(async () => {
     const rows = await trainingStore.list();
     known.current = new Map(rows.map((r) => [r.record.id, r]));
+    for (const row of rows) {
+      if (
+        ['completed', 'aborted'].includes(
+          SessionEngine.fromJournal(row.record.journal).project().status,
+        )
+      )
+        savedTerminalSessions.current.add(row.record.id);
+    }
     setRecords(rows);
     return rows;
-  }, []);
+  }, [trainingStore]);
   useEffect(() => {
     let mounted = true;
     void refresh()
@@ -80,6 +90,7 @@ export function useTrainingHistory(
           return;
         const record: TrainingRecord = {
           id: s.sessionId,
+          ...(participant ? { participantId: participant.id } : {}),
           startedAt: previous?.record.startedAt ?? updatedAt,
           updatedAt,
           contentStamp: stamp,
@@ -94,6 +105,8 @@ export function useTrainingHistory(
           previous?.revision ?? 0,
         );
         saved = true;
+        if (['completed', 'aborted'].includes(s.status))
+          savedTerminalSessions.current.add(record.id);
         savedJournals.current.set(record.id, journalText);
         setUnsaved(null);
         known.current.set(record.id, { record, revision, owner: owner.current });
@@ -112,7 +125,7 @@ export function useTrainingHistory(
       });
       return queue.current.then(() => saved);
     },
-    [controller, test, stamp],
+    [controller, test, stamp, participant, trainingStore],
   );
   useEffect(() => {
     if (!ready || recovery) return;
@@ -179,7 +192,19 @@ export function useTrainingHistory(
       setError(e instanceof Error ? e.message : 'No se pudo cerrar el registro.');
     }
   };
+  const current = controller.current?.snapshot().session;
+  const finalSavePending =
+    !!current &&
+    ['completed', 'aborted'].includes(current.status) &&
+    !error &&
+    !savedTerminalSessions.current.has(current.sessionId) &&
+    !records.some(
+      (r) =>
+        r.record.id === current.sessionId &&
+        SessionEngine.fromJournal(r.record.journal).project().status === current.status,
+    );
   return {
+    finalSavePending,
     ready,
     error,
     unsaved,

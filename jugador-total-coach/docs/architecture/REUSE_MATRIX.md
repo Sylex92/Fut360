@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Perfiles — 2026-10-04
+
+Extensión de IndexedDB existente a v2, sin borrar v1: almacén de participantes, ámbito de persona y transacciones nativas. Reutiliza SessionEngine/journal, historial, componentes React y validación de archivos. No se añade proveedor de identidad, nube, librería de datos o dependencia. [Pruebas, costo y límites](../reviews/participant-isolation.md).
+
 ## Enseñanza con video y plan — 2026-10-03
 
 [ADR 0016](adr/0016-human-reference-and-visible-plan.md): reutilizar YouTube oficial, SessionEngine/SessionClock/ExecutionPlan, IndexedDB/historial y Ajv existente. Adaptar 32 familias a 52 fichas y cinco recorridos variables; pantallas/esquemas propios. Sin reproductor audiovisual propio, solver, rig nuevo ni dependencias. El 3D conserva pruebas técnicas, con claridad reabierta. [Costo/derechos](../reviews/video-reference-cost-and-rights.md).

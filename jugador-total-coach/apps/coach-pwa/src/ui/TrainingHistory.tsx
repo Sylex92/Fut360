@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { SessionEngine } from '@fut360/session-engine';
-import {
-  downloadRecords,
-  MAX_ARCHIVE_BYTES,
-  parseArchive,
-  trainingStore,
-} from '../platform/training-store';
+import { downloadRecords, MAX_ARCHIVE_BYTES, parseArchive } from '../platform/training-store';
+import { useParticipant } from './ParticipantContext';
 import type {
   StoredTraining,
   TrainingFeedback,
@@ -24,6 +20,7 @@ export function TrainingHistory({
   onChange: () => Promise<unknown>;
   active: boolean;
 }) {
+  const { participant, store: trainingStore } = useParticipant();
   const [rpe, setRpe] = useState('');
   const [before, setBefore] = useState('');
   const [after, setAfter] = useState('');
@@ -38,6 +35,7 @@ export function TrainingHistory({
         <div>
           <p className="eyebrow">SOLO EN ESTE NAVEGADOR</p>
           <h2 id="history-title">Tu historial</h2>
+          <p>{participant?.alias ?? 'Historial anterior · sin asignar'}</p>
         </div>
         <button
           onClick={() => downloadRecords(records.map((r) => r.record))}

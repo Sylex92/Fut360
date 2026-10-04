@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-04",
+  "syntheticDataOnly": true,
+  "buildEntry": "index-Cx3-tz_r.js",
+  "storage": {
+    "upgradeV1Preserved": true,
+    "isolatedProfiles": 3,
+    "crossProfileWritesRejected": true,
+    "staleRevisionRejected": true,
+    "legacyAssignedExplicitly": true,
+    "legacyJournalUnchanged": true,
+    "childAssignmentRejected": true,
+    "atomicRestoreRollback": true,
+    "deleteScoped": true,
+    "deletedProfileWriteRejected": true,
+    "backupRoundtrip": true,
+    "pendingSessionPointersPreserved": true
+  },
+  "productionUI": {
+    "createdAdultAndChild": true,
+    "childContentSeparated": true,
+    "adultHistoryHiddenFromChild": true,
+    "profilePreservedOnReload": true,
+    "recoveredPaused": true,
+    "selectionLockedWhileActive": true,
+    "waitsForFinalSaveBeforeNavigation": true,
+    "deletingFinalRecordKeepsNavigationAvailable": true,
+    "leftFootPreserved": true,
+    "narrowOverflow": false,
+    "providerRequests": 0,
+    "pageErrors": []
+  },
+  "productionRegression": {
+    "cards": 52,
+    "referenced": 20,
+    "providerRequests": 0,
+    "mobileOverflow": false,
+    "extraPreparationWithoutPause": true,
+    "recoveredPaused": true,
+    "completed": true,
+    "pageErrors": []
+  },
+  "offline": {
+    "offlineReload": true,
+    "profilePreserved": true,
+    "localCards": 52,
+    "videoOffline": false
+  },
+  "lanFromDesktop": {
+    "status": 200,
+    "profileControl": true,
+    "url": "http://192.168.68.101:4174/",
+    "physicalSamsungTest": false
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "format": "passed",
+    "unitTests": {
+      "passed": 263,
+      "skipped": 1
+    },
+    "build": "passed; existing chunks >500kB warning"
+  },
+  "limits": [
+    "Samsung physical device not retested",
+    "Smart TV not tested",
+    "Child plan and visual library not implemented by this increment",
+    "No clinical or sports performance validation"
+  ],
+  "screenshot": "profile-mobile.png"
+}

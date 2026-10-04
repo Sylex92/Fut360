@@ -80,8 +80,8 @@ export function WorkoutPanel({
   const inspecting = state?.inspecting ?? false;
   const active = state?.session.status === 'running' || state?.session.status === 'paused';
   useEffect(() => {
-    onActiveChange(active);
-  }, [active, onActiveChange]);
+    onActiveChange(active || history.finalSavePending);
+  }, [active, history.finalSavePending, onActiveChange]);
   useEffect(() => {
     if (inspecting) {
       inspection.current?.focus({ preventScroll: true });

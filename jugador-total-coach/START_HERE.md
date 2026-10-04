@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+Última entrega técnica 2026-10-04: [perfiles e historiales aislados](docs/reviews/participant-isolation.md) implementados, con respaldo/restauración y conservación del legado. Continuar desde la [cobertura pendiente de los tres objetivos](docs/reviews/three-objective-coverage.md) y PROJECT_STATUS, no rehacer perfiles ni confundirlos con planes personales completos. El menú infantil sigue documental y la biblioteca visual incompleta.
+
 Corrección de continuidad 2026-10-04: los tres objetivos nuevos se suman al alcance acumulado. Conservar requisitos, avances y pendientes anteriores; no reiniciar el proyecto. El usuario delega crear, investigar, revisar, aprobar técnicamente y dar seguimiento al trabajo autorizado con [criterios verificables](docs/plans/three-objectives-delivery.md). Continuar sin pedir aprobación por paso; consultar solo información o permisos indispensables que no estén resueltos.
 
 Continuidad 2026-10-04: leer [PROJECT_STATUS](PROJECT_STATUS.md) y [tres objetivos](docs/product/THREE_OBJECTIVES.md). El destino incluye móvil/web/TV y rutas adulta/infantil separadas. Hay biblioteca y recorridos de la entrega anterior; no perfiles aislados ni plan infantil ejecutable. El texto de fases iniciales siguiente es histórico, no una orden de reiniciar ni un veto al alcance posteriormente autorizado.

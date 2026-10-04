@@ -1419,3 +1419,70 @@ footer {
 .training-history input {
   max-width: 100%;
 }
+
+.profile-application {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.participant-manager {
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  background: #eaf0df;
+  border-radius: 14px;
+}
+.participant-bar,
+.profile-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  align-items: end;
+}
+.participant-bar label,
+.profile-fields label,
+.profile-import {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1 1 14rem;
+}
+.participant-manager select,
+.participant-manager input:not([type='checkbox']) {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.65rem;
+  font: inherit;
+  border: 1px solid #93a482;
+  border-radius: 8px;
+  background: white;
+}
+.participant-manager input[type='checkbox'] {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+.participant-form {
+  margin: 1rem 0;
+}
+.participant-form fieldset {
+  min-width: 0;
+  margin: 1rem 0;
+  border: 1px solid #93a482;
+  border-radius: 8px;
+}
+.profile-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.2rem;
+}
+.profile-checks label,
+label.profile-checks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile-import {
+  margin-top: 1rem;
+}

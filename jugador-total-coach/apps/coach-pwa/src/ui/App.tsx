@@ -7,6 +7,9 @@ import { MovementLibrary } from './MovementLibrary';
 import { WorkoutPanel } from './WorkoutPanel';
 import { OfflinePanel } from './OfflinePanel';
 import { CoachingWorkspace } from './CoachingWorkspace';
+import { useParticipant } from './ParticipantContext';
+import { ParticipantManager, ParticipantHistory } from './ParticipantManager';
+import { participantGoals } from '../platform/participant';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -88,8 +91,10 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
+  const { participant } = useParticipant();
+  const childProfile = participant?.kind === 'child';
   const [example, setExample] = useState<
-    'plan' | 'workout' | 'library' | 'avatar' | 'contact' | 'hinge'
+    'plan' | 'workout' | 'library' | 'avatar' | 'contact' | 'hinge' | 'history'
   >('plan');
   const [sessionActive, setSessionActive] = useState(false);
   const [result, setResult] = useState(() => validateWorkoutV1(content));
@@ -138,6 +143,7 @@ export function App({ content }: { content: unknown }) {
             </p>
           </div>
         </section>
+        <ParticipantManager active={sessionActive} />
         <nav className="camera-controls" aria-label="Secciones de entrenamiento">
           <button
             type="button"
@@ -149,7 +155,7 @@ export function App({ content }: { content: unknown }) {
           </button>
           <button
             type="button"
-            disabled={sessionActive}
+            disabled={sessionActive || childProfile}
             aria-pressed={example === 'workout'}
             onClick={() => setExample('workout')}
           >
@@ -157,7 +163,7 @@ export function App({ content }: { content: unknown }) {
           </button>
           <button
             type="button"
-            disabled={sessionActive}
+            disabled={sessionActive || childProfile}
             aria-pressed={example === 'library'}
             onClick={() => setExample('library')}
           >
@@ -165,7 +171,7 @@ export function App({ content }: { content: unknown }) {
           </button>
           <button
             type="button"
-            disabled={sessionActive}
+            disabled={sessionActive || childProfile}
             aria-pressed={example === 'avatar'}
             onClick={() => setExample('avatar')}
           >
@@ -174,7 +180,7 @@ export function App({ content }: { content: unknown }) {
           <button
             type="button"
             aria-pressed={example === 'contact'}
-            disabled={sessionActive}
+            disabled={sessionActive || childProfile}
             onClick={() => setExample('contact')}
           >
             Pie y balón · fase 05
@@ -182,10 +188,18 @@ export function App({ content }: { content: unknown }) {
           <button
             type="button"
             aria-pressed={example === 'hinge'}
-            disabled={sessionActive}
+            disabled={sessionActive || childProfile}
             onClick={() => setExample('hinge')}
           >
             Bisagra de cadera · fase 04
+          </button>
+          <button
+            type="button"
+            disabled={sessionActive}
+            aria-pressed={example === 'history'}
+            onClick={() => setExample('history')}
+          >
+            Mi historial
           </button>
         </nav>
         <p className="quiet-note">
@@ -201,7 +215,33 @@ export function App({ content }: { content: unknown }) {
           </p>
           <OfflinePanel active={sessionActive} />
         </details>
-        {example === 'plan' || example === 'library' ? (
+        {example === 'history' ? (
+          <ParticipantHistory />
+        ) : childProfile ? (
+          <section className="panel" aria-labelledby="child-plan-heading">
+            <p className="eyebrow">PERFIL INFANTIL · ADMINISTRADO POR UN ADULTO</p>
+            <h2 id="child-plan-heading">El plan de {participant.alias}</h2>
+            <p>
+              Perfil guardado. Su plan y sus demostraciones infantiles todavía están en
+              preparación. Las sesiones adultas no se asignan a este perfil.
+            </p>
+            {!!participant.goals.length && (
+              <>
+                <h3>Objetivos elegidos</h3>
+                <ul>
+                  {participant.goals.map((g) => (
+                    <li key={g}>{participantGoals[g]}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <p>
+              El aprendizaje incluirá controlar, decidir, pasar, marcar y defender, con
+              oportunidades de juego y movimiento. Todavía no hay una rutina infantil lista
+              para comenzar.
+            </p>
+          </section>
+        ) : example === 'plan' || example === 'library' ? (
           <CoachingWorkspace mode={example} onActiveChange={setSessionActive} />
         ) : example === 'workout' ? (
           <WorkoutPanel onActiveChange={setSessionActive} />

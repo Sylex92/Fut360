@@ -1,5 +1,7 @@
 # Desarrollo local — base, reloj y primera demostración 3D
 
+Actualización 2026-10-04: perfiles e historial separados en la aplicación compilada. PC: `http://127.0.0.1:4173/`. Wi-Fi observada actualmente: `192.168.68.101`, preview enlazado solo a esa dirección en `http://192.168.68.101:4174/`. Las IP de los párrafos históricos no son permanentes. La prueba de persistencia `tests/browser-participants.mjs` usa un contexto sintético nuevo y Vite dev local en `4175`; nunca ejecutarla sobre datos personales. No se han cambiado firewall ni certificados; el teléfono debe estar en la misma red accesible. Servidor LAN comprobado desde el navegador de PC; Samsung físico sigue pendiente para esta entrega.
+
 ## Actualización de fase 07 — 2026-10-01
 
 La pantalla inicial abre la sesión v2 de 60 minutos. `?e2e=1` activa exclusivamente una prueba ×60 con aviso; no seguir movimientos a esa velocidad. Sin ese parámetro, usa tiempo real. Las pruebas normales no esperan una hora: para verificar el reloj real explícitamente, ejecutar desde el proyecto:

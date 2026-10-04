@@ -1,5 +1,7 @@
 # Tres objetivos del producto y del entrenamiento
 
+Avance técnico posterior a su definición: [perfiles e historial por persona](../reviews/participant-isolation.md) implementados el 2026-10-04. [Cobertura mínima y pendientes](../reviews/three-objective-coverage.md). No se declara completa la biblioteca ni ninguno de los tres objetivos por este incremento.
+
 Fecha: 2026-10-04. Requisitos adicionales del usuario, incorporados al alcance acumulado. **Los tres objetivos se suman a lo acordado y construido; no son una nueva base ni sustituyen el proyecto anterior.** Este documento no declara implementadas las funciones pendientes. Los datos personales y antropométricos recibidos permanecen en la conversación, fuera del repositorio, fixtures, capturas y búsquedas externas.
 
 ## Continuidad del alcance

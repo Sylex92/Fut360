@@ -1,5 +1,21 @@
 # Estado del proyecto
 
+## Entrega actual — perfiles separados y cobertura mínima · 2026-10-04
+
+El usuario solicita cumplir los tres objetivos de inicio a fin antes de ampliar lo accesorio. La [matriz de cobertura](docs/reviews/three-objective-coverage.md) conserva todos los compromisos y distingue lo esencial de ampliaciones posteriores. **La biblioteca todavía es insuficiente:** 52 fichas, 13 con referencia del gesto, siete parciales y 32 sin video exacto; infancia tiene 11 propuestas documentales, sin biblioteca/plan ejecutable. Este incremento no amplía esas cifras.
+
+**Implementado y comprobado técnicamente:** perfiles adulto/infantil, alias/lateralidad/modalidades/objetivos, selección por pestaña, historial/recuperación por participante, respaldo/restauración completos y borrado limitado. IndexedDB v2 conserva v1 sin asignar dueño; migración explícita del legado solo a adulto. Conflictos cancelan importación completa; pestañas obsoletas y perfiles eliminados no pueden sobrescribir. Cambio de persona bloqueado durante sesión y guardado final. La vista infantil no habilita las plantillas adultas. [Informe y límites](docs/reviews/participant-isolation.md), [plan previo](docs/plans/participant-isolation.md).
+
+**Verificado:** 263 pruebas correctas, una opt-in omitida; tipos/lint/formato/build correctos. Persistencia en navegador real desde base v1 sintética; interfaz compilada con dos perfiles, recarga y recuperación pausada, separación de historial y espera ante guardado bloqueado. Regresión de 30 minutos a ×60 completada con preparación extra; 52/20 fichas, cero peticiones de video y cero errores de página. Vista a 390 px sin desbordamiento. [Evidencia](docs/reviews/evidence/participants/checks.json). Persisten advertencias de bundles >500 kB. Samsung físico y TV no probados en este incremento.
+
+**Pendientes esenciales:** bibliotecas enseñadas para ambos planes, plan/calendario/versionado individual, edición y conversación real, flujo audiovisual automático, mediciones por capacidad, compatibilidad TV concreta y validación física Samsung. No llamar terminado al producto ni usar perfiles como evidencia de plan infantil completado.
+
+**Datos solicitados:** estado adulto actual, indicaciones existentes, disponibilidad y compañeros; carga/contexto/supervisión/disponibilidad infantil; marca/modelo TV. Respuestas privadas fuera de Git; solo condicionan su parte. Las decisiones metodológicas y la investigación de recursos las asume el agente. Siguiente trabajo: cerrar enseñanza de tareas prioritarias y vincular planes versionados/seguimiento a perfiles; no volver a implementar el aislamiento ya comprobado.
+
+Sin nuevas dependencias, descargas, modelos, pagos, publicación ni cambios globales. Preview comprobado HTTP 200 desde PC en `127.0.0.1:4173` y la IPv4 Wi-Fi actual `192.168.68.101:4174`, enlazado solo a esa interfaz. Estado en `.cache/preview-lan/process.json`; la dirección no es permanente y HTTP LAN no activa PWA/offline seguro en teléfono. En localhost, recarga offline tras preparar copia conserva perfil y 52 fichas; video externo fuera de caché. Once documentos y 238 enlaces locales comprobados; sin destinos ausentes y `git diff --check` correcto.
+
+Los apartados siguientes conservan el historial de decisiones y comprobaciones anteriores.
+
 ## Aclaración de alcance y responsabilidad · 2026-10-04
 
 El usuario confirma que los tres objetivos **se suman** a todo lo acordado; no son una nueva base, un reinicio ni sustitución de los pendientes anteriores. Delega creación, investigación, revisión, aprobación técnica, corrección y seguimiento del alcance autorizado. Se incorpora como instrucción permanente en AGENTS y como [trazabilidad de requisitos](docs/product/THREE_OBJECTIVES.md) y [criterios de entrega](docs/plans/three-objectives-delivery.md). No se requiere aprobación por operación rutinaria.

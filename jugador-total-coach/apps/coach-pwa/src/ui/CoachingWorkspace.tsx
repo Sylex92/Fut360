@@ -12,7 +12,7 @@ import {
 } from '../composition/development-plan';
 import { CoachingTaskCard } from './CoachingTask';
 import { CoachingRunner, clockText } from './CoachingRunner';
-import { trainingStore } from '../platform/training-store';
+import { useParticipant } from './ParticipantContext';
 import { SessionEngine } from '@fut360/session-engine';
 export function CoachingWorkspace({
   mode,
@@ -21,6 +21,7 @@ export function CoachingWorkspace({
   mode: 'plan' | 'library';
   onActiveChange: (v: boolean) => void;
 }) {
+  const { store: trainingStore } = useParticipant();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [place, setPlace] = useState('');
@@ -53,7 +54,7 @@ export function CoachingWorkspace({
     return () => {
       mounted = false;
     };
-  }, [running]);
+  }, [running, trainingStore]);
   const detail = useRef<HTMLElement>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
