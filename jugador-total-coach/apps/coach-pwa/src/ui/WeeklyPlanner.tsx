@@ -12,6 +12,8 @@ import {
 } from '../platform/planning';
 import type { PlanningContext, WeekSlot } from '../platform/planning';
 import { coachingSessions } from '../composition/development-plan';
+import { sessionAudience } from '../composition/personal-programs';
+import { suggestProgramWeek } from '../composition/program-week';
 import {
   proposalSlot,
   proposalUnchanged,
@@ -34,6 +36,7 @@ export function WeeklyPlanner({ onBusyChange }: { onBusyChange: (value: boolean)
       <p className="quiet-note">Elige un perfil para guardar su disponibilidad y su semana.</p>
     );
   const child = participant.kind === 'child';
+  const sessions = coachingSessions.filter((s) => sessionAudience(s) === participant.kind);
   const versions = participant.planning?.weeks ?? [];
   const summary = weekSummary(slots, context);
   const issues = slots.flatMap((slot, i) =>
@@ -203,12 +206,31 @@ export function WeeklyPlanner({ onBusyChange }: { onBusyChange: (value: boolean)
           </summary>
           <p>
             {child
-              ? 'Organiza aquí la actividad existente y el descanso. El programa infantil y sus demostraciones siguen en preparación; no se añaden las sesiones adultas.'
+              ? 'Cuenta primero club, gimnasio y partidos. Los juegos breves son complementos opcionales; reserva dos días sin entrenamiento específico.'
               : 'Distribuye propuestas y actividad existente. Elegir una sesión organiza la agenda; no certifica que su dificultad sea adecuada.'}
           </p>
           <p className="quiet-note">
             Un bloque por día. Para varias actividades externas, indica el total y sus nombres.
             La agenda no inicia sesiones ni registra que las hayas realizado.
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              const proposal = suggestProgramWeek(participant.kind, slots, context);
+              setSlots(proposal.slots);
+              setMessage(
+                proposal.added.length
+                  ? `Propuesta preparada: ${proposal.added.length} ${child ? 'juego breve' : 'sesiones'}. Revisa los días y guarda una nueva versión.`
+                  : 'No se añadieron sesiones: revisa días libres, minutos, lugares y compañía. Se conserva tu agenda.',
+              );
+            }}
+          >
+            Proponer inicio en los días libres
+          </button>
+          <p className="quiet-note">
+            Conserva tus actividades y descansos. Solo usa días sin asignar con tiempo
+            confirmado y deja separación entre actividades. No guarda hasta que revises la
+            semana.
           </p>
           <div className="week-days">
             {weekdays.map((day, i) => {
@@ -235,15 +257,14 @@ export function WeeklyPlanner({ onBusyChange }: { onBusyChange: (value: boolean)
                       <option value="unassigned">Sin asignar</option>
                       <option value="rest">Descanso</option>
                       <option value="external">Actividad externa</option>
-                      {!child &&
-                        coachingSessions.map((s) => (
-                          <option key={s.id} value={s.id}>
-                            {s.name}
-                            {sessionRequirements(s.id, context).length
-                              ? ' · requisitos por resolver'
-                              : ''}
-                          </option>
-                        ))}
+                      {sessions.map((s) => (
+                        <option key={s.id} value={s.id}>
+                          {s.name}
+                          {sessionRequirements(s.id, context).length
+                            ? ' · requisitos por resolver'
+                            : ''}
+                        </option>
+                      ))}
                       {slot.kind === 'session' &&
                         !coachingSessions.some((s) => s.id === slot.sessionId) && (
                           <option value={slot.sessionId}>

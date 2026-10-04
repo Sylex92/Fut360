@@ -13,14 +13,14 @@ El consenso IOC distingue reiniciar participación de recuperar el rendimiento p
 1. Separar **disponibilidad**, **actividad planificada**, **práctica declarada** y **capacidad medida**. La agenda nueva representa las dos primeras; no obtiene las otras dos del cronómetro.
 2. Diseñar sesiones individuales cuando no existan compañeros. Control/pase a pared/finalización a objetivo pueden tener organización individual concreta, pero no acreditan protección frente a rival, lectura de un adversario o coordinación colectiva. No relabelar 2v2 como práctica individual.
 3. Los distintos lugares son alternativas dentro del presupuesto temporal. No sumar máximos de cancha, campo y gimnasio como obligaciones simultáneas. Gimnasio opcional requiere confirmar el equipo usado en la variante, no solo tener acceso al edificio.
-4. Infancia: integrar el trabajo existente antes de añadir complementos. La aclaración sobre la unidad del tiempo adicional sigue pendiente; no asignar una hora diaria extra por suposición. La supervisión no convierte a un adulto en oponente físico equivalente ni certifica el contenido de una clase de gimnasio.
+4. Infancia: integrar el trabajo existente antes de añadir complementos. Aclaración sobre disponibilidad adicional recibida: no repetirla ni convertir tiempo libre en entrenamiento diario obligatorio. La supervisión no convierte a un adulto en oponente físico equivalente ni certifica el contenido de una clase de gimnasio.
 5. Priorizar en el complemento infantil juego con balón y objetivos claros: conducir mirando, cambiar ritmo, elegir salida, pasar/recibir y finalizar; movimiento general con técnica y disfrute. La lista Y01–Y11 sigue documental hasta completar su enseñanza y organización. No usar tamaño corporal o goles perfectos como resultado garantizado.
 6. Mantener un desarrollo adulto por capacidades y criterios, con transferencia de casa a espacio amplio y, cuando exista, oposición/juego. No iniciar una fase exigente porque hayan pasado semanas o se haya reproducido una sesión.
 
 ## Cobertura pendiente concreta
 
 - Adulto: sesiones individuales completas para recepción/pase, creación/finalización y desplazamiento defensivo; enseñanza exacta, dosificación de entrada y seguimiento de respuesta. Las plantillas con compañeros conservan su objetivo y quedan fuera del contexto individual hasta disponer de esas personas.
-- Infancia: biblioteca propia demostrada, unidad de tiempo adicional aclarada, integración con la actividad existente y progresiones por dominio. No atribuir revisión deportiva profesional a esta investigación.
+- Infancia: aclaración recibida y complementos/fichas propios implementados; completar demostraciones exactas y progresiones por dominio. No atribuir revisión deportiva profesional a esta investigación. [Entrega](../reviews/personal-programs-and-visual-coverage.md).
 - Calendario: la entrega técnica inicial guarda una semana tipo de un bloque por día y sus versiones; no es todavía un calendario fechado ni una prescripción adaptativa. Para varias actividades externas el usuario puede consignar el total, sin perder que son actividades fuera de la app.
 
 Los datos ya aportados no vuelven a solicitarse por defecto. Si falta un detalle indispensable para una decisión posterior, preguntar solo ese detalle y continuar el trabajo independiente.

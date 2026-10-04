@@ -152,6 +152,7 @@ export async function verifyPlanningUI(page, url = 'http://127.0.0.1:4173/') {
       exact: true,
     })
     .waitFor();
+  await page.getByRole('button', { name: /Extremo y gol/ }).click();
   if (
     await page
       .getByRole('button', { name: 'Recorrer esta propuesta', exact: true })
@@ -271,7 +272,7 @@ export async function verifyPlanningUI(page, url = 'http://127.0.0.1:4173/') {
     contextSavePreservesDraft: true,
     aliasEditPreservesWeek: true,
     reloadPersists: true,
-    childExternalOnly: true,
+    childAdultProposalsExcluded: true,
     isolatedWeeks: true,
     narrowOverflow: false,
     pageErrors: errors,

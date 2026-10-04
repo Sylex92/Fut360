@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Recorridos por audiencia y cobertura visual — 2026-10-04
+
+Reutilizar catálogo/compilador, SessionEngine/GuidedSession, historial, agenda CAS y reproductor oficial existentes. Adaptar sesiones y tareas por audiencia; crear solo selección de recorridos, propuestas para huecos libres, indicadores de cobertura y notas infantiles. Sin motor paralelo ni dependencias. Dos nuevas referencias YouTube y dos enlaces a videos de FIFA; no archivos audiovisuales copiados. [Revisión de costo, derechos, pruebas y pendientes](../reviews/personal-programs-and-visual-coverage.md).
+
 ## Contexto y agenda — 2026-10-04
 
 Se amplía Participant/IndexedDB para disponibilidad, semana tipo y versiones; mismo compilador y propuestas. Sin dependencia nueva ni calendario externo. IndexedDB v3 conserva almacenes y registros y evita escrituras de aplicaciones antiguas que perderían campos. Respaldos con agenda usan formato 2; los anteriores siguen legibles. [Plan y costo](../plans/context-and-week.md), [Sony A80J y límites](../reviews/sony-a80j-compatibility.md).

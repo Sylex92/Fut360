@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { loadYouTube, segmentRequest, videoFailure, videoLink } from '../platform/youtube';
 import type { VideoSegment, YouTubePlayer } from '../platform/youtube';
+import { useParticipant } from './ParticipantContext';
 
 export const videoTime = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${Math.floor(seconds % 60)
@@ -9,6 +10,22 @@ export const videoTime = (seconds: number) =>
 
 /** External media starts only after an explicit click; never cached by our service worker. */
 export function ReferenceVideo({
+  segment,
+  paused = false,
+}: {
+  segment: VideoSegment;
+  paused?: boolean;
+}) {
+  const { participant } = useParticipant();
+  if (participant?.kind === 'child')
+    return (
+      <p className="reference-pending">
+        La reproducción de YouTube dentro del perfil infantil todavía no está habilitada.
+      </p>
+    );
+  return <AdultReferenceVideo segment={segment} paused={paused} />;
+}
+function AdultReferenceVideo({
   segment,
   paused = false,
 }: {

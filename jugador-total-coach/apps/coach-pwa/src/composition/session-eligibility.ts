@@ -12,12 +12,23 @@ const requirements: Record<
   'attack-50': { places: ['pitch'], facilities: ['goal'] },
   'defense-45': { places: ['court', 'pitch'], facilities: [] },
   'strength-40': { places: ['gym'], facilities: ['row'] },
+  'solo-control-20': { places: ['home', 'court', 'pitch'], facilities: [] },
+  'solo-court-30': { places: ['court', 'pitch'], facilities: [] },
+  'solo-court-40': { places: ['court', 'pitch'], facilities: [] },
+  'solo-strength-24': { places: ['home', 'gym'], facilities: [] },
+  'solo-strength-32': { places: ['home', 'gym'], facilities: [] },
+  'youth-explore-15': { places: ['court', 'pitch'], facilities: [] },
+  'youth-pass-15': { places: ['court', 'pitch'], facilities: [] },
+  'youth-move-10': { places: ['home', 'court', 'pitch'], facilities: [] },
 };
 export function sessionRequirements(id: string, context: PlanningContext): string[] {
   const session = coachingSessions.find((s) => s.id === id);
   const required = requirements[id];
   if (!session || !required) return ['Propuesta no disponible.'];
-  const people = Math.max(...session.blocks.map((b) => taskById.get(b.taskId)!.participants));
+  const people = Math.max(
+    session.audience === 'child' ? 2 : 1,
+    ...session.blocks.map((b) => taskById.get(b.taskId)!.participants),
+  );
   const issues: string[] = [];
   if (context.participants === null)
     issues.push(`Confirma las personas disponibles: esta propuesta necesita ${people}.`);

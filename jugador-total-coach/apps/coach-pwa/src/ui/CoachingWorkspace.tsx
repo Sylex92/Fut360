@@ -4,6 +4,7 @@ import {
   findTasks,
   taskById,
   taskCategories,
+  taskAudience,
 } from '../composition/coaching-catalog';
 import {
   coachingSessions,
@@ -16,6 +17,9 @@ import { useParticipant } from './ParticipantContext';
 import { SessionEngine } from '@fut360/session-engine';
 import { WeeklyPlanner } from './WeeklyPlanner';
 import { sessionRequirements } from '../composition/session-eligibility';
+import { sessionAudience } from '../composition/personal-programs';
+import { DevelopmentProgram } from './DevelopmentProgram';
+import { visualCoverage } from '../composition/visual-coverage';
 export function CoachingWorkspace({
   mode,
   onActiveChange,
@@ -24,12 +28,18 @@ export function CoachingWorkspace({
   onActiveChange: (v: boolean) => void;
 }) {
   const { store: trainingStore, participant } = useParticipant();
+  const audience = participant?.kind ?? 'adult';
+  const child = audience === 'child';
+  const sessions = coachingSessions.filter((s) => sessionAudience(s) === audience);
+  const visibleTasks = coachingTasks.filter((t) => taskAudience(t) === audience);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [place, setPlace] = useState('');
   const [videosOnly, setVideosOnly] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
-  const [selectedSession, setSelectedSession] = useState('attack-50');
+  const [selectedSession, setSelectedSession] = useState(
+    child ? 'youth-explore-15' : 'solo-control-20',
+  );
   const [running, setRunning] = useState<string | null>(null);
   const [stage, setStage] = useState('prepare');
   const [pending, setPending] = useState<string | null>(null);
@@ -46,7 +56,9 @@ export function CoachingWorkspace({
         const match =
           record &&
           coachingSessions.find(
-            (s) => record.contentStamp === JSON.stringify(coachingPlans.get(s.id)),
+            (s) =>
+              sessionAudience(s) === audience &&
+              record.contentStamp === JSON.stringify(coachingPlans.get(s.id)),
           );
         if (mounted) setPending(match?.id ?? null);
       })
@@ -56,7 +68,7 @@ export function CoachingWorkspace({
     return () => {
       mounted = false;
     };
-  }, [running, trainingStore]);
+  }, [running, trainingStore, audience]);
   const detail = useRef<HTMLElement>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
@@ -69,11 +81,11 @@ export function CoachingWorkspace({
       detail.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
     }
   }, [selected]);
-  const matches = findTasks(query, category, place, videosOnly);
+  const matches = findTasks(query, category, place, videosOnly, audience);
   const task = selected ? taskById.get(selected) : null;
   const session = coachingSessions.find((s) => s.id === selectedSession)!;
   const currentStage = developmentStages.find((s) => s.id === stage)!;
-  const runnerSession = coachingSessions.find((s) => s.id === running);
+  const runnerSession = sessions.find((s) => s.id === running);
   const requirements = participant?.planning
     ? sessionRequirements(session.id, participant.planning.context)
     : [];
@@ -116,50 +128,68 @@ export function CoachingWorkspace({
       )}
       {mode === 'plan' ? (
         <>
+          <DevelopmentProgram
+            onSelect={(id) => {
+              setSelectedSession(id);
+              setSelected(null);
+              document
+                .getElementById('selected-proposal')
+                ?.scrollIntoView({ block: 'start', behavior: 'instant' });
+            }}
+          />
           <WeeklyPlanner onBusyChange={onActiveChange} />
-          <p className="plan-lead">
-            Un primer ciclo de 24 semanas, con un horizonte de 52. La meta es mejorar tu
-            rendimiento en juego: controlar, decidir, crear gol y defender. El calendario
-            comienza cuando puedas retomar actividad; no promete un nivel profesional en una
-            fecha.
-          </p>
-          <div className="plan-stage-layout">
-            <div>
-              <label htmlFor="plan-stage">Explorar una etapa</label>
-              <select id="plan-stage" value={stage} onChange={(e) => setStage(e.target.value)}>
-                {developmentStages.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {s.weeks} · {s.label}
-                  </option>
-                ))}
-              </select>
-              <h3>{currentStage.focus}</h3>
-              <p>{currentStage.criteria}</p>
-              <p className="quiet-note">
-                Explorar etapas no modifica tu capacidad ni te cambia de nivel. La carga de
-                regreso se ajusta antes de entrenar.
+          {!child && (
+            <details className="technical-details">
+              <summary>Horizonte de desarrollo y sesiones con compañeros</summary>
+              <p className="plan-lead">
+                Un primer ciclo de 24 semanas, con un horizonte de 52. La meta es mejorar tu
+                rendimiento en juego: controlar, decidir, crear gol y defender. El calendario
+                comienza cuando puedas retomar actividad; no promete un nivel profesional en
+                una fecha.
               </p>
-            </div>
-            <aside className="plan-week">
-              <strong>Una semana estable, una vez adaptado</strong>
-              <p>
-                Alternar técnica + fuerza, práctica de campo, recuperación y partido. Dos
-                exposiciones de fuerza separadas; una prioridad ofensiva o defensiva por sesión
-                de campo.
-              </p>
-              <p>
-                Los entrenamientos sustituyen carga cuando hace falta. No se añaden todas estas
-                sesiones encima de cuatro partidos.
-              </p>
-            </aside>
-          </div>
+              <div className="plan-stage-layout">
+                <div>
+                  <label htmlFor="plan-stage">Explorar una etapa</label>
+                  <select
+                    id="plan-stage"
+                    value={stage}
+                    onChange={(e) => setStage(e.target.value)}
+                  >
+                    {developmentStages.map((s) => (
+                      <option key={s.id} value={s.id}>
+                        {s.weeks} · {s.label}
+                      </option>
+                    ))}
+                  </select>
+                  <h3>{currentStage.focus}</h3>
+                  <p>{currentStage.criteria}</p>
+                  <p className="quiet-note">
+                    Explorar etapas no modifica tu capacidad ni te cambia de nivel. La carga de
+                    regreso se ajusta antes de entrenar.
+                  </p>
+                </div>
+                <aside className="plan-week">
+                  <strong>Una semana estable, una vez adaptado</strong>
+                  <p>
+                    Alternar técnica + fuerza, práctica de campo, recuperación y partido. Dos
+                    exposiciones de fuerza separadas; una prioridad ofensiva o defensiva por
+                    sesión de campo.
+                  </p>
+                  <p>
+                    Los entrenamientos sustituyen carga cuando hace falta. No se añaden todas
+                    estas sesiones encima de la actividad habitual.
+                  </p>
+                </aside>
+              </div>
+            </details>
+          )}
           <h3>Sesiones que construyen el plan</h3>
           <p>
             Abre una propuesta para ver organización, series y descansos. Puedes estudiar
             cualquier ejercicio antes de recorrerla.
           </p>
           <div className="plan-session-grid">
-            {coachingSessions.map((s) => (
+            {sessions.map((s) => (
               <button
                 key={s.id}
                 className="plan-session"
@@ -176,13 +206,34 @@ export function CoachingWorkspace({
               </button>
             ))}
           </div>
-          <article className="panel proposed-session">
+          <article className="panel proposed-session" id="selected-proposal">
             <p className="eyebrow">
               SESIÓN PROPUESTA · {clockText(coachingPlans.get(session.id)!.expectedDurationMs)}
             </p>
             <h3>{session.name}</h3>
             <p>{session.goal}</p>
             <p>{session.context}</p>
+            <details className="visual-readiness">
+              <summary>Demostraciones disponibles para esta sesión</summary>
+              <ul>
+                {[...new Set(session.blocks.map((b) => b.taskId))].map((id) => {
+                  const t = taskById.get(id)!;
+                  return (
+                    <li key={id}>
+                      <button className="task-link" onClick={() => setSelected(id)}>
+                        {t.name}
+                      </button>{' '}
+                      · {visualCoverage(t)}
+                    </li>
+                  );
+                })}
+              </ul>
+              <p>
+                Un ejemplo relacionado puede mostrar solo una parte. Las demostraciones
+                pendientes siguen sin resolverse; el reloj no sustituye la enseñanza del
+                movimiento.
+              </p>
+            </details>
             <ol className="plan-blocks">
               {session.blocks.map((block, i) => {
                 const t = taskById.get(block.taskId)!;
@@ -209,9 +260,9 @@ export function CoachingWorkspace({
               })}
             </ol>
             <p className="quiet-note">
-              Estas dosis son una propuesta general para revisar, no la pauta individual de
-              retorno. Velocidad máxima, sprints repetidos y saltos no se activan
-              automáticamente por completar semanas.
+              {child
+                ? 'El acompañante puede acortar o terminar el juego. No se añaden sesiones para llenar el tiempo disponible.'
+                : 'Empieza por la etapa que puedas tolerar. Velocidad máxima, sprints repetidos y saltos no se activan por completar semanas.'}
             </p>
             <button
               className="primary"
@@ -234,39 +285,43 @@ export function CoachingWorkspace({
               </div>
             )}
           </article>
-          <details className="plan-progress">
-            <summary>Qué observar para progresar</summary>
-            <ul>
-              <li>
-                Técnica: aciertos y pérdidas por lado en la misma tarea, y repetir otro día sin
-                explicación continua.
-              </li>
-              <li>
-                Recepción: información disponible, elección y primer toque; comparar con y sin
-                presión.
-              </li>
-              <li>
-                Gol: intentos, zona, tipo de llegada y calidad de ocasión; no solo goles.
-              </li>
-              <li>
-                Defensa: progresión impedida, orientación y ayuda al compañero; no solo robos.
-              </li>
-              <li>
-                Fuerza y carrera: misma variante/protocolo y respuesta posterior. El tiempo del
-                reproductor no mide capacidad.
-              </li>
-            </ul>
-            <p>
-              Revisión breve cada dos semanas; balance al final de las semanas 8, 16 y 24.
-              Cambiar una dificultad principal cada vez.
-            </p>
-          </details>
+          {!child && (
+            <details className="plan-progress">
+              <summary>Qué observar para progresar</summary>
+              <ul>
+                <li>
+                  Técnica: aciertos y pérdidas por lado en la misma tarea, y repetir otro día
+                  sin explicación continua.
+                </li>
+                <li>
+                  Recepción: información disponible, elección y primer toque; comparar con y
+                  sin presión.
+                </li>
+                <li>
+                  Gol: intentos, zona, tipo de llegada y calidad de ocasión; no solo goles.
+                </li>
+                <li>
+                  Defensa: progresión impedida, orientación y ayuda al compañero; no solo
+                  robos.
+                </li>
+                <li>
+                  Fuerza y carrera: misma variante/protocolo y respuesta posterior. El tiempo
+                  del reproductor no mide capacidad.
+                </li>
+              </ul>
+              <p>
+                Revisión breve cada dos semanas; balance al final de las semanas 8, 16 y 24.
+                Cambiar una dificultad principal cada vez.
+              </p>
+            </details>
+          )}
         </>
       ) : (
         <>
           <p>
-            {coachingTasks.length} fichas para casa, cancha y gimnasio. Las referencias humanas
-            aparecen primero; las animaciones siguen disponibles en su vista opcional.
+            {visibleTasks.length} fichas{' '}
+            {child ? 'infantiles con acompañamiento adulto' : 'para casa, cancha y gimnasio'}.
+            Consulta qué muestra cada referencia antes de practicar.
           </p>
           <div className="coaching-filters">
             <label>
@@ -282,9 +337,11 @@ export function CoachingWorkspace({
               Objetivo
               <select value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="">Todos</option>
-                {taskCategories.map((c) => (
-                  <option key={c}>{c}</option>
-                ))}
+                {taskCategories
+                  .filter((c) => visibleTasks.some((t) => t.category === c))
+                  .map((c) => (
+                    <option key={c}>{c}</option>
+                  ))}
               </select>
             </label>
             <label>
@@ -314,13 +371,7 @@ export function CoachingWorkspace({
               >
                 <small>{t.category}</small>
                 <strong>{t.name}</strong>
-                <span>
-                  {t.videos.length
-                    ? t.videos.some((v) => v.match === 'demonstration')
-                      ? 'Video del gesto'
-                      : 'Video de un componente'
-                    : 'Explicación · video pendiente'}
-                </span>
+                <span>{visualCoverage(t)}</span>
               </button>
             ))}
           </div>

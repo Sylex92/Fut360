@@ -1,6 +1,7 @@
 import { snapshotPlan } from '@fut360/domain';
 import type { ExecutionPlan } from '@fut360/domain';
 import { taskById } from './coaching-catalog';
+import { personalSessions } from './personal-programs';
 export interface CoachingBlock {
   taskId: string;
   rounds: number;
@@ -10,6 +11,7 @@ export interface CoachingBlock {
   dose: string;
 }
 export interface CoachingSession {
+  audience?: 'adult' | 'child';
   id: string;
   name: string;
   goal: string;
@@ -159,6 +161,7 @@ export const coachingSessions: CoachingSession[] = [
       cool(5),
     ],
   },
+  ...personalSessions,
 ];
 export const developmentStages = [
   {
@@ -219,7 +222,17 @@ export const developmentStages = [
 export function compileCoachingSession(session: CoachingSession): ExecutionPlan {
   const occurrences = session.blocks.flatMap((block, index) => {
     const task = taskById.get(block.taskId);
-    if (!task || !Number.isInteger(block.rounds) || block.rounds < 1 || block.rounds > 20)
+    if (
+      !task ||
+      !Number.isInteger(block.rounds) ||
+      block.rounds < 1 ||
+      block.rounds > 20 ||
+      task.id.startsWith('Y') !== (session.audience === 'child') ||
+      ![block.preparation, block.work, block.rest].every(
+        (n) => Number.isInteger(n) && n >= 0 && n <= 3600,
+      ) ||
+      block.work === 0
+    )
       throw new Error('Tarea o rondas inválidas.');
     return Array.from({ length: block.rounds }, (_, round) => ({
       id: `${session.id}/${index}/${round}`,

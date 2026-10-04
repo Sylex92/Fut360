@@ -7,6 +7,21 @@ import type {
   TrainingFeedback,
   TrainingRecord,
 } from '../platform/training-store';
+function recordTitle(record: TrainingRecord): string | null {
+  try {
+    const value: unknown = JSON.parse(record.contentStamp);
+    if (
+      value &&
+      typeof value === 'object' &&
+      'title' in value &&
+      typeof value.title === 'string'
+    )
+      return value.title.slice(0, 200);
+  } catch {
+    /* Legacy records can have a non-JSON content identifier. */
+  }
+  return null;
+}
 export function TrainingHistory({
   records,
   finished,
@@ -21,6 +36,7 @@ export function TrainingHistory({
   active: boolean;
 }) {
   const { participant, store: trainingStore } = useParticipant();
+  const child = participant?.kind === 'child';
   const [rpe, setRpe] = useState('');
   const [before, setBefore] = useState('');
   const [after, setAfter] = useState('');
@@ -49,9 +65,9 @@ export function TrainingHistory({
           onSubmit={(e) => {
             e.preventDefault();
             void onFeedback({
-              rpe: scale(rpe),
-              kneeBefore: scale(before),
-              kneeAfter: scale(after),
+              rpe: child ? null : scale(rpe),
+              kneeBefore: child ? null : scale(before),
+              kneeAfter: child ? null : scale(after),
               notes,
             }).then((saved) =>
               setMessage(
@@ -62,30 +78,38 @@ export function TrainingHistory({
           }}
         >
           <h3>
-            ¿Cómo te sentiste? <small>Opcional</small>
+            {child ? '¿Qué observó el acompañante?' : '¿Cómo te sentiste?'}{' '}
+            <small>Opcional</small>
           </h3>
-          <div className="history-feedback">
-            {[
-              { label: 'Esfuerzo percibido (0–10)', value: rpe, set: setRpe },
-              { label: 'Molestia de rodilla antes (0–10)', value: before, set: setBefore },
-              { label: 'Molestia de rodilla después (0–10)', value: after, set: setAfter },
-            ].map((f) => (
-              <label key={f.label}>
-                {f.label}
-                <select value={f.value} onChange={(e) => f.set(e.target.value)}>
-                  <option value="">Sin registrar</option>
-                  {Array.from({ length: 11 }, (_, i) => (
-                    <option key={i} value={i}>
-                      {i}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            ))}
-          </div>
+          {!child && (
+            <div className="history-feedback">
+              {[
+                { label: 'Esfuerzo percibido (0–10)', value: rpe, set: setRpe },
+                { label: 'Molestia de rodilla antes (0–10)', value: before, set: setBefore },
+                { label: 'Molestia de rodilla después (0–10)', value: after, set: setAfter },
+              ].map((f) => (
+                <label key={f.label}>
+                  {f.label}
+                  <select value={f.value} onChange={(e) => f.set(e.target.value)}>
+                    <option value="">Sin registrar</option>
+                    {Array.from({ length: 11 }, (_, i) => (
+                      <option key={i} value={i}>
+                        {i}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              ))}
+            </div>
+          )}
           <label>
             Notas
             <textarea
+              placeholder={
+                child
+                  ? 'Qué disfrutó, qué logró y si quiso terminar antes. Evita comparaciones corporales.'
+                  : undefined
+              }
               maxLength={2000}
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
@@ -93,8 +117,9 @@ export function TrainingHistory({
           </label>
           <button>Guardar sensaciones</button>
           <p className="quiet-note">
-            Es un registro personal; las escalas no diagnostican ni modifican automáticamente
-            tu plan.
+            {child
+              ? 'Observaciones del adulto; no se puntúan el cuerpo ni el rendimiento con escalas adultas.'
+              : 'Es un registro personal; las escalas no diagnostican ni modifican automáticamente tu plan.'}
           </p>
         </form>
       )}
@@ -108,6 +133,7 @@ export function TrainingHistory({
             return (
               <li key={r.id}>
                 <div>
+                  {recordTitle(r) && <h3>{recordTitle(r)}</h3>}
                   <strong>{new Date(r.startedAt).toLocaleString('es-MX')}</strong>
                   <p>
                     {s.status === 'completed'
@@ -122,12 +148,16 @@ export function TrainingHistory({
                     {Math.round((s.counters.baseOmittedMs + s.counters.extraOmittedMs) / 1000)}{' '}
                     s omitidos
                   </p>
-                  {r.feedback && (
-                    <p>
-                      Esfuerzo: {r.feedback.rpe ?? 'sin registrar'} · Rodilla:{' '}
-                      {r.feedback.kneeBefore ?? '—'} → {r.feedback.kneeAfter ?? '—'}
-                      {r.feedback.notes && ' · ' + r.feedback.notes}
-                    </p>
+                  {r.feedback && child ? (
+                    <p>{r.feedback.notes || 'Sin notas del acompañante.'}</p>
+                  ) : (
+                    r.feedback && (
+                      <p>
+                        Esfuerzo: {r.feedback.rpe ?? 'sin registrar'} · Rodilla:{' '}
+                        {r.feedback.kneeBefore ?? '—'} → {r.feedback.kneeAfter ?? '—'}
+                        {r.feedback.notes && ' · ' + r.feedback.notes}
+                      </p>
+                    )
                   )}
                 </div>
                 {!active && (

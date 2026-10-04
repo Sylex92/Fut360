@@ -1,5 +1,7 @@
 # Revisión visual para enseñanza con video
 
+Continuación 2026-10-04: [puente bilateral, elevación bilateral y ejemplos FIFA](../reviews/personal-programs-and-visual-coverage.md), con muestras observadas, variantes descartadas y rangos probados. Los videos NHS/NHFT se agregan al reproductor; FIFA se enlaza externamente como componente. No cambia retroactivamente el alcance observado de los seis videos históricos descritos debajo.
+
 2026-10-03. Inspección pública desde navegador independiente Playwright, tras no estar disponible el backend IAB de Codex. Sin inicio de sesión, descarga de videos, transcripciones completas ni acceso a material privado. Capturas temporales de inspección fuera de Git; no se incluyen como recursos del producto.
 
 ## Qué se observó

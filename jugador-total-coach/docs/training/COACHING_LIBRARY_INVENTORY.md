@@ -1,6 +1,6 @@
 # Inventario de enseñanza dentro de la aplicación
 
-2026-10-03. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 52 fichas / 32 familias. 13 fichas con referencia del gesto, 7 con un componente y 32 sin video exacto. Son 6 videos originales; una fuente puede contener varios ejercicios y dos fichas pueden compartir fragmento. No son 52 patrones distintos ni 20 videos distintos.
+2026-10-04. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 69 fichas / 32 familias. 15 fichas con referencia del gesto, 7 con un componente y 47 sin video incrustado. Son 8 videos originales; una fuente puede contener varios ejercicios y dos fichas pueden compartir fragmento. Las fichas no equivalen a patrones distintos ni a videos diferentes.
 
 Todas las fichas incluyen organización, pasos, objetivo, errores y cambios de dificultad/modalidad. Permanecen documentary-draft: referencia visible, corrección técnica, dosis personal y eficacia no son equivalentes. “Gesto observado” no significa visionado íntegro del video, fotogramas completos revisados o equivalencia de toda la tarea. [Observaciones y límites](../research/VIDEO_TEACHING_REVIEW.md).
 
@@ -54,15 +54,39 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 | B02 | Finalización por zonas de entrada | T13 | goal-area; 1 persona(s) | [AllAttack 2:38–3:14](https://www.youtube.com/watch?v=UrcPHLR4nfw&t=158s) · gesto observado |
 | F01 | Sentadilla a rango controlado | T27 | home; 1 persona(s) | Video exacto pendiente |
 | F02 | Bisagra de cadera | T27 | home; 1 persona(s) | Video exacto pendiente |
-| F03 | Puente de glúteos | T27 | home; 1 persona(s) | Video exacto pendiente |
+| F03 | Puente de glúteos | T27 | home; 1 persona(s) | [Northamptonshire Healthcare NHS Foundation Trust 0:06–0:17](https://www.youtube.com/watch?v=PPNCe7nX3Fc&t=6s) · gesto observado |
 | F04 | Flexión en pared | T28 | home; 1 persona(s) | Video exacto pendiente |
-| F05 | Elevación de talones | T27 | home; 1 persona(s) | Video exacto pendiente |
+| F05 | Elevación de talones | T27 | home; 1 persona(s) | [NHS inform 0:00–0:15](https://www.youtube.com/watch?v=4rgR6KtyHzI&t=0s) · gesto observado |
 | F06 | Plancha lateral con rodillas apoyadas | T29 | home; 1 persona(s) | Video exacto pendiente |
 | W01 | Preparación progresiva | T30 | home; 1 persona(s) | Video exacto pendiente |
 | C01 | Vuelta a la calma | T30 | home; 1 persona(s) | Video exacto pendiente |
+| S01 | Conducción por puertas y cambio de ritmo | T10 | court; 1 persona(s) | Video exacto pendiente |
+| S02 | Autopase y finalización rasa a una puerta | T13 | court; 1 persona(s) | Video exacto pendiente |
+| S03 | Aproximar y frenar sin rival | T17 | court; 1 persona(s) | Video exacto pendiente |
+| S04 | Pase raso a una puerta y recuperación andando | T04 | court; 1 persona(s) | Video exacto pendiente |
+| Y01 | Explorar puertas con el balón | T10 | court; 1 persona(s) | Video exacto pendiente |
+| Y02 | Semáforo: avanzar, bajar el ritmo y parar | T10 | court; 1 persona(s) | Video exacto pendiente |
+| Y03 | Elegir pase o conducción en 2 contra 1 | T14 | court; 3 persona(s) | Video exacto pendiente |
+| Y04 | Recibir hacia una de dos puertas | T05 | court; 2 persona(s) | Video exacto pendiente |
+| Y05 | Colocar el cuerpo y salir sin choque | T03 | court; 1 persona(s) | Video exacto pendiente |
+| Y06 | Cerrar un camino y acompañar | T17 | court; 2 persona(s) | Video exacto pendiente |
+| Y07 | Pases rasos por una puerta | T04 | court; 2 persona(s) | Video exacto pendiente |
+| Y08 | Conducir y marcar en una puerta | T13 | court; 1 persona(s) | Video exacto pendiente |
+| Y09 | Pasar y buscar otro ángulo | T07 | court; 2 persona(s) | Video exacto pendiente |
+| Y10 | Islas: caminar, equilibrarse y alcanzar | T31 | home; 1 persona(s) | Video exacto pendiente |
+| Y11 | Juego reducido con metas y funciones rotativas | T26 | court; 4 persona(s) | Video exacto pendiente |
+| Y12 | Entrar en el juego con pasos y balón | T31 | home; 1 persona(s) | Video exacto pendiente |
+| Y13 | Cerrar el juego y contar una cosa aprendida | T30 | home; 1 persona(s) | Video exacto pendiente |
 
 ## Organización visual original
-T05, T06, T07, T08, T11, T14, T17, T18, T19 y T20 incluyen un esquema propio de posiciones y rutas posibles. Explican organización; no representan biomecánica ni reemplazan un video exacto. Sin escalas físicas inferidas del dibujo.
+T05, T06, T07, T08, T11, T14, T17, T18, T19, T20, S01–S04, Y01, Y04, Y07, Y08 y Y09 incluyen un esquema propio de posiciones y rutas posibles. Explican organización; no representan biomecánica ni reemplazan un video exacto. Sin escalas físicas inferidas del dibujo.
+
+## Referencias en páginas de autor
+
+- S01, Y01, Y02: [FIFA · conducción por puertas](https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php); Warm-up · primer video · 0:08–0:58. Muestra conducción y giros por puertas. La fuente usa relevos con varios niños; aquí se adapta a una persona. El semáforo de Y02 no aparece en ese video. Evidencia: Reproducción comprobada; fotogramas 8, 22, 40 y 58 s inspeccionados. No visionado continuo completo.
+- S04, Y04, Y07, Y09: [FIFA · pase entre compañeros por puertas](https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php); Skill development · segundo video · 0:12–0:55. Se ven pases y desplazamientos entre puertas. Es una tarea en parejas dentro de un grupo; no muestra toda la variante de recepción o del adulto colaborador de nuestra ficha. Evidencia: Reproducción comprobada; fotogramas 12, 35 y 55 s inspeccionados. El último mostró indicador de carga. No certificar continuidad ni rango exacto.
+
+No se incrustan estas páginas ni se controla su final. La modalidad infantil usa fichas y enlaces acompañados, sin cargar YouTube dentro de la aplicación. Estas referencias parciales no cierran sus demostraciones exactas.
 
 ## Cobertura pendiente
 Completar referencias de las variantes sin video y reemplazar referencias parciales cuando exista una demostración pertinente. Revisión por fragmento y tarea, no por número de enlaces. Joner Football y Unisport permanecen en la investigación previa; este incremento no les atribuye nuevos fragmentos exactos. Ninguna referencia se descarga ni se redistribuye. [Condiciones](../reviews/video-reference-cost-and-rights.md).

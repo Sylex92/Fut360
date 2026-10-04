@@ -99,9 +99,10 @@ describe('Perfiles y respaldos por persona', () => {
         <App content={fixture} />
       </ParticipantContext.Provider>,
     );
-    expect(html).toContain('El plan de');
-    expect(html).toContain('Todavía no hay una rutina infantil');
-    expect(html).not.toContain('Recorrer esta propuesta');
+    expect(html).toContain('Su recorrido de aprendizaje');
+    expect(html).toContain('Explorar, frenar y marcar');
+    expect(html).toContain('Recorrer esta propuesta');
+    expect(html).not.toContain('Extremo y gol');
     expect(html).not.toContain('Ver video del ejercicio');
     expect(html).not.toContain('<iframe');
   });

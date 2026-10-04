@@ -5,6 +5,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const { tasks } = JSON.parse(
   fs.readFileSync(path.join(root, 'content/coaching/catalog.json'), 'utf8'),
 );
+const { references } = JSON.parse(
+  fs.readFileSync(path.join(root, 'content/coaching/source-pages.json'), 'utf8'),
+);
 const exact = tasks.filter((t) => t.videos.some((v) => v.match === 'demonstration')).length;
 const partial = tasks.filter(
   (t) => t.videos.length && !t.videos.some((v) => v.match === 'demonstration'),
@@ -17,7 +20,7 @@ const rows = tasks.map(
 );
 const text = `# Inventario de enseñanza dentro de la aplicación
 
-2026-10-03. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. ${tasks.length} fichas / ${new Set(tasks.map((t) => t.familyId)).size} familias. ${exact} fichas con referencia del gesto, ${partial} con un componente y ${tasks.filter((t) => !t.videos.length).length} sin video exacto. Son ${new Set(tasks.flatMap((t) => t.videos.map((v) => v.videoId))).size} videos originales; una fuente puede contener varios ejercicios y dos fichas pueden compartir fragmento. No son 52 patrones distintos ni 20 videos distintos.
+2026-10-04. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. ${tasks.length} fichas / ${new Set(tasks.map((t) => t.familyId)).size} familias. ${exact} fichas con referencia del gesto, ${partial} con un componente y ${tasks.filter((t) => !t.videos.length).length} sin video incrustado. Son ${new Set(tasks.flatMap((t) => t.videos.map((v) => v.videoId))).size} videos originales; una fuente puede contener varios ejercicios y dos fichas pueden compartir fragmento. Las fichas no equivalen a patrones distintos ni a videos diferentes.
 
 Todas las fichas incluyen organización, pasos, objetivo, errores y cambios de dificultad/modalidad. Permanecen documentary-draft: referencia visible, corrección técnica, dosis personal y eficacia no son equivalentes. “Gesto observado” no significa visionado íntegro del video, fotogramas completos revisados o equivalencia de toda la tarea. [Observaciones y límites](../research/VIDEO_TEACHING_REVIEW.md).
 
@@ -28,7 +31,13 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 ${rows.join('\n')}
 
 ## Organización visual original
-T05, T06, T07, T08, T11, T14, T17, T18, T19 y T20 incluyen un esquema propio de posiciones y rutas posibles. Explican organización; no representan biomecánica ni reemplazan un video exacto. Sin escalas físicas inferidas del dibujo.
+T05, T06, T07, T08, T11, T14, T17, T18, T19, T20, S01–S04, Y01, Y04, Y07, Y08 y Y09 incluyen un esquema propio de posiciones y rutas posibles. Explican organización; no representan biomecánica ni reemplazan un video exacto. Sin escalas físicas inferidas del dibujo.
+
+## Referencias en páginas de autor
+
+${references.map((r) => `- ${r.tasks.join(', ')}: [${r.title}](${r.url}); ${r.section}. ${r.note} Evidencia: ${r.observation}`).join('\n')}
+
+No se incrustan estas páginas ni se controla su final. La modalidad infantil usa fichas y enlaces acompañados, sin cargar YouTube dentro de la aplicación. Estas referencias parciales no cierran sus demostraciones exactas.
 
 ## Cobertura pendiente
 Completar referencias de las variantes sin video y reemplazar referencias parciales cuando exista una demostración pertinente. Revisión por fragmento y tarea, no por número de enlaces. Joner Football y Unisport permanecen en la investigación previa; este incremento no les atribuye nuevos fragmentos exactos. Ninguna referencia se descarga ni se redistribuye. [Condiciones](../reviews/video-reference-cost-and-rights.md).

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-04",
+  "scope": "Reusable adult solo routes, child supplements, audience-separated library and partial visual coverage",
+  "data": "Synthetic profiles only. No actual health, anthropometry or schedule stored in Git.",
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "format": "passed",
+    "tests": { "passed": 275, "skippedOptIn": 1, "failed": 0 },
+    "build": "passed",
+    "mainBundle": "index-BXVeXiry.js",
+    "existingBundleSizeWarning": true
+  },
+  "browserPrograms": {
+    "adultSoloWeek": true,
+    "childSupplement": true,
+    "preservesClubAndRest": true,
+    "reload": true,
+    "childRecovery": true,
+    "childCompletion": true,
+    "profileIsolation": true,
+    "extraPreparationAutomatic": true,
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "unsolicitedExternalRequests": 0,
+    "pageErrors": []
+  },
+  "planningRegression": {
+    "v2Preserved": true,
+    "staleAppsBlocked": true,
+    "immutablePastWeeks": true,
+    "conflictsRejected": true,
+    "profileIsolation": true,
+    "backupV2RoundTrip": true,
+    "restoreIdempotent": true,
+    "soloEligibility": true,
+    "contextSavePreservesDraft": true,
+    "aliasEditPreservesWeek": true,
+    "childAdultProposalsExcluded": true
+  },
+  "newEmbeddedVideos": [
+    { "taskId": "F03", "videoId": "PPNCe7nX3Fc", "requestedStart": 6, "requestedEnd": 17, "observedStart": 6, "observedEnd": 17.012088, "pausedAtEnd": true },
+    { "taskId": "F05", "videoId": "4rgR6KtyHzI", "requestedStart": 0, "requestedEnd": 15, "observedStart": 0.018087, "observedEnd": 15.012569, "pausedAtEnd": true }
+  ],
+  "inventory": { "tasks": 69, "adultTasks": 56, "childTasks": 13, "families": 32, "gestureReferences": 15, "componentReferences": 7, "withoutEmbeddedVideo": 47, "relatedSourcePageTasks": 7, "originalYouTubeVideos": 8, "externalFifaVideos": 2 },
+  "deliveryChecks": { "changedDocuments": 13, "localLinksChecked": 339, "brokenLocalLinks": 0, "gitDiffCheck": "passed", "localhostHttp": 200, "lanHttpFromComputer": 200, "bothServeCurrentBundle": true },
+  "notVerified": ["physical Samsung for this increment", "Sony TV", "complete human demonstration coverage", "continuous full-frame review of source videos", "clinical or professional sports validation", "learning effectiveness", "child-directed YouTube designation", "adaptive individual dosing"],
+  "method": "Separate Playwright contexts because Codex IAB runtime reported no available backend. No real browser profiles accessed. Source screenshots are untracked temporary inspection material. Committed screenshot shows only our application with synthetic data."
+}

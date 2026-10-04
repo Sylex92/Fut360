@@ -9,8 +9,6 @@ import { OfflinePanel } from './OfflinePanel';
 import { CoachingWorkspace } from './CoachingWorkspace';
 import { useParticipant } from './ParticipantContext';
 import { ParticipantManager, ParticipantHistory } from './ParticipantManager';
-import { participantGoals } from '../platform/participant';
-import { WeeklyPlanner } from './WeeklyPlanner';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -164,7 +162,7 @@ export function App({ content }: { content: unknown }) {
           </button>
           <button
             type="button"
-            disabled={sessionActive || childProfile}
+            disabled={sessionActive}
             aria-pressed={example === 'library'}
             onClick={() => setExample('library')}
           >
@@ -218,31 +216,6 @@ export function App({ content }: { content: unknown }) {
         </details>
         {example === 'history' ? (
           <ParticipantHistory />
-        ) : childProfile ? (
-          <section className="panel" aria-labelledby="child-plan-heading">
-            <p className="eyebrow">PERFIL INFANTIL · ADMINISTRADO POR UN ADULTO</p>
-            <h2 id="child-plan-heading">El plan de {participant.alias}</h2>
-            <WeeklyPlanner onBusyChange={setSessionActive} />
-            <p>
-              Perfil guardado. Su plan y sus demostraciones infantiles todavía están en
-              preparación. Las sesiones adultas no se asignan a este perfil.
-            </p>
-            {!!participant.goals.length && (
-              <>
-                <h3>Objetivos elegidos</h3>
-                <ul>
-                  {participant.goals.map((g) => (
-                    <li key={g}>{participantGoals[g]}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <p>
-              El aprendizaje incluirá controlar, decidir, pasar, marcar y defender, con
-              oportunidades de juego y movimiento. Todavía no hay una rutina infantil lista
-              para comenzar.
-            </p>
-          </section>
         ) : example === 'plan' || example === 'library' ? (
           <CoachingWorkspace mode={example} onActiveChange={setSessionActive} />
         ) : example === 'workout' ? (
@@ -260,124 +233,128 @@ export function App({ content }: { content: unknown }) {
         ) : (
           <DemoPanel />
         )}
-        <details className="technical-details">
-          <summary>Comprobaciones del archivo de referencia de 60 minutos</summary>
-          <section
-            className={'status-strip ' + (result.ok ? 'status-ok' : 'status-error')}
-            aria-labelledby="validation-heading"
-          >
-            <div>
-              <h2 id="validation-heading">
-                {result.ok
-                  ? 'Archivo de referencia válido'
-                  : 'El contenido necesita correcciones'}
-              </h2>
-              <p>
-                {result.ok
-                  ? 'La estructura y la suma de tiempos pasaron la comprobación.'
-                  : 'Revisa los errores antes de usar este contenido.'}
+        {!childProfile && (
+          <>
+            <details className="technical-details">
+              <summary>Comprobaciones del archivo de referencia de 60 minutos</summary>
+              <section
+                className={'status-strip ' + (result.ok ? 'status-ok' : 'status-error')}
+                aria-labelledby="validation-heading"
+              >
+                <div>
+                  <h2 id="validation-heading">
+                    {result.ok
+                      ? 'Archivo de referencia válido'
+                      : 'El contenido necesita correcciones'}
+                  </h2>
+                  <p>
+                    {result.ok
+                      ? 'La estructura y la suma de tiempos pasaron la comprobación.'
+                      : 'Revisa los errores antes de usar este contenido.'}
+                  </p>
+                </div>
+                <button type="button" onClick={recheck}>
+                  Volver a comprobar <span aria-hidden="true">↻</span>
+                </button>
+              </section>
+              <p className="check-feedback" role="status" aria-live="polite">
+                {checks > 0
+                  ? 'Comprobación ' +
+                    checks +
+                    ': ' +
+                    (result.ok
+                      ? 'estructura y duración correctas.'
+                      : 'persisten errores en el contenido.')
+                  : ''}
               </p>
-            </div>
-            <button type="button" onClick={recheck}>
-              Volver a comprobar <span aria-hidden="true">↻</span>
-            </button>
-          </section>
-          <p className="check-feedback" role="status" aria-live="polite">
-            {checks > 0
-              ? 'Comprobación ' +
-                checks +
-                ': ' +
-                (result.ok
-                  ? 'estructura y duración correctas.'
-                  : 'persisten errores en el contenido.')
-              : ''}
-          </p>
-          {!result.ok ? (
-            <section className="panel error-list" aria-label="Errores de validación">
-              <ul>
-                {result.issues.map((issue, index) => (
-                  <li key={index}>
-                    <code>{issue.path}</code>
-                    <span>{issue.message}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : (
-            <>
-              <div className="session-label">
-                <h2>{result.workout.displayName}</h2>
-                <span className="draft-tag">
-                  {result.workout.reviewStatus === 'draft'
-                    ? 'BORRADOR'
-                    : 'REVISIÓN DECLARADA EN EL ARCHIVO'}
-                </span>
+              {!result.ok ? (
+                <section className="panel error-list" aria-label="Errores de validación">
+                  <ul>
+                    {result.issues.map((issue, index) => (
+                      <li key={index}>
+                        <code>{issue.path}</code>
+                        <span>{issue.message}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : (
+                <>
+                  <div className="session-label">
+                    <h2>{result.workout.displayName}</h2>
+                    <span className="draft-tag">
+                      {result.workout.reviewStatus === 'draft'
+                        ? 'BORRADOR'
+                        : 'REVISIÓN DECLARADA EN EL ARCHIVO'}
+                    </span>
+                  </div>
+                  <SessionSummary summary={result.summary} />
+                </>
+              )}
+            </details>
+            <details className="technical-details">
+              <summary>Estado del prototipo y revisión de contenido</summary>
+              <div className="bottom-grid">
+                <section className="panel readiness" aria-labelledby="readiness-title">
+                  <p className="eyebrow">ESTADO DEL PROYECTO</p>
+                  <h2 id="readiness-title">El camino hasta entrenar</h2>
+                  <ol>
+                    <li>
+                      <span className="step-number">01</span>
+                      <div>
+                        <strong>Base y contenido</strong>
+                        <p>Comprobación del formato y de los tiempos.</p>
+                      </div>
+                      <span className="step-state">
+                        {result.ok ? 'Comprobado' : 'Con errores'}
+                      </span>
+                    </li>
+                    <li>
+                      <span className="step-number">02</span>
+                      <div>
+                        <strong>Reloj y controles</strong>
+                        <p>Pausa, continuidad y preparación automática.</p>
+                      </div>
+                      <span className="step-state">Comprobado</span>
+                    </li>
+                    <li>
+                      <span className="step-number">03</span>
+                      <div>
+                        <strong>Ejercicio con avatar</strong>
+                        <p>Demostración clara y revisión del movimiento.</p>
+                      </div>
+                      <span className="step-state pending">En revisión</span>
+                    </li>
+                  </ol>
+                </section>
+                <aside className="review-note">
+                  <span className="note-label">ANTES DE ENTRENAR</span>
+                  <h2>
+                    {result.ok ? 'El tiempo cuadra.' : 'Contenido pendiente.'}
+                    <br />
+                    La revisión continúa.
+                  </h2>
+                  <p>
+                    Este ejemplo histórico sirve para comprobar la aplicación. No es todavía
+                    una rutina aprobada para practicar.
+                  </p>
+                  <p>
+                    La nueva sesión reúne las demostraciones revisadas. Su dosificación y
+                    adecuación individual siguen en revisión.
+                  </p>
+                </aside>
               </div>
-              <SessionSummary summary={result.summary} />
-            </>
-          )}
-        </details>
-        <details className="technical-details">
-          <summary>Estado del prototipo y revisión de contenido</summary>
-          <div className="bottom-grid">
-            <section className="panel readiness" aria-labelledby="readiness-title">
-              <p className="eyebrow">ESTADO DEL PROYECTO</p>
-              <h2 id="readiness-title">El camino hasta entrenar</h2>
-              <ol>
-                <li>
-                  <span className="step-number">01</span>
-                  <div>
-                    <strong>Base y contenido</strong>
-                    <p>Comprobación del formato y de los tiempos.</p>
-                  </div>
-                  <span className="step-state">
-                    {result.ok ? 'Comprobado' : 'Con errores'}
-                  </span>
-                </li>
-                <li>
-                  <span className="step-number">02</span>
-                  <div>
-                    <strong>Reloj y controles</strong>
-                    <p>Pausa, continuidad y preparación automática.</p>
-                  </div>
-                  <span className="step-state">Comprobado</span>
-                </li>
-                <li>
-                  <span className="step-number">03</span>
-                  <div>
-                    <strong>Ejercicio con avatar</strong>
-                    <p>Demostración clara y revisión del movimiento.</p>
-                  </div>
-                  <span className="step-state pending">En revisión</span>
-                </li>
-              </ol>
-            </section>
-            <aside className="review-note">
-              <span className="note-label">ANTES DE ENTRENAR</span>
-              <h2>
-                {result.ok ? 'El tiempo cuadra.' : 'Contenido pendiente.'}
-                <br />
-                La revisión continúa.
-              </h2>
+            </details>
+            <details className="technical-details">
+              <summary>Ver datos del archivo de referencia</summary>
               <p>
-                Este ejemplo histórico sirve para comprobar la aplicación. No es todavía una
-                rutina aprobada para practicar.
+                Versión histórica v1. La comprobación técnica no valida ejercicios, recursos 3D
+                ni adecuación personal.
               </p>
-              <p>
-                La nueva sesión reúne las demostraciones revisadas. Su dosificación y
-                adecuación individual siguen en revisión.
-              </p>
-            </aside>
-          </div>
-        </details>
-        <details className="technical-details">
-          <summary>Ver datos del archivo de referencia</summary>
-          <p>
-            Versión histórica v1. La comprobación técnica no valida ejercicios, recursos 3D ni
-            adecuación personal.
-          </p>
-          <pre>{JSON.stringify(content, null, 2)}</pre>
-        </details>
+              <pre>{JSON.stringify(content, null, 2)}</pre>
+            </details>
+          </>
+        )}
       </main>
       <footer>
         <span>Fut360 · Jugador Total Coach</span>

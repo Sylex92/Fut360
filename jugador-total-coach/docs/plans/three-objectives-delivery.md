@@ -1,6 +1,6 @@
 # Entregas para los tres objetivos
 
-Continuación 2026-10-04: [contexto/semana tipo versionada](../reviews/context-and-week.md) implementados como parte de la entrega 2. No completa dosis/adaptación ni programa infantil. Contexto recibido, pendiente únicamente unidad de tiempo adicional infantil; no repetir el cuestionario. [Sony A80J](../reviews/sony-a80j-compatibility.md) ya identificado, ruta inicial documentada y prueba física pendiente.
+Continuación 2026-10-04: [programas individuales, complementos infantiles y biblioteca por audiencia](../reviews/personal-programs-and-visual-coverage.md) implementados, con agenda versionada. Faltan demostraciones humanas suficientes y adaptación por competencia para cerrar los planes. Contexto y aclaración de disponibilidad recibidos; no repetir cuestionario. [Sony A80J](../reviews/sony-a80j-compatibility.md) identificada, prueba física pendiente.
 
 Avance técnico 2026-10-04: [perfiles e historial aislados implementados](../reviews/participant-isolation.md), con límites y pruebas. [Cobertura para el cierre integral](../reviews/three-objective-coverage.md): todavía faltan biblioteca suficiente, planes personales, métricas, conversación y TV. La entrega final de los tres objetivos no puede dejar ninguna de esas funciones esenciales como ampliación accesoria.
 

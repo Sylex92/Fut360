@@ -1,5 +1,11 @@
 # Registro de recursos y licencias
 
+## Ampliación de referencias humanas — 2026-10-04
+
+Sin nuevos archivos audiovisuales descargados. Se añaden dos identificadores/rangos del reproductor oficial de YouTube: [NHS inform, elevación bilateral](https://www.youtube.com/watch?v=4rgR6KtyHzI), 0–15 s, y [NHFT, puente bilateral](https://www.youtube.com/watch?v=PPNCe7nX3Fc), 6–17 s. Origen, muestras observadas, decisiones de descarte y reproducción del rango comprobados en [informe](docs/reviews/personal-programs-and-visual-coverage.md). No asignar licencia libre ni derecho de distribución a sus medios; sin hash de archivo porque no se incorpora uno. Atribución y player original conservados.
+
+Dos videos de [FIFA Speed and control](https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php) se referencian exclusivamente mediante enlace a página/sección, sin iframe del sitio ni extracción/redistribución. Registro de correspondencia parcial en content/coaching/source-pages.json. Nueve esquemas adicionales S01–S04/Y01/Y04/Y07/Y08/Y09 son código original, sin nueva licencia pública del proyecto. YouTube dentro del perfil infantil continúa bloqueado, con requisito de designación y audiencia pendiente documentado.
+
 ## Referencias humanas y esquemas — 2026-10-03
 
 Los seis videos de la [revisión visual](docs/research/VIDEO_TEACHING_REVIEW.md) se insertan mediante reproductor oficial de YouTube. No hay archivo audiovisual descargado ni sublicencia de sus medios; no se les asigna CC0/MIT. Atribución, controles, anuncios y disponibilidad dependen del proveedor/autor. [Condiciones verificadas](docs/reviews/video-reference-cost-and-rights.md). Diez esquemas SVG de organización son código original del proyecto, sin assets externos; no se adopta por ello una licencia pública del repositorio.

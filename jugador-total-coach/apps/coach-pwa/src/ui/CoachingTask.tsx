@@ -3,6 +3,7 @@ import type { CoachingTask as Task } from '../composition/coaching-catalog';
 import { spaceLabels } from '../composition/coaching-catalog';
 import { ReferenceVideo } from './ReferenceVideo';
 import { TaskDiagram } from './TaskDiagram';
+import { SourceReferences } from './SourceReferences';
 export function TaskInstructions({ task }: { task: Task }) {
   return (
     <div className="task-instructions">
@@ -84,6 +85,7 @@ export function CoachingTaskCard({ task }: { task: Task }) {
           pendiente.
         </p>
       )}
+      <SourceReferences task={task} />
       <TaskInstructions task={task} />
     </article>
   );

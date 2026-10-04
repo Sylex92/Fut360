@@ -1,3 +1,4 @@
+import { allowedSessionAudience } from './session-audience';
 export const weekdays = [
   'Lunes',
   'Martes',
@@ -112,7 +113,8 @@ export function validatePlanning(
         return { kind: s.kind, label: s.label.trim(), minutes: s.minutes };
       if (
         s.kind === 'session' &&
-        kind === 'adult' &&
+        typeof s.sessionId === 'string' &&
+        allowedSessionAudience(s.sessionId, kind) &&
         s.minutes > 0 &&
         text(s.label, 80) &&
         text(s.sessionId, 80) &&

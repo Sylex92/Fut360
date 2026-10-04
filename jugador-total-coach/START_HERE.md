@@ -1,6 +1,6 @@
 # Empieza aquí — Jugador Total Coach
 
-Continuación actual: [contexto y agenda semanal versionada](docs/reviews/context-and-week.md) implementados por perfil, incluyendo actividad externa y requisitos de las propuestas. Contexto personal recibido; solo queda aclarar la unidad del tiempo adicional infantil. TV Sony A80J identificada; [ruta documental](docs/reviews/sony-a80j-compatibility.md). No repetir cuestionario ni confundir agenda manual con plan adaptativo/infantil completo. Consultar primero PROJECT_STATUS; datos reales fuera de Git.
+Continuación actual: [rutas adultas individuales y complementos infantiles](docs/reviews/personal-programs-and-visual-coverage.md), agenda por perfil, 69 fichas y cobertura visual explícita. Contexto y aclaración de disponibilidad recibidos: no repetir preguntas. Biblioteca humana todavía incompleta y YouTube infantil sin habilitar; no declarar cierre de los tres objetivos. Sony A80J identificada, [ruta documental](docs/reviews/sony-a80j-compatibility.md), prueba física pendiente. Consultar primero PROJECT_STATUS; datos reales fuera de Git.
 
 Última entrega técnica 2026-10-04: [perfiles e historiales aislados](docs/reviews/participant-isolation.md) implementados, con respaldo/restauración y conservación del legado. Continuar desde la [cobertura pendiente de los tres objetivos](docs/reviews/three-objective-coverage.md) y PROJECT_STATUS, no rehacer perfiles ni confundirlos con planes personales completos. El menú infantil sigue documental y la biblioteca visual incompleta.
 

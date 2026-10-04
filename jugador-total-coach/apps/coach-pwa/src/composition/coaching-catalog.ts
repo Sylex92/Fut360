@@ -35,7 +35,16 @@ export const spaceLabels: Record<string, string> = {
   'gym-or-home': 'Gimnasio · equipo indicado',
   'training-area': 'Zona de entrenamiento',
 };
-export function findTasks(query: string, category = '', place = '', videosOnly = false) {
+export function taskAudience(task: CoachingTask) {
+  return task.id.startsWith('Y') ? 'child' : 'adult';
+}
+export function findTasks(
+  query: string,
+  category = '',
+  place = '',
+  videosOnly = false,
+  audience: 'adult' | 'child' = 'adult',
+) {
   const norm = (s: string) =>
     s
       .normalize('NFD')
@@ -44,6 +53,7 @@ export function findTasks(query: string, category = '', place = '', videosOnly =
   const words = norm(query).trim().split(/\s+/).filter(Boolean);
   return coachingTasks.filter(
     (task) =>
+      taskAudience(task) === audience &&
       (!category || task.category === category) &&
       (!place || (place === 'home' ? task.space === 'home' : task.space !== 'home')) &&
       (!videosOnly || task.videos.length > 0) &&

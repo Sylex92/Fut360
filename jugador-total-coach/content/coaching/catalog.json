@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-04",
   "status": "planning-draft",
   "tasks": [
     {
@@ -1843,9 +1843,21 @@
         "fut7": "Base común; ajustar al ida y vuelta.",
         "fut11": "Base común; ajustar al rol y calendario."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "nhft-bridge",
+          "videoId": "PPNCe7nX3Fc",
+          "channel": "Northamptonshire Healthcare NHS Foundation Trust",
+          "title": "Puente con ambos pies apoyados",
+          "start": 6,
+          "end": 17,
+          "match": "demonstration",
+          "note": "La fuente muestra el gesto sobre camilla. En esta ficha usa una colchoneta en el suelo; no necesitas subirte a un mueble. Sigue la dosis de tu sesión."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.youtube.com/watch?v=PPNCe7nX3Fc"
       ],
       "review": "documentary-draft"
     },
@@ -1909,9 +1921,21 @@
         "fut7": "Base común; ajustar al ida y vuelta.",
         "fut11": "Base común; ajustar al rol y calendario."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "nhs-double-heel",
+          "videoId": "4rgR6KtyHzI",
+          "channel": "NHS inform",
+          "title": "Elevación de ambos talones con apoyo",
+          "start": 0,
+          "end": 15,
+          "match": "demonstration",
+          "note": "Ambos pies apoyados y ayuda ligera para equilibrio. Mira el gesto; sigue las series de tu sesión, no una pauta de rehabilitación de la fuente."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/exercises-for-ankle-pain/"
       ],
       "review": "documentary-draft"
     },
@@ -2011,6 +2035,599 @@
       "videos": [],
       "sourceRefs": [
         "C04"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "S01",
+      "familyId": "T10",
+      "name": "Conducción por puertas y cambio de ritmo",
+      "category": "Conducción",
+      "objective": "Transportar el balón sin alejarlo y elegir una salida controlable.",
+      "setup": "Dos puertas de un metro de ancho separadas 5–8 m; deja espacio para frenar detrás. Usa marcas planas que no resbalen.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "cuatro marcas planas"
+      ],
+      "steps": [
+        "Conduce andando hacia una puerta, alternando interior y exterior según el recorrido.",
+        "Antes de cruzarla mira el espacio libre; cruza sin tocar las marcas.",
+        "Avanza unos pasos algo más rápido, reduce de nuevo y gira con varios toques para regresar.",
+        "Haz cuatro recorridos por lado y recupera caminando."
+      ],
+      "success": "Pasar por la puerta conservando el balón a distancia de un paso.",
+      "mistakes": "Empujar lejos para ganar tiempo, frenar de golpe o mirar solo al suelo.",
+      "easier": "Puertas más anchas y todo andando.",
+      "harder": "Cambiar una puerta de lugar o añadir un tramo breve a ritmo moderado; no buscar máxima velocidad.",
+      "limits": "No es un regate ante oponente ni un test de velocidad. Fuera del área doméstica.",
+      "modalities": {
+        "fut5": "Contacto cercano y salida corta; el cemento no invita a barridas ni saltos añadidos.",
+        "fut7": "Conectar conducción y pase con recorridos medios.",
+        "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "S02",
+      "familyId": "T13",
+      "name": "Autopase y finalización rasa a una puerta",
+      "category": "Finalización",
+      "objective": "Preparar el balón y dirigir el golpeo después de una conducción corta.",
+      "setup": "Cancha con zona posterior despejada y sin transeúntes; puerta de marcas planas de 1,5–2 m de ancho, a 4–6 m. No hace falta portería.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "dos marcas planas"
+      ],
+      "steps": [
+        "Coloca el balón unos pasos delante de ti; realiza dos o tres toques suaves en diagonal.",
+        "Da un último toque que deje el balón accesible; sitúa el apoyo a su lado orientado a la puerta.",
+        "Con el interior del otro pie dirige un pase firme por la puerta, raso y controlado.",
+        "Recupera caminando y alterna lado. Cuenta intentos y aciertos sin subir potencia para llenar el reloj."
+      ],
+      "success": "Balón pasa raso por la puerta sin perder el equilibrio.",
+      "mistakes": "Golpear con toda la fuerza, cruzar una zona ocupada o ir demasiado encima del balón.",
+      "easier": "Balón parado y puerta cercana/ancha.",
+      "harder": "Variar el ángulo de entrada, después estrechar la puerta. Aumentar distancia en otra sesión.",
+      "limits": "Es puntería y preparación del golpeo, no prueba de gol ante portero. No golpeos en 2×2.",
+      "modalities": {
+        "fut5": "Contacto cercano y salida corta; el cemento no invita a barridas ni saltos añadidos.",
+        "fut7": "Conectar conducción y pase con recorridos medios.",
+        "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "S03",
+      "familyId": "T17",
+      "name": "Aproximar y frenar sin rival",
+      "category": "Defensa individual",
+      "objective": "Practicar el ajuste de pasos y una postura desde la que poder cambiar dirección.",
+      "setup": "Una marca frontal a 3 m y otras dos a sus lados; suelo seco y 2 m libres para desacelerar.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "tres marcas planas"
+      ],
+      "steps": [
+        "Avanza hacia la marca frontal a paso vivo.",
+        "Acorta los últimos pasos y baja ligeramente la cadera; conserva ambos pies separados y equilibrio.",
+        "Orienta un poco el cuerpo hacia una salida y desplázate dos pasos laterales sin cruzar los pies.",
+        "Vuelve caminando y cambia el lado en el siguiente intento."
+      ],
+      "success": "Frenar estable y poder salir hacia ambos lados.",
+      "mistakes": "Llegar lanzado, juntar o cruzar los pies, bloquear las rodillas.",
+      "easier": "Acercarte andando y detenerte antes.",
+      "harder": "Acercarte a trote cómodo manteniendo margen para frenar. La lectura del atacante requiere otra tarea con rival.",
+      "limits": "Ensayo de desplazamiento, no temporización ni robo real; sin barridas.",
+      "modalities": {
+        "fut5": "Contacto cercano y salida corta; el cemento no invita a barridas ni saltos añadidos.",
+        "fut7": "Conectar conducción y pase con recorridos medios.",
+        "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.youtube.com/watch?v=4vBZzkVRqbE"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "S04",
+      "familyId": "T04",
+      "name": "Pase raso a una puerta y recuperación andando",
+      "category": "Pase",
+      "objective": "Repetir apoyo y contacto de interior con ambos pies hacia un objetivo.",
+      "setup": "Puerta ancha de marcas a 3–5 m y zona posterior libre; no requiere pared.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "dos marcas planas"
+      ],
+      "steps": [
+        "Coloca el balón quieto y el pie de apoyo a su lado mirando al objetivo.",
+        "Dirige el balón raso con el interior del otro pie y acompaña corto hacia la puerta.",
+        "Ve andando a recuperarlo y prepara el siguiente intento desde el otro lado.",
+        "Alterna pie y anota aciertos sobre seis intentos si quieres una referencia."
+      ],
+      "success": "Balón raso por la puerta y apoyo estable.",
+      "mistakes": "Alejar demasiado el apoyo, golpear con la punta sin intención o priorizar fuerza sobre dirección.",
+      "easier": "Puerta más ancha o cercana.",
+      "harder": "Balón en movimiento antes de pasar; no cambies también distancia y anchura.",
+      "limits": "No equivale a recepción ni pase bajo presión.",
+      "modalities": {
+        "fut5": "Contacto cercano y salida corta; el cemento no invita a barridas ni saltos añadidos.",
+        "fut7": "Conectar conducción y pase con recorridos medios.",
+        "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y01",
+      "familyId": "T10",
+      "name": "Explorar puertas con el balón",
+      "category": "Juego de conducción",
+      "objective": "Encontrar caminos y llevar el balón a un destino sin perderlo.",
+      "setup": "Adulto delimita un área libre de unos 5×5 m con dos puertas anchas. Marcas planas; una persona en el recorrido cada vez.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Elige una puerta y conduce hacia ella con toques pequeños.",
+        "Mira el camino, atraviesa la puerta y cambia de dirección con varios toques.",
+        "Busca la otra puerta. Puedes parar el balón para orientarte y volver a salir.",
+        "Después de dos o tres recorridos, camina y cuenta qué puerta te resultó más fácil."
+      ],
+      "success": "Llega con el balón a un paso y puede encontrar la siguiente puerta.",
+      "mistakes": "Carrera sin control, pisar continuamente el balón para poder avanzar o convertir cada intento en examen.",
+      "easier": "Puertas más anchas y recorrido andando.",
+      "harder": "El adulto señala una puerta libre antes de llegar; reducir ayuda gradualmente.",
+      "limits": "Adulto acompaña y organiza; no corre a quitarle el balón. La dosis la define la sesión, no una carrera de relevos copiada.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y02",
+      "familyId": "T10",
+      "name": "Semáforo: avanzar, bajar el ritmo y parar",
+      "category": "Juego de conducción",
+      "objective": "Distinguir avanzar y frenar sin depender siempre de la planta.",
+      "setup": "Pasillo de 5–6 m, amplio y despejado; adulto al lado fuera del recorrido.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Con verde, conduce a un ritmo cómodo.",
+        "Con amarillo, acorta toques y baja el ritmo.",
+        "Con rojo, para con un toque suave de planta o interior manteniendo el equilibrio.",
+        "Vuelve a arrancar hacia espacio libre. El adulto deja tiempo para responder."
+      ],
+      "success": "Se detiene sin pisar con todo el peso y vuelve a conducir.",
+      "mistakes": "Gritar órdenes demasiado rápidas, saltar encima del balón o exigir sprint.",
+      "easier": "Solo verde y rojo, andando.",
+      "harder": "Añadir amarillo o cambiar de dirección; una novedad cada vez.",
+      "limits": "El adulto da señales, no opone fuerza.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y03",
+      "familyId": "T14",
+      "name": "Elegir pase o conducción en 2 contra 1",
+      "category": "Juego con compañeros",
+      "objective": "Aprender cuándo avanzar con el balón y cuándo ayudar a un compañero.",
+      "setup": "Zona amplia, dos metas de marcas y tres niños de tamaño/experiencia compatibles, con adulto supervisando.",
+      "space": "court",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Dos atacan una meta y uno defiende sin agarrar ni barrerse.",
+        "Quien tiene el balón mira si hay camino libre: puede conducir o pasar.",
+        "Tras una acción corta, paren, recojan el balón y cambien funciones.",
+        "El adulto pregunta qué opción vio; no da una instrucción en cada toque."
+      ],
+      "success": "Reconoce al compañero libre o el camino disponible.",
+      "mistakes": "Fijar número obligatorio de pases o corregir cada decisión durante la jugada.",
+      "easier": "Defensor empieza lejos y no roba en la primera acción.",
+      "harder": "Dar más libertad al defensor sin aumentar contacto.",
+      "limits": "Reservar para entreno con pares; el adulto no sustituye a un rival físico.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y04",
+      "familyId": "T05",
+      "name": "Recibir hacia una de dos puertas",
+      "category": "Recepción infantil",
+      "objective": "Preparar el siguiente toque mirando dónde hay espacio.",
+      "setup": "Adulto a 3–4 m hace pases rasos suaves. Dos puertas anchas, una a cada lado del niño, en una zona despejada.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Antes de recibir mira las dos puertas.",
+        "Colócate un poco de lado; el adulto pasa suave y espera.",
+        "Amortigua con el interior hacia una puerta que elijas, sin que el balón se escape.",
+        "Conduce por la puerta y devuelve el balón caminando o con pase suave. Alterna lados."
+      ],
+      "success": "El primer toque deja una continuación sencilla.",
+      "mistakes": "Exigir jugar a un toque o mandar el balón fuerte para probarlo.",
+      "easier": "Parar primero y después salir.",
+      "harder": "El adulto señala la puerta antes del pase, dejando tiempo para mirar.",
+      "limits": "El adulto colabora como pasador, nunca aumenta fuerza para imponer dificultad.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y05",
+      "familyId": "T03",
+      "name": "Colocar el cuerpo y salir sin choque",
+      "category": "Protección infantil",
+      "objective": "Mantener el balón al lado alejado del oponente y encontrar salida.",
+      "setup": "Primero balón quieto y adulto a distancia señalando desde qué lado vendría un rival; sin tocar al niño. Dos salidas libres.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Mira de qué lado indica el adulto y coloca tu cuerpo entre ese lado y el balón.",
+        "Deja el balón junto al pie más alejado y mantén un apoyo estable.",
+        "Gira con varios toques hacia la salida libre y avanza unos pasos.",
+        "Alterna lado. Para practicar oposición real, usa un compañero compatible bajo supervisión."
+      ],
+      "success": "Conserva una salida sin empujar ni perder equilibrio.",
+      "mistakes": "Usar brazos para empujar, echarse encima del balón o pedir al adulto que lo desplace con fuerza.",
+      "easier": "Ensayar la postura sin oponente ni señal.",
+      "harder": "Añadir un compañero de tamaño compatible con oposición suave y reglas de no choque.",
+      "limits": "La variante inicial no acredita protección bajo contacto. No enfrentar fuerza adulta a infantil.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y06",
+      "familyId": "T17",
+      "name": "Cerrar un camino y acompañar",
+      "category": "Defensa infantil",
+      "objective": "Acercarse con control y ocupar un camino sin lanzarse al balón.",
+      "setup": "Adulto conduce andando por un pasillo ancho, sin amagos rápidos ni contacto. Niño empieza con margen por delante.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Acércate con pasos cortos y frena antes de chocar.",
+        "Mantén una distancia desde la que puedas acompañar al adulto.",
+        "Colócate para cerrar una salida y acompaña unos pasos, sin agarrar ni barrerte.",
+        "Solo toca el balón cuando el adulto lo deja libre; reinicien después."
+      ],
+      "success": "Acompaña equilibrado y no necesita chocar para cerrar el camino.",
+      "mistakes": "Buscar robo en cada paso, entrar con la pierna extendida o convertirlo en lucha.",
+      "easier": "Adulto sin balón y marcha muy lenta.",
+      "harder": "Usar un compañero compatible que elija entre dos salidas, bajo supervisión.",
+      "limits": "Adulto solo coopera. Temporización real ante rival competente queda para el grupo.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y07",
+      "familyId": "T04",
+      "name": "Pases rasos por una puerta",
+      "category": "Pase infantil",
+      "objective": "Dirigir el balón con el interior y preparar la siguiente acción con ambos pies.",
+      "setup": "Adulto detrás y a distancia de una puerta ancha de marcas, a 2–3 m del niño, devuelve balones suaves.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Mira la puerta y pon el pie de apoyo junto al balón apuntando al objetivo.",
+        "Pasa suave con el interior del otro pie hacia la puerta.",
+        "Recibe la devolución, acomoda el balón y prepara otro pase.",
+        "Haz tres intentos con cada pie; empieza por el preferido y cambia sin castigo por fallar."
+      ],
+      "success": "Pase raso que alcanza al adulto sin perder equilibrio.",
+      "mistakes": "Buscar potencia máxima, correr al golpear o comparar al niño con otro.",
+      "easier": "Puerta más ancha y adulto más cerca.",
+      "harder": "Pasar después de un toque hacia un lado, antes de aumentar distancia.",
+      "limits": "La fuerza del pase crece con técnica y desarrollo; no se promete ganancia corporal.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y08",
+      "familyId": "T13",
+      "name": "Conducir y marcar en una puerta",
+      "category": "Gol infantil",
+      "objective": "Disfrutar de finalizar después de llevar el balón a una posición cómoda.",
+      "setup": "Puerta ancha a 3–4 m, zona posterior despejada, adulto controla que nadie cruce. Dos pasos de conducción antes del golpeo.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Conduce dos o tres toques mirando el camino.",
+        "Deja el balón delante y al lado del pie que va a golpear.",
+        "Apoya el otro pie junto al balón y envíalo raso con el interior por la puerta.",
+        "Recupera andando. Prueba ambos lados sin forzar el pie menos hábil."
+      ],
+      "success": "Prepara el balón y acierta con un golpeo cómodo.",
+      "mistakes": "Tirar con toda la fuerza, pisar el balón justo antes de cada tiro o repetir sin descanso por fallar.",
+      "easier": "Balón parado y objetivo cercano.",
+      "harder": "Cambiar ángulo de llegada o puerta elegida, sin añadir potencia y distancia a la vez.",
+      "limits": "No tiros domésticos en 2×2. El objetivo no es anotar cada oportunidad.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y09",
+      "familyId": "T07",
+      "name": "Pasar y buscar otro ángulo",
+      "category": "Juego de pase",
+      "objective": "Moverse después del pase para volver a ofrecer una opción.",
+      "setup": "Adulto pasador a 3–4 m. Dos marcas a cada lado del punto inicial del niño, con camino libre.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Pasa raso al adulto.",
+        "Mira el espacio y muévete andando hacia una de las marcas.",
+        "Gira para ver al adulto y al lugar al que quieres seguir.",
+        "Recibe suave y prepara otro pase; cambia de lado."
+      ],
+      "success": "Vuelve a ser una opción de pase después de moverse.",
+      "mistakes": "Correr de espaldas sin mirar o exigir velocidad para recibir.",
+      "easier": "Adulto espera a que esté colocado antes de devolver.",
+      "harder": "Trote cómodo y luego elección de lado por señal temprana.",
+      "limits": "Es coordinación con un pasador colaborador, no una pared contra defensa.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y10",
+      "familyId": "T31",
+      "name": "Islas: caminar, equilibrarse y alcanzar",
+      "category": "Coordinación infantil",
+      "objective": "Explorar equilibrio y control de tronco con un juego sin carga externa.",
+      "setup": "Dos marcas planas separadas un paso; suelo estable, adulto cerca. Sin balón y sin subirse a muebles.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "dos marcas planas"
+      ],
+      "steps": [
+        "Camina de una isla a otra y frena con ambos pies.",
+        "Levanta un pie un instante, con rodilla suave y mirada al frente; apóyalo si pierdes equilibrio.",
+        "Con ambos pies apoyados, flexiona suavemente caderas y rodillas para tocar una marca a una altura cómoda y vuelve.",
+        "Alterna pie y dirección. Haz pocas repeticiones bonitas y descansa."
+      ],
+      "success": "Se recoloca sin saltar ni aguantar la respiración.",
+      "mistakes": "Competir por aguantar más, forzar profundidad o usar pesas.",
+      "easier": "Mantener los dos pies apoyados y tocar una marca más alta.",
+      "harder": "Alcanzar en otra dirección conservando control, sin peso adicional.",
+      "limits": "No sustituye programación de fuerza del gimnasio supervisada; no añadir series adultas ni trabajo al fallo.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball",
+        "https://publications.aap.org/pediatrics/article/145/6/e20201011/76942/Resistance-Training-for-Children-and-Adolescents"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y11",
+      "familyId": "T26",
+      "name": "Juego reducido con metas y funciones rotativas",
+      "category": "Juego colectivo",
+      "objective": "Probar conducción, pase, gol y defensa en situaciones reales con compañeros.",
+      "setup": "Grupo de niños compatibles, área y metas adaptadas por entrenador; adulto supervisa descansos y rotación.",
+      "space": "court",
+      "participants": 4,
+      "equipment": [
+        "balón",
+        "marcas planas",
+        "petos"
+      ],
+      "steps": [
+        "Jueguen 2 contra 2 o un formato reducido que organice el entrenador.",
+        "Se puede avanzar conduciendo o pasando; cada jugador prueba atacar y defender.",
+        "Tras periodos cortos, descansen y comenten una opción que vieron.",
+        "Roten funciones y equipos sin fijar al niño en una sola posición."
+      ],
+      "success": "Participa, ofrece apoyos e intenta soluciones diferentes.",
+      "mistakes": "Convertir cada pérdida en castigo o dejar siempre al mismo niño defendiendo.",
+      "easier": "Más espacio por jugador y reinicios tranquilos.",
+      "harder": "Variar metas o espacio según las decisiones que surjan, no sumar reglas continuamente.",
+      "limits": "Parte del trabajo de cancha; no añadirlo automáticamente al entrenamiento del club.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y12",
+      "familyId": "T31",
+      "name": "Entrar en el juego con pasos y balón",
+      "category": "Preparación infantil",
+      "objective": "Empezar de forma suave y conocer el espacio antes del juego principal.",
+      "setup": "Adulto comprueba suelo y límites. Balón a un lado durante los primeros movimientos.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Camina por el área libre y mueve los brazos con naturalidad.",
+        "Da pasos cortos laterales, gira andando y mueve tobillos sin rebotes forzados.",
+        "Con el balón, toca suave con interior alternando pies, sin saltar.",
+        "Detente un momento para comprobar que puedes hablar cómodo y sabes dónde están los límites."
+      ],
+      "success": "Movimiento cómodo y ganas de seguir jugando.",
+      "mistakes": "Empezar con carreras o saltos intensos o hacer estiramientos forzados.",
+      "easier": "Hacer todo andando y sin balón.",
+      "harder": "Ampliar la zona en cancha, sin subir a máxima velocidad.",
+      "limits": "El adulto detiene la actividad si aparecen dolor, mareo o malestar.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "Y13",
+      "familyId": "T30",
+      "name": "Cerrar el juego y contar una cosa aprendida",
+      "category": "Cierre infantil",
+      "objective": "Bajar el ritmo y compartir sensaciones sin convertirlas en una nota.",
+      "setup": "Zona tranquila con adulto acompañando.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "sin material"
+      ],
+      "steps": [
+        "Camina despacio y deja el balón quieto.",
+        "Respira con normalidad; no hace falta estirar fuerte ni aguantar posiciones.",
+        "Cuenta una cosa divertida y una que quieras intentar otro día.",
+        "Si algo duele o te encuentras mal, díselo al adulto y termina."
+      ],
+      "success": "Termina tranquilo y puede expresar cómo se sintió.",
+      "mistakes": "Pedir un último esfuerzo como castigo o exigir superar una marca.",
+      "easier": "Descansar sentado si lo prefiere.",
+      "harder": "Mantener este cierre; no necesita más dificultad.",
+      "limits": "No se puntúan peso, apariencia ni nivel profesional.",
+      "modalities": {
+        "fut5": "Balón cerca, planta para frenar y pase corto cuando conviene.",
+        "fut7": "Ampliar recorridos solo al conservar control y espacio libre.",
+        "fut11": "La misma habilidad sirve; posicionamiento y juego colectivo se aprenden también con el equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
       "review": "documentary-draft"
     }

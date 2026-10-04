@@ -1,6 +1,6 @@
 # Rutas adulta e infantil: selección y revisión
 
-2026-10-04. Diseño documental ligado a los [tres objetivos](../product/THREE_OBJECTIVES.md). No pauta personal lista para iniciar: carga actual, restricciones y calendario pendientes. Datos reales recibidos se mantienen fuera de Git. Las familias/tareas de este documento no se han añadido a la app ni sus videos se han inspeccionado en este turno.
+2026-10-04. Diseño ligado a los [tres objetivos](../product/THREE_OBJECTIVES.md). Contexto y aclaraciones recibidos, sin transcribir datos reales a Git. Y01–Y11 ya tienen fichas propias en la app; Y12/Y13 añaden entrada/cierre. Tres complementos infantiles y cinco sesiones adultas individuales nuevas usan agenda e historial por persona. [Entrega y cobertura visual todavía incompleta](../reviews/personal-programs-and-visual-coverage.md), [fundamento de dosis propuestas](PROGRAM_DOSE_RATIONALE.md). No son pauta médica individual ni evaluación de competencia.
 
 ## Ruta adulta
 

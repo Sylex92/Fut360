@@ -24,6 +24,71 @@ const r = (x: number, y: number, u: number, v: number): Route => ({
   kind: 'run',
 });
 const diagrams: Record<string, Diagram> = {
+  S01: {
+    caption:
+      'Una persona conduce por una puerta y busca la otra, conservando espacio para frenar.',
+    people: [a(180, 165, 'Tú')],
+    routes: [r(165, 150, 95, 70), r(115, 70, 265, 70)],
+    goals: [
+      [90, 45],
+      [275, 45],
+    ],
+  },
+  S02: {
+    caption:
+      'Conduce unos pasos y envía el balón raso por la puerta. Deja libre la zona posterior.',
+    people: [a(90, 170, 'Tú')],
+    routes: [r(100, 150, 155, 115), p(165, 100, 180, 40)],
+    goals: [[180, 25]],
+  },
+  S03: {
+    caption: 'Acércate a la marca central, frena y sal a un lado. Aquí no hay rival.',
+    people: [a(180, 175, 'Tú')],
+    routes: [r(180, 150, 180, 100), r(165, 85, 85, 85), r(195, 85, 280, 85)],
+  },
+  S04: {
+    caption: 'Pasa por la puerta y recupera caminando. Un intento cada vez.',
+    people: [a(180, 170, 'Tú')],
+    routes: [p(180, 145, 180, 45), r(210, 155, 255, 65)],
+    goals: [[180, 30]],
+  },
+  Y01: {
+    caption:
+      'El niño elige una puerta y conduce por ella. El adulto acompaña fuera del recorrido.',
+    people: [a(180, 170, 'Niño'), a(305, 170, 'Adulto')],
+    routes: [r(165, 150, 95, 65), r(195, 150, 250, 65)],
+    goals: [
+      [90, 40],
+      [255, 40],
+    ],
+  },
+  Y04: {
+    caption: 'El adulto pasa suave. El niño recibe hacia una puerta y conduce por ella.',
+    people: [a(180, 175, 'Adulto'), a(180, 100, 'Niño')],
+    routes: [p(180, 155, 180, 120), r(162, 90, 90, 50), r(198, 90, 270, 50)],
+    goals: [
+      [80, 30],
+      [280, 30],
+    ],
+  },
+  Y07: {
+    caption: 'Pase suave entre niño y adulto por una puerta ancha.',
+    people: [a(180, 175, 'Niño'), a(180, 40, 'Adulto')],
+    routes: [p(170, 150, 170, 65), p(190, 65, 190, 150)],
+    goals: [[180, 105]],
+  },
+  Y08: {
+    caption:
+      'Unos toques para preparar el balón y un golpeo raso a la puerta; el adulto vigila la zona.',
+    people: [a(90, 175, 'Niño'), a(290, 170, 'Adulto')],
+    routes: [r(105, 155, 150, 115), p(160, 100, 180, 45)],
+    goals: [[180, 30]],
+  },
+  Y09: {
+    caption: 'Después de pasar al adulto, el niño cambia de ángulo para recibir otra vez.',
+    people: [a(80, 170, 'Niño'), a(250, 100, 'Adulto')],
+    routes: [p(100, 158, 230, 108), r(80, 145, 120, 60), p(230, 90, 140, 62)],
+  },
   T05: {
     caption: 'Pasador a receptor; el primer toque busca una de las dos puertas.',
     people: [a(65, 165, 'Pasador'), a(180, 105, 'Receptor')],

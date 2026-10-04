@@ -9,6 +9,7 @@ import { TrainingHistory } from './TrainingHistory';
 import { downloadRecords } from '../platform/training-store';
 import { TaskInstructions } from './CoachingTask';
 import { ReferenceVideo } from './ReferenceVideo';
+import { SourceReferences } from './SourceReferences';
 export const clockText = (ms: number) => {
   const s = Math.ceil(ms / 1000);
   return `${Math.floor(s / 60)
@@ -246,6 +247,12 @@ export function CoachingRunner({
               {studying && <ReferenceVideo key={task.id} segment={task.videos[0]} />}
             </>
           )}
+          <SourceReferences
+            task={task}
+            onOpen={() => {
+              if (state?.status === 'running') act({ type: 'Pause' });
+            }}
+          />
           <TaskInstructions task={task} />
         </>
       )}

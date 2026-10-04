@@ -1,8 +1,20 @@
 # Estado del proyecto
 
-## Entrega actual — contexto y semana por persona · 2026-10-04
+## Entrega actual — recorridos propios y cobertura visual · 2026-10-04
 
-Respuestas de contexto recibidas en conversación; **no volver a pedir objetivos, medidas, estado adulto, disponibilidad, compañía o modelo de TV**. Sus datos privados no se transcriben a Git. Solo falta aclarar si el tiempo adicional infantil es semanal o diario para fijar esa dosis. Modelo TV conocido: Sony A80J; Google TV/Cast verificados en documentación, funcionamiento físico pendiente.
+La aclaración sobre disponibilidad infantil ya fue recibida. No volver a preguntar objetivos, contexto, disponibilidad ni modelo de TV; no copiar datos personales a Git. La disponibilidad adicional no se convierte en dosis diaria.
+
+**Implementado:** cinco sesiones adultas individuales nuevas (20/24/30/32/40 min), tres complementos infantiles propios (10/15/15 min), rutas con criterios de avance/ajuste, propuestas de agenda que preservan actividades externas y descanso, biblioteca por audiencia, recuperación/historial infantil y notas del acompañante sin escalas adultas. Se mantienen cinco propuestas adultas previas. [Informe, costos y límites](docs/reviews/personal-programs-and-visual-coverage.md), [fundamento interno](docs/training/PROGRAM_DOSE_RATIONALE.md).
+
+**Biblioteca actual:** 69 fichas de 32 familias: 56 adultas y 13 infantiles. 15 referencias de gesto, siete de componente y 47 fichas sin video incrustado; siete de esas 47 enlazan ejemplos parciales de FIFA. Ocho videos YouTube originales y dos videos FIFA externos, sin descargar/copiar medios. Se rechazaron variantes unilaterales para fichas bilaterales. [Inventario](docs/training/COACHING_LIBRARY_INVENTORY.md).
+
+**Verificación:** flujo de ambos perfiles probado en navegador separado con datos sintéticos: agenda, recarga/recuperación infantil, finalización, historial aislado, +30 s sin pausa, 390 px sin desbordamiento ni errores y sin solicitudes externas infantiles espontáneas. Nuevos fragmentos de puente y talones reproducidos dentro de la app y detenidos al final. Resultados finales de checks en [evidencia](docs/reviews/evidence/programs/checks.json). Sin nuevas dependencias ni configuración global; conserva aviso de bundles >500 kB. Samsung y Sony físicos no se vuelven a declarar probados por esta prueba.
+
+**Aún no terminado:** demostración humana suficiente de todas las tareas, habilitación audiovisual infantil compatible (YouTube exige designación de contenido infantil, aún sin ruta configurada), encadenado automático de videos, calendario fechado/mediciones, adaptación por evidencia de competencia, conversación y TV operable. Los planes nuevos son propuestas ejecutables para estudiar y organizar; no alta clínica, evaluación deportiva personal ni garantía de nivel. No cerrar los tres objetivos por el incremento de fichas. [Cobertura pendiente](docs/reviews/three-objective-coverage.md).
+
+## Entrega anterior — contexto y semana por persona · 2026-10-04
+
+Respuestas de contexto recibidas en conversación; **no volver a pedir objetivos, medidas, estado adulto, disponibilidad, compañía o modelo de TV**. Sus datos privados no se transcriben a Git. La aclaración sobre unidad de disponibilidad infantil fue resuelta en el incremento siguiente. Modelo TV conocido: Sony A80J; Google TV/Cast verificados en documentación, funcionamiento físico pendiente.
 
 **Implementado:** disponibilidad, personas/lugares/recursos y agenda semanal versionada por perfil; cuenta actividad externa, avisa excesos y contrasta requisitos de las cinco propuestas existentes. No inicia una propuesta incompatible con el contexto guardado. Infancia organiza actividad existente/descanso, sin recibir dosis adultas. IndexedDB v3 conserva v1/v2 e impide que una app vieja omita los nuevos campos; respaldo completo con agenda formato 2. [Entrega y límites](docs/reviews/context-and-week.md), [plan previo y costo](docs/plans/context-and-week.md).
 

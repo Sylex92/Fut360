@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-04",
+  "references": [
+    {
+      "id": "fifa-speed-gates",
+      "tasks": ["S01", "Y01", "Y02"],
+      "title": "FIFA · conducción por puertas",
+      "url": "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
+      "section": "Warm-up · primer video · 0:08–0:58",
+      "match": "component",
+      "note": "Muestra conducción y giros por puertas. La fuente usa relevos con varios niños; aquí se adapta a una persona. El semáforo de Y02 no aparece en ese video.",
+      "observation": "Reproducción comprobada; fotogramas 8, 22, 40 y 58 s inspeccionados. No visionado continuo completo."
+    },
+    {
+      "id": "fifa-pairs-gates",
+      "tasks": ["S04", "Y04", "Y07", "Y09"],
+      "title": "FIFA · pase entre compañeros por puertas",
+      "url": "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
+      "section": "Skill development · segundo video · 0:12–0:55",
+      "match": "component",
+      "note": "Se ven pases y desplazamientos entre puertas. Es una tarea en parejas dentro de un grupo; no muestra toda la variante de recepción o del adulto colaborador de nuestra ficha.",
+      "observation": "Reproducción comprobada; fotogramas 12, 35 y 55 s inspeccionados. El último mostró indicador de carga. No certificar continuidad ni rango exacto."
+    }
+  ]
+}
