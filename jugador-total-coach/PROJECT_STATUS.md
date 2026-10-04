@@ -1,5 +1,17 @@
 # Estado del proyecto
 
+## Requisito vigente — tres objetivos · 2026-10-04
+
+El usuario define plataforma móvil/web/Smart TV y dos rutas distintas: adulto polivalente y desarrollo infantil. [Especificación completa](docs/product/THREE_OBJECTIVES.md), [progresiones y menú infantil documental](docs/training/ADULT_AND_YOUTH_PATHWAYS.md), [siguientes entregas](docs/plans/three-objectives-delivery.md). La TV es parte explícita del destino; no se declara compatible ni instalada.
+
+**Verificado en este incremento:** revisión de estado/documentación y fuentes primarias AAP, FIFA, IOC, Samsung, LG y YouTube; requisitos/criterios de aceptación y orden de implementación registrados. **Propuesto:** base común con énfasis por rol para adulto; juego/decisión/fuerza supervisada para infancia; medición por capacidad y perfiles aislados. El menú Y01–Y11 es documental, sin videos inspeccionados ni dosis personales asignadas.
+
+**Pendiente:** respuesta sobre estado actual del adulto y carga/contexto/supervisión infantil para dosificar; no se repiten medidas ni objetivos. Datos personales/antropometría permanecen fuera de Git. “Anderson” sigue ambiguo y modelo de TV desconocido; ninguno impide avanzar perfiles/estructura. Integración YouTube infantil necesita revisión específica antes de habilitarse; modo privacy-enhanced no sustituye reglas para apps dirigidas a niños.
+
+**Aplicación:** conserva la entrega técnica anterior; este turno no añade perfiles, estadísticas por capacidad, plan infantil ejecutable, conversación ni TV. Las 257 pruebas anteriores son históricas, no evidencia de estas funciones. Siguiente implementación: perfiles/versiones/historial aislado, conservando progreso legado; dosis dependientes esperan datos. No garantizar nivel profesional, acierto total, volumen corporal infantil ni comprensión universal por pasar pruebas técnicas.
+
+Comprobación documental: 11 archivos revisados, 211 enlaces locales resueltos sin enlaces rotos y `git diff --check` correcto. Sin cambios de código, dependencias, datos personales persistidos ni pruebas físicas.
+
 ## Entrega actual — enseñanza humana y plan visible · 2026-10-03
 
 El usuario rechaza la naturalidad/claridad de los movimientos y solicita videos originales por fragmento y el plan dentro de la app. **La aceptación pedagógica del 3D queda reabierta**; sus pruebas técnicas no acreditan fidelidad humana.

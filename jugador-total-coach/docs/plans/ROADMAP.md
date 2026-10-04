@@ -1,5 +1,7 @@
 # Orden de ejecución
 
+Orden vigente ampliado el 2026-10-04: [perfiles aislados → planes por perfil → enseñanza suficiente → seguimiento por capacidades → conversación elegible → TV verificada](three-objectives-delivery.md), con [rutas adulta/infantil](../training/ADULT_AND_YOUTH_PATHWAYS.md). Integrar lo ya implementado del incremento 2026-10-03; no reiniciar fases ni confundir planes documentados con funciones listas. Modelo de TV y datos de dosificación se consultan solo donde condicionan la decisión.
+
 Visión ampliada el 2026-10-02: [planes conversacionales y seguimiento](../product/ADAPTIVE_FOOTBALL_COACH_VISION.md), con [tareas por función/entorno](../training/ROLE_AND_ENVIRONMENT_PLAN.md). Secuencia propuesta: corregir contenido de 07 → continuidad local de 08 → composición flexible versionada → conversación elegible → seguimiento de capacidades y nuevos contextos. La tabla 00–09 conserva el primer entregable; no es la lista exhaustiva del producto futuro ni evidencia de funciones realizadas. [Viabilidad/costos](../reviews/conversational-coach-feasibility.md). No se ejecutan 08/09 por esta actualización documental.
 
 Completar el alcance autorizado sin pedir un mensaje por paso. El usuario solicitó avance autónomo el 2026-09-27; no ejecutar fases todavía no autorizadas. Leer PROJECT_STATUS.md para continuar.

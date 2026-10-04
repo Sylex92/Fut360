@@ -1,5 +1,7 @@
 # Matriz de costos por funcionalidad — fase 00
 
+Actualización 2026-10-04: [perfiles adulto/infantil y Smart TV](../product/THREE_OBJECTIVES.md). Persistencia local reutilizable sin dependencia nueva propuesta; sincronización, distribución por plataforma, IA y medios infantiles siguen condicionados. Modelo/OS de TV sin verificar; no afirmar instalación universal. YouTube exige designación para sitios/apps dirigidos a niños incluso con privacy-enhanced: auditar esa integración antes de activarla, sin sustituirla por descargas no autorizadas. [Fuente oficial](https://support.google.com/youtube/answer/171780?hl=en).
+
 Actualización 2026-10-03: [video por fragmentos y plan visible](video-reference-cost-and-rights.md). Reproductor oficial sin clave, cuenta obligatoria ni tarifa nueva; condicionado a Internet/datos, anuncios, disponibilidad y permiso de inserción. No incluye descarga, archivo offline ni cursos privados. Núcleo plan/fichas/seguimiento local. No prometer acceso/gratuidad ilimitados ni confundir Codex con un proveedor de IA para Fut360.
 
 Ampliación del 2026-10-02: [conversación dentro de Fut360](conversational-coach-feasibility.md). Se comparan importación desde este chat, reglas locales, integración elegible con plan de ChatGPT, modelo local y API ordinaria. No se aprueba proveedor ni gratuidad universal; la posibilidad documental de usar un plan no demuestra elegibilidad de Fut360/cuenta. El núcleo guardado debe seguir funcionando sin IA y ninguna vía autoriza publicar código, enviar salud personal o contratar pagos.

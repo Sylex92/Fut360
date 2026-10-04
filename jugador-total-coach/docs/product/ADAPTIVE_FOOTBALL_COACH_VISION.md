@@ -1,5 +1,7 @@
 # Visión de producto: diseñar, mostrar y seguir planes de fútbol
 
+**Requisito 2026-10-04:** [tres objetivos](THREE_OBJECTIVES.md): plataforma móvil/web/TV, ruta adulta polivalente y ruta infantil propia. Perfil de persona distinto de referente de estilo; planes/dosis/historial aislados, seguimiento por evidencia y protección de datos infantiles. No copiar cargas adultas, encasillar precozmente ni certificar profesionalización. [Secuencia](../plans/three-objectives-delivery.md). No se han implementado por esta actualización.
+
 **Estado 2026-10-03:** implementados Mi plan, etapas 24/52 semanas, cinco propuestas variables con seguimiento y 52 fichas, 20 con referencia humana del gesto o parcial. [Entrega](../reviews/video-guided-delivery.md). No equivalen al planificador editable/adaptativo ni a la conversación descritos aquí. El 3D pierde prioridad por la objeción de claridad del usuario.
 
 2026-10-02. Requisito ampliado por el usuario: construir entrenamientos conversando con el asistente desde la aplicación, recibir una explicación visual clara y dar seguimiento a su evolución. Este documento fija el destino del producto y su primera secuencia de entrega; no afirma que estas funciones estén implementadas. [Base MVP1](MVP1_PRD.md), [plan deportivo](../training/GRADUAL_DEVELOPMENT_PLAN.md), [objetivos y entornos](../training/ROLE_AND_ENVIRONMENT_PLAN.md), [costos de conversación](../reviews/conversational-coach-feasibility.md).

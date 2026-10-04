@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+Continuidad 2026-10-04: leer [PROJECT_STATUS](PROJECT_STATUS.md) y [tres objetivos](docs/product/THREE_OBJECTIVES.md). El destino incluye móvil/web/TV y rutas adulta/infantil separadas. Hay biblioteca y recorridos de la entrega anterior; no perfiles aislados ni plan infantil ejecutable. El texto de fases iniciales siguiente es histórico, no una orden de reiniciar ni un veto al alcance posteriormente autorizado.
+
 Continuidad del 2026-10-02: leer primero [PROJECT_STATUS](PROJECT_STATUS.md) y la [visión ampliada](docs/product/ADAPTIVE_FOOTBALL_COACH_VISION.md). El objetivo ya incluye creación conversacional de planes, explicación y seguimiento en varios entornos. Las referencias históricas a una hora fija describen el primer entregable; no descartan esa evolución. El plan anual, conversación y seguimiento no están implementados todavía.
 
 Este documento conserva la guía histórica desde cero del paquete v4. Desde el 2026-09-28 sí existe una base web de diagnóstico: consultar [desarrollo local](docs/setup/LOCAL_DEVELOPMENT.md) y el estado actual antes de usar las instrucciones históricas. No combines carpetas anteriores.
