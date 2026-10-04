@@ -1,0 +1,2018 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-03",
+  "status": "planning-draft",
+  "tasks": [
+    {
+      "id": "T01",
+      "familyId": "T01",
+      "name": "Cadena de interior, exterior y planta",
+      "category": "Control",
+      "objective": "Enlazar contactos sin perder alcance y comparar ambos pies.",
+      "setup": "Balón entre los pies y espacio libre a ambos lados.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Empuja corto con el interior del pie derecho hacia la izquierda.",
+        "Con el mismo pie usa el exterior para devolverlo a la derecha.",
+        "Recoge con la planta, recoloca el apoyo y repite con el pie izquierdo."
+      ],
+      "success": "Balón al alcance del siguiente toque; no perseguirlo fuera del área.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T02",
+      "familyId": "T02",
+      "name": "Arrastre en V y salida diagonal",
+      "category": "Control",
+      "objective": "Reorientar balón y cuerpo hacia una salida clara.",
+      "setup": "Balón delante; marca dos salidas diagonales cortas.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas planas"
+      ],
+      "steps": [
+        "Apoya un pie en el suelo y coloca la planta del otro sobre el balón.",
+        "Arrastra hacia ti; retira la planta y abre el pie.",
+        "Empuja con el interior hacia la diagonal del mismo lado; cambia los apoyos para repetir."
+      ],
+      "success": "El balón dibuja una V con dos contactos distinguibles.",
+      "mistakes": "Intentar arrastrar y empujar a la vez; perder el equilibrio sobre el balón.",
+      "easier": "Aprender arrastre y salida por separado.",
+      "harder": "Unir ambas fases. Elegir una de dos salidas; después llevar a cancha con rival.",
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalities": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "videos": [
+        {
+          "id": "mastery-4",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Recorte en V",
+          "start": 207,
+          "end": 242,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C05",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T03",
+      "familyId": "T03",
+      "name": "Proteger, girar y conservar",
+      "category": "Regate",
+      "objective": "Interponer una posición útil sin perder opciones de pase o giro.",
+      "setup": "Pareja en una zona amplia; presión suave al principio, sin empujones.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "Recibe y coloca tu cuerpo entre rival y balón.",
+        "Mantén el balón en el lado alejado, con pasos cortos para seguir la presión.",
+        "Gira únicamente si aparece espacio; si no, conserva o descarga al pasador."
+      ],
+      "success": "Conservar una opción de pase o salida sin cargar contra el rival.",
+      "mistakes": "Girar siempre hacia la presión o usar los brazos para empujar.",
+      "easier": "Sin oposición; reconocer posiciones.",
+      "harder": "Presión limitada. Oponente libre con opción de apoyo.",
+      "limits": "Contacto reglamentario y superficie por definir; una postura estática doméstica no valida protección real.",
+      "modalities": {
+        "fut5": "Planta y apoyos cortos; salida o descarga del pívot.",
+        "fut7": "Conservar para enlazar ida y vuelta.",
+        "fut11": "Recibir de espaldas entre líneas o sostener una posesión."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C03",
+        "C09"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T04",
+      "familyId": "T04",
+      "name": "Pase y recepción con pared",
+      "category": "Recepción y pase",
+      "objective": "Dosificar el pase y preparar la devolución.",
+      "setup": "Pared apta o rebotador, fuera de casa; marca dos zonas laterales de recepción.",
+      "space": "wall-area",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "pared apta para balón",
+        "objetivo marcado"
+      ],
+      "steps": [
+        "Pasa por el suelo hacia una zona de rebote constante.",
+        "Antes del regreso, ajusta el apoyo y abre el cuerpo hacia la siguiente salida.",
+        "Recibe alejando el balón del centro y devuelve con el otro pie; alterna lados."
+      ],
+      "success": "Primer toque útil para el pase siguiente, sin correcciones apresuradas.",
+      "mistakes": "Golpear demasiado fuerte, esperar inmóvil o recibir debajo del cuerpo.",
+      "easier": "Acercar un objetivo amplio y recibir antes de pasar.",
+      "harder": "Modificar ángulo o velocidad. Un toque solo cuando la situación lo permite.",
+      "limits": "Pared despejada para ejercicio corporal no significa apta para golpear balón; rebote conocido no sustituye compañero móvil.",
+      "modalities": {
+        "fut5": "Devolución corta y rápida, con planta cuando tenga sentido.",
+        "fut7": "Pared seguida de desplazamiento hacia nueva línea.",
+        "fut11": "Primer toque y pase con amplitud progresiva, no pase largo en habitación."
+      },
+      "videos": [
+        {
+          "id": "rebound",
+          "videoId": "Bd7TH9t_djM",
+          "channel": "Become Elite",
+          "title": "Recepción y pase con rebotador",
+          "start": 458,
+          "end": 491,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C07",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T05",
+      "familyId": "T05",
+      "name": "Recepción orientada hacia dos salidas",
+      "category": "Recepción y pase",
+      "objective": "Dar continuidad a la recepción hacia una opción útil.",
+      "setup": "Pasador, receptor y dos puertas laterales; acordar primero dirección y velocidad.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "dos puertas de marcas"
+      ],
+      "steps": [
+        "Mira las puertas antes de que llegue el pase.",
+        "Colócate con posibilidad de salir a ambos lados, sin perder el balón de vista al contacto.",
+        "Orienta el primer toque a la puerta libre y conduce o pasa después; cambia de lado."
+      ],
+      "success": "La primera acción lleva hacia espacio aprovechable.",
+      "mistakes": "Decidir la salida sin mirar, recibir de frente rígido o alargar demasiado el toque.",
+      "easier": "Una sola salida y pase previsible.",
+      "harder": "Variar llegada. Añadir oponente que cierre una salida.",
+      "limits": "No imponer siempre interior, exterior, pie alejado ni giro; preservar la opción de descargar.",
+      "modalities": {
+        "fut5": "Poco tiempo de contacto y ángulos cercanos.",
+        "fut7": "Salida a pase vertical o conducción media.",
+        "fut11": "Recepción entre líneas con información de ambos lados."
+      },
+      "videos": [
+        {
+          "id": "box-first-touch",
+          "videoId": "Bd7TH9t_djM",
+          "channel": "Become Elite",
+          "title": "Primer toque en un cuadro",
+          "start": 35,
+          "end": 65,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C07",
+        "C09",
+        "C11"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T06",
+      "familyId": "T06",
+      "name": "Mirar, identificar y usar la información",
+      "category": "Percepción",
+      "objective": "Vincular exploración visual con una elección comprobable.",
+      "setup": "Un pasador, un receptor y un apoyo que cambia de lado detrás del receptor.",
+      "space": "court",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "El apoyo se mueve mientras el receptor prepara la recepción.",
+        "El receptor mira para localizarlo antes de controlar.",
+        "Recibe y pasa a su nueva posición; si la línea se cierra, conserva y vuelve a ofrecerte."
+      ],
+      "success": "Usar lo visto en la elección, no contar giros de cabeza.",
+      "mistakes": "Mirar por obligación sin identificar nada o dejar de ver el balón al golpear.",
+      "easier": "Compañeros quietos y tiempo amplio.",
+      "harder": "Receptores móviles. Un defensor limita una línea durante el pase.",
+      "limits": "Señales de color pueden familiarizar con atender otra información; no equivalen a leer rivales.",
+      "modalities": {
+        "fut5": "Detectar apoyo próximo y presión a la espalda.",
+        "fut7": "Decidir continuidad o cambio de lado en transición.",
+        "fut11": "Ofrecerse entre líneas y reconocer presión lejana/cercana."
+      },
+      "videos": [
+        {
+          "id": "box-scan",
+          "videoId": "Bd7TH9t_djM",
+          "channel": "Become Elite",
+          "title": "Localizar al compañero antes de recibir",
+          "start": 205,
+          "end": 237,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C11",
+        "C14"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T07",
+      "familyId": "T07",
+      "name": "Pase, desmarque y pared",
+      "category": "Combinación",
+      "objective": "Crear una nueva línea después de pasar.",
+      "setup": "Dos jugadores y una marca que representa una línea a superar; sin rival al inicio.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "Pasa al apoyo y comienza un desmarque a un lado de la marca.",
+        "El apoyo devuelve hacia tu recorrido cuando la línea esté libre.",
+        "Recibe en movimiento y continúa; después intercambien funciones."
+      ],
+      "success": "La devolución coincide con el movimiento y permite avanzar.",
+      "mistakes": "Correr detrás de tu pase o pedir la devolución cuando la línea está cerrada.",
+      "easier": "Secuencia prevista a ritmo cómodo.",
+      "harder": "Variar punto de devolución. Añadir defensor y permitir otra solución.",
+      "limits": "Dos participantes permiten el patrón; el componente decisional requiere un tercero.",
+      "modalities": {
+        "fut5": "Pared corta para superar presión.",
+        "fut7": "Pase vertical y devolución con carrera de apoyo.",
+        "fut11": "Combinación para romper una línea y liberar un compañero."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04",
+        "C11",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T08",
+      "familyId": "T08",
+      "name": "Tercer jugador y apoyo tras pase",
+      "category": "Combinación",
+      "objective": "Entender que el receptor intermedio puede conectar con otro jugador.",
+      "setup": "Tres jugadores en triángulo con espacio entre líneas.",
+      "space": "pitch",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "A pasa a B, que se coloca para ver a C.",
+        "C cambia de posición para ofrecer un ángulo diferente.",
+        "B conecta con C o devuelve a A si se cierra la salida; A vuelve a ofrecer apoyo."
+      ],
+      "success": "Crear una línea nueva y conectar sin pases forzados.",
+      "mistakes": "Todos acercándose al balón o memorizar una dirección aunque quede bloqueada.",
+      "easier": "Tres posiciones fijas para entender roles.",
+      "harder": "Variar movimiento del tercero. Añadir defensor; conservar también es opción.",
+      "limits": "No enseñar una coreografía como lectura táctica completa.",
+      "modalities": {
+        "fut5": "Triángulos cortos y rotación de apoyos.",
+        "fut7": "Combinaciones que permitan progresar sin conducir siempre.",
+        "fut11": "Acceso entre líneas y pase al jugador de cara."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04",
+        "C11"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T09",
+      "familyId": "T09",
+      "name": "Pase de varias distancias a receptor móvil",
+      "category": "Recepción y pase",
+      "objective": "Regular fuerza, trayectoria y momento de entrega.",
+      "setup": "Dos jugadores en campo amplio; empezar con distancia que ambos controlen.",
+      "space": "pitch",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "marcas",
+        "zona amplia"
+      ],
+      "steps": [
+        "El receptor inicia un desplazamiento lateral visible.",
+        "Mira su recorrido y pasa por delante, hacia donde pueda seguir.",
+        "El receptor ajusta el primer toque y devuelve; aumenta distancia solo si conservan precisión."
+      ],
+      "success": "El receptor puede continuar sin detenerse a rescatar el balón.",
+      "mistakes": "Confundir pase al pie con pase al espacio o forzar potencia antes de precisión.",
+      "easier": "Distancia corta y receptor estático.",
+      "harder": "Receptor en movimiento. Distancia media/larga o trayectoria diferente según dominio.",
+      "limits": "Distancias, técnica aérea y dosificación pendientes; no practicar golpeos largos en casa.",
+      "modalities": {
+        "fut5": "Predominio de ventanas cortas; pase más largo solo si el juego lo exige.",
+        "fut7": "Pase vertical y cambio de orientación dentro de la cancha real.",
+        "fut11": "Pase corto, medio y largo con movimiento previo y posterior."
+      },
+      "videos": [
+        {
+          "id": "passing-space",
+          "videoId": "Bd7TH9t_djM",
+          "channel": "Become Elite",
+          "title": "Distribución y movimiento",
+          "start": 458,
+          "end": 491,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C11",
+        "C07"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T10",
+      "familyId": "T10",
+      "name": "Conducción con cambios de ritmo",
+      "category": "Regate",
+      "objective": "Graduar longitud del toque según espacio y velocidad.",
+      "setup": "Tres zonas de conducción en cancha: entrada, cambio y salida, con margen para frenar.",
+      "space": "court",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "Conduce a ritmo cómodo con balón cercano.",
+        "Acorta los toques al acercarte al cambio y modifica dirección.",
+        "Al tener espacio, separa progresivamente el balón y acompaña con carrera; frena con control."
+      ],
+      "success": "El ritmo cambia sin perder la siguiente acción.",
+      "mistakes": "Empujar lejos antes de crear espacio o terminar sin zona de frenado.",
+      "easier": "Recorrido recto a ritmo controlado.",
+      "harder": "Variar dirección y ritmo. Añadir oponente u objetivo cambiante.",
+      "limits": "Ruta sin rival evalúa conducción; no acredita éxito en 1v1.",
+      "modalities": {
+        "fut5": "Toques próximos y salidas cortas.",
+        "fut7": "Conducción media alternada con pase.",
+        "fut11": "Transportar hacia espacio libre sin ignorar compañeros."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C19",
+        "C06"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T11",
+      "familyId": "T11",
+      "name": "Uno contra uno frontal con dos opciones",
+      "category": "Regate",
+      "objective": "Superar o conservar según posición del defensor.",
+      "setup": "Atacante, defensor y dos puertas; presión limitada al aprender la tarea.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "dos puertas"
+      ],
+      "steps": [
+        "El atacante se aproxima observando qué puerta protege el rival.",
+        "Muestra una intención con cuerpo o balón sin comprometer el equilibrio.",
+        "Sal por la opción disponible; si ambas se cierran, conserva. Cambia de rol."
+      ],
+      "success": "Superar una opción real, no ejecutar una finta por obligación.",
+      "mistakes": "Mirar solo el balón, chocar de frente o hacer un gesto aunque no abra espacio.",
+      "easier": "Defensor con movimiento limitado.",
+      "harder": "Defensor activo. Añadir apoyo y opción de pase.",
+      "limits": "Una finta vistosa no es objetivo por sí misma; respetar distancia de frenado.",
+      "modalities": {
+        "fut5": "Salir en pocos metros y proteger si no hay ventaja.",
+        "fut7": "Conectar el duelo con pase final o tiro.",
+        "fut11": "Contextualizar en banda o carril interior."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C06",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T12",
+      "familyId": "T12",
+      "name": "Recibir de espaldas: descargar o girar",
+      "category": "Recepción y pase",
+      "objective": "Elegir una respuesta a la presión al recibir.",
+      "setup": "Pasador, receptor de espaldas y defensor detrás; presión pactada.",
+      "space": "court",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "Mira la posición del defensor y del pasador antes del envío.",
+        "Recibe con el cuerpo protegiendo el balón.",
+        "Descarga si hay presión próxima; gira al espacio cuando lo permita la posición del rival."
+      ],
+      "success": "Elegir entre girar y descargar sin regalar posesión.",
+      "mistakes": "Girar a ciegas o recibir separado del apoyo cuando el defensor está cerca.",
+      "easier": "Presión pasiva y salida conocida.",
+      "harder": "Oponente con dos opciones. Añadir objetivo de finalización si se logra salir.",
+      "limits": "Propuesta inspirada en el problema descrito, no reproducción de una rutina de Joner.",
+      "modalities": {
+        "fut5": "Rol de pívot, descarga y cambio de apoyo.",
+        "fut7": "Apoyo intermedio para activar una transición.",
+        "fut11": "Segundo delantero o mediocentro entre líneas."
+      },
+      "videos": [
+        {
+          "id": "futsal-receive",
+          "videoId": "VkDQ4F9c6Fk",
+          "channel": "Futsal Movement",
+          "title": "Orientación corporal al recibir",
+          "start": 102,
+          "end": 122,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C03",
+        "C06"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T13",
+      "familyId": "T13",
+      "name": "Golpeo dirigido a una zona",
+      "category": "Finalización",
+      "objective": "Aprender a dirigir un golpeo con control.",
+      "setup": "Balón preparado y blanco seguro en portería; nadie detrás del objetivo.",
+      "space": "goal-area",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "portería o blanco seguro"
+      ],
+      "steps": [
+        "Elige una zona y aproxima con pasos controlados.",
+        "Coloca el apoyo junto al balón orientado de forma compatible con el tiro; fija el tobillo de golpeo.",
+        "Golpea y acompaña sin perder el equilibrio. Recupera el balón caminando y cambia de lado."
+      ],
+      "success": "Dirección repetible antes de buscar potencia.",
+      "mistakes": "Tirar sin objetivo, contener el aire o golpear al máximo desde el primer intento.",
+      "easier": "Balón quieto, distancia corta y objetivo amplio.",
+      "harder": "Balón rodando. Distancia o superficie de golpeo distinta.",
+      "limits": "No prometer potencia máxima ni fijar una colocación corporal universal; ficha técnica por variante pendiente.",
+      "modalities": {
+        "fut5": "Golpeo compacto según espacio y superficie.",
+        "fut7": "Tiro después de conducción o devolución.",
+        "fut11": "Golpeo tras control, llegada o pase desde otro ángulo."
+      },
+      "videos": [
+        {
+          "id": "finishing",
+          "videoId": "Bd7TH9t_djM",
+          "channel": "Become Elite",
+          "title": "Ejemplo de circuito de finalización",
+          "start": 596,
+          "end": 632,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T14",
+      "familyId": "T14",
+      "name": "Finalizar o asistir con oposición",
+      "category": "Finalización",
+      "objective": "Elegir una solución que cree una ocasión útil.",
+      "setup": "Dos atacantes frente a un defensor, portería y espacio para detenerse; después portero.",
+      "space": "goal-area",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "portería",
+        "marcas"
+      ],
+      "steps": [
+        "Recibe orientando hacia una opción de tiro o pase.",
+        "El apoyo crea un ángulo diferente, sin esconderse detrás del defensor.",
+        "Finaliza si existe ventana; pasa si el defensor la cierra y deja libre al compañero."
+      ],
+      "success": "Crear una ocasión mejor, aunque la decisión correcta sea asistir.",
+      "mistakes": "Rematar siempre o acercarse ambos atacantes a la misma línea.",
+      "easier": "Sin defensor; variar llegada del pase.",
+      "harder": "Defensor activo. Añadir portero y nuevos atacantes/defensores.",
+      "limits": "Mínimo tres permite 2v1; el portero requiere otra persona. Goles sin contexto no bastan.",
+      "modalities": {
+        "fut5": "Definición cercana y opción de segundo palo.",
+        "fut7": "Finalizar tras transición o pared.",
+        "fut11": "Ataque de espacios, remate y asistencia según posición defensiva."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T15",
+      "familyId": "T15",
+      "name": "Punterazo como recurso de finalización",
+      "category": "Finalización",
+      "objective": "Explorar un golpeo compacto para una oportunidad con poco armado.",
+      "setup": "Balón y portería segura en cancha; empezar con balón quieto y poca fuerza.",
+      "space": "goal-area",
+      "participants": 1,
+      "equipment": [
+        "balón apropiado",
+        "portería o blanco seguro"
+      ],
+      "steps": [
+        "Colócate cerca del balón, con apoyo equilibrado y pie de golpeo estable.",
+        "Usa un recorrido corto para contactar con la punta de la bota.",
+        "Compara dirección y control con tu golpeo habitual; no fuerces el dedo ni busques potencia si molesta."
+      ],
+      "success": "Salida rápida hacia un objetivo cercano.",
+      "mistakes": "Golpear descalzo, desde demasiado lejos o insistir ante dolor.",
+      "easier": "Solo explicación y familiarización de contacto.",
+      "harder": "Balón en movimiento. Añadir decisión ante bloqueo.",
+      "limits": "Prioridad solicitada para futsal; técnica detallada y fuente visual específica PENDIENTES. C10/C12 apoyan contexto, no validan este gesto.",
+      "modalities": {
+        "fut5": "Recurso candidato de poco armado; no obligatorio en toda finalización.",
+        "fut7": "Opción situacional cuando falta tiempo.",
+        "fut11": "Opción situacional; no sustituye el repertorio de golpeos."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C10",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T16",
+      "familyId": "T16",
+      "name": "Desmarque y recepción fuera de la atención del rival",
+      "category": "Percepción",
+      "objective": "Crear una línea de pase útil mediante momento y dirección.",
+      "setup": "Pasador, receptor y defensor que alterna atención entre balón y atacante.",
+      "space": "pitch",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "marcas"
+      ],
+      "steps": [
+        "El receptor observa hacia dónde mira el defensor.",
+        "Se separa de su línea de visión y cambia dirección para ofrecer pase.",
+        "El pasador entrega solo si aparece una línea útil; el receptor ajusta primer toque y continúa."
+      ],
+      "success": "Recibir con ventaja temporal o espacial.",
+      "mistakes": "Correr antes de que el pasador pueda jugar o confundir desmarque con esconderse sin línea.",
+      "easier": "Defensor quieto para entender línea y espacio.",
+      "harder": "Defensor móvil. Añadir un compañero y dos destinos.",
+      "limits": "No reducir desmarque a correr más ni alejarse siempre del balón.",
+      "modalities": {
+        "fut5": "Separación corta y apoyo tras rotación.",
+        "fut7": "Ida y vuelta con opción de pared.",
+        "fut11": "Entre líneas, profundidad o apoyo según rol."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C11",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T17",
+      "familyId": "T17",
+      "name": "Aproximarse, frenar y temporizar",
+      "category": "Defensa",
+      "objective": "Proteger una vía peligrosa mientras se ajusta al atacante.",
+      "setup": "Pareja, corredor amplio y zona que el atacante intenta cruzar; sin entradas al suelo.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "zona objetivo",
+        "marcas"
+      ],
+      "steps": [
+        "Acércate mientras el balón viaja o está separado del atacante.",
+        "Reduce la velocidad antes de quedar a su alcance; flexiona ligeramente y conserva apoyos móviles.",
+        "Protege la dirección peligrosa y espera un toque que permita intervenir; no te lances por ansiedad."
+      ],
+      "success": "Retrasar o desviar la progresión manteniéndote entre rival y objetivo.",
+      "mistakes": "Llegar sin frenar, cruzar pies cerca del rival o buscar robo en cada acción.",
+      "easier": "Atacante a ritmo bajo y salida limitada.",
+      "harder": "Dos salidas reales. Añadir apoyo defensivo y contraobjetivo tras recuperar.",
+      "limits": "Sin barridas como variante por defecto; orientar afuera solo cuando el contexto lo justifique.",
+      "modalities": {
+        "fut5": "Evitar ser superado en espacio corto.",
+        "fut7": "Defender duelos de transición.",
+        "fut11": "Proteger profundidad y ajustar al apoyo de la línea."
+      },
+      "videos": [
+        {
+          "id": "defensive-position",
+          "videoId": "4vBZzkVRqbE",
+          "channel": "AllAttack",
+          "title": "Orientación defensiva",
+          "start": 130,
+          "end": 165,
+          "match": "component",
+          "note": "Referencia de un componente; la organización de nuestra tarea se explica debajo."
+        }
+      ],
+      "sourceRefs": [
+        "C13"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T18",
+      "familyId": "T18",
+      "name": "Presionar con cobertura",
+      "category": "Defensa",
+      "objective": "Coordinar cercanía al balón y protección de la siguiente opción.",
+      "setup": "Dos atacantes y dos defensores, con dos objetivos.",
+      "space": "court",
+      "participants": 4,
+      "equipment": [
+        "balón",
+        "dos objetivos"
+      ],
+      "steps": [
+        "El defensor más próximo ajusta su aproximación al portador.",
+        "Su compañero protege el pase o espacio detrás y comunica.",
+        "Cuando cambia el balón, cambian presión y cobertura sin perseguir ambos al mismo jugador."
+      ],
+      "success": "Evitar que una sola acción supere a los dos defensores.",
+      "mistakes": "Defender en una línea plana o presionar sin protección detrás.",
+      "easier": "Secuencia de pases conocida y ritmo controlado.",
+      "harder": "Pases libres. Añadir tercer participante por equipo.",
+      "limits": "La presión eficaz no equivale a correr directamente al balón ni a recuperar siempre.",
+      "modalities": {
+        "fut5": "Coberturas próximas y reacción a pared.",
+        "fut7": "Presionar sin romper el equilibrio en el ida y vuelta.",
+        "fut11": "Coordinar línea y distancia de cobertura con el bloque."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C13",
+        "C18"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T19",
+      "familyId": "T19",
+      "name": "Anticipar un pase sin regalar la espalda",
+      "category": "Defensa",
+      "objective": "Elegir entre interceptar y proteger una línea.",
+      "setup": "Pasador, receptor móvil y defensor entre líneas.",
+      "space": "court",
+      "participants": 3,
+      "equipment": [
+        "balón",
+        "dos puertas"
+      ],
+      "steps": [
+        "Mantén una posición que permita ver balón y receptor.",
+        "Observa trayectoria y velocidad al salir el pase.",
+        "Intercepta si puedes llegar; si no, acompaña al receptor y protege la siguiente progresión."
+      ],
+      "success": "Elegir bien cuándo abandonar la posición para anticipar.",
+      "mistakes": "Saltar antes de que salga el pase o regalar la espalda por buscar una intercepción imposible.",
+      "easier": "Opciones y velocidad limitadas.",
+      "harder": "Variar engaño y ángulo. Añadir receptor y profundidad.",
+      "limits": "Una señal luminosa no representa por sí sola intención del pasador.",
+      "modalities": {
+        "fut5": "Cerrar líneas cortas sin perseguir cada amague.",
+        "fut7": "Proteger pase vertical durante transición.",
+        "fut11": "Balancear anticipación, cobertura y profundidad."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C11",
+        "C18"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T20",
+      "familyId": "T20",
+      "name": "Pérdida, recuperación y cambio de rol",
+      "category": "Transiciones",
+      "objective": "Reconocer de inmediato el nuevo problema al cambiar posesión.",
+      "setup": "Juego 2v2 con objetivos opuestos y límites visibles.",
+      "space": "court",
+      "participants": 4,
+      "equipment": [
+        "balón",
+        "dos objetivos"
+      ],
+      "steps": [
+        "Tras perder, el más cercano decide si puede presionar; el otro protege espacio.",
+        "Tras recuperar, mira si hay ventaja para avanzar.",
+        "Si no existe, asegura un pase y vuelve a ofrecer apoyo. Todos cambian función con la posesión."
+      ],
+      "success": "Reorganizarse con intención tras pérdida y recuperación.",
+      "mistakes": "Pararse a lamentar la pérdida o avanzar siempre aunque no haya apoyo.",
+      "easier": "Interrumpir brevemente para identificar roles.",
+      "harder": "Cambios de posesión continuos. Añadir jugadores y objetivos alternativos.",
+      "limits": "Sin imponer presión inmediata o pase vertical cuando no existe ventaja.",
+      "modalities": {
+        "fut5": "Reorganización con espacio y tiempo muy cortos.",
+        "fut7": "Énfasis en ida y vuelta y pase de salida.",
+        "fut11": "Transición coordinada con distancias y balance del equipo."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C18",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T21",
+      "familyId": "T21",
+      "name": "Aceleración de calidad",
+      "category": "Velocidad",
+      "objective": "Desarrollar la salida y el aumento de velocidad en una distancia concreta.",
+      "setup": "Campo con tramo corto medido y margen amplio de desaceleración.",
+      "space": "running-area",
+      "participants": 1,
+      "equipment": [
+        "marcas",
+        "zona de frenado"
+      ],
+      "steps": [
+        "Adopta una salida cómoda y mira el recorrido.",
+        "Acelera progresivamente con apoyos debajo de tu trayectoria y brazos acompañando.",
+        "Continúa más allá de la marca y frena gradualmente; recupera antes del siguiente intento."
+      ],
+      "success": "Repetir acciones de calidad, sin perseguir fatiga.",
+      "mistakes": "Buscar máximos durante el retorno o frenar en seco en la marca.",
+      "easier": "Ensayo progresivo submáximo.",
+      "harder": "Cambiar postura de salida. Añadir estímulo o balón solo según objetivo.",
+      "limits": "No dosificar aún ni encadenar fatigado llamándolo velocidad; 5–20 m es rango de diseño para FUT 7, no receta.",
+      "modalities": {
+        "fut5": "Salidas cortas ligadas a espacios disponibles.",
+        "fut7": "Tramos candidatos de 5–20 m más margen de frenado.",
+        "fut11": "Salidas de apoyo, presión o desmarque con tramo específico."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C10",
+        "C16"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T22",
+      "familyId": "T22",
+      "name": "Frenado y cambio de dirección previsto",
+      "category": "Velocidad",
+      "objective": "Reducir velocidad y redirigir conservando control.",
+      "setup": "Marca entrada, zona amplia de frenado y salida lateral; superficie con agarre.",
+      "space": "running-area",
+      "participants": 1,
+      "equipment": [
+        "marcas",
+        "superficie con agarre"
+      ],
+      "steps": [
+        "Entra a velocidad moderada que puedas controlar.",
+        "Reduce velocidad en varios apoyos antes de cambiar de dirección.",
+        "Orienta cuerpo y pies hacia la salida y vuelve a acelerar con control; alterna lados."
+      ],
+      "success": "Cambiar dirección sin que rodilla y tronco se desorganicen.",
+      "mistakes": "Clavar el pie a toda velocidad, girar sobre una pierna rígida o usar poco margen.",
+      "easier": "Baja velocidad y cambio poco exigente.",
+      "harder": "Modificar ángulo. Aumentar velocidad de entrada cuando el control lo permita.",
+      "limits": "No llamar agilidad reactiva a una ruta memorizada; no imponer ángulos/agresividad sin preparación.",
+      "modalities": {
+        "fut5": "Frenadas frecuentes y radio corto.",
+        "fut7": "Cambio tras conducción o presión.",
+        "fut11": "Frenar desde velocidades de entrada variadas."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C13",
+        "C17"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T23",
+      "familyId": "T23",
+      "name": "Agilidad frente a una intención real",
+      "category": "Velocidad",
+      "objective": "Responder al movimiento de otra persona.",
+      "setup": "Dos personas frente a frente y dos puertas, sin contacto físico.",
+      "space": "court",
+      "participants": 2,
+      "equipment": [
+        "marcas",
+        "balón opcional"
+      ],
+      "steps": [
+        "El líder puede desplazarse a una de las puertas.",
+        "El compañero observa su cuerpo y responde, sin saber la dirección.",
+        "Termina en una zona de frenado y alterna quién decide."
+      ],
+      "success": "Respuesta a una intención real con control de la frenada.",
+      "mistakes": "Convertirlo en un recorrido memorizado o correr hacia una persona sin salida.",
+      "easier": "Opciones limitadas y ritmo bajo.",
+      "harder": "Permitir engaño. Añadir balón y objetivo de juego.",
+      "limits": "C17 respalda especificidad de estímulo, no eficacia demostrada de esta adaptación.",
+      "modalities": {
+        "fut5": "Lectura cercana del cuerpo y balón.",
+        "fut7": "Reacción durante conducción y transición.",
+        "fut11": "Duelo contextualizado con amplitud y profundidad."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C17",
+        "C06"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T24",
+      "familyId": "T24",
+      "name": "Carrera rápida con espacio suficiente",
+      "category": "Velocidad",
+      "objective": "Trabajar velocidad de carrera separada de la fatiga repetida.",
+      "setup": "Césped o superficie apta con espacio de entrada, carrera y frenado medidos.",
+      "space": "pitch",
+      "participants": 1,
+      "equipment": [
+        "tramo medido",
+        "margen amplio de frenado"
+      ],
+      "steps": [
+        "Revisa superficie y obstáculos antes de empezar.",
+        "Construye velocidad de forma gradual dentro de la exposición acordada.",
+        "Desacelera progresivamente y recupera por completo. La intensidad alta requiere preparación previa."
+      ],
+      "success": "Carrera técnicamente estable con recuperación suficiente.",
+      "mistakes": "Usar el espacio doméstico, improvisar máximos o acumular repeticiones fatigado.",
+      "easier": "Carrera controlada sin buscar máximo.",
+      "harder": "Aumentar exposición gradualmente. Medir tramo comparable cuando corresponda.",
+      "limits": "Ritmo máximo y distancias pendientes; mini pasos en 2×2 no equivalen a velocidad máxima.",
+      "modalities": {
+        "fut5": "Exposición complementaria según rol/calendario, no simular campo en pasillo.",
+        "fut7": "Adecuar al tamaño real de cancha.",
+        "fut11": "Tramo suficiente para objetivo de velocidad y frenado."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C10",
+        "C16"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T25",
+      "familyId": "T25",
+      "name": "Sprints repetidos con control de deterioro",
+      "category": "Resistencia",
+      "objective": "Repetir esfuerzos rápidos sin confundir la tarea con técnica fresca.",
+      "setup": "Tramo medido, cronómetro y pauta de esfuerzo/recuperación previamente ajustada.",
+      "space": "running-area",
+      "participants": 1,
+      "equipment": [
+        "marcas",
+        "registro de tiempos"
+      ],
+      "steps": [
+        "Registra cada tiempo con el mismo procedimiento.",
+        "Respeta la recuperación acordada, sin añadir repeticiones por motivación.",
+        "Finaliza si se deteriora la ejecución o aparecen síntomas; revisa la serie completa después."
+      ],
+      "success": "Observar repetición de esfuerzos bajo un protocolo comparable.",
+      "mistakes": "Confundir RSA con correr agotado sin criterio de interrupción.",
+      "easier": "Menos repeticiones o recuperación más completa.",
+      "harder": "Ajustar una variable de carga. Introducir cambio de dirección si lo pide el juego.",
+      "limits": "Volumen/descanso/corte individual pendientes; no copiar protocolo U15 ni promesas de TestProof.",
+      "modalities": {
+        "fut5": "Tramos y giros según tarea real.",
+        "fut7": "Énfasis candidato en transiciones repetidas.",
+        "fut11": "Integrar con exposición de velocidad y carga de partidos."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C10",
+        "C17",
+        "C02"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T26",
+      "familyId": "T26",
+      "name": "Juego reducido para resistencia y decisiones",
+      "category": "Resistencia",
+      "objective": "Sostener participación útil con balón y sin él.",
+      "setup": "2v2 o grupo mayor, objetivos y área suficiente según nivel; pausas acordadas.",
+      "space": "court",
+      "participants": 4,
+      "equipment": [
+        "balón",
+        "objetivos",
+        "marcas"
+      ],
+      "steps": [
+        "Juega hacia el objetivo con opciones de pase y conducción.",
+        "Al cambiar posesión, cambia también la función ofensiva/defensiva.",
+        "Descansa entre bloques y revisa participación real, decisiones y esfuerzo."
+      ],
+      "success": "Sostener acciones útiles en un contexto de juego.",
+      "mistakes": "Reducir tanto el espacio que solo haya choques o medir resistencia por el marcador.",
+      "easier": "Más pausas o superioridad con apoyo.",
+      "harder": "Modificar área por jugador. Ajustar duración o número de participantes por separado.",
+      "limits": "No deducir carga solo de 2v2/5v5; no garantiza suficiente sprint ni representa un test fisiológico.",
+      "modalities": {
+        "fut5": "Reproducir reglas y sustituciones pertinentes.",
+        "fut7": "Favorecer transiciones sin imponer esfuerzo continuo sin pausa.",
+        "fut11": "Posesión/progresión con referencias de posición y mayor espacio cuando proceda."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C10",
+        "C18"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T27",
+      "familyId": "T27",
+      "name": "Sentadilla dividida con ambos pies en el suelo",
+      "category": "Fuerza",
+      "objective": "Construir una base graduable de sentadilla, bisagra, apoyo unilateral y pantorrilla.",
+      "setup": "Sentadilla dividida: pies separados adelante/atrás, ambos en el suelo; apoyo ligero opcional.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "resistencia por concretar",
+        "suelo estable"
+      ],
+      "steps": [
+        "Encuentra una separación que permita bajar sin perder equilibrio.",
+        "Flexiona ambas piernas con tronco estable y rodilla delantera siguiendo el pie.",
+        "Empuja el suelo para volver; termina la serie con margen y cambia de pierna."
+      ],
+      "success": "Subir y bajar con control, sin necesidad de silla ni salto.",
+      "mistakes": "Convertirla en búlgara, cargar peso no conocido o continuar al perder control.",
+      "easier": "Reducir resistencia, rango o demanda de equilibrio.",
+      "harder": "Aumentar resistencia graduable. Cambiar variante cuando el objetivo lo justifique.",
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalities": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T28",
+      "familyId": "T28",
+      "name": "Remo sentado en polea",
+      "category": "Fuerza",
+      "objective": "Complementar la fuerza con patrones de tren superior.",
+      "setup": "Remo sentado en polea de gimnasio, asiento y resistencia ajustables; revisar el equipo concreto.",
+      "space": "gym-or-home",
+      "participants": 1,
+      "equipment": [
+        "apoyo estable",
+        "resistencia y anclaje por comprobar"
+      ],
+      "steps": [
+        "Apoya los pies y toma el agarre con tronco estable.",
+        "Acerca el agarre hacia el torso sin impulsarte con la espalda.",
+        "Devuelve controlando la resistencia y respirando; termina antes de perder la postura."
+      ],
+      "success": "Tracción controlada con material real y carga tolerable.",
+      "mistakes": "Improvisar anclajes de banda corta o balancearse para mover más peso.",
+      "easier": "Variante con menor resistencia y mayor apoyo.",
+      "harder": "Aumentar resistencia. Cambiar apoyo sin perder el objetivo principal.",
+      "limits": "No dar por válido un anclaje de banda ni inventar equipamiento; variante final pendiente.",
+      "modalities": {
+        "fut5": "Preparación común, no permiso para empujar rivales.",
+        "fut7": "Preparación común con dosis ajustada.",
+        "fut11": "Preparación común; no imitar carga de un profesional."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T29",
+      "familyId": "T29",
+      "name": "Control de tronco con talón alterno",
+      "category": "Fuerza",
+      "objective": "Gestionar el tronco mientras se mueven brazos o piernas.",
+      "setup": "Tumbado sobre colchoneta, rodillas flexionadas y brazos cómodos.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "colchoneta"
+      ],
+      "steps": [
+        "Estabiliza la pelvis en una postura cómoda, respirando normalmente.",
+        "Aleja lentamente un talón sin cambiar la posición del tronco.",
+        "Vuelve y alterna; amplía la palanca solo si mantienes control sin dolor."
+      ],
+      "success": "Mover extremidades sin arquear ni tensar innecesariamente la espalda.",
+      "mistakes": "Contener el aire o bajar la pierna más lejos de lo que puedes controlar.",
+      "easier": "Menor palanca o menos extremidades móviles.",
+      "harder": "Aumentar palanca. Añadir resistencia solo con variante y material revisados.",
+      "limits": "No afirmar que un ejercicio de core por sí solo mejora el golpeo; C15 solo apoya fuerza complementaria general.",
+      "modalities": {
+        "fut5": "Base compartida para posteriores acciones.",
+        "fut7": "Base compartida para posteriores acciones.",
+        "fut11": "Base compartida para posteriores acciones."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T30",
+      "familyId": "T30",
+      "name": "Movilidad de tobillo con apoyo",
+      "category": "Movilidad",
+      "objective": "Explorar rango útil con control y reconocer diferencias entre lados.",
+      "setup": "De pie con apoyo estable cercano; un pie adelantado y talón apoyado.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "suelo estable",
+        "apoyo cercano"
+      ],
+      "steps": [
+        "Lleva suavemente la rodilla hacia delante en la dirección del pie.",
+        "Mantén el talón en contacto y vuelve sin rebotes forzados.",
+        "Compara ambos lados en rango cómodo."
+      ],
+      "success": "Movimiento fluido del tobillo conservando apoyo.",
+      "mistakes": "Levantar el talón para simular más movilidad o forzar dolor.",
+      "easier": "Más apoyo y menos rango.",
+      "harder": "Reducir apoyo si es apropiado. Conectar rango con un paso o recepción.",
+      "limits": "Familia propia pendiente de fuente técnica específica por variante; no tratamiento de limitaciones ni promesa preventiva.",
+      "modalities": {
+        "fut5": "Apoyos y giros cortos.",
+        "fut7": "Cambios de apoyo en desplazamiento.",
+        "fut11": "Preparación para variantes de carrera/recepción."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T31",
+      "familyId": "T31",
+      "name": "Coordinación de pasos, brazos y contacto",
+      "category": "Control",
+      "objective": "Enlazar desplazamiento pequeño y movimientos corporales comprensibles.",
+      "setup": "Balón y marcas planas; empezar sin salto.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón opcional"
+      ],
+      "steps": [
+        "Camina alrededor del balón con pasos cortos y brazos acompañando.",
+        "Añade un contacto de interior cuando el apoyo sea estable.",
+        "Enlaza lado derecho e izquierdo sin acelerar hasta perder precisión."
+      ],
+      "success": "Coordinar pasos y contactos sin rigidez del tronco.",
+      "mistakes": "Buscar contactos rápidos mientras los apoyos llegan tarde.",
+      "easier": "Sin balón y un paso cada vez.",
+      "harder": "Cadencia variada. Salida hacia una tarea funcional en otro entorno.",
+      "limits": "No atribuir velocidad/agilidad de partido a una escalera de pies ni a seguir un metrónomo.",
+      "modalities": {
+        "fut5": "Preparación de contacto y apoyo corto.",
+        "fut7": "Preparación de conducción y cambio de ritmo.",
+        "fut11": "Preparación de contacto bilateral, no sustituto de carrera."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "T32",
+      "familyId": "T32",
+      "name": "Potencia de salto y aterrizaje",
+      "category": "Potencia",
+      "objective": "Desarrollar una acción explosiva concreta y controlar su recepción.",
+      "setup": "Zona libre de aterrizaje y superficie apropiada; exposición solo tras preparación suficiente.",
+      "space": "training-area",
+      "participants": 1,
+      "equipment": [
+        "zona de aterrizaje libre",
+        "superficie apropiada"
+      ],
+      "steps": [
+        "Empieza entendiendo un aterrizaje equilibrado con ambos pies.",
+        "Realiza un salto de amplitud pequeña acorde a tu capacidad.",
+        "Absorbe con tobillos, rodillas y caderas; estabiliza y recupera antes de repetir."
+      ],
+      "success": "Aterrizaje controlado antes de aumentar altura o distancia.",
+      "mistakes": "Saltar repetidamente por tiempo, caer rígido o añadir carga sin preparación.",
+      "easier": "Familiarización de aterrizaje o variante de fuerza sin salto.",
+      "harder": "Aumentar demanda de forma gradual. Dirección o unilateralidad solo cuando corresponda.",
+      "limits": "Fuente no respalda mejora automática de sprint. Sin altura, contactos ni dosis prescritos; no meter saltos en ball mastery por dificultad.",
+      "modalities": {
+        "fut5": "Complemento condicionado, no gesto obligatorio del control.",
+        "fut7": "Complemento según necesidades y carga.",
+        "fut11": "Complemento según necesidades y carga."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C16",
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M01",
+      "familyId": "T01",
+      "name": "Croqueta: interior a interior",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Pasa el balón de un interior al otro.",
+        "Acompaña lateralmente con los apoyos."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-1",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Croqueta: interior a interior",
+          "start": 40,
+          "end": 68,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M02",
+      "familyId": "T01",
+      "name": "Rodar el balón con la planta",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Rueda el balón lateralmente con la planta.",
+        "Libera el contacto y recoloca el apoyo."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-2",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Rodar el balón con la planta",
+          "start": 115,
+          "end": 148,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M03",
+      "familyId": "T01",
+      "name": "Empuje con exterior",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Recoge el balón hacia tu apoyo.",
+        "Empuja corto con el exterior y acompaña."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-3",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Empuje con exterior",
+          "start": 157,
+          "end": 195,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M04",
+      "familyId": "T02",
+      "name": "Recorte en V",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Arrastra con la planta hacia ti.",
+        "Redirige en diagonal con el interior."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Intentar arrastrar y empujar a la vez; perder el equilibrio sobre el balón.",
+      "easier": "Aprender arrastre y salida por separado.",
+      "harder": "Unir ambas fases. Elegir una de dos salidas; después llevar a cancha con rival.",
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalities": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "videos": [
+        {
+          "id": "mastery-4",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Recorte en V",
+          "start": 207,
+          "end": 242,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C05",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M05",
+      "familyId": "T01",
+      "name": "Triángulo de contactos",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Conecta un pase corto entre interiores.",
+        "Arrastra y devuelve a la siguiente esquina."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-5",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Triángulo de contactos",
+          "start": 252,
+          "end": 290,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M06",
+      "familyId": "T02",
+      "name": "V alternando pies",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Recoge con una planta.",
+        "Devuelve con el interior del otro pie."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Intentar arrastrar y empujar a la vez; perder el equilibrio sobre el balón.",
+      "easier": "Aprender arrastre y salida por separado.",
+      "harder": "Unir ambas fases. Elegir una de dos salidas; después llevar a cancha con rival.",
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalities": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "videos": [
+        {
+          "id": "mastery-6",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "V alternando pies",
+          "start": 300,
+          "end": 330,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C05",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M07",
+      "familyId": "T02",
+      "name": "V y V alterna encadenadas",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Haz una V con el mismo pie.",
+        "Enlaza otra V cambiando el pie de salida."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Intentar arrastrar y empujar a la vez; perder el equilibrio sobre el balón.",
+      "easier": "Aprender arrastre y salida por separado.",
+      "harder": "Unir ambas fases. Elegir una de dos salidas; después llevar a cancha con rival.",
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalities": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "videos": [
+        {
+          "id": "mastery-7",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "V y V alterna encadenadas",
+          "start": 343,
+          "end": 385,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C05",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M08",
+      "familyId": "T01",
+      "name": "Cuadrado de contactos",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Alterna contactos laterales y arrastres.",
+        "Completa el recorrido y cambia de sentido."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-8",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Cuadrado de contactos",
+          "start": 400,
+          "end": 440,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M09",
+      "familyId": "T02",
+      "name": "Arrastre en L y cuadrado",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Recoge el balón y llévalo detrás del apoyo.",
+        "Enlaza la salida con el recorrido cuadrado."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Intentar arrastrar y empujar a la vez; perder el equilibrio sobre el balón.",
+      "easier": "Aprender arrastre y salida por separado.",
+      "harder": "Unir ambas fases. Elegir una de dos salidas; después llevar a cancha con rival.",
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalities": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "videos": [
+        {
+          "id": "mastery-9",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Arrastre en L y cuadrado",
+          "start": 458,
+          "end": 503,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C05",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "M10",
+      "familyId": "T01",
+      "name": "Planta atrás y empuje con empeine",
+      "category": "Control",
+      "objective": "Secuencia controlada por ambos lados.",
+      "setup": "Balón y una marca plana; deja espacio para recolocar ambos pies.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "balón"
+      ],
+      "steps": [
+        "Arrastra corto con la planta.",
+        "Libera el balón y empújalo suavemente con el empeine."
+      ],
+      "success": "Secuencia controlada por ambos lados.",
+      "mistakes": "Golpear fuerte, dejar el peso encima del balón o añadir saltos sin control.",
+      "easier": "Separar cada contacto y recolocar el balón.",
+      "harder": "Encadenar sin pausa. Cambiar orden o dirección sin aumentar todo a la vez.",
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalities": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "videos": [
+        {
+          "id": "mastery-10",
+          "videoId": "e5RxAJM-oxc",
+          "channel": "7mlc",
+          "title": "Planta atrás y empuje con empeine",
+          "start": 518,
+          "end": 551,
+          "match": "demonstration",
+          "note": "Observa el cambio de apoyos junto al contacto. El ritmo del video no es una dosis obligatoria."
+        }
+      ],
+      "sourceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "B01",
+      "familyId": "T11",
+      "name": "Recibir, amagar y finalizar desde banda",
+      "category": "Finalización",
+      "objective": "Encadenar recepción, cambio y golpeo manteniendo control.",
+      "setup": "Campo con portería, pasador y una marca o maniquí como referencia; no representa un defensor real.",
+      "space": "goal-area",
+      "participants": 2,
+      "equipment": [
+        "balón",
+        "portería",
+        "marca",
+        "pasador"
+      ],
+      "steps": [
+        "Sepárate de la marca para crear línea de pase y recibe en movimiento.",
+        "Orienta hacia dentro, muestra la intención y cambia hacia la salida exterior.",
+        "Acompaña el balón y prepara el tiro hacia una zona elegida; alterna banda."
+      ],
+      "success": "Encadenar recepción, cambio y golpeo manteniendo control.",
+      "mistakes": "Recibir parado, alejar el primer toque o fintar sin cambiar la dirección de salida.",
+      "easier": "Pase más lento y salida sin defensor.",
+      "harder": "Añadir defensor que cierre una salida y permitir conservar o pasar.",
+      "limits": "Una finta vistosa no es objetivo por sí misma; respetar distancia de frenado.",
+      "modalities": {
+        "fut5": "Salir en pocos metros y proteger si no hay ventaja.",
+        "fut7": "Conectar el duelo con pase final o tiro.",
+        "fut11": "Contextualizar en banda o carril interior."
+      },
+      "videos": [
+        {
+          "id": "winger-pattern",
+          "videoId": "E24XzLAlcRk",
+          "channel": "My Personal Football Coach",
+          "title": "Recepción, finta y finalización del extremo",
+          "start": 468,
+          "end": 497,
+          "match": "demonstration",
+          "note": "La marca prepara el patrón; después se necesita oposición real para trabajar la decisión."
+        }
+      ],
+      "sourceRefs": [
+        "C06",
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "B02",
+      "familyId": "T13",
+      "name": "Finalización por zonas de entrada",
+      "category": "Finalización",
+      "objective": "Golpear con intención según el ángulo de llegada.",
+      "setup": "Marca zonas amplias de entrada al tiro y dos objetivos en la portería, sin personas detrás.",
+      "space": "goal-area",
+      "participants": 1,
+      "equipment": [
+        "balón",
+        "marcas",
+        "portería"
+      ],
+      "steps": [
+        "Conduce desde una zona elegida manteniendo el balón a distancia de golpeo.",
+        "Prepara el apoyo y dirige el tiro a una mitad de la portería.",
+        "Cambia el lado de entrada y compara precisión antes de exigir más potencia."
+      ],
+      "success": "Golpear con intención según el ángulo de llegada.",
+      "mistakes": "Tirar sin objetivo, contener el aire o golpear al máximo desde el primer intento.",
+      "easier": "Balón quieto, distancia corta y objetivo amplio.",
+      "harder": "Balón rodando. Distancia o superficie de golpeo distinta.",
+      "limits": "No prometer potencia máxima ni fijar una colocación corporal universal; ficha técnica por variante pendiente.",
+      "modalities": {
+        "fut5": "Golpeo compacto según espacio y superficie.",
+        "fut7": "Tiro después de conducción o devolución.",
+        "fut11": "Golpeo tras control, llegada o pase desde otro ángulo."
+      },
+      "videos": [
+        {
+          "id": "strike-zones",
+          "videoId": "UrcPHLR4nfw",
+          "channel": "AllAttack",
+          "title": "Ejemplo de finalización desde zonas",
+          "start": 158,
+          "end": 194,
+          "match": "demonstration",
+          "note": "La ficha propone una entrada gradual; no adopta la frecuencia ni todas las exigencias del autor."
+        }
+      ],
+      "sourceRefs": [
+        "C12"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F01",
+      "familyId": "T27",
+      "name": "Sentadilla a rango controlado",
+      "category": "Fuerza",
+      "objective": "Repeticiones estables, sin caída brusca.",
+      "setup": "Pies firmes en suelo, separación cómoda.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "suelo estable"
+      ],
+      "steps": [
+        "Lleva cadera atrás y flexiona rodillas siguiendo los pies.",
+        "Baja hasta un rango que controles y vuelve empujando el suelo.",
+        "Respira y termina antes de perder la forma."
+      ],
+      "success": "Repeticiones estables, sin caída brusca.",
+      "mistakes": "Perder el apoyo del pie, buscar profundidad a costa del control o contener el aire.",
+      "easier": "Reduce el rango y utiliza apoyo ligero si hace falta.",
+      "harder": "Aumenta rango o resistencia graduable cuando el control y la respuesta lo permitan.",
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalities": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F02",
+      "familyId": "T27",
+      "name": "Bisagra de cadera",
+      "category": "Fuerza",
+      "objective": "Aprender el patrón; sin resistencia no es fuerza avanzada.",
+      "setup": "De pie, rodillas ligeramente flexionadas.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "suelo estable"
+      ],
+      "steps": [
+        "Lleva la cadera atrás manteniendo columna y cuello alineados.",
+        "Siente el peso repartido en los pies.",
+        "Vuelve con control, sin inclinarte hacia atrás."
+      ],
+      "success": "Aprender el patrón; sin resistencia no es fuerza avanzada.",
+      "mistakes": "Confundirlo con una sentadilla, redondear el tronco para bajar más o contener el aire.",
+      "easier": "Desplaza la cadera un recorrido corto.",
+      "harder": "Añade resistencia solo con una variante y carga previamente definidas.",
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalities": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F03",
+      "familyId": "T27",
+      "name": "Puente de glúteos",
+      "category": "Fuerza",
+      "objective": "Extensión de cadera controlada.",
+      "setup": "Boca arriba, rodillas flexionadas y pies apoyados.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "colchoneta"
+      ],
+      "steps": [
+        "Presiona el suelo con los pies.",
+        "Eleva la pelvis hasta alinear tronco y muslos sin arquear en exceso.",
+        "Baja despacio y vuelve a respirar."
+      ],
+      "success": "Extensión de cadera controlada.",
+      "mistakes": "Arquear la espalda para subir más o empujar con el cuello.",
+      "easier": "Eleva menos la pelvis manteniendo ambos pies apoyados.",
+      "harder": "Aumenta la demanda de forma gradual; una variante asimétrica cambia el ejercicio y debe revisarse.",
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalities": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F04",
+      "familyId": "T28",
+      "name": "Flexión en pared",
+      "category": "Fuerza",
+      "objective": "Empuje con tronco estable.",
+      "setup": "Pared firme, manos a altura cómoda, pies apoyados.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "pared estable"
+      ],
+      "steps": [
+        "Dobla codos acercando el cuerpo como una unidad.",
+        "Empuja la pared y vuelve sin bloquear la respiración.",
+        "Ajusta distancia para que el esfuerzo sea controlable."
+      ],
+      "success": "Empuje con tronco estable.",
+      "mistakes": "Dejar caer la pelvis, acercar solo la cabeza o contener el aire.",
+      "easier": "Acerca los pies a la pared para reducir la inclinación.",
+      "harder": "Aumenta gradualmente la inclinación; cambiar a suelo requiere revisar esa variante.",
+      "limits": "No dar por válido un anclaje de banda ni inventar equipamiento; variante final pendiente.",
+      "modalities": {
+        "fut5": "Preparación común, no permiso para empujar rivales.",
+        "fut7": "Preparación común con dosis ajustada.",
+        "fut11": "Preparación común; no imitar carga de un profesional."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F05",
+      "familyId": "T27",
+      "name": "Elevación de talones",
+      "category": "Fuerza",
+      "objective": "Subida y bajada controladas.",
+      "setup": "De pie, apoyo estable cercano para equilibrio.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "apoyo estable"
+      ],
+      "steps": [
+        "Eleva ambos talones sin balancearte.",
+        "Mantén el peso repartido en la parte delantera de los pies.",
+        "Desciende lentamente hasta apoyar."
+      ],
+      "success": "Subida y bajada controladas.",
+      "mistakes": "Rebotar, balancearse o perder el apoyo al bajar.",
+      "easier": "Usa apoyo para equilibrio y un recorrido menor.",
+      "harder": "Pasa a una variante unilateral con apoyo cuando corresponda, sin saltar.",
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalities": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "F06",
+      "familyId": "T29",
+      "name": "Plancha lateral con rodillas apoyadas",
+      "category": "Fuerza",
+      "objective": "Sostener postura, no soportar dolor.",
+      "setup": "De lado, antebrazo bajo hombro y rodillas flexionadas.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "colchoneta"
+      ],
+      "steps": [
+        "Eleva la pelvis sin girar el tronco.",
+        "Respira normalmente durante una sostención breve y controlada.",
+        "Baja y cambia de lado; termina si pierdes alineación."
+      ],
+      "success": "Sostener postura, no soportar dolor.",
+      "mistakes": "Girar el tronco, hundir el hombro o aguantar la respiración.",
+      "easier": "Sostén menos tiempo y vuelve al suelo con control.",
+      "harder": "Aumenta la duración breve o la palanca de forma gradual, sin compensar la postura.",
+      "limits": "No afirmar que un ejercicio de core por sí solo mejora el golpeo; C15 solo apoya fuerza complementaria general.",
+      "modalities": {
+        "fut5": "Base compartida para posteriores acciones.",
+        "fut7": "Base compartida para posteriores acciones.",
+        "fut11": "Base compartida para posteriores acciones."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C15"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "W01",
+      "familyId": "T30",
+      "name": "Preparación progresiva",
+      "category": "Movilidad",
+      "objective": "Sentirte preparado para la tarea siguiente, sin buscar cansancio.",
+      "setup": "Espacio libre adecuado al lugar de la sesión.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "suelo estable"
+      ],
+      "steps": [
+        "Empieza caminando y movilizando tobillos/cadera en rango cómodo.",
+        "Añade pasos laterales y gestos suaves relacionados con la sesión.",
+        "Introduce balón o desplazamientos gradualmente; no pases directamente a máximos."
+      ],
+      "success": "Sentirte preparado para la tarea siguiente, sin buscar cansancio.",
+      "mistakes": "Buscar fatiga o saltar directamente a velocidad máxima.",
+      "easier": "Empieza con desplazamiento suave y rango cómodo.",
+      "harder": "Acércate gradualmente a las demandas de la sesión, sin convertir el calentamiento en una prueba máxima.",
+      "limits": "Familia propia pendiente de fuente técnica específica por variante; no tratamiento de limitaciones ni promesa preventiva.",
+      "modalities": {
+        "fut5": "Apoyos y giros cortos.",
+        "fut7": "Cambios de apoyo en desplazamiento.",
+        "fut11": "Preparación para variantes de carrera/recepción."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04"
+      ],
+      "review": "documentary-draft"
+    },
+    {
+      "id": "C01",
+      "familyId": "T30",
+      "name": "Vuelta a la calma",
+      "category": "Movilidad",
+      "objective": "Finalizar de manera gradual y observar la respuesta.",
+      "setup": "Zona tranquila al terminar.",
+      "space": "home",
+      "participants": 1,
+      "equipment": [
+        "suelo estable"
+      ],
+      "steps": [
+        "Reduce progresivamente el desplazamiento.",
+        "Camina y deja que la respiración se normalice.",
+        "Revisa cómo te encuentras y registra solo lo que realmente hiciste."
+      ],
+      "success": "Finalizar de manera gradual y observar la respuesta.",
+      "mistakes": "Forzar estiramientos o ignorar una respuesta inusual al esfuerzo.",
+      "easier": "Reduce antes el ritmo y camina de manera cómoda.",
+      "harder": "No necesita hacerse más difícil; adapta la duración a la transición y a cómo te encuentras.",
+      "limits": "Familia propia pendiente de fuente técnica específica por variante; no tratamiento de limitaciones ni promesa preventiva.",
+      "modalities": {
+        "fut5": "Apoyos y giros cortos.",
+        "fut7": "Cambios de apoyo en desplazamiento.",
+        "fut11": "Preparación para variantes de carrera/recepción."
+      },
+      "videos": [],
+      "sourceRefs": [
+        "C04"
+      ],
+      "review": "documentary-draft"
+    }
+  ]
+}

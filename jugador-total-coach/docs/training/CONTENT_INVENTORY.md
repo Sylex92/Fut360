@@ -1,5 +1,7 @@
 # Inventario de ejercicios, tareas y recursos
 
+**Inventario actual de enseñanza:** [52 fichas y cobertura audiovisual](COACHING_LIBRARY_INVENTORY.md). Este archivo conserva los recursos 3D y familias del incremento anterior; claridad/naturalidad 3D reabiertas el 2026-10-03. No sumar ambos inventarios como ejercicios distintos sin deduplicar.
+
 Actualizado: 2026-10-03. Todo el catálogo propio registrado; familias propuestas y censo externo por separado. No catálogo exhaustivo del fútbol ni videos íntegramente validados.
 
 ## Disponible en la aplicación

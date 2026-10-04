@@ -1,5 +1,9 @@
 # Registro de recursos y licencias
 
+## Referencias humanas y esquemas — 2026-10-03
+
+Los seis videos de la [revisión visual](docs/research/VIDEO_TEACHING_REVIEW.md) se insertan mediante reproductor oficial de YouTube. No hay archivo audiovisual descargado ni sublicencia de sus medios; no se les asigna CC0/MIT. Atribución, controles, anuncios y disponibilidad dependen del proveedor/autor. [Condiciones verificadas](docs/reviews/video-reference-cost-and-rights.md). Diez esquemas SVG de organización son código original del proyecto, sin assets externos; no se adopta por ello una licencia pública del repositorio.
+
 Actualizado el 2026-09-30, fase 06 autorizada. Las licencias internas de los ZIP Standard se leyeron antes de adoptar sus archivos. Compatible para prototipo no equivale a aprobación deportiva. [Evidencias de 04](docs/reviews/phase04-asset-evidence.json) y [recursos/WASM de 05](docs/reviews/phase05-asset-evidence.json).
 
 | Asset ID | Archivo/versión/hash | Autor y URL de origen | Licencia del archivo | Variante gratis | Fuente editable/importable | Modificaciones | Revisión |

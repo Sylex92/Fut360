@@ -6,6 +6,7 @@ import { ContactPanel } from './ContactPanel';
 import { MovementLibrary } from './MovementLibrary';
 import { WorkoutPanel } from './WorkoutPanel';
 import { OfflinePanel } from './OfflinePanel';
+import { CoachingWorkspace } from './CoachingWorkspace';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -87,9 +88,9 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
-  const [example, setExample] = useState<'workout' | 'library' | 'contact' | 'hinge'>(
-    'workout',
-  );
+  const [example, setExample] = useState<
+    'plan' | 'workout' | 'library' | 'avatar' | 'contact' | 'hinge'
+  >('plan');
   const [sessionActive, setSessionActive] = useState(false);
   const [result, setResult] = useState(() => validateWorkoutV1(content));
   const [checks, setChecks] = useState(0);
@@ -119,13 +120,13 @@ export function App({ content }: { content: unknown }) {
           <div>
             <p className="eyebrow">TU ENTRENADOR · EN CONSTRUCCIÓN</p>
             <h1 id="page-title">
-              Tu sesión,
+              Tu plan,
               <br />
-              <em>paso a paso.</em>
+              <em>tu siguiente paso.</em>
             </h1>
             <p className="lead">
-              Observa, prepárate y sigue el recorrido. La demostración y los descansos avanzan
-              contigo; puedes detenerte y revisar cualquier movimiento.
+              Aprende el gesto, entiende la tarea y llévala al juego. Tu plan reúne técnica,
+              gol, defensa y fuerza, con referencias visuales junto a cada explicación.
             </p>
           </div>
           <div className="intro-aside">
@@ -137,13 +138,22 @@ export function App({ content }: { content: unknown }) {
             </p>
           </div>
         </section>
-        <nav className="camera-controls" aria-label="Ejemplo visible">
+        <nav className="camera-controls" aria-label="Secciones de entrenamiento">
           <button
             type="button"
+            disabled={sessionActive}
+            aria-pressed={example === 'plan'}
+            onClick={() => setExample('plan')}
+          >
+            Mi plan
+          </button>
+          <button
+            type="button"
+            disabled={sessionActive}
             aria-pressed={example === 'workout'}
             onClick={() => setExample('workout')}
           >
-            Sesión de 60 minutos
+            Prototipo de 60 minutos
           </button>
           <button
             type="button"
@@ -152,6 +162,14 @@ export function App({ content }: { content: unknown }) {
             onClick={() => setExample('library')}
           >
             Biblioteca de ejercicios
+          </button>
+          <button
+            type="button"
+            disabled={sessionActive}
+            aria-pressed={example === 'avatar'}
+            onClick={() => setExample('avatar')}
+          >
+            Animaciones 3D · en revisión
           </button>
           <button
             type="button"
@@ -173,13 +191,28 @@ export function App({ content }: { content: unknown }) {
         <p className="quiet-note">
           {sessionActive
             ? 'Termina la sesión para abrir otra vista.'
-            : 'Elige la sesión completa o revisa un movimiento por separado.'}
+            : 'Consulta tu plan o abre la biblioteca para estudiar una tarea.'}
         </p>
-        <OfflinePanel active={sessionActive} />
-        {example === 'workout' ? (
+        <details className="technical-details">
+          <summary>Guardar la aplicación para uso sin conexión</summary>
+          <p>
+            Las fichas, el plan y los recursos propios pueden guardarse. Los videos de YouTube
+            requieren Internet.
+          </p>
+          <OfflinePanel active={sessionActive} />
+        </details>
+        {example === 'plan' || example === 'library' ? (
+          <CoachingWorkspace mode={example} onActiveChange={setSessionActive} />
+        ) : example === 'workout' ? (
           <WorkoutPanel onActiveChange={setSessionActive} />
-        ) : example === 'library' ? (
-          <MovementLibrary />
+        ) : example === 'avatar' ? (
+          <>
+            <p className="reference-pending">
+              La naturalidad y claridad de estos movimientos están en revisión. Usa la
+              biblioteca para consultar las referencias humanas disponibles.
+            </p>
+            <MovementLibrary />
+          </>
         ) : example === 'contact' ? (
           <ContactPanel />
         ) : (
@@ -242,54 +275,59 @@ export function App({ content }: { content: unknown }) {
             </>
           )}
         </details>
-        <div className="bottom-grid">
-          <section className="panel readiness" aria-labelledby="readiness-title">
-            <p className="eyebrow">ESTADO DEL PROYECTO</p>
-            <h2 id="readiness-title">El camino hasta entrenar</h2>
-            <ol>
-              <li>
-                <span className="step-number">01</span>
-                <div>
-                  <strong>Base y contenido</strong>
-                  <p>Comprobación del formato y de los tiempos.</p>
-                </div>
-                <span className="step-state">{result.ok ? 'Comprobado' : 'Con errores'}</span>
-              </li>
-              <li>
-                <span className="step-number">02</span>
-                <div>
-                  <strong>Reloj y controles</strong>
-                  <p>Pausa, continuidad y preparación automática.</p>
-                </div>
-                <span className="step-state">Comprobado</span>
-              </li>
-              <li>
-                <span className="step-number">03</span>
-                <div>
-                  <strong>Ejercicio con avatar</strong>
-                  <p>Demostración clara y revisión del movimiento.</p>
-                </div>
-                <span className="step-state pending">En revisión</span>
-              </li>
-            </ol>
-          </section>
-          <aside className="review-note">
-            <span className="note-label">ANTES DE ENTRENAR</span>
-            <h2>
-              {result.ok ? 'El tiempo cuadra.' : 'Contenido pendiente.'}
-              <br />
-              La revisión continúa.
-            </h2>
-            <p>
-              Este ejemplo histórico sirve para comprobar la aplicación. No es todavía una
-              rutina aprobada para practicar.
-            </p>
-            <p>
-              La nueva sesión reúne las demostraciones revisadas. Su dosificación y adecuación
-              individual siguen en revisión.
-            </p>
-          </aside>
-        </div>
+        <details className="technical-details">
+          <summary>Estado del prototipo y revisión de contenido</summary>
+          <div className="bottom-grid">
+            <section className="panel readiness" aria-labelledby="readiness-title">
+              <p className="eyebrow">ESTADO DEL PROYECTO</p>
+              <h2 id="readiness-title">El camino hasta entrenar</h2>
+              <ol>
+                <li>
+                  <span className="step-number">01</span>
+                  <div>
+                    <strong>Base y contenido</strong>
+                    <p>Comprobación del formato y de los tiempos.</p>
+                  </div>
+                  <span className="step-state">
+                    {result.ok ? 'Comprobado' : 'Con errores'}
+                  </span>
+                </li>
+                <li>
+                  <span className="step-number">02</span>
+                  <div>
+                    <strong>Reloj y controles</strong>
+                    <p>Pausa, continuidad y preparación automática.</p>
+                  </div>
+                  <span className="step-state">Comprobado</span>
+                </li>
+                <li>
+                  <span className="step-number">03</span>
+                  <div>
+                    <strong>Ejercicio con avatar</strong>
+                    <p>Demostración clara y revisión del movimiento.</p>
+                  </div>
+                  <span className="step-state pending">En revisión</span>
+                </li>
+              </ol>
+            </section>
+            <aside className="review-note">
+              <span className="note-label">ANTES DE ENTRENAR</span>
+              <h2>
+                {result.ok ? 'El tiempo cuadra.' : 'Contenido pendiente.'}
+                <br />
+                La revisión continúa.
+              </h2>
+              <p>
+                Este ejemplo histórico sirve para comprobar la aplicación. No es todavía una
+                rutina aprobada para practicar.
+              </p>
+              <p>
+                La nueva sesión reúne las demostraciones revisadas. Su dosificación y
+                adecuación individual siguen en revisión.
+              </p>
+            </aside>
+          </div>
+        </details>
         <details className="technical-details">
           <summary>Ver datos del archivo de referencia</summary>
           <p>
@@ -301,7 +339,7 @@ export function App({ content }: { content: unknown }) {
       </main>
       <footer>
         <span>Fut360 · Jugador Total Coach</span>
-        <span>Sesión objetivo: 60 min · espacio: 2 × 2 m</span>
+        <span>Casa · cancha · gimnasio · referencias online opcionales</span>
       </footer>
     </div>
   );

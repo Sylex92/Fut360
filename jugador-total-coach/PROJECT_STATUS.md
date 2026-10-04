@@ -1,6 +1,22 @@
 # Estado del proyecto
 
+## Entrega actual — enseñanza humana y plan visible · 2026-10-03
+
+El usuario rechaza la naturalidad/claridad de los movimientos y solicita videos originales por fragmento y el plan dentro de la app. **La aceptación pedagógica del 3D queda reabierta**; sus pruebas técnicas no acreditan fidelidad humana.
+
+- **Implementado:** Mi plan como inicio, 52 fichas de 32 familias, diez esquemas de organización, búsqueda/filtros y acceso desde cinco propuestas de 30/45/50/45/40 minutos. Etapas de 24 semanas y horizonte de 52 visibles, sin ascenso automático. [Inventario actual](docs/training/COACHING_LIBRARY_INVENTORY.md).
+- **Video:** seis originales de cinco fuentes alimentan 20 fichas: 13 del gesto, siete de un componente; 32 fichas sin video exacto. YouTube oficial, inicio/fin, repetir/bucle, pausa al ocultar/salir de pantalla, errores y alternativa externa. No descarga ni caché del medio. [Observaciones](docs/research/VIDEO_TEACHING_REVIEW.md), [costo/derechos](docs/reviews/video-reference-cost-and-rights.md), [ADR 0016](docs/architecture/adr/0016-human-reference-and-visible-plan.md).
+- **Recorridos:** motor/reloj/historial existentes; preparación y transiciones automáticas, +30 s/+1 min, recuperación pausada de la propuesta correcta. Estudiar video pausa el recorrido; todavía no hay encadenado automático de todos los tutoriales. Las ventanas no miden actividad física.
+- **Verificado:** seis embeds iniciaron en el segundo solicitado; tramo de extremo terminó cerca de 497 s; repetición manual y tres vueltas en bucle. Recorrido de 30 minutos acelerado completado con preparación extra y recuperación; 52/20 fichas, cero peticiones al proveedor antes de abrirlo, error simulado de conexión y móvil 390 px sin desbordamiento tras corrección. [Pruebas finales y límites](docs/reviews/video-guided-delivery.md).
+- **Cierre técnico:** 257 pruebas correctas, una opt-in omitida; tipos/lint/formato/build correctos, con aviso de tamaño de bundles. Offline: plan/52 fichas disponibles tras recarga sin red; medios externos fuera de caché. No se ha repetido aceptación física en Samsung.
+- **Propuesto:** contenido/dosis documentary-draft; cinco plantillas por capacidad/etapa, no pauta individual de retorno ni calendario anual adaptado. [Fundamento interno](docs/training/COACHING_SESSION_RATIONALE.md).
+- **Pendiente:** videos exactos restantes y revisión por fragmento, nueva aceptación en Samsung físico, individualización de carga/semana, métricas por capacidad, edición y conversación real. No se han validado íntegros los 5.764 videos del censo ni está terminado el producto ampliado. Próximo avance: completar referencia/explicación por tarea prioritaria y progresión del plan, sin más clips toscos como sustituto.
+
+Sin dependencias nuevas, modelos, instalaciones, pagos, publicación ni cambios globales. [Plan previo al código](docs/plans/video-guided-plan.md).
+
 ## Fase actual y autorización
+
+Estado del incremento anterior, conservado como historial:
 
 Comprobación final de este incremento: biblioteca con Canvas persistente al cambiar de recurso; 22 variantes cargadas consecutivamente y misma identidad del visor, sin errores. Corrige un bloqueo WebGL observado en la prueba intensiva anterior. Regresión `tests/browser-library-reuse.mjs`; búsqueda explícita de nueva versión offline corregida. El navegador/driver todavía puede interrumpir WebGL, con fallback y reloj detenido.
 

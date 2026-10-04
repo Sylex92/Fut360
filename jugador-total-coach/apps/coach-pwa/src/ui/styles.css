@@ -5,6 +5,346 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+.coaching-workspace {
+  margin: 30px 0;
+}
+.coaching-workspace button,
+.coaching-runner button {
+  white-space: normal;
+}
+.coaching-workspace h2,
+.coaching-workspace h3 {
+  line-height: 1.3;
+}
+.plan-lead {
+  max-width: 84ch;
+  line-height: 1.75;
+}
+.plan-stage-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 24px;
+  margin: 24px 0 30px;
+}
+.plan-stage-layout > div,
+.plan-week {
+  border: 1px solid #cbd5c4;
+  border-radius: 14px;
+  padding: 24px;
+  background: #fff;
+}
+.plan-week {
+  background: #eaf0df;
+  line-height: 1.65;
+}
+.coaching-workspace label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+.coaching-workspace input[type='search'],
+.coaching-workspace select {
+  min-width: 0;
+  width: 100%;
+  border: 1px solid #859879;
+  border-radius: 7px;
+  padding: 12px;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+}
+.plan-session-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+.plan-session {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding: 20px;
+  min-height: 150px;
+}
+.plan-session strong {
+  font-size: 19px;
+}
+.plan-session span {
+  color: #66733f;
+  font-size: 13px;
+}
+.plan-session small {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.plan-session em {
+  font-size: 12px;
+}
+.plan-session[aria-pressed='true'],
+.coaching-task-grid button[aria-pressed='true'] {
+  background: #e5edd9;
+  border: 2px solid #647743;
+}
+.plan-blocks {
+  padding-left: 24px;
+}
+.plan-blocks li {
+  display: flex;
+  gap: 18px;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9dfd2;
+  padding: 18px 0;
+}
+.plan-blocks li > span {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.plan-blocks li > div {
+  min-width: 0;
+}
+.plan-blocks .task-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.plan-blocks p {
+  margin: 8px 0;
+  line-height: 1.55;
+}
+.task-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.plan-progress {
+  margin: 26px 0;
+  padding: 22px;
+  border: 1px solid #cbd5c4;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+.coaching-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  align-items: end;
+  margin: 25px 0;
+}
+.coaching-workspace .checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  grid-column: 1/-1;
+}
+.coaching-task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-height: 540px;
+  overflow: auto;
+  padding: 3px;
+}
+.coaching-task-grid button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  text-align: left;
+}
+.coaching-task-grid strong {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.coaching-task-grid span,
+.coaching-task-grid small {
+  font-size: 12px;
+  font-weight: 400;
+}
+.selected-task {
+  margin-top: 28px;
+  scroll-margin-top: 18px;
+}
+.coaching-task-card {
+  max-width: 940px;
+  margin: auto;
+}
+.coaching-task-card h2 {
+  font-size: clamp(24px, 3vw, 34px);
+}
+.reference-video {
+  margin: 24px 0;
+}
+.reference-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.reference-heading span {
+  font-size: 13px;
+}
+.video-consent {
+  padding: 35px 20px;
+  text-align: center;
+  background: #e6ecdf;
+  border-radius: 12px;
+}
+.video-consent p {
+  margin: 18px 0 0;
+  font-size: 13px;
+}
+.youtube-frame {
+  width: 100%;
+  aspect-ratio: 16/9;
+  min-height: 210px;
+  background: #151c18;
+}
+.youtube-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  border: 0;
+  display: block;
+}
+.video-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+.video-actions label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.video-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.reference-pending {
+  background: #f2ecdb;
+  border-left: 3px solid #8e783e;
+  padding: 14px 18px;
+  line-height: 1.6;
+}
+.task-purpose {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.task-diagram {
+  margin: 20px 0;
+  max-width: 580px;
+}
+.task-diagram svg {
+  width: 100%;
+  display: block;
+}
+.task-diagram figcaption {
+  line-height: 1.5;
+  font-size: 14px;
+}
+.task-diagram figcaption span {
+  display: block;
+  font-size: 12px;
+  margin-top: 7px;
+}
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.task-meta span {
+  background: #eef1e8;
+  padding: 8px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.task-instructions {
+  line-height: 1.7;
+}
+.task-instructions h3 {
+  margin-top: 25px;
+}
+.task-instructions ol {
+  padding-left: 24px;
+}
+.task-instructions li {
+  margin: 12px 0;
+  padding-left: 5px;
+}
+.task-result {
+  background: #edf2e4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.task-result p {
+  margin: 8px 0 16px;
+}
+.guided-clock {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.guided-clock strong {
+  display: block;
+  font-size: clamp(46px, 7vw, 72px);
+  font-variant-numeric: tabular-nums;
+}
+.guided-clock p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.current-task-title {
+  font-size: 26px;
+}
+@media (max-width: 700px) {
+  .plan-stage-layout {
+    grid-template-columns: 1fr;
+  }
+  .plan-session-grid,
+  .coaching-task-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .coaching-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .coaching-filters label:first-child {
+    grid-column: 1/-1;
+  }
+  .guided-clock {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .plan-blocks {
+    padding-left: 0;
+  }
+  .plan-session {
+    padding: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .coaching-task-grid {
+    grid-template-columns: 1fr;
+  }
+  .plan-session-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .demo-panel {
   margin: 0 0 30px;
 }

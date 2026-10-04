@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-03",
+  "environment": "Independent Chromium via Playwright; isolated browser contexts; Windows",
+  "unitTests": {"passed": 257, "skippedOptIn": 1},
+  "checks": {"typecheck": "pass", "lint": "pass", "format": "pass", "build": "pass", "buildWarning": "Chunks above 500 kB"},
+  "catalog": {"cards": 52, "families": 32, "gestureReference": 13, "componentReference": 7, "videoPending": 32, "originalVideos": 6, "originalDiagrams": 10},
+  "browser": {"providerRequestsBeforeClick": 0, "extraPreparationWithoutPause": true, "reloadRecoveredPaused": true, "thirtyMinuteTourCompletedAt60x": true, "pageExceptions": [], "mobileWidth": 390, "mobileHorizontalOverflowAfterFix": false, "offlineCards": 52, "externalMediaCached": 0, "providerFailureHandled": true},
+  "videoStarts": [
+    {"videoId": "Bd7TH9t_djM", "requested": 458, "observed": 458.026702},
+    {"videoId": "VkDQ4F9c6Fk", "requested": 102, "observed": 102.083457},
+    {"videoId": "4vBZzkVRqbE", "requested": 130, "observed": 130.02776},
+    {"videoId": "e5RxAJM-oxc", "requested": 207, "observed": 207.069738},
+    {"videoId": "E24XzLAlcRk", "requested": 468, "observed": 468.035874},
+    {"videoId": "UrcPHLR4nfw", "requested": 158, "observed": 158.077914}
+  ],
+  "wingerSegment": {"start": 468, "end": 497, "observedStop": 497.001497, "manualRepeat": 468.232201, "loopResets": 3, "loopSamples": 138, "loopObservedRange": [468, 496.990537]},
+  "limits": ["Not all videos viewed", "No clinical or individual dosing validation", "No new physical Samsung acceptance", "Automatic video chaining not implemented", "Embeds require Internet and publisher permission"]
+}

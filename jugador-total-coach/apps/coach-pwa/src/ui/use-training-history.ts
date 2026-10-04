@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RefObject } from 'react';
 import { SessionEngine } from '@fut360/session-engine';
-import type { HourWorkout } from '../composition/hour-workout';
+import type { SessionAction, SessionProjection } from '@fut360/domain';
+import type { SessionJournal } from '@fut360/session-engine';
 import { hourWorkout } from '../composition/hour-workout';
 import { trainingStore } from '../platform/training-store';
 import type {
@@ -11,7 +12,16 @@ import type {
 } from '../platform/training-store';
 
 export const contentStamp = JSON.stringify(hourWorkout);
-export function useTrainingHistory(controller: RefObject<HourWorkout | null>, test: boolean) {
+export interface HistoryController {
+  exportJournal(): SessionJournal;
+  snapshot(): { session: SessionProjection };
+  act(action: SessionAction): unknown;
+}
+export function useTrainingHistory(
+  controller: RefObject<HistoryController | null>,
+  test: boolean,
+  stamp = contentStamp,
+) {
   const owner = useRef('window-' + Math.random().toString(36).slice(2));
   const known = useRef(new Map<string, StoredTraining>());
   const savedJournals = useRef(new Map<string, string>());
@@ -72,7 +82,7 @@ export function useTrainingHistory(controller: RefObject<HourWorkout | null>, te
           id: s.sessionId,
           startedAt: previous?.record.startedAt ?? updatedAt,
           updatedAt,
-          contentStamp,
+          contentStamp: stamp,
           journal,
           test,
           feedback: feedback ?? previous?.record.feedback ?? null,
@@ -102,7 +112,7 @@ export function useTrainingHistory(controller: RefObject<HourWorkout | null>, te
       });
       return queue.current.then(() => saved);
     },
-    [controller, test],
+    [controller, test, stamp],
   );
   useEffect(() => {
     if (!ready || recovery) return;
@@ -120,7 +130,7 @@ export function useTrainingHistory(controller: RefObject<HourWorkout | null>, te
   }, [ready, recovery, save]);
   const recover = async () => {
     if (!recovery) return null;
-    if (recovery.record.contentStamp !== contentStamp || recovery.record.test !== test) {
+    if (recovery.record.contentStamp !== stamp || recovery.record.test !== test) {
       setError(
         'El contenido o modo cambió. Exporta este registro; no se puede reanudar con otra versión.',
       );

@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Enseñanza con video y plan — 2026-10-03
+
+[ADR 0016](adr/0016-human-reference-and-visible-plan.md): reutilizar YouTube oficial, SessionEngine/SessionClock/ExecutionPlan, IndexedDB/historial y Ajv existente. Adaptar 32 familias a 52 fichas y cinco recorridos variables; pantallas/esquemas propios. Sin reproductor audiovisual propio, solver, rig nuevo ni dependencias. El 3D conserva pruebas técnicas, con claridad reabierta. [Costo/derechos](../reviews/video-reference-cost-and-rights.md).
+
 ## Planificación conversacional — 2026-10-02
 
 Reutilizar dominio, compilador, motor, React, visor/rig y autoría Blender. Extender formato/catálogo y persistencia por entregas, sin construir otro reproductor ni editor de animación. La carencia verificada: el esquema v2 fija duración/bloques y la composición importa un workout al compilar; no existen conversación, perfil persistido ni planes longitudinales. [Visión y comprobaciones](../product/ADAPTIVE_FOOTBALL_COACH_VISION.md), [alternativas de integración](../reviews/conversational-coach-feasibility.md). No se han seleccionado dependencias ni creado adaptadores vacíos.

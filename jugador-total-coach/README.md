@@ -1,10 +1,10 @@
 # Fut360 — Jugador Total Coach
 
-**Entrega actual · 2026-10-03:** biblioteca con **22 variantes / 15 patrones**, cuatro clips nuevos de planta/V, historial local, recuperación tras recarga, copias JSON y preparación sin conexión. [Qué está hecho, pruebas y límites](docs/reviews/product-completion-increment.md). **247 pruebas correctas**; contenido deportivo y producto ampliado siguen en desarrollo.
+**Entrega actual · 2026-10-03:** **Mi plan**, cinco propuestas de 30–50 minutos y etapas de desarrollo; **Biblioteca de ejercicios**, 52 fichas / 32 familias. Video humano por fragmentos en 20 fichas (13 del gesto, siete parciales); 32 videos exactos pendientes. Diez esquemas propios de organización. [Entrega y límites](docs/reviews/video-guided-delivery.md), [inventario real](docs/training/COACHING_LIBRARY_INVENTORY.md). Los 22 recursos 3D anteriores son opcionales y su claridad/naturalidad está en revisión.
 
 **[Inventario completo del contenido registrado](docs/training/CONTENT_INVENTORY.md)**: recursos reales, 32 familias propuestas, 33 capacidades y [5.764 videos únicos localizados](docs/research/VIDEO_CATALOGUE.csv). Ocho videos con muestras observadas de las siete fuentes; localizar no equivale a validar. [Registro visual](docs/research/VIDEO_OBSERVATIONS.json).
 
-El usuario autorizó esta ampliación. Las menciones posteriores a no iniciar 08–09 pertenecen al historial y quedan superadas; no autorizan pagos, publicación ni cambios globales. Planificador flexible, conversación real y revisión íntegra de todos los videos siguen pendientes.
+El usuario autorizó esta ampliación. Las menciones posteriores a no iniciar 08–09 pertenecen al historial y quedan superadas; no autorizan pagos, publicación ni cambios globales. Hay cinco recorridos variables, guardado y recuperación. Edición/adaptación individual del plan, conversación real y revisión íntegra de todos los videos siguen pendientes. Las propuestas no conceden alta deportiva ni prometen nivel profesional en una fecha.
 
 ## Avances anteriores
 
@@ -30,7 +30,11 @@ Desde jugador-total-coach, con dependencias locales existentes:
 node tools/pnpm.mjs dev
 ```
 
-Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar para abrir «Sesión de 60 minutos». El teléfono usa el preview LAN documentado en desarrollo local.
+Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar para abrir **Mi plan**. Si aparece una copia offline anterior, abrir «Guardar la aplicación para uso sin conexión», preparar/comprobar y aplicar la actualización disponible. El teléfono usa el preview LAN documentado en desarrollo local.
+
+- Mi plan: etapas/criterios, cinco propuestas, organización/series/descansos, ficha por bloque y recorrido guardado. Recargar ofrece retomar la propuesta correcta en pausa.
+- Biblioteca: 52 fichas con instrucciones propias. «Ver video del ejercicio» conecta a YouTube: original delimitado, repetir/bucle y controles del proveedor. Requiere Internet y puede mostrar anuncios; el medio no se guarda offline.
+- En un recorrido, estudiar un video pausa el reloj. Todavía no se enlazan automáticamente todos los videos entre ejercicios. El reloj representa reproducción, no actividad medida.
 
 - Sesión v2: precarga movimientos, timeline, lado/ronda, siguiente ejercicio, preparación automática, +30 s/+1 min, pausa, inspección lenta, repetición, omisión y final sonoro silenciable. Mientras está activa hay que terminarla para cambiar de vista. Tras recarga, «Recuperar sesión» restaura el último guardado en pausa y «Continuar» lo reanuda; no cuenta tiempo cerrado.
 - Historial: guardado automático, sensaciones opcionales, copia JSON, importación con resumen/validación y borrado explícito. Guarda datos por navegador/origen; no sincroniza computadora/teléfono. Exporta copia antes de limpiar el navegador.

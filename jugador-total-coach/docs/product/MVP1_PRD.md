@@ -1,5 +1,7 @@
 # PRD — MVP1: sesión 3D de 60 minutos en 2×2 m
 
+**Actualización 2026-10-03:** la enseñanza 3D no satisface al usuario. [ADR 0016](../architecture/adr/0016-human-reference-and-visible-plan.md) prioriza referencia humana por fragmento y explicación dentro del plan. Existen 52 fichas y cinco recorridos variables; adaptación individual/conversación siguen pendientes. Lo siguiente describe el MVP inicial, no aceptación vigente de fidelidad del avatar.
+
 Actualización de visión del 2026-10-02: el usuario solicita [diseñar y seguir planes conversando desde la app](ADAPTIVE_FOOTBALL_COACH_VISION.md), con distintos objetivos, duraciones y entornos. Este PRD conserva el primer entregable y sus pruebas; sus exclusiones no son un veto permanente al producto ampliado. El planificador y la conversación todavía no están implementados.
 
 ## Resultado esperado

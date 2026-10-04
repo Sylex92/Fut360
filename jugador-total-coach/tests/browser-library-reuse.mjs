@@ -6,7 +6,9 @@ export async function verifyLibraryReuse(page) {
   const onError = (error) => errors.push(error.message);
   page.on('pageerror', onError);
   try {
-    await page.getByRole('button', { name: 'Biblioteca de ejercicios', exact: true }).click();
+    await page
+      .getByRole('button', { name: 'Animaciones 3D · en revisión', exact: true })
+      .click();
     await page.getByRole('searchbox', { name: 'Buscar ejercicio', exact: true }).fill('');
     await page.getByRole('combobox', { name: 'Objetivo', exact: true }).selectOption('');
     await page.getByRole('combobox', { name: 'Material', exact: true }).selectOption('');
