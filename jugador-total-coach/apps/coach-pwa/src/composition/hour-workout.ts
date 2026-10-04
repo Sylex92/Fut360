@@ -1,6 +1,9 @@
 import { compileWorkoutV2 } from '@fut360/exercise-catalog';
 import type { WorkoutBlock, WorkoutItem } from '@fut360/exercise-catalog';
 import type { SessionAction, SessionProjection } from '@fut360/domain';
+import { SessionEngine } from '@fut360/session-engine';
+import type { SessionJournal } from '@fut360/session-engine';
+import { SessionClock } from '../platform/session-clock';
 import { practiceClipTime, previewClipTime } from '@fut360/viewer-3d';
 import input from '../../../../content/workouts/mvp1-60min-v2.json';
 import catalog from '../../../../assets/phase06-catalog.json';
@@ -77,17 +80,25 @@ export class HourWorkout {
     private readonly now: () => number,
     private visible = true,
     readonly testRate: 1 | 60 = 1,
+    journal?: SessionJournal,
   ) {
     this.sampledNow = now();
     this.lastSample = this.sampledNow;
-    this.clock = prepareSession(
-      hourWorkout.plan,
-      id,
-      () => this.sampledNow,
-      visible,
-      testRate,
-    );
+    this.clock = journal
+      ? new SessionClock(
+          SessionEngine.fromJournal(journal),
+          () => this.sampledNow,
+          visible,
+          testRate,
+        )
+      : prepareSession(hourWorkout.plan, id, () => this.sampledNow, visible, testRate);
     this.clock.setResourcesReady(false);
+  }
+  exportJournal(): SessionJournal {
+    return this.clock.engine.exportJournal();
+  }
+  events() {
+    return this.clock.engine.getEvents();
   }
   snapshot(): HourSnapshot {
     const session = this.clock.engine.project();

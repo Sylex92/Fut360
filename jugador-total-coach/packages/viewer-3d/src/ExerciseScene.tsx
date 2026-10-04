@@ -102,7 +102,7 @@ export class SceneBoundary extends Component<
 export function ExerciseScene(props: ExerciseSceneProps) {
   const { assetUrl, clipName, durationMs, onFailure, onReady, getPoseMs, cameraPreset } =
     props;
-  const [driver, setDriver] = useState<ClipDriver | null>(null);
+  const [driver, setDriver] = useState<{ url: string; value: ClipDriver } | null>(null);
   useEffect(() => {
     let cancelled = false;
     let owned: ClipDriver | null = null;
@@ -120,7 +120,7 @@ export function ExerciseScene(props: ExerciseSceneProps) {
         window.clearTimeout(timeout);
         try {
           owned = new ClipDriver(gltf.scene, gltf.animations, clipName, durationMs);
-          setDriver(owned);
+          setDriver({ url: assetUrl, value: owned });
         } catch (error) {
           disposeScene(gltf.scene);
           onFailure(error instanceof Error ? error.message : 'Archivo 3D incompatible.');
@@ -163,7 +163,14 @@ export function ExerciseScene(props: ExerciseSceneProps) {
             <meshStandardMaterial color="#779ea0" roughness={1} />
           </mesh>
         )}
-        {driver && <Avatar driver={driver} getPoseMs={getPoseMs} onReady={onReady} />}
+        {driver?.url === assetUrl && (
+          <Avatar
+            key={driver.value.scene.uuid}
+            driver={driver.value}
+            getPoseMs={getPoseMs}
+            onReady={onReady}
+          />
+        )}
       </Canvas>
     </SceneBoundary>
   );

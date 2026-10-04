@@ -1,0 +1,38 @@
+{
+  "id": "sole-pull-push-right",
+  "version": 1,
+  "displayName": "Planta atrás y adelante · pie derecho",
+  "categories": ["ball mastery"],
+  "goals": ["Practicar contacto de planta y control cercano"],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["ball"],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-sole-pull-push-right-v1",
+    "clipName": "EX_sole-pull-push__right__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter", "detail"]
+  },
+  "cues": [
+    "Apóyate en el pie izquierdo, con la rodilla cómoda.",
+    "Coloca suavemente la planta del pie derecho sobre el balón.",
+    "Rueda el balón hacia atrás y después hacia delante; conserva el otro apoyo.",
+    "Retira el pie y vuelve a apoyarlo en el suelo."
+  ],
+  "commonErrors": [
+    "Cargar el peso corporal sobre el balón.",
+    "Forzar el alcance o acelerar antes de mantener el control."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "El recorrido y la cadencia del avatar no determinan tu dosis personal.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración."
+  ],
+  "reviewStatus": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "v-pull-left",
+  "version": 1,
+  "displayName": "Arrastre y salida en V · pie izquierdo",
+  "categories": ["ball mastery"],
+  "goals": [
+    "Practicar contacto de planta y control cercano",
+    "Distinguir arrastre de salida diagonal"
+  ],
+  "space": {
+    "widthM": 2,
+    "lengthM": 2
+  },
+  "equipment": ["ball"],
+  "impact": "low",
+  "sidePolicy": "explicit",
+  "animation": {
+    "assetId": "quaternius-v-pull-left-v1",
+    "clipName": "EX_v-pull__left__v1",
+    "loopable": false,
+    "cameraPresets": ["side", "front", "threeQuarter", "detail"]
+  },
+  "cues": [
+    "Mantén el apoyo en el pie derecho; no cargues tu peso sobre el balón.",
+    "Arrastra el balón hacia atrás con la planta del pie izquierdo.",
+    "Libera la planta, recoloca el pie y empuja con el interior hacia delante y en diagonal.",
+    "Para preparar otra muestra, recoge el balón con la planta y vuelve al inicio."
+  ],
+  "commonErrors": [
+    "Cargar el peso corporal sobre el balón.",
+    "Forzar el alcance o acelerar antes de mantener el control."
+  ],
+  "regressionId": null,
+  "progressionId": null,
+  "footballTransfer": [],
+  "safetyCues": [
+    "El recorrido y la cadencia del avatar no determinan tu dosis personal.",
+    "Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración."
+  ],
+  "reviewStatus": "draft"
+}

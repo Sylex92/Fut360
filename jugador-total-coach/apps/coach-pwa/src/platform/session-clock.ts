@@ -5,6 +5,7 @@ import type { SessionEngine } from '@fut360/session-engine';
 export class SessionClock {
   private lastMs: number | null = null;
   private sequence = 0;
+  private readonly commandEpoch = Math.random().toString(36).slice(2);
   private clockValid = true;
   private resourcesReady = true;
   private resumeOnVisible = false;
@@ -60,7 +61,7 @@ export class SessionClock {
           }
         : action;
     const result = this.engine.send({
-      commandId: this.engine.sessionId + '/ui/' + ++this.sequence,
+      commandId: this.engine.sessionId + '/ui/' + this.commandEpoch + '/' + ++this.sequence,
       sessionId: this.engine.sessionId,
       expectedControlRevision: observed.controlRevision,
       ...(observed.current ? { expectedOccurrenceId: observed.current.id } : {}),

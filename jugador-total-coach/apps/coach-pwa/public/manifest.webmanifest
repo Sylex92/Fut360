@@ -1,0 +1,14 @@
+{
+  "id": "/",
+  "name": "Fut360 · Jugador Total Coach",
+  "short_name": "Fut360",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f6ef",
+  "theme_color": "#214136",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -279,6 +279,66 @@
       "coachingReview": "not-claimed",
       "humanReview": "pending",
       "visualEvidence": "docs/reviews/evidence/phase07-library/right-feet.png"
+    },
+    {
+      "exerciseId": "sole-pull-push-left",
+      "patternId": "sole-pull-push",
+      "manifest": "assets/manifests/sole-pull-push-left-v1.json",
+      "exercise": "content/exercises/sole-pull-push-left.json",
+      "source": "assets/source/sole-pull-push/sole-pull-push-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/product-library/sole-pull-push-left.png"
+    },
+    {
+      "exerciseId": "sole-pull-push-right",
+      "patternId": "sole-pull-push",
+      "manifest": "assets/manifests/sole-pull-push-right-v1.json",
+      "exercise": "content/exercises/sole-pull-push-right.json",
+      "source": "assets/source/sole-pull-push/sole-pull-push-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/product-library/sole-pull-push-right.png"
+    },
+    {
+      "exerciseId": "v-pull-left",
+      "patternId": "v-pull",
+      "manifest": "assets/manifests/v-pull-left-v1.json",
+      "exercise": "content/exercises/v-pull-left.json",
+      "source": "assets/source/v-pull/v-pull-left-v1.blend",
+      "supportedSides": [
+        "left"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/product-library/v-pull-left.png"
+    },
+    {
+      "exerciseId": "v-pull-right",
+      "patternId": "v-pull",
+      "manifest": "assets/manifests/v-pull-right-v1.json",
+      "exercise": "content/exercises/v-pull-right.json",
+      "source": "assets/source/v-pull/v-pull-right-v1.blend",
+      "supportedSides": [
+        "right"
+      ],
+      "technicalReview": "agent-checked-geometry-supports-contacts-and-browser",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "coachingReview": "not-claimed",
+      "humanReview": "pending",
+      "visualEvidence": "docs/reviews/evidence/product-library/v-pull-right.png"
     }
   ],
   "unresolved": [],

@@ -14,10 +14,15 @@ const { AnimationMixer, Texture, Vector3, Triangle, SkinnedMesh, LoopOnce } = aw
 );
 const reports = [];
 const combination = process.argv.includes('--combination');
+const soleV = process.argv.includes('--sole-v');
 const version = process.argv.includes('--version=2') ? 2 : 1;
 if (combination && version !== 1) throw new Error('Combination version must be 1');
 const cases = (
-  combination ? ['inside-outside-sole'] : ['lateral-sole-roll', 'inside-outside']
+  soleV
+    ? ['sole-pull-push', 'v-pull']
+    : combination
+      ? ['inside-outside-sole']
+      : ['lateral-sole-roll', 'inside-outside']
 ).flatMap((kind) => ['left', 'right'].map((side) => ({ kind, side })));
 if (version === 2) cases.push({ kind: 'inside-inside', side: 'alternate' });
 for (const { kind, side } of cases) {
@@ -68,6 +73,13 @@ for (const { kind, side } of cases) {
     samples.push({ time, gapToAvatarSurfaceMeters: nearest, nearestBone });
   }
   const contacts = samples.filter((sample) => {
+    if (kind === 'sole-pull-push') return sample.time >= 1.4 && sample.time <= 5.8;
+    if (kind === 'v-pull')
+      return (
+        (sample.time >= 1.4 && sample.time <= 2.8) ||
+        (sample.time >= 4 && sample.time <= 5.2) ||
+        (sample.time >= 6.3 && sample.time <= 8)
+      );
     if (kind === 'inside-outside-sole') {
       const t = sample.time;
       return (t >= 1.3 && t <= 1.95) || (t >= 3.25 && t <= 4.55) || (t >= 8.4 && t <= 11.65);
@@ -93,11 +105,13 @@ for (const { kind, side } of cases) {
 }
 const reportFile = resolve(
   root,
-  combination
-    ? 'docs/reviews/evidence/phase07-library/ball-surface-check.json'
-    : version === 2
-      ? 'docs/reviews/evidence/phase06-natural-motion/ball-surface-check.json'
-      : 'docs/reviews/evidence/phase06/ball-surface-check.json',
+  soleV
+    ? 'docs/reviews/evidence/product-sole-v/ball-surface-check.json'
+    : combination
+      ? 'docs/reviews/evidence/phase07-library/ball-surface-check.json'
+      : version === 2
+        ? 'docs/reviews/evidence/phase06-natural-motion/ball-surface-check.json'
+        : 'docs/reviews/evidence/phase06/ball-surface-check.json',
 );
 mkdirSync(dirname(reportFile), { recursive: true });
 writeFileSync(

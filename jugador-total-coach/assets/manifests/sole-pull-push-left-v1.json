@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-sole-pull-push-left-v1",
+  "version": 1,
+  "file": "assets/runtime/sole-pull-push-left-v1.glb",
+  "sha256": "fbdbe868f864fa16901f03d220acf47e87e7fe12ee40f1682e74e1a59c64715a",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_sole-pull-push__left__v1",
+  "fps": 30,
+  "durationMs": 8000,
+  "loopable": false,
+  "startPose": "sole-pull-push-left-start",
+  "endPose": "sole-pull-push-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.5313439752439769, -0.000021682123363091803, -0.22983277542089534],
+    "max": [0.4519001794681372, 1.7195855568384855, 0.3988237699906254]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-03",
+  "environment": "Chromium automatizado con Playwright; Windows; viewport móvil 390x844, no Samsung físico",
+  "checks": [
+    {
+      "name": "Restaurar tras recarga",
+      "result": "pass",
+      "detail": "3599116 ms base antes/después; +30000 ms conservados; estado paused; Continuar explícito."
+    },
+    {
+      "name": "Feedback y exportación",
+      "result": "pass",
+      "detail": "Notas sintéticas/esfuerzo guardados; descarga JSON y lectura por importador."
+    },
+    {
+      "name": "Importación idéntica",
+      "result": "pass",
+      "detail": "No duplicó el registro."
+    },
+    {
+      "name": "Conflicto de importación",
+      "result": "pass",
+      "detail": "Archivo con registro nuevo seguido de identidad conflictiva rechazado; un registro original conservado tras recarga."
+    },
+    {
+      "name": "Dos ventanas",
+      "result": "pass",
+      "detail": "Recuperación toma propietario; ventana anterior paused y no sobrescribe; ofrece exportación del candidato sin guardar."
+    },
+    {
+      "name": "Cuatro recursos nuevos",
+      "result": "pass",
+      "detail": "Selector, poses y detalle de pies cargaron para ambos lados; V a 2x llegó al fin."
+    },
+    {
+      "name": "Offline",
+      "result": "pass",
+      "detail": "Red bloqueada: recarga, inicio y cuatro clips nuevos; sin alertas/pageerror. En build final, primera preparación en perfil limpio, detección de un GLB eliminado del caché, reparación y nueva recarga offline con clip recuperado; cero errores de consola/pageerror."
+    },
+    {
+      "name": "Hora acelerada ×60",
+      "result": "pass",
+      "detail": "Viewport móvil; completed, baseRemaining=0; historial 60 min 0 s y 0 omitidos."
+    },
+    {
+      "name": "Borrado local",
+      "result": "pass",
+      "detail": "El registro de prueba completado fue eliminado y permaneció ausente tras dos ciclos de guardado."
+    },
+    {
+      "name": "Layout móvil",
+      "result": "pass",
+      "detail": "Sin desbordamiento horizontal; capturas mobile-history y mobile-v inspeccionadas."
+    },
+    {
+      "name": "Consola de la aplicación",
+      "result": "pass",
+      "detail": "Flujo inicial sin errores; prueba intensiva posterior provocó bloqueo WebGL de Chromium (4 errores) y fallback. Tras corregir reutilización del Canvas y reabrir el tab, recorrido de 22 variantes con cero errores; advertencias WebGL registradas."
+    },
+    {
+      "name": "Reutilización del visor en toda la biblioteca",
+      "result": "pass",
+      "detail": "Tras bloqueo WebGL en prueba intensiva, se corrigió desmontaje de Canvas al cambiar recurso. Recorrido final por 22 variantes con el mismo canvas, disponibilidad correcta y cero errores/pageerror. Regresión en tests/browser-library-reuse.mjs."
+    },
+    {
+      "name": "Actualización de copia existente",
+      "result": "pass",
+      "detail": "Preparar fuerza registration.update; actualización aplicada explícitamente y copia de versión anterior retirada. Repetir preparación en registro existente correcto."
+    }
+  ],
+  "unit": {
+    "passed": 247,
+    "skipped": 1
+  },
+  "notClaimed": [
+    "Todos los videos vistos",
+    "Todos los canales censados exhaustivamente",
+    "Revisión deportiva profesional",
+    "Nueva prueba en Samsung físico",
+    "Instalación PWA nativa completada",
+    "Aplicación ampliada completa"
+  ]
+}

@@ -33,6 +33,18 @@ type Preparation = {
   active: boolean;
 };
 
+export type SessionJournalEntry =
+  | { kind: 'advance'; ms: number }
+  | { kind: 'interrupt'; reason: PauseReason; ms: number }
+  | { kind: 'command'; command: SessionCommand };
+
+/** Portable input log. Adjacent clock samples are coalesced, never animation frames. */
+export interface SessionJournal {
+  version: 1;
+  sessionId: string;
+  entries: SessionJournalEntry[];
+}
+
 /** Deterministic session state. All time is supplied explicitly by a caller. */
 export class SessionEngine {
   private status: SessionStatus = 'idle';
@@ -51,6 +63,79 @@ export class SessionEngine {
   private error: string | null = null;
   private readonly events: SessionEvent[] = [];
   private readonly commands = new Map<string, CommandResult>();
+  private readonly journal: SessionJournalEntry[] = [];
+
+  exportJournal(): SessionJournal {
+    return structuredClone({ version: 1, sessionId: this.sessionId, entries: this.journal });
+  }
+
+  static fromJournal(value: unknown): SessionEngine {
+    if (!value || typeof value !== 'object') throw new Error('Registro inválido.');
+    const log = value as SessionJournal;
+    if (
+      log.version !== 1 ||
+      typeof log.sessionId !== 'string' ||
+      log.sessionId.length > 200 ||
+      !Array.isArray(log.entries) ||
+      log.entries.length > 100000
+    )
+      throw new Error('Versión o tamaño de registro no admitido.');
+    const engine = new SessionEngine(log.sessionId);
+    const actions = [
+      'Prepare',
+      'PreparationSucceeded',
+      'PreparationFailed',
+      'Start',
+      'Pause',
+      'Resume',
+      'QueueRepeat',
+      'CancelQueuedRepeat',
+      'SkipCurrentWork',
+      'ExtendPreparation',
+      'Abort',
+      'Discard',
+    ];
+    for (const entry of log.entries) {
+      if (!entry || typeof entry !== 'object') throw new Error('Evento inválido.');
+      if (entry.kind === 'advance' || entry.kind === 'interrupt') {
+        if (!Number.isSafeInteger(entry.ms) || entry.ms < 0 || entry.ms > 31536000000)
+          throw new Error('Tiempo fuera de límites.');
+        if (entry.kind === 'advance') engine.advance(entry.ms);
+        else {
+          if (
+            !['manual', 'hidden', 'clock-gap', 'clock-error', 'resource'].includes(
+              entry.reason,
+            )
+          )
+            throw new Error('Motivo de pausa no admitido.');
+          engine.interrupt(entry.reason, entry.ms);
+        }
+      } else if (entry.kind === 'command') {
+        const c = entry.command;
+        if (
+          !c ||
+          typeof c.commandId !== 'string' ||
+          c.commandId.length > 300 ||
+          c.sessionId !== log.sessionId ||
+          !Number.isSafeInteger(c.expectedControlRevision) ||
+          !c.action ||
+          !actions.includes(c.action.type)
+        )
+          throw new Error('Comando inválido.');
+        if (c.action.type === 'PreparationSucceeded') snapshotPlan(c.action.plan);
+        if (c.action.type === 'PreparationFailed' && typeof c.action.message !== 'string')
+          throw new Error('Mensaje inválido.');
+        if (
+          c.action.type === 'Resume' &&
+          (typeof c.action.visible !== 'boolean' ||
+            typeof c.action.resourcesReady !== 'boolean')
+        )
+          throw new Error('Continuidad inválida.');
+        if (!engine.send(c).accepted) throw new Error('Registro inconsistente.');
+      } else throw new Error('Evento desconocido.');
+    }
+    return engine;
+  }
 
   constructor(readonly sessionId: string) {
     if (!sessionId.trim()) throw new Error('Falta identidad de sesión.');
@@ -199,6 +284,11 @@ export class SessionEngine {
       this.interrupt('clock-error');
       return;
     }
+    if (deltaMs > 0) {
+      const last = this.journal.at(-1);
+      if (last?.kind === 'advance') last.ms += deltaMs;
+      else this.journal.push({ kind: 'advance', ms: deltaMs });
+    }
     if (this.status === 'paused') {
       this.counters.observedPauseMs += deltaMs;
       return;
@@ -235,6 +325,14 @@ export class SessionEngine {
   }
   interrupt(reason: PauseReason, unobservedMs = 0): void {
     if (!this.active()) return;
+    if (
+      !Number.isSafeInteger(unobservedMs) ||
+      unobservedMs < 0 ||
+      !Number.isSafeInteger(this.counters.unobservedMs + unobservedMs)
+    )
+      unobservedMs = 0;
+    if (this.status !== 'paused' || this.pauseReason !== reason || unobservedMs > 0)
+      this.journal.push({ kind: 'interrupt', reason, ms: unobservedMs });
     if (
       Number.isSafeInteger(unobservedMs) &&
       unobservedMs > 0 &&
@@ -283,6 +381,7 @@ export class SessionEngine {
       command.expectedOccurrenceId !== this.current()?.id
     )
       return reject('La ocurrencia indicada ya no es la actual.');
+    const journalStart = this.journal.length;
     switch (action.type) {
       case 'Prepare':
         if (this.status !== 'idle' && this.status !== 'error')
@@ -437,6 +536,10 @@ export class SessionEngine {
     this.revision++;
     const accepted = result(true, null);
     this.commands.set(command.commandId, accepted);
+    // Pause already records its internal interruption. Keep only the command so replay
+    // preserves the original expected revision and the exact event sequence.
+    if (action.type === 'Pause') this.journal.splice(journalStart);
+    this.journal.push({ kind: 'command', command: structuredClone(command) });
     return accepted;
   }
   project(): SessionProjection {

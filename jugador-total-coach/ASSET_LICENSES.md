@@ -80,3 +80,14 @@ Dos GLB propios derivados de interior/exterior v2 y planta lateral v2, del mismo
 |---|---|---|
 | [quaternius-inside-outside-sole-left-v1](assets/runtime/inside-outside-sole-left-v1.glb) | `a623183188a1ddac2449da755b0728aa3383eb866f75411f9b20f6290891936b` | [Fuente](assets/source/inside-outside-sole/inside-outside-sole-left-v1.blend), `b4dce06b27120694f055496c8a6fdeab70cdd8ef46c2bdba54a85d44fcd7759c` |
 | [quaternius-inside-outside-sole-right-v1](assets/runtime/inside-outside-sole-right-v1.glb) | `742291c854a7cd04a54838c49be065de2b73ffd61600f81578a8b3739bdb26d8` | [Fuente](assets/source/inside-outside-sole/inside-outside-sole-right-v1.blend), `8baadd73068b54e17c1950eadf4258679ca861a0bd36e093a9235746c8470f34` |
+
+## Planta longitudinal y V — 2026-10-03
+
+Cuatro animaciones de autoría propia sobre el humanoide/rig Quaternius CC0 ya auditado. Reutilizan apariencia, pesos, materiales y coordinación de planta lateral v2, con IK, bake y exportador Blender existentes. Sin nuevas descargas, licencias públicas para aportaciones propias ni medios de YouTube incorporados. Referencias de observación y límites en [revisión](docs/training/SOLE_V_REVIEW.md). Balón guiado por animación, no resultado de simulación física. Todos permanecen draft.
+
+| Recurso | SHA-256 GLB | Fuente y SHA-256 |
+|---|---|---|
+| [sole-pull-push-left-v1](assets/runtime/sole-pull-push-left-v1.glb) | fbdbe868f864fa16901f03d220acf47e87e7fe12ee40f1682e74e1a59c64715a | [sole-pull-push-left-v1.blend](assets/source/sole-pull-push/sole-pull-push-left-v1.blend) · 73df14c977b43373664c254c9efb693011bce6eaa5c2639d6b59dc51812a1f7f |
+| [sole-pull-push-right-v1](assets/runtime/sole-pull-push-right-v1.glb) | 62795c64a67687eebf1995ecfb9228570cdec76268a26d48e45171ee9ac892ab | [sole-pull-push-right-v1.blend](assets/source/sole-pull-push/sole-pull-push-right-v1.blend) · a5be4ffb6f96ba331e8bc5e75d9a98289285a879fe68d605d045b1719d40e91d |
+| [v-pull-left-v1](assets/runtime/v-pull-left-v1.glb) | 2634dd270faa3fad9e29c2b435922770641bfc3fc3f53d83039599952bd427ce | [v-pull-left-v1.blend](assets/source/v-pull/v-pull-left-v1.blend) · 1f6bdcdf8343903f2b0385d02b420c51274c28d5ee4d3b7d7d09291187bcfa50 |
+| [v-pull-right-v1](assets/runtime/v-pull-right-v1.glb) | 3fe57e3479524ede577564cbd7bac6268b94887ecd9267a606ca2f5649869c08 | [v-pull-right-v1.blend](assets/source/v-pull/v-pull-right-v1.blend) · e1711fd0d61bc9c837e08f8080736b68d0caf0f6fe3bdea5c08c808c03d57aa4 |

@@ -322,9 +322,14 @@ it('la marcha coordina seis pasos con el brazo contrario y conserva un apoyo, si
 
 it.each(
   catalog.entries.filter((e) =>
-    ['inside-inside', 'lateral-sole-roll', 'inside-outside', 'inside-outside-sole'].includes(
-      e.patternId,
-    ),
+    [
+      'inside-inside',
+      'lateral-sole-roll',
+      'inside-outside',
+      'inside-outside-sole',
+      'sole-pull-push',
+      'v-pull',
+    ].includes(e.patternId),
   ),
 )(
   'la variante básica $exerciseId acompaña con brazos y conserva un pie en el suelo',

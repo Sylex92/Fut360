@@ -49,6 +49,17 @@ function Preview({ movement }: { movement: MovementPreview }) {
   }, []);
   const getPoseMs = useCallback(() => cursor.current, []);
   useEffect(() => {
+    cursor.current = 0;
+    setSeconds(0);
+    setRunning(false);
+    setReady(false);
+    setFailure('');
+    setCamera((current) =>
+      current === 'detail' && !movement.footDetail ? 'threeQuarter' : current,
+    );
+    setSpeed((current) => (current === 2 && !movement.footDetail ? 1 : current));
+  }, [movement.id, movement.footDetail]);
+  useEffect(() => {
     const visibility = () => setHidden(document.hidden);
     document.addEventListener('visibilitychange', visibility);
     return () => document.removeEventListener('visibilitychange', visibility);
@@ -305,7 +316,7 @@ export function MovementLibrary() {
               ))}
             </select>
           </label>
-          <Preview key={movement.id} movement={movement} />
+          <Preview movement={movement} />
         </>
       ) : (
         <p>No hay ejercicios con estos filtros. Prueba otro término o limpia los filtros.</p>

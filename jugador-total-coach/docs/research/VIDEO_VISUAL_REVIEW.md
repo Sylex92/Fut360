@@ -1,5 +1,31 @@
 # Revisión visual de videos: acceso y método
 
+## Actualización 2026-10-03: inventario ampliado y ocho videos observados
+
+El nuevo [inventario](../training/CONTENT_INVENTORY.md) reúne **5.764 videos públicos únicos** de los siete canales. [JSON con títulos/URLs](VIDEO_CATALOGUE.json) y [CSV](VIDEO_CATALOGUE.csv). Se recorrieron las pestañas Videos; se excluyen Shorts, directos, privados, retirados y contenido de membresía. Que deje de cargar una lista durante una espera no garantiza exhaustividad. El catálogo conserva `complete: false`; ni el tamaño anunciado por un canal ni los enlaces recopilados equivalen a ejercicios vistos.
+
+Ahora hay **ocho videos con observación de muestras**, procedentes de los siete canales, detallados en [VIDEO_OBSERVATIONS.json](VIDEO_OBSERVATIONS.json). Ningún video entero se declara validado. V01 amplía muestras a las diez tareas de 7mlc y revisa la V con mayor densidad; V03–V07 añaden Unisport, Joner Football, Become Elite, My Personal Football Coach y AllAttack; V08 añade pull-push de Futsal Movement. En varias muestras solo aparece explicación del presentador: no se contabilizan como un ciclo deportivo observado.
+
+Se verificó bloqueo privado del video de trabajo en V de My Personal Football Coach, [EFkGGLsHRhU](https://www.youtube.com/watch?v=EFkGGLsHRhU). Se utilizó su [alternativa pública de recepción y oposición](https://www.youtube.com/watch?v=fatWWf2Q4LY) para otro objetivo; no se presenta como desbloqueo del material privado.
+
+Las notas separan observado, interpretación y pendiente. No se copiaron transcripciones ni se añadieron videos/capturas de terceros al producto o Git. Las imágenes de trabajo permanecen en .cache. Cuatro animaciones originales de planta longitudinal/V ya se produjeron con el rig y Blender existentes; [fundamento y diferencias respecto de las referencias](../training/SOLE_V_REVIEW.md). La observación no es extracción automática de rig/animación ni certificación biomecánica.
+
+### Resultado por fuente
+
+| Fuente | Evidencia visual | Qué falta |
+|---|---|---|
+| 7mlc | Diez tareas muestreadas; detalle de primera secuencia y V. | Ciclos completos de todas las variantes y resto del canal. |
+| Become Elite | Seis segmentos de pase, recepción, información, finalización y juego con compañero. | Contactos completos, distancias y adaptación de carga. |
+| Joner Football | Montajes y contexto de comparación de tareas. | Ejecuciones completas; no deducir eficacia del ranking. |
+| My Personal Football Coach | Recepción/salida y oposición, seis muestras. | Contactos/carga adulta; V privada permanece inaccesible. |
+| Unisport | Cuatro segmentos sobre recepción. | Secuencias completas y uso de información. |
+| AllAttack | Postura defensiva y contexto de una entrada. | Frenado/temporización; no trasladar la entrada al hogar. |
+| Futsal Movement | Recepción y segundo video de pull-push. | Liberación, salida y variantes completas. |
+
+Lo que sigue debajo conserva el informe inicial de dos videos para trazabilidad; su apartado “estado de las siete fuentes” es histórico y queda sustituido por esta actualización.
+
+
+
 2026-10-02. Seguimiento solicitado después del análisis inicial. Uso interno; no incorporar este fundamento al portal. [Informe inicial](TRAINING_SOURCE_ANALYSIS.md), [base estructurada](../training/FOOTBALL_KNOWLEDGE_BASE.json).
 
 ## Resultado comprobado

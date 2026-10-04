@@ -1,5 +1,13 @@
 # Fut360 — Jugador Total Coach
 
+**Entrega actual · 2026-10-03:** biblioteca con **22 variantes / 15 patrones**, cuatro clips nuevos de planta/V, historial local, recuperación tras recarga, copias JSON y preparación sin conexión. [Qué está hecho, pruebas y límites](docs/reviews/product-completion-increment.md). **247 pruebas correctas**; contenido deportivo y producto ampliado siguen en desarrollo.
+
+**[Inventario completo del contenido registrado](docs/training/CONTENT_INVENTORY.md)**: recursos reales, 32 familias propuestas, 33 capacidades y [5.764 videos únicos localizados](docs/research/VIDEO_CATALOGUE.csv). Ocho videos con muestras observadas de las siete fuentes; localizar no equivale a validar. [Registro visual](docs/research/VIDEO_OBSERVATIONS.json).
+
+El usuario autorizó esta ampliación. Las menciones posteriores a no iniciar 08–09 pertenecen al historial y quedan superadas; no autorizan pagos, publicación ni cambios globales. Planificador flexible, conversación real y revisión íntegra de todos los videos siguen pendientes.
+
+## Avances anteriores
+
 **Investigación de entrenamiento, 2026-10-02:** [análisis de siete canales/fuentes](docs/research/TRAINING_SOURCE_ANALYSIS.md), [conocimiento estructurado](docs/training/FOOTBALL_KNOWLEDGE_BASE.json) y [adaptaciones FUT 5/futsal, FUT 7 y FUT 11](docs/training/MODALITY_AND_PROGRESSION_MODEL.md). 33 capacidades y 32 familias documentales con procedencia, progresiones y requisitos. Consulta parcial de material público, no visionado completo de canales. No se incorporan videos ni se convierten estas fichas en clips disponibles; contenido deportivo draft y fundamento fuera del portal.
 
 **Biblioteca ampliada, 2026-10-02:** 18 variantes, búsqueda sin acentos y filtros de objetivo/material; dos demostraciones nuevas de interior/exterior/planta, una por pie. Observación 2× en todos los ejemplos con balón. [Informe y pruebas](docs/reviews/phase07-library-review.md), [fundamento interno](docs/training/BALL_COMBINATION_REVIEW.md). La sesión v2 conserva su contenido mientras continúa la corrección de dificultad. 227 pruebas y 14 comprobaciones de navegador; nueva validación en Samsung real pendiente.
@@ -24,7 +32,9 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar para abrir «Sesión de 60 minutos». El teléfono usa el preview LAN documentado en desarrollo local.
 
-- Sesión v2: precarga todos los movimientos, timeline, lado/ronda, siguiente ejercicio, preparación automática, +30 s/+1 min, pausa, inspección lenta, repetición, omisión y final sonoro silenciable. Mientras está activa hay que terminarla para cambiar de vista. Recargar descarta el recorrido; persistencia pertenece a 08.
+- Sesión v2: precarga movimientos, timeline, lado/ronda, siguiente ejercicio, preparación automática, +30 s/+1 min, pausa, inspección lenta, repetición, omisión y final sonoro silenciable. Mientras está activa hay que terminarla para cambiar de vista. Tras recarga, «Recuperar sesión» restaura el último guardado en pausa y «Continuar» lo reanuda; no cuenta tiempo cerrado.
+- Historial: guardado automático, sensaciones opcionales, copia JSON, importación con resumen/validación y borrado explícito. Guarda datos por navegador/origen; no sincroniza computadora/teléfono. Exporta copia antes de limpiar el navegador.
+- «Preparar uso sin conexión» guarda y comprueba los recursos. Una actualización espera «Aplicar actualización». HTTP por IP de la LAN permite probar la app, pero el modo offline/instalación requiere HTTPS o localhost; no se han modificado certificados ni configuración global.
 - Para E2E exclusivamente, `?e2e=1` acelera el programa ×60 con aviso visible: no seguir los ejercicios. Abrir sin ese parámetro para tiempo real.
 
 - Biblioteca: búsqueda y filtros, selector de movimiento, frontal/lateral/tres cuartos y «Detalle de pies» en los ejercicios con balón, pausa, revisión por instante y media velocidad. Cada ejemplo termina; reproducir otra vez es explícito. Todos los movimientos con balón ofrecen también 2× para observar. El ritmo visual no prescribe el ritmo de entrenamiento.
@@ -57,4 +67,4 @@ La secuencia siguiente describe el inicio original del paquete. El trabajo actua
 `docs/plans/ROADMAP.md` indica el orden 00–09. `PROJECT_STATUS.md` conserva el estado entre chats.
 
 ## Qué está comprobado en este paquete
-El workout original conserva su hash y sus 60 ocurrencias como regresión del motor. La nueva hora v2 tiene 52 intervalos explícitos y todos sus recursos resueltos; validar datos y reproducción no acredita adecuación deportiva individual. 04/05 tienen aceptación funcional en computadora/Samsung. En 06 el usuario confirmó ambos dispositivos para los movimientos corregidos y la vista de pies, y después aceptó la claridad del empuje en pared. PWA/offline y persistencia pertenecen a 08; todavía no se implementan.
+El workout original conserva su hash y sus 60 ocurrencias como regresión del motor. La nueva hora v2 tiene 52 intervalos explícitos y todos sus recursos resueltos; validar datos y reproducción no acredita adecuación deportiva individual. 04/05 tienen aceptación funcional en computadora/Samsung. En 06 el usuario confirmó ambos dispositivos para los movimientos corregidos y la vista de pies, y después aceptó la claridad del empuje en pared. Persistencia y preparación offline incorporadas el 2026-10-03; instalación PWA nativa y nueva prueba en Samsung real pendientes.

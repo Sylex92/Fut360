@@ -1,0 +1,2115 @@
+{
+  "updatedAt": "2026-10-03",
+  "scope": "Todo el catálogo propio registrado; familias propuestas y censo externo por separado. No catálogo exhaustivo del fútbol ni videos íntegramente validados.",
+  "runtime": [
+    {
+      "id": "wall-push-up",
+      "name": "Flexión contra la pared",
+      "pattern": "wall-push-up",
+      "durationSeconds": 8,
+      "sides": [
+        "none"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/wall-push-up-v1.json",
+      "source": "assets/source/wall-push-up/wall-push-up-v1.blend",
+      "sha256": "9826e9d1660ba734d9dbb8b4170e69442985ebf83efe1f2672172c6160bc4268",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-2026-10-01"
+    },
+    {
+      "id": "hip-hinge",
+      "name": "Bisagra de cadera",
+      "pattern": "hip-hinge",
+      "durationSeconds": 8,
+      "sides": [
+        "none"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/hip-hinge-v1.json",
+      "source": "assets/source/hip-hinge/hip-hinge-v1.blend",
+      "sha256": "45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-in-previous-phase"
+    },
+    {
+      "id": "inside-inside",
+      "name": "Campanitas · interior-interior",
+      "pattern": "inside-inside",
+      "durationSeconds": 6.5,
+      "sides": [
+        "alternate"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/inside-inside-v2.json",
+      "source": "assets/source/inside-inside/inside-inside-v2.blend",
+      "sha256": "c96528aeb997b0838ac7a70e7c8cec33a274a34abab43c14c2301468aa70032b",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Puente de glúteos",
+      "pattern": "glute-bridge",
+      "durationSeconds": 8,
+      "sides": [
+        "none"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/glute-bridge-v1.json",
+      "source": "assets/source/glute-bridge/glute-bridge-v1.blend",
+      "sha256": "412c0d349515ba4cbe70620f96d15e0ff7e23852d807f7bcd7dc0238b68fc195",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-in-phase06"
+    },
+    {
+      "id": "active-march",
+      "name": "Marcha en el sitio",
+      "pattern": "active-march",
+      "durationSeconds": 8,
+      "sides": [
+        "alternate"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/active-march-v2.json",
+      "source": "assets/source/active-march/active-march-v2.blend",
+      "sha256": "4c3dc89ab1b0e8239348d72d950fa7a437869f6a55f869177c31e18b0351b7f3",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "mini-squat",
+      "name": "Sentadilla corta",
+      "pattern": "mini-squat",
+      "durationSeconds": 5.2,
+      "sides": [
+        "none"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/mini-squat-v2.json",
+      "source": "assets/source/mini-squat/mini-squat-v2.blend",
+      "sha256": "ff89b9f237aa37089b4a7f7b1409d31ed30c78a5f6a3aebe8f715e545af10295",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "ankle-mobility-left",
+      "name": "Balanceo de tobillo · izquierdo delante",
+      "pattern": "ankle-mobility",
+      "durationSeconds": 8,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/ankle-mobility-left-v1.json",
+      "source": "assets/source/ankle-mobility/ankle-mobility-left-v1.blend",
+      "sha256": "7fa938d70f7f8e78e331edceee031feb8cf1fc63dfdb0bbd95c2748cf361c0ec",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-in-phase06"
+    },
+    {
+      "id": "ankle-mobility-right",
+      "name": "Balanceo de tobillo · derecho delante",
+      "pattern": "ankle-mobility",
+      "durationSeconds": 8,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/ankle-mobility-right-v1.json",
+      "source": "assets/source/ankle-mobility/ankle-mobility-right-v1.blend",
+      "sha256": "b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-in-phase06"
+    },
+    {
+      "id": "soft-step-turn-left",
+      "name": "Giro por pasos · izquierda",
+      "pattern": "soft-step-turn",
+      "durationSeconds": 7.2,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/soft-step-turn-left-v2.json",
+      "source": "assets/source/soft-step-turn/soft-step-turn-left-v2.blend",
+      "sha256": "4586a6fd26a371a9660f6f889142e7526e631c19b10edfa6a09c6fd4d3017f4d",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "soft-step-turn-right",
+      "name": "Giro por pasos · derecha",
+      "pattern": "soft-step-turn",
+      "durationSeconds": 7.2,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/soft-step-turn-right-v2.json",
+      "source": "assets/source/soft-step-turn/soft-step-turn-right-v2.blend",
+      "sha256": "da5d91c5543eaf9efc2e04e8770bed32d9ac47e8321904fb72cff788130554b1",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "dead-bug",
+      "name": "Pierna alterna con brazos apoyados",
+      "pattern": "dead-bug",
+      "durationSeconds": 14,
+      "sides": [
+        "alternate"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/dead-bug-v1.json",
+      "source": "assets/source/dead-bug/dead-bug-v1.blend",
+      "sha256": "7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-in-phase06"
+    },
+    {
+      "id": "slow-breathing",
+      "name": "Postura para respirar cómodamente",
+      "pattern": "slow-breathing",
+      "durationSeconds": 8,
+      "sides": [
+        "none"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/slow-breathing-v1.json",
+      "source": "assets/source/slow-breathing/slow-breathing-v1.blend",
+      "sha256": "2cb821747e60e1eb9d2cd56926f7523777b31584092fa3f1e9ee82000861e132",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "clarity-accepted-by-user-in-phase06"
+    },
+    {
+      "id": "lateral-sole-roll-left",
+      "name": "Planta lateral · pie izquierdo",
+      "pattern": "lateral-sole-roll",
+      "durationSeconds": 6.5,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/lateral-sole-roll-left-v2.json",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-left-v2.blend",
+      "sha256": "efbeec5f720ff34b5e117e8573f436971e64c674045cf5b9b853f18926daf8af",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "lateral-sole-roll-right",
+      "name": "Planta lateral · pie derecho",
+      "pattern": "lateral-sole-roll",
+      "durationSeconds": 6.5,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/lateral-sole-roll-right-v2.json",
+      "source": "assets/source/lateral-sole-roll/lateral-sole-roll-right-v2.blend",
+      "sha256": "14a8173378bc47782349d674feafd61b39347135d83001d4d6cd51d85dc8e38d",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "inside-outside-left",
+      "name": "Interior/exterior · pie izquierdo",
+      "pattern": "inside-outside",
+      "durationSeconds": 6.5,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/inside-outside-left-v2.json",
+      "source": "assets/source/inside-outside/inside-outside-left-v2.blend",
+      "sha256": "a6e08d54003dc807cee6bf15001a73b2b9b62fcce5fb82291d18ad6d8dd88776",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "inside-outside-right",
+      "name": "Interior/exterior · pie derecho",
+      "pattern": "inside-outside",
+      "durationSeconds": 6.5,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/inside-outside-right-v2.json",
+      "source": "assets/source/inside-outside/inside-outside-right-v2.blend",
+      "sha256": "88dfb6b227c4ed96a78ad27183ab7d0bce940fd7b252b37092314274fdab7f41",
+      "documentaryReview": "docs/training/PHASE06_DOCUMENTARY_REVIEW.md",
+      "humanReview": "natural-motion-accepted-by-user"
+    },
+    {
+      "id": "inside-outside-sole-left",
+      "name": "Interior, exterior y planta · pie izquierdo",
+      "pattern": "inside-outside-sole",
+      "durationSeconds": 13.6,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/inside-outside-sole-left-v1.json",
+      "source": "assets/source/inside-outside-sole/inside-outside-sole-left-v1.blend",
+      "sha256": "a623183188a1ddac2449da755b0728aa3383eb866f75411f9b20f6290891936b",
+      "documentaryReview": "docs/training/BALL_COMBINATION_REVIEW.md",
+      "humanReview": "pending"
+    },
+    {
+      "id": "inside-outside-sole-right",
+      "name": "Interior, exterior y planta · pie derecho",
+      "pattern": "inside-outside-sole",
+      "durationSeconds": 13.6,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/inside-outside-sole-right-v1.json",
+      "source": "assets/source/inside-outside-sole/inside-outside-sole-right-v1.blend",
+      "sha256": "742291c854a7cd04a54838c49be065de2b73ffd61600f81578a8b3739bdb26d8",
+      "documentaryReview": "docs/training/BALL_COMBINATION_REVIEW.md",
+      "humanReview": "pending"
+    },
+    {
+      "id": "sole-pull-push-left",
+      "name": "Planta atrás y adelante · pie izquierdo",
+      "pattern": "sole-pull-push",
+      "durationSeconds": 8,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/sole-pull-push-left-v1.json",
+      "source": "assets/source/sole-pull-push/sole-pull-push-left-v1.blend",
+      "sha256": "fbdbe868f864fa16901f03d220acf47e87e7fe12ee40f1682e74e1a59c64715a",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "humanReview": "pending"
+    },
+    {
+      "id": "sole-pull-push-right",
+      "name": "Planta atrás y adelante · pie derecho",
+      "pattern": "sole-pull-push",
+      "durationSeconds": 8,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/sole-pull-push-right-v1.json",
+      "source": "assets/source/sole-pull-push/sole-pull-push-right-v1.blend",
+      "sha256": "62795c64a67687eebf1995ecfb9228570cdec76268a26d48e45171ee9ac892ab",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "humanReview": "pending"
+    },
+    {
+      "id": "v-pull-left",
+      "name": "Arrastre y salida en V · pie izquierdo",
+      "pattern": "v-pull",
+      "durationSeconds": 10,
+      "sides": [
+        "left"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/v-pull-left-v1.json",
+      "source": "assets/source/v-pull/v-pull-left-v1.blend",
+      "sha256": "2634dd270faa3fad9e29c2b435922770641bfc3fc3f53d83039599952bd427ce",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "humanReview": "pending"
+    },
+    {
+      "id": "v-pull-right",
+      "name": "Arrastre y salida en V · pie derecho",
+      "pattern": "v-pull",
+      "durationSeconds": 10,
+      "sides": [
+        "right"
+      ],
+      "reviewStatus": "draft",
+      "manifest": "assets/manifests/v-pull-right-v1.json",
+      "source": "assets/source/v-pull/v-pull-right-v1.blend",
+      "sha256": "3fe57e3479524ede577564cbd7bac6268b94887ecd9267a606ca2f5649869c08",
+      "documentaryReview": "docs/training/SOLE_V_REVIEW.md",
+      "humanReview": "pending"
+    }
+  ],
+  "practices": [
+    {
+      "id": "T01",
+      "name": "Cadena de interior, exterior y planta",
+      "capabilityIds": [
+        "ball_mastery",
+        "close_control",
+        "coordination",
+        "balance"
+      ],
+      "evidenceRefs": [
+        "C01",
+        "C04",
+        "C19"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Enlazar contactos sin perder alcance y comparar ambos pies.",
+      "sequence": [
+        "Reconocer cada superficie y apoyo.",
+        "Combinar contactos a ritmo controlado.",
+        "Repetir por el otro lado conservando el espacio."
+      ],
+      "regression": "Separar cada contacto y recolocar el balón.",
+      "progression": [
+        "Encadenar sin pausa.",
+        "Cambiar orden o dirección sin aumentar todo a la vez."
+      ],
+      "observe": [
+        "Salidas involuntarias del área.",
+        "Control por pie y continuidad."
+      ],
+      "limits": "No acredita regate ante rival; no añadir saltos por defecto.",
+      "modalityAdaptations": {
+        "fut5": "Acercar el balón a la siguiente protección con planta.",
+        "fut7": "Añadir salida hacia conducción en otra tarea de cancha.",
+        "fut11": "Preparar un contacto que permita recibir o conducir, sin prometer transferencia."
+      },
+      "animatedComponents": [
+        "inside-outside-sole-left",
+        "inside-outside-sole-right",
+        "sole-pull-push-left",
+        "sole-pull-push-right"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V01",
+        "V08"
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "Arrastre en V y salida diagonal",
+      "capabilityIds": [
+        "ball_mastery",
+        "close_control",
+        "change_direction",
+        "body_orientation"
+      ],
+      "evidenceRefs": [
+        "C05",
+        "C19"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón",
+          "marcas planas"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Reorientar balón y cuerpo hacia una salida clara.",
+      "sequence": [
+        "Recoger el balón con planta.",
+        "Redirigir hacia una diagonal con contacto controlado.",
+        "Recolocar apoyos y trabajar el otro lado."
+      ],
+      "regression": "Aprender arrastre y salida por separado.",
+      "progression": [
+        "Unir ambas fases.",
+        "Elegir una de dos salidas; después llevar a cancha con rival."
+      ],
+      "observe": [
+        "Balón disponible al salir.",
+        "Pie de apoyo acompaña el giro."
+      ],
+      "limits": "Adaptación propia; no copia del circuito Diamond. Cabida y apoyos pendientes de autoría; no torsión forzada sobre pie fijo.",
+      "modalityAdaptations": {
+        "fut5": "Salida pequeña para escapar de presión cercana.",
+        "fut7": "Conectar con aceleración y pase posterior fuera de casa.",
+        "fut11": "Conectar con recepción y cambio de orientación según presión."
+      },
+      "animatedComponents": [
+        "v-pull-left",
+        "v-pull-right"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V01"
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "Proteger, girar y conservar",
+      "capabilityIds": [
+        "close_control",
+        "body_orientation",
+        "balance",
+        "one_v_one"
+      ],
+      "evidenceRefs": [
+        "C03",
+        "C09"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Interponer una posición útil sin perder opciones de pase o giro.",
+      "sequence": [
+        "Recibir con un oponente de presión acordada.",
+        "Ubicar balón y cuerpo respecto a la presión.",
+        "Conservar, devolver o girar según el espacio."
+      ],
+      "regression": "Sin oposición; reconocer posiciones.",
+      "progression": [
+        "Presión limitada.",
+        "Oponente libre con opción de apoyo."
+      ],
+      "observe": [
+        "Pérdidas ante presión.",
+        "Si reconoce cuándo no conviene girar."
+      ],
+      "limits": "Contacto reglamentario y superficie por definir; una postura estática doméstica no valida protección real.",
+      "modalityAdaptations": {
+        "fut5": "Planta y apoyos cortos; salida o descarga del pívot.",
+        "fut7": "Conservar para enlazar ida y vuelta.",
+        "fut11": "Recibir de espaldas entre líneas o sostener una posesión."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V08"
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "Pase y recepción con pared",
+      "capabilityIds": [
+        "passing",
+        "receiving",
+        "first_touch",
+        "coordination"
+      ],
+      "evidenceRefs": [
+        "C07",
+        "C19"
+      ],
+      "setup": {
+        "spaceClass": "wall-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón",
+          "pared apta para balón",
+          "objetivo marcado"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Dosificar el pase y preparar la devolución.",
+      "sequence": [
+        "Elegir zona de rebote y dirección de siguiente toque.",
+        "Pasar y recibir sin bloquear la siguiente acción.",
+        "Alternar pie y ángulo."
+      ],
+      "regression": "Acercar un objetivo amplio y recibir antes de pasar.",
+      "progression": [
+        "Modificar ángulo o velocidad.",
+        "Un toque solo cuando la situación lo permite."
+      ],
+      "observe": [
+        "Pases al objetivo sobre intentos.",
+        "Calidad de la recepción antes del pase siguiente."
+      ],
+      "limits": "Pared despejada para ejercicio corporal no significa apta para golpear balón; rebote conocido no sustituye compañero móvil.",
+      "modalityAdaptations": {
+        "fut5": "Devolución corta y rápida, con planta cuando tenga sentido.",
+        "fut7": "Pared seguida de desplazamiento hacia nueva línea.",
+        "fut11": "Primer toque y pase con amplitud progresiva, no pase largo en habitación."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V03",
+        "V05"
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "Recepción orientada hacia dos salidas",
+      "capabilityIds": [
+        "receiving",
+        "first_touch",
+        "oriented_control",
+        "body_orientation",
+        "passing"
+      ],
+      "evidenceRefs": [
+        "C07",
+        "C09",
+        "C11"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "dos puertas de marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Dar continuidad a la recepción hacia una opción útil.",
+      "sequence": [
+        "El pasador envía desde un ángulo conocido.",
+        "El receptor identifica la salida disponible.",
+        "Orienta el contacto y completa el pase o salida."
+      ],
+      "regression": "Una sola salida y pase previsible.",
+      "progression": [
+        "Variar llegada.",
+        "Añadir oponente que cierre una salida."
+      ],
+      "observe": [
+        "Contactos que preparan la siguiente acción.",
+        "Elección y ejecución registradas por separado."
+      ],
+      "limits": "No imponer siempre interior, exterior, pie alejado ni giro; preservar la opción de descargar.",
+      "modalityAdaptations": {
+        "fut5": "Poco tiempo de contacto y ángulos cercanos.",
+        "fut7": "Salida a pase vertical o conducción media.",
+        "fut11": "Recepción entre líneas con información de ambos lados."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V02",
+        "V03",
+        "V05",
+        "V06"
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "Mirar, identificar y usar la información",
+      "capabilityIds": [
+        "scanning",
+        "anticipation",
+        "decision_making",
+        "body_orientation",
+        "receiving"
+      ],
+      "evidenceRefs": [
+        "C11",
+        "C14"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Vincular exploración visual con una elección comprobable.",
+      "sequence": [
+        "Dos participantes ofrecen opciones cambiantes.",
+        "El receptor obtiene información antes de recibir.",
+        "Recibe y juega hacia la opción que sigue disponible."
+      ],
+      "regression": "Compañeros quietos y tiempo amplio.",
+      "progression": [
+        "Receptores móviles.",
+        "Un defensor limita una línea durante el pase."
+      ],
+      "observe": [
+        "Información identificada y utilizada.",
+        "Pases útiles, no giros de cabeza acumulados."
+      ],
+      "limits": "Señales de color pueden familiarizar con atender otra información; no equivalen a leer rivales.",
+      "modalityAdaptations": {
+        "fut5": "Detectar apoyo próximo y presión a la espalda.",
+        "fut7": "Decidir continuidad o cambio de lado en transición.",
+        "fut11": "Ofrecerse entre líneas y reconocer presión lejana/cercana."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V03",
+        "V05"
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "Pase, desmarque y pared",
+      "capabilityIds": [
+        "passing",
+        "receiving",
+        "acceleration",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C04",
+        "C11",
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Crear una nueva línea después de pasar.",
+      "sequence": [
+        "Pasar hacia un apoyo.",
+        "Cambiar ángulo sin seguir pegado al balón.",
+        "Recibir devolución en movimiento o conservar si no hay línea."
+      ],
+      "regression": "Secuencia prevista a ritmo cómodo.",
+      "progression": [
+        "Variar punto de devolución.",
+        "Añadir defensor y permitir otra solución."
+      ],
+      "observe": [
+        "Momento de salida.",
+        "Devolución útil frente a pase forzado."
+      ],
+      "limits": "Dos participantes permiten el patrón; el componente decisional requiere un tercero.",
+      "modalityAdaptations": {
+        "fut5": "Pared corta para superar presión.",
+        "fut7": "Pase vertical y devolución con carrera de apoyo.",
+        "fut11": "Combinación para romper una línea y liberar un compañero."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T08",
+      "name": "Tercer jugador y apoyo tras pase",
+      "capabilityIds": [
+        "passing",
+        "scanning",
+        "body_orientation",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C04",
+        "C11"
+      ],
+      "setup": {
+        "spaceClass": "pitch",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Entender que el receptor intermedio puede conectar con otro jugador.",
+      "sequence": [
+        "El primero encuentra apoyo.",
+        "El tercero se mueve a una línea disponible.",
+        "El apoyo devuelve o conecta según la situación."
+      ],
+      "regression": "Tres posiciones fijas para entender roles.",
+      "progression": [
+        "Variar movimiento del tercero.",
+        "Añadir defensor; conservar también es opción."
+      ],
+      "observe": [
+        "Línea creada antes de pedir balón.",
+        "Calidad temporal del pase."
+      ],
+      "limits": "No enseñar una coreografía como lectura táctica completa.",
+      "modalityAdaptations": {
+        "fut5": "Triángulos cortos y rotación de apoyos.",
+        "fut7": "Combinaciones que permitan progresar sin conducir siempre.",
+        "fut11": "Acceso entre líneas y pase al jugador de cara."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T09",
+      "name": "Pase de varias distancias a receptor móvil",
+      "capabilityIds": [
+        "passing",
+        "first_touch",
+        "receiving",
+        "body_orientation"
+      ],
+      "evidenceRefs": [
+        "C11",
+        "C07"
+      ],
+      "setup": {
+        "spaceClass": "pitch",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "marcas",
+          "zona amplia"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Regular fuerza, trayectoria y momento de entrega.",
+      "sequence": [
+        "Establecer distancia y destino seguros.",
+        "Pasar al espacio útil del receptor.",
+        "Comparar colocación y recepción antes de variar distancia."
+      ],
+      "regression": "Distancia corta y receptor estático.",
+      "progression": [
+        "Receptor en movimiento.",
+        "Distancia media/larga o trayectoria diferente según dominio."
+      ],
+      "observe": [
+        "Entrega alcanzable sin frenar innecesariamente.",
+        "Error de dirección y distancia separados."
+      ],
+      "limits": "Distancias, técnica aérea y dosificación pendientes; no practicar golpeos largos en casa.",
+      "modalityAdaptations": {
+        "fut5": "Predominio de ventanas cortas; pase más largo solo si el juego lo exige.",
+        "fut7": "Pase vertical y cambio de orientación dentro de la cancha real.",
+        "fut11": "Pase corto, medio y largo con movimiento previo y posterior."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V05"
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "Conducción con cambios de ritmo",
+      "capabilityIds": [
+        "dribbling",
+        "close_control",
+        "change_direction",
+        "acceleration"
+      ],
+      "evidenceRefs": [
+        "C19",
+        "C06"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Graduar longitud del toque según espacio y velocidad.",
+      "sequence": [
+        "Conducir por una ruta amplia conocida.",
+        "Reducir toque antes del cambio.",
+        "Salir con control hacia el espacio disponible."
+      ],
+      "regression": "Recorrido recto a ritmo controlado.",
+      "progression": [
+        "Variar dirección y ritmo.",
+        "Añadir oponente u objetivo cambiante."
+      ],
+      "observe": [
+        "Balón alcanzable en el cambio.",
+        "Diferencia entre acelerar cuerpo y perder balón."
+      ],
+      "limits": "Ruta sin rival evalúa conducción; no acredita éxito en 1v1.",
+      "modalityAdaptations": {
+        "fut5": "Toques próximos y salidas cortas.",
+        "fut7": "Conducción media alternada con pase.",
+        "fut11": "Transportar hacia espacio libre sin ignorar compañeros."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V04"
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "Uno contra uno frontal con dos opciones",
+      "capabilityIds": [
+        "one_v_one",
+        "dribbling",
+        "agility",
+        "decision_making",
+        "acceleration"
+      ],
+      "evidenceRefs": [
+        "C06",
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "dos puertas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Superar o conservar según posición del defensor.",
+      "sequence": [
+        "Atacante conduce hacia dos posibles salidas.",
+        "Defensor puede cerrar una y ajustar.",
+        "Atacante elige ritmo, dirección o conservación."
+      ],
+      "regression": "Defensor con movimiento limitado.",
+      "progression": [
+        "Defensor activo.",
+        "Añadir apoyo y opción de pase."
+      ],
+      "observe": [
+        "Éxitos y pérdidas por oportunidad.",
+        "Acción elegida según movimiento del rival."
+      ],
+      "limits": "Una finta vistosa no es objetivo por sí misma; respetar distancia de frenado.",
+      "modalityAdaptations": {
+        "fut5": "Salir en pocos metros y proteger si no hay ventaja.",
+        "fut7": "Conectar el duelo con pase final o tiro.",
+        "fut11": "Contextualizar en banda o carril interior."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V06",
+        "V08"
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "Recibir de espaldas: descargar o girar",
+      "capabilityIds": [
+        "one_v_one",
+        "receiving",
+        "oriented_control",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C03",
+        "C06"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Elegir una respuesta a la presión al recibir.",
+      "sequence": [
+        "Pasador sirve al receptor con rival detrás.",
+        "El receptor identifica presión y apoyo.",
+        "Devuelve o gira hacia una salida real."
+      ],
+      "regression": "Presión pasiva y salida conocida.",
+      "progression": [
+        "Oponente con dos opciones.",
+        "Añadir objetivo de finalización si se logra salir."
+      ],
+      "observe": [
+        "Conservación útil.",
+        "No girar hacia la presión solo para completar la secuencia."
+      ],
+      "limits": "Propuesta inspirada en el problema descrito, no reproducción de una rutina de Joner.",
+      "modalityAdaptations": {
+        "fut5": "Rol de pívot, descarga y cambio de apoyo.",
+        "fut7": "Apoyo intermedio para activar una transición.",
+        "fut11": "Segundo delantero o mediocentro entre líneas."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V02"
+      ]
+    },
+    {
+      "id": "T13",
+      "name": "Golpeo dirigido a una zona",
+      "capabilityIds": [
+        "shooting",
+        "coordination",
+        "balance"
+      ],
+      "evidenceRefs": [
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "goal-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón",
+          "portería o blanco seguro"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Aprender a dirigir un golpeo con control.",
+      "sequence": [
+        "Preparar balón y objetivo.",
+        "Realizar aproximación y golpeo coherentes.",
+        "Revisar dirección y apoyo antes de aumentar exigencia."
+      ],
+      "regression": "Balón quieto, distancia corta y objetivo amplio.",
+      "progression": [
+        "Balón rodando.",
+        "Distancia o superficie de golpeo distinta."
+      ],
+      "observe": [
+        "Intentos dentro del objetivo.",
+        "Consistencia por lado y variante."
+      ],
+      "limits": "No prometer potencia máxima ni fijar una colocación corporal universal; ficha técnica por variante pendiente.",
+      "modalityAdaptations": {
+        "fut5": "Golpeo compacto según espacio y superficie.",
+        "fut7": "Tiro después de conducción o devolución.",
+        "fut11": "Golpeo tras control, llegada o pase desde otro ángulo."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T14",
+      "name": "Finalizar o asistir con oposición",
+      "capabilityIds": [
+        "finishing",
+        "shooting",
+        "first_touch",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "goal-area",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "portería",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Elegir una solución que cree una ocasión útil.",
+      "sequence": [
+        "Receptor y apoyo atacan con defensor.",
+        "Recibir para tirar o conectar con el apoyo.",
+        "Resolver y revisar si la elección aprovechó el espacio."
+      ],
+      "regression": "Sin defensor; variar llegada del pase.",
+      "progression": [
+        "Defensor activo.",
+        "Añadir portero y nuevos atacantes/defensores."
+      ],
+      "observe": [
+        "Ocasiones creadas y calidad de elección.",
+        "Tiros al objetivo, bloqueados y pérdidas."
+      ],
+      "limits": "Mínimo tres permite 2v1; el portero requiere otra persona. Goles sin contexto no bastan.",
+      "modalityAdaptations": {
+        "fut5": "Definición cercana y opción de segundo palo.",
+        "fut7": "Finalizar tras transición o pared.",
+        "fut11": "Ataque de espacios, remate y asistencia según posición defensiva."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V05",
+        "V06"
+      ]
+    },
+    {
+      "id": "T15",
+      "name": "Punterazo como recurso de finalización",
+      "capabilityIds": [
+        "shooting",
+        "finishing",
+        "coordination"
+      ],
+      "evidenceRefs": [
+        "C10",
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "goal-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón apropiado",
+          "portería o blanco seguro"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Explorar un golpeo compacto para una oportunidad con poco armado.",
+      "sequence": [
+        "Comprender el contacto mediante futura ficha específica.",
+        "Ensayar dirección con balón preparado.",
+        "Comparar con otra solución al variar espacio."
+      ],
+      "regression": "Solo explicación y familiarización de contacto.",
+      "progression": [
+        "Balón en movimiento.",
+        "Añadir decisión ante bloqueo."
+      ],
+      "observe": [
+        "Dirección y control del contacto.",
+        "Si la elección aporta ventaja."
+      ],
+      "limits": "Prioridad solicitada para futsal; técnica detallada y fuente visual específica PENDIENTES. C10/C12 apoyan contexto, no validan este gesto.",
+      "modalityAdaptations": {
+        "fut5": "Recurso candidato de poco armado; no obligatorio en toda finalización.",
+        "fut7": "Opción situacional cuando falta tiempo.",
+        "fut11": "Opción situacional; no sustituye el repertorio de golpeos."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T16",
+      "name": "Desmarque y recepción fuera de la atención del rival",
+      "capabilityIds": [
+        "scanning",
+        "anticipation",
+        "receiving",
+        "body_orientation",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C11",
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "pitch",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Crear una línea de pase útil mediante momento y dirección.",
+      "sequence": [
+        "Pasador conserva mientras receptor observa defensor.",
+        "Receptor cambia posición para ofrecer línea.",
+        "Pasador decide entregar o mantener."
+      ],
+      "regression": "Defensor quieto para entender línea y espacio.",
+      "progression": [
+        "Defensor móvil.",
+        "Añadir un compañero y dos destinos."
+      ],
+      "observe": [
+        "Recepciones con ventaja.",
+        "Movimiento útil aunque no reciba."
+      ],
+      "limits": "No reducir desmarque a correr más ni alejarse siempre del balón.",
+      "modalityAdaptations": {
+        "fut5": "Separación corta y apoyo tras rotación.",
+        "fut7": "Ida y vuelta con opción de pared.",
+        "fut11": "Entre líneas, profundidad o apoyo según rol."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T17",
+      "name": "Aproximarse, frenar y temporizar",
+      "capabilityIds": [
+        "individual_defence",
+        "delaying",
+        "deceleration",
+        "body_orientation",
+        "one_v_one"
+      ],
+      "evidenceRefs": [
+        "C13"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "balón",
+          "zona objetivo",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Proteger una vía peligrosa mientras se ajusta al atacante.",
+      "sequence": [
+        "Atacante avanza hacia una zona.",
+        "Defensor aproxima y controla el frenado.",
+        "Orienta o espera según distancia, balón y espacio."
+      ],
+      "regression": "Atacante a ritmo bajo y salida limitada.",
+      "progression": [
+        "Dos salidas reales.",
+        "Añadir apoyo defensivo y contraobjetivo tras recuperar."
+      ],
+      "observe": [
+        "Progresión/tiro impedidos.",
+        "Equilibrio al primer cambio del rival."
+      ],
+      "limits": "Sin barridas como variante por defecto; orientar afuera solo cuando el contexto lo justifique.",
+      "modalityAdaptations": {
+        "fut5": "Evitar ser superado en espacio corto.",
+        "fut7": "Defender duelos de transición.",
+        "fut11": "Proteger profundidad y ajustar al apoyo de la línea."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V06",
+        "V07"
+      ]
+    },
+    {
+      "id": "T18",
+      "name": "Presionar con cobertura",
+      "capabilityIds": [
+        "pressing",
+        "individual_defence",
+        "anticipation",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C13",
+        "C18"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 4,
+        "equipment": [
+          "balón",
+          "dos objetivos"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Coordinar cercanía al balón y protección de la siguiente opción.",
+      "sequence": [
+        "Dos atacantes disponen de pase o conducción.",
+        "Un defensor presiona y el otro cubre.",
+        "Cambiar responsabilidades cuando cambie el balón."
+      ],
+      "regression": "Secuencia de pases conocida y ritmo controlado.",
+      "progression": [
+        "Pases libres.",
+        "Añadir tercer participante por equipo."
+      ],
+      "observe": [
+        "Líneas limitadas y huecos concedidos.",
+        "Comunicación y reajuste."
+      ],
+      "limits": "La presión eficaz no equivale a correr directamente al balón ni a recuperar siempre.",
+      "modalityAdaptations": {
+        "fut5": "Coberturas próximas y reacción a pared.",
+        "fut7": "Presionar sin romper el equilibrio en el ida y vuelta.",
+        "fut11": "Coordinar línea y distancia de cobertura con el bloque."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T19",
+      "name": "Anticipar un pase sin regalar la espalda",
+      "capabilityIds": [
+        "anticipation",
+        "scanning",
+        "individual_defence",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C11",
+        "C18"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 3,
+        "equipment": [
+          "balón",
+          "dos puertas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Elegir entre interceptar y proteger una línea.",
+      "sequence": [
+        "Pasador busca un receptor que puede moverse.",
+        "Defensor observa balón y receptor.",
+        "Intercepta si existe oportunidad o conserva posición."
+      ],
+      "regression": "Opciones y velocidad limitadas.",
+      "progression": [
+        "Variar engaño y ángulo.",
+        "Añadir receptor y profundidad."
+      ],
+      "observe": [
+        "Intercepciones frente a veces superado.",
+        "Posición después del intento."
+      ],
+      "limits": "Una señal luminosa no representa por sí sola intención del pasador.",
+      "modalityAdaptations": {
+        "fut5": "Cerrar líneas cortas sin perseguir cada amague.",
+        "fut7": "Proteger pase vertical durante transición.",
+        "fut11": "Balancear anticipación, cobertura y profundidad."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V07"
+      ]
+    },
+    {
+      "id": "T20",
+      "name": "Pérdida, recuperación y cambio de rol",
+      "capabilityIds": [
+        "transition_attack_defence",
+        "transition_defence_attack",
+        "pressing",
+        "decision_making"
+      ],
+      "evidenceRefs": [
+        "C18",
+        "C12"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 4,
+        "equipment": [
+          "balón",
+          "dos objetivos"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Reconocer de inmediato el nuevo problema al cambiar posesión.",
+      "sequence": [
+        "Jugar 2v2 hacia objetivos opuestos.",
+        "Tras pérdida, proteger o presionar según proximidad y apoyo.",
+        "Tras recuperar, avanzar si hay ventaja o asegurar posesión."
+      ],
+      "regression": "Interrumpir brevemente para identificar roles.",
+      "progression": [
+        "Cambios de posesión continuos.",
+        "Añadir jugadores y objetivos alternativos."
+      ],
+      "observe": [
+        "Primera decisión después del cambio.",
+        "Ocasiones concedidas/creadas, no solo segundos de reacción."
+      ],
+      "limits": "Sin imponer presión inmediata o pase vertical cuando no existe ventaja.",
+      "modalityAdaptations": {
+        "fut5": "Reorganización con espacio y tiempo muy cortos.",
+        "fut7": "Énfasis en ida y vuelta y pase de salida.",
+        "fut11": "Transición coordinada con distancias y balance del equipo."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T21",
+      "name": "Aceleración de calidad",
+      "capabilityIds": [
+        "acceleration",
+        "coordination",
+        "power"
+      ],
+      "evidenceRefs": [
+        "C10",
+        "C16"
+      ],
+      "setup": {
+        "spaceClass": "running-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "marcas",
+          "zona de frenado"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Desarrollar la salida y el aumento de velocidad en una distancia concreta.",
+      "sequence": [
+        "Definir tramo y margen de frenado.",
+        "Realizar una salida acorde a la preparación.",
+        "Recuperar y comparar ejecuciones."
+      ],
+      "regression": "Ensayo progresivo submáximo.",
+      "progression": [
+        "Cambiar postura de salida.",
+        "Añadir estímulo o balón solo según objetivo."
+      ],
+      "observe": [
+        "Tiempo con condiciones comparables si hay medición fiable.",
+        "Calidad y recuperación entre intentos."
+      ],
+      "limits": "No dosificar aún ni encadenar fatigado llamándolo velocidad; 5–20 m es rango de diseño para FUT 7, no receta.",
+      "modalityAdaptations": {
+        "fut5": "Salidas cortas ligadas a espacios disponibles.",
+        "fut7": "Tramos candidatos de 5–20 m más margen de frenado.",
+        "fut11": "Salidas de apoyo, presión o desmarque con tramo específico."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T22",
+      "name": "Frenado y cambio de dirección previsto",
+      "capabilityIds": [
+        "deceleration",
+        "change_direction",
+        "stability",
+        "balance"
+      ],
+      "evidenceRefs": [
+        "C13",
+        "C17"
+      ],
+      "setup": {
+        "spaceClass": "running-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "marcas",
+          "superficie con agarre"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Reducir velocidad y redirigir conservando control.",
+      "sequence": [
+        "Elegir una zona amplia de frenado.",
+        "Aproximarse a ritmo graduado.",
+        "Frenar y salir por un ángulo ya conocido."
+      ],
+      "regression": "Baja velocidad y cambio poco exigente.",
+      "progression": [
+        "Modificar ángulo.",
+        "Aumentar velocidad de entrada cuando el control lo permita."
+      ],
+      "observe": [
+        "Pasos de ajuste y control de salida.",
+        "Diferencias por lado."
+      ],
+      "limits": "No llamar agilidad reactiva a una ruta memorizada; no imponer ángulos/agresividad sin preparación.",
+      "modalityAdaptations": {
+        "fut5": "Frenadas frecuentes y radio corto.",
+        "fut7": "Cambio tras conducción o presión.",
+        "fut11": "Frenar desde velocidades de entrada variadas."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T23",
+      "name": "Agilidad frente a una intención real",
+      "capabilityIds": [
+        "agility",
+        "decision_making",
+        "change_direction",
+        "deceleration"
+      ],
+      "evidenceRefs": [
+        "C17",
+        "C06"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 2,
+        "equipment": [
+          "marcas",
+          "balón opcional"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Responder al movimiento de otra persona.",
+      "sequence": [
+        "Definir dos objetivos y espacio de seguridad.",
+        "Atacante elige trayectoria.",
+        "Defensor ajusta sin conocerla de antemano."
+      ],
+      "regression": "Opciones limitadas y ritmo bajo.",
+      "progression": [
+        "Permitir engaño.",
+        "Añadir balón y objetivo de juego."
+      ],
+      "observe": [
+        "Elección apropiada y resultado.",
+        "Falsas salidas y control del frenado."
+      ],
+      "limits": "C17 respalda especificidad de estímulo, no eficacia demostrada de esta adaptación.",
+      "modalityAdaptations": {
+        "fut5": "Lectura cercana del cuerpo y balón.",
+        "fut7": "Reacción durante conducción y transición.",
+        "fut11": "Duelo contextualizado con amplitud y profundidad."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V04"
+      ]
+    },
+    {
+      "id": "T24",
+      "name": "Carrera rápida con espacio suficiente",
+      "capabilityIds": [
+        "speed",
+        "acceleration",
+        "coordination"
+      ],
+      "evidenceRefs": [
+        "C10",
+        "C16"
+      ],
+      "setup": {
+        "spaceClass": "pitch",
+        "minimumParticipants": 1,
+        "equipment": [
+          "tramo medido",
+          "margen amplio de frenado"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Trabajar velocidad de carrera separada de la fatiga repetida.",
+      "sequence": [
+        "Definir aceleración progresiva y tramo objetivo.",
+        "Correr según preparación y objetivo acordados.",
+        "Recuperar antes del siguiente intento de calidad."
+      ],
+      "regression": "Carrera controlada sin buscar máximo.",
+      "progression": [
+        "Aumentar exposición gradualmente.",
+        "Medir tramo comparable cuando corresponda."
+      ],
+      "observe": [
+        "Calidad del desplazamiento.",
+        "Tiempo del mismo tramo y condiciones."
+      ],
+      "limits": "Ritmo máximo y distancias pendientes; mini pasos en 2×2 no equivalen a velocidad máxima.",
+      "modalityAdaptations": {
+        "fut5": "Exposición complementaria según rol/calendario, no simular campo en pasillo.",
+        "fut7": "Adecuar al tamaño real de cancha.",
+        "fut11": "Tramo suficiente para objetivo de velocidad y frenado."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T25",
+      "name": "Sprints repetidos con control de deterioro",
+      "capabilityIds": [
+        "repeated_sprint_ability",
+        "acceleration",
+        "specific_endurance"
+      ],
+      "evidenceRefs": [
+        "C10",
+        "C17",
+        "C02"
+      ],
+      "setup": {
+        "spaceClass": "running-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "marcas",
+          "registro de tiempos"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Repetir esfuerzos rápidos sin confundir la tarea con técnica fresca.",
+      "sequence": [
+        "Definir tramo y recuperación antes de ejecutar.",
+        "Registrar cada intento y recuperación real.",
+        "Observar deterioro y terminar según criterio previo."
+      ],
+      "regression": "Menos repeticiones o recuperación más completa.",
+      "progression": [
+        "Ajustar una variable de carga.",
+        "Introducir cambio de dirección si lo pide el juego."
+      ],
+      "observe": [
+        "Mejor y promedio de tiempos.",
+        "Deterioro, técnica y respuesta posterior."
+      ],
+      "limits": "Volumen/descanso/corte individual pendientes; no copiar protocolo U15 ni promesas de TestProof.",
+      "modalityAdaptations": {
+        "fut5": "Tramos y giros según tarea real.",
+        "fut7": "Énfasis candidato en transiciones repetidas.",
+        "fut11": "Integrar con exposición de velocidad y carga de partidos."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T26",
+      "name": "Juego reducido para resistencia y decisiones",
+      "capabilityIds": [
+        "specific_endurance",
+        "decision_making",
+        "transition_attack_defence",
+        "transition_defence_attack"
+      ],
+      "evidenceRefs": [
+        "C10",
+        "C18"
+      ],
+      "setup": {
+        "spaceClass": "court",
+        "minimumParticipants": 4,
+        "equipment": [
+          "balón",
+          "objetivos",
+          "marcas"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Sostener participación útil con balón y sin él.",
+      "sequence": [
+        "Definir jugadores, área, reglas y trabajo/pausa.",
+        "Jugar conservando objetivos de ataque y defensa.",
+        "Registrar participación y respuesta antes de variar la tarea."
+      ],
+      "regression": "Más pausas o superioridad con apoyo.",
+      "progression": [
+        "Modificar área por jugador.",
+        "Ajustar duración o número de participantes por separado."
+      ],
+      "observe": [
+        "Acciones útiles a lo largo del bloque.",
+        "Esfuerzo percibido y recuperación declarados."
+      ],
+      "limits": "No deducir carga solo de 2v2/5v5; no garantiza suficiente sprint ni representa un test fisiológico.",
+      "modalityAdaptations": {
+        "fut5": "Reproducir reglas y sustituciones pertinentes.",
+        "fut7": "Favorecer transiciones sin imponer esfuerzo continuo sin pausa.",
+        "fut11": "Posesión/progresión con referencias de posición y mayor espacio cuando proceda."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T27",
+      "name": "Fuerza de tren inferior por patrones",
+      "capabilityIds": [
+        "strength",
+        "stability",
+        "balance"
+      ],
+      "evidenceRefs": [
+        "C15"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "resistencia por concretar",
+          "suelo estable"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Construir una base graduable de sentadilla, bisagra, apoyo unilateral y pantorrilla.",
+      "sequence": [
+        "Seleccionar una variante y resistencia reales.",
+        "Completar una serie finita con técnica controlada.",
+        "Descansar y registrar respuesta."
+      ],
+      "regression": "Reducir resistencia, rango o demanda de equilibrio.",
+      "progression": [
+        "Aumentar resistencia graduable.",
+        "Cambiar variante cuando el objetivo lo justifique."
+      ],
+      "observe": [
+        "Repeticiones controladas y reserva estimada.",
+        "Respuesta durante y después."
+      ],
+      "limits": "C15 respalda fuerza general, no todas las variantes; carga y dosis pendientes. No hacer las cuatro familias sin selección.",
+      "modalityAdaptations": {
+        "fut5": "Base común; ajustar al calendario y cambios de apoyo.",
+        "fut7": "Base común; ajustar al ida y vuelta.",
+        "fut11": "Base común; ajustar al rol y calendario."
+      },
+      "animatedComponents": [
+        "hip-hinge",
+        "glute-bridge",
+        "mini-squat"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T28",
+      "name": "Empuje y tracción graduables",
+      "capabilityIds": [
+        "strength",
+        "core",
+        "stability"
+      ],
+      "evidenceRefs": [
+        "C15"
+      ],
+      "setup": {
+        "spaceClass": "gym-or-home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "apoyo estable",
+          "resistencia y anclaje por comprobar"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Complementar la fuerza con patrones de tren superior.",
+      "sequence": [
+        "Elegir empuje o tracción según material disponible.",
+        "Ejecutar una serie finita con apoyo estable.",
+        "Descansar y comparar control."
+      ],
+      "regression": "Variante con menor resistencia y mayor apoyo.",
+      "progression": [
+        "Aumentar resistencia.",
+        "Cambiar apoyo sin perder el objetivo principal."
+      ],
+      "observe": [
+        "Técnica conservada durante la serie.",
+        "Resistencia realmente usada."
+      ],
+      "limits": "No dar por válido un anclaje de banda ni inventar equipamiento; variante final pendiente.",
+      "modalityAdaptations": {
+        "fut5": "Preparación común, no permiso para empujar rivales.",
+        "fut7": "Preparación común con dosis ajustada.",
+        "fut11": "Preparación común; no imitar carga de un profesional."
+      },
+      "animatedComponents": [
+        "wall-push-up"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T29",
+      "name": "Control del tronco con extremidades en movimiento",
+      "capabilityIds": [
+        "core",
+        "stability",
+        "coordination"
+      ],
+      "evidenceRefs": [
+        "C15"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "colchoneta"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Gestionar el tronco mientras se mueven brazos o piernas.",
+      "sequence": [
+        "Elegir apoyo cómodo y rango controlable.",
+        "Mover una extremidad sin perder el objetivo postural.",
+        "Alternar con respiración regular."
+      ],
+      "regression": "Menor palanca o menos extremidades móviles.",
+      "progression": [
+        "Aumentar palanca.",
+        "Añadir resistencia solo con variante y material revisados."
+      ],
+      "observe": [
+        "Control de postura sin contener el aire.",
+        "Calidad al alternar lados."
+      ],
+      "limits": "No afirmar que un ejercicio de core por sí solo mejora el golpeo; C15 solo apoya fuerza complementaria general.",
+      "modalityAdaptations": {
+        "fut5": "Base compartida para posteriores acciones.",
+        "fut7": "Base compartida para posteriores acciones.",
+        "fut11": "Base compartida para posteriores acciones."
+      },
+      "animatedComponents": [
+        "dead-bug"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T30",
+      "name": "Movilidad y equilibrio al cambiar apoyo",
+      "capabilityIds": [
+        "mobility",
+        "balance",
+        "stability"
+      ],
+      "evidenceRefs": [
+        "C04"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "suelo estable",
+          "apoyo cercano"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Explorar rango útil con control y reconocer diferencias entre lados.",
+      "sequence": [
+        "Escoger tobillo o cadera como objetivo.",
+        "Mover en rango cómodo manteniendo apoyo.",
+        "Comparar lados sin forzar amplitud."
+      ],
+      "regression": "Más apoyo y menos rango.",
+      "progression": [
+        "Reducir apoyo si es apropiado.",
+        "Conectar rango con un paso o recepción."
+      ],
+      "observe": [
+        "Rango controlado y estabilidad.",
+        "Compensaciones observables."
+      ],
+      "limits": "Familia propia pendiente de fuente técnica específica por variante; no tratamiento de limitaciones ni promesa preventiva.",
+      "modalityAdaptations": {
+        "fut5": "Apoyos y giros cortos.",
+        "fut7": "Cambios de apoyo en desplazamiento.",
+        "fut11": "Preparación para variantes de carrera/recepción."
+      },
+      "animatedComponents": [
+        "ankle-mobility-left",
+        "ankle-mobility-right",
+        "soft-step-turn-left",
+        "soft-step-turn-right"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    },
+    {
+      "id": "T31",
+      "name": "Coordinación de pasos, brazos y contacto",
+      "capabilityIds": [
+        "coordination",
+        "balance",
+        "ball_mastery"
+      ],
+      "evidenceRefs": [
+        "C04",
+        "C19"
+      ],
+      "setup": {
+        "spaceClass": "home",
+        "minimumParticipants": 1,
+        "equipment": [
+          "balón opcional"
+        ],
+        "home2x2": "candidate-dimensions-pending"
+      },
+      "objective": "Enlazar desplazamiento pequeño y movimientos corporales comprensibles.",
+      "sequence": [
+        "Reconocer un patrón de pasos con brazos naturales.",
+        "Añadir contacto simple si cabe.",
+        "Cambiar lado manteniendo coordinación."
+      ],
+      "regression": "Sin balón y un paso cada vez.",
+      "progression": [
+        "Cadencia variada.",
+        "Salida hacia una tarea funcional en otro entorno."
+      ],
+      "observe": [
+        "Fluidez y secuencia correctas.",
+        "Balón disponible y apoyos controlados."
+      ],
+      "limits": "No atribuir velocidad/agilidad de partido a una escalera de pies ni a seguir un metrónomo.",
+      "modalityAdaptations": {
+        "fut5": "Preparación de contacto y apoyo corto.",
+        "fut7": "Preparación de conducción y cambio de ritmo.",
+        "fut11": "Preparación de contacto bilateral, no sustituto de carrera."
+      },
+      "animatedComponents": [
+        "inside-inside",
+        "active-march",
+        "lateral-sole-roll-left",
+        "lateral-sole-roll-right",
+        "inside-outside-left",
+        "inside-outside-right"
+      ],
+      "familyFullyImplemented": false,
+      "videoObservations": [
+        "V01"
+      ]
+    },
+    {
+      "id": "T32",
+      "name": "Potencia de salto y aterrizaje",
+      "capabilityIds": [
+        "power",
+        "strength",
+        "stability",
+        "balance"
+      ],
+      "evidenceRefs": [
+        "C16",
+        "C15"
+      ],
+      "setup": {
+        "spaceClass": "training-area",
+        "minimumParticipants": 1,
+        "equipment": [
+          "zona de aterrizaje libre",
+          "superficie apropiada"
+        ],
+        "home2x2": "not-suitable"
+      },
+      "objective": "Desarrollar una acción explosiva concreta y controlar su recepción.",
+      "sequence": [
+        "Confirmar preparación y variante antes de iniciar.",
+        "Realizar un salto con objetivo definido.",
+        "Controlar aterrizaje y recuperar."
+      ],
+      "regression": "Familiarización de aterrizaje o variante de fuerza sin salto.",
+      "progression": [
+        "Aumentar demanda de forma gradual.",
+        "Dirección o unilateralidad solo cuando corresponda."
+      ],
+      "observe": [
+        "Resultado del salto y control de aterrizaje.",
+        "Calidad antes de repetir."
+      ],
+      "limits": "Fuente no respalda mejora automática de sprint. Sin altura, contactos ni dosis prescritos; no meter saltos en ball mastery por dificultad.",
+      "modalityAdaptations": {
+        "fut5": "Complemento condicionado, no gesto obligatorio del control.",
+        "fut7": "Complemento según necesidades y carga.",
+        "fut11": "Complemento según necesidades y carga."
+      },
+      "animatedComponents": [],
+      "familyFullyImplemented": false,
+      "videoObservations": []
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "ball_mastery",
+      "label": "Dominio del balón",
+      "definition": "Explorar y enlazar contactos controlados."
+    },
+    {
+      "id": "close_control",
+      "label": "Control cercano",
+      "definition": "Mantener el balón accesible ante poco espacio."
+    },
+    {
+      "id": "first_touch",
+      "label": "Primer toque",
+      "definition": "Preparar la siguiente acción con el primer contacto."
+    },
+    {
+      "id": "oriented_control",
+      "label": "Control orientado",
+      "definition": "Recibir hacia un espacio útil."
+    },
+    {
+      "id": "passing",
+      "label": "Pase",
+      "definition": "Entregar al lugar y momento útiles."
+    },
+    {
+      "id": "receiving",
+      "label": "Recepción",
+      "definition": "Crear una opción y gestionar la llegada del balón."
+    },
+    {
+      "id": "shooting",
+      "label": "Golpeo a portería",
+      "definition": "Dirigir el golpeo con intención."
+    },
+    {
+      "id": "finishing",
+      "label": "Finalización",
+      "definition": "Resolver una oportunidad según compañeros, rival y portero."
+    },
+    {
+      "id": "dribbling",
+      "label": "Conducción y regate",
+      "definition": "Transportar el balón o superar presión."
+    },
+    {
+      "id": "one_v_one",
+      "label": "Uno contra uno",
+      "definition": "Resolver un duelo real, atacando o defendiendo."
+    },
+    {
+      "id": "change_direction",
+      "label": "Cambio de dirección",
+      "definition": "Frenar y redirigir un desplazamiento previsto."
+    },
+    {
+      "id": "scanning",
+      "label": "Exploración visual",
+      "definition": "Recoger información útil antes y durante una acción."
+    },
+    {
+      "id": "body_orientation",
+      "label": "Orientación corporal",
+      "definition": "Disponerse según balón, opciones y presión."
+    },
+    {
+      "id": "speed",
+      "label": "Velocidad",
+      "definition": "Desplazarse rápido con espacio y preparación adecuados."
+    },
+    {
+      "id": "acceleration",
+      "label": "Aceleración",
+      "definition": "Aumentar velocidad desde distintas situaciones."
+    },
+    {
+      "id": "deceleration",
+      "label": "Desaceleración",
+      "definition": "Reducir velocidad conservando opciones de acción."
+    },
+    {
+      "id": "agility",
+      "label": "Agilidad con reacción",
+      "definition": "Modificar la acción en respuesta a información externa."
+    },
+    {
+      "id": "strength",
+      "label": "Fuerza",
+      "definition": "Producir fuerza con resistencia graduable."
+    },
+    {
+      "id": "power",
+      "label": "Potencia",
+      "definition": "Producir fuerza rápidamente en una tarea concreta."
+    },
+    {
+      "id": "stability",
+      "label": "Estabilidad",
+      "definition": "Controlar posición frente a demandas o perturbaciones."
+    },
+    {
+      "id": "core",
+      "label": "Control del tronco",
+      "definition": "Gestionar el tronco al transmitir o resistir fuerzas."
+    },
+    {
+      "id": "mobility",
+      "label": "Movilidad",
+      "definition": "Utilizar el rango necesario con control."
+    },
+    {
+      "id": "specific_endurance",
+      "label": "Resistencia específica",
+      "definition": "Sostener y recuperar acciones del juego."
+    },
+    {
+      "id": "repeated_sprint_ability",
+      "label": "Sprints repetidos",
+      "definition": "Repetir esfuerzos rápidos con recuperación incompleta."
+    },
+    {
+      "id": "coordination",
+      "label": "Coordinación",
+      "definition": "Organizar segmentos corporales y contactos."
+    },
+    {
+      "id": "balance",
+      "label": "Equilibrio",
+      "definition": "Mantener o recuperar el apoyo."
+    },
+    {
+      "id": "decision_making",
+      "label": "Toma de decisiones",
+      "definition": "Elegir una acción a partir de opciones reales."
+    },
+    {
+      "id": "individual_defence",
+      "label": "Defensa individual",
+      "definition": "Impedir progresión o finalización del oponente."
+    },
+    {
+      "id": "pressing",
+      "label": "Presión",
+      "definition": "Acercarse para limitar tiempo y opciones con cobertura."
+    },
+    {
+      "id": "delaying",
+      "label": "Temporización",
+      "definition": "Retrasar el ataque sin perder protección del objetivo."
+    },
+    {
+      "id": "anticipation",
+      "label": "Anticipación",
+      "definition": "Interpretar información y actuar antes de que se cierre la oportunidad."
+    },
+    {
+      "id": "transition_attack_defence",
+      "label": "Transición ataque-defensa",
+      "definition": "Reorganizarse al perder el balón."
+    },
+    {
+      "id": "transition_defence_attack",
+      "label": "Transición defensa-ataque",
+      "definition": "Aprovechar o asegurar una recuperación."
+    }
+  ],
+  "videoCoverage": [
+    {
+      "channel": "7mlc",
+      "listed": 771,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "BecomeElite",
+      "listed": 848,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "JonerFootball",
+      "listed": 832,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "MyPersonalFootballCoachcom",
+      "listed": 158,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "unisport",
+      "listed": 2913,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "AllAttack",
+      "listed": 228,
+      "listingStopped": true,
+      "observedVideos": 1
+    },
+    {
+      "channel": "FutsalMovement",
+      "listed": 14,
+      "listingStopped": true,
+      "observedVideos": 2
+    }
+  ],
+  "wholeVideosReviewed": 0
+}

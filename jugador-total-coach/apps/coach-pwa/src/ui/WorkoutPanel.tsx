@@ -15,6 +15,9 @@ import { HourWorkout, hourWorkout } from '../composition/hour-workout';
 import type { HourSnapshot } from '../composition/hour-workout';
 import { movements } from '../composition/movement-library';
 import { FinalSignal } from '../platform/final-signal';
+import { useTrainingHistory } from './use-training-history';
+import { TrainingHistory } from './TrainingHistory';
+import { downloadRecords } from '../platform/training-store';
 
 const Scene = lazy(() =>
   import('@fut360/viewer-3d/workout-scene').then((m) => ({ default: m.WorkoutScene })),
@@ -70,6 +73,7 @@ export function WorkoutPanel({
       : 1,
   );
   const inspection = useRef<HTMLElement>(null);
+  const history = useTrainingHistory(controller, rate === 60);
   const inspectionButton = useRef<HTMLButtonElement>(null);
   const playbackButton = useRef<HTMLButtonElement>(null);
   const previouslyInspecting = useRef(false);
@@ -88,7 +92,12 @@ export function WorkoutPanel({
   }, [inspecting]);
   useEffect(() => {
     const next = new HourWorkout(
-      id + '/' + ++sequence.current,
+      'session-' +
+        Date.now() +
+        '-' +
+        Math.random().toString(36).slice(2) +
+        '/' +
+        ++sequence.current,
       () => performance.now(),
       !document.hidden,
       rate,
@@ -146,6 +155,8 @@ export function WorkoutPanel({
   };
   const act = (action: SessionAction) => {
     if (!controller.current || !state) return;
+    if (action.type === 'Start' && (!history.ready || history.recovery || history.error))
+      return;
     if (action.type === 'Start' || action.type === 'Resume')
       void signal.current?.unlock().then((ok) => {
         if (!ok)
@@ -160,6 +171,7 @@ export function WorkoutPanel({
     );
     if (action.type === 'Pause' || action.type === 'Abort') signal.current?.stop();
     refresh();
+    void history.save();
   };
   const extend = (amountMs: 30000 | 60000) => {
     if (state?.session.preparationTarget)
@@ -170,8 +182,14 @@ export function WorkoutPanel({
       });
   };
   const reset = () => {
+    void history.save();
     const next = new HourWorkout(
-      id + '/' + ++sequence.current,
+      'session-' +
+        Date.now() +
+        '-' +
+        Math.random().toString(36).slice(2) +
+        '/' +
+        ++sequence.current,
       () => performance.now(),
       !document.hidden,
       rate,
@@ -230,6 +248,64 @@ export function WorkoutPanel({
       <p>
         Recorrido de 60 minutos en revisión. Balón, pared despejada y colchoneta. Los cambios
         son automáticos; añade tiempo cuando lo necesites.
+      </p>
+      {history.recovery && (
+        <div className="recovery-card" role="status">
+          <h3>Tienes una sesión pendiente</h3>
+          <p>
+            Recupera el punto guardado. El tiempo con la aplicación cerrada no cuenta;
+            continuarás cuando pulses Continuar.
+          </p>
+          <div className="session-controls">
+            <button
+              onClick={() => {
+                void history.recover().then((record) => {
+                  if (!record) return;
+                  const next = new HourWorkout(
+                    record.id,
+                    () => performance.now(),
+                    !document.hidden,
+                    rate,
+                    record.journal,
+                  );
+                  next.setReady(loaded.current);
+                  controller.current = next;
+                  setState(next.snapshot());
+                  void history.save(next);
+                });
+              }}
+            >
+              Recuperar sesión
+            </button>
+            <button
+              onClick={() => {
+                void history.closeRecovery();
+              }}
+            >
+              Cerrar pendiente como incompleta
+            </button>
+            <button onClick={() => downloadRecords([history.recovery!.record])}>
+              Exportar pendiente
+            </button>
+          </div>
+        </div>
+      )}
+      {history.error && (
+        <p className="viewer-failure" role="alert">
+          {history.error}
+        </p>
+      )}
+      {history.unsaved && (
+        <button onClick={() => downloadRecords([history.unsaved!])}>
+          Exportar progreso sin guardar
+        </button>
+      )}
+      <p className="quiet-note">
+        {!history.ready
+          ? 'Abriendo guardado local…'
+          : history.savedAt
+            ? 'Progreso guardado en este navegador.'
+            : 'El progreso se guardará automáticamente al empezar.'}
       </p>
       {rate === 60 && (
         <p className="viewer-failure" role="status">
@@ -354,7 +430,12 @@ export function WorkoutPanel({
               <button
                 ref={playbackButton}
                 className="primary-control"
-                disabled={!state?.resourcesReady}
+                disabled={
+                  !state?.resourcesReady ||
+                  !history.ready ||
+                  !!history.recovery ||
+                  !!history.error
+                }
                 onClick={() => act({ type: 'Start' })}
               >
                 Iniciar sesión
@@ -590,9 +671,17 @@ export function WorkoutPanel({
         </p>
         <p>
           Tiempo reproducido: {time(s?.recordedMs ?? 0)}. Pausas y extras alargan el recorrido;
-          omisiones lo acortan. No mide actividad física ni guarda historial todavía.
+          omisiones lo acortan. No mide actividad física.
         </p>
       </details>
+      <TrainingHistory
+        key={s?.sessionId}
+        records={history.records}
+        finished={!!finished && history.records.some((r) => r.record.id === s?.sessionId)}
+        active={active || !!history.recovery}
+        onFeedback={(value) => history.save(controller.current, value)}
+        onChange={history.refresh}
+      />
     </section>
   );
 }

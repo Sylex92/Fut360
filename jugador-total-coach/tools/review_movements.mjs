@@ -121,7 +121,15 @@ for (const name of readdirSync(resolve(root, 'assets/runtime'))
     : [];
   if (['glute-bridge', 'dead-bug'].includes(kind)) fixed.push('Head');
   if (kind === 'wall-push-up') fixed.push('hand_l', 'hand_r');
-  if (['lateral-sole-roll', 'inside-outside', 'inside-outside-sole'].includes(kind)) {
+  if (
+    [
+      'lateral-sole-roll',
+      'inside-outside',
+      'inside-outside-sole',
+      'sole-pull-push',
+      'v-pull',
+    ].includes(kind)
+  ) {
     const support = variant === 'left' ? 'r' : 'l';
     fixed.push('foot_' + support, 'ball_' + support);
   }

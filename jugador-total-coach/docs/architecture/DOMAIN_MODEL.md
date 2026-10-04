@@ -1,5 +1,7 @@
 # Contratos de contenido y registro — fase 01
 
+Actualización 2026-10-03: la persistencia/recuperación local y el archivo portable v1 están implementados según [ADR 0015](adr/0015-local-recovery-offline.md). Se guarda un journal de reproducción determinista y feedback editable, no una tabla literal de todos los eventos previstos abajo. Las referencias anteriores a 08 como fase futura son antecedentes.
+
 ## Concreción de fase 07 — 2026-10-01
 
 La definición nueva implementa `schemaVersion: 2` separado de `version: 2`, `locale: es-MX`, espacio 2×2, unión de material de las fichas, condición para detenerse y `reviewStatus: draft`. Los segundos de autoría se convierten una sola vez a milisegundos al compilar. Se conserva el v1 sin migración de nombres. [Esquema v2](../../content/schemas/workout-v2.schema.json), [compilador](../../packages/exercise-catalog/src/workout-v2.ts).

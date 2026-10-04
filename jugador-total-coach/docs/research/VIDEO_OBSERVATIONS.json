@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-03",
+  "method": "Playwright, reproductor público, pausa/búsqueda temporal y capturas de trabajo inspeccionadas por el agente. Sin descarga del video, transcripción ni redistribución de imágenes.",
+  "observations": [
+    {
+      "id": "V01",
+      "channel": "7mlc",
+      "videoId": "e5RxAJM-oxc",
+      "seconds": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        125,
+        170,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        260,
+        305,
+        350,
+        405,
+        465,
+        525
+      ],
+      "scope": "Muestras de las diez tareas; detalle más denso de la primera y del arrastre en V. No visionado íntegro.",
+      "observed": "Contactos con planta e interior, cambio de apoyos y acompañamiento de brazos. La V separa arrastre, liberación y redirección.",
+      "pending": "Completar ciclos, repetición a ritmo natural y contactos de las ocho tareas menos observadas. Los títulos parcialmente tapados no se transcriben como confirmados.",
+      "practiceIds": [
+        "T01",
+        "T02",
+        "T31"
+      ],
+      "url": "https://www.youtube.com/watch?v=e5RxAJM-oxc",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V02",
+      "channel": "Futsal Movement",
+      "videoId": "VkDQ4F9c6Fk",
+      "seconds": [
+        30,
+        60,
+        90,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        120
+      ],
+      "scope": "Contexto y recepción en un tramo de aproximadamente 1:45–1:58.",
+      "observed": "Recepción con planta y salida; relación del receptor con un compañero y la trayectoria de llegada.",
+      "pending": "Todas las variantes y explicación completa; no orientación corporal universal deducida de una muestra.",
+      "practiceIds": [
+        "T05",
+        "T12"
+      ],
+      "url": "https://www.youtube.com/watch?v=VkDQ4F9c6Fk",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V03",
+      "channel": "Unisport",
+      "videoId": "gmN_Jjyb2rs",
+      "seconds": [
+        175,
+        220,
+        265,
+        355
+      ],
+      "scope": "Capítulos públicos y cuatro fotogramas; uno muestra al presentador sin contacto.",
+      "observed": "Balón próximo a los pies, recepción con planta ante rebotador y tarea con otro participante detrás.",
+      "pending": "Ciclos completos de amortiguación, pase al primer toque, dirección y uso de información; capítulos no equivalen a validación del gesto.",
+      "practiceIds": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "url": "https://www.youtube.com/watch?v=gmN_Jjyb2rs",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V04",
+      "channel": "Joner Football",
+      "videoId": "9sbA1vhWSlU",
+      "seconds": [
+        65,
+        150,
+        300,
+        480,
+        580
+      ],
+      "scope": "Cinco muestras de contexto de una comparación de tareas; varias muestran explicación/ranking.",
+      "observed": "Montajes con conos, balón y puerta de finalización, alternados con comentarios del autor.",
+      "pending": "Revisar ciclos concretos, consignas, resultados y evidencia de transferencia; popularidad/ranking no prueba eficacia.",
+      "practiceIds": [
+        "T10",
+        "T23"
+      ],
+      "url": "https://www.youtube.com/watch?v=9sbA1vhWSlU",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V05",
+      "channel": "Become Elite",
+      "videoId": "Bd7TH9t_djM",
+      "seconds": [
+        45,
+        210,
+        345,
+        470,
+        610,
+        730
+      ],
+      "scope": "Seis segmentos localizados mediante capítulos, una muestra visual por segmento.",
+      "observed": "Pase a caja de conos, seguimiento de compañero detrás, recepción/pase en campo, rebotador, circuito de finalización y juego de malabares entre participantes.",
+      "pending": "Revisar contactos completos, distancias, errores, variantes y carga. No copiar dosis del entrenamiento profesional.",
+      "practiceIds": [
+        "T04",
+        "T05",
+        "T06",
+        "T09",
+        "T14"
+      ],
+      "url": "https://www.youtube.com/watch?v=Bd7TH9t_djM",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V06",
+      "channel": "My Personal Football Coach",
+      "videoId": "fatWWf2Q4LY",
+      "seconds": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "scope": "Seis muestras del video público de 1:13 y texto público de la tarea.",
+      "observed": "Recepción con dos jugadores en rectángulo marcado, salida por un lado y posterior oposición hacia portería.",
+      "pending": "No extrapolar a carga adulta una demostración con niños; completar detalles del contacto y criterios de éxito antes de animación.",
+      "practiceIds": [
+        "T05",
+        "T11",
+        "T14",
+        "T17"
+      ],
+      "url": "https://www.youtube.com/watch?v=fatWWf2Q4LY",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V07",
+      "channel": "AllAttack",
+      "videoId": "4vBZzkVRqbE",
+      "seconds": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        320
+      ],
+      "scope": "Seis muestras; varias son explicación del presentador.",
+      "observed": "Postura defensiva orientada ante atacante y balón; un tramo posterior contiene entrada deslizante.",
+      "pending": "Temporización, distancia y frenado completos por revisar. La entrada deslizante no se traslada al espacio doméstico ni al cemento.",
+      "practiceIds": [
+        "T17",
+        "T19"
+      ],
+      "url": "https://www.youtube.com/watch?v=4vBZzkVRqbE",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V08",
+      "channel": "Futsal Movement",
+      "videoId": "dr4PbJwtsaI",
+      "seconds": [
+        8,
+        16,
+        24,
+        32,
+        40,
+        48,
+        55,
+        55.5,
+        56,
+        56.5,
+        57,
+        57.5,
+        58,
+        58.5,
+        64,
+        72
+      ],
+      "scope": "Muestras distribuidas por video de 1:19 y detalle de explicación con planta; no visionado íntegro.",
+      "observed": "Planta sobre balón, contexto con rival y salida con desplazamiento. El tramo 0:55–0:58,5 muestra explicación estática, no ciclo completo.",
+      "pending": "Revisar la liberación/empuje completos. Nuestro ejemplo de planta longitudinal es un componente aislado, no reproducción de la finta completa.",
+      "practiceIds": [
+        "T01",
+        "T03",
+        "T11"
+      ],
+      "url": "https://www.youtube.com/watch?v=dr4PbJwtsaI",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    }
+  ],
+  "blocked": [
+    {
+      "channel": "My Personal Football Coach",
+      "url": "https://www.youtube.com/watch?v=EFkGGLsHRhU",
+      "reason": "Reproductor informó Video privado; texto público disponible, imágenes no observadas.",
+      "alternative": "V06"
+    }
+  ]
+}

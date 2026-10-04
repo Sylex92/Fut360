@@ -1,0 +1,24 @@
+{
+  "assetId": "quaternius-v-pull-left-v1",
+  "version": 1,
+  "file": "assets/runtime/v-pull-left-v1.glb",
+  "sha256": "2634dd270faa3fad9e29c2b435922770641bfc3fc3f53d83039599952bd427ce",
+  "rigId": "quaternius-superhero-male-65-v1",
+  "rigMapping": "assets/manifests/quaternius-male-rig.json",
+  "clipName": "EX_v-pull__left__v1",
+  "fps": 30,
+  "durationMs": 10000,
+  "loopable": false,
+  "startPose": "v-pull-left-start",
+  "endPose": "v-pull-left-start",
+  "boundingBoxMeters": {
+    "min": [-0.5313440684005039, -0.00002164004746647515, -0.23044884298322138],
+    "max": [0.5068977667068322, 1.7195855568384855, 0.40183355802768217]
+  },
+  "requiredProps": ["ball"],
+  "supportedSides": ["left"],
+  "previewSeparationMs": 2000,
+  "practiceRepetitions": 1,
+  "authority": "animation",
+  "reviewStatus": "draft"
+}

@@ -5,6 +5,7 @@ import { DemoPanel } from './DemoPanel';
 import { ContactPanel } from './ContactPanel';
 import { MovementLibrary } from './MovementLibrary';
 import { WorkoutPanel } from './WorkoutPanel';
+import { OfflinePanel } from './OfflinePanel';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -109,7 +110,8 @@ export function App({ content }: { content: unknown }) {
           Fut<span>360</span>
         </a>
         <span className="phase-tag">
-          FASE 07 <span aria-hidden="true">/</span> SESIÓN COMPLETA
+          ENTRENA <span aria-hidden="true">/</span> OBSERVA <span aria-hidden="true">/</span>{' '}
+          PROGRESA
         </span>
       </header>
       <main id="main">
@@ -131,7 +133,7 @@ export function App({ content }: { content: unknown }) {
             <p>
               Sin cuenta ni servicios de pago.
               <br />
-              Tus datos de entrenamiento todavía no se registran.
+              Tu progreso se guarda en este navegador.
             </p>
           </div>
         </section>
@@ -173,6 +175,7 @@ export function App({ content }: { content: unknown }) {
             ? 'Termina la sesión para abrir otra vista.'
             : 'Elige la sesión completa o revisa un movimiento por separado.'}
         </p>
+        <OfflinePanel active={sessionActive} />
         {example === 'workout' ? (
           <WorkoutPanel onActiveChange={setSessionActive} />
         ) : example === 'library' ? (
