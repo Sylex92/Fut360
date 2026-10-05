@@ -1,7 +1,17 @@
 {
   "version": 1,
-  "reviewedAt": "2026-10-04",
+  "reviewedAt": "2026-10-05",
   "references": [
+    {
+      "id": "nhs-bodyweight-squat",
+      "tasks": ["F01"],
+      "title": "NHS · sentadilla sin carga",
+      "url": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/",
+      "section": "Video: NHS Strength and flexibility - squat · 0:08–0:42",
+      "match": "demonstration",
+      "note": "Muestra el descenso y la vuelta de una sentadilla, de frente y de lado. El banco aparece detrás, pero no es un apoyo. Usa una amplitud cómoda; no fuerces una postura para imitar exactamente a la persona del video.",
+      "observation": "Reproducción comprobada el 2026-10-05; duración 45,52 s y fotogramas 5, 12, 20, 30, 35 y 40 s inspeccionados. No revisión clínica ni visionado continuo completo. Enlace externo, sin copia del video. No se adopta como regla universal la indicación de la fuente sobre rodillas y punta del pie."
+    },
     {
       "id": "fifa-speed-gates",
       "tasks": ["S01", "Y01", "Y02"],

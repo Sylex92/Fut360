@@ -1,5 +1,7 @@
 import { validatePlanning } from './planning';
 import type { ParticipantPlanning } from './planning';
+import { validatePersonalPlan } from './personal-plan';
+import type { PersonalPlan } from './personal-plan';
 export const participantGoals = {
   control: 'Control y primer toque',
   passing: 'Pase y asociación',
@@ -18,6 +20,7 @@ export interface Participant {
   goals: ParticipantGoal[];
   createdAt: string;
   planning?: ParticipantPlanning;
+  personalPlan?: PersonalPlan;
 }
 export const validParticipantId = (id: unknown): id is string =>
   typeof id === 'string' && /^p-[a-z0-9-]{8,64}$/.test(id);
@@ -53,5 +56,8 @@ export function validateParticipant(value: unknown): Participant {
     goals: p.goals,
     createdAt: p.createdAt,
     ...(p.planning === undefined ? {} : { planning: validatePlanning(p.planning, p.kind) }),
+    ...(p.personalPlan === undefined
+      ? {}
+      : { personalPlan: validatePersonalPlan(p.personalPlan, p.kind) }),
   });
 }

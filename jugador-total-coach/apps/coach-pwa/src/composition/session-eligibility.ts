@@ -19,6 +19,7 @@ const requirements: Record<
   'solo-strength-32': { places: ['home', 'gym'], facilities: [] },
   'youth-explore-15': { places: ['court', 'pitch'], facilities: [] },
   'youth-pass-15': { places: ['court', 'pitch'], facilities: [] },
+  'youth-protect-15': { places: ['court', 'pitch'], facilities: [] },
   'youth-move-10': { places: ['home', 'court', 'pitch'], facilities: [] },
 };
 export function sessionRequirements(id: string, context: PlanningContext): string[] {

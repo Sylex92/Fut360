@@ -12,9 +12,13 @@ export const videoTime = (seconds: number) =>
 export function ReferenceVideo({
   segment,
   paused = false,
+  automatic = false,
+  onAvailability,
 }: {
   segment: VideoSegment;
   paused?: boolean;
+  automatic?: boolean;
+  onAvailability?: ((ready: boolean, issue?: string) => void) | undefined;
 }) {
   const { participant } = useParticipant();
   if (participant?.kind === 'child')
@@ -23,32 +27,50 @@ export function ReferenceVideo({
         La reproducción de YouTube dentro del perfil infantil todavía no está habilitada.
       </p>
     );
-  return <AdultReferenceVideo segment={segment} paused={paused} />;
+  return (
+    <AdultReferenceVideo
+      segment={segment}
+      paused={paused}
+      automatic={automatic}
+      onAvailability={onAvailability}
+    />
+  );
 }
 function AdultReferenceVideo({
   segment,
   paused = false,
+  automatic = false,
+  onAvailability,
 }: {
   segment: VideoSegment;
   paused?: boolean;
+  automatic?: boolean;
+  onAvailability?: ((ready: boolean, issue?: string) => void) | undefined;
 }) {
   const box = useRef<HTMLDivElement>(null);
   const player = useRef<YouTubePlayer | null>(null);
-  const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(automatic);
   const [attempt, setAttempt] = useState(0);
   const [status, setStatus] = useState('');
   const [error, setError] = useState('');
   const [readyToPlay, setReadyToPlay] = useState(false);
-  const [loop, setLoop] = useState(false);
+  const [loop, setLoop] = useState(automatic);
+  const availability = useRef(onAvailability);
+  availability.current = onAvailability;
   const loopRef = useRef(false);
   const pausedRef = useRef(paused);
   loopRef.current = loop;
   pausedRef.current = paused;
   useEffect(() => {
     if (paused) player.current?.pauseVideo();
-  }, [paused]);
+    else if (automatic && !document.hidden) player.current?.playVideo();
+  }, [paused, automatic]);
   useEffect(() => {
     if (!opened || !box.current) return;
+    if (automatic) {
+      availability.current?.(false);
+      box.current.scrollIntoView({ block: 'center', behavior: 'instant' });
+    }
     let cancelled = false;
     let instance: YouTubePlayer | null = null;
     let ready = false;
@@ -77,6 +99,10 @@ function AdultReferenceVideo({
       if (!ready && !cancelled) {
         setStatus('Video no disponible.');
         setError('La referencia tarda en responder. Puedes abrirla en YouTube o reintentar.');
+        availability.current?.(
+          false,
+          'El video tarda en responder. El recorrido queda en pausa.',
+        );
       }
     }, 25000);
     void loadYouTube()
@@ -104,31 +130,68 @@ function AdultReferenceVideo({
               player.current = target;
               target.getIframe().title = `${segment.title} — ${segment.channel}`;
               target.getIframe().referrerPolicy = 'strict-origin-when-cross-origin';
-              target.cueVideoById(bounds());
-              setStatus('Usa el botón de reproducción del video.');
+              if (automatic && !pausedRef.current && !document.hidden) {
+                target.mute();
+                target.loadVideoById(bounds());
+              } else {
+                target.cueVideoById(bounds());
+                if (automatic) availability.current?.(true);
+              }
+              setStatus(
+                automatic
+                  ? 'Iniciando demostración sin sonido…'
+                  : 'Usa el botón de reproducción del video.',
+              );
             },
             onStateChange: ({ data }) => {
               if (cancelled) return;
               if (data === 0) finish();
               if (data === 1) {
                 if (instance && instance.getCurrentTime() < segment.end) restarting = false;
-                if (document.hidden || !inViewport || pausedRef.current)
+                if (document.hidden || !inViewport || pausedRef.current) {
                   instance?.pauseVideo();
-                else setStatus('Reproduciendo el fragmento.');
+                  if (automatic && inViewport) availability.current?.(true);
+                } else {
+                  setStatus('Reproduciendo el fragmento.');
+                  availability.current?.(true);
+                }
               }
-              if (data === 3) setStatus('Cargando video…');
+              if (data === 3) {
+                setStatus('Cargando video…');
+                if (automatic) availability.current?.(false);
+              }
               if (data === 2 && instance && instance.getCurrentTime() < segment.end)
                 setStatus('Video en pausa.');
+              if (
+                data === 2 &&
+                automatic &&
+                !document.hidden &&
+                !pausedRef.current &&
+                !restarting &&
+                instance &&
+                instance.getCurrentTime() < segment.end
+              )
+                availability.current?.(
+                  true,
+                  'El video está en pausa. Reprodúcelo y pulsa Continuar cuando estés preparado.',
+                );
             },
             onError: ({ data }) => {
               if (!cancelled) {
                 clearTimeout(timeout);
                 setStatus('Video no disponible.');
                 setError(videoFailure(data));
+                availability.current?.(false, videoFailure(data));
               }
             },
             onAutoplayBlocked: () => {
-              if (!cancelled) setStatus('Pulsa reproducir dentro del video para continuar.');
+              if (!cancelled) {
+                setStatus('Pulsa reproducir dentro del video para continuar.');
+                availability.current?.(
+                  false,
+                  'El navegador requiere reproducir el video manualmente. El reloj queda en pausa.',
+                );
+              }
             },
           },
         });
@@ -138,6 +201,10 @@ function AdultReferenceVideo({
           clearTimeout(timeout);
           setStatus('Video no disponible.');
           setError(e instanceof Error ? e.message : 'No se pudo cargar el video.');
+          availability.current?.(
+            false,
+            'No se pudo cargar la demostración. El recorrido queda en pausa.',
+          );
         }
       });
     const tick = setInterval(() => {
@@ -155,7 +222,7 @@ function AdultReferenceVideo({
       if (document.hidden) {
         resumeHidden = instance.getPlayerState() === 1;
         instance.pauseVideo();
-      } else if (resumeHidden && !pausedRef.current && inViewport) {
+      } else if ((resumeHidden || automatic) && !pausedRef.current && inViewport) {
         resumeHidden = false;
         instance.playVideo();
       }
@@ -166,7 +233,14 @@ function AdultReferenceVideo({
         ? null
         : new IntersectionObserver(([entry]) => {
             inViewport = Boolean(entry?.isIntersecting);
-            if (!inViewport && ready) instance?.pauseVideo();
+            if (!inViewport && ready) {
+              instance?.pauseVideo();
+              if (automatic)
+                availability.current?.(
+                  true,
+                  'La demostración quedó fuera de pantalla. Vuelve a ella y continúa cuando estés preparado.',
+                );
+            }
           });
     observer?.observe(host);
     return () => {
@@ -179,7 +253,7 @@ function AdultReferenceVideo({
       instance?.destroy();
       mount.remove();
     };
-  }, [opened, attempt, segment]);
+  }, [opened, attempt, segment, automatic]);
   return (
     <section className="reference-video" aria-label="Video de referencia">
       <div className="reference-heading">

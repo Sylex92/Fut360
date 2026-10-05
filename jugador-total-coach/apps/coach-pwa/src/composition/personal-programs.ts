@@ -202,6 +202,29 @@ export const personalSessions: CoachingSession[] = [
       block('Y13', 1, 0, 120, 0, 'Cerrar tranquilo; el niño puede expresar cómo se sintió.'),
     ],
   },
+  {
+    id: 'youth-protect-15',
+    name: 'Proteger, acompañar y marcar · juego breve',
+    audience: 'child',
+    goal: 'Colocar el cuerpo, cerrar un camino sin choque y encontrar salida hacia el gol.',
+    place: 'Cancha · adulto colaborador',
+    context:
+      'El adulto señala o conduce andando; no disputa el balón ni usa su fuerza. Son primeras situaciones cooperativas. La oposición real se practica con compañeros compatibles.',
+    blocks: [
+      block('Y12', 1, 20, 140, 20, 'Entrada suave al juego; caminar y tocar sin saltar.'),
+      ...['Y05', 'Y06', 'Y08'].map((id) =>
+        block(
+          id,
+          2,
+          15,
+          35,
+          50,
+          'Dos o tres intentos controlados, alternando lado. Reinicia andando y descansa; no se busca cansancio ni robar a toda costa.',
+        ),
+      ),
+      block('Y13', 1, 0, 120, 0, 'Caminar y compartir una cosa que salió bien.'),
+    ],
+  },
 ];
 
 export interface ProgramStage {
@@ -267,7 +290,7 @@ export const youthProgram: ProgramStage[] = [
     horizon: 'Primeras 2 semanas; revisar disfrute y recuperación',
     rhythm:
       'Empieza con un complemento de 10–15 minutos en un día libre de club/gimnasio. Solo si lo disfruta y recupera bien, ofrece un segundo en otro día. Conserva dos días por semana sin entrenamiento específico; el juego libre no tiene que convertirse en tarea.',
-    sessions: ['youth-explore-15', 'youth-pass-15', 'youth-move-10'],
+    sessions: ['youth-explore-15', 'youth-pass-15', 'youth-protect-15', 'youth-move-10'],
     advance: [
       'Quiere repetir y puede terminar antes sin presión.',
       'No hay dolor, cansancio persistente ni pérdida de ganas.',
@@ -282,7 +305,7 @@ export const youthProgram: ProgramStage[] = [
     horizon: 'Siguientes 4–6 semanas; revisar cada dos',
     rhythm:
       'Mantén uno o dos complementos breves. Alterna conducción/gol con recepción/pase. El juego con compañeros y la fuerza supervisada pertenecen también a sus sesiones existentes.',
-    sessions: ['youth-explore-15', 'youth-pass-15', 'youth-move-10'],
+    sessions: ['youth-explore-15', 'youth-pass-15', 'youth-protect-15', 'youth-move-10'],
     advance: [
       'Puede escoger una puerta y cambiar de dirección conservando el balón.',
       'Prueba el pie menos hábil sin castigo ni comparación.',

@@ -1,5 +1,18 @@
 # Estado del proyecto
 
+## Entrega vigente — calendario personal y seguimiento · 2026-10-05
+
+Horario infantil recibido, sin más consultas de disponibilidad. Datos privados fuera de Git. [Entrega, verificaciones y pendientes](docs/reviews/dated-personal-plan.md), [reglas deportivas internas](docs/training/CALENDAR_REVIEW_RULES.md).
+
+**Implementado:** calendario fechado por perfil con revisiones, versiones conservadas, resultados diarios y observaciones comparables de una misma tarea/lado/condiciones. Propuestas personales recibidas por fragmento local revisable; no guardado silencioso en el perfil real. DB 4 y respaldo 3 preservan datos previos y rechazan sobrescritura desde clientes obsoletos. Adulto: entrada de dos semanas por defecto, horizonte máximo 24. Infancia: ocho semanas con rotación de conducción, pase, protección/defensa cooperativa y gol sin aumentar duración. Nuevo complemento `youth-protect-15`; cuatro infantiles y diez adultos disponibles. Club/gimnasio ya cuentan; no se añaden dobles por disponibilidad.
+
+**Audiovisual:** una activación de videos automáticos adultos por recorrido; carga pausa el reloj, pausa manual prevalece y fallos no arrancan automáticamente. YouTube real probado con pausa/reanudación y corrección de bloqueo de Continuar. F01 añade enlace externo al gesto NHS, sin copiar el medio ni controlar el final. Biblioteca: 69 fichas, 15 referencias de gesto y siete de componente incrustadas; 47 sin reproductor, entre ellas una referencia externa NHS y siete parciales FIFA. YouTube infantil permanece sin habilitar. [Inventario](docs/training/COACHING_LIBRARY_INVENTORY.md).
+
+**Verificación:** 282 pruebas correctas, una opt-in omitida; tipos/lint/formato/build. Navegador independiente con datos sintéticos: migración v3→4, CAS, aislamiento, respaldo/restauración, recarga de calendario/resultados, rotación, apertura de protección y 390 px sin desbordamiento. [Evidencia](docs/reviews/evidence/calendar/checks.json). IAB sin backend accesible; no se tocó almacenamiento real ni se atribuye esta prueba a Samsung/Sony físicos. Sin dependencias, pagos, instalación o cambios globales; persiste aviso de bundles >500 kB.
+
+**Sigue abierto:** enseñanza humana suficiente de todas las tareas de ambos planes, vía audiovisual infantil compatible, adaptación por competencia observada, conversación en la app y prueba física Samsung/TV con mando. Calendario y observaciones ya existen, pero no constituyen evaluación automática ni garantía de nivel. [Matriz de los tres objetivos](docs/reviews/three-objective-coverage.md). No declarar biblioteca visual ni producto completo terminado. Los apartados siguientes conservan antecedentes.
+
+
 ## Entrega actual — recorridos propios y cobertura visual · 2026-10-04
 
 La aclaración sobre disponibilidad infantil ya fue recibida. No volver a preguntar objetivos, contexto, disponibilidad ni modelo de TV; no copiar datos personales a Git. La disponibilidad adicional no se convierte en dosis diaria.

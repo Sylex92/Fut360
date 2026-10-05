@@ -34,6 +34,7 @@ export interface YouTubePlayer {
   playVideo(): void;
   seekTo(seconds: number, allowSeekAhead: boolean): void;
   pauseVideo(): void;
+  mute(): void;
   getCurrentTime(): number;
   getPlayerState(): number;
   getIframe(): HTMLIFrameElement;

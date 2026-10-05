@@ -1,5 +1,9 @@
 # Matriz de reutilización
 
+## Calendario personal — 2026-10-05
+
+Adaptar Participant y guardado CAS para versiones de plan y observaciones, reusar sesiones/semana/reproductor. Crear solo la proyección fechada, comparación de intentos homogéneos y entrada local de propuestas. Sin dependencia ni servicio nuevo; ver [plan y revisión de costo](../plans/dated-personal-plan.md). La integración de video conserva sus condiciones y no se declara resuelta por el calendario.
+
 ## Recorridos por audiencia y cobertura visual — 2026-10-04
 
 Reutilizar catálogo/compilador, SessionEngine/GuidedSession, historial, agenda CAS y reproductor oficial existentes. Adaptar sesiones y tareas por audiencia; crear solo selección de recorridos, propuestas para huecos libres, indicadores de cobertura y notas infantiles. Sin motor paralelo ni dependencias. Dos nuevas referencias YouTube y dos enlaces a videos de FIFA; no archivos audiovisuales copiados. [Revisión de costo, derechos, pruebas y pendientes](../reviews/personal-programs-and-visual-coverage.md).

@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-05",
+  "scope": "Synthetic browser contexts; no writes to real profiles. Physical Samsung and Sony not tested.",
+  "finalBundle": "index-B44-LCVf.js",
+  "commands": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "passed": 282,
+      "skipped": 1
+    },
+    "build": "passed; existing >500kB warnings",
+    "format": "passed"
+  },
+  "storage": {
+    "v3Preserved": true,
+    "oldV3Blocked": true,
+    "cas": true,
+    "appendOnly": true,
+    "backupV3": true,
+    "restoreIdempotent": true,
+    "isolated": true
+  },
+  "calendar": {
+    "offerReviewed": true,
+    "offerRemovedAfterSave": true,
+    "alternatingWeeks": true,
+    "datedWeek": true,
+    "reviewWeeks": true,
+    "reports": true,
+    "comparableObservations": true,
+    "reload": true,
+    "mobileOverflow": false,
+    "externalRequests": 0,
+    "pageErrors": [],
+    "protectionWeek": true,
+    "sessionOpens": true,
+    "contextSynchronized": true
+  },
+  "videoSimulated": {
+    "oneActivation": true,
+    "loadingHold": true,
+    "manualPause": true,
+    "videoPausesWithClock": true,
+    "manualHoldNotOverridden": true,
+    "errorPaused": true,
+    "provider": "simulated"
+  },
+  "videoReal": {
+    "provider": "real YouTube",
+    "first": "Empuje con exterior\n2:37–3:15 · 7mlc",
+    "frame": "https://www.youtube-nocookie.com/embed/e5RxAJM-oxc?controls=1&playsinline=1&origin=http%3A%2F%2F127.0.0.1%3A4173&start=157&end=195&enablejsapi=1&widgetid=1&forigin=http%3A%2F%2F127.0.0.1%3A4173%2F%3Fe2e%3D1&aoriginsup=1&vf=6",
+    "manualClockHeld": true,
+    "resumed": true,
+    "pageErrors": []
+  },
+  "videoTransitionReal": {
+    "first": "Empuje con exterior",
+    "second": "Triángulo de contactos\n4:12–4:50 · 7mlc",
+    "automaticTransition": true,
+    "iframe": "https://www.youtube-nocookie.com/embed/e5RxAJM-oxc?controls=1&playsinline=1&origin=http%3A%2F%2F127.0.0.1%3A4173&start=252&end=290&enablejsapi=1&widgetid=3&forigin=http%3A%2F%2F127.0.0.1%3A4173%2F%3Fe2e%3D1&aoriginsup=1&vf=6"
+  },
+  "regression": {
+    "adultSoloWeek": true,
+    "childSupplement": true,
+    "preservesClubAndRest": true,
+    "reload": true,
+    "childRecovery": true,
+    "childCompletion": true,
+    "profileIsolation": true,
+    "extraPreparationAutomatic": true,
+    "mobileOverflow": false,
+    "externalRequests": 0,
+    "pageErrors": []
+  },
+  "evidenceLimits": [
+    "Real video verified on preceding build with unchanged media implementation; calendar synchronization checked on final build.",
+    "Screenshot uses synthetic profile and dates.",
+    "No complete visual certification of catalog or professional sports review."
+  ]
+}

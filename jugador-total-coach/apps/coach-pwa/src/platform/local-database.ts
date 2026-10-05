@@ -2,7 +2,7 @@ export async function openTrainingDatabase(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
     let blocked = false;
     // Older apps must not rewrite a participant while dropping its new planning fields.
-    const request = indexedDB.open('fut360-training', 3);
+    const request = indexedDB.open('fut360-training', 4);
     request.onupgradeneeded = () => {
       const db = request.result;
       if (!db.objectStoreNames.contains('sessions'))

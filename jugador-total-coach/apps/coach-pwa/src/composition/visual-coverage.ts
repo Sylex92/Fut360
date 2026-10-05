@@ -7,6 +7,8 @@ export function referencesFor(task: CoachingTask) {
 export function visualCoverage(task: CoachingTask) {
   if (task.videos.some((v) => v.match === 'demonstration')) return 'Video del gesto';
   if (task.videos.length) return 'Video de un componente';
+  if (referencesFor(task).some((r) => r.match === 'demonstration'))
+    return 'Demostración en la página de la fuente';
   if (referencesFor(task).length) return 'Ejemplo relacionado en la fuente';
   return 'Demostración pendiente';
 }

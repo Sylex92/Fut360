@@ -1553,3 +1553,62 @@ label.profile-checks {
 .week-total {
   font-weight: 650;
 }
+.personal-calendar label {
+  display: grid;
+  gap: 0.4rem;
+  margin-block: 0.6rem;
+}
+.personal-calendar fieldset {
+  min-width: 0;
+  border: 1px solid #c8d2bc;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+.personal-calendar input,
+.personal-calendar textarea,
+.personal-calendar select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.65rem;
+  border: 1px solid #859879;
+  border-radius: 0.45rem;
+  color: inherit;
+  background: white;
+}
+.personal-calendar textarea {
+  min-height: 5rem;
+}
+.calendar-day-edit {
+  padding: 0.8rem;
+  background: #f4f6ef;
+  border-radius: 0.6rem;
+  min-width: 0;
+}
+.dated-days {
+  list-style: none;
+  padding: 0;
+}
+.dated-days li {
+  border-bottom: 1px solid #d5decd;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+.dated-days li > div {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+.personal-calendar button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.skill-observations li {
+  border-bottom: 1px solid #d5decd;
+  padding-block: 1rem;
+}

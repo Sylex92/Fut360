@@ -1,5 +1,10 @@
 # Registro de recursos y licencias
 
+## Referencia externa NHS — 2026-10-05
+
+F01 enlaza [sentadilla NHS](https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/), sección «squat», orientación 0:08–0:42. Metadatos/observaciones en content/coaching/source-pages.json y [revisión](docs/reviews/dated-personal-plan.md). Sin descarga, copia, hash audiovisual ni nueva licencia asignada: los [términos §3.5](https://www.nhs.uk/our-policies/terms-and-conditions/) excluyen videos con personas identificables de la licencia general. No inferir permiso de redistribución ni aval NHS. La automatización adulta conserva el reproductor oficial YouTube existente, sus controles y atribución; ninguna dependencia o asset nuevo.
+
+
 ## Ampliación de referencias humanas — 2026-10-04
 
 Sin nuevos archivos audiovisuales descargados. Se añaden dos identificadores/rangos del reproductor oficial de YouTube: [NHS inform, elevación bilateral](https://www.youtube.com/watch?v=4rgR6KtyHzI), 0–15 s, y [NHFT, puente bilateral](https://www.youtube.com/watch?v=PPNCe7nX3Fc), 6–17 s. Origen, muestras observadas, decisiones de descarte y reproducción del rango comprobados en [informe](docs/reviews/personal-programs-and-visual-coverage.md). No asignar licencia libre ni derecho de distribución a sus medios; sin hash de archivo porque no se incorpora uno. Atribución y player original conservados.

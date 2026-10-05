@@ -10,6 +10,7 @@ import { downloadRecords } from '../platform/training-store';
 import { TaskInstructions } from './CoachingTask';
 import { ReferenceVideo } from './ReferenceVideo';
 import { SourceReferences } from './SourceReferences';
+import { useParticipant } from './ParticipantContext';
 export const clockText = (ms: number) => {
   const s = Math.ceil(ms / 1000);
   return `${Math.floor(s / 60)
@@ -29,6 +30,10 @@ export function CoachingRunner({
   const controller = useRef<GuidedSession | null>(null);
   const [state, setState] = useState<SessionProjection | null>(null);
   const [studying, setStudying] = useState(false);
+  const { participant } = useParticipant();
+  const [automaticVideos, setAutomaticVideos] = useState(false);
+  const [mediaReady, setMediaReady] = useState(true);
+  const mediaHold = useRef(false);
   const [message, setMessage] = useState('');
   const [rate] = useState<1 | 60>(() =>
     typeof window !== 'undefined' &&
@@ -65,6 +70,7 @@ export function CoachingRunner({
   function act(action: SessionAction) {
     const c = controller.current;
     if (!c) return;
+    if (action.type === 'Pause' || action.type === 'Abort') mediaHold.current = false;
     const result = c.act(action);
     setMessage(result.accepted ? '' : (result.reason ?? 'No se pudo realizar la acción.'));
     setState(c.snapshot().session);
@@ -103,6 +109,30 @@ export function CoachingRunner({
       : state?.phase === 'rest'
         ? 'Descanso y siguiente tarea'
         : 'Preparación';
+  function mediaAvailability(ready: boolean, issue?: string) {
+    const c = controller.current;
+    if (!c || !automaticVideos) return;
+    setMediaReady(ready);
+    if ((!ready || issue) && c.snapshot().session.status === 'running') {
+      c.act({ type: 'Pause' });
+      mediaHold.current = true;
+    }
+    if (issue) {
+      mediaHold.current = false;
+      setMessage(issue);
+    } else if (
+      ready &&
+      mediaHold.current &&
+      !document.hidden &&
+      c.snapshot().session.can.resume
+    ) {
+      mediaHold.current = false;
+      c.act({ type: 'Resume', visible: true, resourcesReady: true });
+      setMessage('');
+    }
+    setState(c.snapshot().session);
+    void history.save(c);
+  }
   return (
     <section className="panel coaching-runner" aria-labelledby="runner-heading">
       <div className="section-heading">
@@ -163,10 +193,42 @@ export function CoachingRunner({
         </p>
       </div>
       <div className="session-actions">
+        {mediaHold.current && (
+          <button
+            onClick={() => {
+              mediaHold.current = false;
+              setMessage('Pausa manual. El recorrido no se reanudará al terminar la carga.');
+              setState(controller.current!.snapshot().session);
+            }}
+          >
+            Mantener todo en pausa
+          </button>
+        )}
+        {participant?.kind !== 'child' && !complete && (
+          <button
+            onClick={() => {
+              if (automaticVideos) {
+                mediaHold.current = false;
+                setMediaReady(true);
+              }
+              setAutomaticVideos(!automaticVideos);
+              setStudying(false);
+            }}
+          >
+            {automaticVideos
+              ? 'Desactivar videos automáticos'
+              : 'Activar demostraciones automáticas'}
+          </button>
+        )}
         {state?.can.start && (
           <button
             className="primary"
-            disabled={!history.ready || Boolean(history.recovery) || Boolean(history.error)}
+            disabled={
+              !history.ready ||
+              Boolean(history.recovery) ||
+              Boolean(history.error) ||
+              (automaticVideos && !!task.videos[0] && !mediaReady)
+            }
             onClick={() => act({ type: 'Start' })}
           >
             Comenzar recorrido
@@ -180,8 +242,13 @@ export function CoachingRunner({
         {state?.can.resume && (
           <button
             className="primary"
+            disabled={automaticVideos && !!task.videos[0] && !mediaReady}
             onClick={() => {
               setStudying(false);
+              if (automaticVideos)
+                document
+                  .querySelector('.coaching-runner .youtube-frame')
+                  ?.scrollIntoView({ block: 'center', behavior: 'instant' });
               act({ type: 'Resume', visible: !document.hidden, resourcesReady: true });
             }}
           >
@@ -230,11 +297,29 @@ export function CoachingRunner({
           </button>
         )}
       </div>
+      {!automaticVideos && participant?.kind !== 'child' && !complete && (
+        <p className="quiet-note">
+          Las demostraciones automáticas conectan con YouTube: requieren Internet y pueden
+          mostrar anuncios.
+        </p>
+      )}
       {!complete && (
         <>
           <h3 className="current-task-title">{task.name}</h3>
           <p className="hour-dose">{block.dose}</p>
-          {task.videos[0] && (
+          {automaticVideos && task.videos[0] && (
+            <ReferenceVideo
+              key={task.id}
+              segment={task.videos[0]}
+              automatic
+              paused={state?.status === 'paused' && !mediaHold.current}
+              onAvailability={mediaAvailability}
+            />
+          )}
+          {automaticVideos && !task.videos[0] && (
+            <p>Esta tarea todavía no tiene video integrado. Sus instrucciones están debajo.</p>
+          )}
+          {!automaticVideos && task.videos[0] && (
             <>
               <button
                 onClick={() => {

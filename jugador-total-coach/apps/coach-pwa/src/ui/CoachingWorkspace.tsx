@@ -20,6 +20,7 @@ import { sessionRequirements } from '../composition/session-eligibility';
 import { sessionAudience } from '../composition/personal-programs';
 import { DevelopmentProgram } from './DevelopmentProgram';
 import { visualCoverage } from '../composition/visual-coverage';
+import { PersonalPlanCalendar } from './PersonalPlanCalendar';
 export function CoachingWorkspace({
   mode,
   onActiveChange,
@@ -128,6 +129,16 @@ export function CoachingWorkspace({
       )}
       {mode === 'plan' ? (
         <>
+          <PersonalPlanCalendar
+            onBusyChange={onActiveChange}
+            onSelect={(id) => {
+              setSelectedSession(id);
+              setSelected(null);
+              document
+                .getElementById('selected-proposal')
+                ?.scrollIntoView({ block: 'start', behavior: 'instant' });
+            }}
+          />
           <DevelopmentProgram
             onSelect={(id) => {
               setSelectedSession(id);
@@ -137,7 +148,10 @@ export function CoachingWorkspace({
                 ?.scrollIntoView({ block: 'start', behavior: 'instant' });
             }}
           />
-          <WeeklyPlanner onBusyChange={onActiveChange} />
+          <WeeklyPlanner
+            key={participant?.personalPlan?.versions.at(-1)?.savedAt ?? 'initial'}
+            onBusyChange={onActiveChange}
+          />
           {!child && (
             <details className="technical-details">
               <summary>Horizonte de desarrollo y sesiones con compañeros</summary>

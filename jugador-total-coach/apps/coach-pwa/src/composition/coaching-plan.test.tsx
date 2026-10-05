@@ -76,7 +76,7 @@ describe('Plan de varias duraciones', () => {
   it('conserva calentamiento, cierre, dosis finitas y suma preparación/trabajo/descanso', () => {
     expect(
       coachingSessions.map((s) => coachingPlans.get(s.id)!.expectedDurationMs / 60000),
-    ).toEqual([30, 45, 50, 45, 40, 20, 30, 24, 40, 32, 15, 15, 10]);
+    ).toEqual([30, 45, 50, 45, 40, 20, 30, 24, 40, 32, 15, 15, 10, 15]);
     for (const s of coachingSessions) {
       expect(s.blocks[0]!.taskId).toBe(s.audience === 'child' ? 'Y12' : 'W01');
       expect(s.blocks.at(-1)!.taskId).toBe(s.audience === 'child' ? 'Y13' : 'C01');

@@ -1,5 +1,8 @@
 # Empieza aquí — Jugador Total Coach
 
+**Continuación vigente 2026-10-05:** [calendario fechado y seguimiento por perfil](docs/reviews/dated-personal-plan.md) implementados, con preservación de datos (DB 4 / respaldo 3), rotación infantil de ocho semanas, cuatro complementos y video automático adulto comprobado. Horario/contexto ya recibidos: no repetir preguntas. La propuesta privada se revisa y guarda desde el perfil elegido; no está hardcodeada. Continuar enseñanza de ejercicios sin demostración suficiente e integración infantil compatible. No rehacer calendario/perfiles ni declarar completos los tres objetivos. Los párrafos siguientes conservan antecedentes.
+
+
 Continuación actual: [rutas adultas individuales y complementos infantiles](docs/reviews/personal-programs-and-visual-coverage.md), agenda por perfil, 69 fichas y cobertura visual explícita. Contexto y aclaración de disponibilidad recibidos: no repetir preguntas. Biblioteca humana todavía incompleta y YouTube infantil sin habilitar; no declarar cierre de los tres objetivos. Sony A80J identificada, [ruta documental](docs/reviews/sony-a80j-compatibility.md), prueba física pendiente. Consultar primero PROJECT_STATUS; datos reales fuera de Git.
 
 Última entrega técnica 2026-10-04: [perfiles e historiales aislados](docs/reviews/participant-isolation.md) implementados, con respaldo/restauración y conservación del legado. Continuar desde la [cobertura pendiente de los tres objetivos](docs/reviews/three-objective-coverage.md) y PROJECT_STATUS, no rehacer perfiles ni confundirlos con planes personales completos. El menú infantil sigue documental y la biblioteca visual incompleta.

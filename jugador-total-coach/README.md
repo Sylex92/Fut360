@@ -1,5 +1,8 @@
 # Fut360 — Jugador Total Coach
 
+**Actualización vigente · 2026-10-05:** calendario por fecha/perfil, resultados y observaciones comparables; ocho semanas infantiles con rotación sin aumentar duración y cuatro complementos propios. Entrada adulta revisable de dos semanas. Videos automáticos adultos opcionales, carga con reloj detenido y pausa manual conservada. DB 4 / respaldo completo 3; datos anteriores preservados. [Entrega y límites comprobados](docs/reviews/dated-personal-plan.md). La biblioteca visual y la integración infantil todavía no están completas. Los apartados fechados siguientes son antecedentes.
+
+
 **Actualización actual · 2026-10-04:** rutas por perfil, cinco sesiones adultas individuales nuevas y tres complementos infantiles de 10–15 min; propuesta de agenda sin sobrescribir actividades y biblioteca separada. 69 fichas, 15 con referencia del gesto, siete parciales; 47 sin video incrustado (siete con ejemplos externos). Historial infantil probado con recuperación y notas del adulto. **Todavía no es el cierre de los planes ni de toda su enseñanza visual.** [Entrega y pendientes concretos](docs/reviews/personal-programs-and-visual-coverage.md). Los párrafos siguientes conservan avances anteriores.
 
 **Actualización · 2026-10-04:** Mi plan incorpora disponibilidad y semana tipo por perfil, versiones conservadas, actividad externa y comprobación de personas/lugar/material de las propuestas. Agenda infantil separada, sin asignar las sesiones adultas. 269 pruebas correctas; recarga offline y preservación de perfiles/historial comprobadas. [Entrega y límites](docs/reviews/context-and-week.md). La agenda manual no completa todavía los planes personalizados ni la biblioteca. [Sony A80J: ruta documentada, prueba física pendiente](docs/reviews/sony-a80j-compatibility.md).
@@ -42,9 +45,9 @@ node tools/pnpm.mjs dev
 
 Abrir http://127.0.0.1:5173/. El preview existente en http://127.0.0.1:4173/ sirve el build: recargar para abrir **Mi plan**. Si aparece una copia offline anterior, abrir «Guardar la aplicación para uso sin conexión», preparar/comprobar y aplicar la actualización disponible. El teléfono usa el preview LAN documentado en desarrollo local.
 
-- Mi plan: etapas/criterios, cinco propuestas, organización/series/descansos, ficha por bloque y recorrido guardado. Recargar ofrece retomar la propuesta correcta en pausa.
-- Biblioteca: 52 fichas con instrucciones propias. «Ver video del ejercicio» conecta a YouTube: original delimitado, repetir/bucle y controles del proveedor. Requiere Internet y puede mostrar anuncios; el medio no se guarda offline.
-- En un recorrido, estudiar un video pausa el reloj. Todavía no se enlazan automáticamente todos los videos entre ejercicios. El reloj representa reproducción, no actividad medida.
+- Mi plan: calendario, versiones, resultados/observaciones y propuestas por perfil (diez adultas y cuatro infantiles). Recargar ofrece retomar la propuesta correcta en pausa.
+- Biblioteca: 69 fichas con instrucciones propias y cobertura visual declarada. «Ver video del ejercicio» conecta a YouTube en adulto: original delimitado, repetir/bucle y controles del proveedor. Requiere Internet y puede mostrar anuncios; el medio no se guarda offline. Infancia conserva enlaces externos acompañados y demostraciones pendientes.
+- En un recorrido adulto, «Activar demostraciones automáticas» abre los fragmentos disponibles y pausa el reloj durante carga. Estudiar el video sigue disponible como pausa explícita. Las tareas sin video no se presentan como demostradas. El reloj representa reproducción, no actividad medida.
 
 - Sesión v2: precarga movimientos, timeline, lado/ronda, siguiente ejercicio, preparación automática, +30 s/+1 min, pausa, inspección lenta, repetición, omisión y final sonoro silenciable. Mientras está activa hay que terminarla para cambiar de vista. Tras recarga, «Recuperar sesión» restaura el último guardado en pausa y «Continuar» lo reanuda; no cuenta tiempo cerrado.
 - Historial: guardado automático, sensaciones opcionales, copia JSON, importación con resumen/validación y borrado explícito. Guarda datos por navegador/origen; no sincroniza computadora/teléfono. Exporta copia antes de limpiar el navegador.
