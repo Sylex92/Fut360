@@ -1,5 +1,7 @@
 # Fut360 — Jugador Total Coach
 
+**Cobertura visual vigente 2026-10-06:** [punterazo y velocidad](docs/reviews/speed-and-toe-poke-video.md) añadidos. 69 fichas: 24 con referencia del gesto, 20 con componentes y 25 sin video integrado. Las cifras anteriores siguientes son históricas; no se declara completa la enseñanza.
+
 **Abrir la aplicación:** haz doble clic en [Abrir Fut360.cmd](Abrir%20Fut360.cmd). Inicia el servidor local, abre el navegador y muestra la dirección actual para teléfono/TV en la misma red. Puedes cerrar la ventana del lanzador; la computadora debe seguir encendida. Alternativa: `node tools/start-local.mjs`. [Detalle y verificación](docs/plans/local-start-and-coach.md). No instala nada ni modifica el arranque de Windows.
 
 Continuación 2026-10-06: [siete referencias humanas adicionales](docs/reviews/strength-human-video.md), seis de fuerza/movilidad y una de protección. Biblioteca vigente: 69 fichas, 23 con gesto, 18 con componente, 28 sin video integrado. Consultar PROJECT_STATUS para límites actuales; no cierre del producto ampliado.

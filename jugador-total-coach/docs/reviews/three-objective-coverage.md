@@ -1,5 +1,7 @@
 # Cobertura mínima para entregar los tres objetivos
 
+**Último incremento 2026-10-06:** [punterazo, aceleración y frenado](speed-and-toe-poke-video.md), 69/24 gesto/20 componente/25 sin video integrado; tres reproducciones reales comprobadas. Se mantiene cobertura infantil local de seis componentes. Lanzador local disponible; IA local sin preparar por capacidad de disco insuficiente. No cambia condiciones de cierre ni demuestra equivalencia completa de los componentes.
+
 **Continuación 2026-10-06:** [seis gestos de fuerza/movilidad y un componente de protección](strength-human-video.md) incorporados y probados. 69/23 gesto/18 componente/28 sin video integrado; tres originales FIFA locales, misma cobertura infantil de seis componentes. No modifica los criterios de cierre siguientes ni convierte componentes en tareas completas.
 
 **Estado más reciente, 2026-10-06:** [reproducción local infantil y vista TV](local-human-video.md) implementadas y comprobadas en navegador independiente. Dos originales FIFA, ocho fichas con componentes locales, seis infantiles. Biblioteca vigente 69/17 gesto/17 componente/35 sin video integrado. Descarga específica autorizada y ejecutada; no repetir esa consulta. La vista TV tiene controles/foco/teclas comprobados en PC, pero la integración y aceptación física Sony siguen pendientes. Continúan pendientes enseñanza completa, conversación y adaptación por competencia; se conservan calendarios/dosis/historial. Los párrafos siguientes describen el incremento anterior.

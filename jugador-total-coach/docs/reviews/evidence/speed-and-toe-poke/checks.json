@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-06",
+  "environment": "Navegador independiente, contexto sintético nuevo; no dispositivos físicos",
+  "results": [
+    {
+      "id": "T21",
+      "videoId": "2Dt2DbjAKbo",
+      "start": 17,
+      "end": 23,
+      "beginning": {
+        "time": 17.292857,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 23.001036,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "T22",
+      "videoId": "yEqMUsv8jIQ",
+      "start": 116,
+      "end": 129,
+      "beginning": {
+        "time": 116.472755,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 129.003579,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "T15",
+      "videoId": "N_0eAihydJ8",
+      "start": 36,
+      "end": 42.3,
+      "rate": 0.5,
+      "beginning": {
+        "time": 36.100489,
+        "paused": false,
+        "rate": 0.5
+      },
+      "ending": {
+        "time": 42.300498,
+        "paused": true
+      },
+      "nativeActivation": false
+    }
+  ],
+  "mobileOverflow": false,
+  "pageErrors": [],
+  "provider": "YouTube real"
+}

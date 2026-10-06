@@ -1,5 +1,9 @@
 # Registro de recursos y licencias
 
+## Punterazo y velocidad — 2026-10-06
+
+Solo referencias del reproductor oficial YouTube: N_0eAihydJ8 (Futsal Movement), 2Dt2DbjAKbo y yEqMUsv8jIQ (7mlc). [Rangos, fuentes, observación y límites](docs/reviews/speed-and-toe-poke-video.md). Sin descarga, licencia abierta inferida, transcripción íntegra o capturas distribuidas. Se mantienen atribución, controles y condiciones de proveedor. No incorporar estas referencias a la audiencia infantil ni adoptar cargas del autor.
+
 ## Fuerza, movilidad y protección — continuación 2026-10-06
 
 Seis YouTube nuevos, solo reproductor oficial sin descargar medios, con atribución y controles: qQ5KhRESzDs (The Musculoskeletal Clinic), kmzcmFZ9NyY (South Tees NHS), JCVKPOdoA08 (Sports Rehab Expert), jHtYBWfQX4M (North Bristol NHS), 432xTSQpaG0 (The BeFit Physio Method) y Y48sAE4m2Uc (Peak Physio). [Fuentes, rangos, correspondencia y límites](docs/reviews/strength-human-video.md). No se asigna licencia abierta ni se redistribuyen capturas/transcripciones.

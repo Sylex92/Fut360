@@ -1,5 +1,11 @@
 # Estado del proyecto
 
+## Punterazo y referencias de velocidad — 2026-10-06
+
+[Tres referencias más incorporadas y reproducidas](docs/reviews/speed-and-toe-poke-video.md): gesto de punterazo T15, componentes de aceleración T21 y frenado T22. **Cobertura vigente: 69 fichas / 24 gesto / 20 componente / 25 sin video integrado**; seis componentes infantiles sin cambios. No se adoptan cargas, vallas, ángulos exigentes ni contacto adulto para infancia por incluir una fuente. 299 pruebas aprobadas y una opt-in omitida, tipos/lint/build correctos, reproducción real y 390 px sin errores/desbordamiento. Planes, dosis, datos y respaldos conservados.
+
+Inicio autónomo disponible mediante `Abrir Fut360.cmd`. Candidato conversacional sin preparar por capacidad de disco: última lectura 307.240.960 bytes libres en C:, muy inferior a los 5 GB solicitados. La consulta de espacio sigue pendiente; no pedir de nuevo autorizaciones generales. Producto completo aún abierto por enseñanza suficiente, conversación/adaptación y validación física de destinos. Ver los informes anteriores para detalle, no sus cifras históricas como recuento actual.
+
 ## Inicio independiente del chat — 2026-10-06
 
 Implementado `Abrir Fut360.cmd`: inicia/reutiliza servidores del build existente y muestra la IP privada vigente; sin instalador, servicio global, firewall ni cambios de datos. [Alcance y pruebas](docs/plans/local-start-and-coach.md). Ensayo real de arranque/reutilización con puerto efímero y comprobación de 4173/4174; 299 pruebas aprobadas, una opt-in omitida; tipos/lint correctos. La biblioteca conserva 69/23 gesto/18 componente/28 sin video integrado.

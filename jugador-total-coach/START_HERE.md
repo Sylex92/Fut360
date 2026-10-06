@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+**Cobertura vigente:** [punterazo y componentes de velocidad](docs/reviews/speed-and-toe-poke-video.md), 69/24 gesto/20 componente/25 sin video integrado; 299 pruebas y tres reproducciones reales del último incremento. Continuar los pendientes acumulados; cifras siguientes históricas.
+
 **Inicio autónomo 2026-10-06:** [Abrir Fut360.cmd](Abrir%20Fut360.cmd) inicia/reutiliza el servidor y muestra la IP Wi-Fi vigente; no depende de mantener este chat activo. [Plan y evidencia](docs/plans/local-start-and-coach.md). El candidato de IA local todavía no se ha descargado: falta espacio en C:, consulta concreta pendiente. Continuar las tareas independientes sin repetir permisos generales.
 
 **Último incremento 2026-10-06:** [fuerza, movilidad y protección humanas](docs/reviews/strength-human-video.md). Cobertura vigente 69/23 gesto/18 componente/28 sin video integrado. Seis YouTube adicionales y un tercer original FIFA local adulto; seis componentes infantiles sin cambios. Planes/dosis/historial conservados. Continuar pendientes acumulados sin repetir permisos generales.

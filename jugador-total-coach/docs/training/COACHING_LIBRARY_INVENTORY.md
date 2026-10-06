@@ -1,6 +1,6 @@
 # Inventario de enseñanza dentro de la aplicación
 
-2026-10-06. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 69 fichas / 32 familias. 23 fichas con referencia del gesto, 18 con un componente y 28 sin video integrado. Son 19 videos YouTube originales y 3 originales locales FIFA. 9 fichas usan componentes locales, incluidas 6 infantiles. Las fichas no equivalen a patrones o videos distintos. Los enlaces externos complementan el inventario y no se suman como otra demostración.
+2026-10-06. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 69 fichas / 32 familias. 24 fichas con referencia del gesto, 20 con un componente y 25 sin video integrado. Son 22 videos YouTube originales y 3 originales locales FIFA. 9 fichas usan componentes locales, incluidas 6 infantiles. Las fichas no equivalen a patrones o videos distintos. Los enlaces externos complementan el inventario y no se suman como otra demostración.
 
 Todas las fichas incluyen organización, pasos, objetivo, errores y cambios de dificultad/modalidad. Permanecen documentary-draft: referencia visible, corrección técnica, dosis personal y eficacia no son equivalentes. “Gesto observado” no significa visionado íntegro del video, fotogramas completos revisados o equivalencia de toda la tarea. [Observaciones y límites](../research/VIDEO_TEACHING_REVIEW.md).
 
@@ -22,14 +22,14 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 | T12 | Recibir de espaldas: descargar o girar | T12 | court; 3 persona(s) | [Futsal Movement 1:42–2:02](https://www.youtube.com/watch?v=VkDQ4F9c6Fk&t=102s) · componente |
 | T13 | Golpeo dirigido a una zona | T13 | goal-area; 1 persona(s) | [Become Elite 9:56–10:32](https://www.youtube.com/watch?v=Bd7TH9t_djM&t=596s) · componente |
 | T14 | Finalizar o asistir con oposición | T14 | goal-area; 3 persona(s) | Demostración pendiente |
-| T15 | Punterazo como recurso de finalización | T15 | goal-area; 1 persona(s) | Demostración pendiente |
+| T15 | Punterazo como recurso de finalización | T15 | goal-area; 1 persona(s) | [Futsal Movement 0:36–0:42.3](https://www.youtube.com/watch?v=N_0eAihydJ8&t=36s) · gesto observado |
 | T16 | Desmarque y recepción fuera de la atención del rival | T16 | pitch; 3 persona(s) | Demostración pendiente |
 | T17 | Aproximarse, frenar y temporizar | T17 | court; 2 persona(s) | [AllAttack 2:10–2:45](https://www.youtube.com/watch?v=4vBZzkVRqbE&t=130s) · componente |
 | T18 | Presionar con cobertura | T18 | court; 4 persona(s) | Demostración pendiente |
 | T19 | Anticipar un pase sin regalar la espalda | T19 | court; 3 persona(s) | Demostración pendiente |
 | T20 | Pérdida, recuperación y cambio de rol | T20 | court; 4 persona(s) | Demostración pendiente |
-| T21 | Aceleración de calidad | T21 | running-area; 1 persona(s) | Demostración pendiente |
-| T22 | Frenado y cambio de dirección previsto | T22 | running-area; 1 persona(s) | Demostración pendiente |
+| T21 | Aceleración de calidad | T21 | running-area; 1 persona(s) | [7mlc 0:17–0:23](https://www.youtube.com/watch?v=2Dt2DbjAKbo&t=17s) · componente |
+| T22 | Frenado y cambio de dirección previsto | T22 | running-area; 1 persona(s) | [7mlc 1:56–2:09](https://www.youtube.com/watch?v=yEqMUsv8jIQ&t=116s) · componente |
 | T23 | Agilidad frente a una intención real | T23 | court; 2 persona(s) | Demostración pendiente |
 | T24 | Carrera rápida con espacio suficiente | T24 | pitch; 1 persona(s) | Demostración pendiente |
 | T25 | Sprints repetidos con control de deterioro | T25 | running-area; 1 persona(s) | Demostración pendiente |

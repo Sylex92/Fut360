@@ -608,16 +608,29 @@
       "mistakes": "Golpear descalzo, desde demasiado lejos o insistir ante dolor.",
       "easier": "Solo explicación y familiarización de contacto.",
       "harder": "Balón en movimiento. Añadir decisión ante bloqueo.",
-      "limits": "Prioridad solicitada para futsal; técnica detallada y fuente visual específica PENDIENTES. C10/C12 apoyan contexto, no validan este gesto.",
+      "limits": "Referencia visual del golpeo y su resultado; la precisión, intensidad y adecuación individual no quedan validadas por el video. Empezar con poca fuerza y calzado adecuado; no insistir si molesta. La fuente FIFA respalda su contexto táctico, no una dosis.",
       "modalities": {
         "fut5": "Recurso candidato de poco armado; no obligatorio en toda finalización.",
         "fut7": "Opción situacional cuando falta tiempo.",
         "fut11": "Opción situacional; no sustituye el repertorio de golpeos."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t15",
+          "videoId": "N_0eAihydJ8",
+          "channel": "Futsal Movement",
+          "title": "Punterazo: colocación, golpeo corto y resultado",
+          "start": 36,
+          "end": 42.3,
+          "match": "demonstration",
+          "note": "Muestra un punterazo tras un toque corto de colocación y el recorrido hacia portería. Empieza con balón quieto y poca fuerza; usa calzado adecuado. El ejemplo no fija tu potencia ni garantiza precisión. Puedes reducir la velocidad para observar el apoyo y el contacto."
+        }
+      ],
       "sourceRefs": [
         "C10",
-        "C12"
+        "C12",
+        "https://www.youtube.com/watch?v=N_0eAihydJ8",
+        "https://www.fifatrainingcentre.com/en/game/tournaments/fifa-futsal-world-cup/direct-attack.php"
       ],
       "review": "documentary-draft"
     },
@@ -835,10 +848,22 @@
         "fut7": "Tramos candidatos de 5–20 m más margen de frenado.",
         "fut11": "Salidas de apoyo, presión o desmarque con tramo específico."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t21",
+          "videoId": "2Dt2DbjAKbo",
+          "channel": "7mlc",
+          "title": "Salida y primeros apoyos de una aceleración",
+          "start": 17,
+          "end": 23,
+          "match": "component",
+          "note": "Observa la salida y cómo acompañan los brazos. El montaje corta antes de mostrar todo el frenado y la recuperación: deja espacio más allá de la marca y reduce la velocidad gradualmente. No copies la intensidad, las vallas ni las series del autor."
+        }
+      ],
       "sourceRefs": [
         "C10",
-        "C16"
+        "C16",
+        "https://www.youtube.com/watch?v=2Dt2DbjAKbo"
       ],
       "review": "documentary-draft"
     },
@@ -870,10 +895,22 @@
         "fut7": "Cambio tras conducción o presión.",
         "fut11": "Frenar desde velocidades de entrada variadas."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t22",
+          "videoId": "yEqMUsv8jIQ",
+          "channel": "7mlc",
+          "title": "Acercarse, frenar y cambiar el sentido de carrera",
+          "start": 116,
+          "end": 129,
+          "match": "component",
+          "note": "Muestra un frenado seguido de regreso en sentido contrario, con cambio de cámara. Tu tarea empieza a ritmo moderado y con una salida lateral menos exigente. Estudia los pasos antes del giro; no copies una frenada brusca, el ángulo ni las series del video."
+        }
+      ],
       "sourceRefs": [
         "C13",
-        "C17"
+        "C17",
+        "https://www.youtube.com/watch?v=yEqMUsv8jIQ"
       ],
       "review": "documentary-draft"
     },
