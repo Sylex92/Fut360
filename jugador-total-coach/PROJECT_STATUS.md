@@ -1,5 +1,11 @@
 # Estado del proyecto
 
+## Comprobación de acceso e inventario — 2026-10-05
+
+El usuario informó que localhost no cargaba. Se reprodujo rechazo de conexión en 127.0.0.1:4173 y se relanzó el preview existente, sin recompilar ni tocar perfiles. HTTP 200 con bundle `index-B44-LCVf.js`; carga de «Mi plan de desarrollo» comprobada en contexto independiente sin errores de página. LAN 192.168.68.101:4174 también responde 200. El navegador integrado no expuso backend accesible; no afirmar haber recargado su pestaña real. El servidor local debe estar activo para abrir enlaces localhost; no se instaló un servicio ni arranque global.
+
+Se contó el inventario desde archivos: 5.764 URLs únicas localizadas en siete canales; censo de títulos/enlaces, no visionado ni extracción completa de ejercicios. Aplicación: 69 fichas, 15 con referencia del gesto incrustada, siete con componente incrustado, una con gesto externo NHS, siete con componente externo FIFA y 39 sin referencia de video. Tener referencia por muestras no es validación íntegra. La enseñanza visual pendiente requiere selección de la variante, observación de ejecución/correcciones/transiciones, integración del tramo pertinente y comprobación de claridad/reproducción. No falta nueva autorización general ni información personal para hacerlo. El límite infantil de YouTube no explica los faltantes adultos; no atribuir todo el retraso a licencias o acceso. Priorizar completar los ejercicios de los dos planes sobre añadir más estructura o fichas nominales.
+
 ## Entrega vigente — calendario personal y seguimiento · 2026-10-05
 
 Horario infantil recibido, sin más consultas de disponibilidad. Datos privados fuera de Git. [Entrega, verificaciones y pendientes](docs/reviews/dated-personal-plan.md), [reglas deportivas internas](docs/training/CALENDAR_REVIEW_RULES.md).
