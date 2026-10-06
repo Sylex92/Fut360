@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-05",
+  "scope": "Adult reference playback and visual-teaching increment",
+  "environment": "Independent Playwright Chromium; synthetic profiles; mobile viewport emulation only",
+  "live": [
+    {
+      "id": "T29",
+      "videoId": "WNUrEBrDwPc",
+      "start": 0,
+      "end": 10.25,
+      "beginning": {
+        "time": 0.442008,
+        "paused": false
+      },
+      "ending": {
+        "time": 10.261,
+        "paused": true
+      }
+    },
+    {
+      "id": "F01",
+      "videoId": "F7CQk7e8v50",
+      "start": 0,
+      "end": 8,
+      "beginning": {
+        "time": 0.403398,
+        "paused": false
+      },
+      "ending": {
+        "time": 8.012716,
+        "paused": true
+      }
+    },
+    {
+      "id": "S01",
+      "videoId": "naEccnjzLxM",
+      "start": 76,
+      "end": 86,
+      "beginning": {
+        "time": 76.401296,
+        "paused": false
+      },
+      "ending": {
+        "time": 86.012572,
+        "paused": true
+      }
+    },
+    {
+      "id": "S04",
+      "videoId": "oIpRuzvsU80",
+      "start": 159,
+      "end": 167,
+      "beginning": {
+        "time": 159.44716,
+        "paused": false
+      },
+      "ending": {
+        "time": 167.005622,
+        "paused": true
+      }
+    },
+    {
+      "id": "W01",
+      "videoId": "c41OYHF9BB8",
+      "start": 102,
+      "end": 109,
+      "beginning": {
+        "time": 102.290063,
+        "paused": false
+      },
+      "ending": {
+        "time": 109.019582,
+        "paused": true
+      }
+    },
+    {
+      "id": "S02",
+      "videoId": "oIpRuzvsU80",
+      "start": 159,
+      "end": 167,
+      "beginning": {
+        "time": 159.265517,
+        "paused": false
+      },
+      "ending": {
+        "time": 167.014057,
+        "paused": true
+      }
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "physicalDevice": false
+  },
+  "pageErrors": [],
+  "automaticVideo": {
+    "oneActivation": true,
+    "loadingHold": true,
+    "manualPause": true,
+    "videoPausesWithClock": true,
+    "manualHoldNotOverridden": true,
+    "errorPaused": true,
+    "exampleSpeedIndependent": true,
+    "provider": "simulated"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "passed": 282,
+      "skipped": 1
+    },
+    "format": "passed",
+    "build": "passed",
+    "warning": "Existing chunks above 500 kB"
+  },
+  "mediaFilesDownloaded": false,
+  "realProfileStorageTouched": false,
+  "completeLibrary": false,
+  "completeProduct": false,
+  "liveSpeed": {
+    "results": [
+      {
+        "id": "S02",
+        "videoId": "oIpRuzvsU80",
+        "start": 159,
+        "end": 167,
+        "rate": 0.5,
+        "beginning": {
+          "time": 159.225597,
+          "paused": false,
+          "rate": 0.5
+        },
+        "ending": {
+          "time": 167.008682,
+          "paused": true
+        }
+      }
+    ],
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "provider": "YouTube real"
+  },
+  "limitations": [
+    "Visual samples, not full-video review or professional validation",
+    "S01/S02/S04/W01 references cover components only",
+    "Child FIFA downloads await user reply to specific authorization",
+    "Samsung and Sony physical checks not performed this turn"
+  ]
+}

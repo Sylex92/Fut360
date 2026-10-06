@@ -54,6 +54,8 @@ function AdultReferenceVideo({
   const [status, setStatus] = useState('');
   const [error, setError] = useState('');
   const [readyToPlay, setReadyToPlay] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(1);
+  const [availableRates, setAvailableRates] = useState<number[]>([1]);
   const [loop, setLoop] = useState(automatic);
   const availability = useRef(onAvailability);
   availability.current = onAvailability;
@@ -74,6 +76,7 @@ function AdultReferenceVideo({
     let cancelled = false;
     let instance: YouTubePlayer | null = null;
     let ready = false;
+    let mediaAvailable = false;
     let resumeHidden = false;
     let inViewport = true;
     const host = box.current;
@@ -82,6 +85,8 @@ function AdultReferenceVideo({
     setStatus('Conectando con YouTube…');
     setError('');
     setReadyToPlay(false);
+    setPlaybackRate(1);
+    setAvailableRates([1]);
     const bounds = () => segmentRequest(segment);
     let restarting = false;
     const finish = () => {
@@ -96,7 +101,7 @@ function AdultReferenceVideo({
       }
     };
     const timeout = setTimeout(() => {
-      if (!ready && !cancelled) {
+      if (!mediaAvailable && !cancelled) {
         setStatus('Video no disponible.');
         setError('La referencia tarda en responder. Puedes abrirla en YouTube o reintentar.');
         availability.current?.(
@@ -124,9 +129,7 @@ function AdultReferenceVideo({
             onReady: ({ target }) => {
               if (cancelled) return;
               ready = true;
-              setReadyToPlay(true);
               setError('');
-              clearTimeout(timeout);
               player.current = target;
               target.getIframe().title = `${segment.title} — ${segment.channel}`;
               target.getIframe().referrerPolicy = 'strict-origin-when-cross-origin';
@@ -135,7 +138,6 @@ function AdultReferenceVideo({
                 target.loadVideoById(bounds());
               } else {
                 target.cueVideoById(bounds());
-                if (automatic) availability.current?.(true);
               }
               setStatus(
                 automatic
@@ -143,8 +145,16 @@ function AdultReferenceVideo({
                   : 'Usa el botón de reproducción del video.',
               );
             },
-            onStateChange: ({ data }) => {
+            onStateChange: ({ data, target }) => {
               if (cancelled) return;
+              if (data === 1 || data === 5) {
+                mediaAvailable = true;
+                setReadyToPlay(true);
+                clearTimeout(timeout);
+                setAvailableRates(target.getAvailablePlaybackRates());
+                setPlaybackRate(target.getPlaybackRate());
+              }
+              if (data === 5 && automatic) availability.current?.(true);
               if (data === 0) finish();
               if (data === 1) {
                 if (instance && instance.getCurrentTime() < segment.end) restarting = false;
@@ -175,6 +185,11 @@ function AdultReferenceVideo({
                   true,
                   'El video está en pausa. Reprodúcelo y pulsa Continuar cuando estés preparado.',
                 );
+            },
+            onPlaybackRateChange: ({ data, target }) => {
+              if (cancelled) return;
+              setAvailableRates(target.getAvailablePlaybackRates());
+              setPlaybackRate(data);
             },
             onError: ({ data }) => {
               if (!cancelled) {
@@ -262,6 +277,9 @@ function AdultReferenceVideo({
           {videoTime(segment.start)}–{videoTime(segment.end)} · {segment.channel}
         </span>
       </div>
+      {segment.match === 'component' && (
+        <p className="quiet-note">Este video muestra una parte del ejercicio.</p>
+      )}
       {!opened ? (
         <div className="video-consent">
           <button type="button" className="primary" onClick={() => setOpened(true)}>
@@ -276,6 +294,22 @@ function AdultReferenceVideo({
             {status}
           </p>
           <div className="video-actions">
+            <label>
+              Velocidad del ejemplo{' '}
+              <select
+                value={playbackRate}
+                disabled={!readyToPlay || Boolean(error) || availableRates.length < 2}
+                onChange={(event) =>
+                  player.current?.setPlaybackRate(Number(event.target.value))
+                }
+              >
+                {availableRates.map((rate) => (
+                  <option key={rate} value={rate}>
+                    {rate === 1 ? 'Normal' : `${rate}×`}
+                  </option>
+                ))}
+              </select>
+            </label>
             <button
               type="button"
               disabled={!readyToPlay || Boolean(error)}
@@ -299,6 +333,9 @@ function AdultReferenceVideo({
               Reintentar video
             </button>
           </div>
+          <p className="quiet-note">
+            La velocidad del ejemplo no cambia el reloj ni las repeticiones de tu sesión.
+          </p>
         </>
       )}
       {error && <p role="alert">{error}</p>}

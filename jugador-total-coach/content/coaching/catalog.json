@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "status": "planning-draft",
   "tasks": [
     {
@@ -1101,9 +1101,21 @@
         "fut7": "Base compartida para posteriores acciones.",
         "fut11": "Base compartida para posteriores acciones."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "peak-heel-slide",
+          "videoId": "WNUrEBrDwPc",
+          "channel": "Peak Physio",
+          "title": "Deslizar un talón y volver",
+          "start": 0,
+          "end": 10.25,
+          "match": "demonstration",
+          "note": "Se ve el deslizamiento sobre una camilla. Aquí se hace sobre colchoneta: mueve una pierna mientras la otra queda apoyada y respira normalmente. Una ida y vuelta es una repetición; alterna piernas. El video empieza ya tumbado."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.peak-physio.com.au/exercise/heel-slides/"
       ],
       "review": "documentary-draft"
     },
@@ -1777,9 +1789,21 @@
         "fut7": "Base común; ajustar al ida y vuelta.",
         "fut11": "Base común; ajustar al rol y calendario."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "peak-bodyweight-squat",
+          "videoId": "F7CQk7e8v50",
+          "channel": "Peak Physio",
+          "title": "Sentadilla: descenso y regreso",
+          "start": 0,
+          "end": 8,
+          "match": "demonstration",
+          "note": "Observa el apoyo de los pies y cómo descienden y vuelven cadera y rodillas. El encuadre muestra sobre todo piernas y tronco; conserva cuello cómodo y mirada al frente. La silla del fondo no se usa. Elige una profundidad cómoda, sin copiar una medida exacta."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.peak-physio.com.au/exercise/squat/"
       ],
       "review": "documentary-draft"
     },
@@ -1999,9 +2023,21 @@
         "fut7": "Cambios de apoyo en desplazamiento.",
         "fut11": "Preparación para variantes de carrera/recepción."
       },
-      "videos": [],
+      "videos": [
+        {
+        "id": "bhf-warmup-march",
+        "videoId": "c41OYHF9BB8",
+        "channel": "British Heart Foundation",
+        "title": "Inicio del calentamiento: marcha suave",
+        "start": 102,
+        "end": 109,
+        "match": "component",
+        "note": "Observa a la persona de pie: levanta poco cada pie y vuelve a apoyarlo antes de alternar. Es solo el comienzo; continúa con la movilidad y los gestos suaves de la ficha. Usa un ritmo cómodo y los tiempos de tu sesión, sin copiar las repeticiones de la clase."
+        }
+      ],
       "sourceRefs": [
-        "C04"
+        "C04",
+      "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/warm-up-exercises"
       ],
       "review": "documentary-draft"
     },
@@ -2067,9 +2103,21 @@
         "fut7": "Conectar conducción y pase con recorridos medios.",
         "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "unisport-outside-dribble",
+          "videoId": "naEccnjzLxM",
+          "channel": "Unisport",
+          "title": "Conducción: contacto con el exterior",
+          "start": 76,
+          "end": 86,
+          "match": "component",
+          "note": "Observa los contactos cortos con el exterior y cómo el cuerpo acompaña al balón. Es una parte del ejercicio: nuestras puertas, el giro y la alternancia con el interior se organizan como indica la ficha. Empieza caminando; no copies la velocidad del ejemplo."
+        }
+      ],
       "sourceRefs": [
-        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
+        "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
+        "https://www.youtube.com/watch?v=naEccnjzLxM"
       ],
       "review": "documentary-draft"
     },
@@ -2102,9 +2150,21 @@
         "fut7": "Conectar conducción y pase con recorridos medios.",
         "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "unisport-ground-contact",
+          "videoId": "oIpRuzvsU80",
+          "channel": "Unisport",
+          "title": "El contacto raso para dirigir el balón",
+          "start": 159,
+          "end": 167,
+          "match": "component",
+          "note": "Esta referencia enseña el contacto del pase con el interior. Para esta tarea añades los toques de preparación y diriges ese contacto hacia la puerta, con fuerza controlada. No muestra la secuencia completa de conducción y finalización."
+        }
+      ],
       "sourceRefs": [
-        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball"
+        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball",
+        "https://www.youtube.com/watch?v=oIpRuzvsU80"
       ],
       "review": "documentary-draft"
     },
@@ -2171,9 +2231,21 @@
         "fut7": "Conectar conducción y pase con recorridos medios.",
         "fut11": "Ampliar distancias después de dominar el gesto; este ejercicio solo no entrena la lectura del partido."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "unisport-inside-pass",
+          "videoId": "oIpRuzvsU80",
+          "channel": "Unisport",
+          "title": "Contacto del pase con el interior",
+          "start": 159,
+          "end": 167,
+          "match": "component",
+          "note": "Muestra el apoyo y el golpeo con el interior. En nuestra tarea el destino es la puerta marcada: pasa raso, recupera caminando y vuelve a colocar el balón antes del siguiente intento. El video no muestra esa recuperación ni nuestras distancias."
+        }
+      ],
       "sourceRefs": [
-        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball"
+        "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball",
+        "https://www.youtube.com/watch?v=oIpRuzvsU80"
       ],
       "review": "documentary-draft"
     },

@@ -1,5 +1,17 @@
 # Estado del proyecto
 
+## Enseñanza visual y controles de reproducción — 2026-10-05
+
+Continuación autónoma solicitada. Se incorporaron referencias humanas para T29/F01 y componentes para S01/S02/S04/W01; [tramos, correspondencia y límites](docs/reviews/visual-teaching-increment.md). La biblioteca contiene 69 fichas: 17 con referencia del gesto, 11 con componentes y 41 sin video incrustado. No equivalen a 28 demostraciones completas. C01 y la enseñanza infantil siguen pendientes; no se rellena una ficha con una variante distinta por aumentar el contador.
+
+Se puede cambiar la velocidad del ejemplo con las velocidades admitidas por YouTube, sin cambiar el reloj ni las repeticiones. Comenzar y Continuar centran la demostración; los controles esperan al video preparado. Corregidos el final incompleto del talón y una referencia NHS que deniega inserción; BHF comprobado como sustitución para la marcha suave. Sin medios descargados, dependencias, cambios globales o modificación de datos reales.
+
+**Comprobado:** tipos/lint/formato/build, 282 pruebas correctas y una opt-in omitida. Prueba de pausas/carga/velocidad con proveedor simulado y seis referencias reales reproducidas/detenidas en sus rangos. Sin errores de página ni desbordamiento a 390×844; [evidencia](docs/reviews/evidence/visual-teaching/checks.json). Emulación, no prueba física Samsung/Sony. Permanece advertencia de bundles >500 kB. Preview recompilado y servidor local conservado.
+
+**Autorización específica pendiente:** descarga por botones oficiales de dos videos FIFA de Speed and control para estudiar integración infantil personal no comercial. La revisión automática rechazó el primer clic por autorización de descarga no expresa y condiciones aún insuficientemente verificadas; no se descargó ni eludió. Se revisaron después términos §6.4 y se formuló la consulta concreta al usuario. No volver a pedir datos personales ni autorización general de implementación. Mientras no responda, conservar enlaces externos y prohibición de YouTube infantil sin designación. Esta autorización por sí sola no completa todas las demostraciones ni todo el producto.
+
+**Sigue abierto:** enseñanza suficiente de ambos planes, adaptación por competencia observada, conversación desde la app y comprobación física en dispositivos. [Matriz de cierre](docs/reviews/three-objective-coverage.md). Los apartados siguientes son históricos y sus cifras no sustituyen este recuento.
+
 ## Comprobación de acceso e inventario — 2026-10-05
 
 El usuario informó que localhost no cargaba. Se reprodujo rechazo de conexión en 127.0.0.1:4173 y se relanzó el preview existente, sin recompilar ni tocar perfiles. HTTP 200 con bundle `index-B44-LCVf.js`; carga de «Mi plan de desarrollo» comprobada en contexto independiente sin errores de página. LAN 192.168.68.101:4174 también responde 200. El navegador integrado no expuso backend accesible; no afirmar haber recargado su pestaña real. El servidor local debe estar activo para abrir enlaces localhost; no se instaló un servicio ni arranque global.

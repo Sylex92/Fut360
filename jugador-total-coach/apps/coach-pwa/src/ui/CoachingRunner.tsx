@@ -133,6 +133,12 @@ export function CoachingRunner({
     setState(c.snapshot().session);
     void history.save(c);
   }
+  function showDemonstration() {
+    if (automaticVideos)
+      document
+        .querySelector('.coaching-runner .youtube-frame')
+        ?.scrollIntoView({ block: 'center', behavior: 'instant' });
+  }
   return (
     <section className="panel coaching-runner" aria-labelledby="runner-heading">
       <div className="section-heading">
@@ -229,7 +235,10 @@ export function CoachingRunner({
               Boolean(history.error) ||
               (automaticVideos && !!task.videos[0] && !mediaReady)
             }
-            onClick={() => act({ type: 'Start' })}
+            onClick={() => {
+              showDemonstration();
+              act({ type: 'Start' });
+            }}
           >
             Comenzar recorrido
           </button>
@@ -245,10 +254,7 @@ export function CoachingRunner({
             disabled={automaticVideos && !!task.videos[0] && !mediaReady}
             onClick={() => {
               setStudying(false);
-              if (automaticVideos)
-                document
-                  .querySelector('.coaching-runner .youtube-frame')
-                  ?.scrollIntoView({ block: 'center', behavior: 'instant' });
+              showDemonstration();
               act({ type: 'Resume', visible: !document.hidden, resourcesReady: true });
             }}
           >

@@ -37,6 +37,9 @@ export interface YouTubePlayer {
   mute(): void;
   getCurrentTime(): number;
   getPlayerState(): number;
+  getPlaybackRate(): number;
+  getAvailablePlaybackRates(): number[];
+  setPlaybackRate(rate: number): void;
   getIframe(): HTMLIFrameElement;
   destroy(): void;
 }
@@ -52,6 +55,7 @@ interface YouTubeApi {
       events: {
         onReady: (event: { target: YouTubePlayer }) => void;
         onStateChange: (event: { data: number; target: YouTubePlayer }) => void;
+        onPlaybackRateChange: (event: { data: number; target: YouTubePlayer }) => void;
         onError: (event: { data: number }) => void;
         onAutoplayBlocked: () => void;
       };

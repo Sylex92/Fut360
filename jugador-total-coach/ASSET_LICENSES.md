@@ -1,5 +1,17 @@
 # Registro de recursos y licencias
 
+## Seis referencias adultas, sin descarga — 2026-10-05
+
+Metadatos/rangos nuevos en el catálogo; no archivos audiovisuales ni hashes de medios. Se mantiene el reproductor oficial, atribución, controles y enlaces, conforme a la [revisión de derechos](docs/reviews/video-reference-cost-and-rights.md). No se asigna licencia abierta a estos videos:
+
+- Peak Physio: [talón alterno](https://www.peak-physio.com.au/exercise/heel-slides/), YouTube WNUrEBrDwPc 0–10,25 s; [sentadilla](https://www.peak-physio.com.au/exercise/squat/), F7CQk7e8v50 0–8 s.
+- Unisport: [pase interior](https://www.youtube.com/watch?v=oIpRuzvsU80) 159–167 s, compartido por dos fichas como componente; [conducción](https://www.youtube.com/watch?v=naEccnjzLxM) 76–86 s, componente exterior.
+- British Heart Foundation: [calentamiento](https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/warm-up-exercises), c41OYHF9BB8 102–109 s, componente de marcha.
+
+Las seis asignaciones se reprodujeron realmente dentro de la app. NHS oLu9kwDzBdg se excluyó porque su autor deniega inserción. No descargar ni cambiar de host para eludirla. [Observaciones y límites](docs/reviews/visual-teaching-increment.md).
+
+FIFA: términos §6.4 contemplan display no comercial condicionado con atribución/enlace, sin patrocinio. No conceden una licencia abierta/comercial general. Descarga por botones oficiales de los dos recursos consultada al usuario tras rechazo de revisión automática; pendiente. No se incorporaron archivos, no se extrajeron playlists ni se cambió el bloqueo infantil de YouTube.
+
 ## Referencia externa NHS — 2026-10-05
 
 F01 enlaza [sentadilla NHS](https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/), sección «squat», orientación 0:08–0:42. Metadatos/observaciones en content/coaching/source-pages.json y [revisión](docs/reviews/dated-personal-plan.md). Sin descarga, copia, hash audiovisual ni nueva licencia asignada: los [términos §3.5](https://www.nhs.uk/our-policies/terms-and-conditions/) excluyen videos con personas identificables de la licencia general. No inferir permiso de redistribución ni aval NHS. La automatización adulta conserva el reproductor oficial YouTube existente, sus controles y atribución; ninguna dependencia o asset nuevo.

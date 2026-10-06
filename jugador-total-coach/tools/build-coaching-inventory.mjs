@@ -45,7 +45,7 @@ T05, T06, T07, T08, T11, T14, T17, T18, T19, T20, S01–S04, Y01, Y04, Y07, Y08 
 
 ${references.map((r) => `- ${r.tasks.join(', ')}: [${r.title}](${r.url}); ${r.section}. ${r.note} Evidencia: ${r.observation}`).join('\n')}
 
-No se incrustan estas páginas ni se controla su final. La modalidad infantil usa fichas y enlaces acompañados, sin cargar YouTube dentro de la aplicación. Las referencias parciales no cierran sus demostraciones exactas; el gesto NHS externo tampoco incorpora reproducción automática en la app. [Revisión y derechos actuales](../reviews/dated-personal-plan.md).
+No se incrustan estas páginas ni se controla su final. La modalidad infantil usa fichas y enlaces acompañados, sin cargar YouTube dentro de la aplicación. Las referencias parciales no cierran sus demostraciones exactas. F01 dispone además de una referencia integrada de Peak Physio; su enlace NHS es una alternativa externa. [Revisión de este incremento](../reviews/visual-teaching-increment.md).
 
 ## Cobertura pendiente
 Completar referencias de las variantes sin video y reemplazar referencias parciales cuando exista una demostración pertinente. Revisión por fragmento y tarea, no por número de enlaces. Joner Football y Unisport permanecen en la investigación previa; este incremento no les atribuye nuevos fragmentos exactos. Ninguna referencia se descarga ni se redistribuye. [Condiciones](../reviews/video-reference-cost-and-rights.md).

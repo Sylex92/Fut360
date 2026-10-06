@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-05",
   "method": "Playwright, reproductor público, pausa/búsqueda temporal y capturas de trabajo inspeccionadas por el agente. Sin descarga del video, transcripción ni redistribución de imágenes.",
   "observations": [
     {
@@ -240,6 +240,179 @@
       "review": "visual-samples",
       "wholeVideoReviewed": false,
       "professionalValidation": false
+    },
+    {
+      "id": "V09",
+      "channel": "Peak Physio",
+      "videoId": "WNUrEBrDwPc",
+      "seconds": [
+        0.2,
+        0.5,
+        2,
+        3.5,
+        5,
+        6.5,
+        8.5,
+        9.5,
+        10.2
+      ],
+      "scope": "Muestras visuales del reproductor público observadas el 2026-10-05.",
+      "observed": "Persona tumbada con ambas rodillas flexionadas; desliza un talón y vuelve, después cambia de pierna. Camilla y almohada en la fuente; colchoneta en nuestra tarea.",
+      "pending": "Muestras de un clip de 10,261 s; la segunda pierna acaba de volver después del segundo 10. Se ajustó el final a 10,25 s y se comprobó en la app. No análisis biomecánico ni valoración individual.",
+      "practiceIds": [
+        "T29"
+      ],
+      "url": "https://www.youtube.com/watch?v=WNUrEBrDwPc",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V10",
+      "channel": "Peak Physio",
+      "videoId": "F7CQk7e8v50",
+      "seconds": [
+        0.3,
+        2,
+        4,
+        6,
+        8
+      ],
+      "scope": "Muestras visuales del reproductor público observadas el 2026-10-05.",
+      "observed": "Vista lateral: de pie, descenso flexionando cadera/rodilla y regreso. Silla de fondo no utilizada; cabeza parcialmente fuera del encuadre de pie.",
+      "pending": "Muestreo de un clip de 11,181 s. No se adopta límite universal de profundidad ni de rodilla/punta del pie de la página.",
+      "practiceIds": [
+        "F01"
+      ],
+      "url": "https://www.youtube.com/watch?v=F7CQk7e8v50",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V11",
+      "channel": "Unisport",
+      "videoId": "oIpRuzvsU80",
+      "seconds": [
+        90,
+        120,
+        154,
+        158,
+        160,
+        162,
+        164,
+        166,
+        168,
+        172,
+        180,
+        195,
+        207,
+        214,
+        217,
+        220,
+        224,
+        226,
+        231,
+        240
+      ],
+      "scope": "Muestras visuales del reproductor público observadas el 2026-10-05.",
+      "observed": "El tramo 159–167 s muestra apertura del pie de golpeo, apoyo junto al balón, contacto con el interior y continuación del paso. Se descartan ejemplos de fallo posteriores alrededor de 224–240 s.",
+      "pending": "Muestras, no visionado completo. Componente de contacto, no circuito por puertas ni conducción/finalización completa. Traducción automática no sustituye observación del gesto.",
+      "practiceIds": [
+        "S02",
+        "S04"
+      ],
+      "url": "https://www.youtube.com/watch?v=oIpRuzvsU80",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V12",
+      "channel": "Unisport",
+      "videoId": "naEccnjzLxM",
+      "seconds": [
+        64,
+        68,
+        70,
+        72,
+        75,
+        76,
+        78,
+        80,
+        82,
+        85,
+        120,
+        175
+      ],
+      "scope": "Muestras visuales del reproductor público observadas el 2026-10-05.",
+      "observed": "En 76–86 s se observa conducción con exterior, acompañamiento de pasos y cambios de encuadre del cuerpo y pies.",
+      "pending": "Solo componente exterior; no puerta, giro completo ni alternancia prescrita. No adoptar la preferencia del autor por el exterior como superioridad universal ni su cadencia como dosis.",
+      "practiceIds": [
+        "S01"
+      ],
+      "url": "https://www.youtube.com/watch?v=naEccnjzLxM",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V13",
+      "channel": "NHS / InstructorLive",
+      "videoId": "oLu9kwDzBdg",
+      "seconds": [
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        95,
+        150,
+        210,
+        268,
+        273,
+        278,
+        280,
+        283
+      ],
+      "scope": "Muestras visuales del reproductor público observadas el 2026-10-05.",
+      "observed": "43–54 s: marcha inicial, brazos acompañan y ampliación de base al final. El tramo posterior 268–283 s es paso atrás alternado, no marcha inicial; no se incorpora.",
+      "pending": "El reproductor dentro de la app deniega inserción por decisión del autor. No incorporado al catálogo final ni descargado; sustituido por V14. Solo muestras del comienzo, no clase completa. Duración 451,381 s pese al título de cinco minutos.",
+      "practiceIds": [
+        "W01"
+      ],
+      "url": "https://www.youtube.com/watch?v=oLu9kwDzBdg",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V14",
+      "channel": "British Heart Foundation",
+      "videoId": "c41OYHF9BB8",
+      "seconds": [
+        70,
+        97,
+        100,
+        101,
+        103,
+        106,
+        109,
+        111,
+        114,
+        150
+      ],
+      "scope": "Muestras visuales en el reproductor público y reproducción delimitada dentro de la aplicación el 2026-10-05.",
+      "observed": "En 102–109 s: marcha suave en el sitio, alternancia de apoyos, cuerpo completo de frente y tres cuartos. La persona de pie es la referencia; otra persona muestra una variante sentada. Antes aparece un rótulo de repeticiones y después empieza otra tarea; se evita atribuir esa dosis a nuestra ficha.",
+      "pending": "Componente inicial de W01, no todo el calentamiento específico ni una prescripción de rehabilitación cardiaca. No incluye movilidad de tobillo/cadera ni preparación con balón. Duración del archivo 1090,121 s; no visionado íntegro.",
+      "practiceIds": [
+        "W01"
+      ],
+      "url": "https://www.youtube.com/watch?v=c41OYHF9BB8",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
     }
   ],
   "blocked": [
@@ -248,6 +421,49 @@
       "url": "https://www.youtube.com/watch?v=EFkGGLsHRhU",
       "reason": "Reproductor informó Video privado; texto público disponible, imágenes no observadas.",
       "alternative": "V06"
+    },
+    {
+      "channel": "NHS / InstructorLive",
+      "videoId": "oLu9kwDzBdg",
+      "url": "https://www.youtube.com/watch?v=oLu9kwDzBdg",
+      "reason": "Observado públicamente, pero la inserción real en la app informa que el autor no permite reproducir aquí. No se cambia de host para eludirlo.",
+      "alternative": "V14"
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "url": "https://www.peak-physio.com.au/exercise/marching/",
+      "videoId": "rR8tM6gydiY",
+      "seconds": [
+        1,
+        2.2,
+        4,
+        6.2
+      ],
+      "reason": "Elevación de rodillas alta, apoyo cercano y cabeza recortada. No representa bien el comienzo suave de W01; no incorporado."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1JfWZd9Yrs0",
+      "seconds": [
+        10,
+        35,
+        65,
+        90
+      ],
+      "reason": "Leeds Teaching Hospitals, enlazado en su folleto público LN003869. Muestras muestran explicación hablada, no una demostración del desplazamiento de C01. No incorporado."
+    },
+    {
+      "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises",
+      "videoId": "Xyto7aO3rsA",
+      "seconds": [
+        660,
+        770,
+        800,
+        814,
+        820,
+        823
+      ],
+      "reason": "Muestras de talón/pasos laterales y cierre de clase. No se observó la secuencia concreta de caminar reduciendo ritmo de C01; no incorporado por coincidencia del título. No se adopta la afirmación de la página sobre ácido láctico/rigidez."
     }
   ]
 }

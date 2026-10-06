@@ -9,6 +9,7 @@ export async function verifyAutomaticVideos(page, url = 'http://127.0.0.1:4173/?
           this.options = options;
           this.state = 5;
           this.time = 0;
+          this.rate = 1;
           this.iframe = document.createElement('iframe');
           this.iframe.src = 'about:blank';
           node.replaceChildren(this.iframe);
@@ -41,6 +42,16 @@ export async function verifyAutomaticVideos(page, url = 'http://127.0.0.1:4173/?
           this.emit(2);
         }
         mute() {}
+        getPlaybackRate() {
+          return this.rate;
+        }
+        getAvailablePlaybackRates() {
+          return [0.5, 1, 1.5];
+        }
+        setPlaybackRate(rate) {
+          this.rate = rate;
+          this.options.events.onPlaybackRateChange({ data: rate, target: this });
+        }
         seekTo(t) {
           this.time = t;
         }
@@ -74,6 +85,16 @@ export async function verifyAutomaticVideos(page, url = 'http://127.0.0.1:4173/?
   await page.getByText('Reproduciendo el fragmento.', { exact: true }).waitFor();
   await page.getByRole('button', { name: 'Pausar todo', exact: true }).click();
   await page.getByRole('button', { name: 'Continuar', exact: true }).waitFor();
+  const pausedClock = await page.locator('.guided-clock strong').innerText();
+  await page
+    .getByRole('combobox', { name: 'Velocidad del ejemplo', exact: true })
+    .selectOption('0.5');
+  if (
+    !(await page.evaluate(() => window.__mediaPlayers.find((p) => !p.dead).rate === 0.5)) ||
+    (await page.locator('.guided-clock strong').innerText()) !== pausedClock ||
+    (await page.getByRole('button', { name: 'Pausar todo', exact: true }).count())
+  )
+    throw new Error('Changing example speed changed the session or failed');
   const playerPaused = await page.evaluate(
     () => window.__mediaPlayers.find((p) => !p.dead).state === 2,
   );
@@ -115,6 +136,7 @@ export async function verifyAutomaticVideos(page, url = 'http://127.0.0.1:4173/?
     videoPausesWithClock: true,
     manualHoldNotOverridden: true,
     errorPaused: true,
+    exampleSpeedIndependent: true,
     provider: 'simulated',
   };
 }

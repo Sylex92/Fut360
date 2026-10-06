@@ -1,5 +1,7 @@
 # Revisión visual para enseñanza con video
 
+Continuación 2026-10-05: [seis asignaciones a cinco videos adicionales](../reviews/visual-teaching-increment.md), con muestras V09–V14 de [VIDEO_OBSERVATIONS](VIDEO_OBSERVATIONS.json). T29/F01 enseñan un gesto; S01/S02/S04/W01 componentes. Reproducción y límites comprobados dentro de la app. La referencia NHS inicialmente considerada para marcha deniega inserción y se excluyó; BHF es el recurso final. No se observaron íntegramente esos videos ni se atribuye a sus fuentes validación de nuestras dosis. La biblioteca infantil y C01 siguen incompletos.
+
 Continuación 2026-10-04: [puente bilateral, elevación bilateral y ejemplos FIFA](../reviews/personal-programs-and-visual-coverage.md), con muestras observadas, variantes descartadas y rangos probados. Los videos NHS/NHFT se agregan al reproductor; FIFA se enlaza externamente como componente. No cambia retroactivamente el alcance observado de los seis videos históricos descritos debajo.
 
 2026-10-03. Inspección pública desde navegador independiente Playwright, tras no estar disponible el backend IAB de Codex. Sin inicio de sesión, descarga de videos, transcripciones completas ni acceso a material privado. Capturas temporales de inspección fuera de Git; no se incluyen como recursos del producto.
