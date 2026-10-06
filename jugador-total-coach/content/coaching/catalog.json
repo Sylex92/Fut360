@@ -115,9 +115,22 @@
       "videos": [],
       "sourceRefs": [
         "C03",
-        "C09"
+        "C09",
+        "https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "shielding-body-position",
+          "assetId": "fifa-strength-shielding",
+          "title": "Proteger con el cuerpo y el pie alejado",
+          "start": 176,
+          "end": 187.5,
+          "match": "component",
+          "note": "Ejemplo de protección y giros bajo oposición real. No muestra la recepción inicial ni una descarga a otro compañero. En tu tarea empieza con presión suave, sin empujar; este contacto no corresponde al juego infantil con adulto cooperador."
+        }
+      ]
     },
     {
       "id": "T04",
@@ -1034,9 +1047,21 @@
         "fut7": "Base común; ajustar al ida y vuelta.",
         "fut11": "Base común; ajustar al rol y calendario."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t27",
+          "videoId": "jHtYBWfQX4M",
+          "channel": "North Bristol NHS Trust",
+          "title": "Sentadilla dividida: ambos apoyos en el suelo",
+          "start": 1,
+          "end": 11,
+          "match": "demonstration",
+          "note": "Los pies permanecen separados adelante y atrás durante los descensos. El talón posterior puede elevarse; no apoyes ese pie en una silla. Se muestra un lado y la cabeza queda fuera del encuadre. Usa tu rango cómodo, sin obligarte a tocar el suelo con la rodilla."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability"
       ],
       "review": "documentary-draft"
     },
@@ -1062,15 +1087,27 @@
       "mistakes": "Improvisar anclajes de banda corta o balancearse para mover más peso.",
       "easier": "Variante con menor resistencia y mayor apoyo.",
       "harder": "Aumentar resistencia. Cambiar apoyo sin perder el objetivo principal.",
-      "limits": "No dar por válido un anclaje de banda ni inventar equipamiento; variante final pendiente.",
+      "limits": "Referencia de remo en una polea diseñada para ello; comprobar el asiento, ajuste y carga del equipo real. No improvisar anclajes con bandas cortas.",
       "modalities": {
         "fut5": "Preparación común, no permiso para empujar rivales.",
         "fut7": "Preparación común con dosis ajustada.",
         "fut11": "Preparación común; no imitar carga de un profesional."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t28",
+          "videoId": "432xTSQpaG0",
+          "channel": "The BeFit Physio Method",
+          "title": "Remo sentado en polea: tirar y devolver",
+          "start": 42,
+          "end": 50.5,
+          "match": "demonstration",
+          "note": "Muestra tracción hacia el torso y devolución, con cambio de cámara. Usa una polea y asiento preparados para ello; la resistencia de la persona del video no indica la tuya. Mantén el tronco estable y devuelve el agarre con control."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.youtube.com/watch?v=432xTSQpaG0"
       ],
       "review": "documentary-draft"
     },
@@ -1141,15 +1178,27 @@
       "mistakes": "Levantar el talón para simular más movilidad o forzar dolor.",
       "easier": "Más apoyo y menos rango.",
       "harder": "Reducir apoyo si es apropiado. Conectar rango con un paso o recepción.",
-      "limits": "Familia propia pendiente de fuente técnica específica por variante; no tratamiento de limitaciones ni promesa preventiva.",
+      "limits": "La referencia muestra movilidad activa de tobillo, no un tratamiento ni una medida diagnóstica. No se hereda la dosis clínica de la fuente.",
       "modalities": {
         "fut5": "Apoyos y giros cortos.",
         "fut7": "Cambios de apoyo en desplazamiento.",
         "fut11": "Preparación para variantes de carrera/recepción."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-t30",
+          "videoId": "Y48sAE4m2Uc",
+          "channel": "Peak Physio",
+          "title": "Tobillo: rodilla hacia delante con talón apoyado",
+          "start": 0,
+          "end": 8.1,
+          "match": "demonstration",
+          "note": "Detalle de pie, tobillo y rodilla junto a la pared; se ve avanzar y volver sin despegar el talón. La pared sirve como referencia. No fuerces llegar a ella ni copies una distancia fija; cambia de lado según tu ficha."
+        }
+      ],
       "sourceRefs": [
-        "C04"
+        "C04",
+        "https://www.peak-physio.com.au/exercise/ankle-dorsiflexion-knee-to-wall/"
       ],
       "review": "documentary-draft"
     },
@@ -1834,9 +1883,21 @@
         "fut7": "Base común; ajustar al ida y vuelta.",
         "fut11": "Base común; ajustar al rol y calendario."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-f02",
+          "videoId": "qQ5KhRESzDs",
+          "channel": "The Musculoskeletal Clinic",
+          "title": "Bisagra sin carga: llevar la cadera atrás y volver",
+          "start": 180,
+          "end": 188,
+          "match": "demonstration",
+          "note": "Muestra dos bisagras sin carga con los brazos extendidos al frente. Observa el desplazamiento de la cadera y la vuelta de pie; la posición de brazos es una ayuda, no una carga que debas añadir. No copies la profundidad si pierdes control."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.youtube.com/watch?v=qQ5KhRESzDs"
       ],
       "review": "documentary-draft"
     },
@@ -1906,15 +1967,27 @@
       "mistakes": "Dejar caer la pelvis, acercar solo la cabeza o contener el aire.",
       "easier": "Acerca los pies a la pared para reducir la inclinación.",
       "harder": "Aumenta gradualmente la inclinación; cambiar a suelo requiere revisar esa variante.",
-      "limits": "No dar por válido un anclaje de banda ni inventar equipamiento; variante final pendiente.",
+      "limits": "La pared debe ser firme y no deslizarse. La distancia del video no fija tu intensidad; no añadir anclajes ni cambiar al suelo sin revisar esa variante.",
       "modalities": {
         "fut5": "Preparación común, no permiso para empujar rivales.",
         "fut7": "Preparación común con dosis ajustada.",
         "fut11": "Preparación común; no imitar carga de un profesional."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-f04",
+          "videoId": "kmzcmFZ9NyY",
+          "channel": "South Tees Hospitals NHS Foundation Trust",
+          "title": "Flexión contra pared: colocación, descenso y empuje",
+          "start": 8,
+          "end": 26.7,
+          "match": "demonstration",
+          "note": "La cámara enseña por separado manos, pies y varias flexiones. Acerca el tronco con la pelvis acompañando y vuelve; ajusta la separación de pies a un esfuerzo controlable. No copies una distancia fija ni acerques solo la cabeza."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.southtees.nhs.uk/resources/combined-press-ups/"
       ],
       "review": "documentary-draft"
     },
@@ -1990,9 +2063,21 @@
         "fut7": "Base compartida para posteriores acciones.",
         "fut11": "Base compartida para posteriores acciones."
       },
-      "videos": [],
+      "videos": [
+        {
+          "id": "human-f06",
+          "videoId": "JCVKPOdoA08",
+          "channel": "Sports Rehab Expert",
+          "title": "Plancha lateral con rodillas: elevar, sostener y bajar",
+          "start": 25,
+          "end": 56.5,
+          "match": "demonstration",
+          "note": "Demuestra un lado, con el brazo superior levantado, y vuelve al apoyo al final. Tu mano puede descansar en la cadera. El ejemplo mantiene la postura más tiempo: sigue la sostención de tu ficha y baja antes si pierdes alineación; no intentes aguantar hasta que termine el video."
+        }
+      ],
       "sourceRefs": [
-        "C15"
+        "C15",
+        "https://www.youtube.com/watch?v=JCVKPOdoA08"
       ],
       "review": "documentary-draft"
     },

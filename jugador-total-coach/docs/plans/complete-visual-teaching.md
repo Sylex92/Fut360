@@ -12,6 +12,7 @@ El usuario autoriza expresamente lo necesario para terminar, como respuesta a la
 4. Verificar ambas tareas, rangos, carga/fallo, pausa manual, ocultación y ausencia de tráfico a proveedores audiovisuales desde el perfil infantil. Recontar cobertura exacta/parcial y documentar carencias.
 5. Ampliar las fuentes nativas cuando el original aporte una carencia concreta: Shooting / Skill development de FIFA para la conducción y golpeo infantil. Misma revisión de §6.4 y autorización general recibida; obtener únicamente por botón oficial y conservar integridad/atribución. No sumar ejemplos de oposición compleja como si mostrasen la variante cooperativa inicial.
 6. Preparar una vista de TV con texto/controles grandes, foco visible y navegación por flechas en orden de lectura reutilizando HTML/focus. Enter y controles de formularios/video mantienen conducta nativa. Verificar teclado en navegador independiente; conservar pendiente la prueba Sony física, sin presentarlo como aplicación Android TV instalada.
+7. Continuar la revisión de fuerza/movilidad y protección: observar las variantes humanas de F04/F06/T30 y T03. Comparar encuadre, comienzo/retorno y diferencias antes de registrar un tramo. Para T03, evaluar Strength through shielding de FIFA mediante su botón oficial de descarga y las mismas condiciones de uso local; no ofrecer el contacto de esa tarea como demostración del juego infantil cooperativo Y05. Las cargas/calendarios permanecen iguales. Probar inserción real, límites y pausas de cualquier referencia incorporada.
 
 ## Criterios verificables
 

@@ -20,9 +20,25 @@ export async function verifyVisualTeaching(page, tasks, url = 'http://127.0.0.1:
         .selectOption(String(task.rate));
     const repeat = page.getByRole('button', { name: 'Repetir fragmento', exact: true });
     await repeat.click();
-    await page.getByText('Reproduciendo el fragmento.', { exact: true }).waitFor();
     const frame = page.frames().find((f) => f.url().includes('/embed/' + task.videoId));
     if (!frame) throw new Error('Wrong source for ' + task.id);
+    let nativeActivation = false;
+    try {
+      await page
+        .getByText('Reproduciendo el fragmento.', { exact: true })
+        .waitFor({ timeout: 6000 });
+    } catch (error) {
+      // A live provider can require its own activation; record it rather than
+      // claiming this test proves autoplay on every source/browser.
+      const blocked = page.getByText('Usa el botón de reproducción del video.', {
+        exact: true,
+      });
+      const play = frame.getByRole('button', { name: /^(Play|Reproducir video)$/ });
+      if (!(await blocked.isVisible()) || !(await play.isVisible())) throw error;
+      await play.click();
+      nativeActivation = true;
+      await page.getByText('Reproduciendo el fragmento.', { exact: true }).waitFor();
+    }
     const video = frame.locator('video');
     const beginning = await video.evaluate((v) => ({
       time: v.currentTime,
@@ -35,11 +51,11 @@ export async function verifyVisualTeaching(page, tasks, url = 'http://127.0.0.1:
       throw new Error('Video did not start near the selected range: ' + task.id);
     await page
       .getByText('Fragmento terminado.', { exact: true })
-      .waitFor({ timeout: 22000 / (task.rate || 1) });
+      .waitFor({ timeout: ((task.end - task.start) * 1000) / (task.rate || 1) + 12000 });
     const ending = await video.evaluate((v) => ({ time: v.currentTime, paused: v.paused }));
     if (!ending.paused || Math.abs(ending.time - task.end) > 0.5)
       throw new Error('Video did not stop near selected end: ' + task.id);
-    results.push({ ...task, beginning, ending });
+    results.push({ ...task, beginning, ending, nativeActivation });
   }
   await page.setViewportSize({ width: 390, height: 844 });
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth))

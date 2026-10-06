@@ -1,5 +1,11 @@
 # Registro de recursos y licencias
 
+## Fuerza, movilidad y protección — continuación 2026-10-06
+
+Seis YouTube nuevos, solo reproductor oficial sin descargar medios, con atribución y controles: qQ5KhRESzDs (The Musculoskeletal Clinic), kmzcmFZ9NyY (South Tees NHS), JCVKPOdoA08 (Sports Rehab Expert), jHtYBWfQX4M (North Bristol NHS), 432xTSQpaG0 (The BeFit Physio Method) y Y48sAE4m2Uc (Peak Physio). [Fuentes, rangos, correspondencia y límites](docs/reviews/strength-human-video.md). No se asigna licencia abierta ni se redistribuyen capturas/transcripciones.
+
+FIFA Strength through shielding: original Fitness_12_Philips_Screening_exercise_v2_ENG_srt_premium.mp4, 99893192 bytes, SHA-256 3d0825a467d11d07b549022286a824b52606a4d955e9331fa9dddf15e73df4c6. Descarga oficial autorizada, original íntegro fuera de Git; 176–187,5 s como componente adulto T03. Misma exhibición local no comercial condicionada al §6.4 con atribución/enlace, sin aval ni distribución pública/comercial inferida. [Manifiesto](assets/manifests/local-teaching-media.json), [revisión](docs/reviews/strength-human-video.md).
+
 ## Video local de FIFA — 2026-10-06
 
 Adquiridos mediante botones oficiales con autorización expresa del usuario. [Derechos, costos y límites](docs/reviews/local-human-video.md), [manifiesto verificable](assets/manifests/local-teaching-media.json). Originales intactos fuera de Git; reproducción por rangos sin editar archivos. Admisibles condicionados para uso personal local no comercial, con atribución/enlace. No licencia abierta ni permiso de distribución pública/comercial; no se declara aval de FIFA.

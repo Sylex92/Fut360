@@ -1,5 +1,11 @@
 # Estado del proyecto
 
+## Fuerza, movilidad y protección — continuación 2026-10-06
+
+Seis referencias humanas del gesto incorporadas para F02/F04/F06/T27/T28/T30 y un componente local FIFA para T03. [Correspondencia, derechos, descartes y pruebas](docs/reviews/strength-human-video.md). Cobertura actual: **69 fichas, 23 con gesto, 18 con componente y 28 sin video integrado**. No todas son demostraciones completas de la tarea. 295 pruebas correctas, una opt-in omitida; tipos/lint/build correctos. Los seis YouTube y T03 reproducidos realmente en la app hasta su frontera, sin errores ni desbordamiento a 390 px. En una prueba el proveedor pidió activación propia; no garantizar autoplay universal. Tres originales locales FIFA fuera de Git; copia offline opcional aproximada de 185 MiB.
+
+Se conservan planes/dosis/perfiles/calendarios y datos. Siguen abiertos enseñanza restante, conversación/adaptación y pruebas físicas. No faltan permisos generales ni datos personales repetidos. Los apartados siguientes son antecedentes con sus cifras de aquel momento.
+
 ## Video humano local, reproducción infantil y vista TV — 2026-10-06
 
 Autorización expresa recibida; la consulta de descarga del apartado histórico siguiente está **resuelta**. Se descargaron Warm-up y Skill development desde los botones oficiales de FIFA, se verificaron sus hashes y se integraron con atribución para uso personal local no comercial condicionado. Un tercer candidato de golpeo se revisó y excluyó porque su tiro elevado no representa el golpeo raso solicitado. Originales fuera de Git; sin instalar dependencias, cambiar configuración global, contratar pagos ni acceder a los perfiles reales. [Entrega, procedencia y límites](docs/reviews/local-human-video.md).

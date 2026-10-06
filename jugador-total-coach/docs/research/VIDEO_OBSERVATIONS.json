@@ -413,6 +413,191 @@
       "review": "visual-samples",
       "wholeVideoReviewed": false,
       "professionalValidation": false
+    },
+    {
+      "id": "V15",
+      "channel": "The Musculoskeletal Clinic",
+      "videoId": "qQ5KhRESzDs",
+      "seconds": [
+        160,
+        165,
+        170,
+        175,
+        180,
+        182,
+        184,
+        185,
+        186,
+        188,
+        190,
+        195
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Cuerpo completo de lado; preparación de pie, cadera atrás con flexión ligera de rodillas y dos retornos. Brazos adelantados como referencia externa. Se elige el gesto sin banda ni pesas, no las progresiones posteriores.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "F02"
+      ],
+      "url": "https://www.youtube.com/watch?v=qQ5KhRESzDs",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V16",
+      "channel": "South Tees Hospitals NHS Foundation Trust",
+      "videoId": "kmzcmFZ9NyY",
+      "seconds": [
+        2,
+        5,
+        9,
+        12,
+        15,
+        18,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Colocación del tronco/manos, detalle de pies alrededor de 15 s, flexiones con retorno visible a 22 y 26 s. Se termina antes del fundido a créditos. No mantiene todo el cuerpo en un único encuadre.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "F04"
+      ],
+      "url": "https://www.southtees.nhs.uk/resources/combined-press-ups/",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V17",
+      "channel": "Sports Rehab Expert",
+      "videoId": "JCVKPOdoA08",
+      "seconds": [
+        5,
+        12,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        56.5
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Rodillas juntas flexionadas y antebrazo apoyado; eleva la pelvis, sostiene con brazo libre alto y desciende de nuevo hacia 56 s. Cuerpo entero en suelo; no añadir apertura de rodilla ni rotación del tronco.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "F06"
+      ],
+      "url": "https://www.youtube.com/watch?v=JCVKPOdoA08",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V18",
+      "channel": "North Bristol NHS Trust",
+      "videoId": "jHtYBWfQX4M",
+      "seconds": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Tras separar pies, flexiona ambas rodillas y vuelve repetidamente sin cambiar la base; se ven descensos a 3, 6 y 9 s y retornos a 4, 7 y 10 s. No es una búlgara ni zancadas caminando. Parte superior de cabeza fuera de plano.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "T27"
+      ],
+      "url": "https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V19",
+      "channel": "The BeFit Physio Method",
+      "videoId": "432xTSQpaG0",
+      "seconds": [
+        12,
+        22,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        50.5,
+        52,
+        62
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Agarre doble, pies en plataforma, tracción hacia abdomen y retorno; segundo ángulo lateral permite observar tronco y codos. No se toma el peso del aparato ni las afirmaciones promocionales de prevención/postura como prescripción.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "T28"
+      ],
+      "url": "https://www.youtube.com/watch?v=432xTSQpaG0",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
+    },
+    {
+      "id": "V20",
+      "channel": "Peak Physio",
+      "videoId": "Y48sAE4m2Uc",
+      "seconds": [
+        0.2,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        8.1,
+        9
+      ],
+      "scope": "Muestras y fronteras del gesto inspeccionadas visualmente el 2026-10-06; inserción y reproducción comprobadas aparte en la aplicación.",
+      "observed": "Dos avances de rodilla con pie delantero apoyado, seguidos por extensión controlada; vuelve al inicio a 3 y 8 s. Encuadre centrado en apoyos, sin mostrar manos o cabeza. Corte antes del negro posterior.",
+      "pending": "No revisión íntegra de la fuente, validación clínica ni equivalencia de dosis. Conserva límites de encuadre, lado y posición de brazos declarados en la ficha.",
+      "practiceIds": [
+        "T30"
+      ],
+      "url": "https://www.peak-physio.com.au/exercise/ankle-dorsiflexion-knee-to-wall/",
+      "review": "visual-samples",
+      "wholeVideoReviewed": false,
+      "professionalValidation": false
     }
   ],
   "blocked": [
@@ -428,6 +613,13 @@
       "url": "https://www.youtube.com/watch?v=oLu9kwDzBdg",
       "reason": "Observado públicamente, pero la inserción real en la app informa que el autor no permite reproducir aquí. No se cambia de host para eludirlo.",
       "alternative": "V14"
+    },
+    {
+      "channel": "Physio REHAB",
+      "videoId": "QRF0_7oR0u0",
+      "url": "https://www.youtube.com/watch?v=QRF0_7oR0u0",
+      "reason": "Solo miembros; no se accedió al contenido, no incorporado ni eludido.",
+      "alternative": "V17"
     }
   ],
   "excludedCandidates": [
@@ -464,6 +656,51 @@
         823
       ],
       "reason": "Muestras de talón/pasos laterales y cierre de clase. No se observó la secuencia concreta de caminar reduciendo ritmo de C01; no incorporado por coincidencia del título. No se adopta la afirmación de la página sobre ácido láctico/rigidez."
+    },
+    {
+      "url": "https://www.peak-physio.com.au/exercise/wall-push-up/",
+      "videoId": "pEgsg_4AdLc",
+      "seconds": [
+        0,
+        3,
+        8,
+        13
+      ],
+      "reason": "La variante es pertinente, pero el encuadre no enseña los pies; se elige South Tees que sí incorpora su detalle."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3HZay5R49W0",
+      "seconds": [
+        0.2,
+        2,
+        4,
+        6,
+        8,
+        10,
+        14,
+        17,
+        19,
+        20
+      ],
+      "reason": "Muestra inicio y sostención, sin descenso final observado. Se elige Sports Rehab Expert para incluir retorno."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9Y-z2xbSsqc",
+      "seconds": [
+        2,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        39,
+        40,
+        41
+      ],
+      "reason": "Muestra inicio y sostención sobre camilla; termina en negro sin descenso. No incorporado en lugar del gesto completo sobre suelo."
     }
   ]
 }

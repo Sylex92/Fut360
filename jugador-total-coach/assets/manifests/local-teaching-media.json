@@ -26,6 +26,19 @@
       "terms": "https://www.fifatrainingcentre.com/en/terms-of-service.php",
       "rights": "Conditional non-commercial display, section 6.4; not an open redistribution license",
       "acquired": "2026-10-06"
+    },
+    {
+      "id": "fifa-strength-shielding",
+      "file": "fifa-shielding/strength-through-shielding.mp4",
+      "originalFilename": "Fitness_12_Philips_Screening_exercise_v2_ENG_srt_premium.mp4",
+      "bytes": 99893192,
+      "sha256": "3d0825a467d11d07b549022286a824b52606a4d955e9331fa9dddf15e73df4c6",
+      "duration": 193.8,
+      "source": "https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php",
+      "attribution": "FIFA Training Centre · Gary Phillips · Strength through shielding",
+      "terms": "https://www.fifatrainingcentre.com/en/terms-of-service.php",
+      "rights": "Conditional non-commercial display, section 6.4; not an open redistribution license",
+      "acquired": "2026-10-06"
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Fut360 — Jugador Total Coach
 
+Continuación 2026-10-06: [siete referencias humanas adicionales](docs/reviews/strength-human-video.md), seis de fuerza/movilidad y una de protección. Biblioteca vigente: 69 fichas, 23 con gesto, 18 con componente, 28 sin video integrado. Consultar PROJECT_STATUS para límites actuales; no cierre del producto ampliado.
+
 Actualización 2026-10-06: [video humano local y vista TV](docs/reviews/local-human-video.md). Seis fichas infantiles tienen ahora componentes humanos locales, además de dos adultas; reproducción por fragmentos, bucle, velocidad y uso offline comprobados. Los originales se preparan según la revisión y permanecen fuera de Git. Vista de TV con controles/foco/teclas; prueba física pendiente. Biblioteca y producto ampliado todavía no completos. Consultar primero PROJECT_STATUS; los apartados siguientes conservan antecedentes.
 
 **Actualización vigente · 2026-10-05:** calendario por fecha/perfil, resultados y observaciones comparables; ocho semanas infantiles con rotación sin aumentar duración y cuatro complementos propios. Entrada adulta revisable de dos semanas. Videos automáticos adultos opcionales, carga con reloj detenido y pausa manual conservada. DB 4 / respaldo completo 3; datos anteriores preservados. [Entrega y límites comprobados](docs/reviews/dated-personal-plan.md). La biblioteca visual y la integración infantil todavía no están completas. Los apartados fechados siguientes son antecedentes.

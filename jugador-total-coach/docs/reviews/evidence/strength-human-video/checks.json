@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-06",
+  "youtube": [
+    {
+      "id": "F02",
+      "videoId": "qQ5KhRESzDs",
+      "start": 180,
+      "end": 188,
+      "beginning": {
+        "time": 180.518176,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 188.000285,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "F04",
+      "videoId": "kmzcmFZ9NyY",
+      "start": 8,
+      "end": 26.7,
+      "beginning": {
+        "time": 8.295093,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 26.714959,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "F06",
+      "videoId": "JCVKPOdoA08",
+      "start": 25,
+      "end": 56.5,
+      "beginning": {
+        "time": 25.338041,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 56.517918,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "T27",
+      "videoId": "jHtYBWfQX4M",
+      "start": 1,
+      "end": 11,
+      "beginning": {
+        "time": 1,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 11.001994,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "T28",
+      "videoId": "432xTSQpaG0",
+      "start": 42,
+      "end": 50.5,
+      "beginning": {
+        "time": 42.473631,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 50.513915,
+        "paused": true
+      },
+      "nativeActivation": false
+    },
+    {
+      "id": "T30",
+      "videoId": "Y48sAE4m2Uc",
+      "start": 0,
+      "end": 8.1,
+      "beginning": {
+        "time": 0.24021,
+        "paused": false,
+        "rate": 1
+      },
+      "ending": {
+        "time": 8.105578,
+        "paused": true
+      },
+      "nativeActivation": false
+    }
+  ],
+  "local": {
+    "task": "T03",
+    "start": {
+      "time": 176.017165,
+      "duration": 193.8
+    },
+    "ending": {
+      "time": 187.5,
+      "paused": true
+    },
+    "externalRequests": [],
+    "pageErrors": [],
+    "mobileOverflow": false,
+    "media": 206
+  },
+  "additionalProviderActivation": {
+    "start": {
+      "time": 8.083032,
+      "duration": 37.401,
+      "paused": false
+    },
+    "end": {
+      "time": 26.717109,
+      "paused": true
+    },
+    "nativeActivation": true
+  },
+  "checks": {
+    "testsPassed": 295,
+    "testsSkipped": 1,
+    "typecheck": true,
+    "lint": true,
+    "build": true,
+    "mobileViewportOnly": true,
+    "physicalSamsung": false,
+    "physicalSony": false
+  },
+  "coverage": {
+    "tasks": 69,
+    "gesture": 23,
+    "component": 18,
+    "noIntegratedVideo": 28
+  },
+  "offline": {
+    "version": "587a97d69f1334777e47",
+    "files": 37,
+    "bytes": 194160643
+  }
+}

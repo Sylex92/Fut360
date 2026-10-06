@@ -4,6 +4,7 @@ import {
   coachingTasks,
   findTasks,
   taskById,
+  teachingVideos,
   validateCoachingCatalog,
 } from './coaching-catalog';
 import {
@@ -33,7 +34,7 @@ describe('Catálogo de enseñanza', () => {
     expect(findTasks('', '', 'home').some((t) => ['T21', 'T25', 'T13'].includes(t.id))).toBe(
       false,
     );
-    expect(findTasks('', '', '', true).every((t) => t.videos.length)).toBe(true);
+    expect(findTasks('', '', '', true).every((t) => teachingVideos(t).length)).toBe(true);
     expect(findTasks('noexisteestaTarea')).toHaveLength(0);
   });
   it('no conecta a terceros antes de que el usuario abra el video', () => {

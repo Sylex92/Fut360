@@ -1,6 +1,6 @@
 # Inventario de enseñanza dentro de la aplicación
 
-2026-10-06. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 69 fichas / 32 familias. 17 fichas con referencia del gesto, 17 con un componente y 35 sin video integrado. Son 13 videos YouTube originales y 2 originales locales FIFA. 8 fichas usan componentes locales, incluidas 6 infantiles. Las fichas no equivalen a patrones o videos distintos. Los enlaces externos complementan el inventario y no se suman como otra demostración.
+2026-10-06. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. 69 fichas / 32 familias. 23 fichas con referencia del gesto, 18 con un componente y 28 sin video integrado. Son 19 videos YouTube originales y 3 originales locales FIFA. 9 fichas usan componentes locales, incluidas 6 infantiles. Las fichas no equivalen a patrones o videos distintos. Los enlaces externos complementan el inventario y no se suman como otra demostración.
 
 Todas las fichas incluyen organización, pasos, objetivo, errores y cambios de dificultad/modalidad. Permanecen documentary-draft: referencia visible, corrección técnica, dosis personal y eficacia no son equivalentes. “Gesto observado” no significa visionado íntegro del video, fotogramas completos revisados o equivalencia de toda la tarea. [Observaciones y límites](../research/VIDEO_TEACHING_REVIEW.md).
 
@@ -10,7 +10,7 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 |---|---|---|---|---|
 | T01 | Cadena de interior, exterior y planta | T01 | home; 1 persona(s) | Demostración pendiente |
 | T02 | Arrastre en V y salida diagonal | T02 | home; 1 persona(s) | [7mlc 3:27–4:02](https://www.youtube.com/watch?v=e5RxAJM-oxc&t=207s) · gesto observado |
-| T03 | Proteger, girar y conservar | T03 | court; 2 persona(s) | Demostración pendiente |
+| T03 | Proteger, girar y conservar | T03 | court; 2 persona(s) | [FIFA Training Centre · Gary Phillips · Strength through shielding 2:56–3:7.5](https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php) · archivo local · componente |
 | T04 | Pase y recepción con pared | T04 | wall-area; 1 persona(s) | [Become Elite 7:38–8:11](https://www.youtube.com/watch?v=Bd7TH9t_djM&t=458s) · componente |
 | T05 | Recepción orientada hacia dos salidas | T05 | court; 2 persona(s) | [Become Elite 0:35–1:05](https://www.youtube.com/watch?v=Bd7TH9t_djM&t=35s) · componente |
 | T06 | Mirar, identificar y usar la información | T06 | court; 3 persona(s) | [Become Elite 3:25–3:57](https://www.youtube.com/watch?v=Bd7TH9t_djM&t=205s) · componente |
@@ -34,10 +34,10 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 | T24 | Carrera rápida con espacio suficiente | T24 | pitch; 1 persona(s) | Demostración pendiente |
 | T25 | Sprints repetidos con control de deterioro | T25 | running-area; 1 persona(s) | Demostración pendiente |
 | T26 | Juego reducido para resistencia y decisiones | T26 | court; 4 persona(s) | Demostración pendiente |
-| T27 | Sentadilla dividida con ambos pies en el suelo | T27 | home; 1 persona(s) | Demostración pendiente |
-| T28 | Remo sentado en polea | T28 | gym-or-home; 1 persona(s) | Demostración pendiente |
+| T27 | Sentadilla dividida con ambos pies en el suelo | T27 | home; 1 persona(s) | [North Bristol NHS Trust 0:01–0:11](https://www.youtube.com/watch?v=jHtYBWfQX4M&t=1s) · gesto observado |
+| T28 | Remo sentado en polea | T28 | gym-or-home; 1 persona(s) | [The BeFit Physio Method 0:42–0:50.5](https://www.youtube.com/watch?v=432xTSQpaG0&t=42s) · gesto observado |
 | T29 | Control de tronco con talón alterno | T29 | home; 1 persona(s) | [Peak Physio 0:00–0:10.25](https://www.youtube.com/watch?v=WNUrEBrDwPc&t=0s) · gesto observado |
-| T30 | Movilidad de tobillo con apoyo | T30 | home; 1 persona(s) | Demostración pendiente |
+| T30 | Movilidad de tobillo con apoyo | T30 | home; 1 persona(s) | [Peak Physio 0:00–0:8.1](https://www.youtube.com/watch?v=Y48sAE4m2Uc&t=0s) · gesto observado |
 | T31 | Coordinación de pasos, brazos y contacto | T31 | home; 1 persona(s) | Demostración pendiente |
 | T32 | Potencia de salto y aterrizaje | T32 | training-area; 1 persona(s) | Demostración pendiente |
 | M01 | Croqueta: interior a interior | T01 | home; 1 persona(s) | [7mlc 0:40–1:08](https://www.youtube.com/watch?v=e5RxAJM-oxc&t=40s) · gesto observado |
@@ -53,11 +53,11 @@ Los 22 recursos 3D anteriores siguen en [inventario histórico](CONTENT_INVENTOR
 | B01 | Recibir, amagar y finalizar desde banda | T11 | goal-area; 2 persona(s) | [My Personal Football Coach 7:48–8:17](https://www.youtube.com/watch?v=E24XzLAlcRk&t=468s) · gesto observado |
 | B02 | Finalización por zonas de entrada | T13 | goal-area; 1 persona(s) | [AllAttack 2:38–3:14](https://www.youtube.com/watch?v=UrcPHLR4nfw&t=158s) · gesto observado |
 | F01 | Sentadilla a rango controlado | T27 | home; 1 persona(s) | [Peak Physio 0:00–0:08](https://www.youtube.com/watch?v=F7CQk7e8v50&t=0s) · gesto observado |
-| F02 | Bisagra de cadera | T27 | home; 1 persona(s) | Demostración pendiente |
+| F02 | Bisagra de cadera | T27 | home; 1 persona(s) | [The Musculoskeletal Clinic 3:00–3:08](https://www.youtube.com/watch?v=qQ5KhRESzDs&t=180s) · gesto observado |
 | F03 | Puente de glúteos | T27 | home; 1 persona(s) | [Northamptonshire Healthcare NHS Foundation Trust 0:06–0:17](https://www.youtube.com/watch?v=PPNCe7nX3Fc&t=6s) · gesto observado |
-| F04 | Flexión en pared | T28 | home; 1 persona(s) | Demostración pendiente |
+| F04 | Flexión en pared | T28 | home; 1 persona(s) | [South Tees Hospitals NHS Foundation Trust 0:08–0:26.7](https://www.youtube.com/watch?v=kmzcmFZ9NyY&t=8s) · gesto observado |
 | F05 | Elevación de talones | T27 | home; 1 persona(s) | [NHS inform 0:00–0:15](https://www.youtube.com/watch?v=4rgR6KtyHzI&t=0s) · gesto observado |
-| F06 | Plancha lateral con rodillas apoyadas | T29 | home; 1 persona(s) | Demostración pendiente |
+| F06 | Plancha lateral con rodillas apoyadas | T29 | home; 1 persona(s) | [Sports Rehab Expert 0:25–0:56.5](https://www.youtube.com/watch?v=JCVKPOdoA08&t=25s) · gesto observado |
 | W01 | Preparación progresiva | T30 | home; 1 persona(s) | [British Heart Foundation 1:42–1:49](https://www.youtube.com/watch?v=c41OYHF9BB8&t=102s) · componente |
 | C01 | Vuelta a la calma | T30 | home; 1 persona(s) | Demostración pendiente |
 | S01 | Conducción por puertas y cambio de ritmo | T10 | court; 1 persona(s) | [FIFA Training Centre · Speed and control · Warm-up 0:08–0:24](https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php) · archivo local · componente<br>[Unisport 1:16–1:26](https://www.youtube.com/watch?v=naEccnjzLxM&t=76s) · componente |
