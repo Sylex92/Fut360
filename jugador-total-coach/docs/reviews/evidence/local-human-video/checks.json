@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-06",
+  "environment": "Independent Chromium; synthetic isolated profiles",
+  "realLocalMedia": {
+    "Y01": {"start":8,"end":24,"observedEnd":24,"duration":67.48,"pausedAtEnd":true,"loop":true,"rate":0.5},
+    "Y07": {"start":12,"end":40,"observedEnd":40,"duration":69.44,"pausedAtEnd":true,"loop":true,"rate":0.5},
+    "automaticChild":true,
+    "manualPauseAndReload":true,
+    "nativeControlPause":true,
+    "visibilityEventSimulation":true,
+    "externalRequests":[],
+    "pageErrors":[]
+  },
+  "unavailableMedia": {"pause":true,"continueDisabledUntilReady":true,"retryKeepsPause":true},
+  "autoplayRejectionSimulation": {"pause":true,"continueDisabledUntilUserPlayback":true,"recovery":true},
+  "offline": {"reload":true,"playback":true,"seek30s":true,"rangeStatus":206,"contentRange":"bytes 5000-5099/35714115","rangeBytes":100},
+  "youtubeRegression": {"provider":"simulated","loadingHold":true,"manualPause":true,"manualHoldNotOverridden":true,"errorPaused":true,"exampleSpeedIndependent":true},
+  "tv": {"orderedArrows":true,"selectValuePreserved":true,"escape":true,"mediaKeySimulated":true,"desktop1920":true,"mobile390":true,"physicalSony":false,"pageErrors":[]},
+  "physicalSamsungThisIncrement":false,
+  "httpHealth": {"localhost4173":200,"lan192.168.68.102port4174":200,"previousLanAddressChanged":true},
+  "personalDataAccessed":false,
+  "coverage": {"tasks":69,"gesture":17,"component":17,"withoutIntegratedVideo":35,"localVideoTasks":8,"childLocalComponents":6},
+  "buildChecks": {"typecheck":"pass","lint":"pass","format":"pass","build":"pass","unitTestsPassed":295,"unitTestsSkippedOptIn":1,"diffWhitespace":"pass","knownWarning":"Existing bundles above 500 kB"}
+}

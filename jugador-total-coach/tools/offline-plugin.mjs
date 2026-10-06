@@ -2,6 +2,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { cachedRangeResponse } from './cached-range-response.mjs';
 export function offlinePlugin() {
   let outDir;
   return {
@@ -36,6 +37,7 @@ export function offlinePlugin() {
         JSON.stringify({ version, files: paths.length, bytes }),
       );
       const source = `const CACHE='fut360-app-${version}';
+${cachedRangeResponse.toString()}
 const FILES=${JSON.stringify(paths)};
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);try{await cache.addAll(FILES);}catch(error){await caches.delete(CACHE);throw error;}})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('fut360-app-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})()));
@@ -51,7 +53,7 @@ self.addEventListener('message',event=>{
 });
 self.addEventListener('fetch',event=>{const url=new URL(event.request.url);if(event.request.method!=='GET'||url.origin!==self.location.origin)return;
 if(event.request.mode==='navigate'){event.respondWith(caches.open(CACHE).then(async cache=>(await cache.match('/index.html'))||fetch(event.request)));return;}
-if(FILES.includes(url.pathname))event.respondWith(caches.open(CACHE).then(async cache=>(await cache.match(url.pathname))||fetch(event.request)));});
+if(FILES.includes(url.pathname))event.respondWith(caches.open(CACHE).then(async cache=>{const hit=await cache.match(url.pathname);return hit?cachedRangeResponse(hit,event.request.headers.get('Range')):fetch(event.request);}));});
 `;
       await writeFile(join(outDir, 'sw.js'), source);
     },

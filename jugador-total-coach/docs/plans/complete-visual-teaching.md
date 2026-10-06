@@ -2,6 +2,17 @@
 
 Fecha: 2026-10-05. Continuación autorizada por el usuario, sin nueva ronda de datos personales. Conserva los tres objetivos y el calendario ya entregado; no redefine el alcance.
 
+## Continuación autorizada — 2026-10-06
+
+El usuario autoriza expresamente lo necesario para terminar, como respuesta a la consulta de descarga FIFA. La descarga de Warm-up y Skill development mediante sus botones oficiales queda autorizada. Se mantienen costo cero, privacidad y revisión individual de derechos; no publicar recursos ni el proyecto por esta autorización.
+
+1. Adquirir ambos archivos mediante el mecanismo oficial, registrar origen/fecha/tamaño/hash, comprobar contenido real y conservarlos sin alterar en almacenamiento local no comercial, fuera de Git.
+2. Reutilizar HTMLVideoElement para mostrar los archivos locales con atribución y enlace. No iframe de plataforma FIFA ni extracción de YouTube. Los rangos son reproducción, no archivos recortados; revisión del recurso completo antes de ofrecerlo a infancia.
+3. Integrar la disponibilidad/pausa/bucle/velocidad con el recorrido actual, sin cambiar dosis ni historiales. Fuentes locales permitidas se muestran también en infancia; YouTube conserva su restricción independiente.
+4. Verificar ambas tareas, rangos, carga/fallo, pausa manual, ocultación y ausencia de tráfico a proveedores audiovisuales desde el perfil infantil. Recontar cobertura exacta/parcial y documentar carencias.
+5. Ampliar las fuentes nativas cuando el original aporte una carencia concreta: Shooting / Skill development de FIFA para la conducción y golpeo infantil. Misma revisión de §6.4 y autorización general recibida; obtener únicamente por botón oficial y conservar integridad/atribución. No sumar ejemplos de oposición compleja como si mostrasen la variante cooperativa inicial.
+6. Preparar una vista de TV con texto/controles grandes, foco visible y navegación por flechas en orden de lectura reutilizando HTML/focus. Enter y controles de formularios/video mantienen conducta nativa. Verificar teclado en navegador independiente; conservar pendiente la prueba Sony física, sin presentarlo como aplicación Android TV instalada.
+
 ## Criterios verificables
 
 1. Cada tarea de los recorridos iniciales debe enseñar colocación, ejecución, final y reinicio. Revisar por separado gesto humano, organización de la tarea y adecuación de la variante. Una referencia de un componente no pasa a ser demostración completa por enlazarla.

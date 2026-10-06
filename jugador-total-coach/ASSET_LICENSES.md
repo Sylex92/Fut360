@@ -1,5 +1,17 @@
 # Registro de recursos y licencias
 
+## Video local de FIFA — 2026-10-06
+
+Adquiridos mediante botones oficiales con autorización expresa del usuario. [Derechos, costos y límites](docs/reviews/local-human-video.md), [manifiesto verificable](assets/manifests/local-teaching-media.json). Originales intactos fuera de Git; reproducción por rangos sin editar archivos. Admisibles condicionados para uso personal local no comercial, con atribución/enlace. No licencia abierta ni permiso de distribución pública/comercial; no se declara aval de FIFA.
+
+| Archivo original | Bytes | SHA-256 | Incorporación |
+|---|---|---|---|
+| TCSession093_1WU_ENG_premium.mp4 | 34699913 | 40036846125eeabf8aa847c097f158df96d07171c84deaa7e837ba06e5d17566 | Warm-up, Speed and control; local, 8–24 s |
+| TCSession093_2PR_ENG_premium.mp4 | 35714115 | 47209409f86682916137a1710bef76eeede20b4e45e6615f17ef16e64a1a5d6f | Skill development, Speed and control; local, 12–40 s |
+| TCSession037_2PR_ENG_premium.mp4 | 30863695 | 1cb897b11d16865b6ae39d5f6cfae96457fd256639c3008e6e1cb2ab33398a05 | Shooting: candidato excluido de Y08 por tiro elevado; sin empaquetar |
+
+`premium` es parte del nombre suministrado; las descargas finalizaron sin cobro/cuenta. Ese nombre no prueba licencia ni pago. Fuentes/condiciones en la revisión enlazada. Ningún YouTube descargado.
+
 ## Seis referencias adultas, sin descarga — 2026-10-05
 
 Metadatos/rangos nuevos en el catálogo; no archivos audiovisuales ni hashes de medios. Se mantiene el reproductor oficial, atribución, controles y enlaces, conforme a la [revisión de derechos](docs/reviews/video-reference-cost-and-rights.md). No se asigna licencia abierta a estos videos:

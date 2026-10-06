@@ -8,9 +8,13 @@ const { tasks } = JSON.parse(
 const { references } = JSON.parse(
   fs.readFileSync(path.join(root, 'content/coaching/source-pages.json'), 'utf8'),
 );
-const exact = tasks.filter((t) => t.videos.some((v) => v.match === 'demonstration')).length;
+const { assets } = JSON.parse(
+  fs.readFileSync(path.join(root, 'assets/manifests/local-teaching-media.json'), 'utf8'),
+);
+const media = (t) => [...(t.localVideos ?? []), ...t.videos];
+const exact = tasks.filter((t) => media(t).some((v) => v.match === 'demonstration')).length;
 const partial = tasks.filter(
-  (t) => t.videos.length && !t.videos.some((v) => v.match === 'demonstration'),
+  (t) => media(t).length && !media(t).some((v) => v.match === 'demonstration'),
 ).length;
 const time = (t) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 const cell = (s) => s.replaceAll('|', '/').replaceAll('\n', ' ');
@@ -24,11 +28,20 @@ const sourceLinks = (task) =>
     .join('<br>');
 const rows = tasks.map(
   (t) =>
-    `| ${t.id} | ${cell(t.name)} | ${t.familyId} | ${t.space}; ${t.participants} persona(s) | ${t.videos.map((v) => `[${cell(v.channel)} ${time(v.start)}–${time(v.end)}](https://www.youtube.com/watch?v=${v.videoId}&t=${v.start}s) · ${v.match === 'demonstration' ? 'gesto observado' : 'componente'}`).join('<br>') || sourceLinks(t) || 'Demostración pendiente'} |`,
+    `| ${t.id} | ${cell(t.name)} | ${t.familyId} | ${t.space}; ${t.participants} persona(s) | ${
+      media(t)
+        .map((v) => {
+          const local = v.provider === 'local' ? assets.find((a) => a.id === v.assetId) : null;
+          return `[${cell(local ? local.attribution : v.channel)} ${time(v.start)}–${time(v.end)}](${local ? local.source : `https://www.youtube.com/watch?v=${v.videoId}&t=${v.start}s`}) · ${local ? 'archivo local · ' : ''}${v.match === 'demonstration' ? 'gesto observado' : 'componente'}`;
+        })
+        .join('<br>') ||
+      sourceLinks(t) ||
+      'Demostración pendiente'
+    } |`,
 );
 const text = `# Inventario de enseñanza dentro de la aplicación
 
-2026-10-05. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. ${tasks.length} fichas / ${new Set(tasks.map((t) => t.familyId)).size} familias. ${exact} fichas con referencia del gesto, ${partial} con un componente y ${tasks.filter((t) => !t.videos.length).length} sin video incrustado. Son ${new Set(tasks.flatMap((t) => t.videos.map((v) => v.videoId))).size} videos YouTube originales; una fuente puede contener varios ejercicios y dos fichas pueden compartir fragmento. Las fichas no equivalen a patrones distintos ni a videos diferentes. Fuera del reproductor integrado, una ficha enlaza el gesto de sentadilla NHS y siete ejemplos parciales FIFA. No sumar estos enlaces como videos incrustados.
+2026-10-06. Generado desde [catálogo real](../../content/coaching/catalog.json) mediante tools/build-coaching-inventory.mjs. ${tasks.length} fichas / ${new Set(tasks.map((t) => t.familyId)).size} familias. ${exact} fichas con referencia del gesto, ${partial} con un componente y ${tasks.filter((t) => !media(t).length).length} sin video integrado. Son ${new Set(tasks.flatMap((t) => t.videos.map((v) => v.videoId))).size} videos YouTube originales y ${assets.length} originales locales FIFA. ${tasks.filter((t) => t.localVideos?.length).length} fichas usan componentes locales, incluidas ${tasks.filter((t) => t.id.startsWith('Y') && t.localVideos?.length).length} infantiles. Las fichas no equivalen a patrones o videos distintos. Los enlaces externos complementan el inventario y no se suman como otra demostración.
 
 Todas las fichas incluyen organización, pasos, objetivo, errores y cambios de dificultad/modalidad. Permanecen documentary-draft: referencia visible, corrección técnica, dosis personal y eficacia no son equivalentes. “Gesto observado” no significa visionado íntegro del video, fotogramas completos revisados o equivalencia de toda la tarea. [Observaciones y límites](../research/VIDEO_TEACHING_REVIEW.md).
 
@@ -45,10 +58,10 @@ T05, T06, T07, T08, T11, T14, T17, T18, T19, T20, S01–S04, Y01, Y04, Y07, Y08 
 
 ${references.map((r) => `- ${r.tasks.join(', ')}: [${r.title}](${r.url}); ${r.section}. ${r.note} Evidencia: ${r.observation}`).join('\n')}
 
-No se incrustan estas páginas ni se controla su final. La modalidad infantil usa fichas y enlaces acompañados, sin cargar YouTube dentro de la aplicación. Las referencias parciales no cierran sus demostraciones exactas. F01 dispone además de una referencia integrada de Peak Physio; su enlace NHS es una alternativa externa. [Revisión de este incremento](../reviews/visual-teaching-increment.md).
+No se incrustan estas páginas ni se controla su final. Infancia dispone de seis referencias locales de componentes, fichas y enlaces acompañados; YouTube sigue sin cargarse. Las referencias parciales no cierran sus demostraciones exactas. F01 también dispone de Peak Physio integrado y NHS como alternativa externa. [Revisión local y límites](../reviews/local-human-video.md).
 
 ## Cobertura pendiente
-Completar referencias de las variantes sin video y reemplazar referencias parciales cuando exista una demostración pertinente. Revisión por fragmento y tarea, no por número de enlaces. Joner Football y Unisport permanecen en la investigación previa; este incremento no les atribuye nuevos fragmentos exactos. Ninguna referencia se descarga ni se redistribuye. [Condiciones](../reviews/video-reference-cost-and-rights.md).
+Completar las variantes sin video y reemplazar componentes cuando haya una demostración pertinente. Revisión por fragmento y tarea. Ningún YouTube descargado. Los originales FIFA locales tienen permiso de exhibición no comercial condicionado y permanecen fuera de Git; no autorizan distribución pública/comercial. [Condiciones locales](../reviews/local-human-video.md), [YouTube](../reviews/video-reference-cost-and-rights.md).
 `;
 fs.writeFileSync(path.join(root, 'docs/training/COACHING_LIBRARY_INVENTORY.md'), text);
 console.log(

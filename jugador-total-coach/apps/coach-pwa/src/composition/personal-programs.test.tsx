@@ -104,8 +104,8 @@ describe('Programas individuales y complemento infantil', () => {
   it('biblioteca infantil propia y referencias externas no se presentan como videos exactos', () => {
     expect(findTasks('', '', '', false, 'child')).toHaveLength(13);
     expect(findTasks('').every((t) => !t.id.startsWith('Y'))).toBe(true);
-    expect(visualCoverage(taskById.get('Y01')!)).toBe('Ejemplo relacionado en la fuente');
-    expect(visualCoverage(taskById.get('Y08')!)).toBe('Demostración pendiente');
+    expect(visualCoverage(taskById.get('Y01')!)).toBe('Video de un componente');
+    expect(visualCoverage(taskById.get('Y08')!)).toBe('Video de un componente');
     for (const ref of sourcePages) {
       expect(new URL(ref.url).protocol).toBe('https:');
       for (const id of ref.tasks) expect(taskById.has(id)).toBe(true);

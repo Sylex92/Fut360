@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { CoachingTask as Task } from '../composition/coaching-catalog';
-import { spaceLabels } from '../composition/coaching-catalog';
+import { spaceLabels, teachingVideos } from '../composition/coaching-catalog';
 import { ReferenceVideo } from './ReferenceVideo';
 import { TaskDiagram } from './TaskDiagram';
 import { SourceReferences } from './SourceReferences';
@@ -55,21 +55,22 @@ export function TaskInstructions({ task }: { task: Task }) {
 }
 export function CoachingTaskCard({ task }: { task: Task }) {
   const [videoIndex, setVideoIndex] = useState(0);
-  const video = task.videos[videoIndex] ?? task.videos[0];
+  const videos = teachingVideos(task);
+  const video = videos[videoIndex] ?? videos[0];
   return (
     <article className="coaching-task-card">
       <p className="eyebrow">{task.category}</p>
       <h2>{task.name}</h2>
       {video ? (
         <>
-          {task.videos.length > 1 && (
+          {videos.length > 1 && (
             <label>
               Referencia{' '}
               <select
                 value={videoIndex}
                 onChange={(e) => setVideoIndex(Number(e.target.value))}
               >
-                {task.videos.map((v, i) => (
+                {videos.map((v, i) => (
                   <option key={v.id} value={i}>
                     {v.title}
                   </option>

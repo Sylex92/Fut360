@@ -1,5 +1,11 @@
 # Matriz de reutilización
 
+## Video humano local — 2026-10-06
+
+Vista TV: reutilizar elementos HTML nativos, foco/scroll y estilos existentes. Adaptación acotada a flechas en orden de lectura fuera de campos editables y video, tecla multimedia sobre controles ya existentes y tamaño legible. Sin motor espacial, SDK Android, paquete, instalación ni nube. Prueba de teclado en PC no acredita mando/aparato Sony.
+
+Reutilizar HTMLVideoElement (decodificación, controles, accesibilidad, velocidad y búsqueda), Vite (archivos públicos) y Cache Storage del navegador. Adaptar únicamente límites de fragmento, pausa/disponibilidad del recorrido y respuestas Range de archivos cacheados. No nuevo motor multimedia ni dependencia. Alternativas: YouTube ya sirve al adulto pero la integración infantil está condicionada; iframe de FIFA no se adopta. Dos originales adquiridos mediante botones oficiales, con autorización expresa y licencia de exhibición no comercial condicionada (§6.4). Manifiesto con hash/tamaño/origen, archivos locales excluidos de Git. La reproducción de componentes no equivale a demostración exacta de una variante propia.
+
 ## Calendario personal — 2026-10-05
 
 Adaptar Participant y guardado CAS para versiones de plan y observaciones, reusar sesiones/semana/reproductor. Crear solo la proyección fechada, comparación de intentos homogéneos y entrada local de propuestas. Sin dependencia ni servicio nuevo; ver [plan y revisión de costo](../plans/dated-personal-plan.md). La integración de video conserva sus condiciones y no se declara resuelta por el calendario.

@@ -1,6 +1,11 @@
 import input from '../../../../content/coaching/catalog.json';
 import { validateSegment } from '../platform/youtube';
 import type { VideoSegment } from '../platform/youtube';
+import {
+  localTeachingAsset,
+  type LocalVideoSegment,
+  type TeachingVideo,
+} from '../platform/local-teaching-media';
 export interface CoachingTask {
   id: string;
   familyId: string;
@@ -19,6 +24,7 @@ export interface CoachingTask {
   limits: string;
   modalities: { fut5: string; fut7: string; fut11: string };
   videos: VideoSegment[];
+  localVideos?: LocalVideoSegment[];
   sourceRefs: string[];
   review: string;
 }
@@ -38,6 +44,9 @@ export const spaceLabels: Record<string, string> = {
 export function taskAudience(task: CoachingTask) {
   return task.id.startsWith('Y') ? 'child' : 'adult';
 }
+export function teachingVideos(task: CoachingTask): TeachingVideo[] {
+  return [...(task.localVideos ?? []), ...(taskAudience(task) === 'child' ? [] : task.videos)];
+}
 export function findTasks(
   query: string,
   category = '',
@@ -56,7 +65,7 @@ export function findTasks(
       taskAudience(task) === audience &&
       (!category || task.category === category) &&
       (!place || (place === 'home' ? task.space === 'home' : task.space !== 'home')) &&
-      (!videosOnly || task.videos.length > 0) &&
+      (!videosOnly || teachingVideos(task).length > 0) &&
       words.every((word) =>
         norm([task.name, task.objective, task.category, task.id].join(' ')).includes(word),
       ),
@@ -74,6 +83,7 @@ export function validateCoachingCatalog() {
     )
       throw new Error('Ficha incompleta: ' + task.id);
     for (const segment of task.videos) validateSegment(segment);
+    for (const segment of task.localVideos ?? []) localTeachingAsset(segment);
   }
 }
 validateCoachingCatalog();

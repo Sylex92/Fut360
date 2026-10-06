@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-06",
   "status": "planning-draft",
   "tasks": [
     {
@@ -2025,19 +2025,19 @@
       },
       "videos": [
         {
-        "id": "bhf-warmup-march",
-        "videoId": "c41OYHF9BB8",
-        "channel": "British Heart Foundation",
-        "title": "Inicio del calentamiento: marcha suave",
-        "start": 102,
-        "end": 109,
-        "match": "component",
-        "note": "Observa a la persona de pie: levanta poco cada pie y vuelve a apoyarlo antes de alternar. Es solo el comienzo; continúa con la movilidad y los gestos suaves de la ficha. Usa un ritmo cómodo y los tiempos de tu sesión, sin copiar las repeticiones de la clase."
+          "id": "bhf-warmup-march",
+          "videoId": "c41OYHF9BB8",
+          "channel": "British Heart Foundation",
+          "title": "Inicio del calentamiento: marcha suave",
+          "start": 102,
+          "end": 109,
+          "match": "component",
+          "note": "Observa a la persona de pie: levanta poco cada pie y vuelve a apoyarlo antes de alternar. Es solo el comienzo; continúa con la movilidad y los gestos suaves de la ficha. Usa un ritmo cómodo y los tiempos de tu sesión, sin copiar las repeticiones de la clase."
         }
       ],
       "sourceRefs": [
         "C04",
-      "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/warm-up-exercises"
+        "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/warm-up-exercises"
       ],
       "review": "documentary-draft"
     },
@@ -2119,7 +2119,19 @@
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
         "https://www.youtube.com/watch?v=naEccnjzLxM"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "s01-fifa-local-v1",
+          "assetId": "fifa-speed-control-warmup",
+          "title": "Conducir entre puertas",
+          "start": 8,
+          "end": 24,
+          "match": "component",
+          "note": "Observa los toques cortos y el paso entre marcas. El ejemplo usa un grupo; tu recorrido es individual y no es una carrera."
+        }
+      ]
     },
     {
       "id": "S02",
@@ -2247,7 +2259,19 @@
         "https://www.thefa.com/bootroom/resources/coaching/mastering-the-ball",
         "https://www.youtube.com/watch?v=oIpRuzvsU80"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "s04-fifa-local-v1",
+          "assetId": "fifa-speed-control-skill",
+          "title": "Pasar y recibir entre puertas",
+          "start": 12,
+          "end": 40,
+          "match": "component",
+          "note": "Observa el pase raso y el primer contacto al recibir. En tu variante individual empujas suavemente tu propio balón; el video usa dos personas."
+        }
+      ]
     },
     {
       "id": "Y01",
@@ -2282,7 +2306,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y01-fifa-local-v1",
+          "assetId": "fifa-speed-control-warmup",
+          "title": "Conducir entre puertas",
+          "start": 8,
+          "end": 24,
+          "match": "component",
+          "note": "Observa cómo el balón pasa entre las marcas con toques cortos. En tu juego solo pasa una persona y eliges dos puertas; no necesitas competir."
+        }
+      ]
     },
     {
       "id": "Y02",
@@ -2317,7 +2353,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y02-fifa-local-v1",
+          "assetId": "fifa-speed-control-warmup",
+          "title": "Conducir entre puertas",
+          "start": 8,
+          "end": 24,
+          "match": "component",
+          "note": "Observa la conducción con toques cortos. El semáforo lo indica tu acompañante: esa señal y la parada no aparecen en este fragmento."
+        }
+      ]
     },
     {
       "id": "Y03",
@@ -2387,7 +2435,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y04-fifa-local-v1",
+          "assetId": "fifa-speed-control-skill",
+          "title": "Pasar y recibir entre puertas",
+          "start": 12,
+          "end": 40,
+          "match": "component",
+          "note": "Observa la recepción y el pase raso. Tu juego añade elegir una de dos puertas y conducir hacia ella; esa secuencia completa no aparece aquí."
+        }
+      ]
     },
     {
       "id": "Y05",
@@ -2492,7 +2552,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y07-fifa-local-v1",
+          "assetId": "fifa-speed-control-skill",
+          "title": "Pasar y recibir entre puertas",
+          "start": 12,
+          "end": 40,
+          "match": "component",
+          "note": "Observa el pase raso por una puerta y la devolución. Tu acompañante devuelve suave desde una posición fija; el grupo del video se desplaza entre puertas."
+        }
+      ]
     },
     {
       "id": "Y08",
@@ -2527,7 +2599,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y08-fifa-local-v1",
+          "assetId": "fifa-speed-control-skill",
+          "title": "Conducir y dirigir un pase raso",
+          "start": 12,
+          "end": 40,
+          "match": "component",
+          "note": "Observa los toques de preparación y el pase raso entre marcas. En tu ejercicio esa puerta es la meta, sin portero ni rival. Recupera andando; aquí no compites por rapidez. El video no muestra el regreso completo de tu tarea."
+        }
+      ]
     },
     {
       "id": "Y09",
@@ -2562,7 +2646,19 @@
       "sourceRefs": [
         "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php"
       ],
-      "review": "documentary-draft"
+      "review": "documentary-draft",
+      "localVideos": [
+        {
+          "provider": "local",
+          "id": "y09-fifa-local-v1",
+          "assetId": "fifa-speed-control-skill",
+          "title": "Pasar y recibir entre puertas",
+          "start": 12,
+          "end": 40,
+          "match": "component",
+          "note": "Observa cómo se pasan el balón y buscan espacio para recibir. En tu juego caminas hacia una marca a cada lado después de pasar."
+        }
+      ]
     },
     {
       "id": "Y10",

@@ -1,5 +1,21 @@
 # Estado del proyecto
 
+## Video humano local, reproducción infantil y vista TV — 2026-10-06
+
+Autorización expresa recibida; la consulta de descarga del apartado histórico siguiente está **resuelta**. Se descargaron Warm-up y Skill development desde los botones oficiales de FIFA, se verificaron sus hashes y se integraron con atribución para uso personal local no comercial condicionado. Un tercer candidato de golpeo se revisó y excluyó porque su tiro elevado no representa el golpeo raso solicitado. Originales fuera de Git; sin instalar dependencias, cambiar configuración global, contratar pagos ni acceder a los perfiles reales. [Entrega, procedencia y límites](docs/reviews/local-human-video.md).
+
+**Implementado:** video nativo con límites, bucle, velocidad, pausas y fallos conectado al reloj; ocho fichas con componentes locales, seis de ellas infantiles. Copia offline opcional con reproducción/búsqueda comprobadas sin red y tamaño visible. YouTube infantil continúa bloqueado independientemente de esta vía local. Vista TV con controles grandes, flechas en orden de lectura, Escape y tecla multimedia; no equivale a APK/instalación ni prueba física Sony.
+
+**Cobertura vigente:** 69 fichas / 32 familias; 17 referencias del gesto, 17 componentes y 35 sin video integrado. No equivalen a 34 demostraciones completas. Los planes/dosis/calendarios/versiones e historial se conservan. [Inventario](docs/training/COACHING_LIBRARY_INVENTORY.md).
+
+**Verificación:** pruebas de MP4 real, bucle/rangos/0,5×, pausa manual y del control nativo, carga fallida, bloqueo de autoplay y recuperación; recorrido infantil sin solicitudes externas. Offline real con recarga y seek, rangos 206. Regresión de YouTube con proveedor simulado. TV/teclado y pantallas de 1920 y 390 px sin desbordamiento ni errores. [Evidencia](docs/reviews/evidence/local-human-video/checks.json). Typecheck/lint/formato/build correctos y 295 pruebas aprobadas, una opt-in omitida. Persiste aviso de bundles >500 kB. Emulación y eventos sintéticos no sustituyen Samsung/Sony físicos.
+
+**El producto completo sigue abierto:** demostraciones suficientes de todas las variantes, conversación y adaptación por competencia, integración/prueba real de TV y aceptación física del incremento. No faltan nuevos permisos generales ni los datos ya recibidos. No declarar terminados los tres objetivos por cerrar este incremento técnico.
+
+Acceso al cierre: localhost `http://127.0.0.1:4173/` responde 200. Wi-Fi cambió de `.101` a `.102`; preview LAN levantado en `http://192.168.68.102:4174/`, también 200. Sin modificar firewall/configuración de red. No confundir la petición HTTP desde PC con prueba física Samsung. La IP puede volver a cambiar por DHCP; el servidor debe estar activo.
+
+Los apartados siguientes conservan la historia; sus cifras y consultas antiguas no sustituyen el estado anterior.
+
 ## Enseñanza visual y controles de reproducción — 2026-10-05
 
 Continuación autónoma solicitada. Se incorporaron referencias humanas para T29/F01 y componentes para S01/S02/S04/W01; [tramos, correspondencia y límites](docs/reviews/visual-teaching-increment.md). La biblioteca contiene 69 fichas: 17 con referencia del gesto, 11 con componentes y 41 sin video incrustado. No equivalen a 28 demostraciones completas. C01 y la enseñanza infantil siguen pendientes; no se rellena una ficha con una variante distinta por aumentar el contador.

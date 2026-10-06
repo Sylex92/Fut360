@@ -110,6 +110,11 @@ export async function verifyAutomaticVideos(page, url = 'http://127.0.0.1:4173/?
   await page.getByRole('button', { name: 'Mantener todo en pausa', exact: true }).waitFor();
   await page.getByRole('button', { name: 'Mantener todo en pausa', exact: true }).click();
   await page.evaluate(() => window.__mediaPlayers.find((p) => !p.dead).emit(1));
+  await page.waitForFunction(() =>
+    Array.from(document.querySelectorAll('button')).some(
+      (b) => b.textContent === 'Continuar' && !b.disabled,
+    ),
+  );
   if (await page.getByRole('button', { name: 'Pausar todo', exact: true }).count())
     throw new Error('Manual pause was overridden by readiness');
   if (await page.getByRole('button', { name: 'Continuar', exact: true }).isDisabled())

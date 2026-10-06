@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "fifa-speed-control-warmup",
+      "file": "fifa-speed-control/warm-up.mp4",
+      "originalFilename": "TCSession093_1WU_ENG_premium.mp4",
+      "bytes": 34699913,
+      "sha256": "40036846125eeabf8aa847c097f158df96d07171c84deaa7e837ba06e5d17566",
+      "duration": 67.48,
+      "source": "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
+      "attribution": "FIFA Training Centre · Speed and control · Warm-up",
+      "terms": "https://www.fifatrainingcentre.com/en/terms-of-service.php",
+      "rights": "Conditional non-commercial display, section 6.4; not an open redistribution license",
+      "acquired": "2026-10-06"
+    },
+    {
+      "id": "fifa-speed-control-skill",
+      "file": "fifa-speed-control/skill-development.mp4",
+      "originalFilename": "TCSession093_2PR_ENG_premium.mp4",
+      "bytes": 35714115,
+      "sha256": "47209409f86682916137a1710bef76eeede20b4e45e6615f17ef16e64a1a5d6f",
+      "duration": 69.44,
+      "source": "https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php",
+      "attribution": "FIFA Training Centre · Speed and control · Skill development",
+      "terms": "https://www.fifatrainingcentre.com/en/terms-of-service.php",
+      "rights": "Conditional non-commercial display, section 6.4; not an open redistribution license",
+      "acquired": "2026-10-06"
+    }
+  ]
+}

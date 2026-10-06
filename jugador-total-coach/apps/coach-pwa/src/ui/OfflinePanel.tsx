@@ -17,10 +17,26 @@ export function OfflinePanel({ active }: { active: boolean }) {
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
   const [waiting, setWaiting] = useState<ServiceWorker | null>(null);
+  const [downloadBytes, setDownloadBytes] = useState<number | null>(null);
   const supported =
     typeof window !== 'undefined' && window.isSecureContext && 'serviceWorker' in navigator;
   useEffect(() => {
     if (!supported) return;
+    let cancelled = false;
+    void fetch('/offline.json')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { bytes?: unknown } | null) => {
+        if (
+          !cancelled &&
+          typeof data?.bytes === 'number' &&
+          Number.isFinite(data.bytes) &&
+          data.bytes > 0
+        )
+          setDownloadBytes(data.bytes);
+      })
+      .catch(() => {
+        /* The optional size preview does not block caching. */
+      });
     void navigator.serviceWorker.getRegistration().then(async (r) => {
       if (r?.active)
         setMessage(
@@ -30,6 +46,9 @@ export function OfflinePanel({ active }: { active: boolean }) {
         );
       if (r?.waiting) setWaiting(r.waiting);
     });
+    return () => {
+      cancelled = true;
+    };
   }, [supported]);
   async function prepare() {
     if (!supported) return;
@@ -86,6 +105,12 @@ export function OfflinePanel({ active }: { active: boolean }) {
             ? 'Guarda una copia en este navegador para abrir Fut360 sin conexión.'
             : 'Esta dirección de red permite probar la app. La instalación y el modo sin conexión requieren HTTPS o localhost.'}
         </p>
+        {downloadBytes !== null && (
+          <p>
+            La copia incluye los videos locales: aproximadamente{' '}
+            {Math.ceil(downloadBytes / 1048576)} MB. Los videos de YouTube necesitan Internet.
+          </p>
+        )}
       </div>
       {supported && (
         <button disabled={busy || active} onClick={() => void prepare()}>

@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+**Continuación vigente 2026-10-06:** [video humano local y vista TV](docs/reviews/local-human-video.md). Descarga FIFA expresamente autorizada y ejecutada, no volver a pedirla. Dos MP4 locales con manifiesto, originales fuera de Git y licencia no comercial condicionada. Ocho fichas con componentes locales, seis infantiles; biblioteca 69/17 gesto/17 componente/35 sin video integrado. Reproducción, offline/seek y controles TV verificados en navegador; Sony/Samsung físicos pendientes en este incremento. Conservar planes/historial y restricción independiente de YouTube infantil. No declarar producto completo; seguir carencias reales de enseñanza/conversación/adaptación. Los apartados siguientes son antecedentes.
+
 **Continuación vigente 2026-10-05:** [calendario fechado y seguimiento por perfil](docs/reviews/dated-personal-plan.md) implementados, con preservación de datos (DB 4 / respaldo 3), rotación infantil de ocho semanas, cuatro complementos y video automático adulto comprobado. Horario/contexto ya recibidos: no repetir preguntas. La propuesta privada se revisa y guarda desde el perfil elegido; no está hardcodeada. Continuar enseñanza de ejercicios sin demostración suficiente e integración infantil compatible. No rehacer calendario/perfiles ni declarar completos los tres objetivos. Los párrafos siguientes conservan antecedentes.
 
 

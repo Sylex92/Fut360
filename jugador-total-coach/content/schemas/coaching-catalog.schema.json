@@ -193,6 +193,57 @@
           "items": {
             "$ref": "#/$defs/video"
           }
+        },
+        "localVideos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/localVideo"
+          }
+        }
+      }
+    },
+    "localVideo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "id",
+        "assetId",
+        "title",
+        "start",
+        "end",
+        "match",
+        "note"
+      ],
+      "properties": {
+        "provider": {
+          "const": "local"
+        },
+        "id": {
+          "$ref": "#/$defs/text"
+        },
+        "assetId": {
+          "$ref": "#/$defs/text"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "match": {
+          "enum": [
+            "demonstration",
+            "component"
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/text"
         }
       }
     }

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { SessionAction, SessionProjection } from '@fut360/domain';
 import type { CoachingSession } from '../composition/development-plan';
 import { coachingPlans } from '../composition/development-plan';
-import { taskById } from '../composition/coaching-catalog';
+import { taskById, teachingVideos } from '../composition/coaching-catalog';
 import { GuidedSession } from '../composition/guided-session';
 import { useTrainingHistory } from './use-training-history';
 import { TrainingHistory } from './TrainingHistory';
@@ -99,6 +99,7 @@ export function CoachingRunner({
   }
   const target = state?.phase === 'rest' && state.next ? state.next : state?.current;
   const task = taskById.get(target?.exerciseId ?? session.blocks[0]!.taskId)!;
+  const demonstration = teachingVideos(task)[0];
   const occurrence = target?.sourceOccurrenceId ?? plan.occurrences[0]!.id;
   const blockIndex = Number(occurrence.split('/')[1]);
   const block = session.blocks[blockIndex] ?? session.blocks[0]!;
@@ -136,7 +137,7 @@ export function CoachingRunner({
   function showDemonstration() {
     if (automaticVideos)
       document
-        .querySelector('.coaching-runner .youtube-frame')
+        .querySelector('.coaching-runner .youtube-frame, .coaching-runner .local-video-frame')
         ?.scrollIntoView({ block: 'center', behavior: 'instant' });
   }
   return (
@@ -210,7 +211,7 @@ export function CoachingRunner({
             Mantener todo en pausa
           </button>
         )}
-        {participant?.kind !== 'child' && !complete && (
+        {!complete && (
           <button
             onClick={() => {
               if (automaticVideos) {
@@ -229,11 +230,12 @@ export function CoachingRunner({
         {state?.can.start && (
           <button
             className="primary"
+            data-playback-toggle
             disabled={
               !history.ready ||
               Boolean(history.recovery) ||
               Boolean(history.error) ||
-              (automaticVideos && !!task.videos[0] && !mediaReady)
+              (automaticVideos && !!demonstration && !mediaReady)
             }
             onClick={() => {
               showDemonstration();
@@ -244,14 +246,19 @@ export function CoachingRunner({
           </button>
         )}
         {state?.can.pause && (
-          <button className="primary" onClick={() => act({ type: 'Pause' })}>
+          <button
+            className="primary"
+            data-playback-toggle
+            onClick={() => act({ type: 'Pause' })}
+          >
             Pausar todo
           </button>
         )}
         {state?.can.resume && (
           <button
             className="primary"
-            disabled={automaticVideos && !!task.videos[0] && !mediaReady}
+            data-playback-toggle
+            disabled={automaticVideos && !!demonstration && !mediaReady}
             onClick={() => {
               setStudying(false);
               showDemonstration();
@@ -305,27 +312,27 @@ export function CoachingRunner({
       </div>
       {!automaticVideos && participant?.kind !== 'child' && !complete && (
         <p className="quiet-note">
-          Las demostraciones automáticas conectan con YouTube: requieren Internet y pueden
-          mostrar anuncios.
+          Algunos ejemplos conectan con YouTube: requieren Internet y pueden mostrar anuncios.
+          Los videos locales se reproducen sin conectar con servicios externos.
         </p>
       )}
       {!complete && (
         <>
           <h3 className="current-task-title">{task.name}</h3>
           <p className="hour-dose">{block.dose}</p>
-          {automaticVideos && task.videos[0] && (
+          {automaticVideos && demonstration && (
             <ReferenceVideo
               key={task.id}
-              segment={task.videos[0]}
+              segment={demonstration}
               automatic
               paused={state?.status === 'paused' && !mediaHold.current}
               onAvailability={mediaAvailability}
             />
           )}
-          {automaticVideos && !task.videos[0] && (
+          {automaticVideos && !demonstration && (
             <p>Esta tarea todavía no tiene video integrado. Sus instrucciones están debajo.</p>
           )}
-          {!automaticVideos && task.videos[0] && (
+          {!automaticVideos && demonstration && (
             <>
               <button
                 onClick={() => {
@@ -335,7 +342,7 @@ export function CoachingRunner({
               >
                 {studying ? 'Cerrar ejemplo' : 'Estudiar el video · pausa el recorrido'}
               </button>
-              {studying && <ReferenceVideo key={task.id} segment={task.videos[0]} />}
+              {studying && <ReferenceVideo key={task.id} segment={demonstration} />}
             </>
           )}
           <SourceReferences

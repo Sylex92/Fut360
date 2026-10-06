@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { validateWorkoutV1 } from '@fut360/exercise-catalog';
 import type { WorkoutSummary } from '@fut360/domain';
 import { DemoPanel } from './DemoPanel';
@@ -9,6 +9,7 @@ import { OfflinePanel } from './OfflinePanel';
 import { CoachingWorkspace } from './CoachingWorkspace';
 import { useParticipant } from './ParticipantContext';
 import { ParticipantManager, ParticipantHistory } from './ParticipantManager';
+import { useTvNavigation } from './use-tv-navigation';
 
 const duration = (seconds: number) =>
   Math.floor(seconds / 60)
@@ -90,6 +91,10 @@ function SessionSummary({ summary }: { summary: WorkoutSummary }) {
 }
 
 export function App({ content }: { content: unknown }) {
+  const shell = useRef<HTMLDivElement>(null);
+  const [tv, setTv] = useState(false);
+  const exitTv = useCallback(() => setTv(false), []);
+  useTvNavigation(shell, tv, exitTv);
   const { participant } = useParticipant();
   const childProfile = participant?.kind === 'child';
   const [example, setExample] = useState<
@@ -103,7 +108,7 @@ export function App({ content }: { content: unknown }) {
     setChecks((value) => value + 1);
   }
   return (
-    <div className="app-shell">
+    <div className={tv ? 'app-shell tv-view' : 'app-shell'} ref={shell}>
       <a className="skip-link" href="#main">
         Ir al contenido
       </a>
@@ -118,7 +123,16 @@ export function App({ content }: { content: unknown }) {
           ENTRENA <span aria-hidden="true">/</span> OBSERVA <span aria-hidden="true">/</span>{' '}
           PROGRESA
         </span>
+        <button className="tv-toggle" aria-pressed={tv} onClick={() => setTv(!tv)}>
+          {tv ? 'Salir de vista TV' : 'Vista de TV'}
+        </button>
       </header>
+      {tv && (
+        <p className="tv-help">
+          Flechas: recorrer controles · Aceptar: seleccionar · Volver/Escape: salir del campo o
+          de esta vista. En listas, arriba/abajo elige y derecha/izquierda sale.
+        </p>
+      )}
       <main id="main">
         <section className="intro" aria-labelledby="page-title">
           <div>

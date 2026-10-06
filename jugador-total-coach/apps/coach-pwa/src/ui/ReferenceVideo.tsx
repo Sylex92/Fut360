@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { loadYouTube, segmentRequest, videoFailure, videoLink } from '../platform/youtube';
 import type { VideoSegment, YouTubePlayer } from '../platform/youtube';
 import { useParticipant } from './ParticipantContext';
+import { isLocalVideo, type TeachingVideo } from '../platform/local-teaching-media';
+import { LocalReferenceVideo } from './LocalReferenceVideo';
 
 export const videoTime = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${Math.floor(seconds % 60)
@@ -15,12 +17,21 @@ export function ReferenceVideo({
   automatic = false,
   onAvailability,
 }: {
-  segment: VideoSegment;
+  segment: TeachingVideo;
   paused?: boolean;
   automatic?: boolean;
   onAvailability?: ((ready: boolean, issue?: string) => void) | undefined;
 }) {
   const { participant } = useParticipant();
+  if (isLocalVideo(segment))
+    return (
+      <LocalReferenceVideo
+        segment={segment}
+        paused={paused}
+        automatic={automatic}
+        onAvailability={onAvailability}
+      />
+    );
   if (participant?.kind === 'child')
     return (
       <p className="reference-pending">

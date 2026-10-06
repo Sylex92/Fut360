@@ -1,5 +1,7 @@
 # Sony A80J: ruta concreta y condiciones
 
+Incremento 2026-10-06: vista TV implementada dentro de la web, con controles/texto grandes, foco, navegación por flechas en orden de lectura y tecla multimedia. Comprobación de teclado y viewport 1920×1080 en Chromium; emulación a 390 px conserva layout. [Evidencia y límites](local-human-video.md). Todavía sin acceso/prueba del aparato, navegador instalado o mando físico. Las teclas dentro de iframes externos las gestiona el proveedor; esta vista no acredita una experiencia Android TV nativa ni resuelve distribución/sincronización.
+
 Revisión documental 2026-10-04. Modelo declarado por el usuario: Sony A80J. No se han inspeccionado físicamente su firmware, aplicaciones, red ni mando. No se infiere tamaño de pantalla de la variante consultada.
 
 ## Verificado en documentación oficial

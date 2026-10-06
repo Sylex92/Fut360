@@ -13,6 +13,7 @@ test-results/
 *.blend2
 outputs/
 assets/downloads/
+apps/coach-pwa/public/media/
 data/private/
 .local/
 .cache/
