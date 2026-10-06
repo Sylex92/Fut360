@@ -1,5 +1,11 @@
 # Estado del proyecto
 
+## Inicio independiente del chat — 2026-10-06
+
+Implementado `Abrir Fut360.cmd`: inicia/reutiliza servidores del build existente y muestra la IP privada vigente; sin instalador, servicio global, firewall ni cambios de datos. [Alcance y pruebas](docs/plans/local-start-and-coach.md). Ensayo real de arranque/reutilización con puerto efímero y comprobación de 4173/4174; 299 pruebas aprobadas, una opt-in omitida; tipos/lint correctos. La biblioteca conserva 69/23 gesto/18 componente/28 sin video integrado.
+
+Conversación local: [runtime/modelo investigados](docs/reviews/local-coach-candidate.md), todavía no descargados ni ejecutados. Espacio insuficiente en C:; recuperadas únicamente cuatro copias idénticas de MP4 dentro del proyecto, conservando originales verificados. Consulta concreta para disponer de 5 GB pendiente; no es falta de autorización general ni razón para detener trabajo independiente. Siguen abiertos enseñanza completa, conversación/adaptación y aceptación física de TV/móvil. Los apartados siguientes conservan antecedentes.
+
 ## Fuerza, movilidad y protección — continuación 2026-10-06
 
 Seis referencias humanas del gesto incorporadas para F02/F04/F06/T27/T28/T30 y un componente local FIFA para T03. [Correspondencia, derechos, descartes y pruebas](docs/reviews/strength-human-video.md). Cobertura actual: **69 fichas, 23 con gesto, 18 con componente y 28 sin video integrado**. No todas son demostraciones completas de la tarea. 295 pruebas correctas, una opt-in omitida; tipos/lint/build correctos. Los seis YouTube y T03 reproducidos realmente en la app hasta su frontera, sin errores ni desbordamiento a 390 px. En una prueba el proveedor pidió activación propia; no garantizar autoplay universal. Tres originales locales FIFA fuera de Git; copia offline opcional aproximada de 185 MiB.

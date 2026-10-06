@@ -8,6 +8,7 @@
     "node": ">=22.14.0 <23"
   },
   "scripts": {
+    "start": "node tools/start-local.mjs",
     "dev": "vite --config apps/coach-pwa/vite.config.ts",
     "build": "vite build --config apps/coach-pwa/vite.config.ts",
     "preview": "vite preview --config apps/coach-pwa/vite.config.ts",

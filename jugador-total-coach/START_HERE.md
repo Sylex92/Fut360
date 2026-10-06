@@ -1,5 +1,7 @@
 # Empieza aquí — Jugador Total Coach
 
+**Inicio autónomo 2026-10-06:** [Abrir Fut360.cmd](Abrir%20Fut360.cmd) inicia/reutiliza el servidor y muestra la IP Wi-Fi vigente; no depende de mantener este chat activo. [Plan y evidencia](docs/plans/local-start-and-coach.md). El candidato de IA local todavía no se ha descargado: falta espacio en C:, consulta concreta pendiente. Continuar las tareas independientes sin repetir permisos generales.
+
 **Último incremento 2026-10-06:** [fuerza, movilidad y protección humanas](docs/reviews/strength-human-video.md). Cobertura vigente 69/23 gesto/18 componente/28 sin video integrado. Seis YouTube adicionales y un tercer original FIFA local adulto; seis componentes infantiles sin cambios. Planes/dosis/historial conservados. Continuar pendientes acumulados sin repetir permisos generales.
 
 **Continuación vigente 2026-10-06:** [video humano local y vista TV](docs/reviews/local-human-video.md). Descarga FIFA expresamente autorizada y ejecutada, no volver a pedirla. Dos MP4 locales con manifiesto, originales fuera de Git y licencia no comercial condicionada. Ocho fichas con componentes locales, seis infantiles; biblioteca 69/17 gesto/17 componente/35 sin video integrado. Reproducción, offline/seek y controles TV verificados en navegador; Sony/Samsung físicos pendientes en este incremento. Conservar planes/historial y restricción independiente de YouTube infantil. No declarar producto completo; seguir carencias reales de enseñanza/conversación/adaptación. Los apartados siguientes son antecedentes.
