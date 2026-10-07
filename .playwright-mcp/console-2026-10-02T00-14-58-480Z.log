@@ -1,0 +1,13 @@
+[     460ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:0
+[     462ms] [ERROR] THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context. @ http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:0
+[     472ms] [ERROR] Error: THREE.WebGLRenderer: Error creating WebGL context.
+    at new ng (http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:4220:24405)
+    at A_ (http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:4220:76921)
+    at l (http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:4231:11259)
+    at Object.configure (http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:4231:11373)
+    at http://127.0.0.1:4173/assets/clip-driver-BVn_k38c.js:4231:20121
+    at Sl (http://127.0.0.1:4173/assets/index-DUK7U5M5.js:9:95081)
+    at gu (http://127.0.0.1:4173/assets/index-DUK7U5M5.js:9:104557)
+    at Fu (http://127.0.0.1:4173/assets/index-DUK7U5M5.js:9:115801)
+    at gu (http://127.0.0.1:4173/assets/index-DUK7U5M5.js:9:105613)
+    at Fu (http://127.0.0.1:4173/assets/index-DUK7U5M5.js:9:115801) @ http://127.0.0.1:4173/assets/index-DUK7U5M5.js:8

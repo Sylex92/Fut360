@@ -1,0 +1,613 @@
+{
+  "formatVersion": 1,
+  "exportedAt": "2026-10-04T02:26:49.797Z",
+  "records": [
+    {
+      "id": "session-1791080595866-tb1rn2eeiy/1",
+      "startedAt": "2026-10-04T02:24:07.153Z",
+      "updatedAt": "2026-10-04T02:26:49.690Z",
+      "contentStamp": "{\"workout\":{\"id\":\"home-foundations-60min-v2\",\"version\":2,\"schemaVersion\":2,\"locale\":\"es-MX\",\"space\":{\"widthM\":2,\"lengthM\":2},\"equipment\":[\"ball\",\"mat\",\"wall\"],\"safety\":[\"Dolor, bloqueo, inflamación o inestabilidad reales: detente y busca valoración.\"],\"resources\":[{\"exerciseId\":\"wall-push-up\",\"exerciseVersion\":1,\"assetId\":\"quaternius-wall-push-up-v1\",\"assetVersion\":1,\"sha256\":\"9826e9d1660ba734d9dbb8b4170e69442985ebf83efe1f2672172c6160bc4268\",\"clipName\":\"EX_wall-push-up__bilateral__v1\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"hip-hinge\",\"exerciseVersion\":1,\"assetId\":\"quaternius-hip-hinge-v1\",\"assetVersion\":1,\"sha256\":\"45466b100e7f1aa3d6d66643f9cdcd612a83de3d0b6a22257b960d82969ac4fe\",\"clipName\":\"EX_hip-hinge__neutral__v1\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"assetId\":\"quaternius-inside-inside-v2\",\"assetVersion\":2,\"sha256\":\"c96528aeb997b0838ac7a70e7c8cec33a274a34abab43c14c2301468aa70032b\",\"clipName\":\"EX_inside-inside__alternating__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"glute-bridge\",\"exerciseVersion\":1,\"assetId\":\"quaternius-glute-bridge-v1\",\"assetVersion\":1,\"sha256\":\"412c0d349515ba4cbe70620f96d15e0ff7e23852d807f7bcd7dc0238b68fc195\",\"clipName\":\"EX_glute-bridge__bilateral__v1\",\"sceneId\":\"guided-floor-v1\"},{\"exerciseId\":\"active-march\",\"exerciseVersion\":2,\"assetId\":\"quaternius-active-march-v2\",\"assetVersion\":2,\"sha256\":\"4c3dc89ab1b0e8239348d72d950fa7a437869f6a55f869177c31e18b0351b7f3\",\"clipName\":\"EX_active-march__alternate__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"mini-squat\",\"exerciseVersion\":2,\"assetId\":\"quaternius-mini-squat-v2\",\"assetVersion\":2,\"sha256\":\"ff89b9f237aa37089b4a7f7b1409d31ed30c78a5f6a3aebe8f715e545af10295\",\"clipName\":\"EX_mini-squat__bilateral__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"ankle-mobility-left\",\"exerciseVersion\":1,\"assetId\":\"quaternius-ankle-mobility-left-v1\",\"assetVersion\":1,\"sha256\":\"7fa938d70f7f8e78e331edceee031feb8cf1fc63dfdb0bbd95c2748cf361c0ec\",\"clipName\":\"EX_ankle-mobility__left__v1\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"ankle-mobility-right\",\"exerciseVersion\":1,\"assetId\":\"quaternius-ankle-mobility-right-v1\",\"assetVersion\":1,\"sha256\":\"b2cb2ae9b98bd0e2b797cf08ae871115e429e0cb1f073c6721daf77b7be5a2bb\",\"clipName\":\"EX_ankle-mobility__right__v1\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"soft-step-turn-left\",\"exerciseVersion\":2,\"assetId\":\"quaternius-soft-step-turn-left-v2\",\"assetVersion\":2,\"sha256\":\"4586a6fd26a371a9660f6f889142e7526e631c19b10edfa6a09c6fd4d3017f4d\",\"clipName\":\"EX_soft-step-turn__left__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"soft-step-turn-right\",\"exerciseVersion\":2,\"assetId\":\"quaternius-soft-step-turn-right-v2\",\"assetVersion\":2,\"sha256\":\"da5d91c5543eaf9efc2e04e8770bed32d9ac47e8321904fb72cff788130554b1\",\"clipName\":\"EX_soft-step-turn__right__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"dead-bug\",\"exerciseVersion\":1,\"assetId\":\"quaternius-dead-bug-v1\",\"assetVersion\":1,\"sha256\":\"7b542e74674ad5507e082999477e41ed796edce8ec437061d8ec8059c76fb7de\",\"clipName\":\"EX_dead-bug__arms-supported__v1\",\"sceneId\":\"guided-floor-v1\"},{\"exerciseId\":\"slow-breathing\",\"exerciseVersion\":1,\"assetId\":\"quaternius-slow-breathing-v1\",\"assetVersion\":1,\"sha256\":\"2cb821747e60e1eb9d2cd56926f7523777b31584092fa3f1e9ee82000861e132\",\"clipName\":\"EX_slow-breathing__comfortable-standing__v1\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"lateral-sole-roll-left\",\"exerciseVersion\":3,\"assetId\":\"quaternius-lateral-sole-roll-left-v2\",\"assetVersion\":2,\"sha256\":\"efbeec5f720ff34b5e117e8573f436971e64c674045cf5b9b853f18926daf8af\",\"clipName\":\"EX_lateral-sole-roll__left__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"lateral-sole-roll-right\",\"exerciseVersion\":3,\"assetId\":\"quaternius-lateral-sole-roll-right-v2\",\"assetVersion\":2,\"sha256\":\"14a8173378bc47782349d674feafd61b39347135d83001d4d6cd51d85dc8e38d\",\"clipName\":\"EX_lateral-sole-roll__right__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"inside-outside-left\",\"exerciseVersion\":3,\"assetId\":\"quaternius-inside-outside-left-v2\",\"assetVersion\":2,\"sha256\":\"a6e08d54003dc807cee6bf15001a73b2b9b62fcce5fb82291d18ad6d8dd88776\",\"clipName\":\"EX_inside-outside__left__v2\",\"sceneId\":\"guided-standing-v1\"},{\"exerciseId\":\"inside-outside-right\",\"exerciseVersion\":3,\"assetId\":\"quaternius-inside-outside-right-v2\",\"assetVersion\":2,\"sha256\":\"88dfb6b227c4ed96a78ad27183ab7d0bce940fd7b252b37092314274fdab7f41\",\"clipName\":\"EX_inside-outside__right__v2\",\"sceneId\":\"guided-standing-v1\"}],\"title\":\"Fundamentos en casa · 60 minutos\",\"reviewStatus\":\"draft\",\"expectedDurationSeconds\":3600,\"blocks\":[{\"id\":\"warmup\",\"title\":\"Preparación gradual\",\"rounds\":1,\"expectedSeconds\":480,\"items\":[{\"id\":\"warmup-1\",\"exerciseId\":\"active-march\",\"exerciseVersion\":2,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":40,\"restSeconds\":5,\"exampleRepetitions\":5,\"dose\":\"40 s a ritmo cómodo, sin correr ni saltar.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-2\",\"exerciseId\":\"ankle-mobility-left\",\"exerciseVersion\":1,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":35,\"restSeconds\":10,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-3\",\"exerciseId\":\"ankle-mobility-right\",\"exerciseVersion\":1,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":35,\"restSeconds\":10,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-4\",\"exerciseId\":\"hip-hinge\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":35,\"restSeconds\":10,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-5\",\"exerciseId\":\"active-march\",\"exerciseVersion\":2,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":40,\"restSeconds\":5,\"exampleRepetitions\":5,\"dose\":\"40 s a ritmo cómodo, sin correr ni saltar.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-6\",\"exerciseId\":\"mini-squat\",\"exerciseVersion\":2,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"warmup-7\",\"exerciseId\":\"soft-step-turn-left\",\"exerciseVersion\":2,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"warmup-8\",\"exerciseId\":\"soft-step-turn-right\",\"exerciseVersion\":2,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"}]},{\"id\":\"ball\",\"title\":\"Fundamentos de balón\",\"rounds\":2,\"expectedSeconds\":720,\"items\":[{\"id\":\"ball-1\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-2\",\"exerciseId\":\"lateral-sole-roll-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-3\",\"exerciseId\":\"lateral-sole-roll-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-4\",\"exerciseId\":\"inside-outside-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-5\",\"exerciseId\":\"inside-outside-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-6\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-7\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-8\",\"exerciseId\":\"lateral-sole-roll-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-9\",\"exerciseId\":\"lateral-sole-roll-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-10\",\"exerciseId\":\"inside-outside-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-11\",\"exerciseId\":\"inside-outside-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"ball-12\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":2,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"}]},{\"id\":\"orientation\",\"title\":\"Orientación corporal\",\"rounds\":1,\"expectedSeconds\":600,\"items\":[{\"id\":\"orientation-1\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"orientation-2\",\"exerciseId\":\"soft-step-turn-left\",\"exerciseVersion\":2,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"orientation-3\",\"exerciseId\":\"lateral-sole-roll-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"orientation-4\",\"exerciseId\":\"soft-step-turn-right\",\"exerciseVersion\":2,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"orientation-5\",\"exerciseId\":\"lateral-sole-roll-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"orientation-6\",\"exerciseId\":\"soft-step-turn-left\",\"exerciseVersion\":2,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"orientation-7\",\"exerciseId\":\"inside-outside-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"orientation-8\",\"exerciseId\":\"soft-step-turn-right\",\"exerciseVersion\":2,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"orientation-9\",\"exerciseId\":\"inside-outside-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"orientation-10\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"}]},{\"id\":\"physical\",\"title\":\"Preparación física general\",\"rounds\":1,\"expectedSeconds\":960,\"items\":[{\"id\":\"physical-1\",\"exerciseId\":\"hip-hinge\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"physical-2\",\"exerciseId\":\"mini-squat\",\"exerciseVersion\":2,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"physical-3\",\"exerciseId\":\"wall-push-up\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Acércate a la pared despejada y coloca las manos a la altura del pecho. Revisa tus apoyos.\"},{\"id\":\"physical-4\",\"exerciseId\":\"hip-hinge\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"physical-5\",\"exerciseId\":\"mini-squat\",\"exerciseVersion\":2,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"physical-6\",\"exerciseId\":\"wall-push-up\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":40,\"restSeconds\":60,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Acércate a la pared despejada y coloca las manos a la altura del pecho. Revisa tus apoyos.\"},{\"id\":\"physical-7\",\"exerciseId\":\"glute-bridge\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":60,\"workSeconds\":40,\"restSeconds\":20,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Aparta el balón y coloca la colchoneta sin obstáculos. Baja con calma y colócate boca arriba. Añade tiempo si lo necesitas.\"},{\"id\":\"physical-8\",\"exerciseId\":\"dead-bug\",\"exerciseVersion\":1,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":30,\"workSeconds\":60,\"restSeconds\":30,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 elevaciones por pierna, alternando; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"per-side\",\"preparation\":\"Permanece en la colchoneta, boca arriba, con ambos brazos apoyados.\"}]},{\"id\":\"integration\",\"title\":\"Integración técnica\",\"rounds\":1,\"expectedSeconds\":480,\"items\":[{\"id\":\"integration-1\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":40,\"workSeconds\":13,\"restSeconds\":7,\"exampleRepetitions\":2,\"dose\":\"13 s de toques suaves para retomar el balón.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Incorpórate con calma, retira la colchoneta y recupera el balón. Usa +30 s si necesitas más tiempo.\"},{\"id\":\"integration-2\",\"exerciseId\":\"soft-step-turn-left\",\"exerciseVersion\":2,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"integration-3\",\"exerciseId\":\"lateral-sole-roll-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"integration-4\",\"exerciseId\":\"soft-step-turn-right\",\"exerciseVersion\":2,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":20,\"workSeconds\":20,\"restSeconds\":20,\"exampleRepetitions\":2,\"dose\":\"Hasta 2 giros y regresos por pasos; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":2,\"repetitionUnit\":\"out-and-back\",\"preparation\":\"Detén el balón y déjalo fuera del recorrido de tus pies. Gira levantando y recolocando cada pie.\"},{\"id\":\"integration-5\",\"exerciseId\":\"lateral-sole-roll-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"integration-6\",\"exerciseId\":\"inside-outside-left\",\"exerciseVersion\":3,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"integration-7\",\"exerciseId\":\"inside-outside-right\",\"exerciseVersion\":3,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"},{\"id\":\"integration-8\",\"exerciseId\":\"inside-inside\",\"exerciseVersion\":3,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":30,\"restSeconds\":15,\"exampleRepetitions\":4,\"dose\":\"30 s de toques controlados a tu ritmo. Puedes parar antes.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Vuelve a colocar el balón cerca de los pies y dentro del área libre. Empieza sin saltos.\"}]},{\"id\":\"cooldown\",\"title\":\"Descenso gradual de actividad\",\"rounds\":1,\"expectedSeconds\":360,\"items\":[{\"id\":\"cooldown-1\",\"exerciseId\":\"active-march\",\"exerciseVersion\":2,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":40,\"restSeconds\":5,\"exampleRepetitions\":5,\"dose\":\"40 s de marcha suave; reduce gradualmente la altura y el ritmo de los pasos.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Detén y aparta el balón. Camina en el sitio bajando el ritmo poco a poco.\"},{\"id\":\"cooldown-2\",\"exerciseId\":\"active-march\",\"exerciseVersion\":2,\"side\":\"alternate\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":40,\"restSeconds\":5,\"exampleRepetitions\":5,\"dose\":\"40 s de marcha suave; reduce gradualmente la altura y el ritmo de los pasos.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"cooldown-3\",\"exerciseId\":\"ankle-mobility-left\",\"exerciseVersion\":1,\"side\":\"left\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":35,\"restSeconds\":10,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"cooldown-4\",\"exerciseId\":\"ankle-mobility-right\",\"exerciseVersion\":1,\"side\":\"right\",\"round\":1,\"demonstrationSeconds\":15,\"workSeconds\":35,\"restSeconds\":10,\"exampleRepetitions\":4,\"dose\":\"Hasta 4 repeticiones completas; después descansa.\",\"doseKind\":\"repetition-based\",\"targetRepetitions\":4,\"repetitionUnit\":\"complete-movement\",\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"cooldown-5\",\"exerciseId\":\"slow-breathing\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":10,\"workSeconds\":40,\"restSeconds\":10,\"exampleRepetitions\":1,\"dose\":\"Respira cómodamente durante 40 s, sin contar ciclos ni contener el aire.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"},{\"id\":\"cooldown-6\",\"exerciseId\":\"slow-breathing\",\"exerciseVersion\":1,\"side\":\"none\",\"round\":1,\"demonstrationSeconds\":10,\"workSeconds\":40,\"restSeconds\":10,\"exampleRepetitions\":1,\"dose\":\"Respira cómodamente durante 40 s, sin contar ciclos ni contener el aire.\",\"doseKind\":\"time-based\",\"targetRepetitions\":null,\"repetitionUnit\":null,\"preparation\":\"Colócate con espacio libre alrededor y observa el ejemplo.\"}]}]},\"plan\":{\"id\":\"home-foundations-60min-v2\",\"version\":2,\"title\":\"Fundamentos en casa · 60 minutos\",\"purpose\":\"training-draft\",\"expectedDurationMs\":3600000,\"occurrences\":[{\"id\":\"warmup-1\",\"exerciseId\":\"active-march\",\"title\":\"Marcha en el sitio\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":40000,\"restMs\":5000},{\"id\":\"warmup-2\",\"exerciseId\":\"ankle-mobility-left\",\"title\":\"Balanceo de tobillo · izquierdo delante\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":35000,\"restMs\":10000},{\"id\":\"warmup-3\",\"exerciseId\":\"ankle-mobility-right\",\"title\":\"Balanceo de tobillo · derecho delante\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":35000,\"restMs\":10000},{\"id\":\"warmup-4\",\"exerciseId\":\"hip-hinge\",\"title\":\"Bisagra de cadera\",\"side\":\"none\",\"demonstrationMs\":15000,\"workMs\":35000,\"restMs\":10000},{\"id\":\"warmup-5\",\"exerciseId\":\"active-march\",\"title\":\"Marcha en el sitio\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":40000,\"restMs\":5000},{\"id\":\"warmup-6\",\"exerciseId\":\"mini-squat\",\"title\":\"Sentadilla corta\",\"side\":\"none\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"warmup-7\",\"exerciseId\":\"soft-step-turn-left\",\"title\":\"Giro por pasos · izquierda\",\"side\":\"left\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"warmup-8\",\"exerciseId\":\"soft-step-turn-right\",\"title\":\"Giro por pasos · derecha\",\"side\":\"right\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"ball-1\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-2\",\"exerciseId\":\"lateral-sole-roll-left\",\"title\":\"Planta lateral · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-3\",\"exerciseId\":\"lateral-sole-roll-right\",\"title\":\"Planta lateral · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-4\",\"exerciseId\":\"inside-outside-left\",\"title\":\"Interior/exterior · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-5\",\"exerciseId\":\"inside-outside-right\",\"title\":\"Interior/exterior · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-6\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-7\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-8\",\"exerciseId\":\"lateral-sole-roll-left\",\"title\":\"Planta lateral · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-9\",\"exerciseId\":\"lateral-sole-roll-right\",\"title\":\"Planta lateral · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-10\",\"exerciseId\":\"inside-outside-left\",\"title\":\"Interior/exterior · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-11\",\"exerciseId\":\"inside-outside-right\",\"title\":\"Interior/exterior · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"ball-12\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-1\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-2\",\"exerciseId\":\"soft-step-turn-left\",\"title\":\"Giro por pasos · izquierda\",\"side\":\"left\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"orientation-3\",\"exerciseId\":\"lateral-sole-roll-left\",\"title\":\"Planta lateral · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-4\",\"exerciseId\":\"soft-step-turn-right\",\"title\":\"Giro por pasos · derecha\",\"side\":\"right\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"orientation-5\",\"exerciseId\":\"lateral-sole-roll-right\",\"title\":\"Planta lateral · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-6\",\"exerciseId\":\"soft-step-turn-left\",\"title\":\"Giro por pasos · izquierda\",\"side\":\"left\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"orientation-7\",\"exerciseId\":\"inside-outside-left\",\"title\":\"Interior/exterior · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-8\",\"exerciseId\":\"soft-step-turn-right\",\"title\":\"Giro por pasos · derecha\",\"side\":\"right\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"orientation-9\",\"exerciseId\":\"inside-outside-right\",\"title\":\"Interior/exterior · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"orientation-10\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"physical-1\",\"exerciseId\":\"hip-hinge\",\"title\":\"Bisagra de cadera\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-2\",\"exerciseId\":\"mini-squat\",\"title\":\"Sentadilla corta\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-3\",\"exerciseId\":\"wall-push-up\",\"title\":\"Flexión contra la pared\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-4\",\"exerciseId\":\"hip-hinge\",\"title\":\"Bisagra de cadera\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-5\",\"exerciseId\":\"mini-squat\",\"title\":\"Sentadilla corta\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-6\",\"exerciseId\":\"wall-push-up\",\"title\":\"Flexión contra la pared\",\"side\":\"none\",\"demonstrationMs\":20000,\"workMs\":40000,\"restMs\":60000},{\"id\":\"physical-7\",\"exerciseId\":\"glute-bridge\",\"title\":\"Puente de glúteos\",\"side\":\"none\",\"demonstrationMs\":60000,\"workMs\":40000,\"restMs\":20000},{\"id\":\"physical-8\",\"exerciseId\":\"dead-bug\",\"title\":\"Pierna alterna con brazos apoyados\",\"side\":\"alternate\",\"demonstrationMs\":30000,\"workMs\":60000,\"restMs\":30000},{\"id\":\"integration-1\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":40000,\"workMs\":13000,\"restMs\":7000},{\"id\":\"integration-2\",\"exerciseId\":\"soft-step-turn-left\",\"title\":\"Giro por pasos · izquierda\",\"side\":\"left\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"integration-3\",\"exerciseId\":\"lateral-sole-roll-left\",\"title\":\"Planta lateral · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"integration-4\",\"exerciseId\":\"soft-step-turn-right\",\"title\":\"Giro por pasos · derecha\",\"side\":\"right\",\"demonstrationMs\":20000,\"workMs\":20000,\"restMs\":20000},{\"id\":\"integration-5\",\"exerciseId\":\"lateral-sole-roll-right\",\"title\":\"Planta lateral · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"integration-6\",\"exerciseId\":\"inside-outside-left\",\"title\":\"Interior/exterior · pie izquierdo\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"integration-7\",\"exerciseId\":\"inside-outside-right\",\"title\":\"Interior/exterior · pie derecho\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"integration-8\",\"exerciseId\":\"inside-inside\",\"title\":\"Campanitas · interior-interior\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":30000,\"restMs\":15000},{\"id\":\"cooldown-1\",\"exerciseId\":\"active-march\",\"title\":\"Marcha en el sitio\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":40000,\"restMs\":5000},{\"id\":\"cooldown-2\",\"exerciseId\":\"active-march\",\"title\":\"Marcha en el sitio\",\"side\":\"alternate\",\"demonstrationMs\":15000,\"workMs\":40000,\"restMs\":5000},{\"id\":\"cooldown-3\",\"exerciseId\":\"ankle-mobility-left\",\"title\":\"Balanceo de tobillo · izquierdo delante\",\"side\":\"left\",\"demonstrationMs\":15000,\"workMs\":35000,\"restMs\":10000},{\"id\":\"cooldown-4\",\"exerciseId\":\"ankle-mobility-right\",\"title\":\"Balanceo de tobillo · derecho delante\",\"side\":\"right\",\"demonstrationMs\":15000,\"workMs\":35000,\"restMs\":10000},{\"id\":\"cooldown-5\",\"exerciseId\":\"slow-breathing\",\"title\":\"Postura para respirar cómodamente\",\"side\":\"none\",\"demonstrationMs\":10000,\"workMs\":40000,\"restMs\":10000},{\"id\":\"cooldown-6\",\"exerciseId\":\"slow-breathing\",\"title\":\"Postura para respirar cómodamente\",\"side\":\"none\",\"demonstrationMs\":10000,\"workMs\":40000,\"restMs\":10000}]}}",
+      "journal": {
+        "version": 1,
+        "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+        "entries": [
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "prepare",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 0,
+              "action": {
+                "type": "Prepare"
+              }
+            }
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "prepared",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 1,
+              "action": {
+                "type": "PreparationSucceeded",
+                "plan": {
+                  "id": "home-foundations-60min-v2",
+                  "version": 2,
+                  "title": "Fundamentos en casa · 60 minutos",
+                  "purpose": "training-draft",
+                  "expectedDurationMs": 3600000,
+                  "occurrences": [
+                    {
+                      "id": "warmup-1",
+                      "exerciseId": "active-march",
+                      "title": "Marcha en el sitio",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 40000,
+                      "restMs": 5000
+                    },
+                    {
+                      "id": "warmup-2",
+                      "exerciseId": "ankle-mobility-left",
+                      "title": "Balanceo de tobillo · izquierdo delante",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 35000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "warmup-3",
+                      "exerciseId": "ankle-mobility-right",
+                      "title": "Balanceo de tobillo · derecho delante",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 35000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "warmup-4",
+                      "exerciseId": "hip-hinge",
+                      "title": "Bisagra de cadera",
+                      "side": "none",
+                      "demonstrationMs": 15000,
+                      "workMs": 35000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "warmup-5",
+                      "exerciseId": "active-march",
+                      "title": "Marcha en el sitio",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 40000,
+                      "restMs": 5000
+                    },
+                    {
+                      "id": "warmup-6",
+                      "exerciseId": "mini-squat",
+                      "title": "Sentadilla corta",
+                      "side": "none",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "warmup-7",
+                      "exerciseId": "soft-step-turn-left",
+                      "title": "Giro por pasos · izquierda",
+                      "side": "left",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "warmup-8",
+                      "exerciseId": "soft-step-turn-right",
+                      "title": "Giro por pasos · derecha",
+                      "side": "right",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "ball-1",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-2",
+                      "exerciseId": "lateral-sole-roll-left",
+                      "title": "Planta lateral · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-3",
+                      "exerciseId": "lateral-sole-roll-right",
+                      "title": "Planta lateral · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-4",
+                      "exerciseId": "inside-outside-left",
+                      "title": "Interior/exterior · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-5",
+                      "exerciseId": "inside-outside-right",
+                      "title": "Interior/exterior · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-6",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-7",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-8",
+                      "exerciseId": "lateral-sole-roll-left",
+                      "title": "Planta lateral · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-9",
+                      "exerciseId": "lateral-sole-roll-right",
+                      "title": "Planta lateral · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-10",
+                      "exerciseId": "inside-outside-left",
+                      "title": "Interior/exterior · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-11",
+                      "exerciseId": "inside-outside-right",
+                      "title": "Interior/exterior · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "ball-12",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-1",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-2",
+                      "exerciseId": "soft-step-turn-left",
+                      "title": "Giro por pasos · izquierda",
+                      "side": "left",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "orientation-3",
+                      "exerciseId": "lateral-sole-roll-left",
+                      "title": "Planta lateral · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-4",
+                      "exerciseId": "soft-step-turn-right",
+                      "title": "Giro por pasos · derecha",
+                      "side": "right",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "orientation-5",
+                      "exerciseId": "lateral-sole-roll-right",
+                      "title": "Planta lateral · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-6",
+                      "exerciseId": "soft-step-turn-left",
+                      "title": "Giro por pasos · izquierda",
+                      "side": "left",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "orientation-7",
+                      "exerciseId": "inside-outside-left",
+                      "title": "Interior/exterior · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-8",
+                      "exerciseId": "soft-step-turn-right",
+                      "title": "Giro por pasos · derecha",
+                      "side": "right",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "orientation-9",
+                      "exerciseId": "inside-outside-right",
+                      "title": "Interior/exterior · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "orientation-10",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "physical-1",
+                      "exerciseId": "hip-hinge",
+                      "title": "Bisagra de cadera",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-2",
+                      "exerciseId": "mini-squat",
+                      "title": "Sentadilla corta",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-3",
+                      "exerciseId": "wall-push-up",
+                      "title": "Flexión contra la pared",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-4",
+                      "exerciseId": "hip-hinge",
+                      "title": "Bisagra de cadera",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-5",
+                      "exerciseId": "mini-squat",
+                      "title": "Sentadilla corta",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-6",
+                      "exerciseId": "wall-push-up",
+                      "title": "Flexión contra la pared",
+                      "side": "none",
+                      "demonstrationMs": 20000,
+                      "workMs": 40000,
+                      "restMs": 60000
+                    },
+                    {
+                      "id": "physical-7",
+                      "exerciseId": "glute-bridge",
+                      "title": "Puente de glúteos",
+                      "side": "none",
+                      "demonstrationMs": 60000,
+                      "workMs": 40000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "physical-8",
+                      "exerciseId": "dead-bug",
+                      "title": "Pierna alterna con brazos apoyados",
+                      "side": "alternate",
+                      "demonstrationMs": 30000,
+                      "workMs": 60000,
+                      "restMs": 30000
+                    },
+                    {
+                      "id": "integration-1",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 40000,
+                      "workMs": 13000,
+                      "restMs": 7000
+                    },
+                    {
+                      "id": "integration-2",
+                      "exerciseId": "soft-step-turn-left",
+                      "title": "Giro por pasos · izquierda",
+                      "side": "left",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "integration-3",
+                      "exerciseId": "lateral-sole-roll-left",
+                      "title": "Planta lateral · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "integration-4",
+                      "exerciseId": "soft-step-turn-right",
+                      "title": "Giro por pasos · derecha",
+                      "side": "right",
+                      "demonstrationMs": 20000,
+                      "workMs": 20000,
+                      "restMs": 20000
+                    },
+                    {
+                      "id": "integration-5",
+                      "exerciseId": "lateral-sole-roll-right",
+                      "title": "Planta lateral · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "integration-6",
+                      "exerciseId": "inside-outside-left",
+                      "title": "Interior/exterior · pie izquierdo",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "integration-7",
+                      "exerciseId": "inside-outside-right",
+                      "title": "Interior/exterior · pie derecho",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "integration-8",
+                      "exerciseId": "inside-inside",
+                      "title": "Campanitas · interior-interior",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 30000,
+                      "restMs": 15000
+                    },
+                    {
+                      "id": "cooldown-1",
+                      "exerciseId": "active-march",
+                      "title": "Marcha en el sitio",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 40000,
+                      "restMs": 5000
+                    },
+                    {
+                      "id": "cooldown-2",
+                      "exerciseId": "active-march",
+                      "title": "Marcha en el sitio",
+                      "side": "alternate",
+                      "demonstrationMs": 15000,
+                      "workMs": 40000,
+                      "restMs": 5000
+                    },
+                    {
+                      "id": "cooldown-3",
+                      "exerciseId": "ankle-mobility-left",
+                      "title": "Balanceo de tobillo · izquierdo delante",
+                      "side": "left",
+                      "demonstrationMs": 15000,
+                      "workMs": 35000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "cooldown-4",
+                      "exerciseId": "ankle-mobility-right",
+                      "title": "Balanceo de tobillo · derecho delante",
+                      "side": "right",
+                      "demonstrationMs": 15000,
+                      "workMs": 35000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "cooldown-5",
+                      "exerciseId": "slow-breathing",
+                      "title": "Postura para respirar cómodamente",
+                      "side": "none",
+                      "demonstrationMs": 10000,
+                      "workMs": 40000,
+                      "restMs": 10000
+                    },
+                    {
+                      "id": "cooldown-6",
+                      "exerciseId": "slow-breathing",
+                      "title": "Postura para respirar cómodamente",
+                      "side": "none",
+                      "demonstrationMs": 10000,
+                      "workMs": 40000,
+                      "restMs": 10000
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "session-1791080595866-tb1rn2eeiy/1/ui/w5oubfdod9k/1",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 2,
+              "expectedOccurrenceId": "warmup-1",
+              "action": {
+                "type": "Start"
+              }
+            }
+          },
+          {
+            "kind": "advance",
+            "ms": 827
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "session-1791080595866-tb1rn2eeiy/1/ui/w5oubfdod9k/2",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 3,
+              "expectedOccurrenceId": "warmup-1",
+              "action": {
+                "type": "ExtendPreparation",
+                "targetOccurrenceId": "warmup-1",
+                "amountMs": 30000
+              }
+            }
+          },
+          {
+            "kind": "advance",
+            "ms": 57
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "session-1791080595866-tb1rn2eeiy/1/ui/w5oubfdod9k/3",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 4,
+              "expectedOccurrenceId": "warmup-1",
+              "action": {
+                "type": "Pause"
+              }
+            }
+          },
+          {
+            "kind": "advance",
+            "ms": 26890
+          },
+          {
+            "kind": "interrupt",
+            "reason": "resource",
+            "ms": 0
+          },
+          {
+            "kind": "advance",
+            "ms": 26748
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "session-1791080595866-tb1rn2eeiy/1/ui/ch7xgeixcm/1",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 7,
+              "expectedOccurrenceId": "warmup-1",
+              "action": {
+                "type": "Resume",
+                "visible": true,
+                "resourcesReady": true
+              }
+            }
+          },
+          {
+            "kind": "advance",
+            "ms": 51
+          },
+          {
+            "kind": "command",
+            "command": {
+              "commandId": "session-1791080595866-tb1rn2eeiy/1/ui/ch7xgeixcm/2",
+              "sessionId": "session-1791080595866-tb1rn2eeiy/1",
+              "expectedControlRevision": 8,
+              "expectedOccurrenceId": "warmup-1",
+              "action": {
+                "type": "Abort"
+              }
+            }
+          }
+        ]
+      },
+      "test": false,
+      "feedback": {
+        "rpe": 4,
+        "kneeBefore": null,
+        "kneeAfter": null,
+        "notes": "Prueba automatizada; sin ejercicio físico."
+      }
+    }
+  ]
+}

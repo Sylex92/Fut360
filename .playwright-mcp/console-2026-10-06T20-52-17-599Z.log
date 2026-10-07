@@ -1,0 +1,9 @@
+[    2993ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/shooting.php:217
+[    3288ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/shooting.php:1982:36
+[    9194ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/shooting.php:0
+[ 3086876ms] [ERROR] Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES @ https://infinity-c41.youboranqs01.com/ping?timemark=1791323023198&code=V_30003413_d9dk5jbp23yktbx3_1791319963196&sessionRoot=V_30003413_d9dk5jbp23yktbx3&system=sportradarag&sessionId=V_30003413_d9dk5jbp23yktbx3:0
+[ 3092903ms] [ERROR] Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES @ https://infinity-c41.youboranqs01.com/ping?timemark=1791323028211&code=V_30003413_d9dk5jbp23yktbx3_1791319963196&sessionRoot=V_30003413_d9dk5jbp23yktbx3&system=sportradarag&sessionId=V_30003413_d9dk5jbp23yktbx3:0
+[ 3574226ms] Uncaught (in promise) Error: reCAPTCHA Timeout (o)
+    at <anonymous> (https://www.gstatic.com/recaptcha/releases/guXhH0v-XMxlzmbTwqkaT4i5/recaptcha__es.js:1490:489)
+    at r (https://www.gstatic.com/recaptcha/releases/guXhH0v-XMxlzmbTwqkaT4i5/recaptcha__es.js:711:60)

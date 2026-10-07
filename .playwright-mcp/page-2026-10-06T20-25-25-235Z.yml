@@ -1,0 +1,259 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - link "Training Centre":
+          - /url: /en/
+          - img "Training Centre" [ref=e6] [cursor=pointer]
+        - link "Training Centre":
+          - /url: /en/
+          - img "Training Centre" [ref=e7] [cursor=pointer]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "FWC26" [ref=e10] [cursor=pointer]:
+            - /url: /en/fifa-world-cup-2026/tournament-page--fifa-world-cup-2026.php
+        - listitem [ref=e12]:
+          - generic [ref=e13]: The Game
+        - listitem [ref=e15]:
+          - generic [ref=e16]: Practice
+        - listitem [ref=e18]:
+          - generic [ref=e19]: Environment
+      - generic [ref=e21]:
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - button "en" [expanded] [ref=e24] [cursor=pointer]
+          - listitem [ref=e25]:
+            - generic [ref=e26] [cursor=pointer]
+          - listitem [ref=e27]:
+            - button [ref=e28] [cursor=pointer]
+          - listitem
+        - list
+  - banner [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: "#8 to 12"
+        - heading "Speed and control" [level=1] [ref=e35]
+        - paragraph [ref=e36]:
+          - generic [ref=e37]: FIFA,
+          - generic [ref=e38]: 28 Feb 2023
+      - img "FIFA" [ref=e40]
+    - generic [ref=e43]:
+      - link [ref=e44] [cursor=pointer]:
+        - /url: "#warm_up"
+        - heading "Warm-up" [level=3] [ref=e45]
+      - link [ref=e46] [cursor=pointer]:
+        - /url: "#skill_development"
+        - heading "Skill development" [level=3] [ref=e47]
+      - link [ref=e48] [cursor=pointer]:
+        - /url: "#game_application"
+        - heading "Game application" [level=3] [ref=e49]
+  - generic [ref=e51]:
+    - generic [ref=e54]:
+      - link [ref=e55] [cursor=pointer]:
+        - /url: https://x.com/intent/post?url=https%3A%2F%2Fwww.fifatrainingcentre.com%2Fen%2Fpractice%2Fgrassroots%2F8-to-12%2Fspeed-and-control.php
+        - img "Twitter" [ref=e56]
+      - link [ref=e57] [cursor=pointer]:
+        - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.fifatrainingcentre.com%2Fen%2Fpractice%2Fgrassroots%2F8-to-12%2Fspeed-and-control.php
+        - img "Facebook" [ref=e58]
+      - link [ref=e59] [cursor=pointer]:
+        - /url: mailto:info@example.com?&subject=&cc=&bcc=&body=https%3A%2F%2Fwww.fifatrainingcentre.com%2Fen%2Fpractice%2Fgrassroots%2F8-to-12%2Fspeed-and-control.php
+        - img "Email" [ref=e60]
+      - link "Comments 0" [ref=e61] [cursor=pointer]:
+        - /url: "#fifatc-page-47312-comments"
+        - img "Comments" [ref=e62]
+        - generic [ref=e63]: "0"
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: To warm-up, the group begin with a relay race where each player has to dribble through different gates and return to the starting point. The second exercise of the session is a relay race as well, but now the players have to work in pairs. The session ends with a 4v4 end-zone game.
+      - heading "Warm-up:" [level=2] [ref=e67]
+      - generic [ref=e72] [cursor=pointer]
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Organisation
+        - list [ref=e78]:
+          - listitem [ref=e79]: Create equal teams of players to play relay games
+          - listitem [ref=e80]: Each team has a colour and gates with the same colour inside the area
+          - listitem [ref=e81]: Each player has to dribble through their coloured gate and return to the next player in a relay race
+          - listitem [ref=e82]: Each team has to complete its own colour and then another colour, etc.
+        - paragraph [ref=e83]: Ways to make the exercise easier
+        - list [ref=e84]:
+          - listitem [ref=e85]: You can start with a simple race and no balls
+          - listitem [ref=e86]: You could also introduce different physical movements such as hopping, skipping, jumping, etc.
+        - paragraph [ref=e87]: Ways to make the exercise harder
+        - list [ref=e88]:
+          - listitem [ref=e89]: Increase the number of coloured gates in the square
+          - listitem [ref=e90]: Make the gates smaller
+        - paragraph [ref=e91]: Great questions to ask the children
+        - list [ref=e92]:
+          - listitem [ref=e93]: Can you show me how quickly you can dribble with the ball under control?
+          - listitem [ref=e94]: Can you show me a trick where you turn on the ball when you return to your corner?
+          - listitem [ref=e95]: Can you keep your head up when dribbling so that you avoid others?
+        - paragraph [ref=e96]: Safety tips
+        - list [ref=e97]:
+          - listitem [ref=e98]: Only one player or pair to go at a time from each team
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - status [ref=e99]
+                - status [ref=e100]
+      - heading "Skill development:" [level=2] [ref=e101]
+      - generic [ref=e106] [cursor=pointer]
+      - generic [ref=e110]:
+        - paragraph [ref=e111]: Organisation
+        - list [ref=e112]:
+          - listitem [ref=e113]: Create equal teams to play some relay games
+          - listitem [ref=e114]: Each team has a colour and gates with the same colour inside the area
+          - listitem [ref=e115]: Two players from each team have to dribble the ball to their coloured gates and pass through the gate to each other before returning to their team
+          - listitem [ref=e116]: Players then have to make a double pass through each gate before moving on to the next one
+          - listitem [ref=e117]: Create variations of tasks for players to attempt while dribbling as a pair
+          - listitem [ref=e118]: Make it a race – first team to finish wins
+        - paragraph [ref=e119]: Ways to make the exercise easier
+        - list [ref=e120]:
+          - listitem [ref=e121]: You can start with a simple race and no balls
+          - listitem [ref=e122]: You could also introduce different physical movements such as hopping, skipping, jumping, etc.
+        - paragraph [ref=e123]: Ways to make the exercise harder
+        - list [ref=e124]:
+          - listitem [ref=e125]: Increase the number of coloured gates in the square
+          - listitem [ref=e126]: Make the gates smaller
+          - listitem [ref=e127]: If a player touches the cones with the ball, they have to do it again
+        - paragraph [ref=e128]: Great questions to ask the children
+        - list [ref=e129]:
+          - listitem [ref=e130]: Can you show me how quickly you can dribble with the ball under control?
+          - listitem [ref=e131]: Can you show me how to make a quality pass through the gate?
+          - listitem [ref=e132]: Can you keep your head up when dribbling so that you avoid others?
+        - paragraph [ref=e133]: Safety tips
+        - list [ref=e134]:
+          - listitem [ref=e135]: Only one player or pair to go at a time from each team
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - status [ref=e136]
+                - status [ref=e137]
+      - heading "Game application:" [level=2] [ref=e138]
+      - generic [ref=e143] [cursor=pointer]
+      - generic [ref=e147]:
+        - paragraph [ref=e148]: Organisation
+        - list [ref=e149]:
+          - listitem [ref=e150]: 4v4 in the middle area, each team has two end zones on opposite sides
+          - listitem [ref=e151]: Players have to dribble the ball into an end zone to score and put their foot on the ball to show that it is under control
+          - listitem [ref=e152]: Players can also receive a pass in the end zone to score a point
+          - listitem [ref=e153]: A dribble is worth two points and a pass is worth one
+          - listitem [ref=e154]: Make several pitches and rotate players so they have varied opposition
+        - paragraph [ref=e155]: Ways to make the exercise easier
+        - list [ref=e156]:
+          - listitem [ref=e157]: Make the end zone wider
+          - listitem [ref=e158]: One team can have more players
+        - paragraph [ref=e159]: Ways to make the exercise harder
+        - list [ref=e160]:
+          - listitem [ref=e161]: Make the end zone very narrow
+          - listitem [ref=e162]: One team can have fewer players
+        - paragraph [ref=e163]: Great questions to ask the children
+        - list [ref=e164]:
+          - listitem [ref=e165]: Can you spot an opportunity to dribble the ball into the end zone and be positive and go for it?
+          - listitem [ref=e166]: Can you pass to another player who has a 1v1 chance to dribble and score?
+          - listitem [ref=e167]: As a team, can you think of the best way of defending against a team of dribblers and did you try to play that way? Did it work?
+        - paragraph [ref=e168]: Safety tips
+        - list [ref=e169]:
+          - listitem [ref=e170]: Create safe zones between each pitch
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - status [ref=e171]
+                - status [ref=e172]
+      - link "Download session plan Speed and control Download related article" [ref=e175] [cursor=pointer]:
+        - /url: " /media/native/test/FIFA_Session_Plan_Grassroots_093.pdf  "
+        - generic [ref=e176]:
+          - heading "Download session plan" [level=4] [ref=e177]
+          - generic [ref=e178]: Speed and control
+        - img "Download related article" [ref=e180]
+      - generic [ref=e181]:
+        - heading "Rate your experience" [level=3] [ref=e182]
+        - list [ref=e184]:
+          - listitem [ref=e185] [cursor=pointer]: "1"
+          - listitem [ref=e186] [cursor=pointer]: "2"
+          - listitem [ref=e187] [cursor=pointer]: "3"
+          - listitem [ref=e188] [cursor=pointer]: "4"
+          - listitem [ref=e189] [cursor=pointer]: "5"
+    - generic [ref=e191]:
+      - generic [ref=e193]:
+        - generic [ref=e194]: 8 to 12
+        - link "Non-verbal communication 30 Jan 2023 Non-verbal communication" [ref=e195] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/non-verbal-communication.php
+          - generic [ref=e196]:
+            - heading "Non-verbal communication" [level=4] [ref=e197]
+            - generic [ref=e198]: 30 Jan 2023
+          - img "Non-verbal communication" [ref=e200]
+        - link "Dribble with control 15 Feb 2023 Dribble with control" [ref=e201] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/dribble-with-control.php
+          - generic [ref=e202]:
+            - heading "Dribble with control" [level=4] [ref=e203]
+            - generic [ref=e204]: 15 Feb 2023
+          - img "Dribble with control" [ref=e206]
+        - link "Speed and control 28 Feb 2023 Speed and control" [ref=e207] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php
+          - generic [ref=e208]:
+            - heading "Speed and control" [level=4] [ref=e209]
+            - generic [ref=e210]: 28 Feb 2023
+          - img "Speed and control" [ref=e212]
+        - link "Give and go 14 Mar 2023 Give and go" [ref=e213] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/give-and-go.php
+          - generic [ref=e214]:
+            - heading "Give and go" [level=4] [ref=e215]
+            - generic [ref=e216]: 14 Mar 2023
+          - img "Give and go" [ref=e218]
+        - link "The art of keeping the ball 28 Mar 2023 The art of keeping the ball" [ref=e219] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/the-art-of-keeping-the-ball.php
+          - generic [ref=e220]:
+            - heading "The art of keeping the ball" [level=4] [ref=e221]
+            - generic [ref=e222]: 28 Mar 2023
+          - img "The art of keeping the ball" [ref=e224]
+        - link "Playing the final pass 11 Apr 2023 Playing the final pass" [ref=e225] [cursor=pointer]:
+          - /url: https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/playing-the-final-pass.php
+          - generic [ref=e226]:
+            - heading "Playing the final pass" [level=4] [ref=e227]
+            - generic [ref=e228]: 11 Apr 2023
+          - img "Playing the final pass" [ref=e230]
+      - generic [ref=e232]:
+        - generic [ref=e233]: You may also like
+        - link "Talking talent pathways 16 Mar 2023 Talking talent pathways" [ref=e234] [cursor=pointer]:
+          - /url: /en/environment/talent-development/talent-development/talking-talent-pathways.php
+          - generic [ref=e235]:
+            - heading "Talking talent pathways" [level=4] [ref=e236]
+            - generic [ref=e237]: 16 Mar 2023
+          - img "Talking talent pathways" [ref=e239]
+        - link "Lara Dickenmann on becoming Switzerland's record international 16 Mar 2023 Lara Dickenmann on becoming Switzerland's record international" [ref=e240] [cursor=pointer]:
+          - /url: /en/environment/talent-development/player-pathways/lara-dickenmann.php
+          - generic [ref=e241]:
+            - heading "Lara Dickenmann on becoming Switzerland's record international" [level=4] [ref=e242]
+            - generic [ref=e243]: 16 Mar 2023
+          - img "Lara Dickenmann on becoming Switzerland's record international" [ref=e245]
+        - link "Ben Bartlett on coach development and session design 16 Mar 2023 Ben Bartlett on coach development and session design" [ref=e246] [cursor=pointer]:
+          - /url: /en/environment/interviews/watch/ben-bartlett-on-coach-development-and-session-design.php
+          - generic [ref=e247]:
+            - heading "Ben Bartlett on coach development and session design" [level=4] [ref=e248]
+            - generic [ref=e249]: 16 Mar 2023
+          - img "Ben Bartlett on coach development and session design" [ref=e251]
+    - paragraph [ref=e253]:
+      - text: The site is protected by reCAPTCHA and the Google
+      - link "Privacy Policy" [ref=e254] [cursor=pointer]:
+        - /url: https://policies.google.com/privacy?hl=en
+      - text: and
+      - link "Terms of Service" [ref=e255] [cursor=pointer]:
+        - /url: https://policies.google.com/terms?hl=en
+      - text: apply.
+  - contentinfo [ref=e256]:
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - link "Terms of Service" [ref=e259] [cursor=pointer]:
+          - /url: /en/terms-of-service.php
+        - link "Contact FIFA" [ref=e260] [cursor=pointer]:
+          - /url: /en/contact.php
+        - link "Sign up for newsletter" [ref=e261] [cursor=pointer]:
+          - /url: /en/newsletter.php
+      - generic [ref=e262]:
+        - img "FIFA Learning Center" [ref=e264]
+        - paragraph [ref=e265]: Copyright ⓒ 1994 - 2026 Fifa. All rights reserved.

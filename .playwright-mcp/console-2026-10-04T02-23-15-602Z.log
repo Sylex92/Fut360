@@ -1,0 +1,36 @@
+[     418ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-H2sVB7FZ.js:0
+[   80370ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-H2sVB7FZ.js:0
+[  316255ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-H2sVB7FZ.js:0
+[  597039ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  598541ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  619822ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  620355ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  620735ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  621091ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  670583ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  698490ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  699100ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  699275ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  699464ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  699620ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  943063ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[  944711ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[ 2020072ms] [WARNING] [.WebGL-0x7e413062000] GL_CONTEXT_LOST_KHR: glDebugMessageCallbackKHR: Context has been lost. @ http://127.0.0.1:4173/:0
+[ 2022894ms] [WARNING] WebGL: CONTEXT_LOST_WEBGL: loseContext: context lost @ http://127.0.0.1:4173/:0
+[ 2022898ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[ 2022904ms] [WARNING] THREE.WebGLRenderer: WEBGL_lose_context extension not supported. @ http://127.0.0.1:4173/assets/clip-driver-BpeYjk1p.js:0
+[ 2070724ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:0
+[ 2070727ms] [ERROR] THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Web page caused context loss and was blocked @ http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:0
+[ 2070730ms] [ERROR] THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Web page caused context loss and was blocked @ http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:0
+[ 2070730ms] [ERROR] THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context. @ http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:0
+[ 2070743ms] [ERROR] Error: THREE.WebGLRenderer: Error creating WebGL context.
+    at new ng (http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:4220:24405)
+    at A_ (http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:4220:76921)
+    at l (http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:4231:11259)
+    at Object.configure (http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:4231:11373)
+    at http://127.0.0.1:4173/assets/clip-driver-BhVI_4QS.js:4231:20121
+    at Sl (http://127.0.0.1:4173/assets/index-DJqE5v89.js:9:95087)
+    at gu (http://127.0.0.1:4173/assets/index-DJqE5v89.js:9:104563)
+    at Fu (http://127.0.0.1:4173/assets/index-DJqE5v89.js:9:115807)
+    at gu (http://127.0.0.1:4173/assets/index-DJqE5v89.js:9:105619)
+    at Fu (http://127.0.0.1:4173/assets/index-DJqE5v89.js:9:115807) @ http://127.0.0.1:4173/assets/index-DJqE5v89.js:8

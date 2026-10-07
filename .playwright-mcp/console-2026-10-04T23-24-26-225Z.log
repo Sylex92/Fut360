@@ -1,0 +1,66 @@
+[    2726ms] [WARNING] Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please see https://goo.gle/js-api-loading @ https://maps.googleapis.com/maps/api/js?key=AIzaSyCDVKDj4YmFqL5eq9a246zF48ncrGaTIgU&callback=googleMapsApiCallbackComplete:330
+[    3433ms] [LOG] [cycle] terminating; too few slides: 1 @ https://nhft-nhs-web.verseonecloud.com/js/framework/slide-shows/cycle.js?_=2D944816E4F040EB9B51FB4D93FB36F8:0
+[    3568ms] [ERROR] Access to font at 'https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.woff2' from origin 'https://nhft-nhs-web.verseonecloud.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://nhft-nhs-web.verseonecloud.com/physiotherapy:0
+[    3568ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.woff2:0
+[    3688ms] [WARNING] <gmp-pin>: The `element` property is deprecated. Please use the PinElement directly. @ https://maps.googleapis.com/maps/api/js?key=AIzaSyCDVKDj4YmFqL5eq9a246zF48ncrGaTIgU&callback=googleMapsApiCallbackComplete:214
+[    3842ms] [ERROR] Access to font at 'https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.woff' from origin 'https://nhft-nhs-web.verseonecloud.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://nhft-nhs-web.verseonecloud.com/physiotherapy:0
+[    3843ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.woff:0
+[    4233ms] [ERROR] Access to font at 'https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.ttf' from origin 'https://nhft-nhs-web.verseonecloud.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://nhft-nhs-web.verseonecloud.com/physiotherapy:0
+[    4233ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://assets.nhs.uk/fonts/FrutigerLTW01-75Black.ttf:0
+[    4840ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://auth.accessangel.app/api/v1/authorize?nonce=RDk1NG4yUEREeFdOMTJRSDAyOGI3c1lqU2Y4UjU4U2k5ME1mZzBoUHQycVg3ZTh1YUI=&origin_id=YWNjN2E5ZTQtMmYyYS00NjZkLWIyZDMtY2FjNjVjOTRhMzFl:0
+[    4841ms] [ERROR] [AccessAngel Launcher] token not issued, cannot start AccessAngel @ https://cdn.jsdelivr.net/npm/@handsfree/aa-launcher@latest/dist/aa-launcher.umd.js:0
+[   29275ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29294ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29324ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29356ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29373ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29391ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29405ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29420ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29453ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29498ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29693ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29714ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29749ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29770ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   29813ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[   30252ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636463ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636504ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636565ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636689ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636715ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636832ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636859ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636889ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636949ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21636991ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637146ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637204ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637328ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637433ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637454ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[21637578ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242450ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242481ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242508ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242673ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242713ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242930ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242942ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43242956ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43243228ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43243316ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43243384ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43243629ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[43243728ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848562ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848600ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848634ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848680ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848939ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64848985ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64849108ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64849123ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64849178ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0
+[64849194ms] [WARNING] WARNING: Too many active WebGL contexts. Oldest context will be lost. @ :0

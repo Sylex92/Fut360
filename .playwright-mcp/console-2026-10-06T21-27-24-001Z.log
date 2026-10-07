@@ -1,0 +1,28 @@
+[     790ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability:20
+[     790ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability:21
+[     790ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability:22
+[     790ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability:23
+[     790ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://www.nbt.nhs.uk/our-services/a-z-services/physiotherapy/specialist-physiotherapy-service/therapy-erehab-video-resources/therapy-erehab-knee-instability:24
+[    1777ms] TypeError: $.isFunction is not a function
+    at Tooltip.init (https://www.nbt.nhs.uk/sites/default/files/js/js_r8EZS_crprMaeOZVPRavVWrluZuvuzToalS51j0GiBc.js?scope=footer&delta=3&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:2:28077)
+    at new Tooltip (https://www.nbt.nhs.uk/sites/default/files/js/js_r8EZS_crprMaeOZVPRavVWrluZuvuzToalS51j0GiBc.js?scope=footer&delta=3&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:2:27435)
+    at HTMLInputElement.<anonymous> (https://www.nbt.nhs.uk/sites/default/files/js/js_r8EZS_crprMaeOZVPRavVWrluZuvuzToalS51j0GiBc.js?scope=footer&delta=3&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:2:39665)
+    at T.each (https://www.nbt.nhs.uk/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:2869)
+    at T.fn.init.each (https://www.nbt.nhs.uk/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:1379)
+    at T.fn.init.Plugin [as tooltip] (https://www.nbt.nhs.uk/sites/default/files/js/js_r8EZS_crprMaeOZVPRavVWrluZuvuzToalS51j0GiBc.js?scope=footer&delta=3&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:2:39469)
+    at Object.attach (https://www.nbt.nhs.uk/sites/default/files/js/js_r8EZS_crprMaeOZVPRavVWrluZuvuzToalS51j0GiBc.js?scope=footer&delta=3&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:9:768)
+    at https://www.nbt.nhs.uk/sites/default/files/js/js_pWzKQ2xF9uFaRdny-zj94NhxlcK8eQGK6Hzii5zQ27s.js?scope=footer&delta=1&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:14:427
+    at Array.forEach (<anonymous>)
+    at Drupal.attachBehaviors (https://www.nbt.nhs.uk/sites/default/files/js/js_pWzKQ2xF9uFaRdny-zj94NhxlcK8eQGK6Hzii5zQ27s.js?scope=footer&delta=1&language=en&theme=nbt&include=eJxlzEsKgDAMBNALFXukkEIMleqEGNTj68b_Zph5iylAzOFsuZyNzIXqVCNdlA2GRfwhAbSolhTQJhSsWY_47o4H3t44plVKDx_pfvvJDi5QPJ8:14:353)
+[    8558ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8576ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8598ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8613ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8630ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8647ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8661ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8680ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8693ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8710ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8728ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8743ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0

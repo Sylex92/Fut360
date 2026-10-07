@@ -1,0 +1,4 @@
+[    7488ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/protect-the-ball.php:217
+[    8125ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/protect-the-ball.php:1990:36
+[   13552ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/protect-the-ball.php:0

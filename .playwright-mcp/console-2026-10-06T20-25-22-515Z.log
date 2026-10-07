@@ -1,0 +1,7 @@
+[    1675ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php:217
+[    1708ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php:1993:36
+[    2639ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/grassroots/8-to-12/speed-and-control.php:0
+[ 5175814ms] Uncaught (in promise) Error: reCAPTCHA Timeout (o)
+    at <anonymous> (https://www.gstatic.com/recaptcha/releases/guXhH0v-XMxlzmbTwqkaT4i5/recaptcha__es.js:1490:489)
+    at r (https://www.gstatic.com/recaptcha/releases/guXhH0v-XMxlzmbTwqkaT4i5/recaptcha__es.js:711:60)

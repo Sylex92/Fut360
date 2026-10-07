@@ -1,0 +1,7 @@
+[    3691ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/together-towards-goal.php:217
+[    3933ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/together-towards-goal.php:1990:36
+[    9938ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/grassroots/4-to-8/together-towards-goal.php:0
+[ 7213744ms] [ERROR] Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: "frame-ancestors 'self'". The violation has been logged, but no further action has been taken.
+ @ :0
+[ 8255228ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://c.go-mpulse.net/api/config.json?key=PB5S2-6Q8ZE-ENT9B-NXENR-NW8N9&d=www.fifatrainingcentre.com&t=5971093&v=1.720.0&sl=1&si=f3294dc8-e186-4b6a-ad7a-42a11b5f49b3-tmi771&r=&bcn=%2F%2F17de4c0f.akstat.io%2F&acao=&ak.ai=724388:0

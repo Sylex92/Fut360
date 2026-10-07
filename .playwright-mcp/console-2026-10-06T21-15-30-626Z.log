@@ -1,0 +1,8 @@
+[    7099ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:217
+[    7316ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:2148:36
+[   18274ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:0
+[  638196ms] [LOG] No legacy consent cookies detected. @ https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:217
+[  638711ms] ReferenceError: _satellite is not defined
+    at https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:2148:36
+[  639026ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.fifatrainingcentre.com/en/practice/futsal/fitness/strength-through-shielding.php:0
